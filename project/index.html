@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Project by FASHIONROCKSTAR.ONLINE.">
   <title>Project — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script src="/assets/js/main.js" defer></script>
 </head>
-<body data-project-page>
+<body class="theme-dark" data-project-page>
   <header class="site-header">
-    <a class="site-mark" href="/">FASHIONROCKSTAR<span>.ONLINE</span></a>
-    <a class="header-back" href="/work/">Back to work</a>
+    <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a class="is-active" href="/work/">Work</a><a href="/services/">Services</a><a href="/issue-01/">Issue 01</a><a href="/book/">Book</a><a href="/contact/">Contact</a>
+    </nav>
   </header>
-  <main class="project-page">
+
+  <main class="page-shell project-page">
+    <a class="back-link" href="/work/">← Back to work</a>
     <header class="project-head">
       <h1 data-project-title>Lovepuccii</h1>
-      <dl><div><dt>Role</dt><dd data-project-role>Creative Direction</dd></div><div><dt>Year</dt><dd data-project-year>2026</dd></div></dl>
+      <p><span data-project-role>Creative Direction</span><span data-project-year>2026</span></p>
     </header>
-    <figure class="project-hero"><img data-project-image src="/assets/images/project-01-cover.jpg" alt="Project hero placeholder"></figure>
+
+    <figure class="project-hero"><img data-project-image src="/assets/images/project-01-cover.jpg" alt="Lovepuccii project image"></figure>
     <section class="project-images" aria-label="Additional project images">
-      <img data-project-detail-one src="/assets/images/project-02-cover.jpg" alt="Additional project placeholder">
-      <img data-project-detail-two src="/assets/images/project-03-cover.jpg" alt="Additional project placeholder">
-      <img data-project-detail-three src="/assets/images/project-04-cover.jpg" alt="Additional project placeholder">
+      <figure class="project-image project-image--wide"><img data-project-detail-one src="/assets/images/project-02-cover.jpg" alt="Lovepuccii project image"></figure>
+      <figure><img data-project-detail-two src="/assets/images/project-03-cover.jpg" alt="Lovepuccii project image"></figure>
+      <figure><img data-project-detail-three src="/assets/images/project-04-cover.jpg" alt="Lovepuccii project image"></figure>
     </section>
+
     <nav class="project-nav" aria-label="Project navigation">
-      <a href="/work/">Back to work</a>
-      <a data-project-prev href="/project/?id=8">Previous project</a>
-      <a data-project-next href="/project/?id=2">Next project</a>
+      <a data-project-prev href="/project/?id=8"><span>←</span> Previous project</a>
+      <a class="project-nav__grid" href="/work/" aria-label="All work"><i></i><i></i><i></i><i></i></a>
+      <a data-project-next href="/project/?id=2">Next project <span>→</span></a>
     </nav>
   </main>
 </body>

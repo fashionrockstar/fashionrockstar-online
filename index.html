@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="FASHIONROCKSTAR.ONLINE — creative direction, photography, styling and beauty in Montreal.">
   <title>FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -11,76 +11,44 @@
 <body class="home">
   <main>
     <section class="hero" aria-labelledby="hero-title">
- <div class="hero__logo-wrap" aria-labelledby="hero-title">
-  <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
+      <header class="site-header site-header--home">
+        <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home">
+          <img class="logo-light" src="/assets/images/fahionrockstar-logo-white.png" alt="">
+          <img class="logo-dark" src="/assets/images/fahionrockstar-logo-black.png" alt="">
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="/work/">Work</a>
+          <a href="/services/">Services</a>
+          <a href="/issue-01/">Issue 01</a>
+          <a href="/book/">Book</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </header>
 
-  <img
-    class="hero__logo hero__logo--white"
-    src="/assets/images/fashionrockstar-logo-white.png"
-    alt=""
-  >
-
-  <img
-    class="hero__logo hero__logo--black"
-    src="/assets/images/fashionrockstar-logo-black.png"
-    alt=""
-  >
-</div>
-
-
-      <p class="micro micro--tl">FASHION<br>LIVES<br>DIFFERENTLY<br>HERE.</p>
-      <p class="micro micro--tr">BEAUTY<br>PEOPLE<br>IDEAS<br>CULTURE</p>
-      <p class="micro micro--bl">A CREATIVE<br>STUDIO FOR<br>A BOLDER<br>TOMORROW.</p>
-      <p class="micro micro--br">EST. 2024<br>WORLDWIDE<br>ALWAYS CREATIVE<br>ALWAYS REAL</p>
-
-
-      <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span><i></i></div>
-
-
-      <nav class="hero__nav" aria-label="Primary navigation">
-        <a href="/services/">Services</a>
-        <a href="/work/">Selected Work</a>
-        <a href="/issue-01/">Issue 01</a>
-        <a href="/book/">Book Now</a>
-        <a href="/contact/">Contact</a>
-      </nav>
-    </section>
-
-
-    <section class="menu-screen" aria-labelledby="menu-title">
-      <h2 class="sr-only" id="menu-title">Explore Fashionrockstar</h2>
-      <div class="menu-screen__rail" aria-hidden="true">
-        <i></i><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+      <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
+      <div class="hero__brand" aria-hidden="true">
+        <img class="logo-light" src="/assets/images/fahionrockstar-logo-white.png" alt="">
+        <img class="logo-dark" src="/assets/images/fahionrockstar-logo-black.png" alt="">
       </div>
 
+      <a class="scroll-cue" href="#explore"><span>Scroll</span><i aria-hidden="true"></i></a>
+    </section>
 
-      <p class="micro menu-screen__top-left">FASHIONROCKSTAR.ONLINE<br>MONTREAL, CA</p>
-      <p class="micro menu-screen__top-right">CREATIVE DIRECTION<br>PHOTOGRAPHY<br>STYLING<br>BEAUTY</p>
-      <p class="micro menu-screen__bottom-left">MORE<br>THAN<br>FASHION.</p>
-      <p class="micro menu-screen__bottom-right">SAME<br>DIFFERENT<br>BOLDER.</p>
-
-
-      <nav class="editorial-menu" aria-label="Explore">
-        <a href="/work/" data-image="/assets/images/nav-work-placeholder.jpg"><span>Work</span></a>
-        <a href="/services/" data-image="/assets/images/project-03-cover.jpg"><span>Services</span></a>
-        <a href="/issue-01/" data-image="/assets/images/issue-placeholder.jpg"><span>Issue 01</span></a>
-        <a href="/book/" data-image="/assets/images/project-04-cover.jpg"><span>Book Now</span></a>
-        <a href="/contact/" data-image="/assets/images/hero-placeholder.jpg"><span>Contact</span></a>
+    <section class="home-menu" id="explore" aria-labelledby="explore-title">
+      <h2 class="sr-only" id="explore-title">Explore FASHIONROCKSTAR.ONLINE</h2>
+      <nav class="home-menu__links" aria-label="Explore">
+        <a href="/work/" data-preview="/assets/images/nav-work-placeholder.jpg"><span>Work</span><i>→</i></a>
+        <a href="/services/" data-preview="/assets/images/project-03-cover.jpg"><span>Services</span><i>→</i></a>
+        <a href="/issue-01/" data-preview="/assets/images/issue-placeholder.jpg"><span>Issue 01</span><i>→</i></a>
+        <a href="/book/" data-preview="/assets/images/project-04-cover.jpg"><span>Book Now</span><i>→</i></a>
+        <a href="/contact/" data-preview="/assets/images/hero-placeholder.jpg"><span>Contact</span><i>→</i></a>
       </nav>
 
-
-      <figure class="menu-screen__visual">
-        <img id="nav-visual" src="/assets/images/nav-work-placeholder.jpg" alt="Black-and-white editorial image placeholder">
+      <figure class="home-menu__preview">
+        <img id="nav-preview" src="/assets/images/nav-work-placeholder.jpg" alt="Work preview">
       </figure>
-
-
-      <footer class="menu-screen__footer">
-        <span>FASHIONROCKSTAR.ONLINE</span>
-        <span>CREATIVE PEOPLE. BOLDER BRANDS.</span>
-        <span>EST. 2024</span>
-      </footer>
     </section>
   </main>
 </body>
 </html>
-

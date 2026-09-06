@@ -16,12 +16,12 @@ The local preview will be available at `http://127.0.0.1:4173/`.
 
 All replaceable image assets are in `assets/images/`. Keep the existing filenames to swap photography without editing markup:
 
-- `hero-placeholder.jpg` — homepage full-screen hero
-- `nav-work-placeholder.jpg` — homepage editorial menu image
-- `issue-placeholder.jpg` — Issue 01 hero
+- `hero-placeholder.jpg` — contact-page editorial image
+- `nav-work-placeholder.jpg` — homepage menu preview
+- `issue-placeholder.jpg` — Issue 01 image
 - `project-01-cover.jpg` through `project-08-cover.jpg` — work grid and reusable project pages
-- `project-hero-placeholder.jpg` — reserved alternate project hero
+- `project-hero-placeholder.jpg` — reserved alternate project image
 
-## Temporary font
+## Typography
 
-The display and metadata fonts are controlled by `--font-display` and `--font-meta` at the top of `assets/css/styles.css`. The current temporary choices are the open-source fonts Oswald and IBM Plex Mono.
+The display and interface fonts are controlled by `--font-display` and `--font-ui` at the top of `assets/css/styles.css`. The current temporary choices are the open-source fonts Bebas Neue and Inter.

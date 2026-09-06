@@ -1,12 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Book FASHIONROCKSTAR.ONLINE."><title>Book — FASHIONROCKSTAR.ONLINE</title>
-  <link rel="stylesheet" href="/assets/css/styles.css"><script src="/assets/js/main.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Book FASHIONROCKSTAR.ONLINE.">
+  <title>Book — FASHIONROCKSTAR.ONLINE</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/main.js" defer></script>
 </head>
-<body>
-  <header class="site-header"><a class="site-mark" href="/">FASHIONROCKSTAR<span>.ONLINE</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="/work/">Work</a><a href="/services/">Services</a><a href="/issue-01/">Issue 01</a><a class="is-active" href="/book/">Book</a><a href="/contact/">Contact</a></nav></header>
-  <main class="inner-page type-page split-page"><header class="page-intro"><p class="eyebrow">Start a conversation</p><h1>Book<br>Now</h1></header><div class="inquiry-list"><a href="/contact/"><span>01</span><strong>Bookings</strong><i>→</i></a><a href="/contact/"><span>02</span><strong>Projects</strong><i>→</i></a><a href="/contact/"><span>03</span><strong>Collaborations</strong><i>→</i></a><a href="/contact/"><span>04</span><strong>Inquiries</strong><i>→</i></a></div></main>
+<body class="theme-dark">
+  <header class="site-header">
+    <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="/work/">Work</a><a href="/services/">Services</a><a href="/issue-01/">Issue 01</a><a class="is-active" aria-current="page" href="/book/">Book</a><a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell book-page">
+    <h1 class="page-title">Book Now</h1>
+    <form class="booking-form" name="booking" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="booking">
+      <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+      <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+      <label><span>Type of project</span><select id="project-type" name="project-type" required><option value="" selected disabled>Select</option><option value="creative-direction">Creative Direction</option><option value="photography">Photography</option><option value="styling">Styling</option><option value="beauty">Beauty</option></select></label>
+      <label class="booking-form__details"><span>Project details</span><textarea name="project-details" rows="5" required></textarea></label>
+      <button type="submit"><span>Submit</span><i>→</i></button>
+    </form>
+  </main>
 </body>
 </html>
