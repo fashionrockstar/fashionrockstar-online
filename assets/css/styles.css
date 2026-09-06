@@ -640,4 +640,62 @@ button { color: inherit; }
     text-align: center;
   }
 }
+/* =========================================================
+   FASHIONROCKSTAR — HOMEPAGE GLOBAL BLACK / WHITE FLASH
+   Development test
+   ========================================================= */
 
+body.home {
+  background: #000;
+  color: #fff;
+  animation: frsr-home-flash 1.8s steps(1, end) infinite;
+}
+
+/* Make both homepage sections use the same global flash state */
+body.home .hero,
+body.home .menu-screen {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Homepage typography + navigation inherit the current state */
+body.home .hero a,
+body.home .menu-screen a,
+body.home .micro,
+body.home .hero__scroll,
+body.home .hero__title,
+body.home .hero__suffix,
+body.home .editorial-menu,
+body.home .menu-screen__rail {
+  color: inherit !important;
+}
+
+/* Lines / borders switch with the text */
+body.home .hero *,
+body.home .menu-screen * {
+  border-color: currentColor;
+}
+
+/* Hard black / white switch */
+@keyframes frsr-home-flash {
+  0%,
+  49.999% {
+    background-color: #000;
+    color: #fff;
+  }
+
+  50%,
+  100% {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+/* Reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  body.home {
+    animation: none !important;
+    background: #000 !important;
+    color: #fff !important;
+  }
+}
