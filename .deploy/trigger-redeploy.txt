@@ -1,0 +1,4 @@
+Trigger Netlify redeploy
+
+This file was added solely to create an empty-style commit to trigger a branch deploy for Netlify. No website files were modified.
+Timestamp: 2026-09-06T06:25:00Z
