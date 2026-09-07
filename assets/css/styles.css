@@ -402,7 +402,11 @@ body.home {
   background: #d2d2d0;
 }
 
-.work-card img {
+.work-card img,
+.work-card video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform .55s var(--ease), filter .3s ease;
@@ -439,7 +443,9 @@ body.home {
 }
 
 .work-card:hover img,
-.work-card:focus-visible img {
+.work-card:hover video,
+.work-card:focus-visible img,
+.work-card:focus-visible video {
   filter: brightness(.7);
   transform: scale(1.015);
 }
@@ -505,7 +511,10 @@ body.home {
 }
 
 .project-hero img,
+.project-hero video,
 .project-images img {
+  display: block;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }

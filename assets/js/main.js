@@ -65,7 +65,7 @@
 
   if (projectRoot) {
     const projects = [
-      { title: 'Lovepuccii', role: 'Creative Direction', year: '2026' },
+      { title: 'BROKENHEART X FASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
       { title: 'New Silhouette', role: 'Styling', year: '2026' },
       { title: 'Afterimage', role: 'Beauty', year: '2025' },
       { title: 'Run / 04', role: 'Photography', year: '2026' },
@@ -98,10 +98,35 @@
       image.alt = `${project.title} project image`;
     };
 
+    const setProjectHero = () => {
+      const image = document.querySelector('[data-project-image]');
+      if (!image) return;
+
+      if (id !== 1) {
+        setProjectImage('[data-project-image]', id);
+        return;
+      }
+
+      const video = document.createElement('video');
+      video.src = '/assets/video/project-01-cover.mp4';
+      video.autoplay = true;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.preload = 'auto';
+      video.setAttribute('muted', '');
+      video.setAttribute('aria-label', `${project.title} project video`);
+      image.replaceWith(video);
+
+      const playback = video.play();
+      if (playback) playback.catch(() => {});
+    };
+
     setText('[data-project-title]', project.title);
     setText('[data-project-role]', project.role);
     setText('[data-project-year]', project.year);
-    setProjectImage('[data-project-image]', id);
+    setProjectHero();
     setProjectImage('[data-project-detail-one]', detailIds[0]);
     setProjectImage('[data-project-detail-two]', detailIds[1]);
     setProjectImage('[data-project-detail-three]', detailIds[2]);
