@@ -66,7 +66,7 @@
   if (projectRoot) {
     const projects = [
       { title: 'BROKENHEART X FASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
-      { title: 'New Silhouette', role: 'Styling', year: '2026' },
+      { title: 'MICAELA GOMEZ', role: 'PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN', year: '2026' },
       { title: 'Afterimage', role: 'Beauty', year: '2025' },
       { title: 'Run / 04', role: 'Photography', year: '2026' },
       { title: 'Nocturne', role: 'Creative Direction', year: '2025' },
@@ -102,6 +102,13 @@
       const image = document.querySelector('[data-project-image]');
       if (!image) return;
 
+      if (id === 2) {
+        image.src = '/assets/images/projects/project-02/cover.jpg';
+        image.alt = `${project.title} project image`;
+        image.closest('.project-hero')?.classList.add('project-hero--natural');
+        return;
+      }
+
       if (id !== 1) {
         setProjectImage('[data-project-image]', id);
         return;
@@ -123,13 +130,67 @@
       if (playback) playback.catch(() => {});
     };
 
+    const setProjectDetails = () => {
+      if (id !== 2) {
+        setProjectImage('[data-project-detail-one]', detailIds[0]);
+        setProjectImage('[data-project-detail-two]', detailIds[1]);
+        setProjectImage('[data-project-detail-three]', detailIds[2]);
+        return;
+      }
+
+      const gallery = document.querySelector('.project-images');
+      if (!gallery) return;
+
+      const media = [
+        { type: 'video', src: '/assets/video/project-02-editorial.mp4' },
+        { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
+        { type: 'image', src: '/assets/images/projects/project-02/image-02.jpg' },
+        { type: 'image', src: '/assets/images/projects/project-02/image-03.jpg' },
+        { type: 'image', src: '/assets/images/projects/project-02/image-04.jpg' }
+      ];
+
+      gallery.classList.add('project-images--natural');
+      gallery.replaceChildren();
+
+      media.forEach((item, index) => {
+        const figure = document.createElement('figure');
+        let video;
+        if (index === 0) figure.className = 'project-image project-image--wide';
+
+        if (item.type === 'video') {
+          video = document.createElement('video');
+          video.src = item.src;
+          video.autoplay = true;
+          video.muted = true;
+          video.defaultMuted = true;
+          video.loop = true;
+          video.playsInline = true;
+          video.preload = 'auto';
+          video.setAttribute('muted', '');
+          video.setAttribute('aria-label', `${project.title} project video`);
+          figure.appendChild(video);
+        } else {
+          const image = document.createElement('img');
+          image.src = item.src;
+          image.alt = `${project.title} project image ${index}`;
+          image.loading = 'lazy';
+          figure.appendChild(image);
+        }
+
+        gallery.appendChild(figure);
+
+        if (video) {
+          const playback = video.play();
+          if (playback) playback.catch(() => {});
+        }
+      });
+    };
+
     setText('[data-project-title]', project.title);
     setText('[data-project-role]', project.role);
     setText('[data-project-year]', project.year);
     setProjectHero();
-    setProjectImage('[data-project-detail-one]', detailIds[0]);
-    setProjectImage('[data-project-detail-two]', detailIds[1]);
-    setProjectImage('[data-project-detail-three]', detailIds[2]);
+    setProjectDetails();
 
     const previousLink = document.querySelector('[data-project-prev]');
     const nextLink = document.querySelector('[data-project-next]');

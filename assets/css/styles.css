@@ -512,11 +512,27 @@ body.home {
 
 .project-hero img,
 .project-hero video,
-.project-images img {
+.project-images img,
+.project-images video {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project-hero.project-hero--natural {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.project-hero.project-hero--natural img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(80vh, 56rem);
+  object-fit: contain;
 }
 
 .project-images {
@@ -534,6 +550,17 @@ body.home {
 .project-images .project-image--wide {
   grid-column: 1 / -1;
   height: min(82vh, 64rem);
+}
+
+.project-images.project-images--natural figure,
+.project-images.project-images--natural .project-image--wide {
+  height: auto;
+}
+
+.project-images.project-images--natural img,
+.project-images.project-images--natural video {
+  height: auto;
+  object-fit: contain;
 }
 
 .project-nav {
