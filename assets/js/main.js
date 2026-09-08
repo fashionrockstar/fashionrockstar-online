@@ -84,9 +84,9 @@
     const projects = [
       { title: 'BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
       { title: 'MICAELA GOMES [M.A.D 2026]', role: 'PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN', year: '2026' },
-      { title: 'MANSAWORLD', role: 'Beauty', year: '2025' },
+      { title: 'MANSAWORLD', role: 'PHOTOGRAPHY - CREATIVE DIRECTION', year: '2026' },
       { title: 'MZRABELLE: PINK SUMMER', role: 'Photography', year: '2026' },
-      { title: 'Nocturne', role: 'Creative Direction', year: '2025' },
+      { title: 'KAINE BASQUIAT [MONTREALITY X MURAL]', role: 'CREATIVE DIRECTION AND MAKEUP', year: '2026' },
       { title: 'Concrete Bloom', role: 'Photography', year: '2026' },
       { title: 'Object Study', role: 'Creative Direction', year: '2025' },
       { title: 'Gesture', role: 'Styling', year: '2026' }
@@ -119,15 +119,15 @@
       const image = document.querySelector('[data-project-image]');
       if (!image) return;
 
-      if (id === 4) {
-        image.src = '/assets/images/projects/project-04/_DSC9338-copy.jpg';
-        image.alt = `${project.title} project image`;
-        image.closest('.project-hero')?.classList.add('project-hero--natural');
-        return;
-      }
+      const projectHeroes = {
+        2: '/assets/images/projects/project-02/cover.jpg',
+        3: '/assets/images/projects/project-03-mansaworld/fr4.jpg',
+        4: '/assets/images/projects/project-04/_DSC9338-copy.jpg',
+        5: '/assets/images/projects/project-05-kaine-basquiat/dsc7459-wide.jpg'
+      };
 
-      if (id === 2) {
-        image.src = '/assets/images/projects/project-02/cover.jpg';
+      if (projectHeroes[id]) {
+        image.src = projectHeroes[id];
         image.alt = `${project.title} project image`;
         image.closest('.project-hero')?.classList.add('project-hero--natural');
         return;
@@ -155,7 +155,48 @@
     };
 
     const setProjectDetails = () => {
-      if (id !== 2 && id !== 4) {
+      const projectMedia = {
+        2: [
+          { type: 'video', src: '/assets/video/project-02-editorial.mp4', wide: true },
+          { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-02/image-02.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-02/image-03.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-02/image-04.jpg' }
+        ],
+        3: [
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/img-1184.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/fr5-copy.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/fr2.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/part-1.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/img-1178.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/part-2-2.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/fr1.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/img-1163.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/part-3.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/3.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/5.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/funmi-2-1.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/funmi-3.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-03-mansaworld/funmi-4.jpg' }
+        ],
+        4: [
+          { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
+          { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
+          { type: 'image', src: '/assets/images/projects/project-04/second-face-close-up-copy.jpg', wide: true }
+        ],
+        5: [
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/dsc7164.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/dsc7411.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/dsc7449.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/dsc7450.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/dsc7478.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/09.jpg' },
+          { type: 'image', src: '/assets/images/projects/project-05-kaine-basquiat/stand.jpg' }
+        ]
+      };
+      const media = projectMedia[id];
+
+      if (!media) {
         setProjectImage('[data-project-detail-one]', detailIds[0]);
         setProjectImage('[data-project-detail-two]', detailIds[1]);
         setProjectImage('[data-project-detail-three]', detailIds[2]);
@@ -164,20 +205,6 @@
 
       const gallery = document.querySelector('.project-images');
       if (!gallery) return;
-
-      const media = id === 2
-        ? [
-            { type: 'video', src: '/assets/video/project-02-editorial.mp4', wide: true },
-            { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
-            { type: 'image', src: '/assets/images/projects/project-02/image-02.jpg' },
-            { type: 'image', src: '/assets/images/projects/project-02/image-03.jpg' },
-            { type: 'image', src: '/assets/images/projects/project-02/image-04.jpg' }
-          ]
-        : [
-            { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
-            { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
-            { type: 'image', src: '/assets/images/projects/project-04/second-face-close-up-copy.jpg', wide: true }
-          ];
 
       gallery.classList.add('project-images--natural');
       gallery.replaceChildren();
