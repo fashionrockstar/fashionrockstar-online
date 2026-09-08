@@ -13,16 +13,9 @@
   const canvas = document.createElement('canvas');
   layer.append(canvas);
   hero.prepend(layer);
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'face-motion-control';
-  button.textContent = 'Pause animation';
-  button.hidden = true;
-  hero.append(button);
-
   const duration = 2000;
   const quiet = 8000;
-  let frame = 0, timer = 0, visible = false, paused = false;
+  let frame = 0, timer = 0, visible = false;
   let ready = false, failed = false, loading = false, start = 0;
   let active = false;
   let negative, xray, composite, ctx;
@@ -30,7 +23,7 @@
     const n = Math.max(0, Math.min(1, (t - a) / (b - a)));
     return n * n * (3 - 2 * n);
   };
-  const canRun = () => active && ready && !failed && !paused && !motion.matches &&
+  const canRun = () => active && ready && !failed && !motion.matches &&
     visible && !document.hidden && !root.classList.contains('home-nav-open');
 
   function stop() {
@@ -141,7 +134,6 @@
   function fallback() {
     stop();
     failed = true;
-    button.hidden = true;
     hero.removeAttribute('data-face-ready');
     // The existing Contact preview image supplies the static fallback.
   }
@@ -179,8 +171,7 @@
   }
 
   function reconcile() {
-    button.hidden = !active || !ready || failed || motion.matches;
-    hero.toggleAttribute('data-face-ready', active && ready && !failed && !paused && !motion.matches);
+    hero.toggleAttribute('data-face-ready', active && ready && !failed && !motion.matches);
     if (failed) {
       layer.hidden = true;
       return;
@@ -188,11 +179,6 @@
     if (!motion.matches) load();
     schedule();
   }
-  button.addEventListener('click', () => {
-    paused = !paused;
-    button.textContent = paused ? 'Resume animation' : 'Pause animation';
-    reconcile();
-  });
   new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting;
     reconcile();
