@@ -6,31 +6,58 @@
   <meta name="description" content="FASHIONROCKSTAR.ONLINE — creative direction, photography, styling and beauty in Montreal.">
   <title>FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/landing.css">
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/landing.js" defer></script>
 </head>
 <body class="home">
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <header class="site-header site-header--home">
-        <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home">
-          <img class="logo-light" src="/assets/images/fahionrockstar-logo-white.png" alt="">
-          <img class="logo-dark" src="/assets/images/fahionrockstar-logo-black.png" alt="">
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="/work/">Work</a>
-          <a href="/services/">Services</a>
-          <a href="/issue-01/">Issue 01</a>
-          <a href="/book/">Book</a>
-          <a href="/contact/">Contact</a>
-        </nav>
+      <header class="home-header">
+        <button class="home-menu-control" type="button" aria-expanded="false" aria-controls="home-navigation" aria-haspopup="dialog" data-home-menu-toggle>MENU <span aria-hidden="true">+</span></button>
       </header>
+
+      <dialog class="home-nav-panel" id="home-navigation" aria-label="Site navigation">
+        <div class="home-nav-panel__header">
+          <button class="home-menu-control" type="button" data-home-menu-close autofocus>CLOSE <span aria-hidden="true">×</span></button>
+        </div>
+        <nav class="home-nav-panel__links" aria-label="Primary navigation">
+          <ul class="home-nav-list">
+            <li>
+              <div class="home-nav-work">
+                <a href="/work/">SELECTED WORK</a>
+                <button class="home-submenu-control" type="button" aria-expanded="false" aria-controls="home-work-disciplines" aria-label="Expand Selected Work disciplines"><span aria-hidden="true">+</span></button>
+              </div>
+              <ul class="home-work-disciplines" id="home-work-disciplines" hidden>
+                <li><a href="/work/">ALL</a></li>
+                <li><a href="/work/?filter=creative-direction">CREATIVE DIRECTION</a></li>
+                <li><a href="/work/?filter=styling">STYLING</a></li>
+                <li><a href="/work/?filter=photography">PHOTOGRAPHY</a></li>
+                <li><a href="/work/?filter=beauty">BEAUTY</a></li>
+              </ul>
+            </li>
+            <li><a href="/services/">SERVICES</a></li>
+            <li><a href="/issue-01/">ISSUE 01</a></li>
+            <li><a href="/about/">ABOUT FASHIONROCKSTAR</a></li>
+            <li><a href="/book/">BOOK NOW</a></li>
+            <li><a href="/contact/">CONTACT</a></li>
+          </ul>
+        </nav>
+      </dialog>
 
       <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
       <div class="hero__brand" aria-hidden="true">
-        <img class="logo-light" src="/assets/images/fahionrockstar-logo-white.png" alt="">
-        <img class="logo-dark" src="/assets/images/fahionrockstar-logo-black.png" alt="">
+        <img class="logo-light" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
+        <img class="logo-dark" src="/assets/images/hero-logo-black.png" width="728" height="97" alt="">
       </div>
+
+      <!-- Replace each pending span with a confirmed profile link only.
+           Use target="_blank", rel="noopener noreferrer", and a new-tab accessible name. -->
+      <ul class="home-socials" aria-label="Social profiles — URLs pending confirmation">
+        <li><span class="home-social-pending" aria-disabled="true">INSTAGRAM <span aria-hidden="true">↗</span></span></li>
+        <li><span class="home-social-pending" aria-disabled="true">LINKEDIN <span aria-hidden="true">↗</span></span></li>
+        <li><span class="home-social-pending" aria-disabled="true">TIKTOK <span aria-hidden="true">↗</span></span></li>
+      </ul>
 
       <a class="scroll-cue" href="#explore" aria-label="Continue to navigation">
         <span class="scroll-cue__dots" aria-hidden="true">
