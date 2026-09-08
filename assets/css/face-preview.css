@@ -1,80 +1,44 @@
-/* Query-only experiment. No selectors apply to the normal homepage. */
-html[data-face-preview] body.home {
-  --home-bg: #000;
-  --home-fg: #fff;
-  --home-logo-light: 1;
-  --home-logo-dark: 0;
-  animation: none;
+/* The portrait is confined to the existing Contact preview card. */
+.home-menu__preview[data-contact-face] { background: #000; }
+.home-menu__preview[data-contact-face] > #nav-preview {
+  object-fit: contain;
   background: #000;
-  color: #fff;
 }
-html[data-face-preview] .hero { isolation: isolate; }
-html[data-face-preview] .hero__brand,
-html[data-face-preview] .home-socials,
-html[data-face-preview] .scroll-cue { z-index: 1; }
-/* Keep all automatically moving layers quiet outside the short portrait event. */
-html[data-face-preview] .scroll-cue__dots i { animation: none; opacity: 1; }
-.face-apparition {
+.home-menu__preview[data-face-ready] > #nav-preview { visibility: hidden; }
+.home-menu__preview .face-apparition {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  height: 100%;
   aspect-ratio: 2 / 3;
+  transform: translateX(-50%);
   pointer-events: none;
   user-select: none;
   contain: layout paint style;
   opacity: .33;
 }
-.face-apparition canvas,
-.face-apparition img { display: block; width: 100%; height: 100%; }
-.face-apparition img {
-  object-fit: contain;
-  mask-image: linear-gradient(#000 60%, transparent 90%);
-}
-.face-apparition[hidden],
-html.home-nav-open .face-apparition { display: none; }
-html[data-face-preview="corner"] .face-apparition {
-  width: min(27vw, 37svh, 360px);
-  top: max(3.25rem, 5svh);
-  right: max(4vw, var(--home-edge-right));
-}
-html[data-face-preview="background"] .face-apparition {
-  width: min(70vw, 70svh, 720px);
-  top: 50%;
-  left: 61%;
-  transform: translate(-50%, -45%);
-  opacity: .28;
-}
+.face-apparition canvas { display: block; width: 100%; height: 100%; }
+.face-apparition[hidden], html.home-nav-open .face-apparition { display: none; }
 .face-motion-control {
   position: absolute;
   z-index: 2;
-  right: var(--home-edge-right);
-  bottom: max(1.5rem, env(safe-area-inset-bottom));
+  right: .75rem;
+  bottom: .25rem;
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding: .5rem 0 .5rem .75rem;
+  padding: .5rem;
   border: 0;
   background: #000;
   color: #fff;
   font: inherit;
   font-size: .625rem;
-  letter-spacing: .04em;
   cursor: pointer;
 }
-.face-motion-control:hover { text-decoration: underline; text-underline-offset: .3em; }
-.face-motion-control:focus-visible { outline: 1px solid #fff; outline-offset: 4px; }
+.face-motion-control:focus-visible { outline: 1px solid #fff; outline-offset: -2px; }
 .face-motion-control[hidden] { display: none; }
-@media (max-width: 1000px) {
-  html[data-face-preview="corner"] .face-apparition {
-    width: min(46vw, 35svh, 300px);
-    top: max(4.5rem, 8svh);
-    right: var(--home-edge-right);
-  }
-  html[data-face-preview="background"] .face-apparition {
-    width: min(105vw, 66svh, 590px);
-    max-width: 90%;
-    left: 55%;
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .face-apparition, .face-motion-control { display: none !important; }
+  .home-menu__preview[data-contact-face] > #nav-preview { visibility: visible; }
 }
