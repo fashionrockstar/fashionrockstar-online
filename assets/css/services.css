@@ -1,0 +1,132 @@
+/* Services-only disclosures; shared page and booking styles stay intact. */
+.services-page .service-toggle {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .65rem 1.5rem;
+  min-height: 44px;
+  padding: 1rem 0 1.25rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.services-page .service-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.services-page .service-title {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: clamp(4.25rem, 8vw, 9rem);
+  font-weight: 400;
+  line-height: .92;
+  text-transform: uppercase;
+}
+
+.services-page .service-toggle__icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  font-family: var(--font-ui);
+  font-size: clamp(1.5rem, 2.25vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.services-page .service-toggle__minus,
+.services-page .service[open] .service-toggle__plus {
+  display: none;
+}
+
+.services-page .service[open] .service-toggle__minus {
+  display: inline;
+}
+
+.services-page .service-summary {
+  grid-column: 1 / -1;
+  max-width: 65ch;
+  font-size: clamp(.9rem, 1.1vw, 1.05rem);
+  line-height: 1.55;
+}
+
+.services-page .service-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 1.5rem clamp(2rem, 5vw, 6rem);
+  max-width: 80rem;
+  padding: .75rem 0 clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(.95rem, 1.1vw, 1.05rem);
+  line-height: 1.7;
+}
+
+.services-page .service-description,
+.services-page .service-scope {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.services-page .service-details strong {
+  font-weight: 600;
+}
+
+.services-page .service-links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem clamp(1.5rem, 3vw, 3rem);
+}
+
+.services-page .service-links a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+  padding: .5rem 0;
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .3em;
+}
+
+.services-page .service-links a:hover,
+.services-page .service-links a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+.services-page .services-note {
+  display: grid;
+  gap: 1rem;
+  max-width: 65ch;
+  margin-top: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(.9rem, 1.1vw, 1.05rem);
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .services-page .service-toggle {
+    gap: .65rem .75rem;
+  }
+
+  .services-page .service-title {
+    font-size: clamp(3.3rem, 15.5vw, 5.25rem);
+    line-height: .94;
+  }
+
+  .services-page .service-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .services-page .service-title {
+    font-size: 3rem;
+  }
+}
