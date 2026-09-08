@@ -648,6 +648,7 @@ body.home {
   opacity: 0;
   transform: translateY(.5rem);
   transition: opacity .22s ease, transform .3s var(--ease);
+  pointer-events: none;
 }
 
 .work-tile__meta b {
@@ -658,18 +659,29 @@ body.home {
   text-transform: uppercase;
 }
 
-.work-tile:hover img,
-.work-tile:hover video,
 .work-tile:focus-visible img,
 .work-tile:focus-visible video {
   filter: brightness(.7);
   transform: scale(1.015);
 }
 
-.work-tile:hover .work-tile__meta,
 .work-tile:focus-visible .work-tile__meta {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hover remains a desktop interaction; tapping a tile follows its link. */
+@media (hover: hover) and (pointer: fine) {
+  .work-tile:hover img,
+  .work-tile:hover video {
+    filter: brightness(.7);
+    transform: scale(1.015);
+  }
+
+  .work-tile:hover .work-tile__meta {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Project */
@@ -1214,10 +1226,6 @@ body.home {
     gap: 0 1rem;
   }
 
-  .work-tile__meta {
-    display: none;
-  }
-
   .project-head {
     grid-template-columns: 1fr;
     min-height: 19rem;
@@ -1330,9 +1338,15 @@ body.home {
   }
 }
 
-@media (hover: none), (pointer: coarse) {
+/* Keep every title over its image on phones and touch screens. */
+@media (max-width: 760px), (hover: none), (pointer: coarse) {
   .work-tile__meta {
-    display: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .work-tile__meta b {
+    font-size: clamp(1.5rem, 4.8vw, 2rem);
   }
 }
 
