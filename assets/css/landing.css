@@ -1,0 +1,239 @@
+/* Loaded by the homepage and the new About draft only. */
+.home {
+  --home-edge-left: max(var(--pad), env(safe-area-inset-left));
+  --home-edge-right: max(var(--pad), env(safe-area-inset-right));
+  --home-edge-top: max(1rem, env(safe-area-inset-top));
+}
+
+.home .hero {
+  grid-template-columns: minmax(0, 1fr);
+  padding: 7rem max(var(--home-edge-left), var(--home-edge-right));
+}
+
+.home .hero__brand {
+  width: min(72vw, 72rem);
+  max-width: 100%;
+  overflow: visible;
+}
+
+.home .hero__brand img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transform: none;
+}
+
+.home-header {
+  position: absolute;
+  z-index: 2;
+  top: var(--home-edge-top);
+  left: var(--home-edge-left);
+}
+
+.home-menu-control,
+.home-submenu-control {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.home-menu-control {
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+
+.home-menu-control > span,
+.home-submenu-control > span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.home-menu-control:hover,
+.home-menu-control:focus-visible,
+.home-nav-panel a:hover,
+.home-nav-panel a:focus-visible,
+.home-socials a:hover,
+.home-socials a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .3em;
+}
+
+html.home-nav-open,
+html.home-nav-open body {
+  overflow: hidden;
+}
+
+.home-nav-panel {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  height: 100svh;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--home-bg);
+  color: var(--home-fg);
+}
+
+.home-nav-panel[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.home-nav-panel::backdrop {
+  background: var(--home-bg, #000);
+}
+
+.home-nav-panel__header {
+  padding: var(--home-edge-top) var(--home-edge-right) 1rem var(--home-edge-left);
+}
+
+.home-nav-panel__links {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(1rem, 3vh, 2rem) var(--home-edge-right) max(2rem, env(safe-area-inset-bottom)) var(--home-edge-left);
+}
+
+.home-nav-list,
+.home-work-disciplines,
+.home-socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-nav-list {
+  width: min(100%, 39rem);
+}
+
+.home-nav-list > li {
+  border-bottom: 1px solid currentColor;
+}
+
+.home-nav-list > li:first-child {
+  border-top: 1px solid currentColor;
+}
+
+.home-nav-list > li > a,
+.home-nav-work > a {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  padding: .7rem 0;
+  font-size: clamp(1.15rem, 2.3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -.035em;
+  line-height: 1.25;
+}
+
+.home-nav-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.home-nav-work > a {
+  flex: 1;
+}
+
+.home-submenu-control {
+  flex: 0 0 44px;
+  justify-content: center;
+}
+
+.home-work-disciplines {
+  padding: 0 0 .75rem 1rem;
+}
+
+.home-work-disciplines[hidden] {
+  display: none;
+}
+
+.home-work-disciplines a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
+.home-socials {
+  position: absolute;
+  top: 50%;
+  left: var(--home-edge-left);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+
+.home-socials a,
+.home-social-pending {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: .35rem;
+  font-size: .625rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+.home-social-pending {
+  opacity: .55;
+  cursor: default;
+}
+
+.about-draft .page-title {
+  max-width: 12ch;
+  font-size: clamp(3.5rem, 10vw, 10rem);
+  overflow-wrap: anywhere;
+}
+
+.about-draft__status {
+  margin-top: 2.5rem;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.about-draft__status small {
+  display: block;
+  margin-top: .5rem;
+}
+
+@media (max-width: 1000px) {
+  .home .hero__brand {
+    width: min(92vw, 38rem);
+  }
+
+  .home-socials {
+    top: auto;
+    right: var(--home-edge-right);
+    bottom: max(5.5rem, calc(env(safe-area-inset-bottom) + 4.5rem));
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 1.25rem;
+    transform: none;
+  }
+
+  .home-socials a,
+  .home-social-pending {
+    font-size: .6875rem;
+  }
+}
