@@ -323,6 +323,50 @@ body.home {
   min-width: 0;
 }
 
+/* English stays in flow; the decorative Braille layer cannot resize the row. */
+.home-menu__label {
+  position: relative;
+  flex: 1;
+  container-type: inline-size;
+}
+
+.home-menu__english,
+.home-menu__label::after {
+  transition: opacity 120ms ease;
+}
+
+.home-menu__label::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: attr(data-braille);
+  font-size: min(.82em, 12cqi);
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.home-menu__links a:focus-visible .home-menu__english {
+  opacity: 0;
+}
+
+.home-menu__links a:focus-visible .home-menu__label::after {
+  opacity: 1;
+}
+
+/* Do not leave a sticky hover state after a tap on touch devices. */
+@media (hover: hover) and (pointer: fine) {
+  .home-menu__links a:hover .home-menu__english {
+    opacity: 0;
+  }
+
+  .home-menu__links a:hover .home-menu__label::after {
+    opacity: 1;
+  }
+}
+
 .home-menu__links a i,
 .service-list i,
 .book-cta i,
