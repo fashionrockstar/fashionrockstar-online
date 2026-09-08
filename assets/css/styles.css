@@ -261,32 +261,44 @@ body.home {
   bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1rem));
   left: 50%;
   display: grid;
-  min-width: 44px;
-  min-height: 64px;
-  justify-items: center;
-  align-content: end;
-  gap: .75rem;
+  width: 44px;
+  height: 44px;
+  place-items: center;
   transform: translateX(-50%);
 }
 
-.scroll-cue span {
-  font-size: .58rem;
-  font-weight: 500;
-  letter-spacing: .18em;
-  text-transform: uppercase;
+.scroll-cue:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
 }
 
-.scroll-cue i {
-  width: 1px;
-  height: 2.5rem;
+.scroll-cue__dots {
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  grid-template-rows: repeat(3, 4px);
+  gap: 5px;
+}
+
+.scroll-cue__dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
   background: currentColor;
-  transform-origin: top;
-  animation: scroll-pulse 1.6s var(--ease) infinite;
+  opacity: .3;
+  animation: scroll-dots 1.8s ease-in-out infinite;
 }
 
-@keyframes scroll-pulse {
-  0%, 100% { opacity: .35; transform: scaleY(.45); }
-  50% { opacity: 1; transform: scaleY(1); }
+.scroll-cue__dots i:nth-child(n + 4):nth-child(-n + 6) {
+  animation-delay: .2s;
+}
+
+.scroll-cue__dots i:nth-child(n + 7) {
+  animation-delay: .4s;
+}
+
+@keyframes scroll-dots {
+  0%, 60%, 100% { opacity: .3; }
+  30% { opacity: 1; }
 }
 
 .home-menu {
@@ -1354,8 +1366,9 @@ body.home {
     animation: none !important;
   }
 
-  .scroll-cue i {
+  .scroll-cue__dots i {
     animation: none !important;
+    opacity: .65;
   }
 
   .work-tile__slideshow img {
