@@ -15,7 +15,7 @@ The pair was inspected at matching normalized coordinates: the hairline,
 eyes and chin already register. No feature warping or generated detail was
 added. Both sizes are downsampled, not restored or upscaled artwork.
 
-The query-only renderer in `assets/js/face-preview.js` applies the same edge
-feather, scan window and local strip displacement to both placements.
+The Contact preview renderer in `assets/js/face-preview.js` applies edge
+feathering, a scan window and local strip displacement to the supplied pair.
 JPEG export uses high-quality bicubic resampling at quality 85. The smaller
 pair totals 78,886 bytes; the larger pair totals 276,304 bytes.
