@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="FASHIONROCKSTAR.ONLINE — creative direction, photography, videography, styling and beauty in Montreal.">
   <title>FASHIONROCKSTAR.ONLINE</title>
+  <script>
+    // Set the preview theme before first paint; absent/unknown queries do nothing.
+    (() => {
+      const mode = new URLSearchParams(location.search).get('face-preview');
+      if (mode === 'corner' || mode === 'background') document.documentElement.dataset.facePreview = mode;
+    })();
+  </script>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/landing.css">
+  <link rel="stylesheet" href="/assets/css/face-preview.css">
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/landing.js" defer></script>
+  <script src="/assets/js/face-preview.js" defer></script>
 </head>
 <body class="home">
   <main>
