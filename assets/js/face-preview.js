@@ -1,10 +1,10 @@
-/* One renderer, two query-only placements. Source artwork is never modified. */
+/* Contact hover/focus preview. The homepage theme and hero stay unchanged. */
 (() => {
   'use strict';
   const root = document.documentElement;
-  if (!['corner', 'background'].includes(root.dataset.facePreview)) return;
-  const hero = document.querySelector('.home .hero');
-  if (!hero) return;
+  const hero = document.querySelector('.home .home-menu__preview');
+  const contact = document.querySelector('.home-menu__links a[href="/contact/"]');
+  if (!hero || !contact) return;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const layer = document.createElement('div');
   layer.className = 'face-apparition';
@@ -24,12 +24,13 @@
   const quiet = 8000;
   let frame = 0, timer = 0, visible = false, paused = false;
   let ready = false, failed = false, loading = false, start = 0;
+  let active = false;
   let negative, xray, composite, ctx;
   const smooth = (a, b, t) => {
     const n = Math.max(0, Math.min(1, (t - a) / (b - a)));
     return n * n * (3 - 2 * n);
   };
-  const canRun = () => ready && !failed && !paused && !motion.matches &&
+  const canRun = () => active && ready && !failed && !paused && !motion.matches &&
     visible && !document.hidden && !root.classList.contains('home-nav-open');
 
   function stop() {
@@ -141,27 +142,17 @@
     stop();
     failed = true;
     button.hidden = true;
-    if (motion.matches) return;
-    const image = document.createElement('img');
-    image.alt = '';
-    image.width = 480;
-    image.height = 720;
-    image.src = '/assets/images/face-preview/negative-480.jpg';
-    image.onerror = () => { layer.hidden = true; };
-    layer.replaceChildren(image);
-    layer.dataset.phase = 'static';
-    layer.hidden = document.hidden || !visible || root.classList.contains('home-nav-open');
+    hero.removeAttribute('data-face-ready');
+    // The existing Contact preview image supplies the static fallback.
   }
 
   async function load() {
-    if (loading || ready || failed || motion.matches) return;
+    if (!active || loading || ready || failed || motion.matches) return;
     loading = true;
     try {
       // Render at <= 960px, never at TIFF resolution. Smaller phones use 480px.
       const box = hero.getBoundingClientRect();
-      const estimate = root.dataset.facePreview === 'corner'
-        ? Math.min(box.width * (box.width <= 1000 ? .46 : .27), box.height * .37, 360)
-        : Math.min(box.width * 1.05, box.height * .7, 720);
+      const estimate = Math.min(box.width, box.height * 2 / 3);
       const size = estimate * Math.min(devicePixelRatio || 1, 1.5) <= 480 ? 480 : 960;
       const images = await Promise.all(['negative', 'xray'].map(name => new Promise((resolve, reject) => {
         const image = new Image();
@@ -183,15 +174,15 @@
       }
       xray.artwork = prepare(images[1], canvas.width, canvas.height);
       ready = true;
-      button.hidden = motion.matches;
-      schedule();
+      reconcile();
     } catch { fallback(); }
   }
 
   function reconcile() {
-    button.hidden = !ready || failed || motion.matches;
+    button.hidden = !active || !ready || failed || motion.matches;
+    hero.toggleAttribute('data-face-ready', active && ready && !failed && !paused && !motion.matches);
     if (failed) {
-      layer.hidden = motion.matches || document.hidden || !visible || root.classList.contains('home-nav-open');
+      layer.hidden = true;
       return;
     }
     if (!motion.matches) load();
@@ -211,5 +202,14 @@
   motion.addEventListener('change', reconcile);
   window.addEventListener('pagehide', stop);
   window.addEventListener('pageshow', reconcile);
+  document.querySelectorAll('.home-menu__links a[data-preview]').forEach(link => {
+    const select = () => {
+      active = link === contact;
+      hero.toggleAttribute('data-contact-face', active);
+      reconcile();
+    };
+    link.addEventListener('pointerenter', select);
+    link.addEventListener('focus', select);
+  });
   reconcile();
 })();
