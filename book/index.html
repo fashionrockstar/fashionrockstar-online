@@ -7,6 +7,7 @@
   <title>Book — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/booking.js" defer></script>
 </head>
 <body class="theme-dark">
   <header class="site-header">
@@ -26,6 +27,7 @@
       <label><span>Type of project</span><select id="project-type" name="project-type" required><option value="" selected disabled>Select</option><option value="creative-direction">Creative Direction</option><option value="photography">Photography</option><option value="styling">Styling</option><option value="beauty">Beauty</option></select></label>
       <label class="booking-form__details"><span>Project details</span><textarea name="project-details" rows="5" required></textarea></label>
       <button type="submit"><span>Submit</span><i>→</i></button>
+      <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
     </form>
   </main>
 </body>

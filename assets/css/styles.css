@@ -903,6 +903,16 @@ body.home {
   text-transform: uppercase;
 }
 
+.booking-form__status {
+  margin-top: 1rem;
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+.booking-form[aria-busy="true"] button {
+  cursor: wait;
+}
+
 /* Contact */
 .contact-page .page-title {
   margin-bottom: 1.75rem;
