@@ -42,3 +42,8 @@ The September 8 completion pass checked all eight HTML routes and 151 local refe
 - Preservation: ten local copies, including Git history and uncommitted/untracked files, were archived and verified before synchronization. Original working folders remain intact. The isolated working copy retains the older local commit `d7476bf` on `preserved-local-d7476bf`; the newer shared baseline is `037f8864`. Do not alter `rescue-2026-09-08`, reset destructively or force-push.
 - Checked: browser layouts at desktop and phone widths; navigation; required fields and invalid email; local simulated success/error responses, retained form values and SEND INQUIRY after retry or edit. Local tests do not prove delivery through Netlify Forms.
 - Remaining: confirm actual inquiry receipt in Netlify Forms with an authorized submission, connect/verify the custom domain separately, and supply the remaining content listed above. Keep using the existing Netlify site; its production deployment must identify the final `main` commit before publication is reported as verified.
+
+## Mobile work captions and symbol cleanup — September 8, 2026
+
+- Selected Work titles stay visible over all 11 image, video and slideshow tiles on phones and touchscreens. Smaller type fits paired tiles; titles can wrap, and the existing dark gradient supports white text. Desktop hover and keyboard-focus captions remain available.
+- Removed decorative arrow glyphs from Home, Work, Services, Contact, Project and Inquiries. Link destinations, accessible labels, form labels, menu controls, Braille and the nine-dot indicator are preserved.

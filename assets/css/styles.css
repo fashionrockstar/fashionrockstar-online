@@ -638,6 +638,8 @@ body.home {
 
 .work-tile__meta {
   position: absolute;
+  z-index: 1;
+  pointer-events: none;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -651,6 +653,8 @@ body.home {
 }
 
 .work-tile__meta b {
+  max-width: 100%;
+  overflow-wrap: anywhere;
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.7vw, 4.75rem);
   font-weight: 400;
@@ -1215,7 +1219,16 @@ body.home {
   }
 
   .work-tile__meta {
-    display: none;
+    padding: clamp(.75rem, 3vw, 1rem);
+  }
+
+  .work-tile__meta b {
+    font-size: clamp(1.25rem, 5.5vw, 2rem);
+    line-height: 1.05;
+  }
+
+  .work-row--pair .work-tile__meta b {
+    font-size: clamp(1rem, 4.2vw, 1.5rem);
   }
 
   .project-head {
@@ -1330,9 +1343,11 @@ body.home {
   }
 }
 
-@media (hover: none), (pointer: coarse) {
+/* Phone and touch visitors can read project names without hovering or tapping. */
+@media (max-width: 760px), (hover: none), (pointer: coarse) {
   .work-tile__meta {
-    display: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
