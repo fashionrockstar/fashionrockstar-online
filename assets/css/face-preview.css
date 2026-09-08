@@ -20,25 +20,7 @@
 }
 .face-apparition canvas { display: block; width: 100%; height: 100%; }
 .face-apparition[hidden], html.home-nav-open .face-apparition { display: none; }
-.face-motion-control {
-  position: absolute;
-  z-index: 2;
-  right: .75rem;
-  bottom: .25rem;
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: .5rem;
-  border: 0;
-  background: #000;
-  color: #fff;
-  font: inherit;
-  font-size: .625rem;
-  cursor: pointer;
-}
-.face-motion-control:focus-visible { outline: 1px solid #fff; outline-offset: -2px; }
-.face-motion-control[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) {
-  .face-apparition, .face-motion-control { display: none !important; }
+  .face-apparition { display: none !important; }
   .home-menu__preview[data-contact-face] > #nav-preview { visibility: visible; }
 }
