@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Work by FASHIONROCKSTAR.ONLINE.">
-  <title>Work — FASHIONROCKSTAR.ONLINE</title>
+  <meta name="description" content="Selected work by FASHIONROCKSTAR.ONLINE.">
+  <title>Selected Work — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script src="/assets/js/main.js" defer></script>
 </head>
@@ -18,10 +18,20 @@
   </header>
 
   <main class="page-shell work-page">
-    <h1 class="page-title">Work</h1>
-    <section class="work-gallery" data-work-gallery aria-label="Projects">
+    <h1 class="page-title">Selected Work</h1>
+    <nav class="work-toolbar" aria-label="Filter selected work by discipline">
+      <div class="work-filters" role="group" aria-label="Disciplines">
+        <button class="work-filter" type="button" data-work-filter="all" aria-controls="work-gallery" aria-pressed="true">All</button>
+        <button class="work-filter" type="button" data-work-filter="creative-direction" aria-controls="work-gallery" aria-pressed="false">Creative Direction</button>
+        <button class="work-filter" type="button" data-work-filter="styling" aria-controls="work-gallery" aria-pressed="false">Styling</button>
+        <button class="work-filter" type="button" data-work-filter="photography" aria-controls="work-gallery" aria-pressed="false">Photography</button>
+        <button class="work-filter" type="button" data-work-filter="beauty" aria-controls="work-gallery" aria-pressed="false">Beauty</button>
+      </div>
+      <a class="work-services-link" href="/services/">Services <span aria-hidden="true">↗</span></a>
+    </nav>
+    <section class="work-gallery" id="work-gallery" data-work-gallery aria-label="Selected projects">
       <div class="work-row work-row--full work-row--cinema">
-        <a class="work-tile work-tile--video" href="/project/?id=1" aria-label="View BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]">
+        <a class="work-tile work-tile--video" data-project-id="1" data-disciplines="creative-direction styling" href="/project/?id=1" aria-label="View BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]">
           <video src="/assets/video/project-01-cover.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
           <span class="work-tile__meta"><b>BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]</b></span>
         </a>
@@ -35,14 +45,14 @@
       -->
 
       <div class="work-row work-row--full work-row--cinema">
-        <a class="work-tile work-tile--video" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
+        <a class="work-tile work-tile--video" data-project-id="2" data-disciplines="photography creative-direction" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
           <video src="/assets/video/project-02-editorial.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
           <span class="work-tile__meta"><b>MICAELA GOMES [M.A.D 2026]</b></span>
         </a>
       </div>
 
       <div class="work-row work-row--full work-row--landscape">
-        <a class="work-tile work-tile--slideshow" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
+        <a class="work-tile work-tile--slideshow" data-project-id="2" data-disciplines="photography creative-direction" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
           <span class="work-tile__slideshow" aria-hidden="true">
             <img src="/assets/images/projects/project-02/cover.jpg" alt="" loading="lazy">
             <img src="/assets/images/projects/project-02/image-03.jpg" alt="" loading="lazy">
@@ -53,14 +63,14 @@
       </div>
 
       <div class="work-row work-row--full work-row--landscape">
-        <a class="work-tile" href="/project/?id=3" aria-label="View MANSAWORLD">
+        <a class="work-tile" data-project-id="3" data-disciplines="photography creative-direction" href="/project/?id=3" aria-label="View MANSAWORLD">
           <img src="/assets/images/projects/project-03-mansaworld/part-2-2.jpg" alt="" loading="lazy">
           <span class="work-tile__meta"><b>MANSAWORLD</b></span>
         </a>
       </div>
 
       <div class="work-row work-row--full work-row--landscape">
-        <a class="work-tile work-tile--slideshow" href="/project/?id=3" aria-label="View MANSAWORLD">
+        <a class="work-tile work-tile--slideshow" data-project-id="3" data-disciplines="photography creative-direction" href="/project/?id=3" aria-label="View MANSAWORLD">
           <span class="work-tile__slideshow work-tile__slideshow--seven" aria-hidden="true">
             <img src="/assets/images/projects/project-03-mansaworld/fr1.jpg" alt="" loading="lazy">
             <img src="/assets/images/projects/project-03-mansaworld/fr4.jpg" alt="" loading="lazy">
@@ -75,29 +85,29 @@
       </div>
 
       <div class="work-row work-row--pair work-row--portrait-pair">
-        <a class="work-tile" href="/project/?id=3" aria-label="View MANSAWORLD">
+        <a class="work-tile" data-project-id="3" data-disciplines="photography creative-direction" href="/project/?id=3" aria-label="View MANSAWORLD">
           <img src="/assets/images/projects/project-03-mansaworld/part-3.jpg" alt="" loading="lazy">
           <span class="work-tile__meta"><b>MANSAWORLD</b></span>
         </a>
-        <a class="work-tile" href="/project/?id=3" aria-label="View MANSAWORLD">
+        <a class="work-tile" data-project-id="3" data-disciplines="photography creative-direction" href="/project/?id=3" aria-label="View MANSAWORLD">
           <img src="/assets/images/projects/project-03-mansaworld/img-1163.jpg" alt="" loading="lazy">
           <span class="work-tile__meta"><b>MANSAWORLD</b></span>
         </a>
       </div>
 
       <div class="work-row work-row--pair work-row--portrait-pair">
-        <a class="work-tile work-tile--video" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
+        <a class="work-tile work-tile--video" data-project-id="4" data-disciplines="photography" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
           <video src="/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
           <span class="work-tile__meta"><b>MZRABELLE: PINK SUMMER</b></span>
         </a>
-        <a class="work-tile work-tile--video" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
+        <a class="work-tile work-tile--video" data-project-id="4" data-disciplines="photography" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
           <video src="/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
           <span class="work-tile__meta"><b>MZRABELLE: PINK SUMMER</b></span>
         </a>
       </div>
 
       <div class="work-row work-row--full work-row--landscape">
-        <a class="work-tile work-tile--slideshow" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
+        <a class="work-tile work-tile--slideshow" data-project-id="4" data-disciplines="photography" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
           <span class="work-tile__slideshow work-tile__slideshow--two" aria-hidden="true">
             <img src="/assets/images/projects/project-04/_DSC9338-copy.jpg" alt="" loading="lazy">
             <img src="/assets/images/projects/project-04/second-face-close-up-copy.jpg" alt="" loading="lazy">
@@ -107,7 +117,7 @@
       </div>
 
       <div class="work-row work-row--full work-row--landscape">
-        <a class="work-tile" href="/project/?id=5" aria-label="View KAINE BASQUIAT [MONTREALITY X MURAL]">
+        <a class="work-tile" data-project-id="5" data-disciplines="creative-direction beauty" href="/project/?id=5" aria-label="View KAINE BASQUIAT [MONTREALITY X MURAL]">
           <img src="/assets/images/projects/project-05-kaine-basquiat/dsc7459-wide.jpg" alt="" loading="lazy">
           <span class="work-tile__meta"><b>KAINE BASQUIAT [MONTREALITY X MURAL]</b></span>
         </a>

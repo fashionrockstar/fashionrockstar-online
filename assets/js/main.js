@@ -78,6 +78,56 @@
     else video.addEventListener('canplay', startPlayback, { once: true });
   });
 
+  const workGallery = document.querySelector('[data-work-gallery]');
+  const workFilters = document.querySelectorAll('[data-work-filter]');
+
+  if (workGallery && workFilters.length) {
+    const validFilters = new Set(['all', 'creative-direction', 'styling', 'photography', 'beauty']);
+    const workRows = Array.from(workGallery.querySelectorAll('.work-row'));
+
+    const applyWorkFilter = (requestedFilter, updateUrl = true) => {
+      const filter = validFilters.has(requestedFilter) ? requestedFilter : 'all';
+
+      workFilters.forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.workFilter === filter));
+      });
+
+      workRows.forEach((row) => {
+        const tiles = Array.from(row.querySelectorAll('.work-tile[data-disciplines]'));
+        let visibleTiles = 0;
+
+        tiles.forEach((tile) => {
+          const disciplines = tile.dataset.disciplines.split(/\s+/);
+          const isVisible = filter === 'all' || disciplines.includes(filter);
+          tile.hidden = !isVisible;
+          if (isVisible) visibleTiles += 1;
+        });
+
+        row.hidden = visibleTiles === 0;
+        row.classList.toggle('work-row--filtered-single', row.classList.contains('work-row--pair') && visibleTiles === 1);
+      });
+
+      workGallery.querySelectorAll('.work-row:not([hidden]) video').forEach((video) => {
+        const playback = video.play();
+        if (playback) playback.catch(() => {});
+      });
+
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (filter === 'all') url.searchParams.delete('filter');
+        else url.searchParams.set('filter', filter);
+        window.history.replaceState({ workFilter: filter }, '', `${url.pathname}${url.search}${url.hash}`);
+      }
+    };
+
+    workFilters.forEach((button) => {
+      button.addEventListener('click', () => applyWorkFilter(button.dataset.workFilter));
+    });
+
+    const initialFilter = new URLSearchParams(window.location.search).get('filter') || 'all';
+    applyWorkFilter(initialFilter, false);
+  }
+
   const projectRoot = document.querySelector('[data-project-page]');
 
   if (projectRoot) {

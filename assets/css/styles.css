@@ -394,6 +394,73 @@ body.home {
   padding-left: max(var(--pad), 4vw);
 }
 
+.work-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem 2rem;
+  margin-bottom: clamp(1rem, 1.8vw, 1.75rem);
+  padding-right: max(var(--pad), 4vw);
+  padding-left: max(var(--pad), 4vw);
+}
+
+.work-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 clamp(1rem, 1.8vw, 2rem);
+}
+
+.work-filter,
+.work-services-link {
+  position: relative;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: var(--small);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.work-filter::after {
+  position: absolute;
+  right: 0;
+  bottom: .55rem;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+
+.work-filter:hover::after,
+.work-filter:focus-visible::after,
+.work-filter[aria-pressed="true"]::after {
+  transform: scaleX(1);
+}
+
+.work-services-link {
+  flex: none;
+  gap: .35rem;
+}
+
+.work-services-link span {
+  transition: transform .25s var(--ease);
+}
+
+.work-services-link:hover span,
+.work-services-link:focus-visible span {
+  transform: translate(.15rem, -.15rem);
+}
+
 .work-gallery {
   display: grid;
   width: 100%;
@@ -414,6 +481,16 @@ body.home {
 
 .work-row--pair {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.work-row--pair.work-row--filtered-single {
+  grid-template-columns: minmax(0, 50%);
+  justify-content: center;
+}
+
+.work-row[hidden],
+.work-tile[hidden] {
+  display: none;
 }
 
 .work-row--cinema {
@@ -1058,6 +1135,17 @@ body.home {
   .work-page .page-title {
     padding-right: max(var(--pad), env(safe-area-inset-right));
     padding-left: max(var(--pad), env(safe-area-inset-left));
+  }
+
+  .work-toolbar {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-right: max(var(--pad), env(safe-area-inset-right));
+    padding-left: max(var(--pad), env(safe-area-inset-left));
+  }
+
+  .work-filters {
+    gap: 0 1rem;
   }
 
   .work-tile__meta {
