@@ -57,7 +57,7 @@
       fields.forEach(({ field, disabled }) => { field.disabled = disabled; });
       form.removeAttribute('aria-busy');
       button.disabled = received;
-      buttonLabel.textContent = received ? 'Sent' : 'Submit';
+      buttonLabel.textContent = received ? 'Sent' : 'SEND INQUIRY';
     }
   });
 
@@ -67,7 +67,7 @@
     if (received) {
       received = false;
       button.disabled = false;
-      buttonLabel.textContent = 'Submit';
+      buttonLabel.textContent = 'SEND INQUIRY';
     }
     status.hidden = true;
     status.textContent = '';
