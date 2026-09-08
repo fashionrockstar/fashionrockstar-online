@@ -61,14 +61,31 @@
     });
   }
 
+  const workVideos = document.querySelectorAll('[data-work-gallery] video');
+
+  workVideos.forEach((video) => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+
+    const startPlayback = () => {
+      const playback = video.play();
+      if (playback) playback.catch(() => {});
+    };
+
+    if (video.readyState >= 2) startPlayback();
+    else video.addEventListener('canplay', startPlayback, { once: true });
+  });
+
   const projectRoot = document.querySelector('[data-project-page]');
 
   if (projectRoot) {
     const projects = [
-      { title: 'BROKENHEART X FASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
-      { title: 'MICAELA GOMEZ', role: 'PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN', year: '2026' },
-      { title: 'Afterimage', role: 'Beauty', year: '2025' },
-      { title: 'Run / 04', role: 'Photography', year: '2026' },
+      { title: 'BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
+      { title: 'MICAELA GOMES [M.A.D 2026]', role: 'PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN', year: '2026' },
+      { title: 'MANSAWORLD', role: 'Beauty', year: '2025' },
+      { title: 'MZRABELLE: PINK SUMMER', role: 'Photography', year: '2026' },
       { title: 'Nocturne', role: 'Creative Direction', year: '2025' },
       { title: 'Concrete Bloom', role: 'Photography', year: '2026' },
       { title: 'Object Study', role: 'Creative Direction', year: '2025' },

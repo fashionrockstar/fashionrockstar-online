@@ -19,15 +19,44 @@
 
   <main class="page-shell work-page">
     <h1 class="page-title">Work</h1>
-    <section class="work-grid" aria-label="Projects">
-      <a class="work-card work-card--portrait" href="/project/?id=1"><video src="/assets/video/project-01-cover.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><span class="work-card__meta"><b>BROKENHEART X FASHIONROCKSTAR [M.A.D 2026]</b><small>CREATIVE DIRECTOR - LEAD STYLIST · 2026</small></span></a>
-      <a class="work-card work-card--tall" href="/project/?id=2"><img src="/assets/images/projects/project-02/cover.jpg" alt="Micaela Gomez"><span class="work-card__meta"><b>MICAELA GOMEZ</b><small>PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN · 2026</small></span></a>
-      <a class="work-card work-card--square" href="/project/?id=3"><img src="/assets/images/project-03-cover.jpg" alt="Afterimage"><span class="work-card__meta"><b>Afterimage</b><small>Beauty · 2025</small></span></a>
-      <a class="work-card work-card--wide" href="/project/?id=4"><img src="/assets/images/project-04-cover.jpg" alt="Run 04"><span class="work-card__meta"><b>Run / 04</b><small>Photography · 2026</small></span></a>
-      <a class="work-card work-card--landscape" href="/project/?id=5"><img src="/assets/images/project-05-cover.jpg" alt="Nocturne"><span class="work-card__meta"><b>Nocturne</b><small>Creative Direction · 2025</small></span></a>
-      <a class="work-card work-card--portrait-small" href="/project/?id=6"><img src="/assets/images/project-06-cover.jpg" alt="Concrete Bloom"><span class="work-card__meta"><b>Concrete Bloom</b><small>Photography · 2026</small></span></a>
-      <a class="work-card work-card--square-large" href="/project/?id=7"><img src="/assets/images/project-07-cover.jpg" alt="Object Study"><span class="work-card__meta"><b>Object Study</b><small>Creative Direction · 2025</small></span></a>
-      <a class="work-card work-card--end" href="/project/?id=8"><img src="/assets/images/project-08-cover.jpg" alt="Gesture"><span class="work-card__meta"><b>Gesture</b><small>Styling · 2026</small></span></a>
+    <section class="work-gallery" data-work-gallery aria-label="Projects">
+      <div class="work-row work-row--full work-row--cinema">
+        <a class="work-tile work-tile--video" href="/project/?id=1" aria-label="View BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]">
+          <video src="/assets/video/project-01-cover.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
+          <span class="work-tile__meta"><b>BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]</b></span>
+        </a>
+      </div>
+
+      <!--
+        Cargo project 1 rows reserved until the original files are supplied:
+        - full-width slideshow: 2.jpg, FEET1-copy.jpg, final-poster.jpg
+        - paired portrait videos: A4B71AD0-4D9E-4646-BB70-8DA29CBA2864-2.mp4,
+          0F06E6AD-3EE5-4400-930F-2F902A7400DC.mp4
+      -->
+
+      <div class="work-row work-row--full work-row--cinema">
+        <a class="work-tile work-tile--video" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
+          <video src="/assets/video/project-02-editorial.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true"></video>
+          <span class="work-tile__meta"><b>MICAELA GOMES [M.A.D 2026]</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--landscape">
+        <a class="work-tile work-tile--slideshow" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
+          <span class="work-tile__slideshow" aria-hidden="true">
+            <img src="/assets/images/projects/project-02/cover.jpg" alt="" loading="lazy">
+            <img src="/assets/images/projects/project-02/image-03.jpg" alt="" loading="lazy">
+            <img src="/assets/images/projects/project-02/image-01.jpg" alt="" loading="lazy">
+          </span>
+          <span class="work-tile__meta"><b>MICAELA GOMES [M.A.D 2026]</b></span>
+        </a>
+      </div>
+
+      <!--
+        Remaining Cargo rows stay out of the rendered gallery until their original media
+        is available. This avoids substituting the repository's generic project covers for
+        MANSAWORLD or MZRABELLE: PINK SUMMER.
+      -->
     </section>
   </main>
 </body>
