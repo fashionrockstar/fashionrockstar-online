@@ -638,6 +638,8 @@ body.home {
 
 .work-tile__meta {
   position: absolute;
+  z-index: 1;
+  pointer-events: none;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -648,10 +650,11 @@ body.home {
   opacity: 0;
   transform: translateY(.5rem);
   transition: opacity .22s ease, transform .3s var(--ease);
-  pointer-events: none;
 }
 
 .work-tile__meta b {
+  max-width: 100%;
+  overflow-wrap: anywhere;
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.7vw, 4.75rem);
   font-weight: 400;
@@ -1226,6 +1229,19 @@ body.home {
     gap: 0 1rem;
   }
 
+  .work-tile__meta {
+    padding: clamp(.75rem, 3vw, 1rem);
+  }
+
+  .work-tile__meta b {
+    font-size: clamp(1.25rem, 5.5vw, 2rem);
+    line-height: 1.05;
+  }
+
+  .work-row--pair .work-tile__meta b {
+    font-size: clamp(1rem, 4.2vw, 1.5rem);
+  }
+
   .project-head {
     grid-template-columns: 1fr;
     min-height: 19rem;
@@ -1338,15 +1354,11 @@ body.home {
   }
 }
 
-/* Keep every title over its image on phones and touch screens. */
+/* Phone and touch visitors can read project names without hovering or tapping. */
 @media (max-width: 760px), (hover: none), (pointer: coarse) {
   .work-tile__meta {
     opacity: 1;
     transform: none;
-  }
-
-  .work-tile__meta b {
-    font-size: clamp(1.5rem, 4.8vw, 2rem);
   }
 }
 
