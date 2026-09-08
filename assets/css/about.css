@@ -1,0 +1,25 @@
+.about-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  align-items: start;
+}
+.about-page .page-title {
+  margin: 0;
+  font-size: clamp(3.2rem, 6.8vw, 8rem);
+  line-height: .95;
+  overflow-wrap: anywhere;
+}
+.about-copy {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 62ch;
+  padding-top: 1.25rem;
+  border-top: 1px solid currentColor;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.65;
+}
+@media (max-width: 900px) {
+  .about-page { grid-template-columns: minmax(0, 1fr); }
+  .about-page .page-title { max-width: 100%; font-size: clamp(3rem, 11.5vw, 7rem); }
+}

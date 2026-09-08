@@ -1,4 +1,4 @@
-/* Loaded by the homepage and the new About draft only. */
+/* Homepage navigation and typography. */
 .home {
   --home-edge-left: max(var(--pad), env(safe-area-inset-left));
   --home-edge-right: max(var(--pad), env(safe-area-inset-right));
@@ -200,23 +200,6 @@ html.home-nav-open body {
   cursor: default;
 }
 
-.about-draft .page-title {
-  max-width: 12ch;
-  font-size: clamp(3.5rem, 10vw, 10rem);
-  overflow-wrap: anywhere;
-}
-
-.about-draft__status {
-  margin-top: 2.5rem;
-  font-size: .875rem;
-  line-height: 1.6;
-}
-
-.about-draft__status small {
-  display: block;
-  margin-top: .5rem;
-}
-
 @media (max-width: 1000px) {
   .home .hero__brand {
     width: min(92vw, 38rem);
@@ -236,4 +219,17 @@ html.home-nav-open body {
   .home-social-pending {
     font-size: .6875rem;
   }
+}
+
+/* The lower navigation is typography only at every width. */
+.home .home-menu { grid-template-columns: minmax(0, 1fr); }
+.home .home-menu__links a { font-size: clamp(3.5rem, 12vw, 13rem); }
+@media (max-width: 760px) {
+  .home .home-menu__links a { font-size: clamp(3rem, 16.8vw, 5.6rem); }
+}
+
+.home .home-menu-control, .home .home-work-disciplines a,
+.home .home-socials a, .home .home-social-pending {
+  font-size: .875rem;
+  font-weight: 700;
 }

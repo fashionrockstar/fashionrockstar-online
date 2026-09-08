@@ -1,72 +1,48 @@
-.contact-page--minimal {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(3rem, 8vh, 7rem);
-}
-
-.contact-page--minimal .page-title {
-  margin: 0;
+.contact-page--directory .page-title {
+  margin-bottom: clamp(3rem, 7vw, 7rem);
   font-size: clamp(5rem, 17vw, 18rem);
 }
-
-.contact-inquiry {
-  padding-top: 1.5rem;
+.contact-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr);
+  gap: 1rem 3rem;
+  padding: 1.5rem 0;
   border-top: 1px solid currentColor;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  line-height: 1.45;
 }
-
-.contact-inquiry h2 {
-  margin: 0 0 2rem;
+.contact-row h2 {
+  margin: 0;
+  padding-top: .3rem;
   font-size: .875rem;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
-
-.contact-address {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  font-size: clamp(1.4rem, 4.4vw, 5rem);
-  line-height: 1.2;
-  letter-spacing: -.055em;
-  overflow-wrap: anywhere;
-}
-
-.contact-address span {
-  display: inline-block;
-  margin-left: .4em;
-  font-size: .65em;
-  vertical-align: .1em;
-}
-
-.contact-address:hover,
-.contact-address:focus-visible {
+.contact-row a { width: fit-content; max-width: 100%; }
+.contact-row a:hover,
+.contact-row a:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: .15em;
+  text-underline-offset: .2em;
 }
-
-.contact-footnote {
+.contact-address {
+  font-size: clamp(1.25rem, 2.8vw, 3rem);
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+.contact-social-list,
+.contact-service-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5rem 3rem;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid currentColor;
-  font-size: .875rem;
-  line-height: 1.6;
-}
-
-.contact-footnote ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem 1.5rem;
+  gap: .5rem 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+.contact-social-list [aria-disabled="true"] { opacity: .55; }
+.contact-service-list { flex-direction: column; }
 @media (max-width: 760px) {
-  .contact-address { font-size: clamp(1.4rem, 5.6vw, 2.5rem); }
-  .contact-inquiry h2 { margin-bottom: 1.5rem; }
-  .contact-footnote { flex-direction: column; }
+  .contact-row { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
+  .contact-row a { display: inline-block; padding: .35rem 0; }
 }

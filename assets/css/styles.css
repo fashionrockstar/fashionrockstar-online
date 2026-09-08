@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
-  --font-ui: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui: 'Neue Montreal', 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --black: #050505;
   --white: #f6f6f3;
   --pad: clamp(1rem, 2.2vw, 2.25rem);
@@ -10,7 +10,7 @@
   --line: currentColor;
   --ease: cubic-bezier(.22, 1, .36, 1);
   --title: clamp(5.5rem, 13vw, 13.5rem);
-  --small: clamp(.62rem, .65vw, .76rem);
+  --small: .875rem;
 }
 
 *,
@@ -1379,4 +1379,27 @@ body.home {
   .work-tile__slideshow img:first-child {
     opacity: 1;
   }
+}
+
+/* Prefer the requested face when locally available; retain the supplied fallback
+   until the webfont file is provided. */
+@font-face {
+  font-family: 'Neue Montreal';
+  src: local('PP Neue Montreal Bold'), local('PPNeueMontreal-Bold'), local('NeueMontreal-Bold');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+.site-nav a, .menu-toggle, .back-link, .work-filter, .work-services-link,
+.home-menu-control, .home-work-disciplines a, .home-socials a, .home-social-pending {
+  font-weight: 700;
+}
+.home-menu-control, .home-work-disciplines a, .home-socials a, .home-social-pending {
+  font-size: .875rem;
+}
+.project-images[hidden], .work-row[hidden], .work-tile[hidden] { display: none; }
+@media (max-width: 760px) {
+  .site-nav { visibility: hidden; }
+  .site-nav.is-open { visibility: visible; max-height: min(30rem, 80svh); overflow-y: auto; }
+  .project-nav { font-size: .75rem; }
 }

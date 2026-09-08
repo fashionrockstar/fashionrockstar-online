@@ -9,14 +9,17 @@
     toggle.setAttribute('aria-expanded', 'false');
     toggle.textContent = 'Menu';
     siteNav.classList.remove('is-open');
+    siteNav.inert = window.innerWidth <= 760;
   };
 
   if (toggle && siteNav) {
+    closeMenu();
     toggle.addEventListener('click', () => {
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isOpen));
       toggle.textContent = isOpen ? 'Menu' : 'Close';
       siteNav.classList.toggle('is-open', !isOpen);
+      siteNav.inert = isOpen && window.innerWidth <= 760;
     });
 
     siteNav.addEventListener('click', (event) => {
@@ -24,40 +27,14 @@
     });
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeMenu();
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        toggle.focus();
+      }
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 760) closeMenu();
-    });
-  }
-
-  const preview = document.querySelector('#nav-preview');
-  const previewLinks = document.querySelectorAll('[data-preview]');
-
-  if (preview && previewLinks.length) {
-    previewLinks.forEach((link) => {
-      const source = link.dataset.preview;
-      if (!source) return;
-
-      const preload = new Image();
-      preload.src = source;
-
-      const showPreview = () => {
-        if (preview.getAttribute('src') === source) return;
-        preview.classList.add('is-changing');
-
-        const nextImage = new Image();
-        nextImage.onload = () => {
-          preview.src = source;
-          preview.alt = `${link.textContent.trim()} preview`;
-          requestAnimationFrame(() => preview.classList.remove('is-changing'));
-        };
-        nextImage.src = source;
-      };
-
-      link.addEventListener('pointerenter', showPreview);
-      link.addEventListener('focus', showPreview);
+      closeMenu();
     });
   }
 
@@ -132,37 +109,21 @@
 
   if (projectRoot) {
     const projects = [
-      { title: 'BROKENHEARTXFASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
+      { title: 'BROKENHEART X FASHIONROCKSTAR [M.A.D 2026]', role: 'CREATIVE DIRECTOR - LEAD STYLIST', year: '2026' },
       { title: 'MICAELA GOMES [M.A.D 2026]', role: 'PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN', year: '2026' },
       { title: 'MANSAWORLD', role: 'PHOTOGRAPHY - CREATIVE DIRECTION', year: '2026' },
       { title: 'MZRABELLE: PINK SUMMER', role: 'Photography', year: '2026' },
-      { title: 'KAINE BASQUIAT [MONTREALITY X MURAL]', role: 'CREATIVE DIRECTION AND MAKEUP', year: '2026' },
-      { title: 'Concrete Bloom', role: 'Photography', year: '2026' },
-      { title: 'Object Study', role: 'Creative Direction', year: '2025' },
-      { title: 'Gesture', role: 'Styling', year: '2026' }
+      { title: 'KAINE BASQUIAT [MONTREALITY X MURAL]', role: 'CREATIVE DIRECTION AND MAKEUP', year: '2026' }
     ];
 
-    const requestedId = Number.parseInt(new URLSearchParams(window.location.search).get('id') || '1', 10);
+    const requestedId = Number(new URLSearchParams(window.location.search).get('id') || '1');
     const id = Number.isInteger(requestedId) && requestedId >= 1 && requestedId <= projects.length ? requestedId : 1;
     const project = projects[id - 1];
     const previousId = id === 1 ? projects.length : id - 1;
     const nextId = id === projects.length ? 1 : id + 1;
-    const detailIds = [
-      nextId,
-      ((id + 1) % projects.length) + 1,
-      previousId
-    ];
-
     const setText = (selector, value) => {
       const node = document.querySelector(selector);
       if (node) node.textContent = value;
-    };
-
-    const setProjectImage = (selector, imageId) => {
-      const image = document.querySelector(selector);
-      if (!image) return;
-      image.src = `/assets/images/project-${String(imageId).padStart(2, '0')}-cover.jpg`;
-      image.alt = `${project.title} project image`;
     };
 
     const setProjectHero = () => {
@@ -177,14 +138,11 @@
       };
 
       if (projectHeroes[id]) {
-        image.src = projectHeroes[id];
-        image.alt = `${project.title} project image`;
+        const photo = document.createElement('img');
+        photo.src = projectHeroes[id];
+        photo.alt = `${project.title} project image`;
         image.closest('.project-hero')?.classList.add('project-hero--natural');
-        return;
-      }
-
-      if (id !== 1) {
-        setProjectImage('[data-project-image]', id);
+        image.replaceWith(photo);
         return;
       }
 
@@ -195,7 +153,7 @@
       video.defaultMuted = true;
       video.loop = true;
       video.playsInline = true;
-      video.preload = 'auto';
+      video.preload = 'metadata';
       video.setAttribute('muted', '');
       video.setAttribute('aria-label', `${project.title} project video`);
       image.replaceWith(video);
@@ -246,15 +204,13 @@
       };
       const media = projectMedia[id];
 
-      if (!media) {
-        setProjectImage('[data-project-detail-one]', detailIds[0]);
-        setProjectImage('[data-project-detail-two]', detailIds[1]);
-        setProjectImage('[data-project-detail-three]', detailIds[2]);
-        return;
-      }
-
       const gallery = document.querySelector('.project-images');
       if (!gallery) return;
+      gallery.hidden = !media || media.length === 0;
+      if (gallery.hidden) {
+        gallery.replaceChildren();
+        return;
+      }
 
       gallery.classList.add('project-images--natural');
       gallery.replaceChildren();
@@ -272,14 +228,14 @@
           video.defaultMuted = true;
           video.loop = true;
           video.playsInline = true;
-          video.preload = 'auto';
+          video.preload = 'metadata';
           video.setAttribute('muted', '');
           video.setAttribute('aria-label', `${project.title} project video`);
           figure.appendChild(video);
         } else {
           const image = document.createElement('img');
           image.src = item.src;
-          image.alt = `${project.title} project image ${index}`;
+          image.alt = `${project.title} project image ${index + 1}`;
           image.loading = 'lazy';
           figure.appendChild(image);
         }
