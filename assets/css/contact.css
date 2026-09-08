@@ -1,0 +1,72 @@
+.contact-page--minimal {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 8vh, 7rem);
+}
+
+.contact-page--minimal .page-title {
+  margin: 0;
+  font-size: clamp(5rem, 17vw, 18rem);
+}
+
+.contact-inquiry {
+  padding-top: 1.5rem;
+  border-top: 1px solid currentColor;
+}
+
+.contact-inquiry h2 {
+  margin: 0 0 2rem;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.contact-address {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  font-size: clamp(1.4rem, 4.4vw, 5rem);
+  line-height: 1.2;
+  letter-spacing: -.055em;
+  overflow-wrap: anywhere;
+}
+
+.contact-address span {
+  display: inline-block;
+  margin-left: .4em;
+  font-size: .65em;
+  vertical-align: .1em;
+}
+
+.contact-address:hover,
+.contact-address:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .15em;
+}
+
+.contact-footnote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid currentColor;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.contact-footnote ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 760px) {
+  .contact-address { font-size: clamp(1.4rem, 5.6vw, 2.5rem); }
+  .contact-inquiry h2 { margin-bottom: 1.5rem; }
+  .contact-footnote { flex-direction: column; }
+}
