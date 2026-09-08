@@ -119,6 +119,13 @@
       const image = document.querySelector('[data-project-image]');
       if (!image) return;
 
+      if (id === 4) {
+        image.src = '/assets/images/projects/project-04/_DSC9338-copy.jpg';
+        image.alt = `${project.title} project image`;
+        image.closest('.project-hero')?.classList.add('project-hero--natural');
+        return;
+      }
+
       if (id === 2) {
         image.src = '/assets/images/projects/project-02/cover.jpg';
         image.alt = `${project.title} project image`;
@@ -148,7 +155,7 @@
     };
 
     const setProjectDetails = () => {
-      if (id !== 2) {
+      if (id !== 2 && id !== 4) {
         setProjectImage('[data-project-detail-one]', detailIds[0]);
         setProjectImage('[data-project-detail-two]', detailIds[1]);
         setProjectImage('[data-project-detail-three]', detailIds[2]);
@@ -158,13 +165,19 @@
       const gallery = document.querySelector('.project-images');
       if (!gallery) return;
 
-      const media = [
-        { type: 'video', src: '/assets/video/project-02-editorial.mp4' },
-        { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
-        { type: 'image', src: '/assets/images/projects/project-02/image-02.jpg' },
-        { type: 'image', src: '/assets/images/projects/project-02/image-03.jpg' },
-        { type: 'image', src: '/assets/images/projects/project-02/image-04.jpg' }
-      ];
+      const media = id === 2
+        ? [
+            { type: 'video', src: '/assets/video/project-02-editorial.mp4', wide: true },
+            { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
+            { type: 'image', src: '/assets/images/projects/project-02/image-02.jpg' },
+            { type: 'image', src: '/assets/images/projects/project-02/image-03.jpg' },
+            { type: 'image', src: '/assets/images/projects/project-02/image-04.jpg' }
+          ]
+        : [
+            { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
+            { type: 'video', src: '/assets/video/projects/project-04/Video-by-fashionrockstar.online.mp4' },
+            { type: 'image', src: '/assets/images/projects/project-04/second-face-close-up-copy.jpg', wide: true }
+          ];
 
       gallery.classList.add('project-images--natural');
       gallery.replaceChildren();
@@ -172,7 +185,7 @@
       media.forEach((item, index) => {
         const figure = document.createElement('figure');
         let video;
-        if (index === 0) figure.className = 'project-image project-image--wide';
+        if (item.wide) figure.className = 'project-image project-image--wide';
 
         if (item.type === 'video') {
           video = document.createElement('video');
