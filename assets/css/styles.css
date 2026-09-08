@@ -383,15 +383,22 @@ body.home {
 }
 
 /* Work */
+.page-shell.work-page {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .work-page .page-title {
   margin-bottom: clamp(1.5rem, 3vw, 3rem);
+  padding-right: max(var(--pad), 4vw);
+  padding-left: max(var(--pad), 4vw);
 }
 
 .work-gallery {
   display: grid;
   width: 100%;
-  max-width: 112rem;
-  margin-inline: auto;
+  max-width: none;
+  margin: 0;
   gap: 2px;
 }
 
@@ -1026,10 +1033,14 @@ body.home {
   }
 
   .work-gallery {
-    width: auto;
+    width: 100%;
     max-width: none;
-    margin-right: calc(-1 * var(--pad));
-    margin-left: calc(-1 * var(--pad));
+    margin: 0;
+  }
+
+  .work-page .page-title {
+    padding-right: max(var(--pad), env(safe-area-inset-right));
+    padding-left: max(var(--pad), env(safe-area-inset-left));
   }
 
   .work-tile__meta {
