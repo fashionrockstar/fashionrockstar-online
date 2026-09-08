@@ -13,9 +13,18 @@ Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify s
 - Booking: `book/index.html` and `assets/js/booking.js`. Preserve the Netlify form name and field names.
 - Magazine: `issue-01/index.html`.
 
+## Confirmed social profiles
+
+Confirmed by Zavyer on September 8, 2026. Use these exact destinations on Home and Contact.
+
+| Profile | URL |
+| --- | --- |
+| Instagram | https://www.instagram.com/fashionrockstar.online/ |
+| LinkedIn | https://www.linkedin.com/in/zavyer-v%C3%A9giard-068680172/ |
+| TikTok | https://www.tiktok.com/@fashionrockstar.online |
+
 ## Remaining supplied content
 
-- Confirmed Instagram, LinkedIn and TikTok profile URLs. Replace the disabled social labels on Home and Contact with links; do not guess usernames.
 - Original logo source for higher-resolution export. Existing logo assets remain in use.
 - Neue Montreal Bold webfont. Interface labels use weight 700 with Inter as the current web fallback; a local installation of the requested face is supported. Add the provided webfont to the font-face rule once available.
 - Additional Cargo project originals. The existing five real projects work; sample projects and stock detail galleries are excluded from navigation.
