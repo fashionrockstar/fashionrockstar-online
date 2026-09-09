@@ -1,19 +1,16 @@
-/* CONTACT only. Keep the shared navigation, artwork and other pages intact. */
+/* CONTACT only. Shared styles, navigation behavior and original assets stay shared. */
 body.contact-editorial {
-  --contact-paper: #f6f6f3;
+  --contact-header-height: 3.75rem;
+  --contact-paper: #fff;
   --contact-ink: #000;
-  --contact-line: #51514f;
-  --contact-edge: 9.5%;
-  --contact-gutter: clamp(1.25rem, 3.5vw, 4rem);
-  min-height: 100svh;
-  background: var(--contact-paper);
-  color: var(--contact-ink);
+  background: var(--contact-ink);
+  color: var(--contact-paper);
 }
 
 .contact-editorial .site-header {
   --page-bg: #000;
   --page-fg: #fff;
-  min-height: 3.75rem;
+  min-height: var(--contact-header-height);
   padding-block: .5rem;
   background: #000;
   color: #fff;
@@ -24,7 +21,7 @@ body.contact-editorial {
   height: 2.75rem;
 }
 
-.contact-skip {
+.contact-editorial .contact-skip {
   position: fixed;
   z-index: 100;
   top: .5rem;
@@ -35,189 +32,160 @@ body.contact-editorial {
   transform: translateY(-200%);
 }
 
-.contact-skip:focus { transform: none; }
+.contact-editorial .contact-skip:focus { transform: none; }
 
 .contact-editorial .contact-page {
-  position: relative;
-  min-width: 0;
-  isolation: isolate;
-}
-
-/* The printed edge sits behind the first C and stops at the footer. */
-.contact-editorial .contact-page::before {
-  position: absolute;
-  z-index: -1;
-  inset: 0 auto 0 0;
-  width: var(--contact-edge);
-  border-right: 1px solid var(--contact-line);
-  background-image: radial-gradient(circle, #000 1.1px, transparent 1.4px),
-    radial-gradient(circle, #000 1.1px, transparent 1.4px);
-  background-size: 7px 7px;
-  background-position: 0 0, 3.5px 3.5px;
-  content: '';
-  pointer-events: none;
-}
-
-.contact-directory {
   display: grid;
-  grid-template-columns: minmax(0, .9fr) repeat(2, minmax(0, 1.2fr));
-  margin-left: var(--contact-edge);
+  grid-template-columns: minmax(0, 42fr) minmax(0, 58fr);
+  min-height: calc(100svh - var(--contact-header-height));
 }
 
-.contact-entry {
+.contact-editorial .contact-identity {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
-  padding: clamp(1.5rem, 2.4vw, 2.5rem) var(--contact-gutter) .25rem;
+  gap: 1.25rem;
+  padding: clamp(2.5rem, 7svh, 6rem) clamp(1.25rem, 2.4vw, 2.75rem) 1.75rem;
+  background: var(--contact-paper);
+  color: var(--contact-ink);
 }
 
-.contact-entry:first-child {
-  padding-inline: clamp(1.25rem, 2.5vw, 2.75rem);
-}
-
-.contact-entry + .contact-entry {
-  border-left: 1px solid var(--contact-line);
-}
-
-.contact-entry h2,
-.contact-booking h2 {
-  margin: 0 0 .75rem;
-  font-size: .875rem;
-  font-weight: 500;
-  line-height: 1.3;
-  letter-spacing: 0;
-}
-
-.contact-entry h2 {
-  padding-bottom: .375rem;
-  border-bottom: 1px solid var(--contact-line);
-}
-
-.contact-entry a,
-.contact-entry p {
-  font-size: clamp(1.375rem, 2.2vw, 2.25rem);
-  font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -.04em;
-}
-
-.contact-entry .contact-email-link {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  min-height: 44px;
-  padding-block: .25rem;
-  font-size: clamp(1.125rem, 2vw, 2rem);
-  overflow-wrap: anywhere;
-}
-
-.contact-location-line { display: block; }
-
-.contact-social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-social-list a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 32px;
-  max-width: 100%;
-  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
-  letter-spacing: -.035em;
-  text-transform: uppercase;
-}
-
-.contact-wordmark {
+.contact-editorial .contact-wordmark {
   position: relative;
-  margin: 0 3.1% 0 2.7%;
+  flex: 1;
+  min-height: 26rem;
+  margin: 0;
   line-height: 0;
-  pointer-events: none;
-  user-select: none;
 }
 
-.contact-wordmark svg {
+.contact-editorial .contact-wordmark svg {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: 51vw;
-  pointer-events: none;
+  height: 100%;
 }
 
-.contact-wordmark text {
-  fill: #000;
+.contact-editorial .contact-wordmark text {
+  fill: currentColor;
   stroke: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-display);
   font-size: 1000px;
   font-weight: 700;
   font-kerning: none;
   letter-spacing: 0;
 }
 
-.contact-booking {
-  display: grid;
-  grid-template-columns: auto auto minmax(0, 1fr);
-  align-items: center;
-  padding-left: var(--contact-edge);
-  border-block: 1px solid var(--contact-line);
+.contact-editorial .contact-brand {
+  flex: none;
+  width: 68%;
+  max-width: 23rem;
+  height: auto;
 }
 
-.contact-booking h2 {
-  margin: 0;
-  padding: .5rem clamp(1rem, 3vw, 3rem);
+.contact-editorial .contact-panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 0;
+  padding: clamp(1.75rem, 3.2vw, 3.5rem) clamp(1.5rem, 4vw, 4.5rem) 1.75rem;
+  background: var(--contact-ink);
+  color: var(--contact-paper);
+}
+
+.contact-editorial .contact-location {
+  justify-self: end;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.contact-editorial .contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-block: 4rem;
   text-align: center;
 }
 
-.contact-booking-link {
-  display: flex;
+.contact-editorial .contact-inquiries {
+  max-width: 100%;
+  font-size: clamp(2.625rem, 5.8vw, 6.5rem);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+
+.contact-editorial .contact-email-link {
+  display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding: .375rem clamp(1rem, 1.8vw, 2rem);
-  border-left: 1px solid var(--contact-line);
-  font-size: clamp(1.125rem, 1.7vw, 1.75rem);
-  line-height: 1.15;
-  letter-spacing: -.035em;
+  font-size: clamp(1rem, 1.95vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.025em;
 }
 
-.contact-booking p {
-  align-self: stretch;
+.contact-editorial .contact-social-list {
   display: flex;
-  align-items: center;
-  min-width: 0;
-  padding: .625rem clamp(1rem, 3vw, 3rem);
-  border-left: 1px solid var(--contact-line);
-  font-size: clamp(1rem, 1.6vw, 1.625rem);
-  line-height: 1.25;
-  letter-spacing: -.035em;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(.5rem, 1vw, 1rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.contact-footer {
+.contact-editorial .contact-social-list a {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+}
+
+.contact-editorial .contact-social-list svg {
+  display: block;
+  width: clamp(1.5rem, 2.4vw, 2rem);
+  height: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.contact-editorial .contact-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: .5rem 1.5rem;
-  padding: .375rem max(2.7%, env(safe-area-inset-right)) max(1.5rem, env(safe-area-inset-bottom)) max(2.7%, env(safe-area-inset-left));
-  background: var(--contact-paper);
 }
 
-.contact-footer a {
+.contact-editorial .contact-footer a {
   display: inline-flex;
-  min-height: 44px;
   align-items: center;
+  min-height: 44px;
   font-size: .875rem;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
-.contact-social-list a,
-.contact-booking-link,
-.contact-footer a {
+.contact-editorial .contact-email-link,
+.contact-editorial .contact-footer a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .2em;
 }
 
-.contact-editorial .contact-page a:hover {
+.contact-editorial .contact-inquiries:hover,
+.contact-editorial .contact-email-link:hover,
+.contact-editorial .contact-footer a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: .2em;
+}
+
+.contact-editorial .contact-social-list a:hover {
+  opacity: .7;
 }
 
 .contact-editorial a:focus-visible,
@@ -230,113 +198,57 @@ body.contact-editorial {
   .contact-editorial .site-nav { gap: .875rem; }
   .contact-editorial .site-nav a { font-size: .75rem; letter-spacing: .025em; }
   .contact-editorial .site-logo { width: 10rem; }
-  .contact-entry { padding-inline: 1.5rem; }
-  .contact-entry:first-child { padding-inline: 1.25rem; }
-  .contact-entry a, .contact-entry p { font-size: 1.375rem; }
-  .contact-booking h2 { padding-inline: 1rem; }
-  .contact-booking-link, .contact-booking p { padding-inline: 1rem; }
 }
 
 @media (max-width: 760px) {
-  body.contact-editorial {
-    --contact-edge: .75rem;
-    --contact-gutter: 1.25rem;
+  body.contact-editorial { --contact-header-height: 4rem; }
+
+  .contact-editorial .site-header { padding-block: .625rem; }
+
+  .contact-editorial .site-logo {
+    width: 10.5rem;
+    max-width: 58vw;
   }
 
-  .contact-editorial .site-header {
-    min-height: 4rem;
-    padding-block: .625rem;
-  }
-
-  .contact-editorial .site-logo { width: 10.5rem; max-width: 58vw; }
-
-  .contact-directory {
+  .contact-editorial .contact-page {
     grid-template-columns: minmax(0, 1fr);
-    padding: 1.25rem max(var(--contact-gutter), env(safe-area-inset-right)) 0 max(var(--contact-gutter), env(safe-area-inset-left));
-    gap: 1.125rem;
   }
 
-  .contact-entry, .contact-entry:first-child { padding: 0; }
-  .contact-entry + .contact-entry { border-left: 0; }
-  .contact-entry h2 { margin-bottom: .5rem; }
-  .contact-entry a, .contact-entry p { font-size: clamp(1.125rem, 5.5vw, 1.75rem); line-height: 1.2; }
-  .contact-entry .contact-email-link { padding-block: .25rem; font-size: clamp(1.125rem, 5.5vw, 1.5rem); letter-spacing: -.035em; }
-  .contact-location-line { display: inline; }
-
-  .contact-social-list { display: flex; flex-wrap: wrap; column-gap: 1.25rem; }
-  .contact-social-list a { min-height: 44px; font-size: 1rem; letter-spacing: -.02em; }
-
-  .contact-wordmark { margin: 1.25rem 1rem .75rem calc(var(--contact-edge) + .5rem); }
-  .contact-wordmark svg { height: 44vw; }
-
-  .contact-booking {
-    grid-template-columns: minmax(0, 1fr);
-    gap: .25rem;
-    padding: 1rem var(--contact-gutter) 1rem calc(var(--contact-edge) + var(--contact-gutter));
-    background: var(--contact-paper);
+  .contact-editorial .contact-identity {
+    gap: 1rem;
+    padding: 1.5rem max(1.25rem, env(safe-area-inset-right)) 1.25rem max(1.25rem, env(safe-area-inset-left));
   }
 
-  .contact-booking h2 { padding: 0; text-align: left; }
-  .contact-booking-link { width: fit-content; border: 0; padding: .375rem 0; font-size: 1.25rem; }
-  .contact-booking p { display: block; padding: 0; border: 0; font-size: 1rem; line-height: 1.45; max-width: 38ch; }
-
-  .contact-footer {
-    padding-inline: var(--contact-gutter);
-    padding-left: calc(var(--contact-edge) + var(--contact-gutter));
-    padding-top: .5rem;
-    gap: .25rem 1rem;
+  .contact-editorial .contact-wordmark {
+    flex: none;
+    height: clamp(9rem, 48vw, 14rem);
+    min-height: 0;
   }
 
-  .contact-footer a { font-size: .75rem; }
-}
-
-/* Motion belongs to Contact; the underlying layout stays visible without JS. */
-@media (prefers-reduced-motion: no-preference) {
-  .contact-entry:nth-child(2) { --contact-delay: 90ms; }
-  .contact-entry:nth-child(3) { --contact-delay: 180ms; }
-
-  .contact-editorial .contact-reveal {
-    animation: contact-details-in 700ms var(--ease) var(--contact-delay, 0ms) both;
+  .contact-editorial .contact-brand {
+    width: 68%;
+    max-width: 16rem;
   }
 
-  .contact-editorial .contact-wordmark.contact-reveal {
-    animation: contact-type-in 1150ms var(--ease) 120ms both;
-    transform-origin: 50% 100%;
+  .contact-editorial .contact-panel {
+    min-height: 29rem;
+    padding: 1.5rem max(1.5rem, env(safe-area-inset-right)) max(1.5rem, env(safe-area-inset-bottom)) max(1.5rem, env(safe-area-inset-left));
   }
 
-  .contact-editorial .contact-reveal:focus-within {
-    animation: none;
+  .contact-editorial .contact-actions {
+    gap: 1.25rem;
+    padding-block: 3rem;
   }
 
-  .contact-editorial .contact-page a {
-    transition: text-underline-offset 300ms var(--ease),
-      text-decoration-thickness 200ms ease, transform 300ms var(--ease);
+  .contact-editorial .contact-inquiries {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
   }
 
-  .contact-editorial .contact-page a:focus-visible {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: .35em;
+  .contact-editorial .contact-email-link { font-size: 1.125rem; }
+
+  .contact-editorial .contact-footer {
+    gap: .5rem 1rem;
   }
 
-  @media (hover: hover) and (pointer: fine) {
-    .contact-editorial .contact-page a:hover {
-      text-underline-offset: .35em;
-    }
-
-    .contact-editorial .contact-social-list a:hover,
-    .contact-editorial .contact-footer a:hover {
-      transform: translateX(.25rem);
-    }
-  }
-}
-
-@keyframes contact-details-in {
-  from { opacity: 0; transform: translateY(1.125rem); }
-  to { opacity: 1; transform: none; }
-}
-
-@keyframes contact-type-in {
-  from { opacity: 0; clip-path: inset(100% 0 0); transform: translateY(2%) scaleY(.82); }
-  to { opacity: 1; clip-path: inset(0); transform: none; }
+  .contact-editorial .contact-footer a { font-size: .75rem; }
 }
