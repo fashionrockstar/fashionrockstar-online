@@ -62,9 +62,7 @@
 .home-menu-control:hover,
 .home-menu-control:focus-visible,
 .home-nav-panel a:hover,
-.home-nav-panel a:focus-visible,
-.home-socials a:hover,
-.home-socials a:focus-visible {
+.home-nav-panel a:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .3em;
@@ -210,6 +208,30 @@ html.home-nav-open body {
 .home-social-pending {
   opacity: .55;
   cursor: default;
+}
+
+/* Brand marks inherit the homepage's animated black-and-white palette. */
+.home-socials a {
+  width: 44px;
+  justify-content: center;
+  transition: opacity .2s ease;
+}
+
+.home-social-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  fill: currentColor;
+}
+
+.home-socials a:hover {
+  opacity: .6;
+}
+
+.home-socials a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 @media (max-width: 1000px) {
