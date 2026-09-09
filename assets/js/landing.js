@@ -8,6 +8,23 @@
   const close = panel.querySelector('[data-home-menu-close]');
   const submenuToggle = panel.querySelector('.home-submenu-control');
   const submenu = panel.querySelector('#home-work-disciplines');
+  const exploreLinks = document.querySelectorAll('.home-menu__links a[href]');
+
+  exploreLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const isTouchNavigation = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+      const isModifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+
+      if (!isTouchNavigation || isModifiedClick || event.button !== 0 || link.classList.contains('is-activating')) return;
+
+      event.preventDefault();
+      link.classList.add('is-activating');
+
+      window.setTimeout(() => {
+        window.location.assign(link.href);
+      }, 260);
+    });
+  });
 
   const setSubmenu = (expanded) => {
     submenuToggle.setAttribute('aria-expanded', String(expanded));
