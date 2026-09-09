@@ -70,6 +70,18 @@
   text-underline-offset: .3em;
 }
 
+/* Touch taps should not draw the keyboard focus rectangle around MENU/CLOSE. */
+@media (hover: none), (pointer: coarse) {
+  .home-menu-control {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .home-menu-control:focus,
+  .home-menu-control:focus-visible {
+    outline: none;
+  }
+}
+
 html.home-nav-open,
 html.home-nav-open body {
   overflow: hidden;
@@ -232,4 +244,13 @@ html.home-nav-open body {
 .home .home-socials a, .home .home-social-pending {
   font-size: .875rem;
   font-weight: 700;
+}
+
+/* The touch script holds this state briefly so Braille is visible before navigation. */
+.home-menu__links a.is-activating .home-menu__english {
+  opacity: 0;
+}
+
+.home-menu__links a.is-activating .home-menu__label::after {
+  opacity: 1;
 }
