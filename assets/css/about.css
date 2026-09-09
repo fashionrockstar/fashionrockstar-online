@@ -1,25 +1,98 @@
 .about-page {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(2rem, 6vw, 7rem);
-  align-items: start;
+  grid-template-columns: minmax(0, 44%) minmax(0, 56%);
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
 }
-.about-page .page-title {
+
+.about-identity {
+  display: flex;
+  min-width: 0;
+  min-height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: clamp(2.25rem, 5vw, 5.5rem) max(var(--pad), 4vw) clamp(2.5rem, 5vw, 5rem);
+  background: var(--white);
+  color: var(--black);
+}
+
+.about-title {
+  width: max-content;
   margin: 0;
-  font-size: clamp(3.2rem, 6.8vw, 8rem);
-  line-height: .95;
-  overflow-wrap: anywhere;
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 16vw, 17rem);
+  font-weight: 400;
+  line-height: .68;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  transform: scaleY(1.48);
+  transform-origin: top left;
 }
+
+.about-logo {
+  width: min(100%, 29rem);
+  height: auto;
+  object-fit: contain;
+}
+
 .about-copy {
   display: grid;
-  gap: 1.5rem;
-  max-width: 62ch;
-  padding-top: 1.25rem;
-  border-top: 1px solid currentColor;
-  font-size: clamp(1rem, 1.3vw, 1.2rem);
-  line-height: 1.65;
+  min-width: 0;
+  align-content: start;
+  gap: clamp(1.5rem, 2.4vw, 2.5rem);
+  padding: clamp(2.5rem, 5vw, 5.5rem) max(var(--pad), 5vw) clamp(4rem, 7vw, 7rem);
+  background: var(--black);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+  line-height: 1.55;
 }
+
+.about-copy p {
+  max-width: 64ch;
+}
+
+.about-copy__lead {
+  max-width: 44ch !important;
+  margin-bottom: clamp(.5rem, 1.2vw, 1.25rem);
+  font-size: clamp(1.55rem, 2.4vw, 2.65rem);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -.025em;
+}
+
 @media (max-width: 900px) {
-  .about-page { grid-template-columns: minmax(0, 1fr); }
-  .about-page .page-title { max-width: 100%; font-size: clamp(3rem, 11.5vw, 7rem); }
+  .about-page {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-identity {
+    min-height: clamp(20rem, 48svh, 30rem);
+    padding-top: clamp(2rem, 8vw, 3.5rem);
+    padding-bottom: clamp(1.75rem, 7vw, 3rem);
+  }
+
+  .about-title {
+    font-size: clamp(7rem, 34vw, 13rem);
+    line-height: .66;
+    transform: scaleY(1.28);
+  }
+
+  .about-logo {
+    width: min(78vw, 25rem);
+  }
+
+  .about-copy {
+    gap: 1.5rem;
+    padding-top: clamp(2.5rem, 9vw, 4.5rem);
+    padding-bottom: max(4rem, env(safe-area-inset-bottom));
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .about-copy__lead {
+    font-size: clamp(1.45rem, 6.2vw, 2rem);
+    line-height: 1.17;
+  }
 }
