@@ -1,58 +1,271 @@
-.contact-page--directory .page-title {
-  margin-bottom: clamp(2.5rem, 6vw, 6rem);
-  font-size: clamp(3.5rem, 8vw, 8rem);
+/* CONTACT only: an ink-black masthead, an off-white directory and live type. */
+body.contact-editorial {
+  --contact-paper: #f6f6f3;
+  --contact-ink: #000;
+  --contact-edge: clamp(.625rem, 1.4vw, 1.25rem);
+  --contact-gutter: clamp(1.125rem, 2.6vw, 2.75rem);
+  background: var(--contact-paper);
+  color: var(--contact-ink);
+}
+
+.contact-editorial .site-header {
+  --page-bg: #000;
+  --page-fg: #fff;
+  min-height: 5.5rem;
+  padding-block: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.contact-editorial .site-logo {
+  width: clamp(9rem, 16vw, 14rem);
+  height: 3rem;
+}
+
+.contact-skip {
+  position: fixed;
+  z-index: 100;
+  top: .5rem;
+  left: .5rem;
+  padding: .875rem 1rem;
+  background: #fff;
+  color: #000;
+  transform: translateY(-200%);
+}
+
+.contact-skip:focus {
+  transform: none;
+}
+
+.contact-editorial .contact-page {
+  position: relative;
+  min-width: 0;
+  min-height: calc(100svh - 5.5rem);
+  padding: 0 max(var(--contact-gutter), env(safe-area-inset-right)) 0 calc(var(--contact-edge) + max(var(--contact-gutter), env(safe-area-inset-left)));
+  isolation: isolate;
+}
+
+.contact-editorial .contact-page::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--contact-edge);
+  border-right: 1px solid var(--contact-ink);
+  background-image: radial-gradient(circle, #000 .65px, transparent .85px);
+  background-size: 3px 3px;
+  content: '';
+  pointer-events: none;
 }
 
 .contact-directory {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 3rem clamp(2rem, 8vw, 8rem);
-  font-size: clamp(1rem, 1.5vw, 1.375rem);
-  line-height: 1.5;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, .7fr);
+  gap: 1.25rem clamp(1.5rem, 4vw, 4rem);
+  padding: 1.875rem 0 1.5rem;
+  border-bottom: 1px solid var(--contact-ink);
 }
 
-.contact-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
+.contact-entry {
   min-width: 0;
 }
 
-.contact-directory a {
-  display: inline-block;
+.contact-entry h2,
+.contact-booking h2 {
+  margin: 0 0 .625rem;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .055em;
+}
+
+.contact-entry a,
+.contact-entry p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-entry a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
   max-width: 100%;
-  padding-block: .375rem;
 }
 
-.contact-directory a:hover,
-.contact-directory a:focus-visible {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .2em;
-}
-
-.contact-address {
-  font-size: clamp(1.25rem, 2.2vw, 2rem);
-  letter-spacing: -.035em;
+.contact-entry .contact-email-link {
+  display: block;
+  width: fit-content;
+  padding-block: .625rem;
   overflow-wrap: anywhere;
 }
 
-.contact-project-link {
-  font-size: .875rem;
-  font-weight: 700;
-  letter-spacing: .04em;
+.contact-entry p {
+  padding-block: .625rem;
 }
 
 .contact-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.contact-column p { margin: 0; }
+.contact-wordmark {
+  margin: 1.25rem 0 1.5rem;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.contact-wordmark svg {
+  display: block;
+  width: 100%;
+  height: clamp(18rem, 40vw, 42rem);
+}
+
+.contact-wordmark text {
+  fill: #000;
+  stroke: none;
+  font-family: var(--font-display);
+  font-size: 500px;
+  font-weight: 400;
+  font-kerning: none;
+  letter-spacing: 0;
+}
+
+.contact-booking {
+  display: grid;
+  grid-template-columns: minmax(0, .45fr) minmax(0, 1fr) minmax(0, 1.55fr);
+  align-items: center;
+  gap: .5rem 1.5rem;
+  padding: .875rem 0;
+  border-top: 1px solid var(--contact-ink);
+  border-bottom: 1px solid var(--contact-ink);
+}
+
+.contact-booking h2 {
+  margin: 0;
+}
+
+.contact-booking-link {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contact-booking p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+  padding: 1.5rem 0 max(1.5rem, env(safe-area-inset-bottom));
+}
+
+.contact-footer a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.contact-editorial .contact-page a:hover,
+.contact-editorial .contact-page a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .25em;
+}
+
+.contact-editorial a:focus-visible,
+.contact-editorial button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+  .contact-directory {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, .8fr);
+    gap: 1.25rem;
+  }
+
+  .contact-social-list {
+    display: block;
+  }
+
+  .contact-booking {
+    grid-template-columns: minmax(0, .55fr) minmax(0, 1fr);
+  }
+
+  .contact-booking p {
+    grid-column: 2;
+  }
+}
 
 @media (max-width: 760px) {
-  .contact-directory { grid-template-columns: minmax(0, 1fr); }
-  .contact-directory a { padding-block: .625rem; }
+  .contact-editorial .site-header {
+    min-height: 4.75rem;
+    padding-block: .875rem;
+  }
+
+  .contact-editorial .site-logo {
+    width: 10.5rem;
+    max-width: 58vw;
+  }
+
+  .contact-editorial .contact-page {
+    min-height: calc(100svh - 4.75rem);
+  }
+
+  .contact-directory {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.125rem;
+    padding: 1.5rem 0 1.125rem;
+  }
+
+  .contact-entry + .contact-entry {
+    padding-top: 1.125rem;
+    border-top: 1px solid #c8c8c4;
+  }
+
+  .contact-entry h2 {
+    margin-bottom: .25rem;
+  }
+
+  .contact-social-list {
+    display: flex;
+    gap: 0 1.5rem;
+  }
+
+  .contact-wordmark {
+    margin-block: 1rem;
+  }
+
+  .contact-wordmark svg {
+    height: clamp(8rem, 42vw, 19rem);
+  }
+
+  .contact-booking {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .375rem;
+    padding-block: 1.125rem;
+  }
+
+  .contact-booking p {
+    grid-column: 1;
+    max-width: 36ch;
+  }
+
+  .contact-footer {
+    padding-top: 1rem;
+  }
 }

@@ -3,37 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Contact FASHIONROCKSTAR.ONLINE in Montreal, Canada.">
+  <meta name="description" content="Contact FASHIONROCKSTAR.ONLINE for creative direction, photography, styling and beauty in Montreal, Canada.">
   <title>Contact — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/contact.css">
   <script src="/assets/js/main.js" defer></script>
 </head>
-<body class="theme-light">
+<body class="theme-light contact-editorial">
+  <a class="contact-skip" href="#contact-content">Skip to contact information</a>
   <header class="site-header">
-    <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-black.png" alt=""></a>
+    <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a><a href="/services/">Services</a><a href="/issue-01/">Issue 01</a><a href="/book/">INQUIRIES</a><a href="/about/">PROFILE</a><a class="is-active" aria-current="page" href="/contact/">Contact</a>
     </nav>
   </header>
 
-  <main class="page-shell contact-page contact-page--directory">
-    <h1 class="page-title">Contact</h1>
+  <main class="contact-page" id="contact-content" tabindex="-1">
     <div class="contact-directory">
-      <div class="contact-column contact-column--inquiries">
-        <a class="contact-address" href="mailto:book@fashionrockstar.online">book@<wbr>fashionrockstar.online</a>
-        <a class="contact-project-link" href="/book/">PROJECT INQUIRIES</a>
-      </div>
-      <div class="contact-column contact-column--social">
-        <ul class="contact-social-list" aria-label="Social profiles">
+      <section class="contact-entry" aria-labelledby="contact-general">
+        <h2 id="contact-general">GENERAL INQUIRIES</h2>
+        <a class="contact-email-link" href="mailto:book@fashionrockstar.online">book@<wbr>fashionrockstar.online</a>
+      </section>
+      <section class="contact-entry" aria-labelledby="contact-social">
+        <h2 id="contact-social">SOCIAL</h2>
+        <ul class="contact-social-list">
           <li><a href="https://www.instagram.com/fashionrockstar.online/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">Instagram</a></li>
           <li><a href="https://www.linkedin.com/in/zavyer-v%C3%A9giard-068680172/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">LinkedIn</a></li>
           <li><a href="https://www.tiktok.com/@fashionrockstar.online" target="_blank" rel="noopener noreferrer" aria-label="TikTok (opens in a new tab)">TikTok</a></li>
         </ul>
+      </section>
+      <section class="contact-entry" aria-labelledby="contact-location">
+        <h2 id="contact-location">BASED IN</h2>
         <p>Montreal, Canada</p>
-      </div>
+      </section>
     </div>
+
+    <h1 class="contact-wordmark">
+      <span class="sr-only">CONTACT</span>
+      <!-- One live text run gives repeated letters identical treatment at every size. -->
+      <svg viewBox="0 0 1000 390" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <text x="0" y="365" textLength="1000" lengthAdjust="spacingAndGlyphs">CONTACT</text>
+      </svg>
+    </h1>
+
+    <section class="contact-booking" aria-labelledby="contact-booking-title">
+      <h2 id="contact-booking-title">BOOKING</h2>
+      <a class="contact-booking-link" href="/book/">PROJECT INQUIRIES</a>
+      <p>Creative direction, photography, styling and beauty.</p>
+    </section>
+
+    <footer class="contact-footer">
+      <a href="/work/">SELECTED WORK</a>
+      <a href="/services/">VIEW SERVICES</a>
+    </footer>
   </main>
 </body>
 </html>
