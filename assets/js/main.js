@@ -164,6 +164,11 @@
 
     const setProjectDetails = () => {
       const projectMedia = {
+        1: [
+          { type: 'image', src: '/assets/images/projects/project-01-brokenheart/dsc6257-2.jpg', wide: true, width: 2400, height: 1600, alt: 'BROKENHEART x FASHIONROCKSTAR campaign portrait with black fabric covering the model’s face.' },
+          { type: 'image', src: '/assets/images/projects/project-01-brokenheart/1111.jpg', wide: true, width: 2400, height: 1600, alt: 'BROKENHEART x FASHIONROCKSTAR campaign: a model in a black outfit seated on a transparent chair.' },
+          { type: 'image', src: '/assets/images/projects/project-01-brokenheart/feet1.jpg', wide: true, width: 2400, height: 1600, alt: 'BROKENHEART x FASHIONROCKSTAR event artwork featuring black heels and clothing, with August 22, 9:30 PM, Place des Arts and M.A.D typography.' }
+        ],
         2: [
           { type: 'video', src: '/assets/video/project-02-editorial.mp4', wide: true },
           { type: 'image', src: '/assets/images/projects/project-02/image-01.jpg' },
@@ -235,7 +240,11 @@
         } else {
           const image = document.createElement('img');
           image.src = item.src;
-          image.alt = `${project.title} project image ${index + 1}`;
+          image.alt = item.alt || `${project.title} project image ${index + 1}`;
+          if (item.width && item.height) {
+            image.width = item.width;
+            image.height = item.height;
+          }
           image.loading = 'lazy';
           figure.appendChild(image);
         }
