@@ -11,18 +11,56 @@
 }
 
 .home .hero__brand {
-  width: min(72vw, 72rem);
-  max-width: 100%;
-  overflow: visible;
-}
-
-.home .hero__brand img {
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  max-width: 100%;
+  max-width: none;
+  aspect-ratio: auto;
+  pointer-events: none;
+}
+
+.home .hero__video {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  transform: none;
+  opacity: 0;
+}
+
+.home .hero__brand .hero__fallback {
+  top: 50%;
+  left: 50%;
+  width: min(72vw, 72rem);
+  max-width: calc(100% - 2 * var(--pad));
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.hero__brand.is-playing .hero__video { opacity: 1; }
+.hero__brand.is-playing .hero__fallback { visibility: hidden; }
+
+.hero-video-control {
+  position: absolute;
+  right: var(--home-edge-right);
+  bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1rem));
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.hero-video-control[hidden] { display: none; }
+.hero-video-control:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .home .hero__video, .hero-video-control { display: none; }
+  .home .hero__brand .hero__fallback { visibility: visible; }
 }
 
 .home-header {
@@ -62,12 +100,22 @@
 .home-menu-control:hover,
 .home-menu-control:focus-visible,
 .home-nav-panel a:hover,
-.home-nav-panel a:focus-visible,
-.home-socials a:hover,
-.home-socials a:focus-visible {
+.home-nav-panel a:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .3em;
+}
+
+/* Touch taps should not draw the keyboard focus rectangle around MENU/CLOSE. */
+@media (hover: none), (pointer: coarse) {
+  .home-menu-control {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .home-menu-control:focus,
+  .home-menu-control:focus-visible {
+    outline: none;
+  }
 }
 
 html.home-nav-open,
@@ -200,9 +248,33 @@ html.home-nav-open body {
   cursor: default;
 }
 
+/* Brand marks inherit the homepage's white foreground. */
+.home-socials a {
+  width: 44px;
+  justify-content: center;
+  transition: opacity .2s ease;
+}
+
+.home-social-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  fill: currentColor;
+}
+
+.home-socials a:hover {
+  opacity: .6;
+}
+
+.home-socials a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 @media (max-width: 1000px) {
-  .home .hero__brand {
-    width: min(92vw, 38rem);
+  .home .hero__brand .hero__fallback {
+    width: min(72vw, 38rem);
   }
 
   .home-socials {
@@ -232,4 +304,13 @@ html.home-nav-open body {
 .home .home-socials a, .home .home-social-pending {
   font-size: .875rem;
   font-weight: 700;
+}
+
+/* The touch script holds this state briefly so Braille is visible before navigation. */
+.home-menu__links a.is-activating .home-menu__english {
+  opacity: 0;
+}
+
+.home-menu__links a.is-activating .home-menu__label::after {
+  opacity: 1;
 }
