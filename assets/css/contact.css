@@ -289,3 +289,54 @@ body.contact-editorial {
 
   .contact-footer a { font-size: .75rem; }
 }
+
+/* Motion belongs to Contact; the underlying layout stays visible without JS. */
+@media (prefers-reduced-motion: no-preference) {
+  .contact-entry:nth-child(2) { --contact-delay: 90ms; }
+  .contact-entry:nth-child(3) { --contact-delay: 180ms; }
+
+  .contact-editorial .contact-reveal {
+    animation: contact-details-in 700ms var(--ease) var(--contact-delay, 0ms) both;
+  }
+
+  .contact-editorial .contact-wordmark.contact-reveal {
+    animation: contact-type-in 1150ms var(--ease) 120ms both;
+    transform-origin: 50% 100%;
+  }
+
+  .contact-editorial .contact-reveal:focus-within {
+    animation: none;
+  }
+
+  .contact-editorial .contact-page a {
+    transition: text-underline-offset 300ms var(--ease),
+      text-decoration-thickness 200ms ease, transform 300ms var(--ease);
+  }
+
+  .contact-editorial .contact-page a:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .35em;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .contact-editorial .contact-page a:hover {
+      text-underline-offset: .35em;
+    }
+
+    .contact-editorial .contact-social-list a:hover,
+    .contact-editorial .contact-footer a:hover {
+      transform: translateX(.25rem);
+    }
+  }
+}
+
+@keyframes contact-details-in {
+  from { opacity: 0; transform: translateY(1.125rem); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes contact-type-in {
+  from { opacity: 0; clip-path: inset(100% 0 0); transform: translateY(2%) scaleY(.82); }
+  to { opacity: 1; clip-path: inset(0); transform: none; }
+}
