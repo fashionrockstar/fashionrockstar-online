@@ -2,22 +2,15 @@
   'use strict';
 
   const video = document.querySelector('[data-hero-video]');
-  const videoToggle = document.querySelector('[data-hero-video-toggle]');
-  if (video && videoToggle) {
+  if (video) {
     const brand = video.closest('.hero__brand');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let userPaused = false;
 
     const showFallback = () => {
       brand.classList.remove('is-playing');
-      videoToggle.hidden = true;
-    };
-    const updateVideoControl = () => {
-      videoToggle.textContent = userPaused ? 'PLAY' : 'PAUSE';
-      videoToggle.setAttribute('aria-label', `${userPaused ? 'Play' : 'Pause'} logo animation`);
     };
     const syncPlayback = () => {
-      if (reducedMotion.matches || document.hidden || userPaused) {
+      if (reducedMotion.matches || document.hidden) {
         video.pause();
         if (reducedMotion.matches) showFallback();
         return;
@@ -29,16 +22,9 @@
     video.addEventListener('playing', () => {
       if (reducedMotion.matches) return syncPlayback();
       brand.classList.add('is-playing');
-      videoToggle.hidden = false;
-      updateVideoControl();
     });
     video.addEventListener('error', showFallback);
     video.querySelector('source').addEventListener('error', showFallback);
-    videoToggle.addEventListener('click', () => {
-      userPaused = !userPaused;
-      updateVideoControl();
-      syncPlayback();
-    });
     reducedMotion.addEventListener('change', syncPlayback);
     document.addEventListener('visibilitychange', syncPlayback);
     window.addEventListener('pageshow', syncPlayback);
