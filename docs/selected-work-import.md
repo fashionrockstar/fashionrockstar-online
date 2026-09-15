@@ -4,7 +4,8 @@ Source: the supplied WeTransfer archive (50 files). Original archive and extract
 
 ## Content decisions
 
-- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), followed by the untouched MANSAWORLD and MZRABELLE work rows.
+- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), MANSAWORLD (id 3) and MZRABELLE (id 4), with one Work entry per project.
+- At the owner's request, MANSAWORLD's four Work tiles and MZRABELLE's three Work tiles were consolidated into one entry each. They use their established project covers, fr4.jpg and _DSC9338-copy.jpg. Both existing project pages, metadata and complete galleries remain unchanged.
 - Runway uses the user's established title, 2026, CREATIVE DIRECTOR – LEAD STYLIST and supplied COVER.mp4. Seven supplied gallery photos.
 - Campaign uses the top-level supplied folder title. The two vertical Adobe Express videos are the selected covers, shown side by side on Work. The project opens with both films and native playback controls, followed by all three photos in filename order.
 - Micaela retains the established title, year, role and hero because no COVER or replacement metadata was supplied. The gallery contains the three supplied images.
