@@ -11,6 +11,7 @@ Source: the supplied WeTransfer archive (50 files). Original archive and extract
 - Micaela retains the established title, year, role and hero because no COVER or replacement metadata was supplied. The gallery contains the three supplied images.
 - MOONBOI uses the selected 15 - Copie.jpg cover. Its remaining 25 photos, including the former 1.jpg cover, follow in natural numeric filename order.
 - Kaine uses the supplied folder title and COVER .jpg, established year/role and seven supplied gallery images.
+- Kaine also includes one film after the cover and before its existing gallery photos: https://www.instagram.com/reel/DZVRQytRlJW/ . The owner confirmed https://vt.tiktok.com/ZSq4599eK/ is the same video; it is an alternate viewing link, not a second gallery item. The Instagram embed loads only on this project page, with direct links to both platforms kept available if embedding is blocked. External playback could not be independently verified during this update.
 - Files such as 4.jpg and 4 (1).jpg remain distinct. Source filenames are retained in the data/manifest; web filenames are stable normalized derivatives.
 - No collaborator credit sheet, project descriptions or other text files were supplied. No credits or descriptions have been invented.
 
@@ -36,3 +37,4 @@ The four separately attached photos form the next project after MZRABELLE (id 8)
 Year, role/discipline and collaborator credits were not supplied and remain omitted. No description or credits have been invented. These content decisions do not block the development preview.
 
 The originals are preserved locally in `work/project-sources/fashionrockstarmaxxing/originals`, outside the published repository. Their hashes and 12 responsive WebP copies are recorded separately in `fashionrockstarmaxxing-media-manifest.json`; the original 50-file transfer manifest is unchanged. Copies use widths 640, 1280 and 2400px, quality 87 and source framing/color treatment. The cover loads eagerly on the project page; the remaining photos load lazily. No cropping, retouching, grading or sharpening was applied.
+

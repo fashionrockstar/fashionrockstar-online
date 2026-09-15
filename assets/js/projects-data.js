@@ -500,6 +500,12 @@ window.fashionrockstarProjects = [
     },
     "gallery": [
       {
+        "type": "instagram",
+        "src": "https://www.instagram.com/reel/DZVRQytRlJW/",
+        "alternateUrl": "https://vt.tiktok.com/ZSq4599eK/",
+        "wide": true
+      },
+      {
         "type": "image",
         "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp",
         "width": 2400,
