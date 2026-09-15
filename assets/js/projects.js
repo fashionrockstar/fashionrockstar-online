@@ -13,6 +13,14 @@
     node.hidden = !value;
   };
   setText('[data-project-title]', project.title);
+  // Allow an editorial line break without changing the title's text.
+  if (project.titleBreakAfter && project.title.startsWith(project.titleBreakAfter)) {
+    document.querySelector('[data-project-title]').replaceChildren(
+      document.createTextNode(project.titleBreakAfter),
+      document.createElement('wbr'),
+      document.createTextNode(project.title.slice(project.titleBreakAfter.length))
+    );
+  }
   setText('[data-project-role]', project.role);
   setText('[data-project-year]', project.year);
   const credits = document.querySelector('[data-project-credits]');

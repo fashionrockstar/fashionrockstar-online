@@ -663,5 +663,61 @@ window.fashionrockstarProjects = [
         "wide": true
       }
     ]
+  },
+  {
+    "title": "FASHIONROCKSTARMAXXING",
+    "titleBreakAfter": "FASHIONROCKSTAR",
+    "year": "",
+    "role": "",
+    "disciplines": "",
+    "pending": [
+      "1.jpg is the provisional cover, awaiting owner review.",
+      "Year, role and collaborator credits have not been supplied."
+    ],
+    "id": 8,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp 2400w",
+      "sourceFile": "1.jpg",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp 2400w",
+        "sourceFile": "2 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp 2400w",
+        "sourceFile": "3 (2).jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];
