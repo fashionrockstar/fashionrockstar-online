@@ -4,7 +4,7 @@ Source: the supplied WeTransfer archive (50 files). Original archive and extract
 
 ## Content decisions
 
-- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), MANSAWORLD (id 3) MZRABELLE (id 4) FASHIONROCKSTARMAXXING (id 8) and BLUE (id 9), with one Work entry per project.
+- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), MANSAWORLD (id 3) MZRABELLE (id 4) FASHIONROCKSTARMAXXING (id 8) BLUE (id 9) and CFBA 2026 (id 10), with one Work entry per project.
 - At the owner's request, MANSAWORLD's four Work tiles and MZRABELLE's three Work tiles were consolidated into one entry each. They use their established project covers, fr4.jpg and _DSC9338-copy.jpg. Both existing project pages, metadata and complete galleries remain unchanged.
 - Runway uses the user's established title, 2026, CREATIVE DIRECTOR – LEAD STYLIST and supplied COVER.mp4. Seven supplied gallery photos.
 - Campaign uses the top-level supplied folder title. The two vertical Adobe Express videos are the selected covers, shown side by side on Work. The project opens with both films and native playback controls, followed by all three photos in filename order.
@@ -48,3 +48,13 @@ Preserve this explicit attachment order, without numeric re-sorting: `FASHIONROC
 Credits transcribed from the first layout: CREATIVE DIRECTION — FASHIONROCKSTAR; PHOTOGRAPHY ASSISTANT — LEE RIDORE; MODELS — ZAVYER VEGIARD, H.VICK FONTUS. The owner's supplied role appears separately in the project header. No description or additional credits were invented.
 
 All five source PNGs are preserved locally in `work/project-sources/blue/originals`, outside the published repository. `blue-media-manifest.json` records their hashes, source order and 15 website copies at 640, 1280 and 2400px width (WebP quality 90). No crop, recoloring, retouching or rearrangement was applied. The first layout is the project cover; the four remaining layouts are lazy-loaded gallery images.
+
+## CFBA 2026 addition — September 15, 2026
+
+The owner supplied the title CFBA 2026 - FASHIONROCKSTAR X BROKENHEART, year 2026 and role CREATIVE DIRECTION - LEAD STYLING. This is a separate project after BLUE (id 10), appearing under Creative Direction and Styling. Existing Brokenheart Runway and Campaign projects remain intact.
+
+Cover: `JOU.jpg` (printed look 01). The gallery follows the printed look numbers 02–10: `LOOK2 copy.png` through `LOOK10 copy.png`. LOOK9 precedes LOOK10 despite their reversed upload positions. All ten sheets retain their complete layouts, negative-image treatment, typography and directional views.
+
+Model credits are transcribed from the sheets: SAINT JOU, UNKOWNPIGG, NINA, FRANCK, ANNA, LOVE, CIRQUE COSMIC, LEONARD, ANOUK and KILLBILLKAPRI. UNKOWNPIGG retains the supplied spelling. Credits stay printed in each image and are available as text on the project page. No other credits or descriptions were invented.
+
+The ten original files are retained locally in `work/project-sources/cfba-2026/originals`, outside the published repository. `cfba-2026-media-manifest.json` records source hashes, look numbers, model credits and 30 WebP copies at 640, 1280 and 2400px width (quality 90). No crop, recoloring or rearrangement was applied. The project cover loads eagerly and nine gallery sheets load lazily.

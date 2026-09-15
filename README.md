@@ -6,7 +6,7 @@ Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify s
 
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
 - Entry: visitors arrive directly on the normal homepage on all devices; the fingerprint gate and its sound effect have been removed.
-- Portfolio: `work/index.html`; nine projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
+- Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
 - Profile: `about/index.html` and `assets/css/about.css`; the `/about/` address is unchanged.
 - Services: `services/index.html`.
 - Contact: `contact/index.html` and `assets/css/contact.css`.

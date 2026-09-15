@@ -795,5 +795,129 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "CFBA 2026 - FASHIONROCKSTAR X BROKENHEART",
+    "year": "2026",
+    "role": "CREATIVE DIRECTION - LEAD STYLING",
+    "disciplines": "creative-direction styling",
+    "stackedHeading": true,
+    "id": 10,
+    "imported": true,
+    "credits": [
+      "MODELS — SAINT JOU, UNKOWNPIGG, NINA, FRANCK, ANNA, LOVE, CIRQUE COSMIC, LEONARD, ANOUK, KILLBILLKAPRI"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/cfba-2026/look-01-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/cfba-2026/look-01-640.webp 640w, /assets/media/selected-work/cfba-2026/look-01-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-01-2400.webp 2400w",
+      "sourceFile": "JOU.jpg",
+      "alt": "CFBA 2026 — look 01, model credit: SAINT JOU; complete editorial layout",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-02-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-02-640.webp 640w, /assets/media/selected-work/cfba-2026/look-02-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-02-2400.webp 2400w",
+        "sourceFile": "LOOK2 copy.png",
+        "alt": "CFBA 2026 — look 02, model credit: UNKOWNPIGG; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-03-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-03-640.webp 640w, /assets/media/selected-work/cfba-2026/look-03-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-03-2400.webp 2400w",
+        "sourceFile": "LOOK3 copy.png",
+        "alt": "CFBA 2026 — look 03, model credit: NINA; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-04-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-04-640.webp 640w, /assets/media/selected-work/cfba-2026/look-04-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-04-2400.webp 2400w",
+        "sourceFile": "LOOK4 copy.png",
+        "alt": "CFBA 2026 — look 04, model credit: FRANCK; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-05-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-05-640.webp 640w, /assets/media/selected-work/cfba-2026/look-05-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-05-2400.webp 2400w",
+        "sourceFile": "LOOK5 copy.png",
+        "alt": "CFBA 2026 — look 05, model credit: ANNA; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-06-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-06-640.webp 640w, /assets/media/selected-work/cfba-2026/look-06-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-06-2400.webp 2400w",
+        "sourceFile": "LOOK6 copy.png",
+        "alt": "CFBA 2026 — look 06, model credit: LOVE; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-07-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-07-640.webp 640w, /assets/media/selected-work/cfba-2026/look-07-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-07-2400.webp 2400w",
+        "sourceFile": "LOOK7 copy.png",
+        "alt": "CFBA 2026 — look 07, model credit: CIRQUE COSMIC; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-08-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-08-640.webp 640w, /assets/media/selected-work/cfba-2026/look-08-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-08-2400.webp 2400w",
+        "sourceFile": "LOOK8 copy.png",
+        "alt": "CFBA 2026 — look 08, model credit: LEONARD; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-09-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-09-640.webp 640w, /assets/media/selected-work/cfba-2026/look-09-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-09-2400.webp 2400w",
+        "sourceFile": "LOOK9 copy.png",
+        "alt": "CFBA 2026 — look 09, model credit: ANOUK; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/cfba-2026/look-10-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/cfba-2026/look-10-640.webp 640w, /assets/media/selected-work/cfba-2026/look-10-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-10-2400.webp 2400w",
+        "sourceFile": "LOOK10 copy.png",
+        "alt": "CFBA 2026 — look 10, model credit: KILLBILLKAPRI; complete editorial layout",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];
