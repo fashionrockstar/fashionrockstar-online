@@ -98,22 +98,44 @@ window.fashionrockstarProjects = [
     "role": "",
     "disciplines": "",
     "pending": [
-      "Cover, year, role and collaborator credits need confirmation."
+      "Year, role and collaborator credits need confirmation."
     ],
     "id": 6,
     "imported": true,
     "credits": [],
-    "cover": {
-      "type": "image",
-      "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
-      "width": 2400,
-      "height": 1600,
-      "srcset": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp 2400w",
-      "sourceFile": "_DSC6257-2 copy.jpg",
-      "wide": true,
-      "hasAudio": false
-    },
+    "cover": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
+        "wide": false,
+        "hasAudio": true
+      }
+    ],
     "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp 2400w",
+        "sourceFile": "_DSC6257-2 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
       {
         "type": "image",
         "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp",
@@ -123,26 +145,6 @@ window.fashionrockstarProjects = [
         "sourceFile": "1111.jpg",
         "wide": true,
         "hasAudio": false
-      },
-      {
-        "type": "video",
-        "src": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
-        "poster": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp",
-        "width": 2160,
-        "height": 3840,
-        "sourceFile": "Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
-        "wide": false,
-        "hasAudio": false
-      },
-      {
-        "type": "video",
-        "src": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
-        "poster": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp",
-        "width": 2160,
-        "height": 3840,
-        "sourceFile": "Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
-        "wide": false,
-        "hasAudio": true
       },
       {
         "type": "image",
@@ -210,22 +212,32 @@ window.fashionrockstarProjects = [
     "role": "",
     "disciplines": "",
     "pending": [
-      "Cover, year, role and collaborator credits need confirmation."
+      "Year, role and collaborator credits need confirmation."
     ],
     "id": 7,
     "imported": true,
     "credits": [],
     "cover": {
       "type": "image",
-      "src": "/assets/media/selected-work/moonboi/01-1-2400.webp",
+      "src": "/assets/media/selected-work/moonboi/15-15-copie-2400.webp",
       "width": 2400,
       "height": 1600,
-      "srcset": "/assets/media/selected-work/moonboi/01-1-640.webp 640w, /assets/media/selected-work/moonboi/01-1-1280.webp 1280w, /assets/media/selected-work/moonboi/01-1-2400.webp 2400w",
-      "sourceFile": "1.jpg",
+      "srcset": "/assets/media/selected-work/moonboi/15-15-copie-640.webp 640w, /assets/media/selected-work/moonboi/15-15-copie-1280.webp 1280w, /assets/media/selected-work/moonboi/15-15-copie-2400.webp 2400w",
+      "sourceFile": "15 - Copie.jpg",
       "wide": true,
       "hasAudio": false
     },
     "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/moonboi/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/moonboi/01-1-640.webp 640w, /assets/media/selected-work/moonboi/01-1-1280.webp 1280w, /assets/media/selected-work/moonboi/01-1-2400.webp 2400w",
+        "sourceFile": "1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
       {
         "type": "image",
         "src": "/assets/media/selected-work/moonboi/02-2-2400.webp",
@@ -353,16 +365,6 @@ window.fashionrockstarProjects = [
         "height": 1600,
         "srcset": "/assets/media/selected-work/moonboi/14-14-copie-640.webp 640w, /assets/media/selected-work/moonboi/14-14-copie-1280.webp 1280w, /assets/media/selected-work/moonboi/14-14-copie-2400.webp 2400w",
         "sourceFile": "14 - Copie.jpg",
-        "wide": true,
-        "hasAudio": false
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/moonboi/15-15-copie-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/moonboi/15-15-copie-640.webp 640w, /assets/media/selected-work/moonboi/15-15-copie-1280.webp 1280w, /assets/media/selected-work/moonboi/15-15-copie-2400.webp 2400w",
-        "sourceFile": "15 - Copie.jpg",
         "wide": true,
         "hasAudio": false
       },

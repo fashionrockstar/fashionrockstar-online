@@ -1,6 +1,11 @@
 /* Supplied media keeps its complete frame. Existing rows retain their layout. */
 .work-row--imported { aspect-ratio: auto; }
 .work-tile--natural { height: auto; background: #050505; }
+.work-tile__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px;
+}
 .work-tile--natural img,
 .work-tile--natural video {
   width: 100%;
@@ -20,6 +25,12 @@
   max-height: min(80vh, 56rem);
   object-fit: contain;
 }
+.project-hero.project-hero--pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+}
+.project-hero--pair > video { min-width: 0; }
 .project-images .project-image--centered {
   grid-column: 1 / -1;
   width: 50%;
@@ -28,6 +39,7 @@
 .project-credits { margin-bottom: 2rem; font-size: var(--small); }
 .project-credits[hidden], .project-head [hidden] { display: none; }
 @media (max-width: 760px) {
+  .project-hero.project-hero--pair { grid-template-columns: 1fr; }
   .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }
   .project-images .project-image--centered { width: 100%; }
 }

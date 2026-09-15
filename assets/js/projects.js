@@ -34,7 +34,7 @@
     }
     if (item.type === 'video') {
       media.playsInline = true;
-      media.setAttribute('aria-label', `${project.title} — ${hero ? 'project film' : `film ${position + 1}`}`);
+      media.setAttribute('aria-label', `${project.title} — ${hero ? 'project film' : 'film'} ${position + 1}`);
       if (project.imported) {
         media.controls = true;
         media.preload = 'none';
@@ -65,7 +65,9 @@
   };
   const hero = document.querySelector('.project-hero');
   hero.classList.add('project-hero--natural');
-  hero.replaceChildren(createMedia(project.cover, 0, true));
+  const covers = Array.isArray(project.cover) ? project.cover : [project.cover];
+  hero.classList.toggle('project-hero--pair', covers.length > 1);
+  hero.replaceChildren(...covers.map((item, position) => createMedia(item, position, true)));
   const gallery = document.querySelector('.project-images');
   gallery.classList.add('project-images--natural');
   gallery.hidden = !project.gallery.length;
