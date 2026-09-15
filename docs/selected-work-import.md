@@ -15,7 +15,14 @@ Source: the supplied WeTransfer archive (50 files). Original archive and extract
 
 ## Needs owner confirmation before production
 
-Campaign and MOONBOI: designated cover, year, role/discipline, collaborator credits. Collaborator credits for the other projects were also absent and have not been invented. Pending fields stay out of the public page rather than displaying guessed metadata.
+Current cover choices are **awaiting review**. Compare every supplied alternative, labeled with its original filename, in [the visual cover review](cover-review.html). Selecting an alternative there only enlarges it for inspection; it does not change the website.
+
+| Project | Current cover — awaiting review | Missing year | Missing role | Missing collaborator credits |
+| --- | --- | --- | --- | --- |
+| FASHIONROCKSTAR X BROKENHEART [CAMPAIGN] | `_DSC6257-2 copy.jpg` | Not supplied | Not supplied | Not supplied |
+| MOONBOI | `1.jpg` | Not supplied | Not supplied | Not supplied |
+
+All these unknown metadata fields remain omitted on the project pages. Collaborator credits for the other projects were also absent and have not been invented. Development deployment can proceed with these review items open; production remains pending owner approval.
 
 ## Media
 
