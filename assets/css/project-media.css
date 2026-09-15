@@ -38,6 +38,8 @@
 }
 .project-credits { margin-bottom: 2rem; font-size: var(--small); }
 .project-credits[hidden], .project-head [hidden] { display: none; }
+.project-head--stacked { grid-template-columns: 1fr; }
+.project-head--stacked p { justify-content: space-between; text-align: left; }
 @media (max-width: 760px) {
   .project-hero.project-hero--pair { grid-template-columns: 1fr; }
   .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }

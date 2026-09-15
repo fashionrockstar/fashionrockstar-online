@@ -15,6 +15,7 @@
   setText('[data-project-title]', project.title);
   // Allow an editorial line break without changing the title's text.
   if (project.titleBreakAfter && project.title.startsWith(project.titleBreakAfter)) {
+    document.querySelector('.project-head').classList.add('project-head--stacked');
     document.querySelector('[data-project-title]').replaceChildren(
       document.createTextNode(project.titleBreakAfter),
       document.createElement('wbr'),

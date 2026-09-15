@@ -33,6 +33,6 @@ All these unknown metadata fields remain omitted on the project pages. Collabora
 
 The four separately attached photos form the next project after MZRABELLE (id 8). Title: FASHIONROCKSTARMAXXING. The provisional cover is `1.jpg`, awaiting owner review. Gallery order follows the supplied attachment order: `2 (1).jpg`, `2.jpg`, `3 (2).jpg`. The two files named 2 are distinct photographs and both remain included.
 
-Year, role/discipline and collaborator credits were not supplied and remain omitted. No description or credits have been invented. These content decisions do not block the development preview.
+The owner confirmed 2026 and PHOTOGRAPHY – CREATIVE DIRECTION – STYLING. The project appears under Visuals, Creative Direction and Styling in the Work filters. Collaborator credits remain unconfirmed and omitted. No description or credits have been invented. The provisional cover and collaborator credits do not block the development preview.
 
 The originals are preserved locally in `work/project-sources/fashionrockstarmaxxing/originals`, outside the published repository. Their hashes and 12 responsive WebP copies are recorded separately in `fashionrockstarmaxxing-media-manifest.json`; the original 50-file transfer manifest is unchanged. Copies use widths 640, 1280 and 2400px, quality 87 and source framing/color treatment. The cover loads eagerly on the project page; the remaining photos load lazily. No cropping, retouching, grading or sharpening was applied.

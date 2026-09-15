@@ -667,12 +667,12 @@ window.fashionrockstarProjects = [
   {
     "title": "FASHIONROCKSTARMAXXING",
     "titleBreakAfter": "FASHIONROCKSTAR",
-    "year": "",
-    "role": "",
-    "disciplines": "",
+    "year": "2026",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – STYLING",
+    "disciplines": "photography creative-direction styling",
     "pending": [
       "1.jpg is the provisional cover, awaiting owner review.",
-      "Year, role and collaborator credits have not been supplied."
+      "Collaborator credits have not been supplied."
     ],
     "id": 8,
     "imported": true,
