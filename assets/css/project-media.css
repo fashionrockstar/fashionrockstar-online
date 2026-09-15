@@ -40,6 +40,26 @@
 .project-credits[hidden], .project-head [hidden] { display: none; }
 .project-head--stacked { grid-template-columns: 1fr; }
 .project-head--stacked p { justify-content: space-between; text-align: left; }
+.project-social-film {
+  width: 100%;
+  max-width: 540px;
+  min-width: 0;
+  margin-inline: auto;
+}
+.project-social-film .instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.project-social-film__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  margin: 1rem 0 0;
+  font-size: var(--small);
+}
+.project-social-film__links a { text-decoration: underline; text-underline-offset: .25em; }
 @media (max-width: 760px) {
   .project-hero.project-hero--pair { grid-template-columns: 1fr; }
   .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }

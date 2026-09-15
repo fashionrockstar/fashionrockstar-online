@@ -35,6 +35,31 @@
   }
 
   const createMedia = (item, position, hero = false) => {
+    if (item.type === 'instagram') {
+      const film = document.createElement('div');
+      film.className = 'project-social-film';
+      film.setAttribute('role', 'group');
+      film.setAttribute('aria-label', `${project.title} — film`);
+      const embed = document.createElement('blockquote');
+      embed.className = 'instagram-media';
+      embed.dataset.instgrmPermalink = item.src;
+      embed.dataset.instgrmVersion = '14';
+      const makeLink = (href, text) => {
+        const link = document.createElement('a');
+        link.href = href;
+        link.textContent = text;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        return link;
+      };
+      embed.append(makeLink(item.src, 'View the film on Instagram'));
+      const links = document.createElement('p');
+      links.className = 'project-social-film__links';
+      links.append(makeLink(item.src, 'Watch on Instagram'));
+      if (item.alternateUrl) links.append(makeLink(item.alternateUrl, 'Watch on TikTok'));
+      film.append(embed, links);
+      return film;
+    }
     const media = document.createElement(item.type === 'video' ? 'video' : 'img');
     if (item.sourceFile) media.dataset.sourceFile = item.sourceFile;
     if (item.width && item.height) {
@@ -96,6 +121,18 @@
     figure.append(createMedia(item, position));
     gallery.append(figure);
   });
+  if (project.gallery.some(item => item.type === 'instagram')) {
+    const renderInstagram = () => window.instgrm?.Embeds?.process();
+    if (window.instgrm?.Embeds) renderInstagram();
+    else {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      script.addEventListener('load', renderInstagram, { once: true });
+      // The direct links remain usable if the embed is blocked or unavailable.
+      document.body.append(script);
+    }
+  }
   for (const [direction, offset] of [['prev', -1], ['next', 1]]) {
     const destination = projects[(index + offset + projects.length) % projects.length];
     const link = document.querySelector(`[data-project-${direction}]`);
