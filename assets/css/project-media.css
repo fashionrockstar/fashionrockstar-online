@@ -1,0 +1,33 @@
+/* Supplied media keeps its complete frame. Existing rows retain their layout. */
+.work-row--imported { aspect-ratio: auto; }
+.work-tile--natural { height: auto; background: #050505; }
+.work-tile--natural img,
+.work-tile--natural video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.work-tile--natural:hover img,
+.work-tile--natural:hover video,
+.work-tile--natural:focus-visible img,
+.work-tile--natural:focus-visible video {
+  filter: none;
+  transform: none;
+}
+.project-hero.project-hero--natural video {
+  width: 100%;
+  height: auto;
+  max-height: min(80vh, 56rem);
+  object-fit: contain;
+}
+.project-images .project-image--centered {
+  grid-column: 1 / -1;
+  width: 50%;
+  justify-self: center;
+}
+.project-credits { margin-bottom: 2rem; font-size: var(--small); }
+.project-credits[hidden], .project-head [hidden] { display: none; }
+@media (max-width: 760px) {
+  .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }
+  .project-images .project-image--centered { width: 100%; }
+}
