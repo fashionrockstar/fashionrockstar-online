@@ -725,5 +725,75 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "BLUE",
+    "year": "2025",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – SET DESIGN – STYLING",
+    "disciplines": "photography creative-direction set-design styling",
+    "id": 9,
+    "imported": true,
+    "credits": [
+      "CREATIVE DIRECTION — FASHIONROCKSTAR",
+      "PHOTOGRAPHY ASSISTANT — LEE RIDORE",
+      "MODELS — ZAVYER VEGIARD, H.VICK FONTUS"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/blue/01-fashionrockstar-0135-640.webp 640w, /assets/media/selected-work/blue/01-fashionrockstar-0135-1280.webp 1280w, /assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp 2400w",
+      "sourceFile": "FASHIONROCKSTAR 0135.png",
+      "alt": "BLUE — opening layout with set photograph and credits",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/02-fashionrockstar-0136-640.webp 640w, /assets/media/selected-work/blue/02-fashionrockstar-0136-1280.webp 1280w, /assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0136.png",
+        "alt": "BLUE — three-image editorial spread",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/03-fashionrockstar-0139-640.webp 640w, /assets/media/selected-work/blue/03-fashionrockstar-0139-1280.webp 1280w, /assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0139.png",
+        "alt": "BLUE — two models on the white studio set",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/04-fashionrockstar-0138-640.webp 640w, /assets/media/selected-work/blue/04-fashionrockstar-0138-1280.webp 1280w, /assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0138.png",
+        "alt": "BLUE — editorial collage of the two models",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/05-fashionrockstar-0137-640.webp 640w, /assets/media/selected-work/blue/05-fashionrockstar-0137-1280.webp 1280w, /assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0137.png",
+        "alt": "BLUE — close-up of boots and distressed denim",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];

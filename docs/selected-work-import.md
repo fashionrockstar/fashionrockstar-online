@@ -4,7 +4,7 @@ Source: the supplied WeTransfer archive (50 files). Original archive and extract
 
 ## Content decisions
 
-- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), MANSAWORLD (id 3) MZRABELLE (id 4) and FASHIONROCKSTARMAXXING (id 8), with one Work entry per project.
+- Order: runway (id 1), campaign (id 6), Micaela (id 2), MOONBOI (id 7), Kaine (id 5), MANSAWORLD (id 3) MZRABELLE (id 4) FASHIONROCKSTARMAXXING (id 8) and BLUE (id 9), with one Work entry per project.
 - At the owner's request, MANSAWORLD's four Work tiles and MZRABELLE's three Work tiles were consolidated into one entry each. They use their established project covers, fr4.jpg and _DSC9338-copy.jpg. Both existing project pages, metadata and complete galleries remain unchanged.
 - Runway uses the user's established title, 2026, CREATIVE DIRECTOR – LEAD STYLIST and supplied COVER.mp4. Seven supplied gallery photos.
 - Campaign uses the top-level supplied folder title. The two vertical Adobe Express videos are the selected covers, shown side by side on Work. The project opens with both films and native playback controls, followed by all three photos in filename order.
@@ -38,3 +38,13 @@ The owner confirmed 2026 and PHOTOGRAPHY – CREATIVE DIRECTION – STYLING. The
 
 The originals are preserved locally in `work/project-sources/fashionrockstarmaxxing/originals`, outside the published repository. Their hashes and 12 responsive WebP copies are recorded separately in `fashionrockstarmaxxing-media-manifest.json`; the original 50-file transfer manifest is unchanged. Copies use widths 640, 1280 and 2400px, quality 87 and source framing/color treatment. The cover loads eagerly on the project page; the remaining photos load lazily. No cropping, retouching, grading or sharpening was applied.
 
+
+## BLUE addition — September 15, 2026
+
+The owner supplied BLUE (2025), with the role PHOTOGRAPHY – CREATIVE DIRECTION – SET DESIGN – STYLING. It follows FASHIONROCKSTARMAXXING in Work (id 9), and appears under the existing Visuals, Creative Direction and Styling filters.
+
+Preserve this explicit attachment order, without numeric re-sorting: `FASHIONROCKSTAR 0135.png` (cover), `FASHIONROCKSTAR 0136.png`, `FASHIONROCKSTAR 0139.png`, `FASHIONROCKSTAR 0138.png`, `FASHIONROCKSTAR 0137.png`. Each supplied editorial layout stays intact, including its white space, rotated imagery, collages, printed credits and blue-grey treatment.
+
+Credits transcribed from the first layout: CREATIVE DIRECTION — FASHIONROCKSTAR; PHOTOGRAPHY ASSISTANT — LEE RIDORE; MODELS — ZAVYER VEGIARD, H.VICK FONTUS. The owner's supplied role appears separately in the project header. No description or additional credits were invented.
+
+All five source PNGs are preserved locally in `work/project-sources/blue/originals`, outside the published repository. `blue-media-manifest.json` records their hashes, source order and 15 website copies at 640, 1280 and 2400px width (WebP quality 90). No crop, recoloring, retouching or rearrangement was applied. The first layout is the project cover; the four remaining layouts are lazy-loaded gallery images.
