@@ -259,6 +259,15 @@ html.home-nav-open body {
     width: min(72vw, 38rem);
   }
 
+  /* Keep the mobile social rail clear of the centered logo. */
+  .home-socials {
+    z-index: 2;
+    top: var(--home-edge-top);
+    right: var(--home-edge-right);
+    left: auto;
+    transform: none;
+  }
+
   .home-socials a,
   .home-social-pending {
     font-size: .6875rem;
@@ -278,11 +287,29 @@ html.home-nav-open body {
   font-weight: 700;
 }
 
-/* The touch script holds this state briefly so Braille is visible before navigation. */
+/* Hold Braille briefly before same-tab navigation on touch, mouse and keyboard. */
 .home-menu__links a.is-activating .home-menu__english {
   opacity: 0;
 }
 
 .home-menu__links a.is-activating .home-menu__label::after {
   opacity: 1;
+}
+
+/* A cached page must return to readable labels, even with restored hover/focus. */
+.home-menu__links a.is-resting:not(.is-activating) .home-menu__english {
+  opacity: 1;
+  transition: none;
+}
+
+.home-menu__links a.is-resting:not(.is-activating) .home-menu__label::after {
+  opacity: 0;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-menu__english,
+  .home-menu__label::after {
+    transition: none;
+  }
 }
