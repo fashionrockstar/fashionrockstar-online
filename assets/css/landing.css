@@ -259,16 +259,6 @@ html.home-nav-open body {
     width: min(72vw, 38rem);
   }
 
-  .home-socials {
-    top: auto;
-    right: var(--home-edge-right);
-    bottom: max(5.5rem, calc(env(safe-area-inset-bottom) + 4.5rem));
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0 1.25rem;
-    transform: none;
-  }
-
   .home-socials a,
   .home-social-pending {
     font-size: .6875rem;
