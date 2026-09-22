@@ -1,0 +1,187 @@
+/* SYSTEM ACCESS is isolated from HOME and the shared navigation styles. */
+html.system-access-open,
+html.system-access-open body { overflow: hidden; background: #000; }
+html.system-access-open body.home { animation: none; }
+html.system-access-open body.home > main { visibility: hidden; }
+
+.system-access {
+  --access-left: max(var(--pad), env(safe-area-inset-left));
+  --access-right: max(var(--pad), env(safe-area-inset-right));
+  --access-top: max(1.75rem, env(safe-area-inset-top));
+  --access-bottom: max(1.75rem, env(safe-area-inset-bottom));
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #000;
+  color: #fff;
+  color-scheme: dark;
+  font-family: var(--font-ui);
+  -webkit-tap-highlight-color: transparent;
+}
+.system-access[hidden], .system-access [hidden] { display: none; }
+.system-access__meta {
+  position: absolute;
+  z-index: 2;
+  font-size: .5625rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  line-height: 1.5;
+}
+.system-access__top-left { top: var(--access-top); left: var(--access-left); }
+.system-access__top-right { top: var(--access-top); right: var(--access-right); text-align: right; }
+.system-access__bottom-left { bottom: var(--access-bottom); left: var(--access-left); }
+.system-access__bottom-right { bottom: var(--access-bottom); right: var(--access-right); text-align: right; }
+.system-access__center {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem var(--access-right) 5rem var(--access-left);
+  text-align: center;
+  pointer-events: none;
+}
+.system-access__identity { width: 100%; }
+.system-access__wordmark {
+  position: relative;
+  display: inline-flex;
+  white-space: nowrap;
+  font-size: clamp(1.4rem, 6.15vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+.system-access__glyph { position: relative; display: inline-block; }
+/* Reserve each Latin letter's width while its visible glyph reconstructs. */
+.system-access__glyph::before { content: attr(data-letter); visibility: hidden; }
+.system-access__glyph > span { position: absolute; inset: 0; text-align: center; }
+.system-access__glyph.is-data > span { font-size: .85em; transform: translateY(.06em); }
+.system-access__data { margin-top: 1.2rem; font-size: .5625rem; letter-spacing: .28em; opacity: .65; }
+.system-access__action { position: relative; height: 44px; margin-top: 2.75rem; }
+.system-access__initialize {
+  min-width: 156px;
+  min-height: 44px;
+  padding: .75rem 1.65rem;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  font-size: .625rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  pointer-events: auto;
+}
+.system-access__initialize:hover { background: #fff; color: #000; }
+.system-access__initialize:focus-visible,
+.system-access__skip:focus-visible { outline: 2px solid #fff; outline-offset: 6px; }
+.system-access__status { min-height: 44px; display: grid; place-items: center; font-size: .625rem; font-weight: 500; letter-spacing: .18em; }
+.system-access__status:empty { display: none; }
+.system-access__skip {
+  position: absolute;
+  z-index: 5;
+  bottom: max(.85rem, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 60px;
+  min-height: 44px;
+  padding: .75rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #aaa;
+  font-size: .5625rem;
+  letter-spacing: .16em;
+}
+.system-access__skip:hover { color: #fff; }
+.system-access__scan {
+  position: absolute;
+  z-index: 3;
+  top: -5%;
+  left: 0;
+  width: clamp(90px, 18vw, 280px);
+  height: 110%;
+  opacity: 0;
+  transform: translateX(calc(var(--scan-x, -300px) - 50%));
+  background: linear-gradient(90deg, transparent 0%, rgb(202 207 212 / .025) 22%, rgb(223 227 230 / .13) 43%, rgb(245 247 248 / .45) 49.3%, rgb(255 255 255 / .95) 50%, rgb(241 244 246 / .4) 50.7%, rgb(219 222 225 / .12) 61%, transparent 100%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  will-change: transform;
+}
+.system-access__scan::after {
+  position: absolute;
+  inset: 0 39%;
+  content: '';
+  background: rgb(226 231 235 / .16);
+  filter: blur(22px);
+}
+.system-access.is-scanning .system-access__scan { opacity: .7; }
+.system-access.is-unlocking .system-access__scan { opacity: 1; width: clamp(130px, 25vw, 400px); }
+.system-access.is-unlocking .system-access__scan::after { background: rgb(242 244 246 / .45); }
+.system-access__wordmark::after {
+  position: absolute;
+  inset: 0;
+  content: attr(data-word);
+  opacity: 0;
+  clip-path: inset(44% 0 49%);
+  transform: translateX(3px);
+}
+.system-access.is-corrupt .system-access__wordmark::after { opacity: .85; }
+.system-access.is-corrupt .system-access__glyph:nth-child(4n) { transform: translateX(-1px); }
+.system-access__interference {
+  position: absolute;
+  z-index: 4;
+  top: 46%;
+  left: 22%;
+  width: 56%;
+  height: 1px;
+  opacity: 0;
+  background: rgb(255 255 255 / .22);
+  box-shadow: 6vw 6px 0 -0.2px rgb(255 255 255 / .14);
+  pointer-events: none;
+}
+.system-access.is-corrupt .system-access__interference { opacity: .6; }
+.system-access[data-state="granted"] .system-access__identity,
+.system-access[data-state="granted"] .system-access__meta { display: none; }
+.system-access[data-state="granted"] .system-access__action { margin: 0; height: auto; }
+.system-access[data-state="granted"] .system-access__status { font-size: clamp(.875rem, 1.6vw, 1.5rem); letter-spacing: .35em; padding-left: .35em; }
+.system-access__flash { position: absolute; z-index: 4; inset: 0; opacity: 0; background: #fff; pointer-events: none; }
+.system-access[data-state="flash"] .system-access__flash { opacity: 1; }
+.system-access[data-state="black"] .system-access__center,
+.system-access[data-state="black"] .system-access__meta,
+.system-access[data-state="black"] .system-access__scan { visibility: hidden; }
+
+/* Phones use a centered masthead and a single quiet footer. */
+@media (max-width: 760px) {
+  .system-access { --access-top: max(1.5rem, env(safe-area-inset-top)); --access-bottom: max(2rem, env(safe-area-inset-bottom)); }
+  .system-access__top-left { left: var(--access-left); right: var(--access-right); text-align: center; }
+  .system-access__top-right, .system-access__bottom-right { display: none; }
+  .system-access__bottom-left { left: var(--access-left); right: var(--access-right); text-align: center; font-size: .5rem; letter-spacing: .12em; }
+  .system-access__bottom-left br { display: none; }
+  .system-access__wordmark { font-size: clamp(1.25rem, 6.65vw, 3.1rem); letter-spacing: -.045em; }
+  .system-access__data { margin-top: 1rem; font-size: .5rem; letter-spacing: .2em; }
+  .system-access__action { margin-top: 2.25rem; }
+  .system-access__initialize { min-width: 148px; }
+  .system-access__scan { width: 75px; }
+  .system-access.is-unlocking .system-access__scan { width: 110px; }
+  .system-access__wordmark::after { transform: translateX(1px); }
+  .system-access[data-state="initializing"] .system-access__bottom-left { display: none; }
+  .system-access__skip { bottom: max(1rem, env(safe-area-inset-bottom)); }
+}
+@media (max-height: 440px) and (orientation: landscape) {
+  .system-access__action { margin-top: 1rem; }
+  .system-access__bottom-left, .system-access__bottom-right { display: none; }
+  .system-access__wordmark { font-size: clamp(1.25rem, 5vw, 3rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .system-access__scan, .system-access__interference, .system-access__flash,
+  .system-access__wordmark::after { display: none !important; }
+  .system-access__glyph { transform: none !important; }
+  .system-access[data-state="initializing"] .system-access__identity { opacity: .5; transition: opacity .5s ease !important; }
+}

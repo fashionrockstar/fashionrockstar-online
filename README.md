@@ -2,10 +2,24 @@
 
 Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify serves the repository root. The working branch is `development`; `main` is production.
 
+## SYSTEM ACCESS
+
+The homepage now opens with a native HTML/CSS/JavaScript entry sequence, implemented in `assets/css/system-access.css` and `assets/js/system-access.js`. The existing HOME markup, media, navigation and other pages are retained. The small integration in `assets/js/landing.js` pauses the hero video behind the entry screen and resumes its existing behavior when entry completes.
+
+- INITIALIZE is the only path that calls audio playback. The first ten seconds of the supplied WAV were converted to the 201 KB `assets/audio/FASHIONROCKSTAR_ACCESS_GRANTED.mp3`; no voice generation or replacement recording is used. The original WAV and full MP3 remain preserved locally. The audio element uses `preload="none"` and has no autoplay attribute.
+- Normal motion: activation, per-character Braille reconstruction, short interference bursts, a silver scan, ACCESS GRANTED, one 70ms flash, black, then HOME at 10 seconds. Audio fades during the final black beat and stops when HOME opens. SKIP and Escape stop audio and enter HOME immediately.
+- Reduced motion: no glyph corruption, light beam or flash. A quiet opacity change leads to ACCESS GRANTED and HOME in two seconds. Changes to the motion preference during playback also complete safely.
+- A successful completion or dismissal stores `sessionStorage.frsrSystemAccess = 'granted'`. Following navigation or refreshing HOME in the same tab does not replay it. If session storage cannot be read or written, the normal entry fails open to HOME.
+- Force a replay with `/?system-access=1`. This query parameter is consumed immediately, leaving the remaining query parameters and fragment intact; it cannot accidentally replay on refresh. A fresh browser session can show the entry again.
+- INITIALIZE and SKIP are semantic buttons. Keyboard focus moves through the sequence to the existing MENU button; Escape is always available. There is no custom focus loop. Without JavaScript, HOME remains available.
+- Phone composition uses `100dvh`, safe-area insets, a narrower light beam and fewer peripheral labels. No new dependencies or background video were added for the entry.
+
+Development review is on the existing `development` branch / draft PR #2. Do not merge or publish production until the preview is approved.
+
 ## Content
 
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
-- Entry: visitors arrive directly on the normal homepage on all devices; the fingerprint gate and its sound effect have been removed.
+- Entry: SYSTEM ACCESS precedes HOME once per tab/session. The previous fingerprint gate remains removed. See the SYSTEM ACCESS notes below.
 - Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
 - Profile: `about/index.html` and `assets/css/about.css`; the `/about/` address is unchanged.
 - Services: `services/index.html`.

@@ -10,7 +10,7 @@
       brand.classList.remove('is-playing');
     };
     const syncPlayback = () => {
-      if (reducedMotion.matches || document.hidden) {
+      if (reducedMotion.matches || document.hidden || document.documentElement.classList.contains('system-access-open')) {
         video.pause();
         if (reducedMotion.matches) showFallback();
         return;
@@ -27,6 +27,7 @@
     video.querySelector('source').addEventListener('error', showFallback);
     reducedMotion.addEventListener('change', syncPlayback);
     document.addEventListener('visibilitychange', syncPlayback);
+    document.addEventListener('frsr:system-access-complete', syncPlayback);
     window.addEventListener('pageshow', syncPlayback);
     syncPlayback();
   }
@@ -99,7 +100,7 @@
   });
 
   // Restore a closed menu when returning through the browser's page cache.
-  window.addEventListener('pageshow', () => {
-    if (panel.open) panel.close();
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted && panel.open) panel.close();
   });
 })();
