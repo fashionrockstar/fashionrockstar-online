@@ -13,14 +13,25 @@
   <script src="/assets/js/landing.js" defer></script>
 </head>
 <body class="home">
+  <audio data-system-audio preload="none" src="/assets/audio/FASHIONROCKSTAR_ACCESS_GRANTED.mp3"></audio>
+  <div class="site-audio" data-site-audio hidden>
+    <button class="site-audio__toggle" type="button" data-site-audio-toggle aria-label="Mute narration" aria-pressed="false">MUTE</button>
+  </div>
   <section class="system-access" data-system-access data-state="dormant" aria-labelledby="system-access-title" hidden>
     <h2 class="sr-only" id="system-access-title">FASHIONROCKSTAR — SYSTEM ACCESS</h2>
     <p class="system-access__meta system-access__top-left" data-system-request aria-hidden="true">FRSR / ONLINE</p>
     <p class="system-access__meta system-access__top-right" data-system-sound aria-hidden="true">SYSTEM 01</p>
     <div class="system-access__center">
       <div class="system-access__identity" aria-hidden="true">
-        <div class="system-access__wordmark" data-system-wordmark data-word="FASHIONROCKSTAR">FASHIONROCKSTAR</div>
-        <p class="system-access__data">⠋⠁⠎⠓⠊⠕⠝⠗⠕⠉⠅⠎⠞⠁⠗</p>
+        <div class="system-access__logo" data-system-logo>
+          <img class="system-access__logo-base" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
+          <div class="system-access__logo-response">
+            <img class="system-access__logo-refraction" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
+            <img class="system-access__logo-slice system-access__logo-slice--upper" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
+            <img class="system-access__logo-slice system-access__logo-slice--lower" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
+          </div>
+          <div class="system-access__sampling"><i></i><i></i><i></i><i></i><span data-system-sample>⠋⠁⠎⠓</span></div>
+        </div>
       </div>
       <div class="system-access__action">
         <button class="system-access__initialize" type="button" data-system-initialize>INITIALIZE</button>
@@ -30,10 +41,14 @@
     <p class="system-access__meta system-access__bottom-left" data-system-visual aria-hidden="true">NOT FOR <br>MAINSTREAM <br>CONSUMPTION</p>
     <p class="system-access__meta system-access__bottom-right" data-system-identity aria-hidden="true">MONTRÉAL<br>CANADA<br>EST. 2024</p>
     <button class="system-access__skip" type="button" data-system-skip hidden>SKIP</button>
-    <div class="system-access__scan" aria-hidden="true"></div>
-    <div class="system-access__interference" aria-hidden="true"></div>
-    <div class="system-access__flash" aria-hidden="true"></div>
-    <audio data-system-audio preload="none" src="/assets/audio/FASHIONROCKSTAR_ACCESS_GRANTED.mp3"></audio>
+    <div class="system-access__scan" aria-hidden="true">
+      <div class="system-access__reflection"></div>
+      <div class="system-access__bloom"></div>
+      <div class="system-access__core"></div>
+      <div class="system-access__echo"></div>
+      <div class="system-access__exposure"></div>
+    </div>
+    <div class="system-access__micro-scan" aria-hidden="true"><i></i><i></i></div>
   </section>
   <main>
     <section class="hero" aria-labelledby="hero-title">
