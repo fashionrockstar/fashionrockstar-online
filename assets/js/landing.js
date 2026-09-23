@@ -10,7 +10,7 @@
       brand.classList.remove('is-playing');
     };
     const syncPlayback = () => {
-      if (reducedMotion.matches || document.hidden || document.documentElement.classList.contains('system-access-open')) {
+      if (reducedMotion.matches || document.hidden) {
         video.pause();
         if (reducedMotion.matches) showFallback();
         return;
@@ -27,7 +27,6 @@
     video.querySelector('source').addEventListener('error', showFallback);
     reducedMotion.addEventListener('change', syncPlayback);
     document.addEventListener('visibilitychange', syncPlayback);
-    document.addEventListener('frsr:system-access-complete', syncPlayback);
     window.addEventListener('pageshow', syncPlayback);
     syncPlayback();
   }
