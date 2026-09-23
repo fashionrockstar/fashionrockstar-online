@@ -1,0 +1,32 @@
+{
+  "projectId": 2,
+  "shareUrl": "https://adobe.ly/46AYGeP",
+  "sourceKind": "Adobe Lightroom public playback rendition; original download disabled",
+  "adobeRenditionLabel": "1080p",
+  "actualWidth": 720,
+  "actualHeight": 404,
+  "durationSeconds": 21.066667,
+  "frameRate": 30,
+  "videoCodec": "H.264",
+  "audioCodec": "AAC stereo 44100 Hz",
+  "processing": "Copy both streams unchanged into MP4 with fast-start. No trim, crop, upscale, recolor or audio modification.",
+  "posterTimeSeconds": 5,
+  "placement": "After existing hero, before existing photos",
+  "files": [
+    {
+      "file": "adobe-shared-playback.mp4",
+      "bytes": 9511101,
+      "sha256": "803005f7a2ff53637560c06b19b07ea53aa7680465728e51876068c7723dad14"
+    },
+    {
+      "file": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+      "bytes": 9510048,
+      "sha256": "30c9a53f21f3feac9c75b8ecbcd0c37cdb3bea3c3613318c97773875443e1491"
+    },
+    {
+      "file": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
+      "bytes": 5164,
+      "sha256": "c8bd7159164b07fced51dd6c46adbd3639c842e830842bce8f1f0aecaf63afe3"
+    }
+  ]
+}

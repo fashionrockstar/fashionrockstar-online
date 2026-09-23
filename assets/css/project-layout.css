@@ -1,0 +1,181 @@
+/* Portfolio typography and spacing, scoped to Work and project pages. */
+.work-page,
+.project-page {
+  --portfolio-gutter: clamp(1rem, 4vw, 4rem);
+  --portfolio-gap: clamp(1.25rem, 3vw, 3rem);
+}
+
+.page-shell.work-page,
+.page-shell.project-page {
+  width: min(100%, 94rem);
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 5rem) var(--portfolio-gutter) 4rem;
+}
+
+.work-page .page-title {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.work-page .work-toolbar {
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+  padding: 0;
+}
+
+.work-page .work-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 5rem) var(--portfolio-gap);
+}
+
+.work-page .work-row { align-content: start; }
+.work-page .work-tile {
+  overflow: visible;
+  height: auto;
+  background: transparent;
+}
+
+.work-tile__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.work-page .work-tile__media > img,
+.work-page .work-tile__media > video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.work-page .work-tile__pair {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 9 / 8;
+}
+
+.work-page .work-tile__pair video {
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.work-page .work-tile__meta {
+  position: static;
+  display: block;
+  padding: 1rem 0 0;
+  background: none;
+  color: inherit;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.work-page .work-tile__meta b {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: clamp(.875rem, 1.15vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .015em;
+  overflow-wrap: anywhere;
+}
+
+.work-page .work-tile:hover .work-tile__meta b,
+.work-page .work-tile:focus-visible .work-tile__meta b {
+  text-decoration: underline;
+  text-underline-offset: .3em;
+  text-decoration-thickness: 1px;
+}
+
+.project-page { max-width: 86rem; }
+.project-page .back-link {
+  font-size: .75rem;
+  letter-spacing: .04em;
+}
+
+.project-page .project-head {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+  align-content: start;
+  align-items: start;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.project-page .project-head h1 {
+  max-width: 36ch;
+  font-family: var(--font-ui);
+  font-size: clamp(1.5rem, 3.2vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.project-page .project-head p {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding: 0;
+  font-size: clamp(.7rem, 1vw, .8rem);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: .035em;
+  text-align: left;
+}
+
+.project-page [data-project-role] { max-width: 60ch; }
+.project-page [data-project-year] { flex: none; }
+.project-page .project-credits {
+  max-width: 80ch;
+  margin: -.5rem 0 2rem;
+  font-size: .75rem;
+  line-height: 1.7;
+  color: #bcbcb8;
+}
+
+.project-page .project-hero { background: transparent; }
+.project-page .project-hero.project-hero--natural img,
+.project-page .project-hero.project-hero--natural video {
+  width: 100%;
+  max-height: none;
+}
+
+.project-page .project-hero.project-hero--pair { gap: var(--portfolio-gap); }
+.project-page .project-images {
+  gap: var(--portfolio-gap);
+  padding-top: var(--portfolio-gap);
+}
+
+.project-page .project-images .project-image--centered {
+  width: calc((100% - var(--portfolio-gap)) / 2);
+}
+
+.project-page .project-nav {
+  margin-top: var(--portfolio-gap);
+  min-height: 7rem;
+  border-top: 1px solid #303030;
+  font-size: .75rem;
+  letter-spacing: .025em;
+}
+
+@media (max-width: 760px) {
+  .work-page .work-gallery { grid-template-columns: minmax(0, 1fr); }
+  .work-page .work-tile__meta { padding-top: .75rem; }
+  .project-page .project-head { gap: 1rem; padding: 1.5rem 0; }
+  .project-page .project-credits { margin-top: 0; margin-bottom: 1.5rem; }
+  .project-page .project-images .project-image--centered { width: 100%; }
+  .project-page .project-nav { font-size: .65rem; }
+}
