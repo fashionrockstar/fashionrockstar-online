@@ -277,6 +277,12 @@ html.home-nav-open body {
 /* The lower navigation is typography only at every width. */
 .home .home-menu { grid-template-columns: minmax(0, 1fr); }
 .home .home-menu__links a { font-size: clamp(3.5rem, 12vw, 13rem); }
+
+/* Keep the longer Selected Work Braille label inside its navigation row. */
+.home-menu__links a[href="/work/"] .home-menu__label::after {
+  font-size: min(.82em, 10cqi);
+}
+
 @media (max-width: 760px) {
   .home .home-menu__links a { font-size: clamp(3rem, 16.8vw, 5.6rem); }
 }
