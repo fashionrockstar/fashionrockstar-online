@@ -1,0 +1,67 @@
+/* Work captions only: cover geometry and project interiors stay independent. */
+.work-page .work-tile__meta {
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.25rem, 4vw, 4rem);
+  background: none;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: none;
+  transition: opacity 180ms ease;
+}
+
+.work-page .work-tile__meta b {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: max-content;
+  max-width: min(32ch, 100%);
+  margin: 0;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .015em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .45);
+}
+
+/* Soften only the area behind the title, including on bright video frames. */
+.work-page .work-tile__meta b::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -.55em -.8em;
+  border-radius: .4em;
+  background: rgba(0, 0, 0, .72);
+  filter: blur(12px);
+}
+
+.work-page .work-tile:focus-visible .work-tile__meta {
+  opacity: 1;
+  transform: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .work-page .work-tile:hover .work-tile__meta {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 760px), (hover: none), (any-pointer: coarse) {
+  .work-page .work-tile__meta { opacity: 1; }
+}
+
+@media (max-width: 760px) {
+  .work-page .work-tile__meta { padding: 1rem; }
+  .work-page .work-tile__meta b { font-size: clamp(1.125rem, 5vw, 1.5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-page .work-tile__meta { transition: none; }
+}
