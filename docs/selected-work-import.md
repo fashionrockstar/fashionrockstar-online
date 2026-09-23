@@ -62,3 +62,9 @@ Cover: `JOU.jpg` (printed look 01). The gallery follows the printed look numbers
 Model credits are transcribed from the sheets: SAINT JOU, UNKOWNPIGG, NINA, FRANCK, ANNA, LOVE, CIRQUE COSMIC, LEONARD, ANOUK and KILLBILLKAPRI. UNKOWNPIGG retains the supplied spelling. Credits stay printed in each image and are available as text on the project page. No other credits or descriptions were invented.
 
 The ten original files are retained locally in `work/project-sources/cfba-2026/originals`, outside the published repository. `cfba-2026-media-manifest.json` records source hashes, look numbers, model credits and 30 WebP copies at 640, 1280 and 2400px width (quality 90). No crop, recoloring or rearrangement was applied. The project cover loads eagerly and nine gallery sheets load lazily.
+
+## SAINT JOU — 2016 addition — September 23, 2026
+
+The owner supplied the title `"2016" SAINT JOU — MUSIC VIDEO`, year 2025 and role CREATIVE DIRECTION — VIDEOGRAPHY. This new project follows CFBA 2026 (id 11), preserving the order of the ten existing projects. It appears under Creative Direction and Visuals; the existing Visuals filter uses the `photography` token for visual work.
+
+The supplied `IMG_8441.JPG` is both the Work cover and the first image on the project page. Its original 1280 × 720 JPEG bytes are copied unchanged to `assets/media/selected-work/saint-jou-2016/01-img-8441.jpg`; the complete frame and shattered-glass effect remain intact. The image is shown once on the project page, as the hero. No video, additional gallery images, description or collaborator credits were supplied or invented. The project is added to the development preview; production remains pending approval.

@@ -932,5 +932,25 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "\"2016\" SAINT JOU — MUSIC VIDEO",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION — VIDEOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "id": 11,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg",
+      "width": 1280,
+      "height": 720,
+      "sourceFile": "IMG_8441.JPG",
+      "alt": "\"2016\" by SAINT JOU — figure with outstretched arms behind a shattered-glass effect",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": []
   }
 ];
