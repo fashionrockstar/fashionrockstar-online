@@ -175,6 +175,16 @@ window.fashionrockstarProjects = [
     },
     "gallery": [
       {
+        "type": "video",
+        "src": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+        "poster": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
+        "width": 720,
+        "height": 404,
+        "sourceShare": "https://adobe.ly/46AYGeP",
+        "wide": true,
+        "hasAudio": true
+      },
+      {
         "type": "image",
         "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
         "width": 2400,
