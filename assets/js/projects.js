@@ -70,9 +70,15 @@
       media.playsInline = true;
       media.setAttribute('aria-label', `${project.title} — ${hero ? 'project film' : 'film'} ${position + 1}`);
       if (project.imported) {
-        media.controls = true;
+        media.controls = item.controls !== false;
         media.preload = 'none';
         media.dataset.projectVideo = '';
+        media.loop = Boolean(item.loop);
+        if (item.autoplay) {
+          media.dataset.autoplayVideo = '';
+          media.muted = true;
+          media.defaultMuted = true;
+        }
         media.src = item.src;
         if (item.poster) media.poster = item.poster;
       } else {

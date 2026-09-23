@@ -181,6 +181,9 @@ window.fashionrockstarProjects = [
         "width": 720,
         "height": 404,
         "sourceShare": "https://adobe.ly/46AYGeP",
+        "autoplay": true,
+        "loop": true,
+        "controls": false,
         "wide": true,
         "hasAudio": true
       },
