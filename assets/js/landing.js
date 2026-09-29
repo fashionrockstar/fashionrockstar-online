@@ -8,6 +8,7 @@
 
     const showFallback = () => {
       brand.classList.remove('is-playing');
+      brand.classList.add('is-fallback');
     };
     const syncPlayback = () => {
       if (reducedMotion.matches || document.hidden) {
@@ -15,12 +16,17 @@
         if (reducedMotion.matches) showFallback();
         return;
       }
+      brand.classList.remove('is-fallback');
       video.muted = true;
-      video.play().catch(showFallback);
+      video.play().catch((error) => {
+        // Pausing an in-flight play request is not a playback failure.
+        if (error.name !== 'AbortError') showFallback();
+      });
     };
 
     video.addEventListener('playing', () => {
       if (reducedMotion.matches) return syncPlayback();
+      brand.classList.remove('is-fallback');
       brand.classList.add('is-playing');
     });
     video.addEventListener('error', showFallback);

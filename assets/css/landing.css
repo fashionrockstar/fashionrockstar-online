@@ -29,6 +29,8 @@
 }
 
 .home .hero__brand .hero__fallback {
+  /* Only show the static logo when animation is unavailable, never while loading. */
+  visibility: hidden;
   top: 50%;
   left: 50%;
   width: min(72vw, 72rem);
@@ -38,7 +40,7 @@
 }
 
 .hero__brand.is-playing .hero__video { opacity: 1; }
-.hero__brand.is-playing .hero__fallback { visibility: hidden; }
+.home .hero__brand.is-fallback .hero__fallback { visibility: visible; }
 
 @media (prefers-reduced-motion: reduce) {
   .home .hero__video { display: none; }
