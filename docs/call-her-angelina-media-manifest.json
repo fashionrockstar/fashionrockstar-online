@@ -1,7 +1,7 @@
 {
   "title": "CALL HER ANGELINA",
   "projectId": 13,
-  "selection": "All three supplied editorial spreads, in attachment order: 28 as cover, then 29 and 31. Original layout, text and proportions preserved.",
+  "selection": "Three editorial spreads in supplied order (28, 29, 31), followed by the five additional photographs (1.jpg, 3.jpg, 4.jpg, 5.jpg, 7.jpg). Original artwork, logos, text and proportions preserved. Portraits pair on desktop and stack on mobile.",
   "media": [
     {
       "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR28.png",
@@ -84,6 +84,146 @@
           "width": 2400,
           "height": 1600,
           "bytes": 435542
+        }
+      ]
+    },
+    {
+      "sourceFile": "1.jpg",
+      "sourceSize": [
+        4000,
+        6000
+      ],
+      "sourceSha256": "fdf649f241a72ab0aebbd0483b0d256d6c35377f6dcc448f01c1d37043d5fa2a",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/04-photo-1-640.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 70166
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/04-photo-1-1280.webp",
+          "width": 1280,
+          "height": 1920,
+          "bytes": 261904
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/04-photo-1-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 447566
+        }
+      ]
+    },
+    {
+      "sourceFile": "3.jpg",
+      "sourceSize": [
+        4000,
+        6000
+      ],
+      "sourceSha256": "1923d1af516113e6975e96aa633ce4903ee71ec23e2729bb427c7f0ab812bc43",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/05-photo-3-640.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 79876
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/05-photo-3-1280.webp",
+          "width": 1280,
+          "height": 1920,
+          "bytes": 263148
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/05-photo-3-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 405636
+        }
+      ]
+    },
+    {
+      "sourceFile": "4.jpg",
+      "sourceSize": [
+        4000,
+        6000
+      ],
+      "sourceSha256": "6861920f4a25b0bc721c8afe98b1637f5edf413b234babe39f50b53a6586b889",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/06-photo-4-640.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 114918
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/06-photo-4-1280.webp",
+          "width": 1280,
+          "height": 1920,
+          "bytes": 423392
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/06-photo-4-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 643268
+        }
+      ]
+    },
+    {
+      "sourceFile": "5.jpg",
+      "sourceSize": [
+        4000,
+        6000
+      ],
+      "sourceSha256": "89bbe3eefec4a34e2d38a2752897d0df39eeab2d1162e407d1fcfc689c72a5bc",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/07-photo-5-640.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 136180
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/07-photo-5-1280.webp",
+          "width": 1280,
+          "height": 1920,
+          "bytes": 509852
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/07-photo-5-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 757508
+        }
+      ]
+    },
+    {
+      "sourceFile": "7.jpg",
+      "sourceSize": [
+        6000,
+        4000
+      ],
+      "sourceSha256": "c5a581b4884979c836a8222cb048cbc5be767ae54804cd6a732b1a06c3eb71f8",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/08-photo-7-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 12640
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/08-photo-7-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 41264
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/08-photo-7-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 110012
         }
       ]
     }

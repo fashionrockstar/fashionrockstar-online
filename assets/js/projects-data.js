@@ -1171,6 +1171,61 @@ window.fashionrockstarProjects = [
         "alt": "CALL HER ANGELINA — hair boot detail and crouching portrait, with the original design credit.",
         "wide": true,
         "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/04-photo-1-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/call-her-angelina/04-photo-1-640.webp 640w, /assets/media/selected-work/call-her-angelina/04-photo-1-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/04-photo-1-1600.webp 1600w",
+        "sourceFile": "1.jpg",
+        "alt": "CALL HER ANGELINA — portrait with black gloves framing the face.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/05-photo-3-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/call-her-angelina/05-photo-3-640.webp 640w, /assets/media/selected-work/call-her-angelina/05-photo-3-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/05-photo-3-1600.webp 1600w",
+        "sourceFile": "3.jpg",
+        "alt": "CALL HER ANGELINA — seated portrait on a white ladder, wearing black hair boots.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/06-photo-4-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/call-her-angelina/06-photo-4-640.webp 640w, /assets/media/selected-work/call-her-angelina/06-photo-4-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/06-photo-4-1600.webp 1600w",
+        "sourceFile": "4.jpg",
+        "alt": "CALL HER ANGELINA — negative-effect portrait with repeated FASHIONROCKSTAR logos.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/07-photo-5-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/call-her-angelina/07-photo-5-640.webp 640w, /assets/media/selected-work/call-her-angelina/07-photo-5-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/07-photo-5-1600.webp 1600w",
+        "sourceFile": "5.jpg",
+        "alt": "CALL HER ANGELINA — crouching portrait against silver sheeting.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/08-photo-7-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/call-her-angelina/08-photo-7-640.webp 640w, /assets/media/selected-work/call-her-angelina/08-photo-7-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/08-photo-7-2400.webp 2400w",
+        "sourceFile": "7.jpg",
+        "alt": "CALL HER ANGELINA — a shadowed portrait beside a white brick wall.",
+        "wide": true,
+        "hasAudio": false
       }
     ]
   }
