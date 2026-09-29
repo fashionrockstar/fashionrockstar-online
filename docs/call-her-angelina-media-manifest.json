@@ -1,0 +1,91 @@
+{
+  "title": "CALL HER ANGELINA",
+  "projectId": 13,
+  "selection": "All three supplied editorial spreads, in attachment order: 28 as cover, then 29 and 31. Original layout, text and proportions preserved.",
+  "media": [
+    {
+      "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR28.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "b1009e6e020ab1f79538a2892ab68c6f265eb7921c6cfe5d7bf4eac7e43d1f4f",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/01-spread-28-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 26712
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/01-spread-28-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 84888
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/01-spread-28-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 255012
+        }
+      ]
+    },
+    {
+      "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR29.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "516fa15d1529d27778727ae5d1e14892dbdbeeefe5211f022834b5ba9ae57ae6",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/02-spread-29-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 53364
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/02-spread-29-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 153160
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/02-spread-29-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 376412
+        }
+      ]
+    },
+    {
+      "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR31.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "b5b01ac24682a1c92ca42d114567ec82d5f010b542f14a563d0749addf180559",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/03-spread-31-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 49786
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/03-spread-31-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 160204
+        },
+        {
+          "path": "/assets/media/selected-work/call-her-angelina/03-spread-31-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 435542
+        }
+      ]
+    }
+  ]
+}

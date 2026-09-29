@@ -1129,5 +1129,49 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "CALL HER ANGELINA",
+    "year": "2025",
+    "role": "PHOTOGRAPHY — CREATIVE DIRECTION",
+    "disciplines": "photography creative-direction",
+    "id": 13,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/call-her-angelina/01-spread-28-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/call-her-angelina/01-spread-28-640.webp 640w, /assets/media/selected-work/call-her-angelina/01-spread-28-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/01-spread-28-2400.webp 2400w",
+      "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR28.png",
+      "alt": "CALL HER ANGELINA — opening editorial spread with a black-gloved portrait, script title and original credits.",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/02-spread-29-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/call-her-angelina/02-spread-29-640.webp 640w, /assets/media/selected-work/call-her-angelina/02-spread-29-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/02-spread-29-2400.webp 2400w",
+        "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR29.png",
+        "alt": "CALL HER ANGELINA — paired close-up and seated portraits with black gloves and long hair boots.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/03-spread-31-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/call-her-angelina/03-spread-31-640.webp 640w, /assets/media/selected-work/call-her-angelina/03-spread-31-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/03-spread-31-2400.webp 2400w",
+        "sourceFile": "OFFICAL PRINT - ISSUE 01 FASHIONROCKSTAR31.png",
+        "alt": "CALL HER ANGELINA — hair boot detail and crouching portrait, with the original design credit.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];
