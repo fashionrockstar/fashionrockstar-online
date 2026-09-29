@@ -186,7 +186,7 @@ p {
   color: inherit;
 }
 
-/* Homepage: one inherited state keeps both sections synchronized */
+/* Homepage: a steady black canvas for the loading video. */
 body.home {
   --home-bg: #000;
   --home-fg: #fff;
@@ -197,23 +197,6 @@ body.home {
   background: var(--home-bg);
   color: var(--home-fg);
   color-scheme: dark;
-  animation: home-flash 1.8s steps(1, end) infinite;
-}
-
-@keyframes home-flash {
-  0%, 49.999% {
-    --home-bg: #000;
-    --home-fg: #fff;
-    --home-logo-light: 1;
-    --home-logo-dark: 0;
-  }
-
-  50%, 100% {
-    --home-bg: #fff;
-    --home-fg: #000;
-    --home-logo-light: 0;
-    --home-logo-dark: 1;
-  }
 }
 
 .home .logo-light {

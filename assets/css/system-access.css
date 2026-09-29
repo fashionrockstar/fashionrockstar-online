@@ -1,0 +1,152 @@
+/* A single, bounded transmission field. Shared site styles remain untouched. */
+html.system-access-open, html.system-access-open body { overflow: hidden; background: #000; }
+html.system-access-open body.home { animation: none; }
+html.system-access-open body.home > main { visibility: hidden; }
+.system-access {
+  --access-left: max(var(--pad), env(safe-area-inset-left));
+  --access-right: max(var(--pad), env(safe-area-inset-right));
+  --access-top: max(2rem, env(safe-area-inset-top));
+  --access-bottom: max(2rem, env(safe-area-inset-bottom));
+  --corruption: 0; --signal-exposure: 0; --smear: 0; --scan-intensity: 0;
+  --signal-displacement: 0px; --scan-x: -300px; --beam-width: 2px;
+  --silver-width: 12px; --bloom-width: 180px; --reflection-width: 50px;
+  --grain-shift: 0px; --lag: -12px; --beam-scale: 1; --signal-scale: 1;
+  position: fixed; z-index: 1000; inset: 0; height: 100vh; height: 100dvh;
+  overflow: hidden; isolation: isolate; background: #000; color: #fff;
+  color-scheme: dark; font-family: var(--font-ui); font-weight: 500;
+  -webkit-tap-highlight-color: transparent;
+}
+.system-access[hidden], .system-access [hidden], .site-audio[hidden] { display: none; }
+.system-access__meta { position: absolute; z-index: 8; margin: 0; font-size: 9px; letter-spacing: .2em; line-height: 1.6; font-weight: 500; color: #b3b3b3; }
+.system-access[data-state="dormant"] .system-access__meta { color: #929292; }
+.system-access__top-left { top: var(--access-top); left: var(--access-left); }
+.system-access__top-right { top: var(--access-top); right: var(--access-right); text-align: right; }
+.system-access__top-right > span { display: block; min-height: 1.6em; }
+.system-access__bottom-left { bottom: var(--access-bottom); left: var(--access-left); }
+.system-access__bottom-right { bottom: var(--access-bottom); right: var(--access-right); text-align: right; }
+.signal-field {
+  position: absolute; z-index: 4; left: 50%; top: 50%; width: 54vw; height: 44vh;
+  transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center;
+  flex-direction: column; overflow: hidden; pointer-events: none;
+  --field-beam-x: 50%;
+}
+.system-access__identity { position: relative; z-index: 3; width: clamp(260px, 25vw, 440px); flex-shrink: 0; }
+.system-access__signal { position: relative; width: 100%; --read-left: 0px; --read-right: 100%; }
+.system-access__logo-base { display: block; width: 100%; height: auto; }
+.system-access__mark { position: relative; }
+/* Cover only embedded Braille dots; the official wordmark pixels are untouched. */
+.system-access__mark::after { content: ''; position: absolute; left: 37.087912%; top: 65.979381%; width: 23.214286%; height: 34.020619%; background: #000; }
+.system-access__data { display: grid; grid-template-columns: repeat(15, 1fr); width: 86%; height: 16px; margin: 0 auto; font-size: 11px; line-height: 16px; font-weight: 500; text-align: center; }
+.system-access__data span { display: block; }
+.system-access__data span[data-resolved="false"] { color: #ddd; }
+.signal-slice, .signal-smear, .system-access__logo-response { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+.signal-slice { opacity: var(--slice-opacity, 0); filter: brightness(calc(1 + var(--signal-exposure) * 3)); }
+.signal-slice--1 { clip-path: inset(7% 0 76%); transform: translateX(calc(var(--signal-displacement) * -1)) scaleX(calc(1 + var(--corruption) * .14)); }
+.signal-slice--2 { clip-path: inset(27% 0 58%); transform: translateX(calc(var(--signal-displacement) * .77)) scaleX(calc(1 + var(--corruption) * .32)); }
+.signal-slice--3 { clip-path: inset(44% 0 43%); transform: translateX(calc(var(--signal-displacement) * -.62)) scaleX(calc(1 + var(--corruption) * .65)); }
+.signal-slice--4 { clip-path: inset(62% 0 26%); transform: translateX(calc(var(--signal-displacement) * 1.12)) scaleX(calc(1 - var(--corruption) * .2)); }
+.signal-slice--5 { clip-path: inset(83% 0 0); transform: translateX(calc(var(--signal-displacement) * -.82)) scaleX(calc(1 + var(--corruption) * .28)); }
+.system-access.is-corrupt .logo-primary { clip-path: polygon(0 0,100% 0,100% 7%,0 7%,0 24%,100% 24%,100% 27%,0 27%,0 42%,100% 42%,100% 44%,0 44%,0 57%,100% 57%,100% 62%,0 62%,0 74%,100% 74%,100% 83%,0 83%,0 100%,0 100%); }
+.system-access.is-overload .logo-primary { opacity: .08; }
+.signal-smear { opacity: calc(var(--smear) * .36); filter: blur(var(--smear-blur, 4px)); mix-blend-mode: screen; }
+.signal-smear--1 { clip-path: inset(20% 0 61%); transform: translateX(calc(var(--signal-displacement) * 1.3)) scaleX(var(--signal-scale)); transform-origin: 36% 50%; }
+.signal-smear--2 { clip-path: inset(54% 0 4%); transform: translateX(calc(var(--signal-displacement) * -1.8)) scaleX(calc(var(--signal-scale) * .86)); transform-origin: 62% 50%; }
+.system-access__logo-response { clip-path: inset(0 var(--read-right) 0 var(--read-left)); opacity: calc(var(--signal-exposure) * .8); filter: drop-shadow(0 0 6px #fff) brightness(3); mix-blend-mode: screen; }
+.system-access__fragments { position: absolute; inset: 0; opacity: var(--corruption); }
+.system-access__fragments i:first-child { position: absolute; top: 35%; left: -20px; width: 17px; height: 3px; background: #fff; box-shadow: 34px 5px #fff, 12px -9px #555; }
+.system-access__fragments i:nth-child(2) { position: absolute; top: 76%; right: 7%; width: 2px; height: 14px; background: #fff; }
+.system-access__fragments span { position: absolute; top: calc(100% + 4px); right: -25px; font-size: 9px; letter-spacing: .14em; }
+.signal-bands, .signal-noise { position: absolute; z-index: 5; inset: 0; pointer-events: none; opacity: var(--corruption); overflow: hidden; }
+.signal-bands i { position: absolute; left: var(--field-beam-x); top: var(--band-y); width: var(--band-width); height: var(--band-height); transform: translateX(var(--band-x)) scaleX(var(--signal-scale)); transform-origin: 0 50%; background: linear-gradient(90deg, transparent, #fff 12%, #fff 33%, rgb(255 255 255 / .3) 64%, transparent); opacity: var(--band-opacity); }
+.signal-bands i:nth-child(3n) { filter: blur(2px); }
+.signal-noise { z-index: 2; opacity: calc(var(--corruption) * .4); background: repeating-linear-gradient(0deg, transparent 0 3px, rgb(255 255 255 / .14) 3px 4px, transparent 4px 11px); mask-image: radial-gradient(ellipse at var(--field-beam-x) 45%, #000, transparent 58%); transform: translateY(var(--grain-shift)); }
+.system-access__action { position: relative; z-index: 9; height: 44px; margin-top: 32px; flex-shrink: 0; }
+.system-access__initialize { min-width: 132px; min-height: 44px; padding: .75rem 1.2rem; border: 1px solid #555; border-radius: 0; background: #000; color: #fff; font: inherit; font-size: 10px; letter-spacing: .2em; pointer-events: auto; }
+.system-access__initialize:hover { border-color: #fff; }
+.system-access__initialize:focus-visible, .system-access__skip:focus-visible, .site-audio__toggle:focus-visible { outline: 1px solid #fff; outline-offset: 5px; }
+.system-access__status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.system-access__grant-shell { position: absolute; z-index: 4; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: hidden; }
+.system-access__grant { display: flex; gap: .36em; white-space: nowrap; font-size: clamp(18px, 1.65vw, 27px); font-weight: 400; line-height: 1.3; }
+.system-access__grant span { display: inline-block; }
+.system-access__grant .is-lit { text-shadow: 0 0 6px #fff, 0 0 18px #fff; }
+.grant-slice, .grant-smear { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+.grant-slice { opacity: var(--grant-corruption, 0); }
+.grant-slice--1 { clip-path: inset(13% 0 52%); transform: translateX(calc(var(--signal-displacement) * -.75)); }
+.grant-slice--2 { clip-path: inset(54% 0 12%); transform: translateX(var(--signal-displacement)) scaleX(calc(1 + var(--grant-corruption, 0) * .4)); }
+.grant-smear { clip-path: inset(30% 0 34%); opacity: calc(var(--grant-corruption, 0) * .4); filter: blur(5px); transform: scaleX(var(--signal-scale)); }
+.system-access.is-grant-corrupt [data-system-grant] { clip-path: polygon(0 0,100% 0,100% 13%,0 13%,0 48%,100% 48%,100% 54%,0 54%,0 88%,100% 88%,100% 100%,0 100%); }
+.system-access[data-state="granted"] .system-access__grant-shell { visibility: visible; }
+.system-access__skip, .site-audio__toggle { min-width: 64px; min-height: 44px; padding: .75rem; border: 0; border-radius: 0; background: transparent; color: #999; font-family: var(--font-ui); font-size: 9px; font-weight: 500; letter-spacing: .2em; }
+.system-access__skip { position: absolute; z-index: 12; bottom: max(.85rem, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); }
+.site-audio { position: fixed; z-index: 1010; right: max(var(--pad), env(safe-area-inset-right)); bottom: max(.85rem, env(safe-area-inset-bottom)); }
+html.system-access-open .site-audio { bottom: max(6rem, calc(env(safe-area-inset-bottom) + 5rem)); }
+.system-access__scan { position: absolute; z-index: 3; left: 0; top: 0; width: 1px; height: 100%; transform: translate3d(var(--scan-x), 0, 0); opacity: 0; pointer-events: none; will-change: transform; }
+.system-access.is-scanning .system-access__scan, .system-access.is-unlocking .system-access__scan { opacity: 1; }
+.system-access__scan > div { position: absolute; top: 0; height: 100%; }
+.system-access__bloom { width: var(--bloom-width); left: calc(var(--bloom-width) * -.5); background: linear-gradient(90deg, transparent, rgb(210 210 210 / .03) 20%, rgb(255 255 255 / .35) 48%, rgb(255 255 255 / .15) 55%, transparent 85%); filter: blur(22px); transform: scaleX(var(--beam-scale)); }
+.system-access__reflection { width: var(--reflection-width); left: calc(var(--reflection-width) * -.5 + var(--lag)); background: linear-gradient(90deg, transparent, rgb(255 255 255 / .5) 43%, rgb(255 255 255 / .13) 65%, transparent); filter: blur(7px); }
+.system-access__silver-core { width: var(--silver-width); left: calc(var(--silver-width) * -.5); background: linear-gradient(90deg, transparent, #ddd 24%, #fff 50%, #ccc 73%, transparent); filter: blur(2.5px); opacity: .9; }
+.system-access__core { width: var(--beam-width); left: calc(var(--beam-width) * -.5); background: #fff; box-shadow: 0 0 6px #fff; }
+/* The primary column is physically broken, with different segments cut in each layer. */
+.system-access.is-scanning .system-access__core { clip-path: polygon(0 0,100% 0,100% 9%,0 9%,0 13%,100% 13%,100% 28%,0 28%,0 31%,100% 31%,100% 46%,0 46%,0 48%,100% 48%,100% 67%,0 67%,0 73%,100% 73%,100% 89%,0 89%,0 91%,100% 91%,100% 100%,0 100%); }
+.system-access.is-scanning .system-access__silver-core { mask-image: linear-gradient(#000 7%, transparent 10%, #000 15% 25%, transparent 30%, #000 34% 42%, transparent 47%, #000 51% 64%, transparent 72%, #000 77% 86%, transparent 91%, #000 96%); }
+/* Offset the dark voids across the optical layers so the silver has uneven depth. */
+.system-access.is-scanning .system-access__bloom { mask-image: linear-gradient(#000 2%, rgb(0 0 0 / .15) 9% 12%, #000 19% 25%, rgb(0 0 0 / .2) 31%, #000 39% 54%, rgb(0 0 0 / .1) 62% 68%, #000 76%, rgb(0 0 0 / .3) 85%, #000 97%); }
+.system-access.is-scanning .system-access__reflection { mask-image: linear-gradient(rgb(0 0 0 / .3), #000 8% 15%, transparent 21% 24%, #000 32% 43%, rgb(0 0 0 / .15) 51% 56%, #000 62% 73%, transparent 82% 86%, #000 94%); }
+.system-access.is-scanning .system-access__exposure { mask-image: linear-gradient(#000 1%, rgb(0 0 0 / .3) 7%, transparent 12% 16%, rgb(0 0 0 / .75) 23%, rgb(0 0 0 / .08) 29% 31%, #000 38% 52%, rgb(0 0 0 / .2) 58%, transparent 63% 66%, #000 73%, rgb(0 0 0 / .1) 81% 84%, #000 95%); }
+.system-access__exposure { left: -95px; width: 190px; opacity: var(--signal-exposure); background: linear-gradient(90deg, transparent, #fff 42%, #fff 58%, transparent); filter: blur(12px); transform: scaleX(var(--exposure-scale, 1)); mix-blend-mode: screen; }
+.system-access__fractures { left: 0; width: 1px; opacity: var(--fracture-opacity, 0); }
+.system-access__fractures i { position: absolute; width: var(--fracture-width); height: var(--fracture-height); top: var(--fracture-top); left: var(--fracture-x); background: #fff; opacity: var(--fracture-alpha); box-shadow: 0 0 4px #fff; }
+.system-access__scan-grain { left: -140px; width: 280px; transform: translate(var(--grain-shift), 0) scaleX(var(--beam-scale)); opacity: calc(.2 + var(--scan-intensity) * .65); }
+.system-access__scan-grain i { position: absolute; height: var(--shard-height); left: var(--shard-x); top: var(--shard-top); width: var(--shard-width); background: linear-gradient(90deg, transparent, #ccc 24%, #fff 43%, rgb(255 255 255 / .3) 64%, transparent); opacity: var(--shard-alpha); }
+.system-access__edge { position: absolute; z-index: 1; top: 0; height: 100%; width: 24px; opacity: 0; background: linear-gradient(90deg, rgb(255 255 255 / .28), rgb(210 210 210 / .04) 30%, transparent); pointer-events: none; }
+.system-access__edge--left { left: 0; }
+.system-access__edge--right { right: 0; transform: scaleX(-1); }
+.system-access.is-edge-left .system-access__edge--left, .system-access.is-edge-right .system-access__edge--right { opacity: 1; }
+.system-access__flash { position: absolute; z-index: 20; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+.system-access.is-flashing .system-access__flash { opacity: 1; }
+.system-access.is-signal-cut .signal-field, .system-access.is-signal-cut .system-access__grant-shell { opacity: 0; }
+.system-access.is-signal-cut .system-access__scan { opacity: 0; }
+.system-access.is-start-flicker .system-access__top-right { color: #fff; }
+.system-access[data-state="boot"] .signal-field,
+.system-access[data-state="quiet"] .signal-field,
+.system-access[data-state="granted"] .signal-field { visibility: hidden; }
+.system-access[data-state="quiet"] .system-access__meta,
+.system-access[data-state="granted"] .system-access__meta { visibility: hidden; }
+.system-access[data-state="black"] > :not(.system-access__status) { visibility: hidden; }
+html.system-access-open:has(.system-access[data-state="black"]) .site-audio,
+html.system-access-open:has(.system-access.is-flashing) .site-audio { opacity: 0; }
+@media (max-width: 760px) {
+  .system-access { --access-top: max(1.5rem, env(safe-area-inset-top)); --access-bottom: max(2.2rem, env(safe-area-inset-bottom)); }
+  .system-access__meta { font-size: 8px; letter-spacing: .18em; }
+  .system-access__top-left { left: 0; right: 0; text-align: center; }
+  .system-access__top-right { top: calc(var(--access-top) + 2.5rem); left: 0; right: 0; text-align: center; visibility: hidden; }
+  .system-access[data-state="boot"] .system-access__top-right, .system-access[data-state="active"] .system-access__top-right { visibility: visible; }
+  .system-access__bottom-right { display: none; }
+  .system-access__bottom-left { left: var(--access-left); right: var(--access-right); text-align: center; font-size: 7px; }
+  .system-access__bottom-left br { display: none; }
+  .system-access:not([data-state="dormant"]) .system-access__bottom-left { visibility: hidden; }
+  .signal-field { width: 94vw; height: 44vh; }
+  .system-access__identity { width: 74vw; }
+  .system-access__data { font-size: 10px; }
+  .system-access__action { margin-top: 29px; }
+  .system-access__grant { width: 220px; justify-content: center; flex-wrap: wrap; font-size: 18px; gap: 4px .29em; }
+  .system-access__grant span:nth-child(7) { flex-basis: 100%; height: 0; font-size: 0; }
+  .system-access__scan-grain { left: -140px; transform: translate(var(--grain-shift), 0) scaleX(calc(var(--beam-scale) * .58)); }
+  .system-access__exposure { width: 110px; left: -55px; filter: blur(9px); }
+  html.system-access-open .site-audio, .system-access__skip { bottom: max(1rem, env(safe-area-inset-bottom)); }
+}
+@media (max-height: 440px) and (orientation: landscape) {
+  .signal-field { height: 66vh; }
+  .system-access__action { margin-top: 18px; }
+  .system-access__bottom-left, .system-access__bottom-right { display: none; }
+  html.system-access-open .site-audio { bottom: max(.85rem, env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .signal-slice, .signal-smear, .system-access__logo-response, .signal-bands, .signal-noise,
+  .system-access__fragments, .system-access__scan, .system-access__edge, .system-access__flash,
+  .grant-slice, .grant-smear { display: none !important; }
+  .system-access .logo-primary, .system-access [data-system-grant] { clip-path: none !important; opacity: 1; }
+  .system-access .system-access__grant .is-lit { text-shadow: none; }
+  .system-access.is-signal-cut .signal-field, .system-access.is-signal-cut .system-access__grant-shell { opacity: 1; }
+}

@@ -2,11 +2,19 @@
 
 Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify serves the repository root. The working branch is `development`; `main` is production.
 
+## Home entry — September 23, 2026
+
+At the owner's request, the SYSTEM ACCESS pre-home screen is removed. Visitors arrive directly on the existing HOME, without INITIALIZE, the entry sequence, its narration controls, or a session gate. The old `?system-access=1` query no longer starts an entry sequence.
+
+`index.html` no longer loads the SYSTEM ACCESS stylesheet or script, and `assets/js/landing.js` no longer waits for that sequence. The existing HOME markup, logo video, navigation, social links, Braille links, reduced-motion behavior and other pages are preserved. The former entry's unused CSS/JavaScript and supplied audio file remain in the repository for reference; they are not loaded by HOME. Do not reintroduce this screen without a new explicit approval.
+
+Development review remains on the existing `development` branch / draft PR #2. Do not merge or publish production until the preview is approved.
+
 ## Content
 
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
-- Entry: visitors arrive directly on the normal homepage on all devices; the fingerprint gate and its sound effect have been removed.
-- Portfolio: `work/index.html`; five real projects and their media are defined in `assets/js/main.js`. Keep the gallery grid and project media order when replacing files.
+- Entry: visitors arrive directly on HOME on all devices. SYSTEM ACCESS and the previous fingerprint gate are inactive.
+- Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
 - Profile: `about/index.html` and `assets/css/about.css`; the `/about/` address is unchanged.
 - Services: `services/index.html`.
 - Contact: `contact/index.html` and `assets/css/contact.css`.
@@ -50,3 +58,11 @@ The September 8 completion pass checked all eight HTML routes and 151 local refe
 - Preservation: the clean `ca800094` working copy, including Git history, was archived and verified before this pass. The concurrent `be3020a` development commit was merged without discarding its caption or symbol changes. Work continues on `development`; `rescue-2026-09-08` remains unchanged.
 - Checked: Chrome at 1440px, 390px and 320px; desktop hover; all eleven mobile tile titles without clipping; one-touch project opening with touch emulation; Visuals and Beauty filters; eight HTML routes and 144 local references. Profile, Issue 01, inquiry form behavior, project data and media are unchanged. These browser checks do not replace a physical-device test. Confirm that the existing Netlify production deploy identifies the final `main` commit.
 - Remaining: actual Netlify Forms receipt still needs an authorized submission; supplied-content items above remain open. Domain configuration is outside this pass.
+
+## Contact motion — September 8, 2026
+
+- Added a rising reveal for the existing CONTACT wordmark, staggered directory entrances, scroll-triggered booking/footer entrances and responsive underline/hover motion. The latest saved Contact design, copy, link destinations and artwork are preserved.
+- Motion plays once as each section enters view. Reduced-motion preferences disable it, keyboard focus immediately exposes the focused section, and content stays available if JavaScript is unavailable.
+- Work is based on the latest `development` layout (`f6e4017`), after a verified local archive. Keep `rescue-2026-09-08` unchanged. Unpublished work on other pages is separate from this Contact update.
+- Checked: Chrome at 1440px and 320px, staggered entrance states, keyboard focus during the entrance, reduced-motion mode, unchanged Contact content/destinations, 149 local references and JavaScript syntax. This pass is saved as a development preview; production is not changed.
+- Remaining: the existing form-delivery and supplied-content checks above.

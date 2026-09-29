@@ -1,0 +1,147 @@
+{
+  "title": "LEE'S BROKEN DOLLS",
+  "projectId": 12,
+  "selection": "final 1.jpg supersedes the earlier 1.jpg version of the same photograph; final cover followed by supplied photographs 2–5.",
+  "media": [
+    {
+      "sourceFile": "final 1.jpg",
+      "sourceSize": [
+        5904,
+        3936
+      ],
+      "sourceSha256": "2e221c850261582d68b2431390079f2cdeb07007244bb21511b81f72f5539c31",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/01-final-1-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 35456
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/01-final-1-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 129702
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/01-final-1-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 434470
+        }
+      ]
+    },
+    {
+      "sourceFile": "2 FINAL CORRECTED.jpg",
+      "sourceSize": [
+        6000,
+        4000
+      ],
+      "sourceSha256": "e8c56eb814d16d39276a8b8104fef1bb4932cd2b384ed6fc3873a618e39ceec4",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/02-final-corrected-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 46726
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/02-final-corrected-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 154754
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/02-final-corrected-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 451820
+        }
+      ]
+    },
+    {
+      "sourceFile": "3.3.jpg",
+      "sourceSize": [
+        6000,
+        4000
+      ],
+      "sourceSha256": "5615d61e88377535560c3a7aecf3202dc454cbd25e7f44002f1e06020e08a57a",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/03-3-3-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 40818
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/03-3-3-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 128622
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/03-3-3-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 343174
+        }
+      ]
+    },
+    {
+      "sourceFile": "4.jpg",
+      "sourceSize": [
+        5643,
+        3762
+      ],
+      "sourceSha256": "5a5cde53c339a99d2047b514e2fe1df42713466f1d4cae7156eb9bf1be1f350f",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/04-4-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 50794
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/04-4-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 226830
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/04-4-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 898406
+        }
+      ]
+    },
+    {
+      "sourceFile": "5.jpg",
+      "sourceSize": [
+        5803,
+        3869
+      ],
+      "sourceSha256": "84f7af305f53ec3c9dc08f37a0b4e96d1cc6e92d66ddcc205bcdd13f49f16487",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/05-5-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 65826
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/05-5-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 331968
+        },
+        {
+          "path": "/assets/media/selected-work/lees-broken-dolls/05-5-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 1379414
+        }
+      ]
+    }
+  ]
+}

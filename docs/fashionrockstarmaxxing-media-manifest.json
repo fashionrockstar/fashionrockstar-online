@@ -1,0 +1,135 @@
+[
+  {
+    "source": "FASHIONROCKSTARMAXXING/1.jpg",
+    "file": "1.jpg",
+    "order": 1,
+    "isCover": true,
+    "coverStatus": "Awaiting owner review",
+    "bytes": 7615669,
+    "sha256": "000dec46f21f7c554bc2df71ad35c707f867afc1f344980aca1fb082c9ee49e3",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 11666
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 38878
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 126264
+      }
+    ],
+    "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp"
+  },
+  {
+    "source": "FASHIONROCKSTARMAXXING/2 (1).jpg",
+    "file": "2 (1).jpg",
+    "order": 2,
+    "isCover": false,
+    "bytes": 2481275,
+    "sha256": "b5d05dd90dd7e26038dc0981d0284b1f2f38dc4aa64acdcd339f6e71985dd222",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 20930
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 67372
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 219226
+      }
+    ],
+    "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp"
+  },
+  {
+    "source": "FASHIONROCKSTARMAXXING/2.jpg",
+    "file": "2.jpg",
+    "order": 3,
+    "isCover": false,
+    "bytes": 6648361,
+    "sha256": "e8ff4bbd167087b13edac396d6c00eea183e5d28bf5b4e5605e218cde52417af",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 11350
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 37062
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 104800
+      }
+    ],
+    "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp"
+  },
+  {
+    "source": "FASHIONROCKSTARMAXXING/3 (2).jpg",
+    "file": "3 (2).jpg",
+    "order": 4,
+    "isCover": false,
+    "bytes": 2233774,
+    "sha256": "757c0d6d0fee67417ddcb8d9161ce2fd0baf8a57e50bf3f5d943524eece02a2e",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17970
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 68932
+      },
+      {
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 232374
+      }
+    ],
+    "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp"
+  }
+]

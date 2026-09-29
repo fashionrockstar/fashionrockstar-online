@@ -1,0 +1,1642 @@
+[
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/1.jpg",
+    "bytes": 9632168,
+    "sha256": "24a279a5a6a27d6db0ec3f60fe3f10672bbf5fb22b0257d26f5f93ecb863dd74",
+    "number": 1,
+    "file": "1.jpg",
+    "isCover": false,
+    "stem": "01-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/01-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 41690
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/01-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 146644
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 432816
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/01-1-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/2.jpg",
+    "bytes": 11142813,
+    "sha256": "205dba0c8743b440fe9b38d0d8848977d93b38175febd98b208741f599192b27",
+    "number": 1,
+    "file": "2.jpg",
+    "isCover": false,
+    "stem": "02-2",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/02-2-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 41586
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/02-2-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 181470
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 597096
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/02-2-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/3.jpg",
+    "bytes": 8131638,
+    "sha256": "6fecf47ae0dfe73ea1e3e597e59c6bc7f3966b3cd1afe4d961847bb08ea13759",
+    "number": 1,
+    "file": "3.jpg",
+    "isCover": false,
+    "stem": "03-3",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/03-3-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 37432
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/03-3-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 114416
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/03-3-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 298944
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/03-3-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/4 (1).jpg",
+    "bytes": 4523383,
+    "sha256": "63c9374fc5bc8f247e2ba3920eee9d0d5fab4a5f38607710b67bb32c431cc29e",
+    "number": 1,
+    "file": "4 (1).jpg",
+    "isCover": false,
+    "stem": "04-4-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 52570
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 236614
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 723888
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/4.jpg",
+    "bytes": 8914604,
+    "sha256": "88228099b844cb7b049e83ef71b1cf8fdc30999a4a22fac7ff990df7a3432af9",
+    "number": 1,
+    "file": "4.jpg",
+    "isCover": false,
+    "stem": "05-4",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/05-4-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 45330
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/05-4-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 140870
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/05-4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 360016
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/05-4-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/5 (1).jpg",
+    "bytes": 2433686,
+    "sha256": "3dced6e3dd1eaad156d29feb9aa393994cab0e85d197a953f44c4bcfbeaf1a73",
+    "number": 1,
+    "file": "5 (1).jpg",
+    "isCover": false,
+    "stem": "06-5-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 20114
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 69330
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 218844
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/7.jpg",
+    "bytes": 2651390,
+    "sha256": "e0a196ac472f5f4dabbd34358fd5c128f55359625ebe1e09bea958729c2814c1",
+    "number": 1,
+    "file": "7.jpg",
+    "isCover": false,
+    "stem": "07-7",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/07-7-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 33114
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/07-7-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 127180
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-runway/07-7-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 347730
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-runway/07-7-2400.webp"
+  },
+  {
+    "source": "1BROKENHEART X FASHIONROCKSTAR [M.A.D 26]/COVER.mp4",
+    "bytes": 86665914,
+    "sha256": "26b227b030c4886d8234902394e6e39c7bfd2de72e3afad9bf97ddb2c82dfd9b",
+    "number": 1,
+    "file": "COVER.mp4",
+    "isCover": true,
+    "stem": "cover",
+    "type": "video",
+    "width": 1080,
+    "height": 608,
+    "poster": "/assets/media/selected-work/brokenheart-runway/cover-poster.webp",
+    "src": "/assets/media/selected-work/brokenheart-runway/cover.mp4"
+  },
+  {
+    "source": "2. FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]/FASHIONROCKSTAR X BROKENHEART PROMO CAMPAIGN [MICA]/_DSC6257-2 copy.jpg",
+    "bytes": 5007117,
+    "sha256": "9140f2e66c6ef7599789b54bf5b4e8051d42f4eda9bb3443b39c7071f8efff82",
+    "number": 2,
+    "file": "_DSC6257-2 copy.jpg",
+    "isCover": false,
+    "stem": "01-dsc6257-2-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19552
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 60938
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 153160
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp"
+  },
+  {
+    "source": "2. FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]/FASHIONROCKSTAR X BROKENHEART PROMO CAMPAIGN [MICA]/1111.jpg",
+    "bytes": 4083591,
+    "sha256": "ca35ea5c0c307a3a4b7986e9ee280f8d03181a0e065d7c3e8b2222f4e276a7d6",
+    "number": 2,
+    "file": "1111.jpg",
+    "isCover": false,
+    "stem": "02-1111",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 14664
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 36762
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 91936
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp"
+  },
+  {
+    "source": "2. FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]/FASHIONROCKSTAR X BROKENHEART PROMO CAMPAIGN [MICA]/Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
+    "bytes": 40108072,
+    "sha256": "2675ac954da640d85e7523aa753c1a17aea5c24ea15131447cd6f4bcb14d3847",
+    "number": 2,
+    "file": "Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
+    "isCover": false,
+    "stem": "03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1",
+    "type": "video",
+    "width": 2160,
+    "height": 3840,
+    "poster": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp",
+    "src": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4"
+  },
+  {
+    "source": "2. FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]/FASHIONROCKSTAR X BROKENHEART PROMO CAMPAIGN [MICA]/Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
+    "bytes": 30696054,
+    "sha256": "c1058422941b341e86f611646b596e57e0f665dfc3ba352625a548bb7ff50cf6",
+    "number": 2,
+    "file": "Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
+    "isCover": false,
+    "stem": "04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1",
+    "type": "video",
+    "width": 2160,
+    "height": 3840,
+    "poster": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp",
+    "src": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4"
+  },
+  {
+    "source": "2. FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]/FASHIONROCKSTAR X BROKENHEART PROMO CAMPAIGN [MICA]/FEET1 copy.jpg",
+    "bytes": 4940075,
+    "sha256": "dc59cff23f126437963bbe46e082570bf08dce205776ecb71a822af2343027d4",
+    "number": 2,
+    "file": "FEET1 copy.jpg",
+    "isCover": false,
+    "stem": "05-feet1-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 16222
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 50536
+      },
+      {
+        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 142848
+      }
+    ],
+    "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp"
+  },
+  {
+    "source": "3. MICAELA GOMES [M.A.D 2026]/1.1.jpg",
+    "bytes": 9276010,
+    "sha256": "5aa99840f4c3e6ac3f0ed8248f6ef5a13e7765d6415580cb503a091bec885c74",
+    "number": 3,
+    "file": "1.1.jpg",
+    "isCover": false,
+    "stem": "01-1-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 27674
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 87976
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 250568
+      }
+    ],
+    "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp"
+  },
+  {
+    "source": "3. MICAELA GOMES [M.A.D 2026]/2.jpg",
+    "bytes": 8486742,
+    "sha256": "9771203fd3a8b96c64324985a5bd46c7d963c1a68139652b7c8c400a2ab54248",
+    "number": 3,
+    "file": "2.jpg",
+    "isCover": false,
+    "stem": "02-2",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 23076
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 68230
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 187648
+      }
+    ],
+    "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp"
+  },
+  {
+    "source": "3. MICAELA GOMES [M.A.D 2026]/4.1.jpg",
+    "bytes": 7762157,
+    "sha256": "d2c0c4e111d89bd878b3a9a2eb5542feb17ced4d60ade2c7c0075be015d0afd5",
+    "number": 3,
+    "file": "4.1.jpg",
+    "isCover": false,
+    "stem": "03-4-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 15994
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 53078
+      },
+      {
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 164362
+      }
+    ],
+    "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/1.jpg",
+    "bytes": 9380326,
+    "sha256": "9014d09089ed81f6863972de82b5c6ef888af48e553333912ca7f536033acbcd",
+    "number": 4,
+    "file": "1.jpg",
+    "isCover": false,
+    "stem": "01-1",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/01-1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 35744
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/01-1-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 137558
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 422914
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/01-1-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/2.jpg",
+    "bytes": 8403134,
+    "sha256": "f4e18a16bf160e3c9ff4d96ab03c4358a494cdcea25ebd422baf0585f36ee628",
+    "number": 4,
+    "file": "2.jpg",
+    "isCover": false,
+    "stem": "02-2",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/02-2-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 31252
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/02-2-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 109402
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 311280
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/02-2-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/3.jpg",
+    "bytes": 9837749,
+    "sha256": "1718ab638640b4b510db5939581367516b338dbb62490a1d72a6fd1e875f8fa7",
+    "number": 4,
+    "file": "3.jpg",
+    "isCover": false,
+    "stem": "03-3",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/03-3-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 45002
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/03-3-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 158530
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/03-3-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 462274
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/03-3-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/4.jpg",
+    "bytes": 8982045,
+    "sha256": "039e7c6d6c7190605ad762695d13a4855d63d622246052f5f538395fde6c4e29",
+    "number": 4,
+    "file": "4.jpg",
+    "isCover": false,
+    "stem": "04-4",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/04-4-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 29188
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/04-4-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 126000
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/04-4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 415738
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/04-4-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/5.jpg",
+    "bytes": 8900401,
+    "sha256": "e2727b43b0b5ba8b4facd97f50b1b28662e2274856c2cc0b7b3a98cbeac5042a",
+    "number": 4,
+    "file": "5.jpg",
+    "isCover": false,
+    "stem": "05-5",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/05-5-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 36356
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/05-5-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 130194
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/05-5-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 361670
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/05-5-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/6.jpg",
+    "bytes": 10196252,
+    "sha256": "7c3fcc56e9e3f9f033ef1bc3e26ba0d9c1ff3178b2c8db1ea05b81c2448d9698",
+    "number": 4,
+    "file": "6.jpg",
+    "isCover": false,
+    "stem": "06-6",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/06-6-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 48258
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/06-6-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 156982
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/06-6-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 436764
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/06-6-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/7.jpg",
+    "bytes": 7929992,
+    "sha256": "658e18270d1ad1ee70daba3c5008d35bdb9d689328eddcc8509f67cb06f87cd1",
+    "number": 4,
+    "file": "7.jpg",
+    "isCover": false,
+    "stem": "07-7",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/07-7-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 57916
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/07-7-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 145710
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/07-7-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 378620
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/07-7-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/8 - Copie.jpg",
+    "bytes": 7384936,
+    "sha256": "69cb7bea0760db2c3324d29eb356ea58922ad6c276b28a2fb829d8f5a1748299",
+    "number": 4,
+    "file": "8 - Copie.jpg",
+    "isCover": false,
+    "stem": "08-8-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/08-8-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 21476
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/08-8-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 55334
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/08-8-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 144492
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/08-8-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/9 - Copie.jpg",
+    "bytes": 8443281,
+    "sha256": "555e0bd3257267863be487e3b711990c114e5e7f28192eba897da8ed6269ad30",
+    "number": 4,
+    "file": "9 - Copie.jpg",
+    "isCover": false,
+    "stem": "09-9-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/09-9-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 20518
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/09-9-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 78890
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/09-9-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 252256
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/09-9-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/10 - Copie.jpg",
+    "bytes": 7101369,
+    "sha256": "7f3c74c1cd7a32500139b79c5485401135d885fdc7d214da4cfed4dbadd588a4",
+    "number": 4,
+    "file": "10 - Copie.jpg",
+    "isCover": false,
+    "stem": "10-10-copie",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/10-10-copie-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 32276
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/10-10-copie-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 125854
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/10-10-copie-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 390084
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/10-10-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/11 - Copie.jpg",
+    "bytes": 8166522,
+    "sha256": "d6a437cb0a97612a2024e66651c29a35c8c27f2e8a84f6feb99874246f5d5ab0",
+    "number": 4,
+    "file": "11 - Copie.jpg",
+    "isCover": false,
+    "stem": "11-11-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/11-11-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 18056
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/11-11-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 72278
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/11-11-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 238732
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/11-11-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/12 - Copie.jpg",
+    "bytes": 10854716,
+    "sha256": "b41cff2ae5a59c91e6448bbf5ce83c0706c9a595c389c378f6fade82e0aa4308",
+    "number": 4,
+    "file": "12 - Copie.jpg",
+    "isCover": false,
+    "stem": "12-12-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/12-12-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22706
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/12-12-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 127696
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/12-12-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 537258
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/12-12-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/13 - Copie.jpg",
+    "bytes": 8962481,
+    "sha256": "026e93b5dcfa43a69b554f6c3ad9aa3c3cd2e3337e3e8739be9412f1d83e548e",
+    "number": 4,
+    "file": "13 - Copie.jpg",
+    "isCover": false,
+    "stem": "13-13-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/13-13-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 30792
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/13-13-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 99152
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/13-13-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 255876
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/13-13-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/14 - Copie.jpg",
+    "bytes": 8264697,
+    "sha256": "459015061c13f620d935fed663cbc4e3c8f991551a487c85847524cd1d646925",
+    "number": 4,
+    "file": "14 - Copie.jpg",
+    "isCover": false,
+    "stem": "14-14-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/14-14-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 26232
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/14-14-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 88540
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/14-14-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 245664
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/14-14-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/15 - Copie.jpg",
+    "bytes": 9512672,
+    "sha256": "b1becd35f12ff7cca36be77d1689a1c4bfb48880dec045db58a57482c26378e5",
+    "number": 4,
+    "file": "15 - Copie.jpg",
+    "isCover": false,
+    "stem": "15-15-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/15-15-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 13008
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/15-15-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 132164
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/15-15-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 566932
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/15-15-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/16 - Copie.jpg",
+    "bytes": 10558309,
+    "sha256": "ddc937f3d65e0b863f79346b7634bc34e8c50bff218c4e6cee7cb9a1d7926c1d",
+    "number": 4,
+    "file": "16 - Copie.jpg",
+    "isCover": false,
+    "stem": "16-16-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/16-16-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22744
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/16-16-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 191994
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/16-16-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 730240
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/16-16-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/17 - Copie.jpg",
+    "bytes": 6427873,
+    "sha256": "007104493550f87c42eaadb964855b9a37e6449ef4bece61d77b1871977035e5",
+    "number": 4,
+    "file": "17 - Copie.jpg",
+    "isCover": false,
+    "stem": "17-17-copie",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/17-17-copie-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 21544
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/17-17-copie-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 80476
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/17-17-copie-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 242050
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/17-17-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/18 - Copie.jpg",
+    "bytes": 7046993,
+    "sha256": "fb52260743b87dc95c81639576a6792987df0b07688430f154c3debc49da8b65",
+    "number": 4,
+    "file": "18 - Copie.jpg",
+    "isCover": false,
+    "stem": "18-18-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/18-18-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 13180
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/18-18-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 43324
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/18-18-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 135072
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/18-18-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/19 - Copie.jpg",
+    "bytes": 6172683,
+    "sha256": "7a584705290232a16ebc6cb44aff54f649658183ad794965241aaebe397cf40b",
+    "number": 4,
+    "file": "19 - Copie.jpg",
+    "isCover": false,
+    "stem": "19-19-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/19-19-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 11388
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/19-19-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 39864
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/19-19-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 135918
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/19-19-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/20 - Copie.jpg",
+    "bytes": 6901558,
+    "sha256": "aaf056203dc666b832aafc937c79ea2e436adfc460b32e976f2c6b79e1aa82c3",
+    "number": 4,
+    "file": "20 - Copie.jpg",
+    "isCover": false,
+    "stem": "20-20-copie",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/20-20-copie-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 25788
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/20-20-copie-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 93176
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/20-20-copie-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 326080
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/20-20-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/21 - Copie.jpg",
+    "bytes": 9879713,
+    "sha256": "87a5100d05b17d9c323cb01be2378dc8d63dc449dfe5f4258541e9b7ffe9104c",
+    "number": 4,
+    "file": "21 - Copie.jpg",
+    "isCover": false,
+    "stem": "21-21-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/21-21-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 43516
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/21-21-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 133688
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/21-21-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 347824
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/21-21-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/22 - Copie.jpg",
+    "bytes": 8978745,
+    "sha256": "25bff730ec57aecc99b6c1e7d2b60b8dbf696fb9e6048ae90189fa8fc8bb1cd0",
+    "number": 4,
+    "file": "22 - Copie.jpg",
+    "isCover": false,
+    "stem": "22-22-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/22-22-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 30378
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/22-22-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 92418
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/22-22-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 234696
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/22-22-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/23 - Copie.jpg",
+    "bytes": 7929839,
+    "sha256": "8c7804fcb573060f37fdc4cd6a7513758914f8bc14083c8d643ee8ddb14c3493",
+    "number": 4,
+    "file": "23 - Copie.jpg",
+    "isCover": false,
+    "stem": "23-23-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/23-23-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 28288
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/23-23-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 91194
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/23-23-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 246934
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/23-23-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/24 - Copie.jpg",
+    "bytes": 7292610,
+    "sha256": "ce35f37f02fabe8f2ad01ec815c63e6a433655e517c0660f82acdebb738d0241",
+    "number": 4,
+    "file": "24 - Copie.jpg",
+    "isCover": false,
+    "stem": "24-24-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/24-24-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 15644
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/24-24-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 51024
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/24-24-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 163698
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/24-24-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/25 - Copie.jpg",
+    "bytes": 7582196,
+    "sha256": "1068e487bec5c3686353e6554f6045609770450bff8a4d32b112a0d3d3f808cf",
+    "number": 4,
+    "file": "25 - Copie.jpg",
+    "isCover": false,
+    "stem": "25-25-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/25-25-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17222
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/25-25-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 61854
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/25-25-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 196992
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/25-25-copie-2400.webp"
+  },
+  {
+    "source": "4 MOONBOI/26 - Copie.jpg",
+    "bytes": 8793314,
+    "sha256": "1d69e634fbd8cd952372f150364310aff687ee96494ff68bf78ab662e82f382f",
+    "number": 4,
+    "file": "26 - Copie.jpg",
+    "isCover": false,
+    "stem": "26-26-copie",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/moonboi/26-26-copie-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22774
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/26-26-copie-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 76740
+      },
+      {
+        "src": "/assets/media/selected-work/moonboi/26-26-copie-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 234518
+      }
+    ],
+    "src": "/assets/media/selected-work/moonboi/26-26-copie-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/_DSC7164 copy.jpg",
+    "bytes": 8621714,
+    "sha256": "2aa22792aee867148f8ff5e8617b76612d7ab48fac2ce070630f399d97151839",
+    "number": 5,
+    "file": "_DSC7164 copy.jpg",
+    "isCover": false,
+    "stem": "01-dsc7164-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 40534
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 134952
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 404426
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/_DSC7411 copy.jpg",
+    "bytes": 6495056,
+    "sha256": "33c4cd55de3ff38e54f1b50ea4bd6733e1096f18c13377d468134cac41534f18",
+    "number": 5,
+    "file": "_DSC7411 copy.jpg",
+    "isCover": false,
+    "stem": "02-dsc7411-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19250
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 77022
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 253180
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/_DSC7449 copy.jpg",
+    "bytes": 6683557,
+    "sha256": "00e9d6acd9e884447969b73a6880a5b1662361a0f68374c48306df8f704ee847",
+    "number": 5,
+    "file": "_DSC7449 copy.jpg",
+    "isCover": false,
+    "stem": "03-dsc7449-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 35754
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 112020
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 297398
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/_DSC7450 copy.jpg",
+    "bytes": 7693316,
+    "sha256": "c3b2e127d1c39b45c661dbc9daa02bf25f36d6fdb379430286b66cdd3de1056e",
+    "number": 5,
+    "file": "_DSC7450 copy.jpg",
+    "isCover": false,
+    "stem": "04-dsc7450-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 41926
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 128242
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 321336
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/_DSC7478 copy.jpg",
+    "bytes": 7951390,
+    "sha256": "092b1159d39eef13a896b540d38ab1ee6b2782acd3d04e3d2411ac20715f0d1d",
+    "number": 5,
+    "file": "_DSC7478 copy.jpg",
+    "isCover": false,
+    "stem": "05-dsc7478-copy",
+    "type": "image",
+    "width": 6000,
+    "height": 4000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 30222
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 104984
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 332174
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/09.jpg",
+    "bytes": 5578974,
+    "sha256": "3175caf12ca12131f344b9b1a79637934d6df6f484cf1ed091ccb683ff46b501",
+    "number": 5,
+    "file": "09.jpg",
+    "isCover": false,
+    "stem": "06-09",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/06-09-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 44686
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/06-09-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 138144
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/06-09-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 367076
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/06-09-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/COVER .jpg",
+    "bytes": 700676,
+    "sha256": "6be8b3f74981e38161eb2010e06fdcf7c14889a6eec825eeddc5f647569be64f",
+    "number": 5,
+    "file": "COVER .jpg",
+    "isCover": true,
+    "stem": "cover",
+    "type": "image",
+    "width": 2048,
+    "height": 1365,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/cover-640.webp",
+        "width": 640,
+        "height": 426,
+        "bytes": 50242
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/cover-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 173234
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/cover-2400.webp",
+        "width": 2048,
+        "height": 1365,
+        "bytes": 402288
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/cover-2400.webp"
+  },
+  {
+    "source": "5KAINE BASQUIAT [MONTREALITY X MURAL 26]/stand.jpg",
+    "bytes": 8756666,
+    "sha256": "b9504d1aa234f6ef31475c37b8d7d5552dfecfa892a25f01afa6ca63d3b0cf6b",
+    "number": 5,
+    "file": "stand.jpg",
+    "isCover": false,
+    "stem": "08-stand",
+    "type": "image",
+    "width": 4000,
+    "height": 6000,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/08-stand-640.webp",
+        "width": 640,
+        "height": 960,
+        "bytes": 87856
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/08-stand-1280.webp",
+        "width": 1280,
+        "height": 1920,
+        "bytes": 335616
+      },
+      {
+        "src": "/assets/media/selected-work/kaine-basquiat/08-stand-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "bytes": 932084
+      }
+    ],
+    "src": "/assets/media/selected-work/kaine-basquiat/08-stand-2400.webp"
+  }
+]

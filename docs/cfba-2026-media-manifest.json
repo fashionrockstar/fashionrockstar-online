@@ -1,0 +1,342 @@
+[
+  {
+    "source": "CFBA 2026/JOU.jpg",
+    "file": "JOU.jpg",
+    "look": 1,
+    "isCover": true,
+    "model": "SAINT JOU",
+    "bytes": 5442422,
+    "sha256": "1f2efba449b95cdfbbfc1382d79885bfcd2ac4b7215f9a18935dedc5600b1f4c",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-01-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 51292
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-01-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 155416
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-01-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 416796
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-01-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK2 copy.png",
+    "file": "LOOK2 copy.png",
+    "look": 2,
+    "isCover": false,
+    "model": "UNKOWNPIGG",
+    "bytes": 7951360,
+    "sha256": "93a057c628642ff985434609b5a3d30ca4b27432af55647b461f6c3f5ebfcad1",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-02-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 54494
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-02-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 165294
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-02-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 449758
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-02-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK3 copy.png",
+    "file": "LOOK3 copy.png",
+    "look": 3,
+    "isCover": false,
+    "model": "NINA",
+    "bytes": 7581587,
+    "sha256": "101043b18216efe02009920ba9e6f3d55054aa94ea778de0dd4c0eb8f59c7713",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-03-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 49826
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-03-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 150396
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-03-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 403960
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-03-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK4 copy.png",
+    "file": "LOOK4 copy.png",
+    "look": 4,
+    "isCover": false,
+    "model": "FRANCK",
+    "bytes": 7400138,
+    "sha256": "3a5496ec8204e4b700da11c39e3fa527f737dfba1f7aa5e26b26ce8135bd45e6",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-04-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 50794
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-04-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 151536
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-04-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 396808
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-04-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK5 copy.png",
+    "file": "LOOK5 copy.png",
+    "look": 5,
+    "isCover": false,
+    "model": "ANNA",
+    "bytes": 7499761,
+    "sha256": "ae0f194caecee33605bf4cd37e1cddf95d22331cff1f6109bf7742c1f0d0c406",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-05-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 48042
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-05-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 145772
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-05-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 395438
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-05-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK6 copy.png",
+    "file": "LOOK6 copy.png",
+    "look": 6,
+    "isCover": false,
+    "model": "LOVE",
+    "bytes": 8231657,
+    "sha256": "12d12a68374cb097510b16585468c1842f1eae1030dafd4b8ebd64b079e89e66",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-06-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 53972
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-06-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 164360
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-06-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 449502
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-06-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK7 copy.png",
+    "file": "LOOK7 copy.png",
+    "look": 7,
+    "isCover": false,
+    "model": "CIRQUE COSMIC",
+    "bytes": 7387380,
+    "sha256": "eef75041b8baf0b09f0f0c269e83e8607f55d6d97f76ac055817a33c8f0a89d7",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-07-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 48780
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-07-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 146250
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-07-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 392996
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-07-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK8 copy.png",
+    "file": "LOOK8 copy.png",
+    "look": 8,
+    "isCover": false,
+    "model": "LEONARD",
+    "bytes": 7626451,
+    "sha256": "78f3f20127bc9bdea11b163e9728e4b4ef04855d37c9e570c80c5349676a5445",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-08-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 50268
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-08-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 152248
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-08-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 412494
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-08-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK9 copy.png",
+    "file": "LOOK9 copy.png",
+    "look": 9,
+    "isCover": false,
+    "model": "ANOUK",
+    "bytes": 9037953,
+    "sha256": "7192d896a2fd28cb8e77557de9dc7976af42735641e4253edda2fb38b2f62d94",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-09-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 53518
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-09-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 177538
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-09-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 519744
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-09-2400.webp"
+  },
+  {
+    "source": "CFBA 2026/LOOK10 copy.png",
+    "file": "LOOK10 copy.png",
+    "look": 10,
+    "isCover": false,
+    "model": "KILLBILLKAPRI",
+    "bytes": 8770352,
+    "sha256": "ac69c039708132e78cb920152674f7b3ecd4762be0c826138781c37e3419f899",
+    "type": "image",
+    "width": 5400,
+    "height": 3600,
+    "colorSpace": "srgb",
+    "variants": [
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-10-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 58304
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-10-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 186028
+      },
+      {
+        "src": "/assets/media/selected-work/cfba-2026/look-10-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 514302
+      }
+    ],
+    "src": "/assets/media/selected-work/cfba-2026/look-10-2400.webp"
+  }
+]

@@ -1,58 +1,254 @@
-.contact-page--directory .page-title {
-  margin-bottom: clamp(2.5rem, 6vw, 6rem);
-  font-size: clamp(3.5rem, 8vw, 8rem);
+/* CONTACT only. Shared styles, navigation behavior and original assets stay shared. */
+body.contact-editorial {
+  --contact-header-height: 3.75rem;
+  --contact-paper: #fff;
+  --contact-ink: #000;
+  background: var(--contact-ink);
+  color: var(--contact-paper);
 }
 
-.contact-directory {
+.contact-editorial .site-header {
+  --page-bg: #000;
+  --page-fg: #fff;
+  min-height: var(--contact-header-height);
+  padding-block: .5rem;
+  background: #000;
+  color: #fff;
+}
+
+.contact-editorial .site-logo {
+  width: clamp(10rem, 15vw, 14rem);
+  height: 2.75rem;
+}
+
+.contact-editorial .contact-skip {
+  position: fixed;
+  z-index: 100;
+  top: .5rem;
+  left: .5rem;
+  padding: .875rem 1rem;
+  background: #fff;
+  color: #000;
+  transform: translateY(-200%);
+}
+
+.contact-editorial .contact-skip:focus { transform: none; }
+
+.contact-editorial .contact-page {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 3rem clamp(2rem, 8vw, 8rem);
-  font-size: clamp(1rem, 1.5vw, 1.375rem);
-  line-height: 1.5;
+  grid-template-columns: minmax(0, 42fr) minmax(0, 58fr);
+  min-height: calc(100svh - var(--contact-header-height));
 }
 
-.contact-column {
+.contact-editorial .contact-identity {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
   min-width: 0;
+  gap: 1.25rem;
+  padding: clamp(2.5rem, 7svh, 6rem) clamp(1.25rem, 2.4vw, 2.75rem) 1.75rem;
+  background: var(--contact-paper);
+  color: var(--contact-ink);
 }
 
-.contact-directory a {
-  display: inline-block;
-  max-width: 100%;
-  padding-block: .375rem;
+.contact-editorial .contact-wordmark {
+  position: relative;
+  flex: 1;
+  min-height: 26rem;
+  margin: 0;
+  line-height: 0;
 }
 
-.contact-directory a:hover,
-.contact-directory a:focus-visible {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .2em;
+.contact-editorial .contact-wordmark svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.contact-address {
-  font-size: clamp(1.25rem, 2.2vw, 2rem);
-  letter-spacing: -.035em;
-  overflow-wrap: anywhere;
-}
-
-.contact-project-link {
-  font-size: .875rem;
+.contact-editorial .contact-wordmark text {
+  fill: currentColor;
+  stroke: none;
+  font-family: var(--font-display);
+  font-size: 1000px;
   font-weight: 700;
-  letter-spacing: .04em;
+  font-kerning: none;
+  letter-spacing: 0;
 }
 
-.contact-social-list {
+.contact-editorial .contact-brand {
+  flex: none;
+  width: 68%;
+  max-width: 23rem;
+  height: auto;
+}
+
+.contact-editorial .contact-panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 0;
+  padding: clamp(1.75rem, 3.2vw, 3.5rem) clamp(1.5rem, 4vw, 4.5rem) 1.75rem;
+  background: var(--contact-ink);
+  color: var(--contact-paper);
+}
+
+.contact-editorial .contact-location {
+  justify-self: end;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.contact-editorial .contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.contact-editorial .contact-inquiries {
+  max-width: 100%;
+  font-size: clamp(2.625rem, 5.8vw, 6.5rem);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+
+.contact-editorial .contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: clamp(1rem, 1.95vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.contact-editorial .contact-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(.5rem, 1vw, 1rem);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.contact-column p { margin: 0; }
+.contact-editorial .contact-social-list a {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+}
+
+.contact-editorial .contact-social-list svg {
+  display: block;
+  width: clamp(1.5rem, 2.4vw, 2rem);
+  height: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.contact-editorial .contact-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+}
+
+.contact-editorial .contact-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.contact-editorial .contact-email-link,
+.contact-editorial .contact-footer a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+.contact-editorial .contact-inquiries:hover,
+.contact-editorial .contact-email-link:hover,
+.contact-editorial .contact-footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .2em;
+}
+
+.contact-editorial .contact-social-list a:hover {
+  opacity: .7;
+}
+
+.contact-editorial a:focus-visible,
+.contact-editorial button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .contact-editorial .site-nav { gap: .875rem; }
+  .contact-editorial .site-nav a { font-size: .75rem; letter-spacing: .025em; }
+  .contact-editorial .site-logo { width: 10rem; }
+}
 
 @media (max-width: 760px) {
-  .contact-directory { grid-template-columns: minmax(0, 1fr); }
-  .contact-directory a { padding-block: .625rem; }
+  body.contact-editorial { --contact-header-height: 4rem; }
+
+  .contact-editorial .site-header { padding-block: .625rem; }
+
+  .contact-editorial .site-logo {
+    width: 10.5rem;
+    max-width: 58vw;
+  }
+
+  .contact-editorial .contact-page {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-editorial .contact-identity {
+    gap: 1rem;
+    padding: 1.5rem max(1.25rem, env(safe-area-inset-right)) 1.25rem max(1.25rem, env(safe-area-inset-left));
+  }
+
+  .contact-editorial .contact-wordmark {
+    flex: none;
+    height: clamp(9rem, 48vw, 14rem);
+    min-height: 0;
+  }
+
+  .contact-editorial .contact-brand {
+    width: 68%;
+    max-width: 16rem;
+  }
+
+  .contact-editorial .contact-panel {
+    min-height: 29rem;
+    padding: 1.5rem max(1.5rem, env(safe-area-inset-right)) max(1.5rem, env(safe-area-inset-bottom)) max(1.5rem, env(safe-area-inset-left));
+  }
+
+  .contact-editorial .contact-actions {
+    gap: 1.25rem;
+    padding-block: 3rem;
+  }
+
+  .contact-editorial .contact-inquiries {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+  }
+
+  .contact-editorial .contact-email-link { font-size: 1.125rem; }
+
+  .contact-editorial .contact-footer {
+    gap: .5rem 1rem;
+  }
+
+  .contact-editorial .contact-footer a { font-size: .75rem; }
 }
