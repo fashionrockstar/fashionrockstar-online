@@ -1,0 +1,147 @@
+{
+  "title": "LUCAS BECOMES A ROCKSTAR",
+  "projectId": 14,
+  "selection": "All supplied images in attachment order, with the first image as cover. Original artwork, orientation, text and proportions preserved.",
+  "media": [
+    {
+      "sourceFile": "FASHIONROCKSTAR 01 20-216.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "c7b987486970c9a2e648d090cbead64bc62385c80a383e43ea3d044238e06290",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 16664
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 43628
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 92630
+        }
+      ]
+    },
+    {
+      "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "feb551301e2d2530637675c89f96527cb65ce5e396ebdbbd8eb1c449f938a1e0",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 48278
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 137108
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 332332
+        }
+      ]
+    },
+    {
+      "sourceFile": "FASHIONROCKSTAR 0118.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "d327fcc6996e689d394af45fb3c5e403f2f688f7f6b1f2ae063eae905bedcaa6",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 18614
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 67864
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 214202
+        }
+      ]
+    },
+    {
+      "sourceFile": "FASHIONROCKSTAR 0120.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "fc718dc30cc16fa8a13648a1114e81a3da1abeb1dd895f6b60c930ebe0bb61a3",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 13740
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 52060
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 153720
+        }
+      ]
+    },
+    {
+      "sourceFile": "FASHIONROCKSTAR 0121.png",
+      "sourceSize": [
+        5400,
+        3600
+      ],
+      "sourceSha256": "285ec43b260af1eab50450bd32df89475d9f4ffd1cf3e53c2f7df76dbc713850",
+      "outputs": [
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 21604
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "bytes": 71748
+        },
+        {
+          "path": "/assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-2400.webp",
+          "width": 2400,
+          "height": 1600,
+          "bytes": 202124
+        }
+      ]
+    }
+  ]
+}

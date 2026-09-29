@@ -1228,5 +1228,71 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "LUCAS BECOMES A ROCKSTAR",
+    "year": "2025",
+    "role": "PHOTOGRAPHY — CREATIVE DIRECTION — STYLING — BEAUTY",
+    "disciplines": "photography creative-direction styling beauty",
+    "id": 14,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-2400.webp 2400w",
+      "sourceFile": "FASHIONROCKSTAR 01 20-216.png",
+      "alt": "LUCAS BECOMES A ROCKSTAR — close-up of layered silver necklaces against black.",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/02-title-spread-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+        "alt": "LUCAS BECOMES A ROCKSTAR — portrait in a leather jacket beside repeated handwritten title text.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/03-close-up-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0118.png",
+        "alt": "LUCAS BECOMES A ROCKSTAR — sideways close-up with leather sleeves framing the eyes and sculptural hair.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/04-duffle-spread-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0120.png",
+        "alt": "LUCAS BECOMES A ROCKSTAR — seated portrait with a spray-painted duffle bag and the original printed credit.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/05-silhouette-spread-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0121.png",
+        "alt": "LUCAS BECOMES A ROCKSTAR — two silhouetted portraits in a narrow concrete corridor.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];
