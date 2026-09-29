@@ -1063,5 +1063,71 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "LEE'S BROKEN DOLLS",
+    "year": "2026",
+    "role": "CREATIVE DIRECTION — PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "id": 12,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/lees-broken-dolls/01-final-1-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/lees-broken-dolls/01-final-1-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/01-final-1-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/01-final-1-2400.webp 2400w",
+      "sourceFile": "final 1.jpg",
+      "alt": "Two figures posed in a concrete interior, one standing in the light and one seated in silhouette.",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls/02-final-corrected-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lees-broken-dolls/02-final-corrected-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/02-final-corrected-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/02-final-corrected-2400.webp 2400w",
+        "sourceFile": "2 FINAL CORRECTED.jpg",
+        "alt": "A figure in burgundy velvet seated on a draped chair, with a second figure standing behind.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls/03-3-3-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lees-broken-dolls/03-3-3-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/03-3-3-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/03-3-3-2400.webp 2400w",
+        "sourceFile": "3.3.jpg",
+        "alt": "A cropped burgundy-clad figure in the foreground and a second figure holding a red flower.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls/04-4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lees-broken-dolls/04-4-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/04-4-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/04-4-2400.webp 2400w",
+        "sourceFile": "4.jpg",
+        "alt": "Two figures posed on either side of a white-draped chair against a concrete wall.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls/05-5-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/lees-broken-dolls/05-5-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/05-5-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/05-5-2400.webp 2400w",
+        "sourceFile": "5.jpg",
+        "alt": "A figure in burgundy kneeling behind a white-draped chair in angled light.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ]
   }
 ];
