@@ -273,6 +273,22 @@
   outline-offset: 5px;
 }
 
+@media (min-width: 901px) {
+  .inquiry-page {
+    width: 100%;
+    max-width: 104rem;
+    margin-inline: auto;
+    grid-template-columns: minmax(0, 1fr) minmax(min(30rem, 60%), 1fr);
+    padding-right: max(calc(2 * var(--pad)), env(safe-area-inset-right));
+    padding-left: max(calc(2 * var(--pad)), env(safe-area-inset-left));
+  }
+
+  .inquiry-content {
+    max-width: 40rem;
+    justify-self: start;
+  }
+}
+
 @media (max-width: 900px) {
   .inquiry-page {
     grid-template-columns: minmax(0, 1fr);
