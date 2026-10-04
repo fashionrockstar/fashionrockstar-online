@@ -1,0 +1,530 @@
+.inquiry-body {
+  --inquiry-bg: #050505;
+  --inquiry-fg: #f6f6f3;
+  --inquiry-muted: #9a9a95;
+  --inquiry-line: rgba(246, 246, 243, .2);
+  --inquiry-soft: rgba(246, 246, 243, .055);
+  --inquiry-pad: clamp(1rem, 2.3vw, 2.4rem);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 86% 8%, rgba(255, 255, 255, .07), transparent 28rem),
+    var(--inquiry-bg);
+}
+
+.inquiry-body .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  border-bottom: 1px solid var(--inquiry-line);
+  background: rgba(5, 5, 5, .88);
+  backdrop-filter: blur(18px);
+}
+
+.inquiry-page {
+  display: grid;
+  grid-template-columns: minmax(20rem, .78fr) minmax(31rem, 1.22fr);
+  min-height: calc(100svh - var(--header-height));
+  border-bottom: 1px solid var(--inquiry-line);
+}
+
+.inquiry-intro,
+.inquiry-panel {
+  min-width: 0;
+}
+
+.inquiry-intro {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: calc(100svh - var(--header-height));
+  padding: var(--inquiry-pad);
+  border-right: 1px solid var(--inquiry-line);
+}
+
+.inquiry-intro__topline,
+.inquiry-panel__header,
+.inquiry-services__label,
+.inquiry-field__number,
+.inquiry-field__label,
+.inquiry-submit__meta,
+.inquiry-eyebrow {
+  font-size: clamp(.66rem, .72vw, .78rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.inquiry-intro__topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--inquiry-muted);
+}
+
+.inquiry-intro__body {
+  align-self: center;
+  padding: clamp(4rem, 9vh, 8rem) 0;
+}
+
+.inquiry-eyebrow {
+  margin-bottom: clamp(1.2rem, 2.5vw, 2rem);
+  color: var(--inquiry-muted);
+}
+
+.inquiry-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: clamp(6.2rem, 10.4vw, 12.6rem);
+  font-weight: 400;
+  line-height: .72;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+
+.inquiry-title span:last-child {
+  align-self: flex-end;
+  padding-right: .08em;
+}
+
+.inquiry-deck {
+  width: min(100%, 34rem);
+  margin-top: clamp(2rem, 4vw, 3.8rem);
+  margin-left: auto;
+  color: #d6d6d2;
+  font-size: clamp(.92rem, 1.05vw, 1.08rem);
+  line-height: 1.5;
+}
+
+.inquiry-services {
+  padding-top: 1rem;
+  border-top: 1px solid var(--inquiry-line);
+}
+
+.inquiry-services__label {
+  margin-bottom: .75rem;
+  color: var(--inquiry-muted);
+}
+
+.inquiry-services ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inquiry-services li {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  align-items: center;
+  min-height: 2.7rem;
+  border-top: 1px solid var(--inquiry-line);
+}
+
+.inquiry-services li:first-child {
+  border-top: 0;
+}
+
+.inquiry-services li span,
+.inquiry-services li b {
+  font-size: clamp(.67rem, .75vw, .8rem);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.inquiry-services li span {
+  color: var(--inquiry-muted);
+}
+
+.inquiry-services li b {
+  font-weight: 700;
+}
+
+.inquiry-panel {
+  padding: var(--inquiry-pad);
+}
+
+.inquiry-panel__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3rem;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--inquiry-line);
+  color: var(--inquiry-muted);
+}
+
+.booking-form--inquiry {
+  width: 100%;
+  padding-top: 0;
+}
+
+.booking-form--inquiry .inquiry-field {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.3rem minmax(8.5rem, .44fr) minmax(0, 1fr);
+  gap: 1rem;
+  min-height: clamp(5.4rem, 7vw, 7.1rem);
+  align-items: center;
+  border-bottom: 1px solid var(--inquiry-line);
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+.booking-form--inquiry .inquiry-field::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--inquiry-soft);
+  content: "";
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.booking-form--inquiry .inquiry-field:focus-within {
+  border-color: rgba(246, 246, 243, .65);
+}
+
+.booking-form--inquiry .inquiry-field:focus-within::before {
+  opacity: 1;
+}
+
+.inquiry-field__number {
+  color: var(--inquiry-muted);
+  transition: color .2s ease;
+}
+
+.inquiry-field:focus-within .inquiry-field__number {
+  color: var(--inquiry-fg);
+}
+
+.inquiry-field__label {
+  color: #d4d4d0;
+}
+
+.inquiry-field__label b {
+  color: var(--inquiry-muted);
+  font: inherit;
+}
+
+.booking-form--inquiry .inquiry-field input,
+.booking-form--inquiry .inquiry-field select,
+.booking-form--inquiry .inquiry-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 1.1rem .25rem 1.1rem 0;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--inquiry-fg);
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.35vw, 1.42rem);
+  font-weight: 500;
+  line-height: 1.25;
+  caret-color: var(--inquiry-fg);
+}
+
+.booking-form--inquiry .inquiry-field input::placeholder,
+.booking-form--inquiry .inquiry-field textarea::placeholder {
+  color: #74746f;
+  opacity: 1;
+}
+
+.booking-form--inquiry .inquiry-field select {
+  appearance: none;
+  padding-right: 2rem;
+}
+
+.booking-form--inquiry .inquiry-field select option {
+  background: #0b0b0b;
+  color: var(--inquiry-fg);
+}
+
+.inquiry-field--select::after {
+  position: absolute;
+  right: .35rem;
+  top: 50%;
+  color: var(--inquiry-muted);
+  content: "↓";
+  font-size: 1rem;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.booking-form--inquiry .inquiry-field--details {
+  min-height: clamp(15rem, 25vw, 23rem);
+  align-items: start;
+  padding-top: 1.7rem;
+}
+
+.booking-form--inquiry .inquiry-field--details textarea {
+  min-height: clamp(12rem, 20vw, 18rem);
+  padding-top: 0;
+  resize: vertical;
+}
+
+.inquiry-submit {
+  padding-top: clamp(2rem, 4vw, 3.3rem);
+}
+
+.booking-form--inquiry .inquiry-submit button {
+  display: flex;
+  width: 100%;
+  min-height: clamp(5.3rem, 7vw, 7rem);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 clamp(1.1rem, 2vw, 1.6rem);
+  border: 1px solid var(--inquiry-fg);
+  background: var(--inquiry-fg);
+  color: var(--inquiry-bg);
+  font-size: clamp(.78rem, .9vw, .95rem);
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  transition: background-color .25s ease, color .25s ease, opacity .2s ease;
+}
+
+.booking-form--inquiry .inquiry-submit button i {
+  font-size: clamp(1.25rem, 1.6vw, 1.65rem);
+  font-style: normal;
+  line-height: 1;
+  transition: transform .3s var(--ease);
+}
+
+.booking-form--inquiry .inquiry-submit button:hover,
+.booking-form--inquiry .inquiry-submit button:focus-visible {
+  background: transparent;
+  color: var(--inquiry-fg);
+}
+
+.booking-form--inquiry .inquiry-submit button:hover i,
+.booking-form--inquiry .inquiry-submit button:focus-visible i {
+  transform: translate(.2rem, -.2rem);
+}
+
+.booking-form--inquiry .inquiry-submit button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.inquiry-submit__meta {
+  display: grid;
+  grid-template-columns: 1fr minmax(18rem, auto);
+  gap: 1rem 2rem;
+  padding-top: 1rem;
+  color: var(--inquiry-muted);
+}
+
+.inquiry-submit__meta p:last-child {
+  text-align: right;
+}
+
+.inquiry-submit__meta p:last-child span {
+  margin-right: .7rem;
+}
+
+.inquiry-submit__meta a {
+  color: var(--inquiry-fg);
+  overflow-wrap: anywhere;
+}
+
+.inquiry-submit__meta a:hover,
+.inquiry-submit__meta a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+
+.booking-form--inquiry .booking-form__status {
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--inquiry-line);
+  color: #d7d7d3;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.booking-form--inquiry .booking-form__status[data-state="success"] {
+  border-color: var(--inquiry-fg);
+  background: var(--inquiry-fg);
+  color: var(--inquiry-bg);
+}
+
+.booking-form--inquiry .booking-form__status[data-state="error"] {
+  border-color: rgba(246, 246, 243, .48);
+}
+
+.booking-form--inquiry[aria-busy="true"] {
+  cursor: wait;
+}
+
+@media (max-width: 1120px) {
+  .inquiry-page {
+    grid-template-columns: minmax(17rem, .7fr) minmax(29rem, 1.3fr);
+  }
+
+  .inquiry-title {
+    font-size: clamp(5.5rem, 10.6vw, 8.8rem);
+  }
+
+  .booking-form--inquiry .inquiry-field {
+    grid-template-columns: 2.8rem minmax(7.5rem, .38fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .inquiry-page {
+    display: block;
+  }
+
+  .inquiry-intro {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--inquiry-line);
+  }
+
+  .inquiry-intro__body {
+    padding: clamp(4rem, 10vh, 7rem) 0;
+  }
+
+  .inquiry-title {
+    width: min(100%, 46rem);
+    font-size: clamp(6.2rem, 18vw, 10rem);
+  }
+
+  .inquiry-deck {
+    width: min(78%, 36rem);
+  }
+
+  .inquiry-services {
+    width: min(100%, 42rem);
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .inquiry-body {
+    --inquiry-pad: max(1rem, env(safe-area-inset-right));
+    background:
+      radial-gradient(circle at 95% 3%, rgba(255, 255, 255, .055), transparent 18rem),
+      var(--inquiry-bg);
+  }
+
+  .inquiry-body .site-header {
+    backdrop-filter: blur(14px);
+  }
+
+  .inquiry-intro,
+  .inquiry-panel {
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+
+  .inquiry-intro__topline {
+    font-size: .6rem;
+  }
+
+  .inquiry-intro__body {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .inquiry-title {
+    font-size: clamp(5.3rem, 25vw, 7.7rem);
+    line-height: .74;
+  }
+
+  .inquiry-title span:last-child {
+    align-self: flex-start;
+  }
+
+  .inquiry-deck {
+    width: 100%;
+    margin-top: 2.2rem;
+    font-size: .92rem;
+  }
+
+  .inquiry-services {
+    width: 100%;
+  }
+
+  .inquiry-panel__header {
+    font-size: .6rem;
+  }
+
+  .booking-form--inquiry .inquiry-field {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    grid-template-areas:
+      "number label"
+      ". control";
+    gap: .6rem .75rem;
+    min-height: 7.1rem;
+    align-content: center;
+    padding: 1.2rem 0;
+  }
+
+  .inquiry-field__number {
+    grid-area: number;
+  }
+
+  .inquiry-field__label {
+    grid-area: label;
+  }
+
+  .booking-form--inquiry .inquiry-field input,
+  .booking-form--inquiry .inquiry-field select,
+  .booking-form--inquiry .inquiry-field textarea {
+    grid-area: control;
+    padding: .25rem 2rem .25rem 0;
+    font-size: 1.08rem;
+  }
+
+  .inquiry-field--select::after {
+    top: auto;
+    right: .2rem;
+    bottom: 1.9rem;
+    transform: none;
+  }
+
+  .booking-form--inquiry .inquiry-field--details {
+    min-height: 17rem;
+    padding-top: 1.4rem;
+  }
+
+  .booking-form--inquiry .inquiry-field--details textarea {
+    min-height: 11rem;
+    padding-right: 0;
+  }
+
+  .booking-form--inquiry .inquiry-submit button {
+    min-height: 5rem;
+    font-size: .72rem;
+  }
+
+  .inquiry-submit__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .inquiry-submit__meta p:last-child {
+    text-align: left;
+  }
+
+  .inquiry-submit__meta p:last-child span {
+    display: block;
+    margin: 0 0 .4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-form--inquiry .inquiry-field,
+  .booking-form--inquiry .inquiry-field::before,
+  .booking-form--inquiry .inquiry-submit button,
+  .booking-form--inquiry .inquiry-submit button i {
+    transition: none;
+  }
+}
