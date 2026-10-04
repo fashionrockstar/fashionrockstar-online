@@ -518,3 +518,134 @@
     transition: none;
   }
 }
+
+
+/* Mobile refinement — open editorial flow */
+.inquiry-cell--select::after {
+  width: .55rem;
+  height: .55rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.booking-form--studio .inquiry-submit button {
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .inquiry-hero {
+    padding-bottom: 4.5rem;
+  }
+
+  .inquiry-hero__grid {
+    gap: 2.75rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .inquiry-hero__aside {
+    gap: 2.25rem;
+  }
+
+  .inquiry-disciplines {
+    padding-top: 1.6rem;
+  }
+
+  .inquiry-intro {
+    max-width: 31rem;
+    line-height: 1.7;
+  }
+
+  .booking-form--studio {
+    padding-top: 1rem;
+  }
+
+  .inquiry-row {
+    border-bottom-color: rgba(245, 245, 241, .3);
+  }
+
+  .inquiry-cell {
+    min-height: 8.75rem;
+    gap: 1.15rem;
+    padding: 2.2rem 0 2.35rem;
+  }
+
+  .inquiry-row--compact .inquiry-cell {
+    min-height: 8.75rem;
+  }
+
+  .inquiry-cell__label,
+  .inquiry-project-type legend {
+    font-size: .68rem;
+    letter-spacing: .13em;
+  }
+
+  .booking-form--studio input[type="text"],
+  .booking-form--studio input[type="email"],
+  .booking-form--studio select {
+    font-size: 1.06rem;
+    line-height: 1.5;
+  }
+
+  .inquiry-project-type {
+    padding-top: 3rem;
+    padding-bottom: 3.4rem;
+  }
+
+  .inquiry-project-type legend {
+    padding-bottom: 1.75rem;
+  }
+
+  .project-type-grid {
+    gap: .8rem;
+  }
+
+  .project-type-grid span {
+    min-height: 4.4rem;
+    padding: .9rem .7rem;
+  }
+
+  .inquiry-details {
+    min-height: 21rem;
+    gap: 2rem;
+    padding: 3rem 0 3.25rem;
+  }
+
+  .booking-form--studio .inquiry-details textarea {
+    min-height: 15rem;
+    padding: .15rem 0 1rem;
+    border: 0;
+    border-bottom: 1px solid var(--inquiry-line-strong);
+    background: transparent;
+    line-height: 1.7;
+  }
+
+  .booking-form--studio .inquiry-details textarea:focus {
+    border-color: var(--inquiry-fg);
+  }
+
+  .inquiry-cell--select::after {
+    right: .25rem;
+    bottom: 3rem;
+  }
+
+  .inquiry-submit {
+    padding-top: 4.5rem;
+    padding-bottom: max(8rem, calc(env(safe-area-inset-bottom) + 5rem));
+  }
+
+  .booking-form--studio .inquiry-submit button {
+    min-height: 5.6rem;
+    justify-content: center;
+    padding: 0 1.5rem;
+    font-size: .76rem;
+    letter-spacing: .12em;
+  }
+
+  .booking-form--studio .booking-form__status {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
