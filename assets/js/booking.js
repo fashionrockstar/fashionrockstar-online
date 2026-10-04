@@ -7,11 +7,13 @@
 
   const button = form.querySelector('button[type="submit"]');
   const buttonLabel = button.querySelector('span');
+  const defaultButtonLabel = button.dataset.defaultLabel || buttonLabel.textContent.trim();
   let pending = false;
   let received = false;
 
-  const showStatus = (message, focus = false) => {
+  const showStatus = (message, state = 'info', focus = false) => {
     status.textContent = message;
+    status.dataset.state = state;
     status.hidden = false;
     if (focus) status.focus({ preventScroll: true });
   };
@@ -28,9 +30,9 @@
     pending = true;
     button.disabled = true;
     fields.forEach(({ field }) => { field.disabled = true; });
-    buttonLabel.textContent = 'Sending…';
+    buttonLabel.textContent = 'SUBMITTING…';
     form.setAttribute('aria-busy', 'true');
-    showStatus('Sending your inquiry…');
+    showStatus('SUBMITTING INQUIRY…', 'pending');
 
     try {
       const response = await fetch('/book/', {
@@ -40,36 +42,34 @@
         signal: controller.signal
       });
 
-      // A login redirect must never be mistaken for an accepted inquiry.
       if (!response.ok || (response.url && new URL(response.url).origin !== window.location.origin)) {
-        showStatus('Your inquiry could not be sent. Your information is still here. Please try again.', true);
+        showStatus('YOUR INQUIRY COULD NOT BE SENT. YOUR INFORMATION IS STILL HERE. PLEASE TRY AGAIN.', 'error', true);
         return;
       }
 
       received = true;
-      showStatus('Your inquiry has been received.', true);
+      showStatus('INQUIRY RECEIVED.', 'success', true);
     } catch {
-      // A lost connection can leave receipt uncertain; do not silently retry.
-      showStatus('We couldn’t confirm receipt of your inquiry. Your information is still here. Please check your connection and try again.', true);
+      showStatus('RECEIPT COULD NOT BE CONFIRMED. YOUR INFORMATION IS STILL HERE. CHECK YOUR CONNECTION AND TRY AGAIN.', 'error', true);
     } finally {
       window.clearTimeout(timeout);
       pending = false;
       fields.forEach(({ field, disabled }) => { field.disabled = disabled; });
       form.removeAttribute('aria-busy');
       button.disabled = received;
-      buttonLabel.textContent = received ? 'Sent' : 'SEND INQUIRY';
+      buttonLabel.textContent = received ? 'INQUIRY RECEIVED' : defaultButtonLabel;
     }
   });
 
-  // Keep submitted values available, and allow a new inquiry after an edit.
   form.addEventListener('input', () => {
     if (pending) return;
     if (received) {
       received = false;
       button.disabled = false;
-      buttonLabel.textContent = 'SEND INQUIRY';
+      buttonLabel.textContent = defaultButtonLabel;
     }
     status.hidden = true;
     status.textContent = '';
+    delete status.dataset.state;
   });
 })();
