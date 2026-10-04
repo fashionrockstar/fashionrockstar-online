@@ -6,10 +6,11 @@
   <meta name="description" content="Project inquiries — FASHIONROCKSTAR.ONLINE.">
   <title>PROJECT INQUIRIES — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/book.css">
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/booking.js" defer></script>
 </head>
-<body class="theme-dark">
+<body class="theme-dark inquiry-body">
   <header class="site-header">
     <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -18,17 +19,113 @@
     </nav>
   </header>
 
-  <main class="page-shell book-page">
-    <h1 class="page-title">PROJECT INQUIRIES</h1>
-    <form class="booking-form" name="booking" method="post" data-netlify="true">
-      <input type="hidden" name="form-name" value="booking">
-      <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
-      <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
-      <label><span>Type of project</span><select id="project-type" name="project-type" required><option value="" selected disabled>Select</option><option value="creative-direction">Creative Direction</option><option value="photography">Visuals (Photo &amp; Video)</option><option value="styling">Styling</option><option value="beauty">Beauty</option></select></label>
-      <label class="booking-form__details"><span>Project details</span><textarea name="project-details" rows="5" required></textarea></label>
-      <button type="submit"><span>SEND INQUIRY</span></button>
-      <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
-    </form>
+  <main class="inquiry-page">
+    <section class="inquiry-intro" aria-labelledby="inquiry-title">
+      <div class="inquiry-intro__topline" aria-hidden="true">
+        <span>PROJECT INTAKE / 01</span>
+        <span>MONTRÉAL / CANADA</span>
+      </div>
+
+      <div class="inquiry-intro__body">
+        <p class="inquiry-eyebrow">FASHIONROCKSTAR / COMMISSIONS</p>
+        <h1 class="inquiry-title" id="inquiry-title">
+          <span>PROJECT</span>
+          <span>INQUIRY</span>
+        </h1>
+        <p class="inquiry-deck">
+          Commission FASHIONROCKSTAR for creative direction, photography, styling, beauty, and multidisciplinary image-making.
+          Share the essential information below so the project can be reviewed with the right context.
+        </p>
+      </div>
+
+      <div class="inquiry-services" aria-label="Available disciplines">
+        <p class="inquiry-services__label">SELECTED DISCIPLINES</p>
+        <ol>
+          <li><span>01</span><b>CREATIVE DIRECTION</b></li>
+          <li><span>02</span><b>PHOTOGRAPHY</b></li>
+          <li><span>03</span><b>STYLING</b></li>
+          <li><span>04</span><b>BEAUTY</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="inquiry-panel" aria-label="Project inquiry form">
+      <header class="inquiry-panel__header">
+        <span>INQUIRY FILE / NEW PROJECT</span>
+        <span>FORM 001</span>
+      </header>
+
+      <form class="booking-form booking-form--inquiry" name="booking" method="post" data-netlify="true" data-netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="booking">
+        <p class="sr-only">
+          <label>Do not fill this out if you are human: <input name="company-website" type="text" tabindex="-1" autocomplete="off"></label>
+        </p>
+
+        <label class="inquiry-field">
+          <span class="inquiry-field__number" aria-hidden="true">01</span>
+          <span class="inquiry-field__label">NAME / BRAND <b aria-hidden="true">*</b></span>
+          <input type="text" name="name" autocomplete="name" placeholder="Your name or studio" required>
+        </label>
+
+        <label class="inquiry-field">
+          <span class="inquiry-field__number" aria-hidden="true">02</span>
+          <span class="inquiry-field__label">EMAIL <b aria-hidden="true">*</b></span>
+          <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>
+        </label>
+
+        <label class="inquiry-field inquiry-field--select">
+          <span class="inquiry-field__number" aria-hidden="true">03</span>
+          <span class="inquiry-field__label">PROJECT TYPE <b aria-hidden="true">*</b></span>
+          <select id="project-type" name="project-type" required>
+            <option value="" selected disabled>Select discipline</option>
+            <option value="creative-direction">Creative Direction</option>
+            <option value="photography">Photography</option>
+            <option value="styling">Styling</option>
+            <option value="beauty">Beauty</option>
+            <option value="multidisciplinary">Multidisciplinary / Other</option>
+          </select>
+        </label>
+
+        <label class="inquiry-field">
+          <span class="inquiry-field__number" aria-hidden="true">04</span>
+          <span class="inquiry-field__label">TIMELINE</span>
+          <input type="text" name="timeline" placeholder="Target date or project window">
+        </label>
+
+        <label class="inquiry-field inquiry-field--select">
+          <span class="inquiry-field__number" aria-hidden="true">05</span>
+          <span class="inquiry-field__label">BUDGET</span>
+          <select name="budget">
+            <option value="" selected>Select range</option>
+            <option value="under-1000">Under $1,000 CAD</option>
+            <option value="1000-3000">$1,000–$3,000 CAD</option>
+            <option value="3000-7500">$3,000–$7,500 CAD</option>
+            <option value="7500-plus">$7,500+ CAD</option>
+            <option value="discuss">To be discussed</option>
+          </select>
+        </label>
+
+        <label class="inquiry-field inquiry-field--details">
+          <span class="inquiry-field__number" aria-hidden="true">06</span>
+          <span class="inquiry-field__label">PROJECT BRIEF <b aria-hidden="true">*</b></span>
+          <textarea name="project-details" rows="7" maxlength="3000" placeholder="What are you making? Include the concept, deliverables, audience, location, references, collaborators, and any key constraints." required></textarea>
+        </label>
+
+        <div class="inquiry-submit">
+          <button type="submit" data-default-label="SUBMIT PROJECT INQUIRY">
+            <span>SUBMIT PROJECT INQUIRY</span>
+            <i aria-hidden="true">↗</i>
+          </button>
+
+          <div class="inquiry-submit__meta">
+            <p>REQUIRED FIELDS ARE MARKED *</p>
+            <p><span>DIRECT CONTACT</span> <a href="mailto:FASHIONROCKSTARBOOKING@GMAIL.COM">FASHIONROCKSTARBOOKING@GMAIL.COM</a></p>
+          </div>
+
+          <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
+        </div>
+      </form>
+    </section>
   </main>
 </body>
 </html>
