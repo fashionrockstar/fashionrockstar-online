@@ -32,7 +32,7 @@
     fields.forEach(({ field }) => { field.disabled = true; });
     buttonLabel.textContent = 'SUBMITTING…';
     form.setAttribute('aria-busy', 'true');
-    showStatus('Submitting project inquiry…', 'pending');
+    showStatus('SUBMITTING INQUIRY…', 'pending');
 
     try {
       const response = await fetch('/book/', {
@@ -43,14 +43,14 @@
       });
 
       if (!response.ok || (response.url && new URL(response.url).origin !== window.location.origin)) {
-        showStatus('Your inquiry could not be sent. Your information is still here. Please try again.', 'error', true);
+        showStatus('YOUR INQUIRY COULD NOT BE SENT. YOUR INFORMATION IS STILL HERE. PLEASE TRY AGAIN.', 'error', true);
         return;
       }
 
       received = true;
-      showStatus('Inquiry received. Your project brief has been submitted.', 'success', true);
+      showStatus('INQUIRY RECEIVED.', 'success', true);
     } catch {
-      showStatus('We could not confirm receipt. Your information is still here. Please check your connection and try again.', 'error', true);
+      showStatus('RECEIPT COULD NOT BE CONFIRMED. YOUR INFORMATION IS STILL HERE. CHECK YOUR CONNECTION AND TRY AGAIN.', 'error', true);
     } finally {
       window.clearTimeout(timeout);
       pending = false;

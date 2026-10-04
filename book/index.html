@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Project inquiries — FASHIONROCKSTAR.ONLINE.">
-  <title>PROJECT INQUIRIES — FASHIONROCKSTAR.ONLINE</title>
+  <title>PROJECT INQUIRY — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/book.css">
   <script src="/assets/js/main.js" defer></script>
@@ -20,94 +20,87 @@
   </header>
 
   <main class="inquiry-page">
-    <section class="inquiry-hero" aria-labelledby="inquiry-title">
-      <div class="inquiry-kicker">
-        <span>BOOK</span>
-        <span>PROJECT INQUIRY</span>
-      </div>
+    <div class="inquiry-image-space" aria-hidden="true"></div>
 
-      <div class="inquiry-hero__grid">
-        <h1 class="inquiry-title" id="inquiry-title"><span>PROJECT</span><span>INQUIRY</span></h1>
+    <div class="inquiry-content">
+      <header class="inquiry-hero">
+        <p class="inquiry-kicker">PROJECT INQUIRY</p>
+        <h1 class="inquiry-title" id="inquiry-title"><span>LET’S</span><span>WORK</span></h1>
+      </header>
 
-        <div class="inquiry-hero__aside">
-          <div class="inquiry-disciplines" aria-label="Available disciplines">
-            <span>CREATIVE DIRECTION</span>
-            <span>PHOTOGRAPHY</span>
-            <span>STYLING</span>
-            <span>BEAUTY</span>
-            <span>MULTIDISCIPLINARY</span>
+      <form class="booking-form booking-form--studio" name="booking" method="post" action="/book/" data-netlify="true" data-netlify-honeypot="company-website" aria-labelledby="inquiry-title">
+        <input type="hidden" name="form-name" value="booking">
+        <p class="sr-only">
+          <label for="company-website">DO NOT FILL THIS OUT IF YOU ARE HUMAN</label>
+          <input id="company-website" name="company-website" type="text" tabindex="-1" autocomplete="off">
+        </p>
+
+        <fieldset class="inquiry-section">
+          <legend><span class="inquiry-section__number">01</span><span class="inquiry-section__dash" aria-hidden="true">—</span><span>YOUR INFO</span></legend>
+          <div class="inquiry-info">
+            <div class="inquiry-info__row">
+              <label class="inquiry-field" for="inquiry-name">
+                <span>NAME *</span>
+                <input id="inquiry-name" type="text" name="name" autocomplete="name" required>
+              </label>
+              <label class="inquiry-field" for="inquiry-email">
+                <span>EMAIL *</span>
+                <input id="inquiry-email" type="email" name="email" autocomplete="email" inputmode="email" required>
+              </label>
+            </div>
+            <label class="inquiry-field" for="inquiry-company">
+              <span>COMPANY / BRAND (OPTIONAL)</span>
+              <input id="inquiry-company" type="text" name="company" autocomplete="organization">
+            </label>
           </div>
+        </fieldset>
 
-          <p class="inquiry-intro">
-            Share the essential information about your project. FASHIONROCKSTAR reviews inquiries for creative direction,
-            photography, styling, beauty and multidisciplinary projects.
-          </p>
+        <fieldset class="inquiry-section">
+          <legend><span class="inquiry-section__number">02</span><span class="inquiry-section__dash" aria-hidden="true">—</span><span>SERVICE<span class="sr-only"> (REQUIRED)</span></span></legend>
+          <div class="project-type-grid">
+            <label><input type="radio" name="project-type" value="creative-direction" required><span>CREATIVE DIRECTION</span></label>
+            <label><input type="radio" name="project-type" value="photography"><span>PHOTOGRAPHY</span></label>
+            <label><input type="radio" name="project-type" value="styling"><span>STYLING</span></label>
+            <label><input type="radio" name="project-type" value="beauty"><span>BEAUTY</span></label>
+            <label><input type="radio" name="project-type" value="other"><span>OTHER</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="inquiry-section">
+          <legend><span class="inquiry-section__number">03</span><span class="inquiry-section__dash" aria-hidden="true">—</span><span>PROJECT DETAILS</span></legend>
+          <div class="inquiry-project-fields">
+            <label class="inquiry-field" for="inquiry-message">
+              <span>MESSAGE *</span>
+              <textarea id="inquiry-message" name="project-details" rows="6" maxlength="3000" required></textarea>
+            </label>
+            <div class="inquiry-options">
+              <label class="inquiry-field" for="inquiry-timeline">
+                <span>TIMELINE (OPTIONAL)</span>
+                <input id="inquiry-timeline" type="text" name="timeline">
+              </label>
+              <label class="inquiry-field" for="inquiry-budget">
+                <span>BUDGET RANGE (OPTIONAL)</span>
+                <select id="inquiry-budget" name="budget">
+                  <option value="" selected></option>
+                  <option value="under-1000">UNDER $1,000 CAD</option>
+                  <option value="1000-3000">$1,000–$3,000 CAD</option>
+                  <option value="3000-7500">$3,000–$7,500 CAD</option>
+                  <option value="7500-plus">$7,500+ CAD</option>
+                  <option value="discuss">TO BE DISCUSSED</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="inquiry-submit">
+          <button type="submit" data-default-label="SUBMIT INQUIRY">
+            <span>SUBMIT INQUIRY</span><span class="inquiry-submit__arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
         </div>
-      </div>
-    </section>
-
-    <form class="booking-form booking-form--studio" name="booking" method="post" data-netlify="true" data-netlify-honeypot="company-website">
-      <input type="hidden" name="form-name" value="booking">
-      <p class="sr-only">
-        <label>Do not fill this out if you are human: <input name="company-website" type="text" tabindex="-1" autocomplete="off"></label>
-      </p>
-
-      <div class="inquiry-row inquiry-row--split">
-        <label class="inquiry-cell">
-          <span class="inquiry-cell__label">01 / NAME <b aria-hidden="true">*</b></span>
-          <input type="text" name="name" autocomplete="name" placeholder="Your name or studio" required>
-        </label>
-
-        <label class="inquiry-cell">
-          <span class="inquiry-cell__label">02 / EMAIL <b aria-hidden="true">*</b></span>
-          <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>
-        </label>
-      </div>
-
-      <fieldset class="inquiry-row inquiry-project-type">
-        <legend>03 / TYPE OF PROJECT <b aria-hidden="true">*</b></legend>
-        <div class="project-type-grid">
-          <label><input type="radio" name="project-type" value="creative-direction" required><span>CREATIVE DIRECTION</span></label>
-          <label><input type="radio" name="project-type" value="photography"><span>PHOTOGRAPHY</span></label>
-          <label><input type="radio" name="project-type" value="styling"><span>STYLING</span></label>
-          <label><input type="radio" name="project-type" value="beauty"><span>BEAUTY</span></label>
-          <label><input type="radio" name="project-type" value="multidisciplinary"><span>MULTIDISCIPLINARY</span></label>
-          <label><input type="radio" name="project-type" value="other"><span>OTHER</span></label>
-        </div>
-      </fieldset>
-
-      <label class="inquiry-row inquiry-details">
-        <span class="inquiry-cell__label">04 / PROJECT DETAILS <b aria-hidden="true">*</b></span>
-        <textarea name="project-details" rows="8" maxlength="3000" placeholder="Concept, deliverables, location, collaborators, references and key constraints." required></textarea>
-      </label>
-
-      <div class="inquiry-row inquiry-row--split inquiry-row--compact">
-        <label class="inquiry-cell">
-          <span class="inquiry-cell__label">05 / TIMELINE</span>
-          <input type="text" name="timeline" placeholder="Target date or project window">
-        </label>
-
-        <label class="inquiry-cell inquiry-cell--select">
-          <span class="inquiry-cell__label">06 / BUDGET</span>
-          <select name="budget">
-            <option value="" selected>Select a range</option>
-            <option value="under-1000">Under $1,000 CAD</option>
-            <option value="1000-3000">$1,000–$3,000 CAD</option>
-            <option value="3000-7500">$3,000–$7,500 CAD</option>
-            <option value="7500-plus">$7,500+ CAD</option>
-            <option value="discuss">To be discussed</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="inquiry-submit">
-        <button type="submit" data-default-label="SUBMIT PROJECT INQUIRY">
-          <span>SUBMIT PROJECT INQUIRY</span>
-        </button>
-
-        <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
-      </div>
-    </form>
+      </form>
+    </div>
   </main>
 </body>
 </html>
