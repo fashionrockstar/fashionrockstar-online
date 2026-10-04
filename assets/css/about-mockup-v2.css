@@ -1,0 +1,330 @@
+.about-mockup-body{
+  --am-black:#050505;
+  --am-white:#f6f6f3;
+  --am-silver:#aaa9a4;
+  --am-line:rgba(246,246,243,.22);
+  background:var(--am-black);
+  color:var(--am-white);
+}
+
+.about-mockup-header{
+  background:var(--am-black);
+  color:var(--am-white);
+  border-bottom:1px solid var(--am-line);
+}
+
+.about-mockup{
+  background:var(--am-black);
+}
+
+.about-mockup-index{
+  display:block;
+  color:var(--am-silver);
+  font-size:clamp(.62rem,.7vw,.75rem);
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.about-mockup-hero{
+  display:grid;
+  grid-template-columns:minmax(20rem,35%) minmax(0,65%);
+  min-height:calc(100svh - var(--header-height));
+  border-bottom:1px solid var(--am-line);
+}
+
+.about-mockup-identity{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:inherit;
+  overflow:hidden;
+  padding:clamp(2rem,3vw,3.4rem);
+  background:var(--am-white);
+  color:var(--am-black);
+}
+
+.about-mockup-identity h1{
+  width:max-content;
+  margin:0;
+  font-family:var(--font-display);
+  font-size:clamp(8rem,15vw,17rem);
+  font-weight:400;
+  line-height:.73;
+  letter-spacing:-.025em;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+}
+
+.about-mockup-identity__base{
+  display:grid;
+  gap:1.4rem;
+}
+
+.about-mockup-brand{
+  font-family:var(--font-display);
+  font-size:clamp(3rem,4.5vw,5rem);
+  line-height:.82;
+  text-transform:uppercase;
+}
+
+.about-mockup-meta{
+  max-width:24rem;
+  font-size:clamp(.66rem,.72vw,.78rem);
+  font-weight:700;
+  line-height:1.6;
+  letter-spacing:.1em;
+}
+
+.about-mockup-intro{
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  gap:clamp(3rem,5vw,6rem);
+  padding:clamp(3rem,5.5vw,6rem) clamp(2rem,5vw,5.5rem);
+}
+
+.about-mockup-lead{
+  max-width:15ch;
+  align-self:center;
+  font-size:clamp(2.8rem,4.5vw,5.4rem);
+  font-weight:400;
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.about-mockup-intro__base{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(14rem,.55fr);
+  gap:clamp(3rem,6vw,7rem);
+  padding-top:clamp(1.5rem,2.5vw,2.4rem);
+  border-top:1px solid var(--am-line);
+}
+
+.about-mockup-intro__base>p:first-child{
+  max-width:38rem;
+  color:#d4d4cf;
+  font-size:clamp(.94rem,1vw,1.05rem);
+  line-height:1.68;
+}
+
+.about-mockup-disciplines{
+  color:var(--am-white);
+  font-size:clamp(.68rem,.75vw,.8rem);
+  font-weight:700;
+  line-height:2;
+  letter-spacing:.1em;
+}
+
+.about-mockup-section{
+  display:grid;
+  grid-template-columns:minmax(12rem,20%) minmax(0,1fr);
+  gap:clamp(3rem,7vw,9rem);
+  padding:clamp(8rem,12vw,13rem) max(2rem,5vw);
+  border-bottom:1px solid var(--am-line);
+}
+
+.about-mockup-section__content{
+  min-width:0;
+}
+
+.about-mockup-section h2,
+.about-mockup-manifesto h2,
+.about-mockup-publication h2{
+  margin:0;
+  font-family:var(--font-display);
+  font-weight:400;
+  text-transform:uppercase;
+}
+
+.about-mockup-section h2{
+  font-size:clamp(6rem,10vw,11rem);
+  line-height:.78;
+  letter-spacing:-.015em;
+}
+
+.about-mockup-copy{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(2rem,4vw,4.5rem);
+  max-width:68rem;
+  margin:clamp(4rem,7vw,7rem) 0 0 auto;
+}
+
+.about-mockup-copy p{
+  color:#cecec9;
+  font-size:clamp(.95rem,1.05vw,1.1rem);
+  line-height:1.7;
+}
+
+.about-mockup-manifesto{
+  padding:clamp(10rem,15vw,17rem) max(2rem,3vw);
+  overflow:hidden;
+  border-bottom:1px solid var(--am-line);
+}
+
+.about-mockup-manifesto>.about-mockup-index{
+  margin:0 0 clamp(4rem,7vw,7rem) 2vw;
+}
+
+.about-mockup-manifesto h2{
+  font-size:clamp(7rem,13vw,14rem);
+  line-height:.74;
+  letter-spacing:-.018em;
+}
+
+.about-mockup-manifesto h2 span{
+  display:block;
+  white-space:nowrap;
+}
+
+.about-mockup-manifesto h2 span:nth-child(2){
+  margin-left:9vw;
+  color:#b9b9b3;
+}
+
+.about-mockup-manifesto h2 span:nth-child(3){
+  margin-left:22vw;
+}
+
+.about-mockup-section__content--narrow{
+  max-width:65rem;
+  margin-left:auto;
+}
+
+.about-mockup-large-copy{
+  max-width:16ch;
+  margin:0;
+  font-size:clamp(2.5rem,4vw,4.7rem);
+  line-height:1.05;
+  letter-spacing:-.04em;
+}
+
+.about-mockup-section--statement .about-mockup-copy{
+  margin-top:clamp(4.5rem,7vw,7rem);
+}
+
+.about-mockup-publication{
+  display:grid;
+  grid-template-columns:minmax(12rem,20%) minmax(0,1fr);
+  gap:clamp(3rem,7vw,9rem);
+  padding:clamp(8rem,12vw,13rem) max(2rem,5vw);
+  background:var(--am-white);
+  color:var(--am-black);
+}
+
+.about-mockup-publication .about-mockup-index{
+  color:#4c4c49;
+}
+
+.about-mockup-publication h2{
+  font-size:clamp(8rem,14vw,16rem);
+  line-height:.76;
+}
+
+.about-mockup-publication p{
+  max-width:38rem;
+  margin:clamp(4rem,7vw,7rem) 0 0 auto;
+  font-size:clamp(.95rem,1.05vw,1.1rem);
+  line-height:1.7;
+}
+
+.about-mockup-end{
+  padding:clamp(6rem,9vw,10rem) max(2rem,3vw) clamp(8rem,12vw,13rem);
+}
+
+.about-mockup-end a{
+  display:block;
+  padding:.08em 0;
+  border-top:1px solid var(--am-line);
+  font-family:var(--font-display);
+  font-size:clamp(5rem,9.5vw,11rem);
+  line-height:.86;
+  text-transform:uppercase;
+}
+
+.about-mockup-end a:last-child{
+  border-bottom:1px solid var(--am-line);
+}
+
+@media(max-width:900px){
+  .about-mockup-hero{
+    display:block;
+  }
+
+  .about-mockup-identity{
+    min-height:33rem;
+    padding:3rem max(var(--pad),5vw);
+  }
+
+  .about-mockup-identity h1{
+    font-size:clamp(8rem,27vw,15rem);
+    writing-mode:initial;
+    transform:none;
+  }
+
+  .about-mockup-brand{
+    font-size:clamp(3.2rem,11vw,5rem);
+  }
+
+  .about-mockup-intro{
+    min-height:70svh;
+    padding:5rem max(var(--pad),5vw) 6rem;
+  }
+
+  .about-mockup-lead{
+    font-size:clamp(2.5rem,8.7vw,4.6rem);
+  }
+
+  .about-mockup-intro__base{
+    grid-template-columns:1fr;
+  }
+
+  .about-mockup-section,
+  .about-mockup-publication{
+    display:block;
+    padding:8rem max(var(--pad),5vw);
+  }
+
+  .about-mockup-section>.about-mockup-index,
+  .about-mockup-publication>.about-mockup-index{
+    margin-bottom:4rem;
+  }
+
+  .about-mockup-copy{
+    grid-template-columns:1fr;
+    margin-top:4rem;
+  }
+
+  .about-mockup-manifesto{
+    padding:9rem max(var(--pad),5vw);
+  }
+
+  .about-mockup-manifesto>.about-mockup-index{
+    margin-left:0;
+  }
+
+  .about-mockup-manifesto h2{
+    font-size:clamp(5rem,18vw,9rem);
+  }
+
+  .about-mockup-manifesto h2 span:nth-child(2),
+  .about-mockup-manifesto h2 span:nth-child(3){
+    margin-left:0;
+    white-space:normal;
+  }
+
+  .about-mockup-publication h2{
+    font-size:clamp(7rem,24vw,12rem);
+  }
+
+  .about-mockup-end{
+    padding-right:max(var(--pad),5vw);
+    padding-left:max(var(--pad),5vw);
+  }
+
+  .about-mockup-end a{
+    font-size:clamp(4rem,16vw,7rem);
+  }
+}
