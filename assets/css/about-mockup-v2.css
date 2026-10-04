@@ -328,3 +328,90 @@
     font-size:clamp(4rem,16vw,7rem);
   }
 }
+
+
+/* Revision — title treatment + unified Section 03 */
+.about-mockup-identity h1{
+  width:auto;
+  max-width:100%;
+  font-size:clamp(6.4rem,9.4vw,10.8rem);
+  line-height:.74;
+  writing-mode:initial;
+  transform:none;
+  white-space:nowrap;
+}
+
+.about-mockup-approach{
+  padding:clamp(9rem,14vw,15rem) max(2rem,5vw);
+  border-bottom:1px solid var(--am-line);
+  overflow:hidden;
+}
+
+.about-mockup-approach>.about-mockup-index{
+  margin-bottom:clamp(4.5rem,7vw,7rem);
+}
+
+.about-mockup-approach h2{
+  margin:0;
+  font-family:var(--font-display);
+  font-size:clamp(6.5rem,11.5vw,12.5rem);
+  font-weight:400;
+  line-height:.75;
+  letter-spacing:-.018em;
+  text-transform:uppercase;
+}
+
+.about-mockup-approach h2 span{
+  display:block;
+  white-space:nowrap;
+}
+
+.about-mockup-approach h2 span:nth-child(2){
+  margin-left:8vw;
+  color:#b9b9b3;
+}
+
+.about-mockup-approach h2 span:nth-child(3){
+  margin-left:20vw;
+}
+
+.about-mockup-approach__copy{
+  max-width:66rem;
+  margin:clamp(7rem,10vw,10rem) 0 0 auto;
+  padding-top:clamp(2rem,3vw,3rem);
+  border-top:1px solid var(--am-line);
+}
+
+.about-mockup-approach__copy .about-mockup-copy{
+  margin-top:clamp(4rem,6vw,6rem);
+}
+
+@media(max-width:900px){
+  .about-mockup-identity h1{
+    font-size:clamp(6rem,23vw,10rem);
+    white-space:normal;
+  }
+
+  .about-mockup-approach{
+    padding:8rem max(var(--pad),5vw);
+  }
+
+  .about-mockup-approach>.about-mockup-index{
+    margin-bottom:4rem;
+  }
+
+  .about-mockup-approach h2{
+    font-size:clamp(4.6rem,17vw,8rem);
+  }
+
+  .about-mockup-approach h2 span,
+  .about-mockup-approach h2 span:nth-child(2),
+  .about-mockup-approach h2 span:nth-child(3){
+    margin-left:0;
+    white-space:normal;
+  }
+
+  .about-mockup-approach__copy{
+    margin-top:6rem;
+  }
+}
