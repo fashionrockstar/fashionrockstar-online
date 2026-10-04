@@ -2,8 +2,31 @@
   'use strict';
 
   const form = document.querySelector('form[name="booking"]');
+  if (!form) return;
+
+  const services = Array.from(form.querySelectorAll('input[name="project-type"]'));
+  // Native radios keep the existing required-service fallback without JavaScript.
+  services.forEach((service) => {
+    service.type = 'checkbox';
+    service.required = false;
+  });
+  const firstService = services[0];
+  const validateServices = () => {
+    if (firstService) {
+      firstService.setCustomValidity(services.some((service) => service.checked)
+        ? ''
+        : 'SELECT AT LEAST ONE SERVICE.');
+    }
+  };
+
+  const requestedService = new URLSearchParams(window.location.search).get('service');
+  const matchingService = services.find((service) => service.value === requestedService);
+  if (matchingService) matchingService.checked = true;
+  validateServices();
+  services.forEach((service) => service.addEventListener('change', validateServices));
+
   const status = document.querySelector('#booking-status');
-  if (!form || !status || !window.fetch) return;
+  if (!status || !window.fetch || !window.AbortController) return;
 
   const button = form.querySelector('button[type="submit"]');
   const buttonLabel = button.querySelector('span');
@@ -20,9 +43,12 @@
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    validateServices();
     if (pending || received || !form.reportValidity()) return;
 
-    const body = new URLSearchParams(new FormData(form)).toString();
+    const formData = new FormData(form);
+    formData.set('project-type', formData.getAll('project-type').join(','));
+    const body = new URLSearchParams(formData).toString();
     const fields = Array.from(form.querySelectorAll('input:not([type="hidden"]), select, textarea'))
       .map((field) => ({ field, disabled: field.disabled }));
     const controller = new AbortController();
@@ -35,7 +61,7 @@
     showStatus('SUBMITTING INQUIRY…', 'pending');
 
     try {
-      const response = await fetch('/book/', {
+      const response = await fetch('/booking/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body,

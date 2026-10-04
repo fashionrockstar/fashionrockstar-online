@@ -3,3 +3,39 @@
 
 [context.development]
   publish = "."
+
+[[redirects]]
+  from = "/book"
+  to = "/booking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/book/*"
+  to = "/booking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/booking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/*"
+  to = "/booking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/inquiry"
+  to = "/booking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/inquiry/*"
+  to = "/booking/"
+  status = 301
+  force = true

@@ -8,7 +8,7 @@ At the owner's request, the SYSTEM ACCESS pre-home screen is removed. Visitors a
 
 `index.html` no longer loads the SYSTEM ACCESS stylesheet or script, and `assets/js/landing.js` no longer waits for that sequence. The existing HOME markup, logo video, navigation, social links, Braille links, reduced-motion behavior and other pages are preserved. The former entry's unused CSS/JavaScript and supplied audio file remain in the repository for reference; they are not loaded by HOME. Do not reintroduce this screen without a new explicit approval.
 
-Development review remains on the existing `development` branch / draft PR #2. Do not merge or publish production until the preview is approved.
+Development review uses the existing `development` branch preview at https://development--benevolent-nasturtium-1b8dd7.netlify.app. Do not merge or publish production until the preview is approved.
 
 ## Content
 
@@ -17,13 +17,14 @@ Development review remains on the existing `development` branch / draft PR #2. D
 - Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
 - Profile: `about/index.html` and `assets/css/about.css`; the `/about/` address is unchanged.
 - Services: `services/index.html`.
-- Contact: `contact/index.html` and `assets/css/contact.css`.
-- Project inquiries: `book/index.html` and `assets/js/booking.js`. Preserve the `/book/` address, Netlify form name and field names.
+- Booking: `booking/index.html`, `assets/css/book.css` and `assets/js/booking.js`. `/booking/` is the canonical contact and project inquiry destination. Preserve the Netlify form name and field names.
+- Legacy `/book/`, `/contact/` and `/inquiry/` addresses redirect to `/booking/`; static fallback pages preserve query strings and fragments when JavaScript is available.
+- Booking services support multiple selections with JavaScript and submit one comma-separated `project-type` value to the existing Netlify form. Without JavaScript, native radios preserve required single-service validation.
 - Magazine: `issue-01/index.html`.
 
 ## Confirmed social profiles
 
-Confirmed by Zavyer on September 8, 2026. Use these exact destinations on Home and Contact.
+Confirmed by Zavyer on September 8, 2026. Use these exact destinations on Home.
 
 | Profile | URL |
 | --- | --- |

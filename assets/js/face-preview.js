@@ -3,7 +3,7 @@
   'use strict';
   const root = document.documentElement;
   const hero = document.querySelector('.home .home-menu__preview');
-  const contact = document.querySelector('.home-menu__links a[href="/contact/"]');
+  const contact = document.querySelector('.home-menu__links a[href="/booking/"]');
   if (!hero || !contact) return;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const layer = document.createElement('div');

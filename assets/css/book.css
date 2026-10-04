@@ -7,23 +7,23 @@
 
 .inquiry-page {
   display: grid;
-  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
-  gap: clamp(3rem, 5vw, 5rem);
-  padding: clamp(3rem, 5vw, 5rem) max(var(--pad), env(safe-area-inset-right)) max(5rem, env(safe-area-inset-bottom)) max(var(--pad), env(safe-area-inset-left));
+  grid-template-columns: minmax(0, 28%) minmax(0, 1fr);
   color: var(--inquiry-fg);
   text-transform: uppercase;
 }
 
-/* Intentionally empty space for a future editorial image. */
-.inquiry-image-space {
+/* Keep the left panel empty until project imagery is supplied. */
+.inquiry-empty-panel {
   min-width: 0;
+  border-right: 1px solid var(--inquiry-line);
 }
 
 .inquiry-content {
   width: 100%;
-  max-width: 44rem;
+  max-width: 64rem;
   min-width: 0;
-  justify-self: end;
+  justify-self: center;
+  padding: clamp(3rem, 5vw, 5rem) max(clamp(2rem, 5vw, 5rem), env(safe-area-inset-right)) max(5rem, env(safe-area-inset-bottom)) clamp(2rem, 5vw, 5rem);
 }
 
 .inquiry-hero {
@@ -80,7 +80,7 @@
 }
 
 .inquiry-section__number {
-  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
   font-weight: 400;
   letter-spacing: -.05em;
 }
@@ -180,7 +180,7 @@
   cursor: pointer;
 }
 
-.project-type-grid input[type="radio"] {
+.project-type-grid input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -273,35 +273,39 @@
   outline-offset: 5px;
 }
 
-@media (min-width: 901px) {
-  .inquiry-page {
-    width: 100%;
-    max-width: 104rem;
-    margin-inline: auto;
-    grid-template-columns: minmax(0, 1fr) minmax(min(30rem, 60%), 1fr);
-    padding-right: max(calc(2 * var(--pad)), env(safe-area-inset-right));
-    padding-left: max(calc(2 * var(--pad)), env(safe-area-inset-left));
-  }
+.inquiry-general-contact {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--inquiry-line);
+  color: var(--inquiry-silver);
+  font-size: var(--small);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: .04em;
+  transition: color .2s ease, border-color .2s ease;
+}
 
-  .inquiry-content {
-    max-width: 40rem;
-    justify-self: start;
-  }
+.inquiry-general-contact:hover,
+.inquiry-general-contact:focus-visible {
+  border-color: var(--inquiry-fg);
+  color: var(--inquiry-fg);
 }
 
 @media (max-width: 900px) {
   .inquiry-page {
     grid-template-columns: minmax(0, 1fr);
-    gap: 0;
-    padding-top: 2.5rem;
   }
 
-  .inquiry-image-space {
+  .inquiry-empty-panel {
     display: none;
   }
 
   .inquiry-content {
-    justify-self: center;
+    max-width: none;
+    padding: 2.5rem max(var(--pad), env(safe-area-inset-right)) max(4rem, env(safe-area-inset-bottom)) max(var(--pad), env(safe-area-inset-left));
   }
 
   .inquiry-title {
@@ -337,7 +341,7 @@
   }
 
   .project-type-grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: .625rem;
   }
 
@@ -354,7 +358,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .project-type-grid span,
-  .booking-form--studio .inquiry-submit button {
+  .booking-form--studio .inquiry-submit button,
+  .inquiry-general-contact {
     transition: none;
   }
 }
