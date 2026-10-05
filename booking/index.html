@@ -95,12 +95,19 @@
         </fieldset>
 
         <div class="inquiry-submit">
-          <button type="submit" data-default-label="SUBMIT INQUIRY">
-            <span>SUBMIT INQUIRY</span><span class="inquiry-submit__arrow" aria-hidden="true">→</span>
+          <button class="inquiry-slider" type="submit" data-default-label="SLIDE TO SEND →" aria-label="Slide to send inquiry" aria-describedby="inquiry-slider-help">
+            <span class="inquiry-slider__sweep" aria-hidden="true"></span>
+            <span class="inquiry-slider__handle" aria-hidden="true">→</span>
+            <span class="inquiry-slider__label">SLIDE TO SEND →</span>
           </button>
+          <p class="sr-only" id="inquiry-slider-help">Drag the handle to the right, or click, tap, or press Enter or Space to send your inquiry.</p>
           <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
         </div>
       </form>
+      <div class="inquiry-confirmation" role="region" aria-labelledby="inquiry-confirmation-title" tabindex="-1" hidden>
+        <p id="inquiry-confirmation-title">INQUIRY SENT</p>
+        <p>WE’LL BE IN TOUCH.</p>
+      </div>
       <a class="inquiry-general-contact" href="mailto:FASHIONROCKSTARBOOKING@GMAIL.COM">GENERAL CONTACT <span aria-hidden="true">→</span></a>
     </div>
   </main>
