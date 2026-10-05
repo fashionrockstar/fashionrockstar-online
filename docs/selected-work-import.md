@@ -72,3 +72,7 @@ The supplied `IMG_8441.JPG` is both the Work cover and the first image on the pr
 ### SAINT JOU gallery — September 23, 2026
 
 Added the ten subsequently supplied music-video stills in attachment order, after the unchanged IMG_8441.JPG cover. All ten are full-width landscape gallery items. Their entire frames, including existing black side borders, remain intact. WebP copies at 640px and native width (capped at 2400px) use quality 90, with lazy loading and responsive sources. No crop, retouching, color grading or upscaling. The project now contains eleven images total. The supplied files remain preserved in their original uploads; `saint-jou-2016-media-manifest.json` records source hashes, order and derivatives. Metadata and all other projects remain unchanged.
+
+### SAINT JOU moving thumbnail — October 4, 2026
+
+The owner supplied https://www.youtube.com/watch?v=RSO9OmS5S_0, the official `2016 - SAINT JOU` music video. The Work thumbnail now uses a muted, looping native MP4 with no player controls. It retains the original JPEG as its poster and uses the existing visibility, filtering and reduced-motion behavior. The complete video frame is retained at 1280 × 720; the optimized video-only copy is `assets/media/selected-work/saint-jou-2016/cover.mp4`. The project includes a direct WATCH ON YOUTUBE link; its original image hero, ten gallery stills and supplied metadata remain intact. Original source metadata and hashes are preserved outside the published repository in the BOOKING task's `media-source/provenance.json`. Development preview only.

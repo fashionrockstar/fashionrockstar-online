@@ -38,6 +38,13 @@
 }
 .project-credits { margin-bottom: 2rem; font-size: var(--small); }
 .project-credits[hidden], .project-head [hidden] { display: none; }
+.project-film-link {
+  margin-bottom: 2rem;
+  font-size: var(--small);
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+.project-film-link a { text-decoration: underline; text-underline-offset: .25em; }
 .project-head--stacked { grid-template-columns: 1fr; }
 .project-head--stacked p { justify-content: space-between; text-align: left; }
 .project-social-film {

@@ -24,6 +24,17 @@
   }
   setText('[data-project-role]', project.role);
   setText('[data-project-year]', project.year);
+  const filmLink = document.querySelector('[data-project-film-link]');
+  if (filmLink && project.youtubeUrl) {
+    const link = document.createElement('a');
+    link.href = project.youtubeUrl;
+    link.textContent = 'WATCH ON YOUTUBE →';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.setAttribute('aria-label', `Watch ${project.title} on YouTube (opens in a new tab)`);
+    filmLink.replaceChildren(link);
+    filmLink.hidden = false;
+  }
   const credits = document.querySelector('[data-project-credits]');
   if (project.credits?.length) {
     credits.hidden = false;

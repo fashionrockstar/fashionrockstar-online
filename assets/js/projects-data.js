@@ -935,6 +935,7 @@ window.fashionrockstarProjects = [
   },
   {
     "title": "\"2016\" SAINT JOU — MUSIC VIDEO",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RSO9OmS5S_0",
     "year": "2025",
     "role": "CREATIVE DIRECTION — VIDEOGRAPHY",
     "disciplines": "creative-direction photography",
