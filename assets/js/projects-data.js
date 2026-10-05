@@ -1295,5 +1295,43 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "title": "OUISSAM",
+    "year": "2025",
+    "role": "PHOTOGRAPHY / ISSUE 01",
+    "disciplines": "photography",
+    "id": 15,
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "video",
+      "src": "/assets/media/selected-work/ouissam/cover.mp4",
+      "poster": "/assets/media/selected-work/ouissam/cover-poster.webp",
+      "width": 720,
+      "height": 1100,
+      "wide": false,
+      "hasAudio": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/ouissam/01-portrait.webp",
+        "width": 1440,
+        "height": 1779,
+        "alt": "OUISSAM — portrait beside the mantel with one hand resting on it",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/ouissam/02-portrait.webp",
+        "width": 1440,
+        "height": 1777,
+        "alt": "OUISSAM — full-length portrait in front of the mantel and candles",
+        "wide": false,
+        "hasAudio": false
+      }
+    ]
   }
 ];

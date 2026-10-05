@@ -6,6 +6,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2px;
 }
+.work-tile--ouissam .work-tile__pair {
+  grid-template-columns: minmax(0, .654545fr) minmax(0, .809443fr);
+  align-items: start;
+}
+.work-tile--ouissam .work-tile__pair > video {
+  aspect-ratio: 720 / 1100;
+}
 .work-tile--natural img,
 .work-tile--natural video {
   width: 100%;

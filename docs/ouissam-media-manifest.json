@@ -1,0 +1,33 @@
+{
+  "projectId": 15,
+  "title": "OUISSAM",
+  "firstShoot": true,
+  "ordering": "Final project on Work, as requested by the owner.",
+  "sources": {
+    "video": "https://www.instagram.com/reel/DJ-jQgKMg8-/",
+    "photos": "https://www.instagram.com/p/DKExmNJOOMf/"
+  },
+  "caption": "OUISSAM FOR ISSUE 01 / Photography by @fashionrockstar.online",
+  "photoPublicationDate": "2025-05-25",
+  "video": {
+    "local": "/assets/media/selected-work/ouissam/cover.mp4",
+    "width": 720,
+    "height": 1100,
+    "durationSeconds": 15.1,
+    "hasAudio": true,
+    "handling": "Public DASH streams muxed by stream copy without resizing or reencoding."
+  },
+  "images": [
+    {
+      "local": "/assets/media/selected-work/ouissam/01-portrait.webp",
+      "width": 1440,
+      "height": 1779
+    },
+    {
+      "local": "/assets/media/selected-work/ouissam/02-portrait.webp",
+      "width": 1440,
+      "height": 1777
+    }
+  ],
+  "thumbnail": "Portrait video beside the first portrait photo. Complete native frames preserved."
+}
