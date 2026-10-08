@@ -10,6 +10,8 @@
     service.type = 'checkbox';
     service.required = false;
   });
+  const serviceHint = form.querySelector('.inquiry-service-hint');
+  if (serviceHint) serviceHint.classList.add('is-visible');
   const firstService = services[0];
   const validateServices = () => {
     if (firstService) {
@@ -213,7 +215,7 @@
 
       received = true;
       button.dataset.state = 'sent';
-      buttonLabel.textContent = 'INQUIRY SENT ✓';
+      buttonLabel.textContent = 'INQUIRY SENT';
       button.setAttribute('aria-label', 'Inquiry sent');
       showStatus('INQUIRY SENT.', 'success');
       window.setTimeout(() => {

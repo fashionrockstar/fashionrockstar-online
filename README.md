@@ -12,6 +12,12 @@ Development review uses the existing `development` branch preview at https://dev
 
 ## Content
 
+### Booking layout — October 8, 2026
+
+`/booking/` uses an oversized BOOKING title and contact/social links beside a compact graphite form. Services, name, email and message are visible; company, timeline and budget remain available in the native “Add project details” disclosure. The existing Netlify field names, service preselection, multi-service submission, slide/click/keyboard send behavior, failure retry and sent confirmation are preserved. Mobile stacks the heading and form; reduced-motion settings disable the entrance animation.
+
+Validated in Chromium at 320, 390, 768, 1024, 1440 and 1920 pixels, with local simulated success and failure responses, slider cancellation/completion, validation, optional-field serialization and no-JavaScript fallback. No live inquiry was sent. Review on the `development` preview before any production merge.
+
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
 - Entry: visitors arrive directly on HOME on all devices. SYSTEM ACCESS and the previous fingerprint gate are inactive.
 - Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
