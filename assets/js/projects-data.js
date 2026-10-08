@@ -1295,5 +1295,32 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "id": 15,
+    "title": "#SADPRINCESS",
+    "category": "Photography",
+    "year": "2025",
+    "description": "ALBUM RELEASE PROMO SHOOT",
+    "role": "CREATIVE DIRECTION, PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "display": "portrait",
+    "imported": true,
+    "listed": false,
+    "pending": [
+      "Original cover and complete approved media sequence required before adding a WORK tile."
+    ],
+    "credits": [
+      "MODELS — MZRABELLE, PENELOPE, ROMI",
+      "STYLIST — FUNMI MILAYO"
+    ],
+    "cover": {
+      "type": "instagram",
+      "mediaKind": "post",
+      "src": "https://www.instagram.com/p/DUbH4qPDevV/",
+      "label": "#SADPRINCESS — external Instagram post",
+      "wide": true
+    },
+    "gallery": []
   }
 ];
