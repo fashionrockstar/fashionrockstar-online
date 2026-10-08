@@ -45,7 +45,7 @@
 }
 .services-page .service-toggle {
   display: grid;
-  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: .85rem 1.5rem;
   min-height: 44px;
@@ -66,7 +66,6 @@
   text-transform: uppercase;
   overflow-wrap: anywhere;
 }
-.services-page .service-number,
 .services-page .service-action {
   font-family: var(--font-ui);
   font-size: .75rem;
@@ -91,12 +90,6 @@
 .services-page .service-action__open,
 .services-page .service[open] .service-action__closed { display: none; }
 .services-page .service[open] .service-action__open { display: flex; }
-.services-page .service-summary {
-  grid-column: 2 / -1;
-  max-width: 65ch;
-  font-size: clamp(.9rem, 1.1vw, 1rem);
-  line-height: 1.6;
-}
 .services-page .service-details {
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
@@ -181,12 +174,11 @@
   .services-page .services-intro,
   .services-page .services-closing { grid-template-columns: minmax(0, 1fr); }
   .services-page .service-toggle {
-    grid-template-columns: 1.25rem minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: .65rem .75rem;
   }
   .services-page .service-title { font-size: clamp(1.3rem, 4.5vw, 2.5rem); }
-  .services-page .service-action { grid-column: 2; grid-row: 3; }
-  .services-page .service-summary { grid-column: 2; grid-row: 2; }
+  .services-page .service-action { grid-column: 1; grid-row: 2; }
   .services-page .service-details {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: none;
