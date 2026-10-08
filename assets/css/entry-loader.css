@@ -10,12 +10,19 @@
   background: #000;
   color: #fff;
   pointer-events: auto;
-  animation: entry-arrive 2.6s both;
+  animation: entry-arrive 3.8s both;
 }
-.entry-loader__mark { position: relative; width: min(76vw, 728px); aspect-ratio: 728 / 97; }
+.entry-loader__mark {
+  position: absolute;
+  left: var(--entry-mark-left, 50%);
+  top: var(--entry-mark-top, 50svh);
+  width: var(--entry-mark-width, min(70vw, 124.444svh));
+  aspect-ratio: 2688 / 370;
+  transform: translate(-50%, -50%);
+}
 .entry-loader__mark > * { position: absolute; inset: 0; width: 100%; height: 100%; }
-.entry-loader__dots { animation: entry-dots 1.5s both; }
-.entry-loader__logo { animation: entry-logo 1.7s both; }
+.entry-loader__dots { animation: entry-dots 2.1s both; }
+.entry-loader__logo { animation: entry-logo 2.4s both; }
 @keyframes entry-dots {
   0% { opacity: 0; }
   20%, 42% { opacity: 1; clip-path: inset(0); }
@@ -30,7 +37,6 @@
   99% { opacity: 0; visibility: visible; }
   100% { opacity: 0; visibility: hidden; }
 }
-@media (max-width: 600px) { .entry-loader__mark { width: 86vw; } }
 @media (prefers-reduced-motion: reduce) {
   .entry-loading { overflow: auto; }
   .entry-loading .entry-loader { display: none; animation: none; }
