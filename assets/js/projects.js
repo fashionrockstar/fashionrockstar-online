@@ -7,6 +7,8 @@
   const index = Math.max(0, projects.findIndex(project => project.id === requestedId));
   const project = projects[index];
   document.body.classList.toggle('project-imported', Boolean(project.imported));
+  document.body.classList.toggle('project-portrait', project.display === 'portrait');
+  document.body.classList.toggle('project-full-width', project.display === 'full-width');
   const setText = (selector, value) => {
     const node = document.querySelector(selector);
     node.textContent = value || '';
@@ -24,6 +26,7 @@
   }
   setText('[data-project-role]', project.role);
   setText('[data-project-year]', project.year);
+  setText('[data-project-description]', project.description);
   const filmLink = document.querySelector('[data-project-film-link]');
   if (filmLink && project.youtubeUrl) {
     const link = document.createElement('a');
@@ -50,7 +53,7 @@
       const film = document.createElement('div');
       film.className = 'project-social-film';
       film.setAttribute('role', 'group');
-      film.setAttribute('aria-label', `${project.title} — film`);
+      film.setAttribute('aria-label', item.label || `${project.title} — film`);
       const embed = document.createElement('blockquote');
       embed.className = 'instagram-media';
       embed.dataset.instgrmPermalink = item.src;
@@ -63,12 +66,20 @@
         link.rel = 'noopener noreferrer';
         return link;
       };
-      embed.append(makeLink(item.src, 'View the film on Instagram'));
+      embed.append(makeLink(item.src, item.mediaKind === 'post' ? 'View on Instagram' : 'View the film on Instagram'));
       const links = document.createElement('p');
       links.className = 'project-social-film__links';
-      links.append(makeLink(item.src, 'Watch on Instagram'));
+      links.append(makeLink(item.src, item.mediaKind === 'post' ? 'View on Instagram' : 'Watch on Instagram'));
       if (item.alternateUrl) links.append(makeLink(item.alternateUrl, 'Watch on TikTok'));
       film.append(embed, links);
+      // Instagram creates its iframe asynchronously without an accessible title.
+      const observer = new MutationObserver(() => {
+        const frame = film.querySelector('iframe');
+        if (!frame) return;
+        frame.title = item.label || `${project.title} — external Instagram film`;
+        observer.disconnect();
+      });
+      observer.observe(film, { childList: true, subtree: true });
       return film;
     }
     const media = document.createElement(item.type === 'video' ? 'video' : 'img');
@@ -138,7 +149,7 @@
     figure.append(createMedia(item, position));
     gallery.append(figure);
   });
-  if (project.gallery.some(item => item.type === 'instagram')) {
+  if ([...covers, ...project.gallery].some(item => item.type === 'instagram')) {
     const renderInstagram = () => window.instgrm?.Embeds?.process();
     if (window.instgrm?.Embeds) renderInstagram();
     else {
@@ -150,9 +161,17 @@
       document.body.append(script);
     }
   }
+  // Projects awaiting an original Work cover are direct-link previews only.
+  // Scan the ordered data so existing public project navigation stays intact.
   for (const [direction, offset] of [['prev', -1], ['next', 1]]) {
-    const destination = projects[(index + offset + projects.length) % projects.length];
+    let destination;
+    for (let step = 1; step <= projects.length; step += 1) {
+      const candidate = projects[(index + offset * step + projects.length) % projects.length];
+      if (candidate.listed !== false) { destination = candidate; break; }
+    }
     const link = document.querySelector(`[data-project-${direction}]`);
+    link.hidden = !destination;
+    if (!destination) continue;
     link.href = `/project/?id=${destination.id}`;
     link.setAttribute('aria-label', `${direction === 'prev' ? 'Previous' : 'Next'} project: ${destination.title}`);
   }
