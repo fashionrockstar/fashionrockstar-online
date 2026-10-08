@@ -24,6 +24,16 @@
           if (other !== service) other.open = false;
         });
         replaceFragment(service.id);
+        // Closing a long section above can move the newly opened heading
+        // outside the viewport. Wait for that reflow, then keep it in view.
+        window.requestAnimationFrame(() => {
+          if (!service.open) return;
+          const summary = service.querySelector('summary');
+          const bounds = summary.getBoundingClientRect();
+          if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
+            service.scrollIntoView({ block: 'start', behavior: 'instant' });
+          }
+        });
       } else if (window.location.hash === `#${service.id}`) {
         replaceFragment('');
       }
