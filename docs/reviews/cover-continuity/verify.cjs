@@ -38,12 +38,12 @@ async function prepare(p) {
   await p.waitForTimeout(300);
   return { tile, before: await p.evaluate(() => scrollY) };
 }
-async function run(browser, name, options, test) {
+async function run(browser, name, options, test, trace = true) {
   if (selected && !selected.includes(name)) return;
   const events = [], errors = [];
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 1000 }, ...options });
   await ctx.exposeBinding('traceCover', (_, e) => events.push(e));
-  await ctx.addInitScript(() => {
+  if (trace) await ctx.addInitScript(() => {
     window.addEventListener('pagereveal', e => {
       const report = state => traceCover({ url: location.pathname + location.search, state,
         animations: document.getAnimations().map(a => ({ name: a.animationName, duration: a.effect?.getTiming().duration, easing: a.effect?.getTiming().easing })).filter(a => a.name) });
@@ -199,6 +199,13 @@ async function main() {
       });
       return journey(p, c, e, false);
     });
+    await run(browser, 'uninstrumented-slow-fallback', {}, async (p, c) => {
+      const { tile } = await prepare(p);
+      await c.route('**/call-her-angelina/*', async r => { await new Promise(resolve => setTimeout(resolve, 1800)); await r.continue().catch(() => {}); });
+      await tile.click(); await p.waitForURL('**/project/?id=13'); await settle(p);
+      await p.locator('.back-link').click(); await p.waitForURL('**/work/?filter=photography'); await settle(p);
+      return { nativeNavigation: true, transitionPromisesObservedByTest: false };
+    }, false);
     await run(browser, 'blocked-storage', {}, async (p, c, e) => {
       await c.addInitScript(() => { Storage.prototype.setItem = () => { throw new DOMException('blocked', 'SecurityError'); }; });
       const { tile } = await prepare(p); await tile.click(); await p.waitForURL('**/project/?id=13'); await settle(p);

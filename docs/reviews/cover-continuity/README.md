@@ -2,7 +2,7 @@
 
 Implementation on `codex/cover-continuity`, based on development commit `89700f521aa1c225c371a6d0d047b6e963ee6aee`. Validated October 8, 2026.
 
-The approved Git bundle was imported with original commits `4be14e2` and `c7376e3` intact. All ten source-file SHA-256 hashes and the bundle hash matched the supplied manifest. The only subsequent implementation change corrects return scroll after a late font swap; the approved motion CSS and both page integrations are unchanged.
+The approved Git bundle was imported with original commits `4be14e2` and `c7376e3` intact. All ten source-file SHA-256 hashes and the bundle hash matched the supplied manifest. Subsequent implementation fixes correct return scroll after a late font swap and handle expected promise rejections when a transition is skipped; the approved motion CSS and both page integrations are unchanged.
 
 The selected still photograph carries from the Work list into its project hero. Returning carries it back to the originating filter and scroll position. The cover movement lasts 680 ms with a quick start and soft finish; the project heading enters just after the movement starts. Existing page geometry determines the movement, so a full-width Work cover narrows into the existing project hero.
 
@@ -38,12 +38,13 @@ The original results remain in `verification.json` and `direct-entry-verificatio
 
 ## Integration validation
 
-Fifteen scenarios passed in Chrome/Chromium 154.0.8037.98 and Playwright WebKit 26.5. Full results are in [validation-2026-10-08.json](validation-2026-10-08.json), with the reproducible [verify.cjs](verify.cjs) browser harness.
+Sixteen scenarios passed in Chrome/Chromium 154.0.8037.98 and Playwright WebKit 26.5. Full results are in [validation-2026-10-08.json](validation-2026-10-08.json), with the reproducible [verify.cjs](verify.cjs) browser harness.
 
 - Chromium and WebKit: desktop 1440 × 1000 and mobile/touch 390 × 844 open/return; in-session filter changes; Back/Forward; cleanup of temporary transition names; no project overflow or page errors.
 - Chromium: keyboard Enter, Ctrl-click and middle-click; direct project entry; video and paired covers; mismatched images; offscreen return; blocked session storage; reduced motion; CSS-disabled transitions; simulated absence of the transition lifecycle events.
 - Loading: cached images, delayed source images, and delayed destination images. Unavailable imagery uses native navigation without waiting for a transition.
 - Scroll regression: disabled-motion return previously restored 6967 px and then shifted to 6821 px when local fonts loaded. It now settles at 6967 px. Pending font correction cancels on visitor input or page exit; a delayed-font test preserves the visitor's chosen 7417 px position.
+- Uninstrumented fallback: delayed imagery previously produced unhandled `ViewTransition.ready` rejections after `skipTransition()`. Both lifecycle handlers now handle the expected rejection. A regression check that never observes transition promises verifies native navigation with no page errors; it caught the issue that the animation-tracing checks masked.
 
 The fix adds one correction after `document.fonts.ready`, only while fonts are loading. It cancels on wheel, touch, pointer, keyboard, or page exit. The movement remains 680 ms with `cubic-bezier(.22, 1, .36, 1)` and the approved title delay.
 

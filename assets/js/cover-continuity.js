@@ -78,6 +78,8 @@
   };
 
   window.addEventListener('pageswap', event => {
+    // Skipping or timing out rejects ready; this is an expected fallback.
+    event.viewTransition?.ready.catch(() => {});
     clearNames();
     const current = currentURL();
     const destination = url(event.activation?.entry?.url);
@@ -147,6 +149,7 @@
   }
 
   window.addEventListener('pagereveal', event => {
+    event.viewTransition?.ready.catch(() => {});
     clearNames();
     const pending = read(transitionKey);
     write(transitionKey, null);
