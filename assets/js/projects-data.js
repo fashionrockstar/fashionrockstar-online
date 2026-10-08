@@ -1295,5 +1295,46 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "id": 17,
+    "title": "BODIES AS WEAPON",
+    "category": "Photography",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION, PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "display": "full-width",
+    "presentation": "video-led",
+    "imported": true,
+    "listed": false,
+    "instructions": ["Cross"],
+    "pending": [
+      "Original selected cover and complete approved media sequence required before adding a WORK tile.",
+      "The literal instruction Cross needs owner clarification; no visual interpretation is applied."
+    ],
+    "credits": ["MODEL — SAÏD"],
+    "cover": {
+      "type": "instagram",
+      "mediaKind": "post",
+      "src": "https://www.instagram.com/p/DKJ_ZZPuvMX/",
+      "label": "BODIES AS WEAPON — external Instagram cover post",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "instagram",
+        "mediaKind": "post",
+        "src": "https://www.instagram.com/p/DJ9mXZ3OFUN/",
+        "label": "BODIES AS WEAPON — external Instagram post",
+        "wide": true
+      },
+      {
+        "type": "instagram",
+        "mediaKind": "reel",
+        "src": "https://www.instagram.com/reel/DJ59-OmuUO4/",
+        "label": "BODIES AS WEAPON — external Instagram reel",
+        "wide": true
+      }
+    ]
   }
 ];
