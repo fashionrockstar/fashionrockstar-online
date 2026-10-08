@@ -60,7 +60,7 @@ async function run(browser, name, options, test, trace = true) {
     assert.deepEqual(errors, [], 'JavaScript page errors');
     assert.equal(await p.locator('[data-frsr-transition]').count(), 0, 'Transition names leaked');
     result.pass = true;
-  } catch (e) { result.pass = false; result.failure = e.stack; result.state = await p.evaluate(() => ({ url: location.href, scrollY, journey: sessionStorage.getItem('frsr:cover-journey:v1'), pending: sessionStorage.getItem('frsr:cover-transition:v1') })).catch(() => null); await p.screenshot({ path: path.join(output, name + '-failure.png') }).catch(() => {}); }
+  } catch (e) { result.pass = false; result.failure = e.stack; result.state = await p.evaluate(() => ({ url: location.href, scrollY, journey: sessionStorage.getItem('frsr:cover-journey:v2'), pending: sessionStorage.getItem('frsr:cover-transition:v2') })).catch(() => null); await p.screenshot({ path: path.join(output, name + '-failure.png') }).catch(() => {}); }
   await ctx.close();
   reports.push(result);
   console.log(JSON.stringify({ name, pass: result.pass, details: result.details, failure: result.failure }));
@@ -70,7 +70,7 @@ async function journey(p, ctx, events, expectMotion, touch = false) {
   const { tile, before: preparedScroll } = await prepare(p);
   if (touch) await tile.tap(); else await tile.click();
   await p.waitForURL('**/project/?id=13'); await settle(p);
-  const before = await p.evaluate(() => JSON.parse(sessionStorage.getItem('frsr:cover-journey:v1')).scrollY);
+  const before = await p.evaluate(() => JSON.parse(sessionStorage.getItem('frsr:cover-journey:v2')).scrollY);
   assert.equal(await p.locator('[data-project-title]').innerText(), 'CALL HER ANGELINA');
   assert((await p.locator('.back-link').getAttribute('href')).endsWith('/work/?filter=photography'));
   assert.equal(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
@@ -110,7 +110,7 @@ async function main() {
       await tile.click({ modifiers: ['Control'] });
       const popup = await popupPromise; await popup.waitForLoadState();
       assert.equal(p.url(), original);
-      assert.equal(await p.evaluate(() => sessionStorage.getItem('frsr:cover-journey:v1')), null);
+      assert.equal(await p.evaluate(() => sessionStorage.getItem('frsr:cover-journey:v2')), null);
       await popup.close();
       const middlePromise = c.waitForEvent('page');
       await tile.click({ button: 'middle' });
@@ -129,13 +129,24 @@ async function main() {
       await p.waitForURL('**/services/');
       return { work: true, unrelatedNavigation: true };
     });
-    await run(browser, 'video-pair-fallback', {}, async (p, c, e) => {
+    await run(browser, 'video-pair-continuity', {}, async (p, c, e) => {
       for (const id of [1, 6, 11]) {
-        await p.goto(base + '/work/'); await p.locator(`[data-project-id="${id}"]`).click();
-        await p.waitForURL(`**/project/?id=${id}`); await settle(p);
+        await p.goto(base + '/work/');
+        const tile = p.locator(`[data-project-id="${id}"]`);
+        await tile.scrollIntoViewIfNeeded();
+        await tile.locator('video').evaluateAll(videos => Promise.all(videos.map(video => {
+          const poster = new Image(); poster.src = video.poster; return poster.decode();
+        })));
+        await settle(p);
+        const before = e.filter(v => v.state === 'ready').length;
+        await tile.click(); await p.waitForURL(`**/project/?id=${id}`); await settle(p);
+        assert.equal(await p.locator('html').getAttribute('data-cover-motion'), 'open');
+        assert.equal(await p.locator('html').getAttribute('data-cover-panels'), id === 6 ? '2' : '1');
+        await p.locator('.back-link').click(); await p.waitForURL('**/work/'); await settle(p);
+        assert.equal(await p.locator('html').getAttribute('data-cover-motion'), 'return');
+        assert.equal(e.filter(v => v.state === 'ready').length - before, 2);
       }
-      assert(!e.some(v => v.state === 'ready'), 'Fallback media animated');
-      return { projects: [1, 6, 11] };
+      return { projects: [1, 6, 11], bothDirections: true };
     });
     await run(browser, 'mismatched-and-offscreen', {}, async (p, c, e) => {
       const { tile, before } = await prepare(p);
@@ -166,7 +177,7 @@ async function main() {
       const { tile } = await prepare(p);
       await c.route('**/call-her-angelina/*', async r => { await new Promise(resolve => setTimeout(resolve, 1800)); await r.continue().catch(() => {}); });
       await tile.click(); await p.waitForURL('**/project/?id=13', { waitUntil: 'domcontentloaded' }); await settle(p);
-      assert(!e.some(v => v.state === 'ready'), 'Slow destination image animated');
+      assert(e.some(v => v.state === 'ready'), 'Cold destination cancelled cover continuity');
       assert.equal(await p.locator('[data-project-title]').innerText(), 'CALL HER ANGELINA');
       return { nativeNavigation: true };
     });

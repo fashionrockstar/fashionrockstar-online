@@ -3,14 +3,17 @@
   navigation: auto;
 }
 
-::view-transition-group(frsr-cover) {
+::view-transition-group(frsr-cover),
+::view-transition-group(frsr-cover-2) {
   animation-duration: 680ms;
   animation-timing-function: cubic-bezier(.22, 1, .36, 1);
   z-index: 2;
 }
 
 ::view-transition-old(frsr-cover),
-::view-transition-new(frsr-cover) {
+::view-transition-new(frsr-cover),
+::view-transition-old(frsr-cover-2),
+::view-transition-new(frsr-cover-2) {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -18,11 +21,13 @@
   animation: none;
 }
 
-/* The selected photograph stays solid while its surroundings change. */
-/* Use the already-rendered source photograph, including on a cold arrival. */
-::view-transition-old(frsr-cover) { opacity: 1; }
-::view-transition-new(frsr-cover) { opacity: 0; }
-:root[data-cover-waiting]::view-transition-old(frsr-cover) {
+/* Carry the rendered photograph, video frame or poster through cold arrivals. */
+::view-transition-old(frsr-cover),
+::view-transition-old(frsr-cover-2) { opacity: 1; }
+::view-transition-new(frsr-cover),
+::view-transition-new(frsr-cover-2) { opacity: 0; }
+:root[data-cover-waiting]::view-transition-old(frsr-cover),
+:root[data-cover-waiting]::view-transition-old(frsr-cover-2) {
   animation: frsr-cover-hold 1800ms linear;
 }
 @keyframes frsr-cover-hold {

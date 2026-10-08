@@ -9,7 +9,7 @@ Implementation branch: `codex/cover-continuity`.
 Implementation commit: `4be14e2`.
 Development base inspected for this handoff: `89700f521aa1c225c371a6d0d047b6e963ee6aee`.
 
-The working code is already in this branch. Inspect and complete it; do not recreate the feature from a verbal description or introduce a new visual direction. Check the latest development changes and any applicable repository instructions first. Preserve concurrent work.
+The current source on `codex/cover-continuity` supersedes the original still-only commit below. The working code is already in this branch. Inspect and complete it; do not recreate the feature from a verbal description or introduce a new visual direction. Check the latest development changes and any applicable repository instructions first. Preserve concurrent work.
 
 ## Approved behavior
 
@@ -19,7 +19,7 @@ The working code is already in this branch. Inspect and complete it; do not recr
 - Returning carries the same image back into its original Work position, retaining the discipline filter and scroll position.
 - Preserve ordinary link behavior, one-tap mobile opening, keyboard activation, modifier clicks, and browser Back/Forward.
 - Honor reduced-motion preferences. Native navigation remains available when motion is unsupported or cannot run reliably.
-- Initial scope: matching still-image covers. Video, paired, mismatched, unloaded, or offscreen covers use ordinary navigation.
+- Current scope (expanded by the owner on 8 October): all 14 Selected Work projects, including photographs, single videos, paired videos, and a video cover whose poster matches the project still. Capture each visible panel separately. Preserve native fallback for reduced motion, unsupported browsers, mismatched media, or an unavailable/offscreen source.
 
 ## Implementation and visual references
 
@@ -46,7 +46,7 @@ The project hero preserves its existing layout: a full-width Work cover narrows/
 5. Update this PR with any required fixes and a concise validation report. If the existing implementation is complete, report that clearly instead of manufacturing changes.
 6. Deliver the implementation ready for development integration. This handoff does not authorize a merge into `main`, production publication, Netlify access changes, or domain changes.
 
-## Verification already completed
+## Initial verification (before the all-project extension)
 
 Actual Chromium checks passed: desktop 1440 × 1000; mobile viewport/touch 390 × 844; matching cover transitions in both directions; retained in-session filter; exact return scroll; browser Back/Forward; no leaked transition names; reduced-motion and disabled-transition modes; video fallback; direct-entry navigation; no horizontal overflow in the tested project views; no JavaScript page errors. JavaScript syntax and whitespace checks passed.
 

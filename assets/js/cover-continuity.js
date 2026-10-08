@@ -1,8 +1,8 @@
 (() => {
   'use strict';
 
-  const journeyKey = 'frsr:cover-journey:v1';
-  const transitionKey = 'frsr:cover-transition:v1';
+  const journeyKey = 'frsr:cover-journey:v2';
+  const transitionKey = 'frsr:cover-transition:v2';
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const currentURL = () => new URL(location.href);
   const isWork = url => url?.origin === location.origin && /^\/work\/?$/.test(url.pathname);
@@ -19,15 +19,99 @@
   };
   const ordinaryClick = event => event.button === 0 && !event.metaKey && !event.ctrlKey
     && !event.shiftKey && !event.altKey && !event.defaultPrevented;
-  const imageInWork = id => /^\d+$/.test(id || '')
-    ? document.querySelector(`.work-tile[data-project-id="${id}"]:not([hidden]) > img`) : null;
-  const heroImage = () => document.querySelector('.project-hero:not(.project-hero--pair) > img:only-child');
+  const mediaInWork = id => {
+    const tile = /^\d+$/.test(id || '') && document.querySelector(`.work-tile[data-project-id="${id}"]:not([hidden])`);
+    return tile ? [...tile.querySelectorAll('img, video')] : [];
+  };
+  const heroMedia = () => [...document.querySelectorAll('.project-hero > img, .project-hero > video')];
+  const isVideo = media => media.tagName === 'VIDEO';
+  const mediaPath = value => {
+    try {
+      const source = new URL(value, location.href);
+      return value && source.origin === location.origin ? source.pathname : null;
+    } catch { return null; }
+  };
+  const describe = media => ({
+    kind: isVideo(media) ? 'video' : 'image',
+    path: mediaPath(media.getAttribute('src') || media.dataset.src),
+    poster: isVideo(media) ? mediaPath(media.poster) : null,
+    time: isVideo(media) && Number.isFinite(media.currentTime) ? media.currentTime : 0
+  });
+  const sameMedia = (a, b) => Boolean(a?.path && b?.path && (
+    a.kind === b.kind && a.path === b.path
+    || a.kind === 'video' && b.kind === 'image' && a.poster === b.path
+    || b.kind === 'video' && a.kind === 'image' && b.poster === a.path
+  ));
+  const matchingMedia = (media, saved) => Array.isArray(saved) && media.length > 0
+    && media.length === saved.length && media.every((node, i) => sameMedia(describe(node), saved[i]));
   const readyImage = image => image?.complete && image.naturalWidth > 0;
-  const visible = image => {
-    if (!image || image.closest('[hidden]')) return false;
-    const rect = image.getBoundingClientRect();
+  const posters = new WeakMap();
+  const posterFor = video => {
+    if (!video.poster) return null;
+    if (!posters.has(video)) {
+      const image = new Image();
+      image.src = video.poster;
+      posters.set(video, image);
+    }
+    return posters.get(video);
+  };
+  const readyMedia = media => isVideo(media)
+    ? media.readyState >= 2 || readyImage(posterFor(media)) : readyImage(media);
+  const visible = media => {
+    if (!media || media.closest('[hidden]')) return false;
+    const rect = media.getBoundingClientRect();
     return rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight;
   };
+  const transitionName = index => index === 0 ? 'frsr-cover' : `frsr-cover-${index + 1}`;
+  const primeMedia = media => {
+    if (isVideo(media)) { posterFor(media); return; }
+    media.loading = 'eager';
+    media.decoding = 'sync';
+    media.fetchPriority = 'high';
+  };
+
+  // Only videos actually participating in a transition are loaded or sought.
+  // Project players keep their existing controls, mute and play/pause behavior.
+  let cancelMediaHandoff = () => {};
+  const prepareMedia = (media, previous, cancellations) => {
+    primeMedia(media);
+    if (!isVideo(media)) return media.decode().catch(() => {});
+    const source = describe(media);
+    const carryTime = previous?.kind === 'video' && source.path === previous.path
+      && Number.isFinite(previous.time) && previous.time > 0;
+    if (!carryTime) {
+      if (media.readyState >= 2) return Promise.resolve();
+      return posterFor(media)?.decode().catch(() => {}) || Promise.resolve();
+    }
+    return new Promise(resolve => {
+      let done = false;
+      let sought = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        ['loadedmetadata', 'loadeddata', 'seeked', 'error'].forEach(type => media.removeEventListener(type, update));
+        resolve();
+      };
+      const update = event => {
+        if (done) return;
+        if (event?.type === 'error' || media.error) { finish(); return; }
+        if (!sought && media.readyState >= 1) {
+          sought = true;
+          const end = Number.isFinite(media.duration) ? Math.max(0, media.duration - .05) : previous.time;
+          try { media.currentTime = Math.min(previous.time, end); } catch { finish(); return; }
+        }
+        if (sought && !media.seeking && media.readyState >= 2) finish();
+      };
+      const timer = setTimeout(finish, 1800);
+      cancellations.push(finish);
+      ['loadedmetadata', 'loadeddata', 'seeked', 'error'].forEach(type => media.addEventListener(type, update));
+      if (!media.getAttribute('src') && media.dataset.src) media.src = media.dataset.src;
+      media.preload = 'auto';
+      update();
+    });
+  };
+  document.querySelectorAll('.work-tile video, .project-hero > video').forEach(posterFor);
   const clearNames = () => {
     document.querySelectorAll('[data-frsr-transition]').forEach(node => {
       node.style.removeProperty('view-transition-name');
@@ -42,6 +126,7 @@
     const journey = read(journeyKey);
     return journey && /^\d+$/.test(journey.id) && isWork(url(journey.workUrl))
       && projectId(url(journey.projectUrl)) === journey.id
+      && Array.isArray(journey.media) && journey.media.length > 0
       && Date.now() - journey.savedAt < 30 * 60 * 1000 ? journey : null;
   };
 
@@ -53,11 +138,11 @@
       if (!tile || tile.target || tile.hasAttribute('download')) return;
       const destination = url(tile.href);
       const id = projectId(destination);
-      const image = id && imageInWork(id);
-      if (!readyImage(image)) return;
+      const media = id ? mediaInWork(id) : [];
+      if (!media.length) return;
       write(journeyKey, {
         id, workUrl: location.href, projectUrl: destination.href,
-        coverPath: new URL(image.src).pathname,
+        media: media.map(describe),
         scrollX, scrollY, savedAt: Date.now()
       });
     });
@@ -80,27 +165,30 @@
   window.addEventListener('pageswap', event => {
     // Skipping or timing out rejects ready; this is an expected fallback.
     event.viewTransition?.ready.catch(() => {});
+    cancelMediaHandoff();
     clearNames();
     delete document.documentElement.dataset.coverMotion;
+    delete document.documentElement.dataset.coverPanels;
     delete document.documentElement.dataset.coverWaiting;
     const current = currentURL();
     const destination = url(event.activation?.entry?.url);
     const route = pair(current, destination);
     const journey = validJourney();
-    const image = route?.direction === 'open' ? imageInWork(route.id) : heroImage();
-    const matches = Boolean(route && journey && journey.id === route.id && image
-      && new URL(image.src).pathname === journey.coverPath);
-    const eligible = matches && readyImage(image) && visible(image);
+    const media = route?.direction === 'open' ? mediaInWork(route.id) : heroMedia();
+    const matches = Boolean(route && journey && journey.id === route.id && matchingMedia(media, journey.media));
+    const indices = matches ? media.flatMap((node, i) => readyMedia(node) && visible(node) ? [i] : []) : [];
+    const eligible = indices.length > 0;
     // Even without motion, the arrival can restore the list's scroll position.
     write(transitionKey, route && matches ? {
-      ...route, from: current.href, to: destination.href, savedAt: Date.now(), eligible
+      ...route, from: current.href, to: destination.href, savedAt: Date.now(), eligible,
+      indices, media: media.map(describe)
     } : null);
     if (!event.viewTransition) return;
     if (!eligible || reducedMotion.matches) {
       event.viewTransition.skipTransition();
       return;
     }
-    name(image, 'frsr-cover');
+    indices.forEach(i => name(media[i], transitionName(i)));
     if (route.direction === 'return') {
       const title = document.querySelector('[data-project-title]');
       if (title) name(title, 'frsr-project-title');
@@ -141,12 +229,7 @@
   const arrival = read(transitionKey);
   if (isWork(currentURL()) && arrival?.direction === 'return' && arrival.to === location.href
       && Date.now() - arrival.savedAt < 30000) {
-    const image = imageInWork(arrival.id);
-    if (image) {
-      image.loading = 'eager';
-      image.decoding = 'sync';
-      image.fetchPriority = 'high';
-    }
+    mediaInWork(arrival.id).forEach(primeMedia);
     restoreWorkPosition(arrival, validJourney());
   }
 
@@ -162,21 +245,29 @@
       return;
     }
     restoreWorkPosition(pending, journey);
-    const image = pending.direction === 'return' ? imageInWork(pending.id) : heroImage();
+    const media = pending.direction === 'return' ? mediaInWork(pending.id) : heroMedia();
+    const indices = Array.isArray(pending.indices) ? pending.indices.filter(i => Number.isInteger(i) && i >= 0 && i < media.length) : [];
     if (!event.viewTransition) return;
     if (reducedMotion.matches || !pending.eligible || journey?.id !== pending.id
-        || !image || !visible(image)
-        || new URL(image.src).pathname !== journey.coverPath) {
+        || !matchingMedia(media, pending.media) || !matchingMedia(media, journey.media)
+        || !indices.some(i => visible(media[i]))) {
       event.viewTransition.skipTransition();
       return;
     }
-    // Keep the captured outgoing photograph visible while a responsive
-    // destination image downloads. Its explicit dimensions already give us
-    // the destination rectangle; a cold image must not cancel the transition.
-    if (!readyImage(image)) document.documentElement.dataset.coverWaiting = '';
-    image.loading = 'eager';
-    image.fetchPriority = 'high';
-    name(image, 'frsr-cover');
+    // Animate each captured frame into its matching panel, including when the
+    // project stacks a paired cover on mobile. Hidden panels stay in normal flow.
+    const cancellations = [];
+    let cancelled = false;
+    const waits = indices.map(i => prepareMedia(media[i], pending.media[i], cancellations));
+    if (indices.some(i => isVideo(media[i]) || !readyImage(media[i]))) {
+      document.documentElement.dataset.coverWaiting = '';
+    }
+    cancelMediaHandoff = () => {
+      cancelled = true;
+      cancellations.forEach(cancel => cancel());
+      delete document.documentElement.dataset.coverWaiting;
+    };
+    indices.forEach(i => name(media[i], transitionName(i)));
     if (pending.direction === 'open') {
       const title = document.querySelector('[data-project-title]');
       if (title) name(title, 'frsr-project-title');
@@ -185,6 +276,7 @@
     event.viewTransition.ready.then(() => {
       // Expose successful native capture for preview QA; this has no visual effect.
       document.documentElement.dataset.coverMotion = pending.direction;
+      document.documentElement.dataset.coverPanels = String(indices.length);
       clearNames();
       // The CSS hold keeps the captured cover solid for at most 1.8 seconds.
       // Finish only that hold when the destination decodes; the 680 ms
@@ -195,12 +287,13 @@
         const release = () => holds.forEach(animation => {
           try { animation.finish(); } catch { /* Navigation may have ended. */ }
         });
-        image.decode().then(release, release);
+        Promise.all(waits).then(() => { if (!cancelled) release(); });
       }
     }, clearNames);
-    const cleanup = () => { delete document.documentElement.dataset.coverWaiting; };
-    event.viewTransition.finished.then(cleanup, cleanup);
+    event.viewTransition.finished.then(cancelMediaHandoff, cancelMediaHandoff);
   });
+
+  window.addEventListener('pagehide', () => cancelMediaHandoff());
 
   // Older browsers keep native navigation; explicit return links still restore position.
   window.addEventListener('pageshow', () => {
