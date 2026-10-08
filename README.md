@@ -67,3 +67,11 @@ The September 8 completion pass checked all eight HTML routes and 151 local refe
 - Work is based on the latest `development` layout (`f6e4017`), after a verified local archive. Keep `rescue-2026-09-08` unchanged. Unpublished work on other pages is separate from this Contact update.
 - Checked: Chrome at 1440px and 320px, staggered entrance states, keyboard focus during the entrance, reduced-motion mode, unchanged Contact content/destinations, 149 local references and JavaScript syntax. This pass is saved as a development preview; production is not changed.
 - Remaining: the existing form-delivery and supplied-content checks above.
+
+## ABOUT rebuild — October 8, 2026
+
+Rebuilt `/about/` as a shorter editorial introduction: the existing logo, a clear platform description, the existing Call Her Angelina photograph linked to its project, a founder biography, and an ISSUE 01 section with its current Coming Soon status. Copy is uppercase and uses the existing Neue Montreal/Inter UI font stack. The Neue Montreal webfont is still awaiting an owner-supplied file.
+
+The previous sticky opening and scroll-driven paragraph sequence are removed, together with the unused `assets/js/about.js`. Content stays visible in normal document flow. Motion is limited to a brief logo entrance and hover feedback, with reduced-motion support. Navigation still uses the shared script; a no-JavaScript mobile fallback is scoped to ABOUT.
+
+Checked in Chromium at 1440, 768, 390 and 320 pixels: no horizontal overflow, images loaded, no page errors, mobile menu and Escape, no-JavaScript navigation and reduced motion. All local links and image sources resolve. This update targets `development`; production approval remains separate.
