@@ -104,12 +104,31 @@
     event.viewTransition.finished.then(clearNames, clearNames);
   });
 
+  let cancelPositionRestore = () => {};
   function restoreWorkPosition(pending, journey) {
     const current = currentURL();
     if (pending?.direction !== 'return' || !isWork(current) || journey?.id !== pending.id
         || journey.workUrl !== current.href) return;
     if (Number.isFinite(journey.scrollY) && Number.isFinite(journey.scrollX)) {
+      cancelPositionRestore();
       window.scrollTo({ left: journey.scrollX, top: journey.scrollY, behavior: 'instant' });
+      // A late font swap can move the list through scroll anchoring. Correct
+      // that shift once, unless the visitor has already started interacting.
+      if (document.fonts?.status !== 'loading') return;
+      let cancelled = false;
+      const stopEvents = ['wheel', 'touchstart', 'pointerdown', 'keydown', 'pagehide'];
+      const cancel = () => {
+        cancelled = true;
+        stopEvents.forEach(type => window.removeEventListener(type, cancel, true));
+      };
+      cancelPositionRestore = cancel;
+      stopEvents.forEach(type => window.addEventListener(type, cancel, { capture: true, passive: true }));
+      document.fonts.ready.then(() => {
+        if (!cancelled && location.href === current.href) {
+          window.scrollTo({ left: journey.scrollX, top: journey.scrollY, behavior: 'instant' });
+        }
+        cancel();
+      });
     }
   }
 
