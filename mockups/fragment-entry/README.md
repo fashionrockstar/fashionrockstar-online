@@ -18,3 +18,16 @@ This isolated page copies the existing homepage and replaces its fingerprint gat
 Reduced motion opens the homepage immediately after ENTER, preserving explicitly started audio. Video failure uses the real logo. The gate has an independent bootstrap fail-open timer and an animation completion deadline. Canvas resolution is capped; active compositing runs at 30 fps and stops on completion. Underlying content is inert during the gate; focus is contained and moved to the homepage on completion. Leaving the page cancels the sequence and pauses voice.
 
 This is a review prototype, not a production publish. Desktop Cloud Chrome verification does not establish physical iPhone or Safari behavior.
+
+## Live verification
+
+Verified on Netlify preview code commit `9f6ca1592e813ffefbb5a0ccfde26a5d5bdfe614` in Cloud Chrome:
+
+- ENTER starts the supplied footage and voice; the portrait visibly fragments.
+- The gate reaches `complete`, releases page interaction, and leaves the hero and voice playing.
+- REPLAY INTRO returns to the entry screen.
+- SKIP reaches the homepage immediately and pauses the voice.
+- Reloading after completion shows the homepage and replay control without repeating the entrance.
+- Local syntax, HTML asset references, and Git whitespace checks passed. The root homepage and shared assets have no changes.
+
+![Live portrait fragmentation](preview.jpg)
