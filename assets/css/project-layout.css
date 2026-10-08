@@ -174,7 +174,7 @@
 .project-full-width .project-page .project-images {
   grid-template-columns: minmax(0, 1fr);
 }
-.project-portrait .project-page .project-image {
+.project-portrait .project-page .project-images .project-image {
   width: min(100%, 42rem);
   justify-self: center;
 }

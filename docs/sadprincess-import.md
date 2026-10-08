@@ -17,3 +17,9 @@ The project is `listed: false`: there is no empty, broken or substitute WORK til
 5. Verify both filters, desktop hover/keyboard title reveal, mobile pause-to-reveal, natural framing, local asset requests and navigation. Keep the pull request in draft until the media requirements are resolved.
 
 No production deployment or merge is part of this change.
+
+## Validation
+
+JavaScript syntax, whitespace and local asset checks pass. All 14 existing project records and the WORK markup, filter/title controller, global styles, media playback controller, homepage and Netlify configuration are unchanged. The existing last project's header, hero, gallery and previous/next links match the development baseline at 1440px; preview id 15 is skipped by public navigation.
+
+The external carousel rendered at desktop 1440px and mobile 390px, with one named iframe and a persistent viewing link. No horizontal overflow was observed. Blocking Instagram's requests leaves the viewing link available without any image/video asset request to a permalink. These checks validate a provisional external page, not a completed hosted gallery or a WORK tile.
