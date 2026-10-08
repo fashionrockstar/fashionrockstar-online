@@ -1,6 +1,6 @@
 /* A brief, automatic brand reveal; the existing home stays in place beneath it. */
 .entry-loader { display: none; }
-.entry-loading { overflow: hidden; }
+.entry-loading { overflow: hidden; scrollbar-gutter: stable; }
 .entry-loading .entry-loader {
   display: grid;
   place-items: center;
