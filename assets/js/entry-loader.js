@@ -6,7 +6,7 @@
   const page = [...document.querySelectorAll('body > main, body > footer')];
   page.forEach(el => { el.inert = true; });
   // Match the artwork inside the existing video's object-fit:contain box.
-  // The video itself is never paused, restarted, replaced, or resized here.
+  // Playback is coordinated by landing.js; this file only aligns the overlay.
   const hero = document.querySelector('[data-hero-video]');
   const fallback = document.querySelector('.hero__fallback');
   const align = () => {

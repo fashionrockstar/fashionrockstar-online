@@ -5,13 +5,14 @@
   if (video) {
     const brand = video.closest('.hero__brand');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const root = document.documentElement;
 
     const showFallback = () => {
       brand.classList.remove('is-playing');
       brand.classList.add('is-fallback');
     };
     const syncPlayback = () => {
-      if (reducedMotion.matches || document.hidden) {
+      if (reducedMotion.matches || document.hidden || root.classList.contains('entry-loading')) {
         video.pause();
         if (reducedMotion.matches) showFallback();
         return;
@@ -25,10 +26,21 @@
     };
 
     video.addEventListener('playing', () => {
-      if (reducedMotion.matches) return syncPlayback();
+      if (reducedMotion.matches || root.classList.contains('entry-loading')) return syncPlayback();
       brand.classList.remove('is-fallback');
       brand.classList.add('is-playing');
     });
+    // Keep the opening movement at frame zero until the loading overlay is gone.
+    // Observing the class also handles Escape, reduced motion and fail-open.
+    if (root.classList.contains('entry-loading')) {
+      const entryObserver = new MutationObserver(() => {
+        if (!root.classList.contains('entry-loading')) {
+          entryObserver.disconnect();
+          syncPlayback();
+        }
+      });
+      entryObserver.observe(root, { attributes: true, attributeFilter: ['class'] });
+    }
     video.addEventListener('error', showFallback);
     video.querySelector('source').addEventListener('error', showFallback);
     reducedMotion.addEventListener('change', syncPlayback);
