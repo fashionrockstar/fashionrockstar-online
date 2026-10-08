@@ -19,8 +19,16 @@
 }
 
 /* The selected photograph stays solid while its surroundings change. */
-::view-transition-old(frsr-cover) { opacity: 0; }
-::view-transition-new(frsr-cover) { opacity: 1; }
+/* Use the already-rendered source photograph, including on a cold arrival. */
+::view-transition-old(frsr-cover) { opacity: 1; }
+::view-transition-new(frsr-cover) { opacity: 0; }
+:root[data-cover-waiting]::view-transition-old(frsr-cover) {
+  animation: frsr-cover-hold 1800ms linear;
+}
+@keyframes frsr-cover-hold {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}
 ::view-transition-old(root) { animation: frsr-cover-out 220ms ease-out both; }
 ::view-transition-new(root) { animation: frsr-cover-in 240ms 100ms ease-out both; }
 ::view-transition-group(frsr-project-title) { animation-duration: 420ms; }

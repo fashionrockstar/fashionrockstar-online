@@ -82,6 +82,7 @@
     event.viewTransition?.ready.catch(() => {});
     clearNames();
     delete document.documentElement.dataset.coverMotion;
+    delete document.documentElement.dataset.coverWaiting;
     const current = currentURL();
     const destination = url(event.activation?.entry?.url);
     const route = pair(current, destination);
@@ -149,37 +150,6 @@
     restoreWorkPosition(arrival, validJourney());
   }
 
-  // A responsive hero can request a different file from its Work thumbnail.
-  // On a cold visit it is often still decoding at pagereveal, so the readiness
-  // check below used to cancel the opening transition but allow the cached return.
-  // Keep the first snapshot behind a bounded render gate until that exact image
-  // has decoded. This script is render-blocking in both documents' heads.
-  const arrivalJourney = validJourney();
-  if (!reducedMotion.matches && arrival?.eligible && arrival.to === location.href
-      && Date.now() - arrival.savedAt < 30000 && arrivalJourney?.id === arrival.id) {
-    const image = arrival.direction === 'return' ? imageInWork(arrival.id) : heroImage();
-    if (image && new URL(image.src).pathname === arrivalJourney.coverPath) {
-      image.loading = 'eager';
-      image.fetchPriority = 'high';
-      const gate = document.createElement('link');
-      if (gate.relList.supports('expect') && gate.blocking?.supports('render')) {
-        gate.rel = 'expect';
-        gate.href = '#frsr-cover-decoded';
-        gate.blocking = 'render';
-        document.head.append(gate);
-        let timer;
-        const release = () => {
-          clearTimeout(timer);
-          gate.remove();
-        };
-        // Never leave navigation waiting for a failed or extremely slow image.
-        timer = setTimeout(release, 1800);
-        image.decode().then(release, release);
-        window.addEventListener('pagehide', release, { once: true });
-      }
-    }
-  }
-
   window.addEventListener('pagereveal', event => {
     event.viewTransition?.ready.catch(() => {});
     clearNames();
@@ -195,11 +165,17 @@
     const image = pending.direction === 'return' ? imageInWork(pending.id) : heroImage();
     if (!event.viewTransition) return;
     if (reducedMotion.matches || !pending.eligible || journey?.id !== pending.id
-        || !readyImage(image) || !visible(image)
+        || !image || !visible(image)
         || new URL(image.src).pathname !== journey.coverPath) {
       event.viewTransition.skipTransition();
       return;
     }
+    // Keep the captured outgoing photograph visible while a responsive
+    // destination image downloads. Its explicit dimensions already give us
+    // the destination rectangle; a cold image must not cancel the transition.
+    if (!readyImage(image)) document.documentElement.dataset.coverWaiting = '';
+    image.loading = 'eager';
+    image.fetchPriority = 'high';
     name(image, 'frsr-cover');
     if (pending.direction === 'open') {
       const title = document.querySelector('[data-project-title]');
@@ -210,7 +186,20 @@
       // Expose successful native capture for preview QA; this has no visual effect.
       document.documentElement.dataset.coverMotion = pending.direction;
       clearNames();
+      // The CSS hold keeps the captured cover solid for at most 1.8 seconds.
+      // Finish only that hold when the destination decodes; the 680 ms
+      // movement and the title animation retain their approved timing.
+      if (document.documentElement.hasAttribute('data-cover-waiting')) {
+        const holds = document.getAnimations().filter(animation =>
+          animation.animationName === 'frsr-cover-hold');
+        const release = () => holds.forEach(animation => {
+          try { animation.finish(); } catch { /* Navigation may have ended. */ }
+        });
+        image.decode().then(release, release);
+      }
     }, clearNames);
+    const cleanup = () => { delete document.documentElement.dataset.coverWaiting; };
+    event.viewTransition.finished.then(cleanup, cleanup);
   });
 
   // Older browsers keep native navigation; explicit return links still restore position.
