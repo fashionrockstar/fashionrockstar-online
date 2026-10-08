@@ -154,6 +154,33 @@
 }
 
 .project-page .project-hero.project-hero--pair { gap: var(--portfolio-gap); }
+.project-description {
+  margin: 0 0 2rem;
+  font-size: .75rem;
+  line-height: 1.7;
+  color: #bcbcb8;
+}
+.project-description[hidden] { display: none; }
+/* Only the explicitly submitted portrait projects use this contained layout. */
+.project-portrait .project-page .project-hero > img,
+.project-portrait .project-page .project-hero > video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(85vh, 60rem);
+  object-fit: contain;
+}
+.project-portrait .project-page .project-images,
+.project-full-width .project-page .project-images {
+  grid-template-columns: minmax(0, 1fr);
+}
+.project-portrait .project-page .project-images .project-image {
+  width: min(100%, 42rem);
+  justify-self: center;
+}
+.project-full-width .project-page .project-images .project-image {
+  width: 100%;
+}
 .project-page .project-images {
   gap: var(--portfolio-gap);
   padding-top: var(--portfolio-gap);
