@@ -3,43 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="FASHIONROCKSTAR.ONLINE — creative direction, photography, videography, styling and beauty in Montreal.">
-  <title>FASHIONROCKSTAR.ONLINE</title>
+  <title>FASHIONROCKSTAR — Fragment entrance preview</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/landing.css">
-  <link rel="stylesheet" href="/assets/css/entry-loader.css">
+  <link rel="stylesheet" href="./entry.css">
   <script>
     (() => {
       let show = true;
-      try { show = sessionStorage.getItem('frsrSimpleEntryV1') !== 'seen'; } catch {}
-      if (matchMedia('(prefers-reduced-motion: reduce)').matches) show = false;
+      try { show = new URL(location.href).searchParams.get('replay') === '1' || sessionStorage.getItem('frsrFragmentEntryV1') !== 'seen'; } catch {}
       if (!show) return;
-      document.documentElement.classList.add('entry-loading');
-      window.__frsrEntryDeadline = setTimeout(() => {
-        document.documentElement.classList.remove('entry-loading');
+      document.documentElement.classList.add('fragment-entry-open');
+      window.__frsrEntryFailOpen = setTimeout(() => {
+        document.documentElement.classList.remove('fragment-entry-open');
+        document.querySelector('[data-fragment-entry]')?.setAttribute('hidden', '');
         document.querySelectorAll('main, footer').forEach(el => { el.inert = false; });
-      }, 4800);
+      }, 8000);
     })();
   </script>
   <noscript><style>.home .hero__brand .hero__fallback { visibility: visible; }</style></noscript>
-  <script src="/assets/js/entry-loader.js" defer></script>
+  <script src="./entry.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/landing.js" defer></script>
 </head>
 <body class="home">
-  <div class="entry-loader" data-entry-loader aria-hidden="true">
-    <div class="entry-loader__mark">
-      <svg class="entry-loader__dots" viewBox="0 0 728 97" fill="currentColor"><circle cx="34" cy="33" r="3.4"/><circle cx="34" cy="48" r="3.4"/><circle cx="47" cy="33" r="3.4"/><circle cx="82" cy="33" r="3.4"/><circle cx="130" cy="48" r="3.4"/><circle cx="130" cy="63" r="3.4"/><circle cx="143" cy="33" r="3.4"/><circle cx="178" cy="33" r="3.4"/><circle cx="178" cy="48" r="3.4"/><circle cx="191" cy="48" r="3.4"/><circle cx="226" cy="48" r="3.4"/><circle cx="239" cy="33" r="3.4"/><circle cx="274" cy="33" r="3.4"/><circle cx="274" cy="63" r="3.4"/><circle cx="287" cy="48" r="3.4"/><circle cx="322" cy="33" r="3.4"/><circle cx="322" cy="63" r="3.4"/><circle cx="335" cy="33" r="3.4"/><circle cx="335" cy="48" r="3.4"/><circle cx="370" cy="33" r="3.4"/><circle cx="370" cy="48" r="3.4"/><circle cx="370" cy="63" r="3.4"/><circle cx="383" cy="48" r="3.4"/><circle cx="418" cy="33" r="3.4"/><circle cx="418" cy="63" r="3.4"/><circle cx="431" cy="48" r="3.4"/><circle cx="466" cy="33" r="3.4"/><circle cx="479" cy="33" r="3.4"/><circle cx="514" cy="33" r="3.4"/><circle cx="514" cy="63" r="3.4"/><circle cx="562" cy="48" r="3.4"/><circle cx="562" cy="63" r="3.4"/><circle cx="575" cy="33" r="3.4"/><circle cx="610" cy="48" r="3.4"/><circle cx="610" cy="63" r="3.4"/><circle cx="623" cy="33" r="3.4"/><circle cx="623" cy="48" r="3.4"/><circle cx="658" cy="33" r="3.4"/><circle cx="706" cy="33" r="3.4"/><circle cx="706" cy="48" r="3.4"/><circle cx="706" cy="63" r="3.4"/><circle cx="719" cy="48" r="3.4"/></svg>
-      <img class="entry-loader__logo" src="/assets/images/entry-logo-aligned.png" width="2688" height="370" alt="" fetchpriority="high">
+  <section class="fragment-entry" data-fragment-entry data-state="idle" role="dialog" aria-modal="true" aria-label="Enter FASHIONROCKSTAR" hidden>
+    <canvas class="fragment-entry__canvas" data-entry-canvas aria-hidden="true"></canvas>
+    <div class="fragment-entry__invitation" data-entry-invitation>
+      <img src="/assets/images/hero-logo-white.png" width="728" height="97" alt="FASHIONROCKSTAR.ONLINE">
+      <button type="button" class="entry-enter" data-entry-enter>ENTER<span aria-hidden="true">↗</span></button>
     </div>
+    <p class="fragment-entry__caption" data-entry-caption aria-live="polite"></p>
+    <button type="button" class="entry-skip" data-entry-skip>SKIP</button>
+    <video data-entry-film muted playsinline preload="auto" hidden src="./silhouette.mp4"></video>
+  </section>
+  <audio data-entry-voice preload="none" src="/assets/audio/FASHIONROCKSTAR_ACCESS_GRANTED.mp3"></audio>
+  <div class="entry-review" data-entry-review hidden>
+    <button type="button" data-entry-sound aria-pressed="false">SOUND OFF</button>
+    <button type="button" data-entry-replay>REPLAY INTRO</button>
   </div>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
       <div class="hero__brand" aria-hidden="true">
         <img class="hero__fallback" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
-        <img class="hero__motion-fallback" data-hero-motion-fallback data-src="/assets/images/FASHIONROCKSTAR-home-loop.webp" width="1280" height="720" alt="">
-        <video class="hero__video" data-hero-video muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
+        <video class="hero__video" data-hero-video autoplay muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
           <source src="/assets/video/FASHIONROCKSTAR-logo-only-4K.mp4" type="video/mp4">
         </video>
       </div>

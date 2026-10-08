@@ -1,0 +1,1288 @@
+[
+  {
+    "name": "reduced-motion",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 6967,
+      "before": 6967,
+      "after": 6967,
+      "motion": 0,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "keyboard-modifiers",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "controlClick": true,
+      "middleClick": true,
+      "enter": true
+    },
+    "pass": true
+  },
+  {
+    "name": "direct-entry",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/services/",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "work": true,
+      "unrelatedNavigation": true
+    },
+    "pass": true
+  },
+  {
+    "name": "video-pair-fallback",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=1",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=6",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=11",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "projects": [
+        1,
+        6,
+        11
+      ]
+    },
+    "pass": true
+  },
+  {
+    "name": "mismatched-and-offscreen",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "skipped",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "offscreenFallback": true,
+      "mismatchFallback": true
+    },
+    "pass": true
+  },
+  {
+    "name": "slow-unloaded-images",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "nativeNavigation": true
+    },
+    "pass": true
+  },
+  {
+    "name": "legacy-event-fallback",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 6967,
+      "before": 6967,
+      "after": 6967,
+      "motion": 0,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "blocked-storage",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "nativeNavigation": true
+    },
+    "pass": true
+  },
+  {
+    "name": "firefox",
+    "unavailable": "Firefox 153.0 could not launch on Windows: spawn UNKNOWN"
+  },
+  {
+    "name": "disabled-transition",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 6967,
+      "before": 6967,
+      "after": 6967,
+      "motion": 0,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "font-correction-cancels-on-input",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "chosenPosition": 7417,
+      "preserved": true
+    },
+    "pass": true
+  },
+  {
+    "name": "chromium-desktop",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 6967,
+      "before": 6967,
+      "after": 6967,
+      "motion": 2,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "chromium-mobile",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 1760,
+      "before": 1760,
+      "after": 1760,
+      "motion": 2,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "slow-destination-image",
+    "browser": "154.0.8037.98",
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "skipped",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "details": {
+      "nativeNavigation": true
+    },
+    "pass": true
+  },
+  {
+    "name": "uninstrumented-slow-fallback",
+    "browser": "154.0.8037.98",
+    "events": [],
+    "errors": [],
+    "details": {
+      "nativeNavigation": true,
+      "transitionPromisesObservedByTest": false
+    },
+    "pass": true
+  },
+  {
+    "name": "webkit-desktop",
+    "browser": "26.5",
+    "events": [
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 6967,
+      "before": 6967,
+      "after": 6967,
+      "motion": 2,
+      "backForward": true
+    },
+    "pass": true
+  },
+  {
+    "name": "webkit-mobile",
+    "browser": "26.5",
+    "events": [
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          {
+            "name": "-ua-view-transition-group-anim-root",
+            "duration": 250,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 220,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-in",
+            "duration": 240,
+            "easing": "linear"
+          },
+          {
+            "name": "-ua-view-transition-group-anim-frsr-cover",
+            "duration": 680,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-cover-out",
+            "duration": 160,
+            "easing": "linear"
+          },
+          {
+            "name": "frsr-title-in",
+            "duration": 420,
+            "easing": "linear"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "details": {
+      "preparedScroll": 1761,
+      "before": 1760,
+      "after": 1760,
+      "motion": 2,
+      "backForward": true
+    },
+    "pass": true
+  }
+]
