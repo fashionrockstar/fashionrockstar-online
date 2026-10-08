@@ -1,0 +1,27 @@
+[
+  {
+    "mode": "direct-entry",
+    "before": 0,
+    "after": 0,
+    "overflow": false,
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "frames": 0
+  }
+]

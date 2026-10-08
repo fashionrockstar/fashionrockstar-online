@@ -40,10 +40,24 @@
 }
 
 .hero__brand.is-playing .hero__video { opacity: 1; }
+/* Same six-second animation, decoded as an image when phone video autoplay is unavailable. */
+.home .hero__brand .hero__motion-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  transform: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.home .hero__brand.is-motion-fallback .hero__motion-fallback { opacity: 1; visibility: visible; }
+.home .hero__brand.is-motion-fallback .hero__video { opacity: 0; }
 .home .hero__brand.is-fallback .hero__fallback { visibility: visible; }
 
 @media (prefers-reduced-motion: reduce) {
-  .home .hero__video { display: none; }
+  .home .hero__video, .home .hero__brand .hero__motion-fallback { display: none; }
   .home .hero__brand .hero__fallback { visibility: visible; }
 }
 

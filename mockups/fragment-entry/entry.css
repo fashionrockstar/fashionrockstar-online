@@ -1,0 +1,97 @@
+.fragment-entry-open { overflow: hidden; }
+.fragment-entry-open .home > main,
+.fragment-entry-open .home > footer { pointer-events: none; }
+.fragment-entry[hidden], .entry-review[hidden] { display: none; }
+.fragment-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  color: #f6f6f3;
+  background: transparent;
+  isolation: isolate;
+}
+.fragment-entry__canvas { display: block; width: 100%; height: 100%; }
+.fragment-entry__invitation {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(3.5rem, 9vh, 6.5rem);
+  padding: 1.5rem;
+  transition: opacity 180ms ease;
+}
+.fragment-entry__invitation img { width: min(70vw, 800px); height: auto; }
+.fragment-entry button, .entry-review button {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .12em;
+  min-height: 44px;
+  cursor: pointer;
+}
+.entry-enter {
+  display: flex;
+  width: 150px;
+  padding: 0 0 0 2px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #777 !important;
+}
+.entry-enter span { font-size: 20px; font-weight: 400; transition: transform 220ms ease; }
+.entry-enter:hover span { transform: translate(3px, -3px); }
+.fragment-entry button:focus-visible {
+  outline: none;
+  box-shadow: inset 0 -2px currentColor;
+}
+.entry-skip {
+  position: absolute;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  right: max(24px, env(safe-area-inset-right));
+  padding: 0 10px;
+  opacity: .65;
+}
+.entry-skip:hover, .entry-skip:focus-visible { opacity: 1; }
+.fragment-entry__caption {
+  position: absolute;
+  left: max(24px, env(safe-area-inset-left));
+  bottom: max(36px, calc(env(safe-area-inset-bottom) + 16px));
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .18em;
+}
+.fragment-entry[data-state="playing"] .fragment-entry__invitation,
+.fragment-entry[data-state="revealing"] .fragment-entry__invitation {
+  opacity: 0;
+  pointer-events: none;
+}
+.fragment-entry[data-state="revealing"] .fragment-entry__caption { opacity: 0; transition: opacity 350ms; }
+.entry-review {
+  display: flex;
+  gap: 16px;
+  position: fixed;
+  z-index: 60;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  color: white;
+  mix-blend-mode: difference;
+}
+.entry-review button { font-size: 10px; letter-spacing: .08em; }
+@media (max-width: 600px) {
+  .fragment-entry__invitation img { width: 86vw; }
+  .fragment-entry__invitation { gap: 70px; }
+  .entry-skip { right: 14px; }
+  .fragment-entry__caption { left: 20px; max-width: 65vw; font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fragment-entry *, .entry-review * { transition: none !important; }
+}
