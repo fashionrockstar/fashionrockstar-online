@@ -195,21 +195,26 @@
   .services-page .service-scope,
   .services-page .service-stage,
   .services-page .services-closing__copy {
+    grid-template-columns: minmax(0, 1fr);
     gap: .75rem;
     font-size: clamp(.75rem, .6875rem + .3vw, .875rem);
     line-height: 1.65;
     letter-spacing: .025em;
   }
   .services-page .service-toggle {
+    display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
     padding: .75rem 0;
   }
   .services-page .service-title {
+    flex: 1 1 8rem;
     font-size: clamp(.9375rem, 4.4vw, 1.75rem);
     line-height: 1.05;
     overflow-wrap: break-word;
   }
   .services-page .service-action {
+    margin-left: auto;
     font-size: .625rem;
   }
   .services-page .service-action__closed,
