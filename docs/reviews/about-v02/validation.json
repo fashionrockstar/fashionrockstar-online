@@ -1,0 +1,241 @@
+{
+  "date": "2026-10-08",
+  "base": "f0e82da",
+  "browser": "Chromium; touch emulated in Chrome",
+  "result": "PASS",
+  "viewports": [
+    {
+      "width": 320,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    },
+    {
+      "width": 360,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    },
+    {
+      "width": 390,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    },
+    {
+      "width": 768,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    },
+    {
+      "width": 1024,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    },
+    {
+      "width": 1440,
+      "chaptersTested": 4,
+      "noPageOverflow": true,
+      "textFits": true,
+      "oneVisiblePanel": true,
+      "oneTabStop": true
+    }
+  ],
+  "keyboard": [
+    {
+      "width": 1440,
+      "keys": [
+        "Right",
+        "Down",
+        "Left",
+        "Up",
+        "End",
+        "Right",
+        "Home",
+        "Left"
+      ],
+      "focusMatchesSelection": true,
+      "scrollPreserved": true
+    },
+    {
+      "width": 390,
+      "keys": [
+        "Right",
+        "Down",
+        "Left",
+        "Up",
+        "End",
+        "Right",
+        "Home",
+        "Left"
+      ],
+      "focusMatchesSelection": true,
+      "scrollPreserved": true
+    }
+  ],
+  "touch": [
+    {
+      "active": "about-tab-origin",
+      "visible": [
+        "about-panel-origin"
+      ],
+      "width": 390
+    },
+    {
+      "active": "about-tab-vision",
+      "visible": [
+        "about-panel-vision"
+      ],
+      "width": 390
+    },
+    {
+      "active": "about-tab-work",
+      "visible": [
+        "about-panel-work"
+      ],
+      "width": 390
+    },
+    {
+      "active": "about-tab-print",
+      "visible": [
+        "about-panel-print"
+      ],
+      "width": 390
+    }
+  ],
+  "navigation": {
+    "outsideClose": "false",
+    "focusClose": {
+      "focus": "",
+      "menu": "false"
+    },
+    "skip": {
+      "focus": "about-content",
+      "hash": "#about-content"
+    },
+    "work": "http://127.0.0.1:4173/work/",
+    "issue": "http://127.0.0.1:4173/issue-01/",
+    "booking": "http://127.0.0.1:4173/booking/",
+    "reduced": {
+      "animation": "none",
+      "scrollBehavior": "auto",
+      "transition": "0s"
+    }
+  },
+  "routes": [
+    {
+      "name": "SERVICES",
+      "url": "http://127.0.0.1:4173/services/"
+    },
+    {
+      "name": "BOOKING",
+      "url": "http://127.0.0.1:4173/booking/"
+    },
+    {
+      "name": "ISSUE 01",
+      "url": "http://127.0.0.1:4173/issue-01/"
+    },
+    {
+      "name": "SELECTED WORK",
+      "url": "http://127.0.0.1:4173/work/"
+    },
+    {
+      "name": "HOME",
+      "url": "http://127.0.0.1:4173/"
+    }
+  ],
+  "fallback": {
+    "skipFocus": {
+      "clip": "none",
+      "focus": "about-skip"
+    },
+    "skipTarget": "about-content",
+    "keyCheck": {
+      "active": "about-tab-vision",
+      "focus": "about-tab-vision"
+    },
+    "noJs": {
+      "nav": "visible",
+      "overflow": false,
+      "tabsHidden": true,
+      "visiblePanels": 4,
+      "width": 320
+    }
+  },
+  "captures": [
+    {
+      "file": "reference-1440.jpg",
+      "height": 3209,
+      "width": 1440
+    },
+    {
+      "file": "about-1440.jpg",
+      "height": 3279,
+      "width": 1440
+    },
+    {
+      "file": "reference-390.jpg",
+      "height": 2836,
+      "width": 390
+    },
+    {
+      "file": "about-390.jpg",
+      "height": 2972,
+      "width": 390
+    },
+    {
+      "file": "reference-360.jpg",
+      "height": 2902,
+      "width": 360
+    },
+    {
+      "file": "about-360.jpg",
+      "height": 2966,
+      "width": 360
+    },
+    {
+      "file": "reference-print-1440.jpg",
+      "height": 3289,
+      "width": 1440
+    },
+    {
+      "file": "about-print-1440.jpg",
+      "height": 3279,
+      "width": 1440
+    },
+    {
+      "file": "reference-print-390.jpg",
+      "height": 2883,
+      "width": 390
+    },
+    {
+      "file": "about-print-390.jpg",
+      "height": 2972,
+      "width": 390
+    }
+  ],
+  "static": {
+    "approvedParagraphs": 10,
+    "chapterTitles": 4,
+    "h1Count": 1,
+    "headerUnchanged": true,
+    "localReferences": 19,
+    "protectedTrackedFilesUnchanged": true,
+    "emojiCount": 0
+  },
+  "renderedFont": "Inter-Bold; Neue Montreal webfont not supplied",
+  "board": "Firefly link redirected to boards/not-found; comparisons use the approved in-repo HTML",
+  "pageErrors": []
+}
