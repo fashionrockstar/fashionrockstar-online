@@ -13,7 +13,7 @@
   margin: 0;
   font-family: var(--font-ui);
   font-weight: 700;
-  font-size: clamp(3rem, 7.5vw, 8rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
   line-height: .95;
   letter-spacing: -.045em;
 }
@@ -27,8 +27,9 @@
   gap: 1rem;
   min-width: 0;
   max-width: 65ch;
-  font-size: clamp(.95rem, 1.1vw, 1.0625rem);
-  line-height: 1.7;
+  font-size: clamp(.9375rem, 1vw, 1rem);
+  line-height: 1.65;
+  letter-spacing: .025em;
   overflow-wrap: break-word;
 }
 .services-page .service-list {
@@ -59,7 +60,7 @@
   min-width: 0;
   margin: 0;
   font-family: var(--font-ui);
-  font-size: clamp(1.5rem, 3.6vw, 4.5rem);
+  font-size: clamp(1.375rem, 2.6vw, 3rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -.035em;
@@ -158,7 +159,7 @@
 .services-page .services-closing h2 {
   margin: 0;
   font-family: var(--font-ui);
-  font-size: clamp(1.75rem, 2.8vw, 3.5rem);
+  font-size: clamp(1.625rem, 2.2vw, 2.75rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -.025em;
@@ -177,7 +178,7 @@
     grid-template-columns: minmax(0, 1fr);
     gap: .65rem .75rem;
   }
-  .services-page .service-title { font-size: clamp(1.3rem, 4.5vw, 2.5rem); }
+  .services-page .service-title { font-size: clamp(1.25rem, 4.5vw, 2rem); }
   .services-page .service-action { grid-column: 1; grid-row: 2; }
   .services-page .service-details {
     grid-template-columns: minmax(0, 1fr);

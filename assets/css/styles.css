@@ -1412,3 +1412,12 @@ body.home {
   .site-nav.is-open { visibility: visible; max-height: min(30rem, 80svh); overflow-y: auto; }
   .project-nav { font-size: .75rem; }
 }
+
+/* Uppercase is the site-wide presentation rule, including dynamic copy and
+   form controls. CSS preserves the original form values and link destinations. */
+body,
+body *,
+body *::before,
+body *::after {
+  text-transform: uppercase !important;
+}
