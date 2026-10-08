@@ -1,0 +1,43 @@
+/* Opt in only on Work and project documents. Links remain ordinary navigation. */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(frsr-cover) {
+  animation-duration: 680ms;
+  animation-timing-function: cubic-bezier(.22, 1, .36, 1);
+  z-index: 2;
+}
+
+::view-transition-old(frsr-cover),
+::view-transition-new(frsr-cover) {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+  animation: none;
+}
+
+/* The selected photograph stays solid while its surroundings change. */
+::view-transition-old(frsr-cover) { opacity: 0; }
+::view-transition-new(frsr-cover) { opacity: 1; }
+::view-transition-old(root) { animation: frsr-cover-out 220ms ease-out both; }
+::view-transition-new(root) { animation: frsr-cover-in 240ms 100ms ease-out both; }
+::view-transition-group(frsr-project-title) { animation-duration: 420ms; }
+::view-transition-new(frsr-project-title) {
+  animation: frsr-title-in 420ms 200ms cubic-bezier(.22, 1, .36, 1) both;
+}
+::view-transition-old(frsr-project-title) {
+  animation: frsr-cover-out 160ms ease-out both;
+}
+
+@keyframes frsr-cover-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes frsr-cover-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes frsr-title-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
