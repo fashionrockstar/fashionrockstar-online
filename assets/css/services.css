@@ -171,67 +171,71 @@
     to { opacity: 1; transform: translateY(0); }
   }
 }
+/* Retain the desktop composition at phone widths, with a smaller type scale. */
 @media (max-width: 760px) {
   .services-page {
     padding-top: clamp(1.5rem, 4svh, 2rem);
   }
   .services-page .services-intro,
   .services-page .services-closing {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 1rem;
   }
-  .services-page .services-intro { padding: .75rem 0 2rem; }
+  .services-page .services-intro > .page-title,
+  .services-page .services-closing > h2 { flex: 1 1 6rem; }
+  .services-page .services-intro__copy,
+  .services-page .services-closing__copy { flex: 1.65 1 10rem; }
+  .services-page .services-intro { padding: 1rem 0 2.5rem; }
   .services-page .page-title {
-    font-size: clamp(2rem, 8.5vw, 2.5rem);
-    line-height: 1;
-    letter-spacing: -.035em;
+    font-size: clamp(1.1875rem, 6vw, 2.75rem);
   }
   .services-page .services-intro__copy,
   .services-page .service-overview,
   .services-page .service-scope,
   .services-page .service-stage,
   .services-page .services-closing__copy {
-    gap: .875rem;
-    font-size: clamp(.8125rem, .6875rem + .75vw, .875rem);
-    line-height: 1.55;
-    letter-spacing: .01em;
+    gap: .75rem;
+    font-size: clamp(.75rem, .6875rem + .3vw, .875rem);
+    line-height: 1.65;
+    letter-spacing: .025em;
   }
   .services-page .service-toggle {
-    grid-template-columns: minmax(0, 1fr);
-    gap: .25rem .75rem;
-    padding: 1.25rem 0;
+    gap: .5rem;
+    padding: .75rem 0;
   }
   .services-page .service-title {
-    font-size: clamp(1.125rem, 5vw, 1.5rem);
-    line-height: 1.15;
-    letter-spacing: -.025em;
-    overflow-wrap: normal;
+    font-size: clamp(.9375rem, 4.4vw, 1.75rem);
+    line-height: 1.05;
+    overflow-wrap: break-word;
   }
   .services-page .service-action {
-    grid-column: 1;
-    grid-row: 2;
-    font-size: .6875rem;
-    letter-spacing: .035em;
+    font-size: .625rem;
   }
+  .services-page .service-action__closed,
+  .services-page .service-action__open { gap: .375rem; }
+  .services-page .service-action b { width: 1rem; font-size: 1.25rem; }
   .services-page .service-details {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: none;
-    grid-template-areas: 'overview' 'stages' 'scope' 'links';
-    gap: 1.75rem;
-    padding: .5rem 0 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 1.5rem .875rem;
+    padding: .75rem 0 2rem;
   }
-  .services-page .service-stages { gap: 1.75rem; padding-left: 0; border-left: 0; }
+  .services-page .service-stages {
+    gap: 1.5rem;
+    padding-left: .625rem;
+  }
+  .services-page .service-scope { padding-top: 1rem; }
   .services-page .service-details h3 {
-    font-size: .6875rem;
-    line-height: 1.45;
-    letter-spacing: .05em;
+    font-size: .625rem;
+    line-height: 1.5;
     margin-bottom: 0;
   }
+  .services-page .service-links { gap: .5rem 1rem; }
   .services-page .service-links a,
-  .services-page .services-booking-link { font-size: .6875rem; }
+  .services-page .services-booking-link { font-size: .625rem; }
   .services-page .services-closing h2 {
-    font-size: clamp(1.375rem, 5.8vw, 1.625rem);
-    line-height: 1.15;
+    font-size: clamp(1rem, 4vw, 1.75rem);
+    overflow-wrap: break-word;
   }
 }
 @media (prefers-reduced-motion: reduce) {

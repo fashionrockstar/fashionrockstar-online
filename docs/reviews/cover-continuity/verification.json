@@ -1,0 +1,258 @@
+[
+  {
+    "mode": "desktop",
+    "before": 7113,
+    "after": 7113,
+    "overflow": false,
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-root",
+          "-ua-view-transition-group-anim-frsr-cover",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-cover-out"
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-root",
+          "-ua-view-transition-group-anim-frsr-cover",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-cover-out"
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-root",
+          "-ua-view-transition-group-anim-frsr-cover",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-cover-out"
+        ]
+      },
+      {
+        "url": "/project/?id=11",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "frames": 54
+  },
+  {
+    "mode": "mobile",
+    "before": 1806,
+    "after": 1806,
+    "overflow": false,
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-root",
+          "-ua-view-transition-group-anim-frsr-cover",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-cover-out"
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-root",
+          "-ua-view-transition-group-anim-frsr-cover",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-cover-out"
+        ]
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "ready",
+        "animations": [
+          "-ua-view-transition-group-anim-frsr-cover",
+          "-ua-view-transition-group-anim-root",
+          "frsr-cover-in",
+          "frsr-cover-out",
+          "frsr-title-in"
+        ]
+      }
+    ],
+    "errors": [],
+    "frames": 137
+  },
+  {
+    "mode": "reduced-motion",
+    "before": 7113,
+    "after": 7113,
+    "overflow": false,
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "frames": 0
+  },
+  {
+    "mode": "no-transition",
+    "before": 7113,
+    "after": 7113,
+    "overflow": false,
+    "events": [
+      {
+        "url": "blank",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/work/?filter=photography",
+        "state": "none",
+        "animations": []
+      },
+      {
+        "url": "/project/?id=13",
+        "state": "none",
+        "animations": []
+      }
+    ],
+    "errors": [],
+    "frames": 0
+  }
+]
