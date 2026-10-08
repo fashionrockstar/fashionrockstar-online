@@ -172,21 +172,67 @@
   }
 }
 @media (max-width: 760px) {
+  .services-page {
+    padding-top: clamp(1.5rem, 4svh, 2rem);
+  }
   .services-page .services-intro,
-  .services-page .services-closing { grid-template-columns: minmax(0, 1fr); }
+  .services-page .services-closing {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  .services-page .services-intro { padding: .75rem 0 2rem; }
+  .services-page .page-title {
+    font-size: clamp(2rem, 8.5vw, 2.5rem);
+    line-height: 1;
+    letter-spacing: -.035em;
+  }
+  .services-page .services-intro__copy,
+  .services-page .service-overview,
+  .services-page .service-scope,
+  .services-page .service-stage,
+  .services-page .services-closing__copy {
+    gap: .875rem;
+    font-size: clamp(.8125rem, .6875rem + .75vw, .875rem);
+    line-height: 1.55;
+    letter-spacing: .01em;
+  }
   .services-page .service-toggle {
     grid-template-columns: minmax(0, 1fr);
-    gap: .65rem .75rem;
+    gap: .25rem .75rem;
+    padding: 1.25rem 0;
   }
-  .services-page .service-title { font-size: clamp(1.25rem, 4.5vw, 2rem); }
-  .services-page .service-action { grid-column: 1; grid-row: 2; }
+  .services-page .service-title {
+    font-size: clamp(1.125rem, 5vw, 1.5rem);
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    overflow-wrap: normal;
+  }
+  .services-page .service-action {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: .6875rem;
+    letter-spacing: .035em;
+  }
   .services-page .service-details {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: none;
     grid-template-areas: 'overview' 'stages' 'scope' 'links';
-    gap: 2rem;
+    gap: 1.75rem;
+    padding: .5rem 0 2rem;
   }
-  .services-page .service-stages { padding-left: 0; border-left: 0; }
+  .services-page .service-stages { gap: 1.75rem; padding-left: 0; border-left: 0; }
+  .services-page .service-details h3 {
+    font-size: .6875rem;
+    line-height: 1.45;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+  }
+  .services-page .service-links a,
+  .services-page .services-booking-link { font-size: .6875rem; }
+  .services-page .services-closing h2 {
+    font-size: clamp(1.375rem, 5.8vw, 1.625rem);
+    line-height: 1.15;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .services-page .service-details { animation: none; }
