@@ -1295,5 +1295,37 @@ window.fashionrockstarProjects = [
         "hasAudio": false
       }
     ]
+  },
+  {
+    "id": 16,
+    "title": "OUISSAM",
+    "category": "Photography",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION, PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "display": "portrait",
+    "presentation": "video-led",
+    "imported": true,
+    "listed": false,
+    "pending": [
+      "Original cover reel, portrait poster and complete approved post sequence required before adding a WORK tile."
+    ],
+    "credits": ["MODEL — OUISSAM"],
+    "cover": {
+      "type": "instagram",
+      "mediaKind": "reel",
+      "src": "https://www.instagram.com/reel/DJ-jQgKMg8-/",
+      "label": "OUISSAM — external Instagram reel",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "instagram",
+        "mediaKind": "post",
+        "src": "https://www.instagram.com/p/DKExmNJOOMf/",
+        "label": "OUISSAM — external Instagram carousel",
+        "wide": true
+      }
+    ]
   }
 ];
