@@ -545,6 +545,7 @@ body.home {
 }
 
 .work-tile {
+  -webkit-tap-highlight-color: transparent;
   position: relative;
   display: block;
   width: 100%;
@@ -651,12 +652,13 @@ body.home {
   transform: scale(1.015);
 }
 
-.work-tile:focus-visible .work-tile__meta {
+.work-tile:focus-visible .work-tile__meta,
+.work-tile.is-previewing .work-tile__meta {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Hover remains a desktop interaction; tapping a tile follows its link. */
+/* Mouse hover and keyboard focus reveal titles. Touch uses a first-tap preview. */
 @media (hover: hover) and (pointer: fine) {
   .work-tile:hover img,
   .work-tile:hover video {
@@ -1196,20 +1198,39 @@ body.home {
     margin: 0;
   }
 
+  .page-shell.work-page {
+    padding-top: clamp(1.5rem, 5vw, 2.5rem);
+  }
+
   .work-page .page-title {
+    font-size: clamp(2.25rem, 13vw, 6rem);
+    line-height: .9;
+    margin-bottom: 1.125rem;
     padding-right: max(var(--pad), env(safe-area-inset-right));
     padding-left: max(var(--pad), env(safe-area-inset-left));
   }
 
   .work-toolbar {
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0 .875rem;
+    margin-bottom: .75rem;
     padding-right: max(var(--pad), env(safe-area-inset-right));
     padding-left: max(var(--pad), env(safe-area-inset-left));
   }
 
   .work-filters {
-    gap: 0 1rem;
+    gap: 0 clamp(.5rem, 2.5vw, .875rem);
+  }
+
+  .work-filter,
+  .work-services-link {
+    font-size: .625rem;
+    letter-spacing: .045em;
+  }
+
+  .work-services-link {
+    margin-left: auto;
   }
 
   .work-tile__meta {
@@ -1217,12 +1238,12 @@ body.home {
   }
 
   .work-tile__meta b {
-    font-size: clamp(1.25rem, 5.5vw, 2rem);
+    font-size: clamp(1rem, 4.25vw, 1.75rem);
     line-height: 1.05;
   }
 
   .work-row--pair .work-tile__meta b {
-    font-size: clamp(1rem, 4.2vw, 1.5rem);
+    font-size: clamp(.875rem, 3.4vw, 1.375rem);
   }
 
   .project-head {
@@ -1334,14 +1355,6 @@ body.home {
 
   .contact-email {
     overflow-wrap: anywhere;
-  }
-}
-
-/* Phone and touch visitors can read project names without hovering or tapping. */
-@media (max-width: 760px), (hover: none), (pointer: coarse) {
-  .work-tile__meta {
-    opacity: 1;
-    transform: none;
   }
 }
 

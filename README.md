@@ -81,3 +81,9 @@ Rebuilt `/about/` as a shorter editorial introduction: the existing logo, a clea
 The previous sticky opening and scroll-driven paragraph sequence are removed, together with the unused `assets/js/about.js`. Content stays visible in normal document flow. Motion is limited to a brief logo entrance and hover feedback, with reduced-motion support. Navigation still uses the shared script; a no-JavaScript mobile fallback is scoped to ABOUT.
 
 Checked in Chromium at 1440, 768, 390 and 320 pixels: no horizontal overflow, images loaded, no page errors, mobile menu and Escape, no-JavaScript navigation and reduced motion. All local links and image sources resolve. This update targets `development`; production approval remains separate.
+
+## Selected Work mobile refinement — October 8, 2026
+
+The owner's latest direction replaces the September always-visible mobile captions. Project titles now stay hidden until mouse hover, keyboard focus, or a first touch/pen tap. A second tap on that project opens it. Scrolling, tapping elsewhere, switching filters, Escape, resize and page restoration clear the touch preview. Links retain their accessible names and native keyboard/modified-click behaviour. Without JavaScript, project links still open normally.
+
+The mobile Selected Work title now uses the desktop's proportional 13vw scale, with smaller discipline filters and project captions. Changes are scoped to Work; the gallery layout and desktop typography are retained. Checked in Chromium at 320, 390, 430, 768 and 1440 pixels, using the site's existing fonts, plus emulated touch preview/navigation, filter reset, scrolling, desktop hover and keyboard activation. No horizontal overflow or page errors. Production remains separate from this development update.

@@ -58,11 +58,58 @@
   const workGallery = document.querySelector('[data-work-gallery]');
   const workFilters = document.querySelectorAll('[data-work-filter]');
 
+  // Touch has no hover: reveal one title on the first tap, follow its link on
+  // the second. Ordinary mouse clicks, keyboard activation and modified clicks
+  // keep their native link behaviour. Scrolling never starts a preview.
+  let previewTile = null;
+  const clearWorkPreview = () => {
+    if (previewTile) previewTile.classList.remove('is-previewing');
+    previewTile = null;
+  };
+
+  if (workGallery) {
+    let lastPointerType = '';
+    workGallery.addEventListener('pointerdown', (event) => {
+      lastPointerType = event.pointerType;
+    }, { passive: true });
+
+    workGallery.addEventListener('click', (event) => {
+      const tile = event.target.closest('a.work-tile');
+      if (!tile || !workGallery.contains(tile)) return;
+      const pointerType = event.pointerType || lastPointerType;
+      const isTouch = pointerType === 'touch' || pointerType === 'pen';
+      if (!isTouch || event.detail === 0 || event.button !== 0 ||
+          event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      if (previewTile === tile) {
+        clearWorkPreview();
+        return;
+      }
+      event.preventDefault();
+      clearWorkPreview();
+      previewTile = tile;
+      tile.classList.add('is-previewing');
+    });
+
+    document.addEventListener('pointerdown', (event) => {
+      if (previewTile && !previewTile.contains(event.target)) clearWorkPreview();
+    }, { passive: true });
+    workGallery.addEventListener('pointercancel', clearWorkPreview, { passive: true });
+    window.addEventListener('scroll', clearWorkPreview, { passive: true });
+    window.addEventListener('resize', clearWorkPreview, { passive: true });
+    window.addEventListener('pagehide', clearWorkPreview);
+    window.addEventListener('pageshow', clearWorkPreview);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' || event.key === 'Tab') clearWorkPreview();
+    });
+  }
+
   if (workGallery && workFilters.length) {
     const validFilters = new Set(['all', 'creative-direction', 'styling', 'photography', 'beauty']);
     const workRows = Array.from(workGallery.querySelectorAll('.work-row'));
 
     const applyWorkFilter = (requestedFilter, updateUrl = true) => {
+      clearWorkPreview();
       const filter = validFilters.has(requestedFilter) ? requestedFilter : 'all';
 
       workFilters.forEach((button) => {
