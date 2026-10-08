@@ -3,13 +3,25 @@
 
   const toggle = document.querySelector('.menu-toggle');
   const siteNav = document.querySelector('.site-nav');
+  const mobileNavigation = window.matchMedia('(max-width: 760px)');
+  const submenuToggle = document.querySelector('.site-submenu-toggle');
+  const submenu = document.querySelector('#site-work-disciplines');
+
+  const setSubmenu = (expanded) => {
+    if (!submenuToggle || !submenu) return;
+    submenuToggle.setAttribute('aria-expanded', String(expanded));
+    submenuToggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} Selected Work disciplines`);
+    submenuToggle.firstElementChild.textContent = expanded ? '−' : '+';
+    submenu.hidden = !expanded;
+  };
 
   const closeMenu = () => {
     if (!toggle || !siteNav) return;
     toggle.setAttribute('aria-expanded', 'false');
     toggle.textContent = 'Menu';
     siteNav.classList.remove('is-open');
-    siteNav.inert = window.innerWidth <= 760;
+    siteNav.inert = mobileNavigation.matches;
+    setSubmenu(false);
   };
 
   if (toggle && siteNav) {
@@ -19,7 +31,20 @@
       toggle.setAttribute('aria-expanded', String(!isOpen));
       toggle.textContent = isOpen ? 'Menu' : 'Close';
       siteNav.classList.toggle('is-open', !isOpen);
-      siteNav.inert = isOpen && window.innerWidth <= 760;
+      siteNav.inert = isOpen && mobileNavigation.matches;
+      if (isOpen) setSubmenu(false);
+    });
+
+    submenuToggle?.addEventListener('click', () => {
+      setSubmenu(submenuToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.site-header')) closeMenu();
+    });
+
+    document.addEventListener('focusin', (event) => {
+      if (!event.target.closest('.site-header')) closeMenu();
     });
 
     siteNav.addEventListener('click', (event) => {
@@ -33,9 +58,8 @@
       }
     });
 
-    window.addEventListener('resize', () => {
-      closeMenu();
-    });
+    mobileNavigation.addEventListener('change', closeMenu);
+    window.addEventListener('pageshow', closeMenu);
   }
 
   const workVideos = document.querySelectorAll('[data-work-gallery] video:not([data-cover-video])');

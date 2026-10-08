@@ -12,6 +12,26 @@ Development review uses the existing `development` branch preview at https://dev
 
 ## Content
 
+### Compact navigation and HOME footer — October 8, 2026
+
+HOME no longer has a MENU control or full-screen navigation dialog. Its existing
+Explore links remain below the intro. Instagram, LinkedIn and TikTok now sit in a
+centered row in a normal document footer after all HOME content, with 44px tap
+targets and bottom safe-area padding. The intro video, logo and entry behavior
+are preserved.
+
+On interior pages, the mobile MENU control opens a compact, transparent list in
+the header. The content stays visible below it; there is no gray panel, backdrop
+or scroll lock. The Selected Work discipline disclosure is available in this
+menu. Escape, outside activation, keyboard focus leaving the header and page
+restoration close it. Desktop navigation remains a horizontal header.
+
+Checked in Chromium at 320, 390, 768 and 1440px: HOME footer placement and social
+destinations, all six interior routes, no horizontal overflow or JavaScript
+errors, menu/submenu state, Escape focus return, outside dismissal, one-tap
+Explore navigation and Selected Work filter links. This change targets the
+`development` preview; production is separate.
+
 ### Booking layout — October 8, 2026
 
 `/booking/` uses an oversized BOOKING title and contact/social links beside a compact graphite form. Services, name, email and message are visible; company, timeline and budget remain available in the native “Add project details” disclosure. The existing Netlify field names, service preselection, multi-service submission, slide/click/keyboard send behavior, failure retry and sent confirmation are preserved. Mobile stacks the heading and form; reduced-motion settings disable the entrance animation.

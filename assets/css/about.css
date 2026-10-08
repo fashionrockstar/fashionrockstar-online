@@ -193,7 +193,6 @@
   @keyframes about-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 }
 @media (max-width: 760px) {
-  .about-body .site-nav a { font-family: var(--font-ui); font-size: 1.75rem; }
   .about-introduction { padding-top: .75rem; }
   .about-kicker { font-size: .625rem; }
   .about-masthead { margin: 2rem 0 3rem; }

@@ -47,194 +47,28 @@
   .home .hero__brand .hero__fallback { visibility: visible; }
 }
 
-.home-header {
-  position: absolute;
-  z-index: 2;
-  top: var(--home-edge-top);
-  left: var(--home-edge-left);
-}
-
-.home-menu-control,
-.home-submenu-control {
-  display: inline-flex;
-  min-width: 44px;
-  min-height: 44px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: inherit;
-}
-
-.home-menu-control {
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: .08em;
-}
-
-.home-menu-control > span,
-.home-submenu-control > span {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.home-menu-control:hover,
-.home-menu-control:focus-visible,
-.home-nav-panel a:hover,
-.home-nav-panel a:focus-visible {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .3em;
-}
-
-/* Touch taps should not draw the keyboard focus rectangle around MENU/CLOSE. */
-@media (hover: none), (pointer: coarse) {
-  .home-menu-control {
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .home-menu-control:focus,
-  .home-menu-control:focus-visible {
-    outline: none;
-  }
-}
-
-html.home-nav-open,
-html.home-nav-open body {
-  overflow: hidden;
-}
-
-.home-nav-panel {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  max-width: none;
-  height: 100vh;
-  height: 100svh;
-  max-height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
+/* Social links belong to the document footer, after the Explore section. */
+.home-footer {
+  padding: 1.5rem var(--home-edge-right) max(2rem, env(safe-area-inset-bottom)) var(--home-edge-left);
   background: var(--home-bg);
   color: var(--home-fg);
 }
 
-.home-nav-panel[open] {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-}
-
-.home-nav-panel::backdrop {
-  background: var(--home-bg, #000);
-}
-
-.home-nav-panel__header {
-  padding: var(--home-edge-top) var(--home-edge-right) 1rem var(--home-edge-left);
-}
-
-.home-nav-panel__links {
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: clamp(1rem, 3vh, 2rem) var(--home-edge-right) max(2rem, env(safe-area-inset-bottom)) var(--home-edge-left);
-}
-
-.home-nav-list,
-.home-work-disciplines,
 .home-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.home-nav-list {
-  width: min(100%, 39rem);
-}
-
-.home-nav-list > li {
-  border-bottom: 1px solid currentColor;
-}
-
-.home-nav-list > li:first-child {
-  border-top: 1px solid currentColor;
-}
-
-.home-nav-list > li > a,
-.home-nav-work > a {
-  display: flex;
-  min-height: 56px;
-  align-items: center;
-  padding: .7rem 0;
-  font-size: clamp(1.15rem, 2.3vw, 2rem);
-  font-weight: 400;
-  letter-spacing: -.035em;
-  line-height: 1.25;
-}
-
-.home-nav-work {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.home-nav-work > a {
-  flex: 1;
-}
-
-.home-submenu-control {
-  flex: 0 0 44px;
-  justify-content: center;
-}
-
-.home-work-disciplines {
-  padding: 0 0 .75rem 1rem;
-}
-
-.home-work-disciplines[hidden] {
-  display: none;
-}
-
-.home-work-disciplines a {
-  display: flex;
-  min-height: 44px;
-  align-items: center;
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: .05em;
-}
-
-.home-socials {
-  position: absolute;
-  top: 50%;
-  left: var(--home-edge-left);
-  display: flex;
-  flex-direction: column;
-  transform: translateY(-50%);
-}
-
-.home-socials a,
-.home-social-pending {
-  display: inline-flex;
-  min-height: 44px;
-  align-items: center;
-  gap: .35rem;
-  font-size: .625rem;
-  font-weight: 500;
-  letter-spacing: .06em;
-  white-space: nowrap;
-}
-
-.home-social-pending {
-  opacity: .55;
-  cursor: default;
-}
-
-/* Brand marks inherit the homepage's white foreground. */
 .home-socials a {
+  display: inline-flex;
   width: 44px;
+  min-height: 44px;
+  align-items: center;
   justify-content: center;
   transition: opacity .2s ease;
 }
@@ -247,33 +81,11 @@ html.home-nav-open body {
   fill: currentColor;
 }
 
-.home-socials a:hover {
-  opacity: .6;
-}
-
-.home-socials a:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-}
+.home-socials a:hover { opacity: .6; }
+.home-socials a:focus-visible { outline-offset: 2px; }
 
 @media (max-width: 1000px) {
-  .home .hero__brand .hero__fallback {
-    width: min(72vw, 38rem);
-  }
-
-  /* Keep the mobile social rail clear of the centered logo. */
-  .home-socials {
-    z-index: 2;
-    top: var(--home-edge-top);
-    right: var(--home-edge-right);
-    left: auto;
-    transform: none;
-  }
-
-  .home-socials a,
-  .home-social-pending {
-    font-size: .6875rem;
-  }
+  .home .hero__brand .hero__fallback { width: min(72vw, 38rem); }
 }
 
 /* The lower navigation is typography only at every width. */
@@ -287,12 +99,6 @@ html.home-nav-open body {
 
 @media (max-width: 760px) {
   .home .home-menu__links a { font-size: clamp(3rem, 16.8vw, 5.6rem); }
-}
-
-.home .home-menu-control, .home .home-work-disciplines a,
-.home .home-socials a, .home .home-social-pending {
-  font-size: .875rem;
-  font-weight: 700;
 }
 
 /* Hold Braille briefly before same-tab navigation on touch, mouse and keyboard. */
