@@ -259,9 +259,7 @@
     const cancellations = [];
     let cancelled = false;
     const waits = indices.map(i => prepareMedia(media[i], pending.media[i], cancellations));
-    if (indices.some(i => isVideo(media[i]) || !readyImage(media[i]))) {
-      document.documentElement.dataset.coverWaiting = '';
-    }
+    document.documentElement.dataset.coverWaiting = '';
     cancelMediaHandoff = () => {
       cancelled = true;
       cancellations.forEach(cancel => cancel());
