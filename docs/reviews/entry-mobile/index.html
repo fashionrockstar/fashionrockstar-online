@@ -14,13 +14,13 @@
 <main><iframe title="Phone-sized homepage" allow="autoplay" src="about:blank"></iframe><pre id="report">Choose Start fresh visit.</pre></main>
 <script>
 const frame=document.querySelector('iframe'),report=document.querySelector('#report');
-let samples=[],active=false,started=0,mode='fresh';
+let samples=[],active=false,started=0,mode='fresh',previousDocument=null;
 document.querySelectorAll('[data-size]').forEach(b=>b.addEventListener('click',()=>{const [w,h]=b.dataset.size.split(',');frame.style.width=w+'px';frame.style.height=h+'px';}));
-const start=fresh=>{if(fresh)sessionStorage.removeItem('frsrSimpleEntryV1');samples=[];active=true;started=performance.now();mode=fresh?'fresh':'return';frame.src='/';};
+const start=fresh=>{previousDocument=frame.contentDocument;report.textContent='Loading homepage…';if(fresh)sessionStorage.removeItem('frsrSimpleEntryV1');samples=[];active=true;started=performance.now();mode=fresh?'fresh':'return';frame.src='/';};
 document.querySelector('#start').onclick=()=>start(true);document.querySelector('#return').onclick=()=>start(false);
 setInterval(()=>{
  if(!active)return;
- const d=frame.contentDocument;if(!d||!d.querySelector('[data-entry-loader]'))return;
+ const d=frame.contentDocument;if(!d||d===previousDocument||!d.querySelector('[data-entry-loader]'))return;
  const video=d.querySelector('[data-hero-video]'),loader=d.querySelector('[data-entry-loader]'),box=video.getBoundingClientRect();
  const loading=d.documentElement.classList.contains('entry-loading');
  const sample={elapsed:(performance.now()-started)/1000,loading,time:video.currentTime,paused:video.paused};samples.push(sample);
