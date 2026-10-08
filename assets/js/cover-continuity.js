@@ -81,6 +81,7 @@
     // Skipping or timing out rejects ready; this is an expected fallback.
     event.viewTransition?.ready.catch(() => {});
     clearNames();
+    delete document.documentElement.dataset.coverMotion;
     const current = currentURL();
     const destination = url(event.activation?.entry?.url);
     const route = pair(current, destination);
@@ -148,6 +149,37 @@
     restoreWorkPosition(arrival, validJourney());
   }
 
+  // A responsive hero can request a different file from its Work thumbnail.
+  // On a cold visit it is often still decoding at pagereveal, so the readiness
+  // check below used to cancel the opening transition but allow the cached return.
+  // Keep the first snapshot behind a bounded render gate until that exact image
+  // has decoded. This script is render-blocking in both documents' heads.
+  const arrivalJourney = validJourney();
+  if (!reducedMotion.matches && arrival?.eligible && arrival.to === location.href
+      && Date.now() - arrival.savedAt < 30000 && arrivalJourney?.id === arrival.id) {
+    const image = arrival.direction === 'return' ? imageInWork(arrival.id) : heroImage();
+    if (image && new URL(image.src).pathname === arrivalJourney.coverPath) {
+      image.loading = 'eager';
+      image.fetchPriority = 'high';
+      const gate = document.createElement('link');
+      if (gate.relList.supports('expect') && gate.blocking?.supports('render')) {
+        gate.rel = 'expect';
+        gate.href = '#frsr-cover-decoded';
+        gate.blocking = 'render';
+        document.head.append(gate);
+        let timer;
+        const release = () => {
+          clearTimeout(timer);
+          gate.remove();
+        };
+        // Never leave navigation waiting for a failed or extremely slow image.
+        timer = setTimeout(release, 1800);
+        image.decode().then(release, release);
+        window.addEventListener('pagehide', release, { once: true });
+      }
+    }
+  }
+
   window.addEventListener('pagereveal', event => {
     event.viewTransition?.ready.catch(() => {});
     clearNames();
@@ -174,7 +206,11 @@
       if (title) name(title, 'frsr-project-title');
     }
     // Snapshot names must not survive in the back/forward cache.
-    event.viewTransition.ready.then(clearNames, clearNames);
+    event.viewTransition.ready.then(() => {
+      // Expose successful native capture for preview QA; this has no visual effect.
+      document.documentElement.dataset.coverMotion = pending.direction;
+      clearNames();
+    }, clearNames);
   });
 
   // Older browsers keep native navigation; explicit return links still restore position.
