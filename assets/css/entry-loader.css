@@ -1,0 +1,37 @@
+/* A brief, automatic brand reveal; the existing home stays in place beneath it. */
+.entry-loader { display: none; }
+.entry-loading { overflow: hidden; }
+.entry-loading .entry-loader {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+  pointer-events: auto;
+  animation: entry-arrive 2.6s both;
+}
+.entry-loader__mark { position: relative; width: min(76vw, 728px); aspect-ratio: 728 / 97; }
+.entry-loader__mark > * { position: absolute; inset: 0; width: 100%; height: 100%; }
+.entry-loader__dots { animation: entry-dots 1.5s both; }
+.entry-loader__logo { animation: entry-logo 1.7s both; }
+@keyframes entry-dots {
+  0% { opacity: 0; }
+  20%, 42% { opacity: 1; clip-path: inset(0); }
+  90%, 100% { opacity: 0; clip-path: inset(0 0 0 100%); }
+}
+@keyframes entry-logo {
+  0%, 30% { opacity: 0; clip-path: inset(0 100% 0 0); }
+  85%, 100% { opacity: 1; clip-path: inset(0); }
+}
+@keyframes entry-arrive {
+  0%, 68% { opacity: 1; visibility: visible; }
+  99% { opacity: 0; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+@media (max-width: 600px) { .entry-loader__mark { width: 86vw; } }
+@media (prefers-reduced-motion: reduce) {
+  .entry-loading { overflow: auto; }
+  .entry-loading .entry-loader { display: none; animation: none; }
+}
