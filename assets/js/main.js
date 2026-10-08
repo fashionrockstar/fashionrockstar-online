@@ -58,36 +58,60 @@
   const workGallery = document.querySelector('[data-work-gallery]');
   const workFilters = document.querySelectorAll('[data-work-filter]');
 
-  // Phone/touch titles follow the visible projects while scrolling. Links
-  // retain native one-tap navigation; desktop hover and keyboard focus stay CSS.
+  // On touchscreens, imitate hover only after browsing pauses. Keep every
+  // image clean on arrival and during movement; reveal one centred project.
+  // No click handler: a project still opens with one tap.
   let refreshWorkTitles = () => {};
   if (workGallery) {
     const tiles = Array.from(workGallery.querySelectorAll('.work-tile'));
-    const scrollTitles = window.matchMedia('(max-width: 760px), (hover: none), (pointer: coarse)');
-    let titleObserver = null;
+    const touchBrowsing = window.matchMedia('(hover: none), (pointer: coarse)');
+    let activeTile = null;
+    let revealTimer = 0;
+    let lastScrollY = window.scrollY;
 
-    refreshWorkTitles = () => {
-      if (titleObserver) titleObserver.disconnect();
-      titleObserver = null;
-      tiles.forEach((tile) => tile.classList.remove('is-in-view'));
-      if (!scrollTitles.matches) return;
-
-      const visibleTiles = tiles.filter((tile) => !tile.hidden);
-      if (!('IntersectionObserver' in window)) {
-        visibleTiles.forEach((tile) => tile.classList.add('is-in-view'));
-        return;
-      }
-      titleObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          entry.target.classList.toggle('is-in-view', entry.isIntersecting);
-        });
-      }, { rootMargin: '-12% 0px -18% 0px', threshold: 0 });
-      visibleTiles.forEach((tile) => titleObserver.observe(tile));
+    const hideTitle = () => {
+      window.clearTimeout(revealTimer);
+      revealTimer = 0;
+      if (activeTile) activeTile.classList.remove('is-browsing');
+      activeTile = null;
     };
 
-    scrollTitles.addEventListener('change', refreshWorkTitles);
+    const revealCentredTitle = () => {
+      revealTimer = 0;
+      if (!touchBrowsing.matches || document.hidden) return;
+      const centre = window.innerHeight / 2;
+      const tile = tiles.find((candidate) => {
+        if (candidate.hidden) return false;
+        const rect = candidate.getBoundingClientRect();
+        return rect.height > 0 && rect.top <= centre && rect.bottom >= centre;
+      });
+      if (tile) {
+        activeTile = tile;
+        tile.classList.add('is-browsing');
+      }
+    };
+
+    refreshWorkTitles = () => {
+      hideTitle();
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === lastScrollY) return;
+      lastScrollY = window.scrollY;
+      hideTitle();
+      if (touchBrowsing.matches) {
+        // Wait for scrolling to settle, then use the existing hover fade.
+        revealTimer = window.setTimeout(revealCentredTitle, 240);
+      }
+    }, { passive: true });
+    touchBrowsing.addEventListener('change', refreshWorkTitles);
+    window.addEventListener('resize', refreshWorkTitles, { passive: true });
+    window.addEventListener('pagehide', refreshWorkTitles);
     window.addEventListener('pageshow', refreshWorkTitles);
-    refreshWorkTitles();
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) refreshWorkTitles();
+    });
   }
 
   if (workGallery && workFilters.length) {

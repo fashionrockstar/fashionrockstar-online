@@ -91,3 +91,7 @@ The mobile Selected Work title now uses the desktop's proportional 13vw scale, w
 ## Selected Work scroll titles — October 8, 2026
 
 The owner's follow-up replaces the two-tap preview with automatic title reveals while scrolling on phone/touch layouts. Titles fade in when projects enter the viewport's reading area and fade out when they leave. Project links open with one tap again. The approved typography, gallery layout, desktop hover and keyboard focus are retained. The viewport observer refreshes after filtering, device-mode changes and back navigation; reduced motion uses the existing site-wide setting.
+
+## Selected Work hover-like mobile browsing — October 8, 2026
+
+The owner's clarification replaces the immediate viewport reveal. On touchscreens, titles start hidden and stay hidden during scrolling. After scrolling pauses for 240ms, only the project crossing the viewport centre receives the existing title fade. Movement hides it again. Filter changes, resize, page departure/restoration and device-mode changes reset the state. Native one-tap links, desktop hover, keyboard focus and approved typography/layout are retained. Verified in Chromium with touch emulation: clean arrival, delayed fade after pausing, continuous-scroll suppression, one visible title, one-tap navigation and clean back navigation.
