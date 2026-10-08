@@ -58,50 +58,36 @@
   const workGallery = document.querySelector('[data-work-gallery]');
   const workFilters = document.querySelectorAll('[data-work-filter]');
 
-  // Touch has no hover: reveal one title on the first tap, follow its link on
-  // the second. Ordinary mouse clicks, keyboard activation and modified clicks
-  // keep their native link behaviour. Scrolling never starts a preview.
-  let previewTile = null;
-  const clearWorkPreview = () => {
-    if (previewTile) previewTile.classList.remove('is-previewing');
-    previewTile = null;
-  };
-
+  // Phone/touch titles follow the visible projects while scrolling. Links
+  // retain native one-tap navigation; desktop hover and keyboard focus stay CSS.
+  let refreshWorkTitles = () => {};
   if (workGallery) {
-    let lastPointerType = '';
-    workGallery.addEventListener('pointerdown', (event) => {
-      lastPointerType = event.pointerType;
-    }, { passive: true });
+    const tiles = Array.from(workGallery.querySelectorAll('.work-tile'));
+    const scrollTitles = window.matchMedia('(max-width: 760px), (hover: none), (pointer: coarse)');
+    let titleObserver = null;
 
-    workGallery.addEventListener('click', (event) => {
-      const tile = event.target.closest('a.work-tile');
-      if (!tile || !workGallery.contains(tile)) return;
-      const pointerType = event.pointerType || lastPointerType;
-      const isTouch = pointerType === 'touch' || pointerType === 'pen';
-      if (!isTouch || event.detail === 0 || event.button !== 0 ||
-          event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    refreshWorkTitles = () => {
+      if (titleObserver) titleObserver.disconnect();
+      titleObserver = null;
+      tiles.forEach((tile) => tile.classList.remove('is-in-view'));
+      if (!scrollTitles.matches) return;
 
-      if (previewTile === tile) {
-        clearWorkPreview();
+      const visibleTiles = tiles.filter((tile) => !tile.hidden);
+      if (!('IntersectionObserver' in window)) {
+        visibleTiles.forEach((tile) => tile.classList.add('is-in-view'));
         return;
       }
-      event.preventDefault();
-      clearWorkPreview();
-      previewTile = tile;
-      tile.classList.add('is-previewing');
-    });
+      titleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle('is-in-view', entry.isIntersecting);
+        });
+      }, { rootMargin: '-12% 0px -18% 0px', threshold: 0 });
+      visibleTiles.forEach((tile) => titleObserver.observe(tile));
+    };
 
-    document.addEventListener('pointerdown', (event) => {
-      if (previewTile && !previewTile.contains(event.target)) clearWorkPreview();
-    }, { passive: true });
-    workGallery.addEventListener('pointercancel', clearWorkPreview, { passive: true });
-    window.addEventListener('scroll', clearWorkPreview, { passive: true });
-    window.addEventListener('resize', clearWorkPreview, { passive: true });
-    window.addEventListener('pagehide', clearWorkPreview);
-    window.addEventListener('pageshow', clearWorkPreview);
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' || event.key === 'Tab') clearWorkPreview();
-    });
+    scrollTitles.addEventListener('change', refreshWorkTitles);
+    window.addEventListener('pageshow', refreshWorkTitles);
+    refreshWorkTitles();
   }
 
   if (workGallery && workFilters.length) {
@@ -109,7 +95,6 @@
     const workRows = Array.from(workGallery.querySelectorAll('.work-row'));
 
     const applyWorkFilter = (requestedFilter, updateUrl = true) => {
-      clearWorkPreview();
       const filter = validFilters.has(requestedFilter) ? requestedFilter : 'all';
 
       workFilters.forEach((button) => {
@@ -135,6 +120,8 @@
         const playback = video.play();
         if (playback) playback.catch(() => {});
       });
+
+      refreshWorkTitles();
 
       if (updateUrl) {
         const url = new URL(window.location.href);

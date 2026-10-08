@@ -653,12 +653,12 @@ body.home {
 }
 
 .work-tile:focus-visible .work-tile__meta,
-.work-tile.is-previewing .work-tile__meta {
+.work-tile.is-in-view .work-tile__meta {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Mouse hover and keyboard focus reveal titles. Touch uses a first-tap preview. */
+/* Mouse hover and keyboard focus reveal titles. Phone/touch titles follow scroll. */
 @media (hover: hover) and (pointer: fine) {
   .work-tile:hover img,
   .work-tile:hover video {
