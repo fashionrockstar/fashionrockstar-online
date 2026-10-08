@@ -1,132 +1,200 @@
-/* Services-only disclosures; shared page and booking styles stay intact. */
-.services-page .service-toggle {
+/* Scoped to Services: the shared homepage, navigation and other page layouts are unchanged. */
+.services-page {
+  padding-bottom: clamp(3rem, 7vw, 7rem);
+}
+.services-page .services-intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: .65rem 1.5rem;
-  min-height: 44px;
-  padding: 1rem 0 1.25rem;
-  list-style: none;
-  cursor: pointer;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem clamp(2rem, 5vw, 6rem);
+  align-items: start;
+  padding: clamp(2rem, 5vw, 5rem) 0 clamp(3rem, 6vw, 6rem);
 }
-
-.services-page .service-toggle::-webkit-details-marker {
-  display: none;
-}
-
-.services-page .service-title {
-  min-width: 0;
-  font-family: var(--font-display);
-  font-size: clamp(4.25rem, 8vw, 9rem);
-  font-weight: 400;
-  line-height: .92;
-  text-transform: uppercase;
-}
-
-.services-page .service-toggle__icon {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
+.services-page .page-title {
+  margin: 0;
   font-family: var(--font-ui);
-  font-size: clamp(1.5rem, 2.25vw, 2.5rem);
-  font-weight: 400;
-  line-height: 1;
+  font-weight: 700;
+  font-size: clamp(3rem, 7.5vw, 8rem);
+  line-height: .95;
+  letter-spacing: -.045em;
 }
-
-.services-page .service-toggle__minus,
-.services-page .service[open] .service-toggle__plus {
-  display: none;
-}
-
-.services-page .service[open] .service-toggle__minus {
-  display: inline;
-}
-
-.services-page .service-summary {
-  grid-column: 1 / -1;
-  max-width: 65ch;
-  font-size: clamp(.9rem, 1.1vw, 1.05rem);
-  line-height: 1.55;
-}
-
-.services-page .service-details {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 1.5rem clamp(2rem, 5vw, 6rem);
-  max-width: 80rem;
-  padding: .75rem 0 clamp(2rem, 4vw, 3.5rem);
-  font-size: clamp(.95rem, 1.1vw, 1.05rem);
-  line-height: 1.7;
-}
-
-.services-page .service-description,
-.services-page .service-scope {
+.services-page .services-intro__copy,
+.services-page .service-overview,
+.services-page .service-scope,
+.services-page .service-stage,
+.services-page .services-closing__copy {
   display: grid;
   align-content: start;
   gap: 1rem;
+  min-width: 0;
+  max-width: 65ch;
+  font-size: clamp(.95rem, 1.1vw, 1.0625rem);
+  line-height: 1.7;
+  overflow-wrap: break-word;
 }
-
-.services-page .service-details strong {
-  font-weight: 600;
+.services-page .service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid currentColor;
 }
-
+.services-page .service-list > li {
+  border-bottom: 1px solid currentColor;
+}
+.services-page .service {
+  scroll-margin-top: 1rem;
+}
+.services-page .service-toggle {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .85rem 1.5rem;
+  min-height: 44px;
+  padding: clamp(1.5rem, 3vw, 3rem) 0;
+  list-style: none;
+  cursor: pointer;
+}
+.services-page .service-toggle::-webkit-details-marker { display: none; }
+.services-page .service-toggle::marker { content: ''; }
+.services-page .service-title {
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(1.5rem, 3.6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+.services-page .service-number,
+.services-page .service-action {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .04em;
+}
+.services-page .service-action__closed,
+.services-page .service-action__open {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  min-height: 44px;
+}
+.services-page .service-action b {
+  display: grid;
+  width: 1.5rem;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.services-page .service-action__open,
+.services-page .service[open] .service-action__closed { display: none; }
+.services-page .service[open] .service-action__open { display: flex; }
+.services-page .service-summary {
+  grid-column: 2 / -1;
+  max-width: 65ch;
+  font-size: clamp(.9rem, 1.1vw, 1rem);
+  line-height: 1.6;
+}
+.services-page .service-details {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'overview stages' 'scope stages' 'links links';
+  gap: 2rem clamp(2rem, 6vw, 7rem);
+  padding: 1rem 0 clamp(2.5rem, 5vw, 5rem);
+}
+.services-page .service-overview { grid-area: overview; }
+.services-page .service-scope {
+  grid-area: scope;
+  padding-top: 1.5rem;
+  border-top: 1px solid currentColor;
+}
+.services-page .service-stages {
+  grid-area: stages;
+  display: grid;
+  align-content: start;
+  gap: clamp(2rem, 3vw, 3rem);
+  min-width: 0;
+  padding-left: clamp(1.5rem, 3vw, 3rem);
+  border-left: 1px solid currentColor;
+}
+.services-page .service-details h3 {
+  margin: 0 0 .25rem;
+  font-family: var(--font-ui);
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
 .services-page .service-links {
-  grid-column: 1 / -1;
+  grid-area: links;
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem clamp(1.5rem, 3vw, 3rem);
+  gap: .75rem 2rem;
 }
-
-.services-page .service-links a {
+.services-page .service-links a,
+.services-page .services-booking-link {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
   justify-content: flex-start;
-  gap: .5rem;
   padding: .5rem 0;
   font-family: var(--font-ui);
   font-size: .75rem;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: .08em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .04em;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: .3em;
+  text-underline-offset: .4em;
 }
-
 .services-page .service-links a:hover,
-.services-page .service-links a:focus-visible {
-  text-decoration-thickness: 2px;
-}
-
-.services-page .services-note {
+.services-page .services-booking-link:hover { text-decoration-thickness: 2px; }
+.services-page .service-toggle:focus-visible,
+.services-page a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.services-page .services-closing {
   display: grid;
-  gap: 1rem;
-  max-width: 65ch;
-  margin-top: clamp(2rem, 4vw, 4rem);
-  font-size: clamp(.9rem, 1.1vw, 1.05rem);
-  line-height: 1.7;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem clamp(2rem, 5vw, 6rem);
+  padding-top: clamp(3rem, 6vw, 6rem);
 }
-
+.services-page .services-closing h2 {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(1.75rem, 2.8vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services-page .service[open] .service-details { animation: service-details-reveal .22s ease-out; }
+  @keyframes service-details-reveal {
+    from { opacity: 0; transform: translateY(.35rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
 @media (max-width: 760px) {
+  .services-page .services-intro,
+  .services-page .services-closing { grid-template-columns: minmax(0, 1fr); }
   .services-page .service-toggle {
+    grid-template-columns: 1.25rem minmax(0, 1fr);
     gap: .65rem .75rem;
   }
-
-  .services-page .service-title {
-    font-size: clamp(3.3rem, 15.5vw, 5.25rem);
-    line-height: .94;
-  }
-
+  .services-page .service-title { font-size: clamp(1.3rem, 4.5vw, 2.5rem); }
+  .services-page .service-action { grid-column: 2; grid-row: 3; }
+  .services-page .service-summary { grid-column: 2; grid-row: 2; }
   .services-page .service-details {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: 'overview' 'stages' 'scope' 'links';
+    gap: 2rem;
   }
+  .services-page .service-stages { padding-left: 0; border-left: 0; }
 }
-
-@media (max-width: 360px) {
-  .services-page .service-title {
-    font-size: 3rem;
-  }
+@media (prefers-reduced-motion: reduce) {
+  .services-page .service-details { animation: none; }
 }
