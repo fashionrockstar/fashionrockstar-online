@@ -3,13 +3,25 @@
 
   const toggle = document.querySelector('.menu-toggle');
   const siteNav = document.querySelector('.site-nav');
+  const mobileNavigation = window.matchMedia('(max-width: 760px)');
+  const submenuToggle = document.querySelector('.site-submenu-toggle');
+  const submenu = document.querySelector('#site-work-disciplines');
+
+  const setSubmenu = (expanded) => {
+    if (!submenuToggle || !submenu) return;
+    submenuToggle.setAttribute('aria-expanded', String(expanded));
+    submenuToggle.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} Selected Work disciplines`);
+    submenuToggle.firstElementChild.textContent = expanded ? '−' : '+';
+    submenu.hidden = !expanded;
+  };
 
   const closeMenu = () => {
     if (!toggle || !siteNav) return;
     toggle.setAttribute('aria-expanded', 'false');
     toggle.textContent = 'Menu';
     siteNav.classList.remove('is-open');
-    siteNav.inert = window.innerWidth <= 760;
+    siteNav.inert = mobileNavigation.matches;
+    setSubmenu(false);
   };
 
   if (toggle && siteNav) {
@@ -19,7 +31,20 @@
       toggle.setAttribute('aria-expanded', String(!isOpen));
       toggle.textContent = isOpen ? 'Menu' : 'Close';
       siteNav.classList.toggle('is-open', !isOpen);
-      siteNav.inert = isOpen && window.innerWidth <= 760;
+      siteNav.inert = isOpen && mobileNavigation.matches;
+      if (isOpen) setSubmenu(false);
+    });
+
+    submenuToggle?.addEventListener('click', () => {
+      setSubmenu(submenuToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.site-header')) closeMenu();
+    });
+
+    document.addEventListener('focusin', (event) => {
+      if (!event.target.closest('.site-header')) closeMenu();
     });
 
     siteNav.addEventListener('click', (event) => {
@@ -33,9 +58,8 @@
       }
     });
 
-    window.addEventListener('resize', () => {
-      closeMenu();
-    });
+    mobileNavigation.addEventListener('change', closeMenu);
+    window.addEventListener('pageshow', closeMenu);
   }
 
   const workVideos = document.querySelectorAll('[data-work-gallery] video:not([data-cover-video])');
@@ -57,6 +81,62 @@
 
   const workGallery = document.querySelector('[data-work-gallery]');
   const workFilters = document.querySelectorAll('[data-work-filter]');
+
+  // On touchscreens, imitate hover only after browsing pauses. Keep every
+  // image clean on arrival and during movement; reveal one centred project.
+  // No click handler: a project still opens with one tap.
+  let refreshWorkTitles = () => {};
+  if (workGallery) {
+    const tiles = Array.from(workGallery.querySelectorAll('.work-tile'));
+    const touchBrowsing = window.matchMedia('(hover: none), (pointer: coarse)');
+    let activeTile = null;
+    let revealTimer = 0;
+    let lastScrollY = window.scrollY;
+
+    const hideTitle = () => {
+      window.clearTimeout(revealTimer);
+      revealTimer = 0;
+      if (activeTile) activeTile.classList.remove('is-browsing');
+      activeTile = null;
+    };
+
+    const revealCentredTitle = () => {
+      revealTimer = 0;
+      if (!touchBrowsing.matches || document.hidden) return;
+      const centre = window.innerHeight / 2;
+      const tile = tiles.find((candidate) => {
+        if (candidate.hidden) return false;
+        const rect = candidate.getBoundingClientRect();
+        return rect.height > 0 && rect.top <= centre && rect.bottom >= centre;
+      });
+      if (tile) {
+        activeTile = tile;
+        tile.classList.add('is-browsing');
+      }
+    };
+
+    refreshWorkTitles = () => {
+      hideTitle();
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === lastScrollY) return;
+      lastScrollY = window.scrollY;
+      hideTitle();
+      if (touchBrowsing.matches) {
+        // Wait for scrolling to settle, then use the existing hover fade.
+        revealTimer = window.setTimeout(revealCentredTitle, 240);
+      }
+    }, { passive: true });
+    touchBrowsing.addEventListener('change', refreshWorkTitles);
+    window.addEventListener('resize', refreshWorkTitles, { passive: true });
+    window.addEventListener('pagehide', refreshWorkTitles);
+    window.addEventListener('pageshow', refreshWorkTitles);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) refreshWorkTitles();
+    });
+  }
 
   if (workGallery && workFilters.length) {
     const validFilters = new Set(['all', 'creative-direction', 'styling', 'photography', 'beauty']);
@@ -88,6 +168,8 @@
         const playback = video.play();
         if (playback) playback.catch(() => {});
       });
+
+      refreshWorkTitles();
 
       if (updateUrl) {
         const url = new URL(window.location.href);

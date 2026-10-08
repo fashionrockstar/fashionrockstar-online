@@ -1,0 +1,623 @@
+html.biometric-access-open,
+html.biometric-access-open body {
+  overflow: hidden;
+  background: #000;
+}
+
+html.biometric-access-open body.home {
+  animation: none;
+}
+
+html.biometric-access-open:not(.biometric-access-revealing) body.home > main {
+  visibility: hidden;
+}
+
+.biometric-access {
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --proximity: 0;
+  --scan-progress: 0;
+  --scan-y: 8%;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  --ambient-alpha: .015;
+  --ambient-mid-alpha: .01;
+  --ambient-opacity: .45;
+  --sensor-scale: .985;
+  --sensor-border-alpha: .045;
+  --sensor-ring-scale: .9;
+  --sensor-glow-alpha: .01;
+  --finger-base-alpha: .18;
+  --finger-glow-alpha: .04;
+  --progress-light-alpha: .04;
+  --progress-light-scale: .78;
+  --local-scan-alpha: .4;
+  position: fixed;
+  z-index: 1400;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 50% 50%, rgb(255 255 255 / .025), transparent 30%),
+    #000;
+  color: #fff;
+  color-scheme: dark;
+  font-family: var(--font-ui);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
+.biometric-access[hidden] {
+  display: none;
+}
+
+.biometric-access::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at var(--pointer-x) var(--pointer-y),
+      rgb(255 255 255 / var(--ambient-alpha)) 0,
+      rgb(255 255 255 / var(--ambient-mid-alpha)) 8%,
+      transparent 24%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 3px,
+      rgb(255 255 255 / .012) 3px 4px,
+      transparent 4px 8px
+    );
+  opacity: var(--ambient-opacity);
+}
+
+.biometric-access::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0 49.92%, rgb(255 255 255 / .025) 50%, transparent 50.08%),
+    linear-gradient(0deg, transparent 0 49.92%, rgb(255 255 255 / .02) 50%, transparent 50.08%);
+  opacity: .36;
+  mix-blend-mode: screen;
+}
+
+.biometric-access__stage {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+}
+
+.biometric-access__sensor {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(210px, 24vw, 310px);
+  aspect-ratio: .82;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  outline: none;
+  transform:
+    rotateX(var(--tilt-y))
+    rotateY(var(--tilt-x))
+    scale(var(--sensor-scale));
+  transform-style: preserve-3d;
+  transition: transform 160ms cubic-bezier(.2, .7, .2, 1);
+  will-change: transform;
+}
+
+.biometric-access__sensor::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 118%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgb(255 255 255 / .055) 0 14%,
+      rgb(255 255 255 / .026) 27%,
+      transparent 68%
+    );
+  filter: blur(24px);
+  transform: translateZ(-30px);
+}
+
+.biometric-access__sensor::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 94%;
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / var(--sensor-border-alpha));
+  border-radius: 50%;
+  opacity: var(--ambient-opacity);
+  transform: scale(var(--sensor-ring-scale));
+  box-shadow:
+    inset 0 0 26px rgb(255 255 255 / .02),
+    0 0 40px rgb(255 255 255 / var(--sensor-glow-alpha));
+  transition: border-color 160ms linear, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.biometric-access__fingerprint {
+  position: relative;
+  z-index: 4;
+  width: 63%;
+  height: auto;
+  overflow: visible;
+  transform: translateZ(26px);
+  filter:
+    drop-shadow(0 0 1px rgb(255 255 255 / .2))
+    drop-shadow(0 0 7px rgb(255 255 255 / var(--finger-glow-alpha)));
+}
+
+.biometric-access__fingerprint use {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.fingerprint__base {
+  stroke: rgb(255 255 255 / var(--finger-base-alpha));
+  stroke-width: 2;
+}
+
+.fingerprint__active {
+  stroke: #fff;
+  stroke-width: 2.3;
+  filter:
+    drop-shadow(0 0 3px rgb(255 255 255 / .95))
+    drop-shadow(0 0 10px rgb(255 255 255 / .42));
+}
+
+.fingerprint__ghost {
+  opacity: 0;
+  stroke: #fff;
+  stroke-width: 2.2;
+  mix-blend-mode: screen;
+}
+
+.biometric-access__local-scan {
+  position: absolute;
+  z-index: 7;
+  left: 14%;
+  top: var(--scan-y);
+  width: 72%;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  background: #fff;
+  box-shadow:
+    0 0 4px #fff,
+    0 0 13px rgb(255 255 255 / .72),
+    0 0 32px rgb(255 255 255 / .24);
+  transform: translateY(-50%) translateZ(36px);
+}
+
+.biometric-access__local-scan::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  width: 112%;
+  height: 44px;
+  transform: translateX(-50%);
+  background: linear-gradient(0deg, transparent, rgb(255 255 255 / .11), transparent);
+  filter: blur(9px);
+}
+
+.biometric-access__shockwave,
+.biometric-access__shockwave::before,
+.biometric-access__shockwave::after {
+  position: absolute;
+  z-index: 2;
+  width: 86%;
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / .28);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.biometric-access__shockwave::before,
+.biometric-access__shockwave::after {
+  content: "";
+  inset: -1px;
+  width: auto;
+}
+
+.biometric-access__shockwave::before {
+  animation-delay: 190ms;
+}
+
+.biometric-access__shockwave::after {
+  animation-delay: 420ms;
+}
+
+.biometric-access__particles {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateZ(44px);
+}
+
+.biometric-access__particles i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--particle-length);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / .75), transparent);
+  opacity: 0;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--particle-angle))
+    translateX(var(--particle-radius))
+    scaleX(.2);
+  transform-origin: 0 50%;
+}
+
+.biometric-access__contact-light {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  width: 34%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: var(--progress-light-alpha);
+  pointer-events: none;
+  background: radial-gradient(circle, rgb(255 255 255 / .32), rgb(255 255 255 / .05) 32%, transparent 68%);
+  filter: blur(7px);
+  transform: translate(-50%, -50%) scale(var(--progress-light-scale)) translateZ(10px);
+}
+
+.biometric-access__skip {
+  position: absolute;
+  z-index: 15;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  min-width: 64px;
+  min-height: 44px;
+  padding: .75rem 1rem;
+  border: 0;
+  background: transparent;
+  color: rgb(255 255 255 / .32);
+  font: inherit;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: .22em;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+
+.biometric-access__skip:hover,
+.biometric-access__skip:focus-visible {
+  color: #fff;
+}
+
+.biometric-access__skip:focus-visible,
+.biometric-access__sensor:focus-visible {
+  outline: 1px solid rgb(255 255 255 / .85);
+  outline-offset: 7px;
+}
+
+.biometric-access__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.biometric-access__handoff {
+  position: absolute;
+  z-index: 30;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.biometric-access__handoff::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  box-shadow:
+    0 0 7px #fff,
+    0 0 26px rgb(255 255 255 / .78),
+    0 0 80px rgb(255 255 255 / .32);
+}
+
+.biometric-access__handoff::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+}
+
+.biometric-access.is-contact .biometric-access__sensor {
+  transform:
+    rotateX(var(--tilt-y))
+    rotateY(var(--tilt-x))
+    scale(.965);
+}
+
+.biometric-access.is-contact .biometric-access__sensor::after {
+  border-color: rgb(255 255 255 / .32);
+  box-shadow:
+    inset 0 0 34px rgb(255 255 255 / .025),
+    0 0 50px rgb(255 255 255 / .06);
+}
+
+.biometric-access.is-contact .biometric-access__local-scan {
+  opacity: var(--local-scan-alpha);
+}
+
+.biometric-access.is-contact .biometric-access__shockwave {
+  animation: biometric-ring 1550ms cubic-bezier(.15, .7, .2, 1) infinite;
+}
+
+.biometric-access.is-contact .biometric-access__shockwave::before,
+.biometric-access.is-contact .biometric-access__shockwave::after {
+  animation: biometric-ring 1550ms cubic-bezier(.15, .7, .2, 1) infinite;
+}
+
+.biometric-access.is-contact .biometric-access__particles {
+  opacity: .9;
+}
+
+.biometric-access.is-contact .biometric-access__particles i {
+  animation: biometric-particle 860ms linear infinite;
+  animation-delay: var(--particle-delay);
+}
+
+.biometric-access.is-interrupted .biometric-access__fingerprint {
+  animation: biometric-interrupt 360ms steps(2, end);
+}
+
+.biometric-access.is-interrupted .biometric-access__local-scan {
+  opacity: .45;
+  animation: biometric-collapse 360ms cubic-bezier(.4, 0, .8, .2) forwards;
+}
+
+.biometric-access.is-granted .biometric-access__sensor {
+  animation: biometric-success 260ms cubic-bezier(.2, .75, .2, 1) forwards;
+}
+
+.biometric-access.is-granted .fingerprint__base,
+.biometric-access.is-granted .fingerprint__active {
+  stroke: #fff;
+}
+
+.biometric-access.is-granted .fingerprint__ghost--a {
+  opacity: .82;
+  clip-path: inset(18% 0 58% 0);
+  animation: biometric-glitch-a 220ms steps(2, end) forwards;
+}
+
+.biometric-access.is-granted .fingerprint__ghost--b {
+  opacity: .68;
+  clip-path: inset(57% 0 16% 0);
+  animation: biometric-glitch-b 220ms steps(2, end) forwards;
+}
+
+.biometric-access.is-granted .biometric-access__shockwave {
+  animation: biometric-success-wave 440ms cubic-bezier(.1, .75, .18, 1) forwards;
+}
+
+.biometric-access.is-granted::before {
+  animation: biometric-exposure 290ms ease-out forwards;
+}
+
+.biometric-access.is-handoff {
+  animation: biometric-wipe 980ms cubic-bezier(.72, 0, .2, 1) forwards;
+}
+
+.biometric-access.is-handoff .biometric-access__handoff {
+  visibility: visible;
+}
+
+.biometric-access.is-handoff .biometric-access__handoff::before {
+  animation: biometric-handoff-line 980ms cubic-bezier(.72, 0, .2, 1) forwards;
+}
+
+.biometric-access.is-handoff .biometric-access__handoff::after {
+  animation: biometric-flash 180ms ease-out forwards;
+}
+
+@keyframes biometric-ring {
+  0% {
+    opacity: .42;
+    transform: scale(.72);
+  }
+  58% {
+    opacity: .12;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.28);
+  }
+}
+
+@keyframes biometric-particle {
+  0% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--particle-angle))
+      translateX(var(--particle-start))
+      scaleX(.15);
+  }
+  30% {
+    opacity: .55;
+  }
+  100% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--particle-angle))
+      translateX(var(--particle-radius))
+      scaleX(1);
+  }
+}
+
+@keyframes biometric-interrupt {
+  0%, 100% { transform: translateX(0); opacity: 1; }
+  34% { transform: translateX(-5px); opacity: .72; }
+  68% { transform: translateX(4px); opacity: .88; }
+}
+
+@keyframes biometric-collapse {
+  to {
+    opacity: 0;
+    transform: translateY(40px) scaleX(.08);
+  }
+}
+
+@keyframes biometric-success {
+  0% {
+    filter: brightness(1);
+    transform: scale(.965);
+  }
+  52% {
+    filter: brightness(3.8);
+    transform: scale(1.045);
+  }
+  100% {
+    filter: brightness(1.35);
+    transform: scale(1);
+  }
+}
+
+@keyframes biometric-glitch-a {
+  0% { transform: translateX(0) scaleX(1); }
+  35% { transform: translateX(-16px) scaleX(1.08); }
+  65% { transform: translateX(9px) scaleX(.97); }
+  100% { transform: translateX(0) scaleX(1); opacity: 0; }
+}
+
+@keyframes biometric-glitch-b {
+  0% { transform: translateX(0) scaleX(1); }
+  28% { transform: translateX(13px) scaleX(1.14); }
+  62% { transform: translateX(-7px) scaleX(.92); }
+  100% { transform: translateX(0) scaleX(1); opacity: 0; }
+}
+
+@keyframes biometric-success-wave {
+  0% {
+    opacity: .8;
+    transform: scale(.72);
+    box-shadow: 0 0 10px rgb(255 255 255 / .2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.8);
+    box-shadow: 0 0 60px rgb(255 255 255 / .12);
+  }
+}
+
+@keyframes biometric-exposure {
+  0% { opacity: 1; }
+  38% { opacity: .28; filter: brightness(3); }
+  100% { opacity: .65; filter: brightness(1); }
+}
+
+@keyframes biometric-wipe {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(100% 0 0 0);
+  }
+}
+
+@keyframes biometric-handoff-line {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100dvh);
+  }
+}
+
+@keyframes biometric-flash {
+  0% { opacity: .82; }
+  26% { opacity: .16; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 760px) {
+  .biometric-access__sensor {
+    width: min(68vw, 260px);
+  }
+
+  .biometric-access__fingerprint {
+    width: 66%;
+  }
+
+  .biometric-access__skip {
+    bottom: max(.65rem, env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .biometric-access__sensor {
+    width: min(38vh, 230px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .biometric-access::after,
+  .biometric-access__particles,
+  .biometric-access__shockwave,
+  .fingerprint__ghost {
+    display: none !important;
+  }
+
+  .biometric-access__sensor,
+  .biometric-access__fingerprint,
+  .biometric-access__local-scan {
+    transition: none;
+    animation: none !important;
+  }
+
+  .biometric-access.is-handoff {
+    animation: biometric-reduced-exit 300ms ease-out forwards;
+  }
+
+  .biometric-access.is-handoff .biometric-access__handoff {
+    display: none;
+  }
+}
+
+@keyframes biometric-reduced-exit {
+  to { opacity: 0; }
+}

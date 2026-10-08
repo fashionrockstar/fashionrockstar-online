@@ -12,6 +12,32 @@ Development review uses the existing `development` branch preview at https://dev
 
 ## Content
 
+### Compact navigation and HOME footer — October 8, 2026
+
+HOME no longer has a MENU control or full-screen navigation dialog. Its existing
+Explore links remain below the intro. Instagram, LinkedIn and TikTok now sit in a
+centered row in a normal document footer after all HOME content, with 44px tap
+targets and bottom safe-area padding. The intro video, logo and entry behavior
+are preserved.
+
+On interior pages, the mobile MENU control opens a compact, transparent list in
+the header. The content stays visible below it; there is no gray panel, backdrop
+or scroll lock. The Selected Work discipline disclosure is available in this
+menu. Escape, outside activation, keyboard focus leaving the header and page
+restoration close it. Desktop navigation remains a horizontal header.
+
+Checked in Chromium at 320, 390, 768 and 1440px: HOME footer placement and social
+destinations, all six interior routes, no horizontal overflow or JavaScript
+errors, menu/submenu state, Escape focus return, outside dismissal, one-tap
+Explore navigation and Selected Work filter links. This change targets the
+`development` preview; production is separate.
+
+### Booking layout — October 8, 2026
+
+`/booking/` uses an oversized BOOKING title and contact/social links beside a compact graphite form. Services, name, email and message are visible; company, timeline and budget remain available in the native “Add project details” disclosure. The existing Netlify field names, service preselection, multi-service submission, slide/click/keyboard send behavior, failure retry and sent confirmation are preserved. Mobile stacks the heading and form; reduced-motion settings disable the entrance animation.
+
+Validated in Chromium at 320, 390, 768, 1024, 1440 and 1920 pixels, with local simulated success and failure responses, slider cancellation/completion, validation, optional-field serialization and no-JavaScript fallback. No live inquiry was sent. Review on the `development` preview before any production merge.
+
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
 - Entry: visitors arrive directly on HOME on all devices. SYSTEM ACCESS and the previous fingerprint gate are inactive.
 - Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
@@ -67,3 +93,25 @@ The September 8 completion pass checked all eight HTML routes and 151 local refe
 - Work is based on the latest `development` layout (`f6e4017`), after a verified local archive. Keep `rescue-2026-09-08` unchanged. Unpublished work on other pages is separate from this Contact update.
 - Checked: Chrome at 1440px and 320px, staggered entrance states, keyboard focus during the entrance, reduced-motion mode, unchanged Contact content/destinations, 149 local references and JavaScript syntax. This pass is saved as a development preview; production is not changed.
 - Remaining: the existing form-delivery and supplied-content checks above.
+
+## ABOUT rebuild — October 8, 2026
+
+Rebuilt `/about/` as a shorter editorial introduction: the existing logo, a clear platform description, the existing Call Her Angelina photograph linked to its project, a founder biography, and an ISSUE 01 section with its current Coming Soon status. Copy is uppercase and uses the existing Neue Montreal/Inter UI font stack. The Neue Montreal webfont is still awaiting an owner-supplied file.
+
+The previous sticky opening and scroll-driven paragraph sequence are removed, together with the unused `assets/js/about.js`. Content stays visible in normal document flow. Motion is limited to a brief logo entrance and hover feedback, with reduced-motion support. Navigation still uses the shared script; a no-JavaScript mobile fallback is scoped to ABOUT.
+
+Checked in Chromium at 1440, 768, 390 and 320 pixels: no horizontal overflow, images loaded, no page errors, mobile menu and Escape, no-JavaScript navigation and reduced motion. All local links and image sources resolve. This update targets `development`; production approval remains separate.
+
+## Selected Work mobile refinement — October 8, 2026
+
+The owner's latest direction replaces the September always-visible mobile captions. Project titles now stay hidden until mouse hover, keyboard focus, or a first touch/pen tap. A second tap on that project opens it. Scrolling, tapping elsewhere, switching filters, Escape, resize and page restoration clear the touch preview. Links retain their accessible names and native keyboard/modified-click behaviour. Without JavaScript, project links still open normally.
+
+The mobile Selected Work title now uses the desktop's proportional 13vw scale, with smaller discipline filters and project captions. Changes are scoped to Work; the gallery layout and desktop typography are retained. Checked in Chromium at 320, 390, 430, 768 and 1440 pixels, using the site's existing fonts, plus emulated touch preview/navigation, filter reset, scrolling, desktop hover and keyboard activation. No horizontal overflow or page errors. Production remains separate from this development update.
+
+## Selected Work scroll titles — October 8, 2026
+
+The owner's follow-up replaces the two-tap preview with automatic title reveals while scrolling on phone/touch layouts. Titles fade in when projects enter the viewport's reading area and fade out when they leave. Project links open with one tap again. The approved typography, gallery layout, desktop hover and keyboard focus are retained. The viewport observer refreshes after filtering, device-mode changes and back navigation; reduced motion uses the existing site-wide setting.
+
+## Selected Work hover-like mobile browsing — October 8, 2026
+
+The owner's clarification replaces the immediate viewport reveal. On touchscreens, titles start hidden and stay hidden during scrolling. After scrolling pauses for 240ms, only the project crossing the viewport centre receives the existing title fade. Movement hides it again. Filter changes, resize, page departure/restoration and device-mode changes reset the state. Native one-tap links, desktop hover, keyboard focus and approved typography/layout are retained. Verified in Chromium with touch emulation: clean arrival, delayed fade after pausing, continuous-scroll suppression, one visible title, one-tap navigation and clean back navigation.

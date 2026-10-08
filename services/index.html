@@ -15,7 +15,23 @@
     <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/work/">Work</a><a class="is-active" aria-current="page" href="/services/">Services</a><a href="/issue-01/">Issue 01</a><a href="/booking/">BOOKING</a><a href="/about/">PROFILE</a>
+      <div class="site-nav__work">
+        <div class="site-nav__work-row">
+          <a href="/work/">SELECTED WORK</a>
+          <button class="site-submenu-toggle" type="button" aria-expanded="false" aria-controls="site-work-disciplines" aria-label="Expand Selected Work disciplines"><span aria-hidden="true">+</span></button>
+        </div>
+        <ul class="site-work-disciplines" id="site-work-disciplines" hidden>
+          <li><a href="/work/">ALL</a></li>
+          <li><a href="/work/?filter=creative-direction">CREATIVE DIRECTION</a></li>
+          <li><a href="/work/?filter=photography">PHOTOGRAPHY</a></li>
+          <li><a href="/work/?filter=styling">STYLING</a></li>
+          <li><a href="/work/?filter=beauty">BEAUTY</a></li>
+        </ul>
+      </div>
+      <a class="is-active" aria-current="page" href="/services/">SERVICES</a>
+      <a href="/booking/">BOOKING</a>
+      <a href="/issue-01/">ISSUE 01</a>
+      <a href="/about/">ABOUT</a>
     </nav>
   </header>
   <main class="page-shell services-page">
