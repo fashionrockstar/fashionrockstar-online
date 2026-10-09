@@ -1,5 +1,21 @@
 # FASHIONROCKSTAR.ONLINE
 
+## Visual language — October 9, 2026
+
+**ALL PUBLIC-FACING VISIBLE TEXT MUST BE UPPERCASE.** This includes page
+titles, subtitles, body paragraphs, services, navigation, calls to action,
+form labels, and editorial UI text. Write the source copy in uppercase
+rather than depending only on visual CSS text-transform. Preserve semantic
+HTML, accessibility labels, data values and links when changing typography.
+Apply this brand rule to all future website writing and UI updates.
+
+Motion should feel refined, editorial, and precise: black, white, graphite
+and cold silver; animated typographic reveals, subtle hairline movement and
+responsive, smooth interactions. No neon, cyberpunk HUD, gradients, progress
+rings, emojis or flashy stock animation. Keep motion accessible, performant,
+keyboard-usable and compatible with reduced-motion preferences. Do not change
+the HOME animation while adjusting other pages.
+
 Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify serves the repository root. The working branch is `development`; `main` is production.
 
 ## Home entry — September 23, 2026
