@@ -418,6 +418,92 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "lucas-issue-01-2025",
+    "catalogueNumber": "08",
+    "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+    "year": "2025",
+    "date": "2025-11",
+    "datePrecision": "month",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "disciplines": "creative-direction photography styling",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+        "alt": "Original designed title spread: dark photograph at left and repeated handwritten title at right; preserve all embedded text.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+        "alt": "Original designed title spread: dark photograph at left and repeated handwritten title at right; preserve all embedded text.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-216.png",
+        "alt": "Dark close-up of layered sculptural silver necklace.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-217.png",
+        "alt": "Original sideways dark portrait close-up; do not auto-rotate or crop.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 0120.png",
+        "alt": "Original designed horizontal diptych with dark fashion portrait and printed credit.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 0121.png",
+        "alt": "Original dark double-panel composition in narrow corridor.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true,
+    "chronologicalPositionConfirmed": false,
+    "withinNovemberOrderProvisional": true
+  },
+  {
     "id": "sad-princess",
     "catalogueNumber": "03",
     "title": "#SAD PRINCESS",
