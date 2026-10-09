@@ -1,5 +1,4 @@
-// New Selected Work catalogue. Retired numeric IDs remain reserved.
-// Project 01 gallery is provisional; Project 02 and 03 cover/gallery orders are approved.
+// Active catalogue. CALL HER ANGELINA is a development preview pending signoff.
 window.fashionrockstarProjects = [
   {
     "id": "ouissam",
@@ -244,5 +243,104 @@ window.fashionrockstarProjects = [
       "MODELS: MZRABELLE, ROMI, PENELOPE"
     ],
     "galleryOrderConfirmed": true
+  },
+  {
+    "id": "call-her-angelina",
+    "submissionSequence": 4,
+    "title": "CALL HER ANGELINA",
+    "year": "",
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "category": "",
+    "role": "",
+    "disciplines": "",
+    "imported": true,
+    "draft": true,
+    "coverApproved": true,
+    "galleryOrderConfirmed": false,
+    "metadataConfirmed": false,
+    "chronologicalPositionConfirmed": false,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/call-her-angelina/00-cover-approved-640.webp 640w, /assets/media/selected-work/call-her-angelina/00-cover-approved-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp 2048w",
+        "sourceFile": "FASHIONROCKSTAR 0140.png",
+        "alt": "horizontal designed spread with portrait on left and handwritten Call her Angelina title on black right field",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-640.webp 640w, /assets/media/selected-work/call-her-angelina/01-original-title-spread-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/01-original-title-spread-2048.webp 2048w",
+        "sourceFile": "FASHIONROCKSTAR 01 20-2127.png",
+        "alt": "Alternate user-provided titled editorial spread with original small text",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "srcset": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/02-gloved-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/02-gloved-portrait-1365.webp 1365w",
+        "sourceFile": "1(2).jpg",
+        "alt": "Model wearing black gloves, hands framing face, against white tiled wall",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "srcset": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/03-ladder-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/03-ladder-portrait-1365.webp 1365w",
+        "sourceFile": "3(2).jpg",
+        "alt": "Model seated on ladder in black outfit and high boots",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "srcset": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/04-negative-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/04-negative-portrait-1365.webp 1365w",
+        "sourceFile": "4(1).jpg",
+        "alt": "High-contrast inverted treatment of model wearing long hair accessories",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/05-silver-setting-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "srcset": "/assets/media/selected-work/call-her-angelina/05-silver-setting-640.webp 640w, /assets/media/selected-work/call-her-angelina/05-silver-setting-960.webp 960w, /assets/media/selected-work/call-her-angelina/05-silver-setting-1365.webp 1365w",
+        "sourceFile": "5(1).jpg",
+        "alt": "Model in black seated against reflective silver interior",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-1365.webp",
+        "width": 1365,
+        "height": 2048,
+        "srcset": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-640.webp 640w, /assets/media/selected-work/call-her-angelina/06-alternate-silver-960.webp 960w, /assets/media/selected-work/call-her-angelina/06-alternate-silver-1365.webp 1365w",
+        "sourceFile": "ANGELINA 8.jpg",
+        "alt": "Low-angle portrait of model in black near reflective silver setting",
+        "wide": false,
+        "hasAudio": false
+      }
+    ],
+    "credits": []
   }
 ];
