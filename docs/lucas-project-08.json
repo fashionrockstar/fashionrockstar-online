@@ -1,0 +1,234 @@
+{
+  "project_title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+  "stable_id": "lucas-issue-01-2025",
+  "date": "2025-11",
+  "date_precision": "month",
+  "display_year": "2025",
+  "project_type": "EDITORIAL",
+  "roles": [
+    "CREATIVE DIRECTION",
+    "PHOTOGRAPHY",
+    "STYLING"
+  ],
+  "disciplines": "creative-direction photography styling",
+  "caption": {
+    "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+    "detail": "EDITORIAL / CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "position": "bottom-left"
+  },
+  "cover": {
+    "orientation": "HORIZONTAL",
+    "source_file": "FASHIONROCKSTAR 01 20-218.png",
+    "gallery_position": 1,
+    "full_width": true,
+    "approved": true
+  },
+  "gallery_order_approved": true,
+  "exact_day_provided": false,
+  "sequence_relation": "November 2025; proposed adjacent to BROKENHEART FOR FASHIONROCKSTAR ISSUE 01. Relative order within November is not established.",
+  "credits": [],
+  "external_links": [],
+  "legacy_archive_warning": "Existing retired assets for LUCAS BECOMES A ROCKSTAR are not the new approved submission. Never reactivate retired project ID or overwrite those assets.",
+  "media": [
+    {
+      "position": 1,
+      "source_file": "FASHIONROCKSTAR 01 20-218.png",
+      "original_path": "source-originals/FASHIONROCKSTAR 01 20-218.png",
+      "original_sha256": "6604833b87980d3b4e7f218e1521cdd6de75a79e743228f238d7ff57383aae94",
+      "original_size_bytes": 1753342,
+      "width": 2048,
+      "height": 1365,
+      "aspect_ratio": 1.500366,
+      "type": "image",
+      "alt": "Original designed title spread: dark photograph at left and repeated handwritten title at right; preserve all embedded text.",
+      "src": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+      "srcset": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp 2048w",
+      "variants": [
+        {
+          "width": 640,
+          "height": 427,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp",
+          "sha256": "7eddb0b547536b0eae5e13eb30b56982e2ae49667ab27eb11d4de027dcad1608",
+          "size_bytes": 50440
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp",
+          "sha256": "650973f6af711742be25b09ced3e4e14c173a8aa5c45206174e531bd442424b6",
+          "size_bytes": 143642
+        },
+        {
+          "width": 2048,
+          "height": 1365,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+          "sha256": "d62b9eef1f2d4df57fc0588d215fd5d5dc11f092d839fe5e9164186e76c191e9",
+          "size_bytes": 275530
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "source_file": "FASHIONROCKSTAR 01 20-216.png",
+      "original_path": "source-originals/FASHIONROCKSTAR 01 20-216.png",
+      "original_sha256": "0fe245291193a48737cb0bbcd07b03c7e23417e0649c430e5409eb84f27e371a",
+      "original_size_bytes": 1023601,
+      "width": 2048,
+      "height": 1365,
+      "aspect_ratio": 1.500366,
+      "type": "image",
+      "alt": "Dark close-up of layered sculptural silver necklace.",
+      "src": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+      "srcset": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp 2048w",
+      "variants": [
+        {
+          "width": 640,
+          "height": 427,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-640.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-640.webp",
+          "sha256": "69bb10b61830254dab0f31450f1103b6584eada95596230a920cbbf0a08050d6",
+          "size_bytes": 18742
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-1280.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-1280.webp",
+          "sha256": "edae2870461bbc04da63a2dd78bff4d958ce5691eb66c757120eb333c6032ed0",
+          "size_bytes": 49330
+        },
+        {
+          "width": 2048,
+          "height": 1365,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+          "sha256": "4c812e59dfe88f18bd15d3815930514ca7d5f8d6f52d99a5b92c771c2d25fce6",
+          "size_bytes": 91686
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "source_file": "FASHIONROCKSTAR 01 20-217.png",
+      "original_path": "source-originals/FASHIONROCKSTAR 01 20-217.png",
+      "original_sha256": "ea63e9298625be7f5356f593977b9fb971fc780257b07c815b4f4b9dd2273b5b",
+      "original_size_bytes": 3276595,
+      "width": 2048,
+      "height": 1365,
+      "aspect_ratio": 1.500366,
+      "type": "image",
+      "alt": "Original sideways dark portrait close-up; do not auto-rotate or crop.",
+      "src": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+      "srcset": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp 2048w",
+      "variants": [
+        {
+          "width": 640,
+          "height": 427,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/03-close-up-640.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-640.webp",
+          "sha256": "1a33d5436b15b36dc2fe2715875fe09c574c9982f48df009ffc1f5fcee7f47d7",
+          "size_bytes": 21568
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/03-close-up-1280.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-1280.webp",
+          "sha256": "31c43019707d8b55ea1fbc021a285cc5087e60696c30c02371381a1eb9bc2466",
+          "size_bytes": 78244
+        },
+        {
+          "width": 2048,
+          "height": 1365,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+          "sha256": "463666dfefb07cacf4912e49030e68cc599d5d675d2d40c54239df7a0b4ed74f",
+          "size_bytes": 180190
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "source_file": "FASHIONROCKSTAR 0120.png",
+      "original_path": "source-originals/FASHIONROCKSTAR 0120.png",
+      "original_sha256": "c2384382d484b242a874c8c262fe59aae2428e2fc80e17c95b5e4cad5a3d40ba",
+      "original_size_bytes": 1794751,
+      "width": 2048,
+      "height": 1365,
+      "aspect_ratio": 1.500366,
+      "type": "image",
+      "alt": "Original designed horizontal diptych with dark fashion portrait and printed credit.",
+      "src": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+      "srcset": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp 2048w",
+      "variants": [
+        {
+          "width": 640,
+          "height": 427,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-640.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-640.webp",
+          "sha256": "c5d0c6baa5c6339b4c7f59467dc535cacd17ea4b39b34bcd515418f1793f6332",
+          "size_bytes": 16750
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-1280.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-1280.webp",
+          "sha256": "0e47fc85b28368c6b0a8cc1c8f17c3d34571cd37888f0463fad7b824b0e44da4",
+          "size_bytes": 52452
+        },
+        {
+          "width": 2048,
+          "height": 1365,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+          "sha256": "e2291d51b29c7f0243f99e614a7c8209f66d9c32f2c8ae052013dae4c5a29a96",
+          "size_bytes": 111690
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "source_file": "FASHIONROCKSTAR 0121.png",
+      "original_path": "source-originals/FASHIONROCKSTAR 0121.png",
+      "original_sha256": "4a45d2e273e7dacadf6524be899f8490f2a0b602f95ed5fc90b0fe5d3a931a7f",
+      "original_size_bytes": 2110410,
+      "width": 2048,
+      "height": 1365,
+      "aspect_ratio": 1.500366,
+      "type": "image",
+      "alt": "Original dark double-panel composition in narrow corridor.",
+      "src": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp",
+      "srcset": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp 2048w",
+      "variants": [
+        {
+          "width": 640,
+          "height": 427,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-640.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-640.webp",
+          "sha256": "d84c952aab75fd9787496eced0de022411057ecfdb3140805f00a920493ab203",
+          "size_bytes": 23792
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-1280.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-1280.webp",
+          "sha256": "64a6ba51b9b5edd5ff32d6fbbb7e8e51ee7a2d0465e3f94092356e0c2116ba87",
+          "size_bytes": 78654
+        },
+        {
+          "width": 2048,
+          "height": 1365,
+          "path": "assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp",
+          "url": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp",
+          "sha256": "64b3df8f34b4b97918296b37413753abb44a592c22c983aa70667e5a78ac865e",
+          "size_bytes": 166134
+        }
+      ]
+    }
+  ]
+}
