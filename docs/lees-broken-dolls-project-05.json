@@ -1,0 +1,247 @@
+{
+  "project_slug": "lees-broken-dolls",
+  "project_title": "#LEE'S BROKEN DOLLS",
+  "date_supplied": "APRIL 2026",
+  "date_precision": "month_only",
+  "exact_day_known": false,
+  "sort_month": "2026-04",
+  "website_year": "2026",
+  "project_type": "EDITORIAL",
+  "creative_roles": [
+    "CREATIVE DIRECTION",
+    "PHOTOGRAPHY"
+  ],
+  "filter_disciplines": [
+    "creative-direction",
+    "photography"
+  ],
+  "cover": {
+    "approved": true,
+    "layout": "HORIZONTAL — ONE FULL-WIDTH IMAGE",
+    "source_original_filename": "1(3).jpg",
+    "path": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp",
+    "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp 2048w",
+    "natural_ratio": [
+      2048,
+      1365
+    ],
+    "preserve_full_original_composition": true,
+    "no_crop_or_stretch": true
+  },
+  "hover_caption": {
+    "title": "#LEE'S BROKEN DOLLS",
+    "subtitle": "EDITORIAL / CREATIVE DIRECTION / PHOTOGRAPHY",
+    "placement": "bottom-left",
+    "reveals": "existing desktop hover/focus and mobile scroll-settle"
+  },
+  "gallery": {
+    "approved_order": true,
+    "media_count": 5,
+    "include_cover_as_gallery_first_image": true,
+    "images": [
+      {
+        "order": 1,
+        "source_original_filename": "1(3).jpg",
+        "type": "image",
+        "orientation": "horizontal",
+        "source_width": 2048,
+        "source_height": 1365,
+        "source_sha256": "f37d31e0360c3ec66392ff3b88e57fb0c6a87eead1b7e20bc50dcad767a35d90",
+        "alt_text_suggestion": "Wide editorial photograph with a standing figure at left and a shadowed seated figure at right in a concrete space.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 36990,
+            "sha256": "d4d2ef6cb69c9f013874cd5ad4caac351639d925cf96f4240708dca752e6105a"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 133336,
+            "sha256": "4e569012dc550faf34142bdecbed6b8c30b6664e5426ea5432cee3211e1bce67"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 320568,
+            "sha256": "54e224d49f90857e6bbf3a07186199c86ebff7a32b827e60b29c5f46db35783c"
+          }
+        },
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp 2048w"
+      },
+      {
+        "order": 2,
+        "source_original_filename": "2 FINAL CORRECTED.jpg",
+        "type": "image",
+        "orientation": "horizontal",
+        "source_width": 2048,
+        "source_height": 1365,
+        "source_sha256": "08fb6bd1f2ba5d716e382f2d9ba6d0a742d52ff3323e1f8cee3cf26e40981a7b",
+        "alt_text_suggestion": "Seated figure in a burgundy jacket in the foreground and a second figure in black standing farther behind.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 50166,
+            "sha256": "91c79b8a04fa2ee5eae2d26797f756270cfd5a1f22b4714128f6d580abcbbd75"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 160186,
+            "sha256": "4f43fbff74a5f83b5a551bfe3be1da8c1091b5b1bda2817d6b8a7874a870ab2b"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 343820,
+            "sha256": "fc45f5a8edc3e12b1c5565eb99b03b5cf4e705b45ac2d60ce7ff475250c81ec3"
+          }
+        },
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp 2048w"
+      },
+      {
+        "order": 3,
+        "source_original_filename": "3.3.jpg",
+        "type": "image",
+        "orientation": "horizontal",
+        "source_width": 2048,
+        "source_height": 1365,
+        "source_sha256": "c4392756556a0c9020f30d60c23f6d3331fddde41491a5761a2123b30ccf528b",
+        "alt_text_suggestion": "One figure holding a red rose while another figure stands in the near foreground.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 44508,
+            "sha256": "0db0f90e09fcb87c5c0d2e4a61cba4dc7eba5899c8b077ef0787b381e32554bb"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 137722,
+            "sha256": "5e0d499a73ee451bf74cc9675fea8c424b395ddfd4f67c10c53048e2ec8575ff"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 284022,
+            "sha256": "379dbb29bba89b8f8862f695346b18debf43e99215d1faddd2a1aecf445707c6"
+          }
+        },
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/03-rose-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp 2048w"
+      },
+      {
+        "order": 4,
+        "source_original_filename": "4(2).jpg",
+        "type": "image",
+        "orientation": "horizontal",
+        "source_width": 2048,
+        "source_height": 1365,
+        "source_sha256": "4b0d6a81956593dc2fbad02ac4e372cbe9c2972055ea8a5236e18cf9b97a3c05",
+        "alt_text_suggestion": "Wide composition of two figures across a concrete setting, with white draped fabric over a chair.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 55550,
+            "sha256": "8649938a5ba44eaae01ee9b6b9bb3894ae3503a0dff4b55c15c6470c0259792d"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 232604,
+            "sha256": "96cb66a181e64d423ff1d85451f6f1211fc89f56d551990d1a8789873c5f5ae8"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 649048,
+            "sha256": "f6b72bab11d595c1ea6ae93244803949fa129a397e8e667feff1119fa52718f1"
+          }
+        },
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp 2048w"
+      },
+      {
+        "order": 5,
+        "source_original_filename": "5(2).jpg",
+        "type": "image",
+        "orientation": "horizontal",
+        "source_width": 2047,
+        "source_height": 1365,
+        "source_sha256": "5623adcd88cac6b65b6d0cd8f167c54186c886e48daeedf8bd65b96a6f87f229",
+        "alt_text_suggestion": "Figure in a burgundy jacket kneeling beside a chair draped in white fabric against a concrete wall.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 70970,
+            "sha256": "30ddbf44b9ffd7a253784fc38a5b924ee21a2352f36627f24524edcf41d4b1e7"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-1280.webp",
+            "width": 1280,
+            "height": 854,
+            "bytes": 348578,
+            "sha256": "401debeef26466501c5fc7a427fd8812c4d0e5fd2d7bacb487690fc2d5e9d4d6"
+          },
+          "2047": {
+            "path": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp",
+            "width": 2047,
+            "height": 1365,
+            "bytes": 993380,
+            "sha256": "26c79ca46333a1c2bd635b44de50c9ac57b049171c6e10e2b91e2ca7c9bc9cef"
+          }
+        },
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp 2047w"
+      }
+    ]
+  },
+  "credits": {
+    "collaborators_provided": false,
+    "additional_credits": [],
+    "invent_no_collaborators": true
+  },
+  "external_links": [],
+  "implementation": {
+    "repository": "fashionrockstar/fashionrockstar-online",
+    "base_branch": "development",
+    "new_media_namespace": "assets/media/selected-work/lees-broken-dolls-2026/",
+    "reason_for_namespace": "Previously retired project assets occupy assets/media/selected-work/lees-broken-dolls/; do not overwrite them.",
+    "expected_active_before": [
+      "OUISSAM",
+      "IN GOD I TRUST",
+      "#SAD PRINCESS"
+    ],
+    "expected_active_after": [
+      "OUISSAM",
+      "IN GOD I TRUST",
+      "#SAD PRINCESS",
+      "#LEE'S BROKEN DOLLS"
+    ],
+    "external_pending_submissions_not_automatically_added": [
+      "CALL HER ANGELINA"
+    ],
+    "never_restore_retired_legacy_entries": true,
+    "publication_requires_user_approval": true
+  }
+}
