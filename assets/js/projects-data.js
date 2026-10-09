@@ -418,6 +418,301 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "lucas-issue-01-2025",
+    "catalogueNumber": "08",
+    "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+    "year": "2025",
+    "date": "2025-11",
+    "datePrecision": "month",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "disciplines": "creative-direction photography styling",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+        "alt": "Original designed title spread: dark photograph at left and repeated handwritten title at right; preserve all embedded text.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-218.png",
+        "alt": "Original designed title spread: dark photograph at left and repeated handwritten title at right; preserve all embedded text.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-216.png",
+        "alt": "Dark close-up of layered sculptural silver necklace.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-217.png",
+        "alt": "Original sideways dark portrait close-up; do not auto-rotate or crop.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 0120.png",
+        "alt": "Original designed horizontal diptych with dark fashion portrait and printed credit.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-640.webp 640w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-1280.webp 1280w, /assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 0121.png",
+        "alt": "Original dark double-panel composition in narrow corridor.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true,
+    "chronologicalPositionConfirmed": false,
+    "withinNovemberOrderProvisional": true
+  },
+  {
+    "title": "\"2016\" SAINT JOU — MUSIC VIDEO",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RSO9OmS5S_0",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION — VIDEOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "id": "saint-jou-2016",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg",
+      "width": 1280,
+      "height": 720,
+      "sourceFile": "IMG_8441.JPG",
+      "alt": "\"2016\" by SAINT JOU — figure with outstretched arms behind a shattered-glass effect",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/02-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/02-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/02-still-1536.webp 1536w",
+        "sourceFile": "C1434E49-6517-4E5D-9129-6AA61F1C2511.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 1",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/03-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/03-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/03-still-1536.webp 1536w",
+        "sourceFile": "0A462E72-A99D-4CCB-B054-07FC07B97D1E.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 2",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/04-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/04-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/04-still-1536.webp 1536w",
+        "sourceFile": "39FA6E28-8693-4133-BEDD-B7A24912599A.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 3",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/05-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/05-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/05-still-2400.webp 2400w",
+        "sourceFile": "B338367E-D44D-472A-BEBC-8F75DE0228B9.png",
+        "alt": "\"2016\" SAINT JOU — music video still 4",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/06-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/06-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/06-still-1536.webp 1536w",
+        "sourceFile": "AEF4FF9E-C80E-4740-99F9-71F3F7E0097E.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 5",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/07-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/07-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/07-still-2400.webp 2400w",
+        "sourceFile": "CE5C0509-E789-4A38-B9F1-DEC9BF3155D6.png",
+        "alt": "\"2016\" SAINT JOU — music video still 6",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/08-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/08-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/08-still-1536.webp 1536w",
+        "sourceFile": "3D2ECA13-8B5B-450F-9804-13213654B0D1.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 7",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/09-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/09-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/09-still-1536.webp 1536w",
+        "sourceFile": "9D71E7D0-F064-490E-B4F5-B23B475F8525.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 8",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/10-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/10-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/10-still-2400.webp 2400w",
+        "sourceFile": "444C4A4A-8F26-4C82-B460-0E267FA948FD.png",
+        "alt": "\"2016\" SAINT JOU — music video still 9",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/11-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/11-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/11-still-1536.webp 1536w",
+        "sourceFile": "1835C8D1-6607-4975-A8F1-A8E63255F40A.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 10",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "category": "MUSIC VIDEO"
+  },
+  {
+    "title": "BLUE",
+    "year": "2025",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – SET DESIGN – STYLING",
+    "disciplines": "photography creative-direction set-design styling",
+    "id": "blue",
+    "imported": true,
+    "credits": [
+      "CREATIVE DIRECTION — FASHIONROCKSTAR",
+      "PHOTOGRAPHY ASSISTANT — LEE RIDORE",
+      "MODELS — ZAVYER VEGIARD, H.VICK FONTUS"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/blue/01-fashionrockstar-0135-640.webp 640w, /assets/media/selected-work/blue/01-fashionrockstar-0135-1280.webp 1280w, /assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp 2400w",
+      "sourceFile": "FASHIONROCKSTAR 0135.png",
+      "alt": "BLUE — opening layout with set photograph and credits",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/02-fashionrockstar-0136-640.webp 640w, /assets/media/selected-work/blue/02-fashionrockstar-0136-1280.webp 1280w, /assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0136.png",
+        "alt": "BLUE — three-image editorial spread",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/03-fashionrockstar-0139-640.webp 640w, /assets/media/selected-work/blue/03-fashionrockstar-0139-1280.webp 1280w, /assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0139.png",
+        "alt": "BLUE — two models on the white studio set",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/04-fashionrockstar-0138-640.webp 640w, /assets/media/selected-work/blue/04-fashionrockstar-0138-1280.webp 1280w, /assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0138.png",
+        "alt": "BLUE — editorial collage of the two models",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/05-fashionrockstar-0137-640.webp 640w, /assets/media/selected-work/blue/05-fashionrockstar-0137-1280.webp 1280w, /assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0137.png",
+        "alt": "BLUE — close-up of boots and distressed denim",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "category": "EDITORIAL",
+    "galleryOrderConfirmed": true
+  },
+  {
     "id": "sad-princess",
     "catalogueNumber": "03",
     "title": "#SAD PRINCESS",
@@ -729,6 +1024,470 @@ window.fashionrockstarProjects = [
       }
     ],
     "credits": [],
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "MICAELA GOMES [M.A.D 2026]",
+    "role": "PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN",
+    "year": "2026",
+    "disciplines": "photography creative-direction",
+    "id": "micaela-gomes-mad-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp",
+      "srcset": "/assets/media/selected-work/micaela-gomes/established-cover-640.webp 640w, /assets/media/selected-work/micaela-gomes/established-cover-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/established-cover-2400.webp 2048w",
+      "width": 2048,
+      "height": 1365
+    },
+    "gallery": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+        "poster": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
+        "width": 720,
+        "height": 404,
+        "sourceShare": "https://adobe.ly/46AYGeP",
+        "autoplay": true,
+        "loop": true,
+        "controls": false,
+        "wide": true,
+        "hasAudio": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/01-1-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/01-1-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/01-1-1-2400.webp 2400w",
+        "sourceFile": "1.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/02-2-640.webp 640w, /assets/media/selected-work/micaela-gomes/02-2-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/02-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/03-4-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/03-4-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/03-4-1-2400.webp 2400w",
+        "sourceFile": "4.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY"
+  },
+  {
+    "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+    "role": "CREATIVE DIRECTION AND MAKEUP",
+    "year": "2026",
+    "disciplines": "creative-direction beauty",
+    "id": "kaine-basquiat-mural-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/kaine-basquiat/cover-2400.webp",
+      "width": 2048,
+      "height": 1365,
+      "srcset": "/assets/media/selected-work/kaine-basquiat/cover-640.webp 640w, /assets/media/selected-work/kaine-basquiat/cover-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/cover-2400.webp 2048w",
+      "sourceFile": "COVER .jpg",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "instagram",
+        "src": "https://www.instagram.com/reel/DZVRQytRlJW/",
+        "alternateUrl": "https://vt.tiktok.com/ZSq4599eK/",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7164 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7411 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7449 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7450 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7478 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/06-09-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/06-09-640.webp 640w, /assets/media/selected-work/kaine-basquiat/06-09-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/06-09-2400.webp 2400w",
+        "sourceFile": "09.jpg",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/08-stand-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/08-stand-640.webp 640w, /assets/media/selected-work/kaine-basquiat/08-stand-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/08-stand-2400.webp 2400w",
+        "sourceFile": "stand.jpg",
+        "wide": false,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "CREATIVE DIRECTION / BEAUTY",
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTARMAXXING",
+    "titleBreakAfter": "FASHIONROCKSTAR",
+    "year": "2026",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – STYLING",
+    "disciplines": "photography creative-direction styling",
+    "pending": [
+      "1.jpg is the provisional cover, awaiting owner review.",
+      "Collaborator credits have not been supplied."
+    ],
+    "id": "fashionrockstarmaxxing",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp 2400w",
+      "sourceFile": "1.jpg",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp 2400w",
+        "sourceFile": "2 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp 2400w",
+        "sourceFile": "3 (2).jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY",
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "MANSAWORLD",
+    "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
+    "year": "2026",
+    "id": "mansaworld",
+    "cover": {
+      "type": "image",
+      "src": "/assets/images/projects/project-03-mansaworld/fr4.jpg"
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1184.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr5-copy.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1178.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-2-2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1163.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/5.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-2-1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-4.jpg"
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY",
+    "disciplines": "photography creative-direction",
+    "imported": true,
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+    "year": "",
+    "role": "",
+    "disciplines": "",
+    "pending": [
+      "Year, role and collaborator credits need confirmation."
+    ],
+    "id": "brokenheart-campaign",
+    "imported": true,
+    "credits": [],
+    "cover": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
+        "wide": false,
+        "hasAudio": true
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp 2400w",
+        "sourceFile": "_DSC6257-2 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/02-1111-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/02-1111-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp 2400w",
+        "sourceFile": "1111.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp 2400w",
+        "sourceFile": "FEET1 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "category": "CAMPAIGN",
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+    "year": "2026",
+    "role": "CREATIVE DIRECTOR – LEAD STYLIST",
+    "disciplines": "creative-direction styling",
+    "id": "brokenheart-runway-mad-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "video",
+      "src": "/assets/media/selected-work/brokenheart-runway/cover.mp4",
+      "poster": "/assets/media/selected-work/brokenheart-runway/cover-poster.webp",
+      "width": 1080,
+      "height": 608,
+      "sourceFile": "COVER.mp4",
+      "wide": true,
+      "hasAudio": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/01-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/01-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/01-1-2400.webp 2400w",
+        "sourceFile": "1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/02-2-640.webp 640w, /assets/media/selected-work/brokenheart-runway/02-2-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/02-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/03-3-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/03-3-640.webp 640w, /assets/media/selected-work/brokenheart-runway/03-3-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/03-3-2400.webp 2400w",
+        "sourceFile": "3.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/04-4-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/04-4-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp 2400w",
+        "sourceFile": "4 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/05-4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/05-4-640.webp 640w, /assets/media/selected-work/brokenheart-runway/05-4-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/05-4-2400.webp 2400w",
+        "sourceFile": "4.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/06-5-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/06-5-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp 2400w",
+        "sourceFile": "5 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/07-7-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/07-7-640.webp 640w, /assets/media/selected-work/brokenheart-runway/07-7-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/07-7-2400.webp 2400w",
+        "sourceFile": "7.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "RUNWAY",
     "galleryOrderConfirmed": true
   }
 ];
