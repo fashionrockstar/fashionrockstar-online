@@ -9,7 +9,7 @@ const css = fs.readFileSync(path.join(root, 'assets/css/cover-continuity.css'), 
 const html = fs.readFileSync(path.join(root, 'work/index.html'), 'utf8');
 const catalog = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/projects-data.js'), 'utf8'), catalog);
-const cards = new Map([...html.matchAll(/<a\b[^>]*data-project-id="(\d+)"[^>]*>([\s\S]*?)<\/a>/g)].map(([_, id, body]) => [Number(id), [...body.matchAll(/<(img|video)\b([^>]*)>/g)].map(([__, tag, text]) => {
+const cards = new Map([...html.matchAll(/<a\b[^>]*data-project-id="([a-z0-9]+(?:-[a-z0-9]+)*)"[^>]*>([\s\S]*?)<\/a>/g)].map(([_, id, body]) => [id, [...body.matchAll(/<(img|video)\b([^>]*)>/g)].map(([__, tag, text]) => {
   const attrs = Object.fromEntries([...text.matchAll(/([\w-]+)="([^"]*)"/g)].map(m => [m[1], m[2]]));
   return { type: tag === 'video' ? 'video' : 'image', src: attrs.src || attrs['data-src'], poster: attrs.poster };
 })]));

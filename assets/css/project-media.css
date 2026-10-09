@@ -12,13 +12,6 @@
   height: auto;
   object-fit: contain;
 }
-.work-tile--natural:hover img,
-.work-tile--natural:hover video,
-.work-tile--natural:focus-visible img,
-.work-tile--natural:focus-visible video {
-  filter: none;
-  transform: none;
-}
 .project-hero.project-hero--natural video {
   width: 100%;
   height: auto;
