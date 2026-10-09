@@ -6,11 +6,14 @@
   <meta name="description" content="FASHIONROCKSTAR SERVICES: CREATIVE DIRECTION, PHOTOGRAPHY, VIDEOGRAPHY, STYLING AND BEAUTY.">
   <title>SERVICES — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/editorial-system.css">
   <link rel="stylesheet" href="/assets/css/services.css">
+  <script src="/assets/js/editorial-motion.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/services.js" defer></script>
 </head>
-<body class="theme-dark">
+<body class="theme-dark editorial-interior">
+  <a class="site-skip" href="#main-content">SKIP TO CONTENT</a>
   <header class="site-header">
     <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
@@ -34,10 +37,10 @@
       <a href="/about/">ABOUT</a>
     </nav>
   </header>
-  <main class="page-shell services-page">
+  <main id="main-content" class="page-shell services-page">
     <header class="services-intro">
-      <h1 class="page-title">SERVICES</h1>
-      <div class="services-intro__copy">
+      <h1 class="page-title" data-editorial-reveal="title">SERVICES</h1>
+      <div class="services-intro__copy" data-editorial-reveal>
 <p>FASHIONROCKSTAR DEVELOPS VISUAL WORLDS ACROSS CREATIVE DIRECTION, PHOTOGRAPHY, VIDEOGRAPHY, STYLING AND BEAUTY.</p>
 <p>FROM AN INITIAL IDEA TO A DEFINED COMMISSION, EACH DISCIPLINE CAN WORK INDEPENDENTLY OR COME TOGETHER WITHIN ONE COHESIVE PROJECT.</p>
       </div>
@@ -46,7 +49,7 @@
     <ol class="service-list">
 <li>
 <details class="service" name="services" id="creative-direction">
-<summary class="service-toggle" aria-labelledby="creative-direction-title">
+<summary class="service-toggle" data-editorial-reveal aria-labelledby="creative-direction-title">
 <h2 class="service-title" id="creative-direction-title">CREATIVE DIRECTION</h2>
 <span class="service-action" aria-hidden="true"><span class="service-action__closed">VIEW DETAILS <b>+</b></span><span class="service-action__open">CLOSE DETAILS <b>−</b></span></span>
 </summary>
@@ -88,7 +91,7 @@
 </li>
 <li>
 <details class="service" name="services" id="photography">
-<summary class="service-toggle" aria-labelledby="photography-title">
+<summary class="service-toggle" data-editorial-reveal aria-labelledby="photography-title">
 <h2 class="service-title" id="photography-title">PHOTOGRAPHY</h2>
 <span class="service-action" aria-hidden="true"><span class="service-action__closed">VIEW DETAILS <b>+</b></span><span class="service-action__open">CLOSE DETAILS <b>−</b></span></span>
 </summary>
@@ -136,7 +139,7 @@
 </li>
 <li>
 <details class="service" name="services" id="videography">
-<summary class="service-toggle" aria-labelledby="videography-title">
+<summary class="service-toggle" data-editorial-reveal aria-labelledby="videography-title">
 <h2 class="service-title" id="videography-title">VIDEOGRAPHY</h2>
 <span class="service-action" aria-hidden="true"><span class="service-action__closed">VIEW DETAILS <b>+</b></span><span class="service-action__open">CLOSE DETAILS <b>−</b></span></span>
 </summary>
@@ -184,7 +187,7 @@
 </li>
 <li>
 <details class="service" name="services" id="styling">
-<summary class="service-toggle" aria-labelledby="styling-title">
+<summary class="service-toggle" data-editorial-reveal aria-labelledby="styling-title">
 <h2 class="service-title" id="styling-title">STYLING</h2>
 <span class="service-action" aria-hidden="true"><span class="service-action__closed">VIEW DETAILS <b>+</b></span><span class="service-action__open">CLOSE DETAILS <b>−</b></span></span>
 </summary>
@@ -230,7 +233,7 @@
 </li>
 <li>
 <details class="service" name="services" id="beauty">
-<summary class="service-toggle" aria-labelledby="beauty-title">
+<summary class="service-toggle" data-editorial-reveal aria-labelledby="beauty-title">
 <h2 class="service-title" id="beauty-title">BEAUTY</h2>
 <span class="service-action" aria-hidden="true"><span class="service-action__closed">VIEW DETAILS <b>+</b></span><span class="service-action__open">CLOSE DETAILS <b>−</b></span></span>
 </summary>
@@ -277,7 +280,7 @@
 </details>
 </li>
     </ol>
-    <section class="services-closing" aria-labelledby="services-closing-title">
+    <section class="services-closing" data-editorial-reveal aria-labelledby="services-closing-title">
       <h2 id="services-closing-title">ONE PROJECT.<br>MULTIPLE DISCIPLINES.</h2>
       <div class="services-closing__copy">
 <p>EACH DISCIPLINE CAN STAND ON ITS OWN OR WORK ALONGSIDE THE OTHERS. THE APPROACH IS SHAPED BY THE PROJECT'S IDENTITY, SCALE AND INTENDED OUTCOME.</p>
