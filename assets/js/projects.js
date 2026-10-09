@@ -123,26 +123,32 @@
   const covers = Array.isArray(project.cover) ? project.cover : [project.cover];
   hero.classList.toggle('project-hero--pair', covers.length > 1);
   hero.replaceChildren(...covers.map((item, position) => createMedia(item, position, true)));
+  // Header media appears once, including responsive versions of the same image.
+  const mediaKeys = item => [item.src, ...(item.srcset || '').split(',').map(candidate => candidate.trim().split(/\s+/)[0])]
+    .filter(Boolean)
+    .map(src => `${item.type}:${new URL(src, location.href).href}`);
+  const headerMedia = new Set(covers.flatMap(mediaKeys));
+  const galleryItems = project.gallery.filter(item => !mediaKeys(item).some(key => headerMedia.has(key)));
   const gallery = document.querySelector('.project-images');
   gallery.classList.add('project-images--natural');
-  gallery.hidden = !project.gallery.length;
+  gallery.hidden = !galleryItems.length;
   gallery.replaceChildren();
   let portraitPending = false;
-  project.gallery.forEach((item, position) => {
+  galleryItems.forEach((item, position) => {
     const figure = document.createElement('figure');
     figure.className = 'project-image';
     if (item.wide) {
       figure.classList.add('project-image--wide');
       portraitPending = false;
     } else if (project.imported) {
-      const next = project.gallery[position + 1];
+      const next = galleryItems[position + 1];
       if (!portraitPending && (!next || next.wide)) figure.classList.add('project-image--centered');
       else portraitPending = !portraitPending;
     }
     figure.append(createMedia(item, position));
     gallery.append(figure);
   });
-  if (project.gallery.some(item => item.type === 'instagram')) {
+  if (galleryItems.some(item => item.type === 'instagram')) {
     const renderInstagram = () => window.instgrm?.Embeds?.process();
     if (window.instgrm?.Embeds) renderInstagram();
     else {
