@@ -650,6 +650,19 @@ body.home {
   text-transform: uppercase;
 }
 
+/* Editorial attribution beneath a Selected Work title when verified. */
+.work-tile__details {
+  display: block;
+  margin-top: .45rem;
+  max-width: 100%;
+  font-family: var(--font-ui);
+  font-size: clamp(.8125rem, 1.15vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
+
 .work-tile:focus-visible img,
 .work-tile:focus-visible video {
   filter: brightness(.7);
@@ -1265,16 +1278,21 @@ body.home {
   }
 
   .work-tile__meta {
-    padding: clamp(.75rem, 3vw, 1rem);
+    padding: clamp(1rem, 4vw, 1.5rem);
   }
 
   .work-tile__meta b {
-    font-size: clamp(1rem, 4.25vw, 1.75rem);
+    font-size: clamp(1.5rem, 6.2vw, 2rem);
     line-height: 1.05;
   }
 
   .work-row--pair .work-tile__meta b {
-    font-size: clamp(.875rem, 3.4vw, 1.375rem);
+    font-size: clamp(1.125rem, 4.8vw, 1.5rem);
+  }
+
+  .work-tile__details {
+    margin-top: .375rem;
+    font-size: clamp(.75rem, 3.3vw, .875rem);
   }
 
   .project-head {
