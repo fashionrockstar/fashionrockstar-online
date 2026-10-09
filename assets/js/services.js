@@ -57,4 +57,25 @@
 
   window.addEventListener('hashchange', openFragment);
   openFragment();
+
+  // Reveal each service once it enters the viewport; no scroll handler or
+  // animation gating in reduced-motion or unsupported browsers.
+  const motionDisabled = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window && !motionDisabled.matches) {
+    const targets = Array.from(page.querySelectorAll('.service-list > li, .services-closing'));
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-inview');
+        currentObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -4% 0px' });
+
+    // Deep links must not hide an expanded service while its content opens.
+    services.forEach((service) => {
+      if (service.open) service.closest('li')?.classList.add('is-inview');
+    });
+    page.classList.add('has-scroll-motion');
+    targets.forEach((target) => observer.observe(target));
+  }
 })();
