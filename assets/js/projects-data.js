@@ -1,4 +1,4 @@
-// Active catalogue. CALL HER ANGELINA is a development preview pending signoff.
+// Active catalogue. CALL HER ANGELINA's shoot date remains unconfirmed.
 window.fashionrockstarProjects = [
   {
     "id": "ouissam",
@@ -251,14 +251,16 @@ window.fashionrockstarProjects = [
     "year": "",
     "date": "",
     "datePrecision": "unconfirmed",
-    "category": "",
-    "role": "",
-    "disciplines": "",
+    "category": "EDITORIAL",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION",
+    "disciplines": "photography creative-direction",
     "imported": true,
-    "draft": true,
+    "draft": false,
     "coverApproved": true,
-    "galleryOrderConfirmed": false,
-    "metadataConfirmed": false,
+    "galleryOrderConfirmed": true,
+    "categoryAndRolesConfirmed": true,
+    "dateConfirmed": false,
+    "displayPositionApproved": true,
     "chronologicalPositionConfirmed": false,
     "cover": [
       {
