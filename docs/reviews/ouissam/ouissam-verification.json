@@ -1,0 +1,20 @@
+{
+  "base": "2f7d576",
+  "activeProjectCount": 1,
+  "archivedProjectCount": 14,
+  "galleryCount": 6,
+  "coverPairConfirmed": true,
+  "retiredAndInvalidRouteCases": 21,
+  "allInvalidRoutesRedirect": true,
+  "allMediaPathsExist": true,
+  "removedMediaFiles": 0,
+  "unrelatedTrackedFilesChanged": 0,
+  "galleryOrder": "provisional upload order",
+  "changedFiles": [
+    "assets/css/project-media.css",
+    "assets/js/projects-data.js",
+    "assets/js/projects.js",
+    "project/index.html",
+    "work/index.html"
+  ]
+}

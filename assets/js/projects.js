@@ -2,9 +2,13 @@
   'use strict';
   if (!document.querySelector('[data-project-page]')) return;
   const projects = window.fashionrockstarProjects;
-  if (!projects?.length) return;
-  const requestedId = Number(new URLSearchParams(location.search).get('id') || 1);
-  const index = Math.max(0, projects.findIndex(project => project.id === requestedId));
+  const requestedId = new URLSearchParams(location.search).get('id');
+  const index = projects?.findIndex(project => String(project.id) === requestedId) ?? -1;
+  // Retired numeric IDs and unknown URLs must never open the first new project.
+  if (index < 0) {
+    location.replace('/work/');
+    return;
+  }
   const project = projects[index];
   document.body.classList.toggle('project-imported', Boolean(project.imported));
   const setText = (selector, value) => {
@@ -151,8 +155,13 @@
     }
   }
   for (const [direction, offset] of [['prev', -1], ['next', 1]]) {
-    const destination = projects[(index + offset + projects.length) % projects.length];
     const link = document.querySelector(`[data-project-${direction}]`);
+    link.hidden = projects.length < 2;
+    if (link.hidden) {
+      link.removeAttribute('href');
+      continue;
+    }
+    const destination = projects[(index + offset + projects.length) % projects.length];
     link.href = `/project/?id=${destination.id}`;
     link.setAttribute('aria-label', `${direction === 'prev' ? 'Previous' : 'Next'} project: ${destination.title}`);
   }

@@ -72,3 +72,30 @@
   .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }
   .project-images .project-image--centered { width: 100%; }
 }
+
+/* Keep the approved portrait cover pair side by side at every viewport. */
+.project-page .project-hero.project-hero--pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-hero--pair > img { min-width: 0; }
+.project-nav > [hidden] { display: none; }
+.project-nav__grid { grid-column: 2; }
+
+/* Match the approved Project 01 caption without changing shared site styles. */
+.work-page .work-tile__details {
+  display: block;
+  margin-top: .45rem;
+  max-width: 100%;
+  font-family: var(--font-ui);
+  font-size: clamp(.8125rem, 1.15vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  .work-page .work-tile__meta { padding: clamp(1rem, 4vw, 1.5rem); }
+  .work-page .work-tile__meta b { font-size: clamp(1.5rem, 6.2vw, 2rem); line-height: 1.05; }
+  .work-page .work-row--pair .work-tile__meta b { font-size: clamp(1.125rem, 4.8vw, 1.5rem); }
+  .work-page .work-tile__details { margin-top: .375rem; font-size: clamp(.75rem, 3.3vw, .875rem); }
+}
