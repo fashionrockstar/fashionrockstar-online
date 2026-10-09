@@ -1,0 +1,51 @@
+{
+  "branch": "codex/site-corrections-20261009",
+  "developmentBase": "0046210f57ea9f9d473b9e6b3495b17c1ed9c91f",
+  "runtimeSourceMain": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+  "projects": 16,
+  "localProjectMediaReferences": 275,
+  "missingMedia": [],
+  "activePagesChecked": [
+    "index.html",
+    "work/index.html",
+    "project/index.html",
+    "services/index.html",
+    "booking/index.html",
+    "issue-01/index.html"
+  ],
+  "missingReferences": [],
+  "netlifyFieldNames": [
+    "budget",
+    "company",
+    "company-website",
+    "email",
+    "form-name",
+    "name",
+    "project-details",
+    "project-type",
+    "timeline"
+  ],
+  "preserved": "Project data, rendering, original project media and original ABOUT source match development. Two restored Home assets match main.",
+  "syntaxChecked": [
+    "/assets/js/entry-loader.js",
+    "/assets/js/main.js",
+    "/assets/js/landing.js",
+    "/assets/js/project-media.js",
+    "/assets/js/cover-continuity.js",
+    "/assets/js/projects-data.js",
+    "/assets/js/projects.js",
+    "/assets/js/services.js",
+    "/assets/js/booking.js"
+  ],
+  "aboutRedirects": "Forced 302 for /about and /about/* to /",
+  "localBookingSimulation": {
+    "requests": 2,
+    "responses": [
+      500,
+      200
+    ],
+    "externalTransmission": false
+  },
+  "galleryCountsMatch": true,
+  "diffWhitespaceCheck": "passed"
+}

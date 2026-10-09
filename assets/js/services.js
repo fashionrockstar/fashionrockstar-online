@@ -5,56 +5,150 @@
   if (!page) return;
   const services = Array.from(page.querySelectorAll('details.service'));
   const aliases = { visuals: 'photography', video: 'videography' };
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const running = new WeakMap();
 
   const replaceFragment = (id) => {
     try {
       const url = new URL(window.location.href);
-      url.hash = id;
-      window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}${url.hash}`);
+      url.hash = id || '';
+      window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
     } catch {
-      // The disclosures still work when history access is unavailable.
+      // Disclosures still work if browser history is blocked.
     }
+  };
+  const cancel = (service) => {
+    const item = running.get(service);
+    if (item) {
+      running.delete(service);
+      item.animation.cancel();
+    }
+    service.style.removeProperty('height');
+    service.style.removeProperty('overflow');
+  };
+  const animateDisclosure = (service, expand) => {
+    const summary = service.querySelector('summary');
+    if (!summary) return;
+    const start = service.getBoundingClientRect().height;
+    cancel(service);
+    service.style.height = start + 'px';
+    service.style.overflow = 'hidden';
+    if (expand) {
+      services.forEach((other) => {
+        if (other === service) return;
+        cancel(other);
+        other.open = false;
+      });
+      service.open = true;
+      service.closest('li')?.classList.add('is-inview');
+      replaceFragment(service.id);
+    }
+    const saved = service.style.height;
+    service.style.height = 'auto';
+    const openHeight = service.getBoundingClientRect().height;
+    service.style.height = saved;
+    const destination = expand ? openHeight : summary.getBoundingClientRect().height;
+    if (Math.abs(destination - start) < 2) {
+      if (!expand) service.open = false;
+      cancel(service);
+      return;
+    }
+    const animation = service.animate([
+      { height: start + 'px' },
+      { height: destination + 'px' }
+    ], {
+      duration: expand ? 760 : 480,
+      easing: 'cubic-bezier(.22, 1, .36, 1)',
+      fill: 'forwards'
+    });
+    running.set(service, { animation, expand });
+    animation.addEventListener('finish', () => {
+      if (running.get(service)?.animation !== animation) return;
+      running.delete(service);
+      if (!expand) service.open = false;
+      service.style.removeProperty('height');
+      service.style.removeProperty('overflow');
+    }, { once: true });
   };
 
   services.forEach((service) => {
+    const summary = service.querySelector('summary');
+    summary?.addEventListener('click', (event) => {
+      if (reducedMotion.matches || typeof service.animate !== 'function') return;
+      event.preventDefault();
+      const current = running.get(service);
+      const expand = current?.expand === false || (!current && !service.open);
+      animateDisclosure(service, expand);
+    });
+    summary?.addEventListener('focusin', () => {
+      service.closest('li')?.classList.add('is-inview');
+    });
     service.addEventListener('toggle', () => {
       if (service.open) {
-        // Fallback for browsers without exclusive details[name] support.
         services.forEach((other) => {
-          if (other !== service) other.open = false;
+          if (other === service || !other.open) return;
+          cancel(other);
+          other.open = false;
         });
+        service.closest('li')?.classList.add('is-inview');
         replaceFragment(service.id);
-        // Closing a long section above can move the newly opened heading
-        // outside the viewport. Wait for that reflow, then keep it in view.
         window.requestAnimationFrame(() => {
           if (!service.open) return;
-          const summary = service.querySelector('summary');
           const bounds = summary.getBoundingClientRect();
           if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
             service.scrollIntoView({ block: 'start', behavior: 'instant' });
           }
         });
-      } else if (window.location.hash === `#${service.id}`) {
-        replaceFragment('');
+      } else {
+        cancel(service);
+        if (window.location.hash === '#' + service.id) replaceFragment('');
       }
     });
   });
 
   const openFragment = () => {
     let id;
-    try {
-      id = decodeURIComponent(window.location.hash.slice(1));
-    } catch {
-      return;
-    }
+    try { id = decodeURIComponent(window.location.hash.slice(1)); }
+    catch { return; }
     id = aliases[id] || id;
     const target = services.find((service) => service.id === id);
     if (!target) return;
-    services.forEach((service) => { service.open = service === target; });
-    // Reveals deep-linked stages without animating the visitor across the page.
-    window.requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    services.forEach((service) => {
+      cancel(service);
+      service.open = service === target;
+    });
+    target.closest('li')?.classList.add('is-inview');
+    window.requestAnimationFrame(() =>
+      target.scrollIntoView({ block: 'start', behavior: 'instant' }));
   };
-
   window.addEventListener('hashchange', openFragment);
   openFragment();
+
+  if ('IntersectionObserver' in window && !reducedMotion.matches) {
+    const targets = Array.from(page.querySelectorAll('.service-list > li, .services-closing'));
+    const observer = new IntersectionObserver((entries, current) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-inview');
+        current.unobserve(entry.target);
+      });
+    }, { threshold: .055, rootMargin: '0px 0px -3% 0px' });
+    services.forEach((service) => {
+      if (service.open) service.closest('li')?.classList.add('is-inview');
+    });
+    page.classList.add('has-scroll-motion');
+    targets.forEach((target) => observer.observe(target));
+  }
+
+  reducedMotion.addEventListener?.('change', () => {
+    if (!reducedMotion.matches) return;
+    services.forEach((service) => {
+      const active = running.get(service);
+      if (!active) return;
+      const expand = active.expand;
+      cancel(service);
+      service.open = expand;
+    });
+    page.classList.remove('has-scroll-motion');
+  });
 })();

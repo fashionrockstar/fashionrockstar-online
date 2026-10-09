@@ -1,0 +1,878 @@
+[
+  {
+    "check": "work-desktop",
+    "result": {
+      "aboutLinks": 0,
+      "scrollWidth": 1897,
+      "tiles": 16,
+      "uppercase": true,
+      "width": 1912
+    }
+  },
+  {
+    "check": "services-mobile-clicks",
+    "result": [
+      {
+        "expected": "creative-direction",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "photography",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "videography",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "styling",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "beauty",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      }
+    ]
+  },
+  {
+    "check": "services-keyboard-responsive",
+    "result": [
+      {
+        "expected": "creative-direction",
+        "columns": "120.453px 138.547px",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "photography",
+        "columns": "120.453px 138.547px",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "videography",
+        "columns": "120.453px 138.547px",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "styling",
+        "columns": "120.453px 138.547px",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "beauty",
+        "columns": "120.453px 138.547px",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "creative-direction",
+        "columns": "153.016px 175.984px",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "photography",
+        "columns": "153.016px 175.984px",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "videography",
+        "columns": "153.016px 175.984px",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "styling",
+        "columns": "153.016px 175.984px",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "beauty",
+        "columns": "153.016px 175.984px",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 375,
+        "width": 390
+      },
+      {
+        "expected": "creative-direction",
+        "columns": "325.109px 373.875px",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 745,
+        "width": 760
+      },
+      {
+        "expected": "photography",
+        "columns": "325.109px 373.875px",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 745,
+        "width": 760
+      },
+      {
+        "expected": "videography",
+        "columns": "325.109px 373.875px",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 745,
+        "width": 760
+      },
+      {
+        "expected": "styling",
+        "columns": "325.109px 373.875px",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 745,
+        "width": 760
+      },
+      {
+        "expected": "beauty",
+        "columns": "325.109px 373.875px",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 745,
+        "width": 760
+      },
+      {
+        "expected": "creative-direction",
+        "columns": "312.141px 358.969px",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 746,
+        "width": 761
+      },
+      {
+        "expected": "photography",
+        "columns": "232.531px 406.922px",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 746,
+        "width": 761
+      },
+      {
+        "expected": "videography",
+        "columns": "232.531px 406.922px",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 746,
+        "width": 761
+      },
+      {
+        "expected": "styling",
+        "columns": "232.531px 406.922px",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 746,
+        "width": 761
+      },
+      {
+        "expected": "beauty",
+        "columns": "232.531px 406.922px",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 746,
+        "width": 761
+      },
+      {
+        "expected": "creative-direction",
+        "columns": "459.688px 804.453px",
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "width": 1440
+      },
+      {
+        "expected": "photography",
+        "columns": "459.688px 804.453px",
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "width": 1440
+      },
+      {
+        "expected": "videography",
+        "columns": "459.688px 804.453px",
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "width": 1440
+      },
+      {
+        "expected": "styling",
+        "columns": "459.688px 804.453px",
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "width": 1440
+      },
+      {
+        "expected": "beauty",
+        "columns": "444.875px 778.531px",
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "width": 1440
+      }
+    ]
+  },
+  {
+    "check": "services-320-text-200-percent",
+    "result": [
+      {
+        "expected": "creative-direction",
+        "logo": [
+          186.609375,
+          273
+        ],
+        "menu": [
+          32,
+          186.609375
+        ],
+        "open": [
+          "creative-direction"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "photography",
+        "logo": [
+          186.609375,
+          273
+        ],
+        "menu": [
+          32,
+          186.609375
+        ],
+        "open": [
+          "photography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "videography",
+        "logo": [
+          186.609375,
+          273
+        ],
+        "menu": [
+          32,
+          186.609375
+        ],
+        "open": [
+          "videography"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "styling",
+        "logo": [
+          186.609375,
+          273
+        ],
+        "menu": [
+          32,
+          186.609375
+        ],
+        "open": [
+          "styling"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      },
+      {
+        "expected": "beauty",
+        "logo": [
+          186.609375,
+          273
+        ],
+        "menu": [
+          32,
+          186.609375
+        ],
+        "open": [
+          "beauty"
+        ],
+        "overflow": 0,
+        "scrollWidth": 305,
+        "width": 320
+      }
+    ]
+  },
+  {
+    "check": "compact-mobile-menu",
+    "result": {
+      "aboutLinks": 0,
+      "bodyOverflow": "visible",
+      "expanded": "true",
+      "navBackground": "rgba(0, 0, 0, 0)",
+      "visibleNav": [
+        "SERVICES",
+        "BOOKING",
+        "ISSUE 01"
+      ]
+    }
+  },
+  {
+    "check": "menu-escape-and-submenu-reset",
+    "result": {
+      "expanded": "false",
+      "focus": "menu-toggle",
+      "subHidden": true
+    }
+  },
+  {
+    "check": "booking-local-pending",
+    "busy": "true",
+    "buttonDisabled": true,
+    "disabledFields": true,
+    "status": "SENDING…"
+  },
+  {
+    "check": "booking-local-http-error-recovery",
+    "budget": "discuss",
+    "company": "LOCAL SIMULATION",
+    "message": "LOCAL REVIEW ONLY. THIS SUBMISSION IS HANDLED BY THE LOCAL SIMULATOR.",
+    "name": "CODEX LOCAL REVIEW",
+    "ready": true,
+    "services": [
+      "photography",
+      "beauty"
+    ],
+    "status": "SUBMISSION FAILED — PLEASE TRY AGAIN.",
+    "timeline": "TEST ONLY"
+  },
+  {
+    "check": "booking-local-success-after-keyboard-retry",
+    "buttonDisabled": true,
+    "confirmation": "REQUEST STATUS / RECEIVED\n\nINQUIRY\nRECEIVED.\n\nYOUR REQUEST HAS BEEN SENT.\nA BOOKING IS CONFIRMED SEPARATELY.",
+    "focus": "inquiry-confirmation",
+    "overflow": false,
+    "projectHidden": true,
+    "status": "INQUIRY SENT."
+  },
+  {
+    "check": "booking-desktop-900",
+    "button": {
+      "bottom": 804.1174926757812,
+      "top": 748.1174926757812
+    },
+    "overflow": false,
+    "selected": [
+      "photography"
+    ],
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "check": "booking-short-desktop-reachable-submit",
+    "button": {
+      "bottom": 572.6143798828125,
+      "top": 516.6143798828125
+    },
+    "overflow": false,
+    "viewport": [
+      1440,
+      650
+    ]
+  },
+  {
+    "check": "navigation-no-js",
+    "about": false,
+    "menuDisplay": "none",
+    "nav": "SELECTED WORK\nSERVICES\nBOOKING\nISSUE 01",
+    "navOpacity": "1",
+    "navVisible": "visible"
+  },
+  {
+    "check": "navigation-mobile-no-js",
+    "links": [
+      {
+        "text": "SELECTED WORK",
+        "visible": true
+      },
+      {
+        "text": "ALL",
+        "visible": false
+      },
+      {
+        "text": "CREATIVE DIRECTION",
+        "visible": false
+      },
+      {
+        "text": "PHOTOGRAPHY",
+        "visible": false
+      },
+      {
+        "text": "STYLING",
+        "visible": false
+      },
+      {
+        "text": "BEAUTY",
+        "visible": false
+      },
+      {
+        "text": "SERVICES",
+        "visible": true
+      },
+      {
+        "text": "BOOKING",
+        "visible": true
+      },
+      {
+        "text": "ISSUE 01",
+        "visible": true
+      }
+    ],
+    "menuDisplay": "none",
+    "navOpacity": "1",
+    "navVisible": "visible",
+    "overflow": false,
+    "viewport": 390
+  },
+  {
+    "check": "all-project-routes-desktop",
+    "projects": [
+      {
+        "id": "brokenheart-runway-mad-2026",
+        "aboutLinks": 0,
+        "galleryItems": 7,
+        "hero": [
+          "/assets/media/selected-work/brokenheart-runway/cover.mp4"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+        "galleryMedia": 7
+      },
+      {
+        "id": "brokenheart-campaign",
+        "aboutLinks": 0,
+        "galleryItems": 0,
+        "hero": [
+          "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+          "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+        "galleryMedia": 0
+      },
+      {
+        "id": "mansaworld",
+        "aboutLinks": 0,
+        "galleryItems": 14,
+        "hero": [
+          "/assets/images/projects/project-03-mansaworld/fr4.jpg"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "MANSAWORLD",
+        "galleryMedia": 14
+      },
+      {
+        "id": "fashionrockstarmaxxing",
+        "aboutLinks": 0,
+        "galleryItems": 3,
+        "hero": [
+          "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "FASHIONROCKSTARMAXXING",
+        "galleryMedia": 3
+      },
+      {
+        "id": "kaine-basquiat-mural-2026",
+        "aboutLinks": 0,
+        "galleryItems": 8,
+        "hero": [
+          "/assets/media/selected-work/kaine-basquiat/cover-2400.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+        "galleryMedia": 8
+      },
+      {
+        "id": "micaela-gomes-mad-2026",
+        "aboutLinks": 0,
+        "galleryItems": 4,
+        "hero": [
+          "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "MICAELA GOMES [M.A.D 2026]",
+        "galleryMedia": 4
+      },
+      {
+        "id": "lees-broken-dolls",
+        "aboutLinks": 0,
+        "galleryItems": 4,
+        "hero": [
+          "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "#LEE'S BROKEN DOLLS",
+        "galleryMedia": 4
+      },
+      {
+        "id": "call-her-angelina",
+        "aboutLinks": 0,
+        "galleryItems": 6,
+        "hero": [
+          "/assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "CALL HER ANGELINA",
+        "galleryMedia": 6
+      },
+      {
+        "id": "franck-anti-beauty-2026",
+        "aboutLinks": 0,
+        "galleryItems": 1,
+        "hero": [
+          "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+        "galleryMedia": 1
+      },
+      {
+        "id": "sad-princess",
+        "aboutLinks": 0,
+        "galleryItems": 1,
+        "hero": [
+          "/assets/media/selected-work/sad-princess/01-img-5836-1320.webp",
+          "/assets/media/selected-work/sad-princess/02-img-5838-1320.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "#SAD PRINCESS",
+        "galleryMedia": 1
+      },
+      {
+        "id": "blue",
+        "aboutLinks": 0,
+        "galleryItems": 4,
+        "hero": [
+          "/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "BLUE",
+        "galleryMedia": 4
+      },
+      {
+        "id": "saint-jou-2016",
+        "aboutLinks": 0,
+        "galleryItems": 10,
+        "hero": [
+          "/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "\"2016\" SAINT JOU — MUSIC VIDEO",
+        "galleryMedia": 10
+      },
+      {
+        "id": "lucas-issue-01-2025",
+        "aboutLinks": 0,
+        "galleryItems": 4,
+        "hero": [
+          "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+        "galleryMedia": 4
+      },
+      {
+        "id": "brokenheart-issue-01-2025",
+        "aboutLinks": 0,
+        "galleryItems": 19,
+        "hero": [
+          "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01",
+        "galleryMedia": 19
+      },
+      {
+        "id": "in-god-i-trust",
+        "aboutLinks": 0,
+        "galleryItems": 2,
+        "hero": [
+          "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "IN GOD I TRUST",
+        "galleryMedia": 2
+      },
+      {
+        "id": "ouissam",
+        "aboutLinks": 0,
+        "galleryItems": 4,
+        "hero": [
+          "/assets/media/selected-work/ouissam/04-img-2652.webp",
+          "/assets/media/selected-work/ouissam/03-img-2559.webp"
+        ],
+        "loadedImageErrors": [],
+        "overflow": false,
+        "projectNavLinks": 3,
+        "title": "OUISSAM",
+        "galleryMedia": 4
+      }
+    ]
+  },
+  {
+    "check": "project-mobile-natural-proportions",
+    "native": [
+      390,
+      260
+    ],
+    "objectFit": "contain",
+    "overflow": false,
+    "rendered": [
+      358,
+      238.84375
+    ]
+  },
+  {
+    "check": "filtered-project-keyboard-return",
+    "anchorTop": 296.453125,
+    "filter": "Creative Direction",
+    "scroll": 1435,
+    "transitionNames": 0,
+    "url": "http://127.0.0.1:4195/work/?filter=creative-direction"
+  },
+  {
+    "check": "home-desktop-entry-release-and-motion",
+    "aboutLinks": 0,
+    "brand": "hero__brand is-playing",
+    "entryLoading": false,
+    "video": {
+      "native": [
+        3840,
+        2160
+      ],
+      "paused": false,
+      "ready": 4,
+      "source": "http://127.0.0.1:4195/assets/video/FASHIONROCKSTAR-logo-only-4K.mp4",
+      "time": 2.995161
+    }
+  },
+  {
+    "check": "home-entry-escape",
+    "before": {
+      "inert": true,
+      "loading": true
+    },
+    "after": {
+      "inert": false,
+      "loading": false
+    }
+  },
+  {
+    "check": "home-mobile-original-animation",
+    "brand": "hero__brand is-motion-fallback",
+    "entryLoading": false,
+    "inert": false,
+    "loop": {
+      "native": [
+        1280,
+        720
+      ],
+      "src": "/assets/images/FASHIONROCKSTAR-home-loop.webp"
+    },
+    "overflow": false
+  },
+  {
+    "check": "home-reduced-motion",
+    "brand": "hero__brand is-fallback",
+    "inert": false,
+    "loading": false,
+    "loopSrc": null,
+    "videoPaused": true
+  },
+  {
+    "check": "issue-01-mobile",
+    "aboutLinks": 0,
+    "copy": "ISSUE 01 BRINGS TOGETHER THE PHOTOGRAPHY, VISUAL EXPERIMENTS AND CREATIVE PROJECTS OF MONTRÉAL-BASED ARTIST ZAVYER VEGIARD, WORKING AS FASHIONROCKSTAR. THE PRINT AND DIGITAL PUBLICATION DEVELOPED AS AN EXTENSION OF THE ARTIST’S OWN PRACTICE.",
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "check": "project-mobile-video-long-title-and-paired-cover",
+    "projects": [
+      {
+        "id": "brokenheart-runway-mad-2026",
+        "heroFit": [
+          "contain"
+        ],
+        "overflow": false,
+        "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      {
+        "id": "franck-anti-beauty-2026",
+        "heroFit": [
+          "contain"
+        ],
+        "overflow": false,
+        "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      {
+        "id": "ouissam",
+        "heroFit": [
+          "contain",
+          "contain"
+        ],
+        "overflow": false,
+        "title": "OUISSAM",
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    ]
+  }
+]

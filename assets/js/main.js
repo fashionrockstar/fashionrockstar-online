@@ -25,6 +25,7 @@
   };
 
   if (toggle && siteNav) {
+    document.documentElement.classList.add('has-site-nav');
     closeMenu();
     toggle.addEventListener('click', () => {
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';

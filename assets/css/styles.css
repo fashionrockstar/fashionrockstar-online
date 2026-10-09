@@ -1483,3 +1483,22 @@ body *::before,
 body *::after {
   text-transform: uppercase !important;
 }
+
+/* Keep the real logo and menu apart when phone text is enlarged. */
+@media (max-width: 760px) {
+  .site-header { grid-template-columns: auto minmax(0, 1fr); }
+  .site-logo { max-width: 100%; }
+  /* Primary routes remain usable if navigation enhancement cannot run. */
+  html:not(.has-site-nav) .menu-toggle,
+  html:not(.has-site-nav) .site-submenu-toggle { display: none; }
+  html:not(.has-site-nav) .site-nav {
+    position: static;
+    grid-column: 1 / -1;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    max-height: none;
+  }
+}
+
+.issue-introduction { max-width: 64ch; margin: 2rem 0; font-size: clamp(1rem, 1.2vw, 1.125rem); line-height: 1.65; }

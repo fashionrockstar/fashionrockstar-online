@@ -2,6 +2,14 @@
 
 Multi-page editorial portfolio using HTML, CSS and vanilla JavaScript. Netlify serves the repository root. The working branch is `development`; `main` is production.
 
+## Current development review — October 9, 2026
+
+`codex/site-corrections-20261009` reconciles the current Home, Booking, Services and cover-continuity runtime from `main` into a branch based on `development`. ABOUT is removed from active navigation and its addresses temporarily redirect to Home; the original ABOUT source remains recoverable. The 16-project catalogue, project copy, media and media order are preserved.
+
+Home uses the existing simple logo entry, desktop video and original animated mobile fallback. Services retains five disciplines and twenty stages, with visible mobile detail labels and corrected layout at 200% text. Booking retains the registered Netlify fields and provides pending, failure-retry and received states. ISSUE 01 now describes the artist's own publication while retaining its coming-soon status.
+
+See [the implementation and verification record](docs/CODEX_SITE_CORRECTIONS_20261009.md). This is a development review: no production merge or publication. The older dated notes below describe previous versions.
+
 ## Home entry — September 23, 2026
 
 At the owner's request, the SYSTEM ACCESS pre-home screen is removed. Visitors arrive directly on the existing HOME, without INITIALIZE, the entry sequence, its narration controls, or a session gate. The old `?system-access=1` query no longer starts an entry sequence.
@@ -39,9 +47,9 @@ Explore navigation and Selected Work filter links. This change targets the
 Validated in Chromium at 320, 390, 768, 1024, 1440 and 1920 pixels, with local simulated success and failure responses, slider cancellation/completion, validation, optional-field serialization and no-JavaScript fallback. No live inquiry was sent. Review on the `development` preview before any production merge.
 
 - Homepage: `index.html`, `assets/css/landing.css` and `assets/js/landing.js`.
-- Entry: visitors arrive directly on HOME on all devices. SYSTEM ACCESS and the previous fingerprint gate are inactive.
-- Portfolio: `work/index.html`; ten projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
-- Profile: `about/index.html` and `assets/css/about.css`; the `/about/` address is unchanged.
+- Entry: the existing simple logo entry leads to HOME; Escape and reduced motion release it. SYSTEM ACCESS and the previous fingerprint gate are inactive.
+- Portfolio: `work/index.html`; sixteen projects and their media are defined in `assets/js/projects-data.js`, rendered by `assets/js/projects.js`. Keep the gallery grid and project media order when replacing files. The September 15 import and pending owner-supplied metadata are documented in `docs/selected-work-import.md`.
+- Profile: ABOUT is hidden. Forced temporary redirects send `/about` and `/about/*` to Home. `about/index.html` and its styles remain for recovery.
 - Services: `services/index.html`.
 - Booking: `booking/index.html`, `assets/css/book.css` and `assets/js/booking.js`. `/booking/` is the canonical contact and project inquiry destination. Preserve the Netlify form name and field names.
 - Legacy `/book/`, `/contact/` and `/inquiry/` addresses redirect to `/booking/`; static fallback pages preserve query strings and fragments when JavaScript is available.
