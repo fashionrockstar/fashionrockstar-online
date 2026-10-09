@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Selected work by FASHIONROCKSTAR.ONLINE.">
+  <title>Selected Work — FASHIONROCKSTAR.ONLINE</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/project-media.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/project-media.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/cover-continuity.css">
+  <script src="/assets/js/cover-continuity.js" defer blocking="render"></script>
+</head>
+<body class="theme-light">
+  <header class="site-header">
+    <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-black.png" alt=""></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <div class="site-nav__work">
+        <div class="site-nav__work-row">
+          <a class="is-active" aria-current="page" href="/work/">SELECTED WORK</a>
+          <button class="site-submenu-toggle" type="button" aria-expanded="false" aria-controls="site-work-disciplines" aria-label="Expand Selected Work disciplines"><span aria-hidden="true">+</span></button>
+        </div>
+        <ul class="site-work-disciplines" id="site-work-disciplines" hidden>
+          <li><a href="/work/">ALL</a></li>
+          <li><a href="/work/?filter=creative-direction">CREATIVE DIRECTION</a></li>
+          <li><a href="/work/?filter=photography">PHOTOGRAPHY</a></li>
+          <li><a href="/work/?filter=styling">STYLING</a></li>
+          <li><a href="/work/?filter=beauty">BEAUTY</a></li>
+        </ul>
+      </div>
+      <a href="/services/">SERVICES</a>
+      <a href="/booking/">BOOKING</a>
+      <a href="/issue-01/">ISSUE 01</a>
+      <a href="/about/">ABOUT</a>
+    </nav>
+  </header>
+
+  <main class="page-shell work-page">
+    <h1 class="page-title">Selected Work</h1>
+    <nav class="work-toolbar" aria-label="Filter selected work by discipline">
+      <div class="work-filters" role="group" aria-label="Disciplines">
+        <button class="work-filter" type="button" data-work-filter="all" aria-controls="work-gallery" aria-pressed="true">All</button>
+        <button class="work-filter" type="button" data-work-filter="creative-direction" aria-controls="work-gallery" aria-pressed="false">Creative Direction</button>
+        <button class="work-filter" type="button" data-work-filter="styling" aria-controls="work-gallery" aria-pressed="false">Styling</button>
+        <button class="work-filter" type="button" data-work-filter="photography" aria-controls="work-gallery" aria-pressed="false">Visuals</button>
+        <button class="work-filter" type="button" data-work-filter="beauty" aria-controls="work-gallery" aria-pressed="false">Beauty</button>
+      </div>
+      <a class="work-services-link" href="/services/">Services</a>
+    </nav>
+    <section class="work-gallery" id="work-gallery" data-work-gallery aria-label="Selected projects">
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="1" data-disciplines="creative-direction styling" href="/project/?id=1" aria-label="View FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]">
+          <video data-cover-video data-src="/assets/media/selected-work/brokenheart-runway/cover.mp4" poster="/assets/media/selected-work/brokenheart-runway/cover-poster.webp" width="1080" height="608" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true"></video>
+          <span class="work-tile__meta"><b>FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="6" data-disciplines="" href="/project/?id=6" aria-label="View FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]">
+          <span class="work-tile__pair" aria-hidden="true">
+            <video data-cover-video data-src="/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4" poster="/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp" width="1080" height="1920" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true"></video>
+            <video data-cover-video data-src="/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4" poster="/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp" width="1080" height="1920" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true"></video>
+          </span>
+          <span class="work-tile__meta"><b>FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="2" data-disciplines="photography creative-direction" href="/project/?id=2" aria-label="View MICAELA GOMES [M.A.D 2026]">
+          <img src="/assets/media/selected-work/micaela-gomes/established-cover-2400.webp" srcset="/assets/media/selected-work/micaela-gomes/established-cover-640.webp 640w, /assets/media/selected-work/micaela-gomes/established-cover-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/established-cover-2400.webp 2048w" sizes="100vw" width="2048" height="1365" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>MICAELA GOMES [M.A.D 2026]</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="7" data-disciplines="" href="/project/?id=7" aria-label="View MOONBOI">
+          <img src="/assets/media/selected-work/moonboi/15-15-copie-2400.webp" srcset="/assets/media/selected-work/moonboi/15-15-copie-640.webp 640w, /assets/media/selected-work/moonboi/15-15-copie-1280.webp 1280w, /assets/media/selected-work/moonboi/15-15-copie-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>MOONBOI</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="5" data-disciplines="creative-direction beauty" href="/project/?id=5" aria-label="View KAINE BASQUIAT [MONTREALITY X MURAL 26]">
+          <img src="/assets/media/selected-work/kaine-basquiat/cover-2400.webp" srcset="/assets/media/selected-work/kaine-basquiat/cover-640.webp 640w, /assets/media/selected-work/kaine-basquiat/cover-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/cover-2400.webp 2048w" sizes="100vw" width="2048" height="1365" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>KAINE BASQUIAT [MONTREALITY X MURAL 26]</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="3" data-disciplines="photography creative-direction" href="/project/?id=3" aria-label="View MANSAWORLD">
+          <img src="/assets/images/projects/project-03-mansaworld/fr4.jpg" width="2048" height="1365" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>MANSAWORLD</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="4" data-disciplines="photography" href="/project/?id=4" aria-label="View MZRABELLE: PINK SUMMER">
+          <img src="/assets/images/projects/project-04/_DSC9338-copy.jpg" width="6000" height="4000" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>MZRABELLE: PINK SUMMER</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="8" data-disciplines="photography creative-direction styling" href="/project/?id=8" aria-label="View FASHIONROCKSTARMAXXING">
+          <img src="/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp" srcset="/assets/media/selected-work/fashionrockstarmaxxing/01-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>FASHIONROCKSTARMAXXING</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="9" data-disciplines="photography creative-direction set-design styling" href="/project/?id=9" aria-label="View BLUE">
+          <img src="/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp" srcset="/assets/media/selected-work/blue/01-fashionrockstar-0135-640.webp 640w, /assets/media/selected-work/blue/01-fashionrockstar-0135-1280.webp 1280w, /assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>BLUE</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="10" data-disciplines="creative-direction styling" href="/project/?id=10" aria-label="View CFBA 2026 - FASHIONROCKSTAR X BROKENHEART">
+          <img src="/assets/media/selected-work/cfba-2026/look-01-2400.webp" srcset="/assets/media/selected-work/cfba-2026/look-01-640.webp 640w, /assets/media/selected-work/cfba-2026/look-01-1280.webp 1280w, /assets/media/selected-work/cfba-2026/look-01-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>CFBA 2026 - FASHIONROCKSTAR X BROKENHEART</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="11" data-disciplines="creative-direction photography" href="/project/?id=11" aria-label="View &quot;2016&quot; SAINT JOU — MUSIC VIDEO">
+          <video data-cover-video data-src="/assets/media/selected-work/saint-jou-2016/cover.mp4" poster="/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg" width="1280" height="720" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true"></video>
+          <span class="work-tile__meta"><b>&quot;2016&quot; SAINT JOU — MUSIC VIDEO</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="12" data-disciplines="creative-direction photography" href="/project/?id=12" aria-label="View LEE'S BROKEN DOLLS">
+          <img src="/assets/media/selected-work/lees-broken-dolls/01-final-1-2400.webp" srcset="/assets/media/selected-work/lees-broken-dolls/01-final-1-640.webp 640w, /assets/media/selected-work/lees-broken-dolls/01-final-1-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls/01-final-1-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>LEE'S BROKEN DOLLS</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="13" data-disciplines="photography creative-direction" href="/project/?id=13" aria-label="View CALL HER ANGELINA">
+          <img src="/assets/media/selected-work/call-her-angelina/01-spread-28-2400.webp" srcset="/assets/media/selected-work/call-her-angelina/01-spread-28-640.webp 640w, /assets/media/selected-work/call-her-angelina/01-spread-28-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/01-spread-28-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>CALL HER ANGELINA</b></span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--full work-row--imported">
+        <a class="work-tile work-tile--natural" data-project-id="14" data-disciplines="photography creative-direction styling beauty" href="/project/?id=14" aria-label="View LUCAS BECOMES A ROCKSTAR">
+          <img src="/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-2400.webp" srcset="/assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-640.webp 640w, /assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-1280.webp 1280w, /assets/media/selected-work/lucas-becomes-a-rockstar/01-jewelry-detail-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="" loading="lazy" decoding="async">
+          <span class="work-tile__meta"><b>LUCAS BECOMES A ROCKSTAR</b></span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
