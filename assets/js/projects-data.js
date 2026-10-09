@@ -1394,5 +1394,100 @@ window.fashionrockstarProjects = [
     "datePrecision": "unconfirmed",
     "category": "CAMPAIGN",
     "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+    "year": "2026",
+    "role": "CREATIVE DIRECTOR – LEAD STYLIST",
+    "disciplines": "creative-direction styling",
+    "id": "brokenheart-runway-mad-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "video",
+      "src": "/assets/media/selected-work/brokenheart-runway/cover.mp4",
+      "poster": "/assets/media/selected-work/brokenheart-runway/cover-poster.webp",
+      "width": 1080,
+      "height": 608,
+      "sourceFile": "COVER.mp4",
+      "wide": true,
+      "hasAudio": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/01-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/01-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/01-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/01-1-2400.webp 2400w",
+        "sourceFile": "1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/02-2-640.webp 640w, /assets/media/selected-work/brokenheart-runway/02-2-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/02-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/03-3-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/03-3-640.webp 640w, /assets/media/selected-work/brokenheart-runway/03-3-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/03-3-2400.webp 2400w",
+        "sourceFile": "3.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/04-4-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/04-4-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp 2400w",
+        "sourceFile": "4 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/05-4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/05-4-640.webp 640w, /assets/media/selected-work/brokenheart-runway/05-4-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/05-4-2400.webp 2400w",
+        "sourceFile": "4.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/06-5-1-640.webp 640w, /assets/media/selected-work/brokenheart-runway/06-5-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp 2400w",
+        "sourceFile": "5 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-runway/07-7-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-runway/07-7-640.webp 640w, /assets/media/selected-work/brokenheart-runway/07-7-1280.webp 1280w, /assets/media/selected-work/brokenheart-runway/07-7-2400.webp 2400w",
+        "sourceFile": "7.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "RUNWAY",
+    "galleryOrderConfirmed": true
   }
 ];
