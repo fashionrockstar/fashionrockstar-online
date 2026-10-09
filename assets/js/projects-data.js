@@ -639,6 +639,80 @@ window.fashionrockstarProjects = [
     "category": "MUSIC VIDEO"
   },
   {
+    "title": "BLUE",
+    "year": "2025",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – SET DESIGN – STYLING",
+    "disciplines": "photography creative-direction set-design styling",
+    "id": "blue",
+    "imported": true,
+    "credits": [
+      "CREATIVE DIRECTION — FASHIONROCKSTAR",
+      "PHOTOGRAPHY ASSISTANT — LEE RIDORE",
+      "MODELS — ZAVYER VEGIARD, H.VICK FONTUS"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/blue/01-fashionrockstar-0135-640.webp 640w, /assets/media/selected-work/blue/01-fashionrockstar-0135-1280.webp 1280w, /assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp 2400w",
+      "sourceFile": "FASHIONROCKSTAR 0135.png",
+      "alt": "BLUE — opening layout with set photograph and credits",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/02-fashionrockstar-0136-640.webp 640w, /assets/media/selected-work/blue/02-fashionrockstar-0136-1280.webp 1280w, /assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0136.png",
+        "alt": "BLUE — three-image editorial spread",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/03-fashionrockstar-0139-640.webp 640w, /assets/media/selected-work/blue/03-fashionrockstar-0139-1280.webp 1280w, /assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0139.png",
+        "alt": "BLUE — two models on the white studio set",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/04-fashionrockstar-0138-640.webp 640w, /assets/media/selected-work/blue/04-fashionrockstar-0138-1280.webp 1280w, /assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0138.png",
+        "alt": "BLUE — editorial collage of the two models",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/blue/05-fashionrockstar-0137-640.webp 640w, /assets/media/selected-work/blue/05-fashionrockstar-0137-1280.webp 1280w, /assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp 2400w",
+        "sourceFile": "FASHIONROCKSTAR 0137.png",
+        "alt": "BLUE — close-up of boots and distressed denim",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "category": "EDITORIAL",
+    "galleryOrderConfirmed": true
+  },
+  {
     "id": "sad-princess",
     "catalogueNumber": "03",
     "title": "#SAD PRINCESS",
@@ -1015,5 +1089,310 @@ window.fashionrockstarProjects = [
     "date": "2026",
     "datePrecision": "year",
     "category": "PHOTOGRAPHY"
+  },
+  {
+    "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+    "role": "CREATIVE DIRECTION AND MAKEUP",
+    "year": "2026",
+    "disciplines": "creative-direction beauty",
+    "id": "kaine-basquiat-mural-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/kaine-basquiat/cover-2400.webp",
+      "width": 2048,
+      "height": 1365,
+      "srcset": "/assets/media/selected-work/kaine-basquiat/cover-640.webp 640w, /assets/media/selected-work/kaine-basquiat/cover-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/cover-2400.webp 2048w",
+      "sourceFile": "COVER .jpg",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "instagram",
+        "src": "https://www.instagram.com/reel/DZVRQytRlJW/",
+        "alternateUrl": "https://vt.tiktok.com/ZSq4599eK/",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7164 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7411 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7449 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7450 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-640.webp 640w, /assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp 2400w",
+        "sourceFile": "_DSC7478 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/06-09-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/06-09-640.webp 640w, /assets/media/selected-work/kaine-basquiat/06-09-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/06-09-2400.webp 2400w",
+        "sourceFile": "09.jpg",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/kaine-basquiat/08-stand-2400.webp",
+        "width": 2400,
+        "height": 3600,
+        "srcset": "/assets/media/selected-work/kaine-basquiat/08-stand-640.webp 640w, /assets/media/selected-work/kaine-basquiat/08-stand-1280.webp 1280w, /assets/media/selected-work/kaine-basquiat/08-stand-2400.webp 2400w",
+        "sourceFile": "stand.jpg",
+        "wide": false,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "CREATIVE DIRECTION / BEAUTY",
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTARMAXXING",
+    "titleBreakAfter": "FASHIONROCKSTAR",
+    "year": "2026",
+    "role": "PHOTOGRAPHY – CREATIVE DIRECTION – STYLING",
+    "disciplines": "photography creative-direction styling",
+    "pending": [
+      "1.jpg is the provisional cover, awaiting owner review.",
+      "Collaborator credits have not been supplied."
+    ],
+    "id": "fashionrockstarmaxxing",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/01-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp 2400w",
+      "sourceFile": "1.jpg",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp 2400w",
+        "sourceFile": "2 (1).jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/03-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-640.webp 640w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-1280.webp 1280w, /assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp 2400w",
+        "sourceFile": "3 (2).jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY",
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "MANSAWORLD",
+    "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
+    "year": "2026",
+    "id": "mansaworld",
+    "cover": {
+      "type": "image",
+      "src": "/assets/images/projects/project-03-mansaworld/fr4.jpg"
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1184.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr5-copy.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1178.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-2-2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/fr1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/img-1163.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/part-3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/5.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-2-1.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-3.jpg"
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/projects/project-03-mansaworld/funmi-4.jpg"
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY",
+    "disciplines": "photography creative-direction",
+    "imported": true,
+    "galleryOrderConfirmed": true
+  },
+  {
+    "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+    "year": "",
+    "role": "",
+    "disciplines": "",
+    "pending": [
+      "Year, role and collaborator credits need confirmation."
+    ],
+    "id": "brokenheart-campaign",
+    "imported": true,
+    "credits": [],
+    "cover": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - 0F06E6AD-3EE5-4400-930F-2F902A7400DC (2) (1).mov",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
+        "poster": "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1-poster.webp",
+        "width": 1080,
+        "height": 1920,
+        "sourceFile": "Adobe Express - A4B71AD0-4D9E-4646-BB70-8DA29CBA2864 (1).mp4",
+        "wide": false,
+        "hasAudio": true
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp 2400w",
+        "sourceFile": "_DSC6257-2 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/02-1111-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/02-1111-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp 2400w",
+        "sourceFile": "1111.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp 2400w",
+        "sourceFile": "FEET1 copy.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "category": "CAMPAIGN",
+    "galleryOrderConfirmed": true
   }
 ];
