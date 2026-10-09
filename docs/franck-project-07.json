@@ -1,0 +1,123 @@
+{
+  "project_slug": "franck-anti-beauty-2026",
+  "project_title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+  "date_supplied": "JANUARY 26 2026",
+  "date_precision": "day",
+  "exact_day_known": true,
+  "date": "2026-01-26",
+  "website_year": "2026",
+  "project_type": "EDITORIAL",
+  "creative_roles": [
+    "CREATIVE DIRECTION",
+    "PHOTOGRAPHY",
+    "BEAUTY"
+  ],
+  "filter_disciplines": [
+    "creative-direction",
+    "photography",
+    "beauty"
+  ],
+  "cover": {
+    "approved": true,
+    "layout": "HORIZONTAL — ONE FULL-WIDTH IMAGE",
+    "source_original_filename": "FASHIONROCKSTAR 01 20-2142.png",
+    "preserve_original_frame": true,
+    "preserve_embedded_typography": true,
+    "src": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp",
+    "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp 2048w",
+    "natural_width": 2048,
+    "natural_height": 1365
+  },
+  "hover_caption": {
+    "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+    "subtitle": "EDITORIAL / CREATIVE DIRECTION / PHOTOGRAPHY / BEAUTY",
+    "placement": "bottom-left",
+    "behavior": "existing desktop hover/keyboard focus and mobile scroll-settle"
+  },
+  "gallery": {
+    "approved_order": true,
+    "images": [
+      {
+        "order": 1,
+        "type": "image",
+        "source_original_filename": "FASHIONROCKSTAR 01 20-2142.png",
+        "source_sha256": "47e22e8d6d40a62b029f9d371b9f806c7d0654ebc7cd3ea158fe0a595d21e6c3",
+        "source_width": 2048,
+        "source_height": 1365,
+        "orientation": "horizontal",
+        "alt_text_suggestion": "FRANCK FOR ANTI-BEAUTY ISSUE 01 — original editorial spread with two contrasting black-and-white face-paint portraits and a black vertical divider.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 41608,
+            "sha256": "27b0f1b5f1c7c527be4875bca00a7ed28e64b62b7cae57b052e917ad16b763be"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 146928,
+            "sha256": "aa85380c8acdb239d326cd489f9c053b9ff040d0ab3381d0cda53dea614bf7c3"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 340140,
+            "sha256": "cd5d6da75118ded3884173a434493783f2c21790fcf43d1c37122566eeba2b67"
+          }
+        },
+        "src": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp 2048w",
+        "wide": true
+      },
+      {
+        "order": 2,
+        "type": "image",
+        "source_original_filename": "FASHIONROCKSTAR ISSUE 01 - FINAL DRAFT.png",
+        "source_sha256": "e1da794c973ed0c579a199013369460b5523d6fa656074bc1eb5a7e5b7a32f48",
+        "source_width": 2048,
+        "source_height": 1365,
+        "orientation": "horizontal",
+        "alt_text_suggestion": "FRANCK FOR ANTI-BEAUTY ISSUE 01 — tight side-profile portrait emphasizing textured white face paint.",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 81722,
+            "sha256": "659be67d2755378b4b57c27b097e79b4bdfaddaeb37941d4de8e6340fa5ffdc0"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 327000,
+            "sha256": "98990e9a9bfce829388139a8c8cd7cc7086de26707f66895a22fcc54e764d706"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 758098,
+            "sha256": "4c786290a6bc276de7bec805dbda62dc574cd5dc0372f55bdb7f55459d222a8e"
+          }
+        },
+        "src": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp",
+        "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp 2048w",
+        "wide": true
+      }
+    ]
+  },
+  "additional_credits": [],
+  "external_links": [],
+  "implementation_notes": [
+    "Keep all currently approved rebuilt Selected Work projects and their assets unchanged.",
+    "Do not reactivate the retired legacy catalogue or any older numeric project IDs.",
+    "The full approved horizontal spread is also gallery item 01 on purpose.",
+    "Within January 2026, the day of #SAD PRINCESS is not confirmed. Avoid inventing its day or implying certain ordering.",
+    "No production or main publishing without user approval."
+  ]
+}
