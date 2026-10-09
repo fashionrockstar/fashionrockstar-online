@@ -1,0 +1,296 @@
+{
+  "schema": "frsr-project-handoff-1",
+  "project_title": "CALL HER ANGELINA",
+  "slug": "call-her-angelina",
+  "submission_sequence": 4,
+  "chronological_sort": "pending exact shoot date; do not fabricate month/day or treat submission sequence as year order",
+  "year_from_old_website_record": "2025 (needs reconfirmation for new catalogue)",
+  "category_from_old_website_record": "EDITORIAL (needs reconfirmation)",
+  "roles_from_old_website_record": [
+    "PHOTOGRAPHY",
+    "CREATIVE DIRECTION"
+  ],
+  "cover": {
+    "filename": "FASHIONROCKSTAR 0140.png",
+    "layout": "HORIZONTAL SINGLE FULL-WIDTH",
+    "approved": true,
+    "preserve_existing_editorial_typography": true,
+    "uncropped": true
+  },
+  "gallery": {
+    "approved": false,
+    "candidate_sequence": [
+      "FASHIONROCKSTAR 01 20-2127.png",
+      "1(2).jpg",
+      "3(2).jpg",
+      "4(1).jpg",
+      "5(1).jpg",
+      "ANGELINA 8.jpg"
+    ],
+    "note": "Gallery order has NOT been user-confirmed; these six are current-session supplied candidates. Do not automatically restore the unrelated legacy gallery. Before production, user must approve final selections and sequence."
+  },
+  "credits": {
+    "confirmed_in_this_submission": [],
+    "do_not_invent": true
+  },
+  "media": [
+    {
+      "filename": "FASHIONROCKSTAR 0140.png",
+      "slug": "00-cover-approved",
+      "role": "approved_cover",
+      "gallery_order_candidate": null,
+      "dimensions": {
+        "width": 2048,
+        "height": 1365
+      },
+      "description": "APPROVED COVER — horizontal designed spread with portrait on left and handwritten Call her Angelina title on black right field",
+      "sha256_original": "31d35d231872db1cdd5d176f6fbfdb17fb3e25252553d1aed538248d5ccffd9e",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/00-cover-approved-640.webp",
+          "width": 640,
+          "height": 427,
+          "sha256": "96be595cbba9bda77f7dca96d808fc445fd1673ca5ef9312d0b90c27a287d3ec",
+          "bytes": 22536
+        },
+        "1280": {
+          "path": "/assets/media/selected-work/call-her-angelina/00-cover-approved-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "sha256": "0d9624ba9fe936797c2333d3a9daeba6a6399e959200ee95c111b44c7a7dfe3d",
+          "bytes": 67222
+        },
+        "2048": {
+          "path": "/assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "sha256": "80f768442f4ee7c85f90599d1cc7ce399866edb84ecf62275df1790217973aaf",
+          "bytes": 134610
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/00-cover-approved-640.webp 640w, /assets/media/selected-work/call-her-angelina/00-cover-approved-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp 2048w"
+    },
+    {
+      "filename": "FASHIONROCKSTAR 01 20-2127.png",
+      "slug": "01-original-title-spread",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 1,
+      "dimensions": {
+        "width": 2048,
+        "height": 1365
+      },
+      "description": "Alternate user-provided titled editorial spread with original small text",
+      "sha256_original": "cc8ad6318fa464b15088a2467d91535f27cea457d99ef9056aab9fcdba8ab93c",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-640.webp",
+          "width": 640,
+          "height": 427,
+          "sha256": "618f46d1936b750451d092c0a7c81503fbaad43373b47fe37e950f62b6ec0d43",
+          "bytes": 23236
+        },
+        "1280": {
+          "path": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-1280.webp",
+          "width": 1280,
+          "height": 853,
+          "sha256": "f2c8f471059383982c113e77d97be21cd85e465612c685f3b8b09fdeeb97fb2a",
+          "bytes": 68738
+        },
+        "2048": {
+          "path": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-2048.webp",
+          "width": 2048,
+          "height": 1365,
+          "sha256": "5bdb5e2912081ba5332a16a7bb72436cc1bcd4cab49fd67a10da413ddb786924",
+          "bytes": 146098
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/01-original-title-spread-640.webp 640w, /assets/media/selected-work/call-her-angelina/01-original-title-spread-1280.webp 1280w, /assets/media/selected-work/call-her-angelina/01-original-title-spread-2048.webp 2048w"
+    },
+    {
+      "filename": "1(2).jpg",
+      "slug": "02-gloved-portrait",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 2,
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "description": "Model wearing black gloves, hands framing face, against white tiled wall",
+      "sha256_original": "dab657168e910e73e2c84cb45f95f378700484114555a9860a037574a996e232",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-640.webp",
+          "width": 640,
+          "height": 960,
+          "sha256": "e586951a5b7970d013017f0a22649fc66a4050fabdd40a33e10e78f52c513793",
+          "bytes": 57618
+        },
+        "960": {
+          "path": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-960.webp",
+          "width": 960,
+          "height": 1440,
+          "sha256": "6c173253cf947b1e82604a5445d19dbece2bd550d574d8d440096395c7284d16",
+          "bytes": 118278
+        },
+        "1365": {
+          "path": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "sha256": "c01542114619614e94fe21a6279dec5668aa7880a0238e814212d7b685ce239c",
+          "bytes": 234614
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/02-gloved-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/02-gloved-portrait-1365.webp 1365w"
+    },
+    {
+      "filename": "3(2).jpg",
+      "slug": "03-ladder-portrait",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 3,
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "description": "Model seated on ladder in black outfit and high boots",
+      "sha256_original": "9f8db0ab51836fc2effdc5e60f8317b570f8316821f4c11939fa6d66c1f7b5b6",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-640.webp",
+          "width": 640,
+          "height": 960,
+          "sha256": "744d1c0b87c4bc5e5c353600d2f81ed2c9582066be4813fe0fc6bac2e6ed18ba",
+          "bytes": 66228
+        },
+        "960": {
+          "path": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-960.webp",
+          "width": 960,
+          "height": 1440,
+          "sha256": "e176aa66222f7f5f57741fb82858a0f59768d80533db39dd67aa6946159ab77a",
+          "bytes": 129976
+        },
+        "1365": {
+          "path": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "sha256": "4965a5c35a49492bdb904cfcbf9a533b063e91fe0e217dbf66ad8c9c28af9c8c",
+          "bytes": 235598
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/03-ladder-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/03-ladder-portrait-1365.webp 1365w"
+    },
+    {
+      "filename": "4(1).jpg",
+      "slug": "04-negative-portrait",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 4,
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "description": "High-contrast inverted treatment of model wearing long hair accessories",
+      "sha256_original": "951d1f25d01da5fddeb42d19230562d1fcdd13d2bd9e822a79799de3e7d78302",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-640.webp",
+          "width": 640,
+          "height": 960,
+          "sha256": "89ecdd25775eebd86e9e30b6d63a6186af784a5dba2a8f784356c753dd9487fb",
+          "bytes": 101070
+        },
+        "960": {
+          "path": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-960.webp",
+          "width": 960,
+          "height": 1440,
+          "sha256": "6d6bfc5b716d6247a1a9c53e9e77d7abc3ebac9b43da33d2a4644755786769cf",
+          "bytes": 209084
+        },
+        "1365": {
+          "path": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "sha256": "5a42cc6fa2d951c9d2b82eecb5cbf640cb63457d32e5ddde01f361cb1af95fe2",
+          "bytes": 401964
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/04-negative-portrait-640.webp 640w, /assets/media/selected-work/call-her-angelina/04-negative-portrait-960.webp 960w, /assets/media/selected-work/call-her-angelina/04-negative-portrait-1365.webp 1365w"
+    },
+    {
+      "filename": "5(1).jpg",
+      "slug": "05-silver-setting",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 5,
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "description": "Model in black seated against reflective silver interior",
+      "sha256_original": "abc1868651411d768a509b522daf648f013a55528d85cc28bde253d190d56251",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/05-silver-setting-640.webp",
+          "width": 640,
+          "height": 960,
+          "sha256": "a107d3c82289169455104df61b968fe9b98c003790fe53670c84a6c100f38088",
+          "bytes": 113476
+        },
+        "960": {
+          "path": "/assets/media/selected-work/call-her-angelina/05-silver-setting-960.webp",
+          "width": 960,
+          "height": 1440,
+          "sha256": "7e205d971310b10b254331e4a0888f6bd130ce96e922673d3a4d3f78b78fc506",
+          "bytes": 230042
+        },
+        "1365": {
+          "path": "/assets/media/selected-work/call-her-angelina/05-silver-setting-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "sha256": "cb628b82b209ee6c4e91d653ce80627b63cc673ec274bc4c68aa278da34c6646",
+          "bytes": 448972
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/05-silver-setting-640.webp 640w, /assets/media/selected-work/call-her-angelina/05-silver-setting-960.webp 960w, /assets/media/selected-work/call-her-angelina/05-silver-setting-1365.webp 1365w"
+    },
+    {
+      "filename": "ANGELINA 8.jpg",
+      "slug": "06-alternate-silver",
+      "role": "gallery_candidate",
+      "gallery_order_candidate": 6,
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "description": "Low-angle portrait of model in black near reflective silver setting",
+      "sha256_original": "ff1d3f7276e47314d8f7d1b60aee893d2c60a1eb0815c3b13bec519b9b25509a",
+      "variants": {
+        "640": {
+          "path": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-640.webp",
+          "width": 640,
+          "height": 960,
+          "sha256": "de98e22a4dcf1520bdaea44e8a005a19eef8414deb207b817306aa920b73b7cc",
+          "bytes": 93562
+        },
+        "960": {
+          "path": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-960.webp",
+          "width": 960,
+          "height": 1440,
+          "sha256": "813b3410008e3c510887e1a6285d673c816f584d9d8f0293682836d8ba159dd2",
+          "bytes": 181658
+        },
+        "1365": {
+          "path": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-1365.webp",
+          "width": 1365,
+          "height": 2048,
+          "sha256": "8444df6e3ac1b8d9e6c9f6ffb2e299c65c48f631d41ebf9dd4ac3de4c76eb76f",
+          "bytes": 336008
+        }
+      },
+      "srcset": "/assets/media/selected-work/call-her-angelina/06-alternate-silver-640.webp 640w, /assets/media/selected-work/call-her-angelina/06-alternate-silver-960.webp 960w, /assets/media/selected-work/call-her-angelina/06-alternate-silver-1365.webp 1365w"
+    }
+  ],
+  "dependencies": [
+    "01 OUISSAM",
+    "02 IN GOD I TRUST",
+    "03 #SAD PRINCESS"
+  ],
+  "website_project_presentation": "existing full-width/two portrait tile layout, bottom-left hover caption, mobile scroll-settle behavior unchanged"
+}
