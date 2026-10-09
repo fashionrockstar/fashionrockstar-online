@@ -169,6 +169,255 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "brokenheart-issue-01-2025",
+    "catalogueNumber": "06",
+    "title": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01",
+    "year": "2025",
+    "date": "2025-11",
+    "datePrecision": "month",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "disciplines": "creative-direction photography styling",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "GROUP01 copy 2.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 20",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/01-a01-copy-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/01-a01-copy-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/01-a01-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/01-a01-copy-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "A01 copy.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 01",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/02-a4-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/02-a4-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/02-a4-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/02-a4-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "A4.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 02",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/03-a5-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/03-a5-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/03-a5-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/03-a5-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "A5.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 03",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/04-a3-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/04-a3-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/04-a3-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/04-a3-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "A3.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 04",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/05-angel-gray-1536.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/05-angel-gray-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/05-angel-gray-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/05-angel-gray-1536.webp 1536w",
+        "width": 1536,
+        "height": 2048,
+        "sourceFile": "ANGEL GRAY.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 05",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/06-c03-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/06-c03-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/06-c03-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/06-c03-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "C03.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 06",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/07-girls-01-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/07-girls-01-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/07-girls-01-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/07-girls-01-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "GIRLS 01.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 07",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/08-girls-03-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/08-girls-03-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/08-girls-03-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/08-girls-03-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "GIRLS 03.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 08",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/09-boys-3-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/09-boys-3-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/09-boys-3-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/09-boys-3-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "BOYS 3.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 09",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/10-j01-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/10-j01-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/10-j01-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/10-j01-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "J01.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 10",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/11-j03-copy-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/11-j03-copy-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/11-j03-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/11-j03-copy-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "J03 copy.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 11",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/12-j4-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/12-j4-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/12-j4-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/12-j4-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "J4.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 12",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/13-jo4-copy-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/13-jo4-copy-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/13-jo4-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/13-jo4-copy-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "JO4 copy.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 13",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/14-j1-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/14-j1-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/14-j1-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/14-j1-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "J1.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 14",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/15-m03-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/15-m03-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/15-m03-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/15-m03-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "M03.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 15",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/16-img-1344-copy-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/16-img-1344-copy-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/16-img-1344-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/16-img-1344-copy-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "IMG_1344 copy.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 16",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/17-m1-1-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/17-m1-1-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/17-m1-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/17-m1-1-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "M1.1.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 17",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/18-group2-1-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/18-group2-1-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/18-group2-1-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/18-group2-1-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "GROUP2.1.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 18",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/19-group-3-1365.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/19-group-3-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/19-group-3-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/19-group-3-1365.webp 1365w",
+        "width": 1365,
+        "height": 2048,
+        "sourceFile": "GROUP 3.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 19",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp",
+        "srcset": "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-640.webp 640w, /assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-1280.webp 1280w, /assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "GROUP01 copy 2.jpg",
+        "alt": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01 — editorial photograph 20",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true
+  },
+  {
     "id": "sad-princess",
     "catalogueNumber": "03",
     "title": "#SAD PRINCESS",
