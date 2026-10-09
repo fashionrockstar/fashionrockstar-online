@@ -6,8 +6,9 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const currentURL = () => new URL(location.href);
   const isWork = url => url?.origin === location.origin && /^\/work\/?$/.test(url.pathname);
+  const validProjectId = id => typeof id === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id);
   const projectId = url => url?.origin === location.origin && /^\/project\/?$/.test(url.pathname)
-    && /^\d+$/.test(url.searchParams.get('id') || '') ? url.searchParams.get('id') : null;
+    && validProjectId(url.searchParams.get('id')) ? url.searchParams.get('id') : null;
   const read = key => {
     try { return JSON.parse(sessionStorage.getItem(key)); } catch { return null; }
   };
@@ -20,7 +21,7 @@
   const ordinaryClick = event => event.button === 0 && !event.metaKey && !event.ctrlKey
     && !event.shiftKey && !event.altKey && !event.defaultPrevented;
   const mediaInWork = id => {
-    const tile = /^\d+$/.test(id || '') && document.querySelector(`.work-tile[data-project-id="${id}"]:not([hidden])`);
+    const tile = validProjectId(id) && document.querySelector(`.work-tile[data-project-id="${id}"]:not([hidden])`);
     return tile ? [...tile.querySelectorAll('img, video')] : [];
   };
   const heroMedia = () => [...document.querySelectorAll('.project-hero > img, .project-hero > video')];
@@ -124,7 +125,7 @@
   };
   const validJourney = () => {
     const journey = read(journeyKey);
-    return journey && /^\d+$/.test(journey.id) && isWork(url(journey.workUrl))
+    return journey && validProjectId(journey.id) && isWork(url(journey.workUrl))
       && projectId(url(journey.projectUrl)) === journey.id
       && Array.isArray(journey.media) && journey.media.length > 0
       && Date.now() - journey.savedAt < 30 * 60 * 1000 ? journey : null;
