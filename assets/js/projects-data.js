@@ -1,5 +1,5 @@
 // New Selected Work catalogue. Retired numeric IDs remain reserved.
-// Project 01: approved cover; gallery follows provisional upload order.
+// Project 01 gallery is provisional; Project 02 cover and gallery order are approved.
 window.fashionrockstarProjects = [
   {
     "id": "ouissam",
@@ -106,5 +106,67 @@ window.fashionrockstarProjects = [
     ],
     "credits": [],
     "galleryOrderConfirmed": false
+  },
+  {
+    "id": "in-god-i-trust",
+    "catalogueNumber": "02",
+    "title": "IN GOD I TRUST",
+    "year": "2025",
+    "date": "2025-05",
+    "datePrecision": "month",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "disciplines": "creative-direction photography styling",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/in-god-i-trust/01-triptych-640.webp 640w, /assets/media/selected-work/in-god-i-trust/01-triptych-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp 2048w",
+        "sourceFile": "IMG_2486.PNG",
+        "alt": "Three portraits of the same model in a black outfit and silver cross-detail visor against a white background.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/in-god-i-trust/01-triptych-640.webp 640w, /assets/media/selected-work/in-god-i-trust/01-triptych-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp 2048w",
+        "sourceFile": "IMG_2486.PNG",
+        "alt": "Three portraits of the same model in a black outfit and silver cross-detail visor against a white background.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-640.webp 640w, /assets/media/selected-work/in-god-i-trust/02-dark-collage-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/02-dark-collage-2048.webp 2048w",
+        "sourceFile": "FASHIONROCKSTAR 01 20-2112.png",
+        "alt": "Dark collage of repeated portrait fragments and black negative space.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/in-god-i-trust/03-close-up-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/in-god-i-trust/03-close-up-640.webp 640w, /assets/media/selected-work/in-god-i-trust/03-close-up-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/03-close-up-2048.webp 2048w",
+        "sourceFile": "FASHIONROCKSTAR 01 20-2113.png",
+        "alt": "Editorial close-up of the model wearing a black outfit and silver cross-detail visor.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true
   }
 ];
