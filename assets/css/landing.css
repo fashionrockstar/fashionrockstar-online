@@ -104,7 +104,36 @@
 
 /* The lower navigation is typography only at every width. */
 .home .home-menu { grid-template-columns: minmax(0, 1fr); }
-.home .home-menu__links a { font-size: clamp(3.5rem, 12vw, 13rem); }
+.home .home-menu {
+  padding: clamp(4rem, 8vh, 6rem) var(--frsr-gutter, 4.5vw);
+}
+.home .home-menu__links { counter-reset: home-route; }
+.home .home-menu__links a {
+  counter-increment: home-route;
+  gap: clamp(.75rem, 2vw, 2rem);
+  padding-block: .16em;
+  font-family: var(--font-ui);
+  font-size: clamp(2.5rem, 8.8vw, 9.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.065em;
+}
+.home .home-menu__links a::before {
+  content: counter(home-route, decimal-leading-zero);
+  flex: 0 0 2rem;
+  align-self: flex-start;
+  margin-top: .65em;
+  font-size: .6875rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  color: #b4b4b0;
+}
+.home .home-footer {
+  margin-inline: var(--frsr-gutter, 4.5vw);
+  border-top: 1px solid #343434;
+  padding-top: 2rem;
+}
+.home .scroll-cue__dots i { opacity: .65; }
 
 /* Keep the longer Selected Work Braille label inside its navigation row. */
 .home-menu__links a[href="/work/"] .home-menu__label::after {
@@ -112,7 +141,12 @@
 }
 
 @media (max-width: 760px) {
-  .home .home-menu__links a { font-size: clamp(3rem, 16.8vw, 5.6rem); }
+  .home .home-menu__links a {
+    font-size: clamp(1.75rem, 8.3vw, 3.75rem);
+    padding-block: .4em;
+    letter-spacing: -.055em;
+  }
+  .home .home-menu__links a::before { flex-basis: 1.25rem; font-size: .625rem; }
 }
 
 /* Hold Braille briefly before same-tab navigation on touch, mouse and keyboard. */
