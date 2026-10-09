@@ -504,6 +504,141 @@ window.fashionrockstarProjects = [
     "withinNovemberOrderProvisional": true
   },
   {
+    "title": "\"2016\" SAINT JOU — MUSIC VIDEO",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RSO9OmS5S_0",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION — VIDEOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "id": "saint-jou-2016",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg",
+      "width": 1280,
+      "height": 720,
+      "sourceFile": "IMG_8441.JPG",
+      "alt": "\"2016\" by SAINT JOU — figure with outstretched arms behind a shattered-glass effect",
+      "wide": true,
+      "hasAudio": false
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/02-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/02-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/02-still-1536.webp 1536w",
+        "sourceFile": "C1434E49-6517-4E5D-9129-6AA61F1C2511.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 1",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/03-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/03-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/03-still-1536.webp 1536w",
+        "sourceFile": "0A462E72-A99D-4CCB-B054-07FC07B97D1E.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 2",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/04-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/04-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/04-still-1536.webp 1536w",
+        "sourceFile": "39FA6E28-8693-4133-BEDD-B7A24912599A.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 3",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/05-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/05-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/05-still-2400.webp 2400w",
+        "sourceFile": "B338367E-D44D-472A-BEBC-8F75DE0228B9.png",
+        "alt": "\"2016\" SAINT JOU — music video still 4",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/06-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/06-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/06-still-1536.webp 1536w",
+        "sourceFile": "AEF4FF9E-C80E-4740-99F9-71F3F7E0097E.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 5",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/07-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/07-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/07-still-2400.webp 2400w",
+        "sourceFile": "CE5C0509-E789-4A38-B9F1-DEC9BF3155D6.png",
+        "alt": "\"2016\" SAINT JOU — music video still 6",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/08-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/08-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/08-still-1536.webp 1536w",
+        "sourceFile": "3D2ECA13-8B5B-450F-9804-13213654B0D1.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 7",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/09-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/09-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/09-still-1536.webp 1536w",
+        "sourceFile": "9D71E7D0-F064-490E-B4F5-B23B475F8525.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 8",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/10-still-2400.webp",
+        "width": 2400,
+        "height": 1109,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/10-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/10-still-2400.webp 2400w",
+        "sourceFile": "444C4A4A-8F26-4C82-B460-0E267FA948FD.png",
+        "alt": "\"2016\" SAINT JOU — music video still 9",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/saint-jou-2016/11-still-1536.webp",
+        "width": 1536,
+        "height": 710,
+        "srcset": "/assets/media/selected-work/saint-jou-2016/11-still-640.webp 640w, /assets/media/selected-work/saint-jou-2016/11-still-1536.webp 1536w",
+        "sourceFile": "1835C8D1-6607-4975-A8F1-A8E63255F40A.jpeg",
+        "alt": "\"2016\" SAINT JOU — music video still 10",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "category": "MUSIC VIDEO"
+  },
+  {
     "id": "sad-princess",
     "catalogueNumber": "03",
     "title": "#SAD PRINCESS",
@@ -816,5 +951,69 @@ window.fashionrockstarProjects = [
     ],
     "credits": [],
     "galleryOrderConfirmed": true
+  },
+  {
+    "title": "MICAELA GOMES [M.A.D 2026]",
+    "role": "PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN",
+    "year": "2026",
+    "disciplines": "photography creative-direction",
+    "id": "micaela-gomes-mad-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp",
+      "srcset": "/assets/media/selected-work/micaela-gomes/established-cover-640.webp 640w, /assets/media/selected-work/micaela-gomes/established-cover-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/established-cover-2400.webp 2048w",
+      "width": 2048,
+      "height": 1365
+    },
+    "gallery": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+        "poster": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
+        "width": 720,
+        "height": 404,
+        "sourceShare": "https://adobe.ly/46AYGeP",
+        "autoplay": true,
+        "loop": true,
+        "controls": false,
+        "wide": true,
+        "hasAudio": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/01-1-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/01-1-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/01-1-1-2400.webp 2400w",
+        "sourceFile": "1.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/02-2-640.webp 640w, /assets/media/selected-work/micaela-gomes/02-2-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/02-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/03-4-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/03-4-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/03-4-1-2400.webp 2400w",
+        "sourceFile": "4.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY"
   }
 ];
