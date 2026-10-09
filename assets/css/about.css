@@ -1,8 +1,8 @@
 /* ABOUT: a readable editorial introduction, in normal document flow. */
 .about-body {
-  --about-gutter: clamp(1.25rem, 4.5vw, 5.5rem);
-  --about-rule: #424242;
-  --about-muted: #b7b7b4;
+  --about-gutter: var(--frsr-gutter, clamp(1.25rem, 4.5vw, 5.5rem));
+  --about-rule: #343434;
+  --about-muted: #b8b8b5;
   background: var(--black);
   font-weight: 700;
 }
@@ -10,7 +10,7 @@
 .about-body .site-nav a, .about-body .menu-toggle { font-weight: 700; }
 .about-page { min-width: 0; }
 .about-page:focus { outline: none; }
-.about-inset { padding-inline: var(--about-gutter); }
+.about-inset { width: 100%; max-width: 100rem; margin-inline: auto; padding-inline: var(--about-gutter); }
 .about-skip {
   position: fixed;
   z-index: 100;
@@ -23,7 +23,7 @@
 }
 .about-skip:focus { transform: none; }
 .about-kicker, .about-label, .about-image figcaption, .about-footer-bottom {
-  font-size: .6875rem;
+  font-size: .75rem;
   line-height: 1.5;
   letter-spacing: .045em;
 }
@@ -35,28 +35,28 @@
   padding-top: 1rem;
 }
 .about-kicker h1 { margin: 0; font: inherit; }
-.about-introduction { padding-top: 1.25rem; }
-.about-masthead { margin: clamp(2.25rem, 4vw, 4.75rem) 0 clamp(3.5rem, 6vw, 7rem); }
+.about-introduction { padding-top: clamp(1.25rem, 2vw, 2rem); }
+.about-masthead { margin: clamp(2.75rem, 5vw, 5.5rem) 0 clamp(3.5rem, 7.5vw, 8rem); }
 .about-masthead img { width: 100%; height: auto; }
 .about-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: clamp(2.5rem, 7.5vw, 9rem);
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 7rem);
   align-items: start;
 }
 .about-intro-copy { display: flex; flex-direction: column; align-items: flex-start; padding-top: .25rem; }
 .about-lead {
-  max-width: 22ch;
-  font-size: clamp(2rem, 3.7vw, 4.25rem);
-  line-height: 1.035;
+  max-width: 21ch;
+  font-size: clamp(2rem, 3.9vw, 4.5rem);
+  line-height: 1.06;
   letter-spacing: -.045em;
   text-wrap: pretty;
 }
 .about-intro-note {
-  max-width: 32rem;
-  margin-top: clamp(2rem, 4vw, 4.5rem);
-  font-size: clamp(.875rem, 1.1vw, 1.125rem);
-  line-height: 1.6;
+  max-width: 31rem;
+  margin-top: clamp(2rem, 3vw, 3.5rem);
+  font-size: clamp(.9375rem, 1.05vw, 1.0625rem);
+  line-height: 1.7;
 }
 .about-intro-note p { max-width: 42ch; color: var(--about-muted); }
 .about-link {
@@ -71,7 +71,7 @@
   font-size: .75rem;
   line-height: 1.4;
   letter-spacing: .025em;
-  transition: gap .25s ease;
+  transition: gap .3s var(--frsr-ease, var(--ease));
 }
 .about-link-mark {
   position: relative;
@@ -93,9 +93,9 @@
   transform: rotate(-45deg);
   transform-origin: right center;
 }
-.about-image { min-width: 0; }
+.about-image { min-width: 0; width: 90%; margin-top: clamp(1.75rem, 4.5vw, 5rem); margin-left: auto; }
 .about-image > a { display: block; overflow: hidden; }
-.about-image img { width: 100%; height: auto; transition: transform .65s var(--ease); }
+.about-image img { width: 100%; height: auto; }
 .about-image figcaption {
   display: flex;
   flex-wrap: wrap;
@@ -109,8 +109,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
   gap: clamp(2.5rem, 7vw, 8rem);
-  margin-top: clamp(5rem, 9vw, 11rem);
-  padding-block: clamp(3rem, 5vw, 6rem) clamp(5rem, 9vw, 11rem);
+  margin-top: clamp(5rem, 8vw, 9rem);
+  padding-block: clamp(3rem, 5vw, 5.5rem) clamp(5rem, 8vw, 9rem);
   position: relative;
 }
 .about-founder::before { content: ''; position: absolute; top: 0; inset-inline: var(--about-gutter); border-top: 1px solid var(--about-rule); }
@@ -118,24 +118,24 @@
 .about-founder h2 {
   margin: 2rem 0 1.5rem;
   font: inherit;
-  font-size: clamp(2.75rem, 5.2vw, 6rem);
-  line-height: .94;
+  font-size: clamp(3rem, 5.6vw, 6.5rem);
+  line-height: .98;
   letter-spacing: -.055em;
 }
 .about-founder-role { line-height: 1.6; }
 .about-narrative {
-  max-width: 36rem;
+  max-width: 44ch;
   padding-top: .1rem;
-  font-size: clamp(1rem, 1.3vw, 1.375rem);
-  line-height: 1.55;
-  letter-spacing: -.015em;
+  font-size: clamp(1rem, 1.15vw, 1.1875rem);
+  line-height: 1.65;
+  letter-spacing: -.005em;
 }
 .about-narrative p + p { margin-top: 1.6em; }
 .about-narrative p:not(:first-child) { color: var(--about-muted); }
 .about-publication {
   --about-rule: #b9b9b6;
   --about-muted: #525250;
-  padding-block: clamp(2rem, 3vw, 3.5rem) clamp(3.5rem, 6vw, 7rem);
+  padding-block: clamp(2rem, 3.5vw, 4rem) clamp(4rem, 7vw, 8rem);
   background: var(--white);
   color: var(--black);
 }
@@ -145,20 +145,20 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
   gap: clamp(2.5rem, 7vw, 8rem);
   align-items: end;
-  margin-top: clamp(2.5rem, 5vw, 5.5rem);
+  margin-top: clamp(3.25rem, 6vw, 6.5rem);
 }
 .about-publication h2 {
   margin: 0;
   font: inherit;
-  font-size: clamp(3rem, 7.5vw, 8rem);
-  line-height: .83;
+  font-size: clamp(3rem, 6.4vw, 7rem);
+  line-height: .87;
   letter-spacing: -.075em;
 }
-.about-publication h2 span { display: block; margin-top: .08em; font-size: 2.42em; letter-spacing: -.09em; }
-.about-publication-copy { max-width: 36rem; font-size: clamp(.875rem, 1.1vw, 1.125rem); line-height: 1.6; }
-.about-publication-lead { font-size: clamp(1.625rem, 2.65vw, 3rem); line-height: 1.05; letter-spacing: -.04em; margin-bottom: 1.25em; }
+.about-publication h2 span { display: block; margin-top: .11em; margin-left: -.025em; font-size: 2.65em; letter-spacing: -.09em; }
+.about-publication-copy { max-width: 43ch; font-size: clamp(.9375rem, 1.05vw, 1.0625rem); line-height: 1.7; }
+.about-publication-lead { font-size: clamp(1.625rem, 2.45vw, 2.75rem); line-height: 1.08; letter-spacing: -.04em; margin-bottom: 1.1em; }
 .about-publication-action { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 1.5rem; }
-.about-footer { padding-block: clamp(3rem, 5vw, 6rem) 1.5rem; }
+.about-footer { padding-block: clamp(3rem, 5vw, 5.5rem) 1.5rem; }
 .about-footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
 .about-booking {
   display: inline-flex;
@@ -169,7 +169,7 @@
   letter-spacing: -.045em;
   line-height: 1.15;
 }
-.about-booking .about-link-mark { font-size: .42em; transition: transform .25s ease; }
+.about-booking .about-link-mark { font-size: .42em; transition: transform .3s var(--frsr-ease, var(--ease)); }
 .about-footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -185,37 +185,38 @@
 .about-footer-bottom a { display: inline-flex; align-items: center; min-height: 44px; }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .about-link:hover { gap: 3.25rem; }
-  .about-image a:hover img { transform: scale(1.025); }
   .about-booking:hover .about-link-mark { transform: translate(.15em, -.15em); }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .about-masthead { animation: about-arrive .8s var(--ease) both; }
-  @keyframes about-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 }
 @media (max-width: 760px) {
   .about-introduction { padding-top: .75rem; }
-  .about-kicker { font-size: .625rem; }
-  .about-masthead { margin: 2rem 0 3rem; }
+  .about-kicker { font-size: .6875rem; }
+  .about-masthead { margin: 2.25rem 0 3rem; }
   .about-intro-grid, .about-founder, .about-publication-grid { grid-template-columns: minmax(0, 1fr); }
   .about-intro-grid { gap: 3rem; }
-  .about-lead { max-width: 24ch; font-size: clamp(1.875rem, 6.7vw, 3rem); line-height: 1.07; }
-  .about-intro-note { margin-top: 1.75rem; max-width: 32rem; font-size: .875rem; }
+  .about-lead { max-width: 22ch; font-size: clamp(1.875rem, 6.8vw, 3rem); line-height: 1.1; }
+  .about-intro-note { margin-top: 1.75rem; max-width: 32rem; font-size: .9375rem; }
   .about-intro-note p { max-width: 45ch; }
-  .about-image { width: min(100%, 30rem); margin-left: auto; }
+  .about-image { width: min(87%, 27rem); margin-top: .5rem; margin-left: auto; }
   .about-image figcaption { font-size: .6875rem; }
-  .about-founder { gap: 2rem; margin-top: 4rem; padding-block: 2.5rem 4rem; }
+  .about-founder { gap: 2.5rem; margin-top: 4rem; padding-block: 2.5rem 4rem; }
   .about-founder h2 { margin-top: 1.5rem; font-size: clamp(3rem, 11.5vw, 5.5rem); }
-  .about-narrative { max-width: 40rem; font-size: 1rem; }
+  .about-narrative { max-width: 43ch; font-size: 1rem; line-height: 1.65; }
   .about-publication-grid { gap: 2.5rem; margin-top: 2.5rem; }
   .about-publication h2 { font-size: clamp(3rem, 10vw, 4.5rem); display: flex; align-items: baseline; gap: .15em; }
   .about-publication h2 span { margin-top: 0; font-size: 1.8em; }
-  .about-publication-copy { font-size: .875rem; }
+  .about-publication-copy { font-size: .9375rem; }
   .about-publication-lead { font-size: 1.875rem; }
   .about-publication-action { gap: 0 1.125rem; }
   .about-footer-top { display: block; }
   .about-booking { margin-top: 1.25rem; font-size: clamp(2.5rem, 10vw, 4rem); }
   .about-footer-bottom { column-gap: 1rem; }
   .about-footer-bottom a { flex-basis: 100%; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .about-intro-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 2rem; }
+  .about-image { width: 100%; }
+  .about-lead { font-size: clamp(2rem, 4vw, 2.75rem); }
+  .about-founder, .about-publication-grid { gap: 2.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html:has(.about-body) { scroll-behavior: auto; }
