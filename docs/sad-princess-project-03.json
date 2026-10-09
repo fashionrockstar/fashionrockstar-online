@@ -1,0 +1,144 @@
+{
+  "catalogueNumber": "03",
+  "id": "sad-princess",
+  "title": "#SAD PRINCESS",
+  "date": "2026-01",
+  "datePrecision": "month",
+  "year": "2026",
+  "category": "ALBUM ROLLOUT PROMO",
+  "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+  "disciplines": "creative-direction photography",
+  "coverLayout": "vertical-pair",
+  "cover": {
+    "left": "IMG_5836.jpeg",
+    "right": "IMG_5838.jpeg",
+    "orderConfirmed": true
+  },
+  "galleryOrder": [
+    "IMG_5836.jpeg",
+    "IMG_5838.jpeg",
+    "IMG_5839.jpeg"
+  ],
+  "galleryOrderConfirmed": true,
+  "credits": [
+    {
+      "role": "STYLIST",
+      "name": "FUNMI MILAYO"
+    },
+    {
+      "role": "MODELS",
+      "name": "MZRABELLE, ROMI, PENELOPE"
+    }
+  ],
+  "externalLinks": [],
+  "caption": {
+    "title": "#SAD PRINCESS",
+    "details": "ALBUM ROLLOUT PROMO / CREATIVE DIRECTION / PHOTOGRAPHY"
+  },
+  "media": [
+    {
+      "source_filename": "IMG_5836.jpeg",
+      "source_path": "source-originals/IMG_5836.jpeg",
+      "source_dimensions": {
+        "width": 1320,
+        "height": 1830
+      },
+      "source_bytes": 460826,
+      "source_sha256": "1a8611e43635654604ce3f1d20f6b2ccc74c4ae877bba76dfc03191d1910c3e0",
+      "image_type": "image/jpeg",
+      "derivatives": [
+        {
+          "width": 640,
+          "height": 887,
+          "path": "assets/media/selected-work/sad-princess/01-img-5836-640.webp",
+          "size_bytes": 91832,
+          "sha256": "b6f1961a45b012fb7cf68319ce43a38437c3eb2189b7f6fdbd2b4727c0a492f0"
+        },
+        {
+          "width": 960,
+          "height": 1331,
+          "path": "assets/media/selected-work/sad-princess/01-img-5836-960.webp",
+          "size_bytes": 158508,
+          "sha256": "40e1718cfc45ae16e287d78fd8e0a7e8b87bc41a224adfd627f7af79a906e194"
+        },
+        {
+          "width": 1320,
+          "height": 1830,
+          "path": "assets/media/selected-work/sad-princess/01-img-5836-1320.webp",
+          "size_bytes": 238754,
+          "sha256": "1857e8d378c0ede016a12778473e8cfbd258d9e77b010bc3e04e1de675ca1ca7"
+        }
+      ]
+    },
+    {
+      "source_filename": "IMG_5838.jpeg",
+      "source_path": "source-originals/IMG_5838.jpeg",
+      "source_dimensions": {
+        "width": 1320,
+        "height": 1820
+      },
+      "source_bytes": 483656,
+      "source_sha256": "05531c4c6e54eb95c546fb6a35572e7bed2483f5d5dfa7cbda24127a2db76d39",
+      "image_type": "image/jpeg",
+      "derivatives": [
+        {
+          "width": 640,
+          "height": 882,
+          "path": "assets/media/selected-work/sad-princess/02-img-5838-640.webp",
+          "size_bytes": 93872,
+          "sha256": "7ee57c2e95cb015bc23da167c32fb069668e9496aae770d728d321ae06356e93"
+        },
+        {
+          "width": 960,
+          "height": 1324,
+          "path": "assets/media/selected-work/sad-princess/02-img-5838-960.webp",
+          "size_bytes": 163994,
+          "sha256": "167a8cc4ba00216100ef6683a651051728ad57046849dabe010cd95ee045390f"
+        },
+        {
+          "width": 1320,
+          "height": 1820,
+          "path": "assets/media/selected-work/sad-princess/02-img-5838-1320.webp",
+          "size_bytes": 245376,
+          "sha256": "6cfb93da39efd10c7bdf443d6042053d0350d1711eb482210593863d6f208a16"
+        }
+      ]
+    },
+    {
+      "source_filename": "IMG_5839.jpeg",
+      "source_path": "source-originals/IMG_5839.jpeg",
+      "source_dimensions": {
+        "width": 1320,
+        "height": 1825
+      },
+      "source_bytes": 440979,
+      "source_sha256": "ac945691411f9f414d131f63bf933ba49967657d16037130956ed727a10560ac",
+      "image_type": "image/jpeg",
+      "derivatives": [
+        {
+          "width": 640,
+          "height": 885,
+          "path": "assets/media/selected-work/sad-princess/03-img-5839-640.webp",
+          "size_bytes": 83350,
+          "sha256": "323de0941eb7561bbfb4ec0f38e0c6837c47698bcf3da3adb0e4bacecaeea54c"
+        },
+        {
+          "width": 960,
+          "height": 1327,
+          "path": "assets/media/selected-work/sad-princess/03-img-5839-960.webp",
+          "size_bytes": 135988,
+          "sha256": "d808aa7af10adeed70b66679d49489c0cd35cc3580e0961cc82a687442a696d6"
+        },
+        {
+          "width": 1320,
+          "height": 1825,
+          "path": "assets/media/selected-work/sad-princess/03-img-5839-1320.webp",
+          "size_bytes": 205968,
+          "sha256": "b298bfad3d0e900de8e72e69479411c150b8a5cd22e264c0d3a8f99b72384c4a"
+        }
+      ]
+    }
+  ],
+  "dependency": "After OUISSAM (project 01) and IN GOD I TRUST (project 02); current development had only OUISSAM at preparation time.",
+  "instructions": "Do not restore retired projects. Do not modify homepage or other pages. Preserve original cover/gallery presentation and bottom-left hover caption. Work on development; production only after approval."
+}

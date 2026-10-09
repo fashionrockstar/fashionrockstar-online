@@ -1,5 +1,5 @@
 // New Selected Work catalogue. Retired numeric IDs remain reserved.
-// Project 01 gallery is provisional; Project 02 cover and gallery order are approved.
+// Project 01 gallery is provisional; Project 02 and 03 cover/gallery orders are approved.
 window.fashionrockstarProjects = [
   {
     "id": "ouissam",
@@ -167,6 +167,82 @@ window.fashionrockstarProjects = [
       }
     ],
     "credits": [],
+    "galleryOrderConfirmed": true
+  },
+  {
+    "id": "sad-princess",
+    "catalogueNumber": "03",
+    "title": "#SAD PRINCESS",
+    "year": "2026",
+    "date": "2026-01",
+    "datePrecision": "month",
+    "category": "ALBUM ROLLOUT PROMO",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/sad-princess/01-img-5836-1320.webp",
+        "width": 1320,
+        "height": 1830,
+        "srcset": "/assets/media/selected-work/sad-princess/01-img-5836-640.webp 640w, /assets/media/selected-work/sad-princess/01-img-5836-960.webp 960w, /assets/media/selected-work/sad-princess/01-img-5836-1320.webp 1320w",
+        "sourceFile": "IMG_5836.jpeg",
+        "alt": "Three models in white tops and striped shorts posing in a bathroom with a silver tinsel backdrop.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/sad-princess/02-img-5838-1320.webp",
+        "width": 1320,
+        "height": 1820,
+        "srcset": "/assets/media/selected-work/sad-princess/02-img-5838-640.webp 640w, /assets/media/selected-work/sad-princess/02-img-5838-960.webp 960w, /assets/media/selected-work/sad-princess/02-img-5838-1320.webp 1320w",
+        "sourceFile": "IMG_5838.jpeg",
+        "alt": "Closer portrait of three models wearing white tops against a silver tinsel backdrop.",
+        "wide": false,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/sad-princess/01-img-5836-1320.webp",
+        "width": 1320,
+        "height": 1830,
+        "srcset": "/assets/media/selected-work/sad-princess/01-img-5836-640.webp 640w, /assets/media/selected-work/sad-princess/01-img-5836-960.webp 960w, /assets/media/selected-work/sad-princess/01-img-5836-1320.webp 1320w",
+        "sourceFile": "IMG_5836.jpeg",
+        "alt": "Three models in white tops and striped shorts posing in a bathroom with a silver tinsel backdrop.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/sad-princess/02-img-5838-1320.webp",
+        "width": 1320,
+        "height": 1820,
+        "srcset": "/assets/media/selected-work/sad-princess/02-img-5838-640.webp 640w, /assets/media/selected-work/sad-princess/02-img-5838-960.webp 960w, /assets/media/selected-work/sad-princess/02-img-5838-1320.webp 1320w",
+        "sourceFile": "IMG_5838.jpeg",
+        "alt": "Closer portrait of three models wearing white tops against a silver tinsel backdrop.",
+        "wide": false,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/sad-princess/03-img-5839-1320.webp",
+        "width": 1320,
+        "height": 1825,
+        "srcset": "/assets/media/selected-work/sad-princess/03-img-5839-640.webp 640w, /assets/media/selected-work/sad-princess/03-img-5839-960.webp 960w, /assets/media/selected-work/sad-princess/03-img-5839-1320.webp 1320w",
+        "sourceFile": "IMG_5839.jpeg",
+        "alt": "Three models in white tops with hair in motion in front of silver tinsel.",
+        "wide": false,
+        "hasAudio": false
+      }
+    ],
+    "credits": [
+      "STYLIST: FUNMI MILAYO",
+      "MODELS: MZRABELLE, ROMI, PENELOPE"
+    ],
     "galleryOrderConfirmed": true
   }
 ];
