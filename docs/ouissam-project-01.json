@@ -1,0 +1,99 @@
+{
+  "project_title": "OUISSAM",
+  "project_type": "EDITORIAL",
+  "date_input": "MAY 2025",
+  "date_precision": "month_only",
+  "date_sort": "2025-05",
+  "website_year": "2025",
+  "creative_roles": [
+    "CREATIVE DIRECTION",
+    "PHOTOGRAPHY"
+  ],
+  "selected_work_caption": {
+    "title": "OUISSAM",
+    "subtitle": "EDITORIAL / CREATIVE DIRECTION / PHOTOGRAPHY",
+    "position": "bottom-left",
+    "behavior": "retain existing hover and mobile scroll reveal"
+  },
+  "cover": {
+    "layout": "VERTICAL PAIR (two standing images side by side)",
+    "left_original": "IMG_2652.JPG",
+    "right_original": "IMG_2559(1).JPG",
+    "left_path": "/assets/media/selected-work/ouissam/04-img-2652.webp",
+    "right_path": "/assets/media/selected-work/ouissam/03-img-2559.webp",
+    "approved": true
+  },
+  "gallery": {
+    "assets": [
+      {
+        "order_provisional": 1,
+        "original_filename": "8AC3B09B-0D24-404C-B085-9D7AC5EE7283(2).JPG",
+        "web_path": "/assets/media/selected-work/ouissam/01-8ac3b09b.webp",
+        "small_path": "/assets/media/selected-work/ouissam/01-8ac3b09b-640.webp",
+        "width": 1440,
+        "height": 1800,
+        "orientation": "portrait",
+        "source_sha256": "4eb1858013516ba1dc58270e192a82f089680907d8b67da391487904a21b60b3"
+      },
+      {
+        "order_provisional": 2,
+        "original_filename": "IMG_0007(1).png",
+        "web_path": "/assets/media/selected-work/ouissam/02-img-0007.webp",
+        "small_path": "/assets/media/selected-work/ouissam/02-img-0007-640.webp",
+        "width": 1365,
+        "height": 2048,
+        "orientation": "portrait",
+        "source_sha256": "02bf38d42dce186cee244310c1957447bca16ab127b03f1cd22ad7c7252614d0"
+      },
+      {
+        "order_provisional": 3,
+        "original_filename": "IMG_2559(1).JPG",
+        "web_path": "/assets/media/selected-work/ouissam/03-img-2559.webp",
+        "small_path": "/assets/media/selected-work/ouissam/03-img-2559-640.webp",
+        "width": 1365,
+        "height": 2048,
+        "orientation": "portrait",
+        "source_sha256": "8a336beaaec8e8bfc4c69d6790acfaac9324e21563ac6f0dbf92285dd9252b00"
+      },
+      {
+        "order_provisional": 4,
+        "original_filename": "IMG_2652.JPG",
+        "web_path": "/assets/media/selected-work/ouissam/04-img-2652.webp",
+        "small_path": "/assets/media/selected-work/ouissam/04-img-2652-640.webp",
+        "width": 1228,
+        "height": 2048,
+        "orientation": "portrait",
+        "source_sha256": "33a5a49e13b11d91f47fd00b5a212a70455166afabd655e7f3b587ef82c4285c"
+      },
+      {
+        "order_provisional": 5,
+        "original_filename": "IMG_2653(1).JPG",
+        "web_path": "/assets/media/selected-work/ouissam/05-img-2653.webp",
+        "small_path": "/assets/media/selected-work/ouissam/05-img-2653-640.webp",
+        "width": 1365,
+        "height": 2048,
+        "orientation": "portrait",
+        "source_sha256": "aea730d8ea2cbd78d48413b6cabe5adaede5a8a30920358e05afcfbefa14e2de"
+      },
+      {
+        "order_provisional": 6,
+        "original_filename": "IMG_2655.JPG",
+        "web_path": "/assets/media/selected-work/ouissam/06-img-2655.webp",
+        "small_path": "/assets/media/selected-work/ouissam/06-img-2655-640.webp",
+        "width": 1365,
+        "height": 2048,
+        "orientation": "portrait",
+        "source_sha256": "5a79d774f317b67fdbfc026b0b9b0cf53a45144ab3728a663ff673b42a75c0d7"
+      }
+    ],
+    "order_confirmed": false,
+    "provisional_order": "same as user upload order; ask before changing chronology of gallery",
+    "allow_cover_images_in_gallery": true
+  },
+  "credits": {
+    "collaborators": null,
+    "no_fabricated_credits": true
+  },
+  "external_links": [],
+  "workflow": "FORM → CONFIRMATION → CODEX → PUBLISH. Stage development, verify, publish without altering unrelated content."
+}

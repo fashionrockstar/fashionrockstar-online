@@ -72,3 +72,11 @@
   .project-imported .project-head h1 { font-size: clamp(2.5rem, 14vw, 5rem); overflow-wrap: normal; }
   .project-images .project-image--centered { width: 100%; }
 }
+
+/* Keep the approved portrait cover pair side by side at every viewport. */
+.project-page .project-hero.project-hero--pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-hero--pair > img { min-width: 0; }
+.project-nav > [hidden] { display: none; }
+.project-nav__grid { grid-column: 2; }

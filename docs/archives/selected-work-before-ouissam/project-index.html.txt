@@ -41,21 +41,20 @@
   <main class="page-shell project-page">
     <a class="back-link" href="/work/">Back to work</a>
     <header class="project-head">
-      <h1 data-project-title>Project</h1>
-      <p><span data-project-role hidden></span><span data-project-year hidden></span></p>
+      <h1 data-project-title>FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]</h1>
+      <p><span data-project-role>CREATIVE DIRECTOR – LEAD STYLIST</span><span data-project-year>2026</span></p>
     </header>
 
     <div class="project-credits" data-project-credits hidden></div>
     <p class="project-film-link" data-project-film-link hidden></p>
-    <figure class="project-hero project-hero--natural"></figure>
+    <figure class="project-hero project-hero--natural"><video data-cover-video data-src="/assets/media/selected-work/brokenheart-runway/cover.mp4" poster="/assets/media/selected-work/brokenheart-runway/cover-poster.webp" width="1080" height="608" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true"></video></figure>
     <section class="project-images" aria-label="Project gallery" hidden></section>
 
     <nav class="project-nav" aria-label="Project navigation">
-      <a data-project-prev hidden>Previous project</a>
+      <a data-project-prev href="/project/?id=4">Previous project</a>
       <a class="project-nav__grid" href="/work/" aria-label="All work"><i></i><i></i><i></i><i></i></a>
-      <a data-project-next hidden>Next project</a>
+      <a data-project-next href="/project/?id=6">Next project</a>
     </nav>
-    <noscript><p>Enable JavaScript to view this project, or <a href="/work/">return to Selected Work</a>.</p></noscript>
   </main>
 </body>
 </html>
