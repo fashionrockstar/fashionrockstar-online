@@ -1,0 +1,235 @@
+{
+  "baselineRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+  "passed": true,
+  "checks": [
+    {
+      "name": "project_catalogue_16_records_exact",
+      "passed": true,
+      "detail": "All source fields, credits, confirmation metadata, header covers, source/rendered gallery order and Previous/Next destinations match."
+    },
+    {
+      "name": "selected_work_16_tiles_exact",
+      "passed": true,
+      "detail": "Titles, metadata copy, discipline values, slugs/URLs and every ordered cover-media attribute match."
+    },
+    {
+      "name": "catalogue_data_byte_identical",
+      "passed": true,
+      "detail": "projects-data.js SHA-256 unchanged."
+    },
+    {
+      "name": "496_existing_binary_assets_sha256",
+      "passed": true,
+      "detail": "All 496 existing media/image/video/font/icon SHA-256 and byte counts match; 208,171,307 bytes preserved."
+    },
+    {
+      "name": "services_complete_5_disciplines_exact",
+      "passed": true,
+      "detail": "All service paragraphs, process stages, scope text, order and related Work/Booking targets match."
+    },
+    {
+      "name": "about_copy_media_exact",
+      "passed": true,
+      "detail": "Every heading/paragraph/caption and all image attrs match."
+    },
+    {
+      "name": "about_links_expected_single_repair",
+      "passed": true,
+      "detail": "Only the explicitly requested stale contextual project link changes."
+    },
+    {
+      "name": "issue01_copy_case_only",
+      "passed": true,
+      "detail": "Only ISSUE 01 / DIGITAL + PRINT / COMING SOON; no new release date, CTA or artwork."
+    },
+    {
+      "name": "booking_contract_fields_options_copy",
+      "passed": true,
+      "detail": "Native required-radio fallback, same field names/types/constraints, budget values/labels, honeypot, action/method, status/confirmation copy all preserved. Only presentational hidden arrow normalized."
+    },
+    {
+      "name": "booking_entry_media_redirect_logic_byte_identical",
+      "passed": true,
+      "detail": "Booking JS, entry JS/CSS, media/cover-continuity JS/CSS, dormant entry experiments and Netlify redirect config remain byte-identical."
+    },
+    {
+      "name": "home_inline_entry_script_exact",
+      "passed": true,
+      "detail": "Session-storage/reduced-motion entry gate, 4.8s safety timer and existing timing logic remain byte-identical."
+    },
+    {
+      "name": "home_entry_markup_exact",
+      "passed": true,
+      "detail": "Existing loader markup, SVG and logo source preserved."
+    },
+    {
+      "name": "home_hero_engine_byte_identical",
+      "passed": true,
+      "detail": "The existing hero logo/video/fallback/playback engine is byte-identical; the added BFCache reset changes only Explore navigation state."
+    },
+    {
+      "name": "home_social_links_exact",
+      "passed": true,
+      "detail": "All existing Instagram / LinkedIn / TikTok profile destinations and labels preserved."
+    },
+    {
+      "name": "all_catalogue_media_destinations_resolve",
+      "passed": true,
+      "detail": "398 local catalogue media/srcset/poster references resolve; external Instagram/TikTok/YouTube/Adobe references remain unchanged in the exact catalogue."
+    },
+    {
+      "name": "all_primary_approved_writing_case_whitespace_only",
+      "passed": true,
+      "detail": "All 7 main surfaces preserve exact approved words/punctuation/order after case/whitespace normalization; decorative hidden arrow is explicitly excluded."
+    },
+    {
+      "name": "primary_and_work_submenu_navigation_preserved",
+      "passed": true,
+      "detail": "All primary header and Work submenu label words/destinations retain their original meaning and query values."
+    },
+    {
+      "name": "internal_navigation_destinations_resolve",
+      "passed": true,
+      "detail": "114 internal anchor references resolve to existing files, active slugs, valid filters/services and valid fragments."
+    },
+    {
+      "name": "html_asset_dependency_destinations_resolve",
+      "passed": true,
+      "detail": "129 local stylesheet/script/image/video/poster/srcset references resolve, including new editorial assets."
+    }
+  ],
+  "expectedDifferences": [
+    "About contextual portrait link repaired: retired numeric 13 → call-her-angelina.",
+    "Booking aria-hidden arrow character replaced with CSS geometry; SEND INQUIRY wording unchanged."
+  ],
+  "unexpectedDifferences": [],
+  "writingByPage": [
+    {
+      "path": "index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 99,
+      "currentChars": 99
+    },
+    {
+      "path": "work/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 1182,
+      "currentChars": 1182
+    },
+    {
+      "path": "project/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 119,
+      "currentChars": 119
+    },
+    {
+      "path": "services/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 15374,
+      "currentChars": 15374
+    },
+    {
+      "path": "booking/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 504,
+      "currentChars": 504
+    },
+    {
+      "path": "about/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 1341,
+      "currentChars": 1341
+    },
+    {
+      "path": "issue-01/index.html",
+      "mainApprovedWordsPreserved": true,
+      "baselineChars": 36,
+      "currentChars": 36
+    }
+  ],
+  "navigationByPage": [
+    {
+      "path": "work/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    },
+    {
+      "path": "project/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    },
+    {
+      "path": "services/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    },
+    {
+      "path": "booking/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    },
+    {
+      "path": "about/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    },
+    {
+      "path": "issue-01/index.html",
+      "primaryAndSubmenuDestinationsPreserved": true
+    }
+  ],
+  "invalidInternalLinks": [],
+  "missingReferencedAssets": [],
+  "missingCatalogueMedia": [],
+  "protectedFileHashes": [
+    {
+      "path": "assets/js/booking.js",
+      "sha256": "7d4f2214d7950eb891304d94919d62deb6240d3c7a5a1046c45bfc0a0b177a72",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/entry-loader.js",
+      "sha256": "a97d3da0f62941489c698b44ab8f35c95f17df2c48529a186a94222dfa1e0de5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/entry-loader.css",
+      "sha256": "2a6f4da79fb0e207617567ce100a84010275844268b88fc7067489e80b5862d5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/cover-continuity.js",
+      "sha256": "7e10eac19d6de734586dfd7a1ab756681acd921b90d601466b977ea0183218ed",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/cover-continuity.css",
+      "sha256": "a7304b433db38da2be0ad3d228f9605568befc7e65d3c5959d93a4b89d9c768b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/project-media.js",
+      "sha256": "72990d56e3dcdf7fbbb9a00048b0a088ce73aabd69ea08dd14e7b68336efc9b9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/system-access.js",
+      "sha256": "656cda277d045783d9d14c6bb4ff3ffbcf73ddd0a99d15167196e4da141d0788",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/biometric-access.js",
+      "sha256": "8a93fb936f4ae77c8993dd8839c08268418417a962b43bacc37d8e76ed386f02",
+      "unchanged": true
+    },
+    {
+      "path": "assets/js/face-preview.js",
+      "sha256": "4a6a9bbbae72ee7e7fd41f866a2ad524b33b74f0b76120f88a8104069fb5ea13",
+      "unchanged": true
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "a72e552814cf763e59a6ea3ef4122d53e6ec3165f24c13f092c56d9fb6097155",
+      "unchanged": true
+    }
+  ],
+  "notes": [
+    "This is an exhaustive source/content/media preservation check, not a replacement for browser layout, interaction, focus, reduced-motion or intercepted Booking network tests.",
+    "Gallery dedup remains unchanged: 100 source items and 91 rendered items across 16 projects."
+  ]
+}

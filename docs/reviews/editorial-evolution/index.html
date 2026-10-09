@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>FASHIONROCKSTAR — Editorial Evolution Review</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: clamp(1rem, 4vw, 4rem); background: #ecece9; color: #101010; font: 16px/1.5 Arial, sans-serif; }
+    main { max-width: 1440px; margin: auto; }
+    h1 { max-width: 18ch; margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 5rem); line-height: 1; letter-spacing: -.055em; }
+    p { max-width: 75ch; }
+    a { color: inherit; text-underline-offset: .2em; }
+    .controls { display: flex; gap: 1rem 2rem; flex-wrap: wrap; padding-block: 1.5rem; border-block: 1px solid #999; margin-block: 2rem; }
+    label { display: grid; gap: .5rem; font-size: .8rem; font-weight: bold; text-transform: uppercase; }
+    select { padding: .7rem; min-height: 44px; border: 1px solid #777; border-radius: 0; background: transparent; color: inherit; font: inherit; }
+    .slider { flex: 1 1 250px; }
+    input[type="range"] { width: 100%; min-height: 44px; accent-color: #111; }
+    .comparison { position: relative; width: 100%; max-width: var(--frame-width, 1440px); margin: auto; background: #000; overflow: hidden; --split: 50%; }
+    .comparison img { display: block; width: 100%; height: auto; }
+    .after { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--split)); }
+    .divider { position: absolute; inset: 0 auto 0 var(--split); border-left: 2px solid #e2e2e2; pointer-events: none; }
+    .tag { position: absolute; top: .5rem; padding: .3rem .6rem; color: #fff; background: #111; font-size: .7rem; font-weight: bold; letter-spacing: .05em; }
+    .tag.before { left: .5rem; } .tag.after-tag { right: .5rem; }
+    .links { display: flex; gap: 1rem; justify-content: space-between; margin-top: 1rem; flex-wrap: wrap; }
+    small { display: block; max-width: 85ch; margin-top: 2rem; color: #444; }
+    :focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+    .status { border-top: 1px solid #999; margin-top: 2rem; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FASHIONROCKSTAR EDITORIAL EVOLUTION</h1>
+    <p>Review the actual website before and after refinement. The baseline is GitHub main <code>b390752</code>; the changes live on <code>redesign/editorial-evolution-20261009</code>. Production has not been published.</p>
+    <p><a href="/">Open the interactive website preview</a> · <a href="README.md">Change and validation report</a> · <a href="../../base44/README.md">Base44 context and integration status</a></p>
+    <div class="controls">
+      <label>Surface<select id="surface">
+        <option value="work">Selected Work</option><option value="services">Services</option><option value="about">About</option><option value="booking">Booking</option><option value="issue">Issue 01</option><option value="project">Project</option><option value="home-menu">Home navigation</option><option value="home-hero">Home hero</option><option value="home-entry">Home first entry</option>
+      </select></label>
+      <label>Viewport<select id="viewport"><option value="desktop">Desktop · 1440 × 1000</option><option value="tablet">Tablet · 820 × 1180</option><option value="mobile">Mobile · 390 × 844</option></select></label>
+      <label class="slider">Before / after split<input id="split" type="range" min="0" max="100" value="50" aria-label="Position the before and after divider"></label>
+    </div>
+    <div class="comparison" id="comparison">
+      <img id="before" src="../../base44/screenshots/10-desktop-04-selected-work-top.png" alt="Selected Work before, desktop">
+      <img class="after" id="after" src="after/10-desktop-04-selected-work-top.png" alt="Selected Work after, desktop">
+      <span class="divider" aria-hidden="true"></span><span class="tag before" aria-hidden="true">BEFORE</span><span class="tag after-tag" aria-hidden="true">AFTER</span>
+    </div>
+    <div class="links"><a id="before-link" href="../../base44/screenshots/10-desktop-04-selected-work-top.png" target="_blank" rel="noopener">Open before screenshot</a><a id="after-link" href="after/10-desktop-04-selected-work-top.png" target="_blank" rel="noopener">Open after screenshot</a></div>
+    <small>These are unaltered viewport captures, not synthetic mockups. Video frames and the timing of the preserved entry animation can differ. The representative project is BROKENHEART RUNWAY; preservation checks cover all 16 projects. The audit also inspected full-page content and galleries. Native controls, hover, scrolling, and motion should be reviewed in the website preview.</small>
+    <p class="status">All original media, approved words, project order, entry behavior and Booking handling are preserved. Base44 accepted the original brief; its sandbox access was gated and no critique was retrieved. The complete local handoff is included.</p>
+    <noscript><p>The initial comparison remains visible. Open the screenshot folders for other surfaces: <a href="../../base44/screenshots/README.md">Before</a> and <a href="screenshot-manifest.json">After manifest</a>.</p></noscript>
+  </main>
+  <script>
+    (() => {
+      const surface = document.querySelector('#surface');
+      const viewport = document.querySelector('#viewport');
+      const comparison = document.querySelector('#comparison');
+      const suffixes = { work: '04-selected-work-top', services: '05-services-top', about: '06-about-top', booking: '07-booking-top', issue: '08-issue-01-top', project: '09-project-top', 'home-menu': '03-home-menu', 'home-hero': '02-home-hero', 'home-entry': '01-home-entry' };
+      const mobile = { work: 'work-top', services: 'services-top', about: 'about-top', booking: 'booking-top', issue: 'issue-01-top', project: 'project-top', 'home-menu': 'home-menu', 'home-hero': 'home-hero', 'home-entry': 'home-entry' };
+      const update = () => {
+        const frame = viewport.value;
+        const filename = frame === 'mobile' ? `30-mobile-${mobile[surface.value]}.png` : `${frame === 'desktop' ? '10-desktop' : '20-tablet'}-${suffixes[surface.value]}.png`;
+        for (const state of ['before', 'after']) {
+          const url = `${state === 'before' ? '../../base44/screenshots' : 'after'}/${filename}`;
+          document.querySelector(`#${state}`).src = url;
+          document.querySelector(`#${state}`).alt = `${surface.selectedOptions[0].textContent} ${state}, ${frame}`;
+          document.querySelector(`#${state}-link`).href = url;
+        }
+        comparison.style.setProperty('--frame-width', `${frame === 'desktop' ? 1440 : frame === 'tablet' ? 820 : 390}px`);
+      };
+      surface.addEventListener('change', update);
+      viewport.addEventListener('change', update);
+      document.querySelector('#split').addEventListener('input', event => comparison.style.setProperty('--split', `${event.target.value}%`));
+      update();
+    })();
+  </script>
+</body>
+</html>

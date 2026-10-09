@@ -1,0 +1,140 @@
+[
+  {
+    "width": 320,
+    "services": {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": []
+    },
+    "typography": {
+      "title": "30px",
+      "paragraph": "17px",
+      "columns": "284px"
+    },
+    "servicesOpen": {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": []
+    },
+    "booking": {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": []
+    },
+    "invalidFeedback": {
+      "invalid": true,
+      "style": "dashed",
+      "valid": false
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "services": {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": []
+    },
+    "typography": {
+      "title": "30px",
+      "paragraph": "17px",
+      "columns": "354px"
+    },
+    "servicesOpen": {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": []
+    },
+    "booking": {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": []
+    },
+    "invalidFeedback": {
+      "invalid": true,
+      "style": "dashed",
+      "valid": false
+    },
+    "errors": []
+  },
+  {
+    "width": 820,
+    "services": {
+      "width": 820,
+      "scrollWidth": 820,
+      "overflow": []
+    },
+    "typography": {
+      "title": "38.13px",
+      "paragraph": "17px",
+      "columns": "263.703px 395.562px"
+    },
+    "servicesOpen": {
+      "width": 820,
+      "scrollWidth": 820,
+      "overflow": []
+    },
+    "booking": {
+      "width": 820,
+      "scrollWidth": 820,
+      "overflow": []
+    },
+    "invalidFeedback": {
+      "invalid": true,
+      "style": "dashed",
+      "valid": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "services": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": []
+    },
+    "typography": {
+      "title": "66.96px",
+      "paragraph": "20px",
+      "columns": "408.328px 743.375px"
+    },
+    "servicesOpen": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": []
+    },
+    "booking": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": []
+    },
+    "invalidFeedback": {
+      "invalid": true,
+      "style": "dashed",
+      "valid": false
+    },
+    "errors": []
+  },
+  {
+    "js": false,
+    "motion": "no-preference",
+    "nativeDisclosure": true,
+    "radioFallback": "radio",
+    "animations": 0
+  },
+  {
+    "js": true,
+    "motion": "reduce",
+    "nativeDisclosure": true,
+    "radioFallback": "checkbox",
+    "animations": 0
+  },
+  {
+    "simulatedLocalPost": [
+      "form-name=booking&company-website=&project-type=photography%2Cstyling&name=TEST+EDITORIAL&email=EDITORIAL%40EXAMPLE.COM&project-details=LOCAL+INTERCEPTED+VALIDATION+ONLY.&company=&timeline=&budget=",
+      "form-name=booking&company-website=&project-type=photography%2Cstyling&name=TEST+EDITORIAL&email=EDITORIAL%40EXAMPLE.COM&project-details=LOCAL+INTERCEPTED+VALIDATION+ONLY.&company=&timeline=&budget="
+    ],
+    "errorRecovery": true,
+    "successConfirmation": true
+  }
+]

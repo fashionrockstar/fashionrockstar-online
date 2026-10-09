@@ -1,0 +1,11 @@
+{
+  "cleanArrival": true,
+  "titlesDuringScroll": 0,
+  "titlesAfterPause": 1,
+  "filterResetsTitle": true,
+  "beautyVisible": 2,
+  "oneTapProjectUrl": "http://127.0.0.1:4173/project/?id=kaine-basquiat-mural-2026",
+  "keyboardCaptionOpacityReducedMotion": "1",
+  "photographyFilterValid": true,
+  "errors": []
+}
