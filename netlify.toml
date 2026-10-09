@@ -39,3 +39,16 @@
   to = "/booking/"
   status = 301
   force = true
+
+# ABOUT is hidden while its original source remains recoverable.
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/about/*"
+  to = "/"
+  status = 302
+  force = true

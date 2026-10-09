@@ -7,97 +7,39 @@
   <title>FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/landing.css">
-  <link rel="stylesheet" href="/assets/css/biometric-access.css">
+  <link rel="stylesheet" href="/assets/css/entry-loader.css">
   <script>
     (() => {
-      const key = 'frsrBiometricAccessV2';
       let show = true;
-      try {
-        const replay = new URL(window.location.href).searchParams.get('biometric-access') === '1';
-        show = replay || sessionStorage.getItem(key) !== 'granted';
-      } catch {
-        show = true;
-      }
-      if (show) {
-        document.documentElement.classList.add('biometric-access-open');
-        window.__frsrBiometricFailOpen = window.setTimeout(() => {
-          document.documentElement.classList.remove('biometric-access-open', 'biometric-access-revealing');
-        }, 8000);
-      }
+      try { show = sessionStorage.getItem('frsrSimpleEntryV1') !== 'seen'; } catch {}
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) show = false;
+      if (!show) return;
+      document.documentElement.classList.add('entry-loading');
+      window.__frsrEntryDeadline = setTimeout(() => {
+        document.documentElement.classList.remove('entry-loading');
+        document.querySelectorAll('main, footer').forEach(el => { el.inert = false; });
+      }, 4800);
     })();
   </script>
   <noscript><style>.home .hero__brand .hero__fallback { visibility: visible; }</style></noscript>
-  <script src="/assets/js/biometric-access.js" defer></script>
+  <script src="/assets/js/entry-loader.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/landing.js" defer></script>
 </head>
 <body class="home">
-  <section class="biometric-access" data-biometric-access data-state="idle" aria-labelledby="biometric-access-title" hidden>
-    <h2 class="sr-only" id="biometric-access-title">FASHIONROCKSTAR biometric access</h2>
-    <div class="biometric-access__stage">
-      <button class="biometric-access__sensor" type="button" data-biometric-trigger aria-label="Press and hold fingerprint to enter FASHIONROCKSTAR">
-        <svg class="biometric-access__fingerprint" viewBox="0 0 160 196" aria-hidden="true" focusable="false">
-          <defs>
-            <symbol id="frsr-fingerprint-lines" viewBox="0 0 160 196">
-              <path d="M80 14C43 14 16 43 16 82"/>
-              <path d="M80 29C52 29 30 51 30 82C30 94 27 107 22 119"/>
-              <path d="M80 44C59 44 44 60 44 82C44 105 38 127 28 145"/>
-              <path d="M80 59C68 59 58 69 58 83C58 111 50 138 38 159"/>
-              <path d="M80 74C74 74 70 79 70 86C70 118 61 146 50 169"/>
-              <path d="M91 62C100 69 104 80 103 94C101 128 94 153 82 176"/>
-              <path d="M103 53C120 64 129 82 127 103C125 132 119 153 110 169"/>
-              <path d="M114 41C138 58 148 82 145 108C143 132 138 150 132 163"/>
-              <path d="M91 87C92 112 85 138 73 158"/>
-              <path d="M65 23C39 29 21 51 18 77"/>
-              <path d="M57 37C38 47 27 64 27 84"/>
-              <path d="M121 69C130 82 133 96 131 114C129 134 125 149 119 161"/>
-            </symbol>
-            <clipPath id="frsr-fingerprint-progress">
-              <rect data-biometric-fill x="0" y="196" width="160" height="0"></rect>
-            </clipPath>
-          </defs>
-          <g class="fingerprint__base">
-            <use href="#frsr-fingerprint-lines"></use>
-          </g>
-          <g class="fingerprint__active" clip-path="url(#frsr-fingerprint-progress)">
-            <use href="#frsr-fingerprint-lines"></use>
-          </g>
-          <g class="fingerprint__ghost fingerprint__ghost--a">
-            <use href="#frsr-fingerprint-lines"></use>
-          </g>
-          <g class="fingerprint__ghost fingerprint__ghost--b">
-            <use href="#frsr-fingerprint-lines"></use>
-          </g>
-        </svg>
-        <span class="biometric-access__local-scan" aria-hidden="true"></span>
-        <span class="biometric-access__contact-light" aria-hidden="true"></span>
-        <span class="biometric-access__shockwave" aria-hidden="true"></span>
-        <span class="biometric-access__particles" aria-hidden="true">
-          <i style="--particle-angle: 8deg; --particle-radius: 108px; --particle-start: 82px; --particle-length: 28px; --particle-delay: -80ms"></i>
-          <i style="--particle-angle: 39deg; --particle-radius: 122px; --particle-start: 92px; --particle-length: 36px; --particle-delay: -410ms"></i>
-          <i style="--particle-angle: 71deg; --particle-radius: 98px; --particle-start: 75px; --particle-length: 24px; --particle-delay: -220ms"></i>
-          <i style="--particle-angle: 103deg; --particle-radius: 126px; --particle-start: 95px; --particle-length: 42px; --particle-delay: -620ms"></i>
-          <i style="--particle-angle: 137deg; --particle-radius: 111px; --particle-start: 84px; --particle-length: 31px; --particle-delay: -160ms"></i>
-          <i style="--particle-angle: 169deg; --particle-radius: 120px; --particle-start: 91px; --particle-length: 26px; --particle-delay: -520ms"></i>
-          <i style="--particle-angle: 201deg; --particle-radius: 103px; --particle-start: 78px; --particle-length: 34px; --particle-delay: -300ms"></i>
-          <i style="--particle-angle: 232deg; --particle-radius: 127px; --particle-start: 96px; --particle-length: 38px; --particle-delay: -690ms"></i>
-          <i style="--particle-angle: 264deg; --particle-radius: 105px; --particle-start: 80px; --particle-length: 25px; --particle-delay: -120ms"></i>
-          <i style="--particle-angle: 296deg; --particle-radius: 123px; --particle-start: 93px; --particle-length: 40px; --particle-delay: -470ms"></i>
-          <i style="--particle-angle: 328deg; --particle-radius: 110px; --particle-start: 83px; --particle-length: 30px; --particle-delay: -250ms"></i>
-          <i style="--particle-angle: 350deg; --particle-radius: 128px; --particle-start: 97px; --particle-length: 33px; --particle-delay: -570ms"></i>
-        </span>
-      </button>
+  <div class="entry-loader" data-entry-loader aria-hidden="true">
+    <div class="entry-loader__mark">
+      <svg class="entry-loader__dots" viewBox="0 0 728 97" fill="currentColor"><circle cx="34" cy="33" r="3.4"/><circle cx="34" cy="48" r="3.4"/><circle cx="47" cy="33" r="3.4"/><circle cx="82" cy="33" r="3.4"/><circle cx="130" cy="48" r="3.4"/><circle cx="130" cy="63" r="3.4"/><circle cx="143" cy="33" r="3.4"/><circle cx="178" cy="33" r="3.4"/><circle cx="178" cy="48" r="3.4"/><circle cx="191" cy="48" r="3.4"/><circle cx="226" cy="48" r="3.4"/><circle cx="239" cy="33" r="3.4"/><circle cx="274" cy="33" r="3.4"/><circle cx="274" cy="63" r="3.4"/><circle cx="287" cy="48" r="3.4"/><circle cx="322" cy="33" r="3.4"/><circle cx="322" cy="63" r="3.4"/><circle cx="335" cy="33" r="3.4"/><circle cx="335" cy="48" r="3.4"/><circle cx="370" cy="33" r="3.4"/><circle cx="370" cy="48" r="3.4"/><circle cx="370" cy="63" r="3.4"/><circle cx="383" cy="48" r="3.4"/><circle cx="418" cy="33" r="3.4"/><circle cx="418" cy="63" r="3.4"/><circle cx="431" cy="48" r="3.4"/><circle cx="466" cy="33" r="3.4"/><circle cx="479" cy="33" r="3.4"/><circle cx="514" cy="33" r="3.4"/><circle cx="514" cy="63" r="3.4"/><circle cx="562" cy="48" r="3.4"/><circle cx="562" cy="63" r="3.4"/><circle cx="575" cy="33" r="3.4"/><circle cx="610" cy="48" r="3.4"/><circle cx="610" cy="63" r="3.4"/><circle cx="623" cy="33" r="3.4"/><circle cx="623" cy="48" r="3.4"/><circle cx="658" cy="33" r="3.4"/><circle cx="706" cy="33" r="3.4"/><circle cx="706" cy="48" r="3.4"/><circle cx="706" cy="63" r="3.4"/><circle cx="719" cy="48" r="3.4"/></svg>
+      <img class="entry-loader__logo" src="/assets/images/entry-logo-aligned.png" width="2688" height="370" alt="" fetchpriority="high">
     </div>
-    <p class="biometric-access__status" data-biometric-status role="status" aria-live="polite" aria-atomic="true"></p>
-    <button class="biometric-access__skip" type="button" data-biometric-skip>SKIP</button>
-    <div class="biometric-access__handoff" aria-hidden="true"></div>
-  </section>
+  </div>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
       <div class="hero__brand" aria-hidden="true">
         <img class="hero__fallback" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
-        <video class="hero__video" data-hero-video autoplay muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
+        <img class="hero__motion-fallback" data-hero-motion-fallback data-src="/assets/images/FASHIONROCKSTAR-home-loop.webp" width="1280" height="720" alt="">
+        <video class="hero__video" data-hero-video muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
           <source src="/assets/video/FASHIONROCKSTAR-logo-only-4K.mp4" type="video/mp4">
         </video>
       </div>
@@ -118,7 +60,6 @@
         <a href="/services/" aria-label="Services"><span class="home-menu__label" data-braille="⠎⠑⠗⠧⠊⠉⠑⠎" aria-hidden="true"><span class="home-menu__english">Services</span></span></a>
         <a href="/booking/" aria-label="BOOKING"><span class="home-menu__label" data-braille="⠃⠕⠕⠅⠊⠝⠛" aria-hidden="true"><span class="home-menu__english">BOOKING</span></span></a>
         <a href="/issue-01/" aria-label="Issue 01"><span class="home-menu__label" data-braille="⠊⠎⠎⠥⠑ ⠼⠚⠁" aria-hidden="true"><span class="home-menu__english">Issue 01</span></span></a>
-        <a href="/about/" aria-label="About"><span class="home-menu__label" data-braille="⠁⠃⠕⠥⠞" aria-hidden="true"><span class="home-menu__english">About</span></span></a>
       </nav>
 
     </section>
