@@ -128,41 +128,10 @@ window.fashionrockstarProjects = [
         "hasAudio": true
       }
     ],
-    "gallery": [
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/01-dsc6257-2-copy-2400.webp 2400w",
-        "sourceFile": "_DSC6257-2 copy.jpg",
-        "wide": true,
-        "hasAudio": false
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/brokenheart-campaign/02-1111-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/02-1111-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/02-1111-2400.webp 2400w",
-        "sourceFile": "1111.jpg",
-        "wide": true,
-        "hasAudio": false
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/brokenheart-campaign/05-feet1-copy-640.webp 640w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-1280.webp 1280w, /assets/media/selected-work/brokenheart-campaign/05-feet1-copy-2400.webp 2400w",
-        "sourceFile": "FEET1 copy.jpg",
-        "wide": true,
-        "hasAudio": false
-      }
-    ],
+    "gallery": [],
     "date": "",
     "datePrecision": "unconfirmed",
-    "category": "CAMPAIGN",
+    "category": "VIDEOGRAPHY",
     "galleryOrderConfirmed": true
   },
   {
