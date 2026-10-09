@@ -1,0 +1,75 @@
+{
+  "pendingGuardAndHTTPError": {
+    "postCount": 1,
+    "dataRetained": true,
+    "feedback": "SUBMISSION FAILED \u2014 PLEASE TRY AGAIN."
+  },
+  "RetrySuccess": {
+    "posts": [
+      {
+        "form-name": [
+          "booking"
+        ],
+        "project-type": [
+          "photography,styling"
+        ],
+        "name": [
+          "TEST EDITORIAL"
+        ],
+        "email": [
+          "EDITORIAL@EXAMPLE.COM"
+        ],
+        "project-details": [
+          "LOCAL INTERCEPTED VALIDATION ONLY."
+        ],
+        "company": [
+          "LOCAL CHECK"
+        ],
+        "timeline": [
+          "TO BE DISCUSSED"
+        ],
+        "budget": [
+          "discuss"
+        ]
+      },
+      {
+        "form-name": [
+          "booking"
+        ],
+        "project-type": [
+          "photography,styling"
+        ],
+        "name": [
+          "TEST EDITORIAL"
+        ],
+        "email": [
+          "EDITORIAL@EXAMPLE.COM"
+        ],
+        "project-details": [
+          "LOCAL INTERCEPTED VALIDATION ONLY."
+        ],
+        "company": [
+          "LOCAL CHECK"
+        ],
+        "timeline": [
+          "TO BE DISCUSSED"
+        ],
+        "budget": [
+          "discuss"
+        ]
+      }
+    ],
+    "confirmationFocus": true,
+    "repeatedSubmissionGuard": true
+  },
+  "NetworkError": {
+    "dataRetained": true,
+    "controlsRestored": true
+  },
+  "AbortTimeout": {
+    "nativeAbortTimerExercised": true,
+    "testTimerDelayMs": 50,
+    "dataRetained": true,
+    "controlsRestored": true
+  }
+}

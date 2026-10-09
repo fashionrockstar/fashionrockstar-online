@@ -1,0 +1,45 @@
+{
+  "immediateCachedHover": {
+    "english": "1",
+    "braille": "0",
+    "classes": "is-resting"
+  },
+  "freshHover": {
+    "english": "0",
+    "braille": "1",
+    "classes": ""
+  },
+  "immediateCachedFocus": {
+    "english": "1",
+    "braille": "0",
+    "classes": "is-resting"
+  },
+  "freshKeyboardFocus": {
+    "english": "0",
+    "braille": "1",
+    "classes": ""
+  },
+  "mansaworld": {
+    "motion": "open",
+    "panels": "1",
+    "transitionNames": 0,
+    "heroTransform": "none"
+  },
+  "brokenheart-campaign": {
+    "motion": "open",
+    "panels": "2",
+    "transitionNames": 0,
+    "heroTransform": "none"
+  },
+  "touchCached": {
+    "english": "1",
+    "braille": "0",
+    "classes": "is-resting"
+  },
+  "touchReactivation": {
+    "english": "1",
+    "braille": "0",
+    "classes": "is-activating"
+  },
+  "touchDestination": "http://127.0.0.1:4173/work/"
+}

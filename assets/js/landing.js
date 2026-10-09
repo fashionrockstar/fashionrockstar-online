@@ -74,7 +74,21 @@
 
   const exploreLinks = document.querySelectorAll('.home-menu__links a[href]');
 
+  // Return to readable navigation after browser history restores HOME.
+  const resetExplore = () => exploreLinks.forEach(link => {
+    link.classList.remove('is-activating');
+    link.classList.add('is-resting');
+  });
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) resetExplore();
+  });
+
   exploreLinks.forEach((link) => {
+    // Restored hover/focus stays readable; leaving it re-enables the next
+    // intentional Braille interaction without trapping the cached state.
+    const releaseResting = () => link.classList.remove('is-resting');
+    link.addEventListener('pointerleave', releaseResting);
+    link.addEventListener('blur', releaseResting);
     link.addEventListener('click', (event) => {
       const isTouchNavigation = window.matchMedia('(hover: none), (pointer: coarse)').matches;
       const isModifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
@@ -82,6 +96,7 @@
       if (!isTouchNavigation || isModifiedClick || event.button !== 0 || link.classList.contains('is-activating')) return;
 
       event.preventDefault();
+      link.classList.remove('is-resting');
       link.classList.add('is-activating');
 
       window.setTimeout(() => {

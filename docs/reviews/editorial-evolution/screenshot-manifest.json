@@ -1,0 +1,191 @@
+[
+  {
+    "filename": "10-desktop-01-home-entry.png",
+    "before": "../../base44/screenshots/10-desktop-01-home-entry.png",
+    "after": "after/10-desktop-01-home-entry.png",
+    "afterSHA256": "52a1903f6e05a3d3488593c2a83f9e5cae30badf121cea89aa74cba5ad003720",
+    "afterBytes": 33514
+  },
+  {
+    "filename": "10-desktop-02-home-hero.png",
+    "before": "../../base44/screenshots/10-desktop-02-home-hero.png",
+    "after": "after/10-desktop-02-home-hero.png",
+    "afterSHA256": "c85462d720d2e97a79e61ca110c2934d43dff6be97385470d4d4e9e913fb162d",
+    "afterBytes": 34396
+  },
+  {
+    "filename": "10-desktop-03-home-menu.png",
+    "before": "../../base44/screenshots/10-desktop-03-home-menu.png",
+    "after": "after/10-desktop-03-home-menu.png",
+    "afterSHA256": "bbb36102ac7536b381fbf2c41a3dc6395ec36b30ac75b038f07b9f7d65009ab3",
+    "afterBytes": 63503
+  },
+  {
+    "filename": "10-desktop-04-selected-work-top.png",
+    "before": "../../base44/screenshots/10-desktop-04-selected-work-top.png",
+    "after": "after/10-desktop-04-selected-work-top.png",
+    "afterSHA256": "9c45d36ff332756b0478b825c2d62ec1819ee0b8e32300fe87fa2ade9920cbde",
+    "afterBytes": 223297
+  },
+  {
+    "filename": "10-desktop-05-services-top.png",
+    "before": "../../base44/screenshots/10-desktop-05-services-top.png",
+    "after": "after/10-desktop-05-services-top.png",
+    "afterSHA256": "64a2290ce645c11484351504d8f00c52a051f6983512f995baac911c0d1535fb",
+    "afterBytes": 93549
+  },
+  {
+    "filename": "10-desktop-06-about-top.png",
+    "before": "../../base44/screenshots/10-desktop-06-about-top.png",
+    "after": "after/10-desktop-06-about-top.png",
+    "afterSHA256": "b7864320a2c7f773c3128159c7d82b5411e6e5a73fe9f24159f74046684ad0a9",
+    "afterBytes": 316563
+  },
+  {
+    "filename": "10-desktop-07-booking-top.png",
+    "before": "../../base44/screenshots/10-desktop-07-booking-top.png",
+    "after": "after/10-desktop-07-booking-top.png",
+    "afterSHA256": "71e80ab3fcc6e26b6d075dbdbe9bd1256d721b5737ad39c069725aeeca63997e",
+    "afterBytes": 70005
+  },
+  {
+    "filename": "10-desktop-08-issue-01-top.png",
+    "before": "../../base44/screenshots/10-desktop-08-issue-01-top.png",
+    "after": "after/10-desktop-08-issue-01-top.png",
+    "afterSHA256": "6f5fec638bb648ea4be285412ce29655d3a9530ab97bb9c59148905721611737",
+    "afterBytes": 37496
+  },
+  {
+    "filename": "10-desktop-09-project-top.png",
+    "before": "../../base44/screenshots/10-desktop-09-project-top.png",
+    "after": "after/10-desktop-09-project-top.png",
+    "afterSHA256": "968f9552a479b0292e714ab91a793ac6e66e3b2229db2d87aa10bae50271cd3e",
+    "afterBytes": 217513
+  },
+  {
+    "filename": "20-tablet-01-home-entry.png",
+    "before": "../../base44/screenshots/20-tablet-01-home-entry.png",
+    "after": "after/20-tablet-01-home-entry.png",
+    "afterSHA256": "f72f6d2c984dcf024be9f4b4cfdf28b480607790c8db7dd99a871bb6ad9378d8",
+    "afterBytes": 16045
+  },
+  {
+    "filename": "20-tablet-02-home-hero.png",
+    "before": "../../base44/screenshots/20-tablet-02-home-hero.png",
+    "after": "after/20-tablet-02-home-hero.png",
+    "afterSHA256": "216ab14805e55237137904fcdb0c10dbb33f145ca3a445aa3d51c35c3e876aff",
+    "afterBytes": 18226
+  },
+  {
+    "filename": "20-tablet-03-home-menu.png",
+    "before": "../../base44/screenshots/20-tablet-03-home-menu.png",
+    "after": "after/20-tablet-03-home-menu.png",
+    "afterSHA256": "2739558f090f98dfae1ba5968146455ecbe362257437f24f3d2cc28ced685783",
+    "afterBytes": 38484
+  },
+  {
+    "filename": "20-tablet-04-selected-work-top.png",
+    "before": "../../base44/screenshots/20-tablet-04-selected-work-top.png",
+    "after": "after/20-tablet-04-selected-work-top.png",
+    "afterSHA256": "9772bd1d9d8d6c4c1bb7f1d83676cfaa2700203e841fd8e9566919a75a18a5a1",
+    "afterBytes": 340453
+  },
+  {
+    "filename": "20-tablet-05-services-top.png",
+    "before": "../../base44/screenshots/20-tablet-05-services-top.png",
+    "after": "after/20-tablet-05-services-top.png",
+    "afterSHA256": "aaf0002694d5faa405eb6b26030e3c525d41b1a7162ecd338135c73634958c2f",
+    "afterBytes": 98128
+  },
+  {
+    "filename": "20-tablet-06-about-top.png",
+    "before": "../../base44/screenshots/20-tablet-06-about-top.png",
+    "after": "after/20-tablet-06-about-top.png",
+    "afterSHA256": "4edb5541a9ae5844fd36b4c048a93c03167f6bb0a213921cce8767b61974e932",
+    "afterBytes": 252373
+  },
+  {
+    "filename": "20-tablet-07-booking-top.png",
+    "before": "../../base44/screenshots/20-tablet-07-booking-top.png",
+    "after": "after/20-tablet-07-booking-top.png",
+    "afterSHA256": "f35aa11d46a09324ddefd4ab50cb3c82eb6051f2bfaa2b384d7d8b12e22de151",
+    "afterBytes": 55266
+  },
+  {
+    "filename": "20-tablet-08-issue-01-top.png",
+    "before": "../../base44/screenshots/20-tablet-08-issue-01-top.png",
+    "after": "after/20-tablet-08-issue-01-top.png",
+    "afterSHA256": "6bb450b213888fb8820f88d9ca3a97b2315ffce5e09a0b64d97eb66609a49f5b",
+    "afterBytes": 27409
+  },
+  {
+    "filename": "20-tablet-09-project-top.png",
+    "before": "../../base44/screenshots/20-tablet-09-project-top.png",
+    "after": "after/20-tablet-09-project-top.png",
+    "afterSHA256": "87ab107ae26fcd6580e86dd443331bb968729d751382130ffcf62dfe9fc3a2bf",
+    "afterBytes": 419222
+  },
+  {
+    "filename": "30-mobile-about-top.png",
+    "before": "../../base44/screenshots/30-mobile-about-top.png",
+    "after": "after/30-mobile-about-top.png",
+    "afterSHA256": "06ddad0f6d4b42b29ee7546945ab5939ed54212967fa8adca3fa86fc68039eb2",
+    "afterBytes": 84775
+  },
+  {
+    "filename": "30-mobile-booking-top.png",
+    "before": "../../base44/screenshots/30-mobile-booking-top.png",
+    "after": "after/30-mobile-booking-top.png",
+    "afterSHA256": "7d3bdb0bf43f2f9921562d8cad69f6f5ccdb261f89ea1709d52cb7ed14d1a2d7",
+    "afterBytes": 33916
+  },
+  {
+    "filename": "30-mobile-home-entry.png",
+    "before": "../../base44/screenshots/30-mobile-home-entry.png",
+    "after": "after/30-mobile-home-entry.png",
+    "afterSHA256": "bf5d1875d795c33a7412cc6980bff68d897de6abc68a0b0e8593b86a476d83fb",
+    "afterBytes": 9973
+  },
+  {
+    "filename": "30-mobile-home-hero.png",
+    "before": "../../base44/screenshots/30-mobile-home-hero.png",
+    "after": "after/30-mobile-home-hero.png",
+    "afterSHA256": "1e2d608bbd8ab8ec11062b818aa517328abb7c307b606eccbe107ce6b253fb91",
+    "afterBytes": 13453
+  },
+  {
+    "filename": "30-mobile-home-menu.png",
+    "before": "../../base44/screenshots/30-mobile-home-menu.png",
+    "after": "after/30-mobile-home-menu.png",
+    "afterSHA256": "406dd52a93ab1f5ed20854fe85af92f5ee4d5ad61fa2409972a61a6e836d5f7c",
+    "afterBytes": 18110
+  },
+  {
+    "filename": "30-mobile-issue-01-top.png",
+    "before": "../../base44/screenshots/30-mobile-issue-01-top.png",
+    "after": "after/30-mobile-issue-01-top.png",
+    "afterSHA256": "2e5648e55e3f3233a0a4652edfbbe2922119c9dde9c146c00cf926bb565cc1bf",
+    "afterBytes": 18484
+  },
+  {
+    "filename": "30-mobile-project-top.png",
+    "before": "../../base44/screenshots/30-mobile-project-top.png",
+    "after": "after/30-mobile-project-top.png",
+    "afterSHA256": "f42f56cbc839311e1b2dd2189864232acbabcb4b879b65dd1aa5b48a7352ef40",
+    "afterBytes": 178536
+  },
+  {
+    "filename": "30-mobile-services-top.png",
+    "before": "../../base44/screenshots/30-mobile-services-top.png",
+    "after": "after/30-mobile-services-top.png",
+    "afterSHA256": "0f4444d9978710bddd340b9e90a199efeee1e6281e0ccc2571400c58f6c10632",
+    "afterBytes": 48971
+  },
+  {
+    "filename": "30-mobile-work-top.png",
+    "before": "../../base44/screenshots/30-mobile-work-top.png",
+    "after": "after/30-mobile-work-top.png",
+    "afterSHA256": "ec63ff0f8245af4f3f33b882219c99b3d7221dabf8466bfe17feb4024dc3357b",
+    "afterBytes": 114615
+  }
+]

@@ -7,14 +7,17 @@
   <title>BOOKING — FASHIONROCKSTAR.ONLINE</title>
   <link rel="canonical" href="/booking/">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/editorial-system.css">
   <link rel="stylesheet" href="/assets/css/book.css">
+  <script src="/assets/js/editorial-motion.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/booking.js" defer></script>
 </head>
-<body class="theme-dark inquiry-body">
+<body class="theme-dark inquiry-body editorial-interior">
+  <a class="site-skip" href="#main-content">SKIP TO CONTENT</a>
   <header class="site-header">
     <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-white.png" alt=""></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <div class="site-nav__work">
         <div class="site-nav__work-row">
@@ -36,9 +39,9 @@
     </nav>
   </header>
 
-  <main class="inquiry-page">
+  <main id="main-content" class="inquiry-page">
     <header class="inquiry-hero">
-      <h1 class="inquiry-title" id="inquiry-title"><span>BOOKING</span></h1>
+      <h1 class="inquiry-title" data-editorial-reveal="title" id="inquiry-title"><span>BOOKING</span></h1>
       <div class="inquiry-rule" aria-hidden="true"></div>
     </header>
 
@@ -49,7 +52,7 @@
         <input id="company-website" name="company-website" type="text" tabindex="-1" autocomplete="off">
       </p>
 
-      <fieldset class="inquiry-section inquiry-section--services">
+      <fieldset class="inquiry-section inquiry-section--services" data-editorial-reveal>
         <legend>01 / SELECT SERVICES <span class="inquiry-service-hint">— MULTIPLE ALLOWED</span></legend>
         <div class="project-type-grid">
           <label><input type="radio" name="project-type" value="creative-direction" required><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">01</span><span class="inquiry-service-name">CREATIVE DIRECTION</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
@@ -110,7 +113,7 @@
           <div class="inquiry-submit">
             <button class="inquiry-send" type="submit">
               <span class="inquiry-send__label">SEND INQUIRY</span>
-              <span class="inquiry-send__arrow" aria-hidden="true">↗</span>
+              <span class="inquiry-send__arrow" aria-hidden="true"></span>
             </button>
             <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
           </div>

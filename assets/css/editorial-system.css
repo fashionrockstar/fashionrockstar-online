@@ -1,0 +1,103 @@
+/* Shared editorial rhythm. HOME's film and first-entry geometry stay independent. */
+:root {
+  --frsr-gutter: clamp(1.125rem, 4.5vw, 4.5rem);
+  --frsr-space-1: .75rem;
+  --frsr-space-2: 1.25rem;
+  --frsr-space-3: clamp(1.5rem, 3vw, 3rem);
+  --frsr-space-4: clamp(2rem, 4.5vw, 4.5rem);
+  --frsr-space-5: clamp(3rem, 6vw, 6rem);
+  --frsr-space-6: clamp(4rem, 8vw, 8rem);
+  --frsr-ease: cubic-bezier(.22, 1, .36, 1);
+  --frsr-duration-fast: 180ms;
+  --frsr-duration-base: 320ms;
+  --frsr-duration-reveal: 640ms;
+  --frsr-rule: color-mix(in srgb, currentColor 28%, transparent);
+  --frsr-muted: #b4b4b0;
+}
+
+.editorial-interior {
+  --font-display: var(--font-ui);
+  text-transform: uppercase;
+}
+.editorial-interior .site-header {
+  padding-inline: var(--frsr-gutter);
+}
+.editorial-interior .site-logo {
+  width: clamp(8rem, 11vw, 10rem);
+}
+.editorial-interior .site-nav a,
+.editorial-interior .menu-toggle,
+.editorial-interior .site-submenu-toggle {
+  font-weight: 700;
+  letter-spacing: .045em;
+}
+.editorial-interior .site-nav a {
+  transition: opacity var(--frsr-duration-fast) ease;
+}
+.editorial-interior .site-nav a:hover {
+  opacity: .72;
+}
+.editorial-interior .page-title {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: -.065em;
+  line-height: .94;
+}
+.editorial-interior a:focus-visible,
+.editorial-interior button:focus-visible,
+.editorial-interior summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+.site-skip {
+  position: fixed;
+  z-index: 100;
+  top: .5rem;
+  left: var(--frsr-gutter);
+  padding: .85rem 1.25rem;
+  color: var(--page-bg);
+  background: var(--page-fg);
+  font-size: .75rem;
+  font-weight: 700;
+  transform: translateY(-160%);
+}
+.site-skip:focus { transform: none; }
+
+/* A focused section must never be obscured by a decorative entrance. */
+[data-editorial-reveal]:focus-within {
+  opacity: 1 !important;
+  clip-path: none !important;
+}
+
+@media (max-width: 760px) {
+  .editorial-interior .site-header {
+    padding-inline: var(--frsr-gutter);
+  }
+  .editorial-interior .site-nav a,
+  .editorial-interior .menu-toggle {
+    min-height: 44px;
+  }
+}
+@media (max-width: 760px) and (scripting: none) {
+  .editorial-interior .site-header { height: auto; }
+  .editorial-interior .menu-toggle,
+  .editorial-interior .site-submenu-toggle { display: none; }
+  .editorial-interior .site-nav {
+    position: static;
+    grid-column: 1 / -1;
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    margin-top: .75rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-editorial-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+  .editorial-interior .site-nav a { transition: none; }
+}

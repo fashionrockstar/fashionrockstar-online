@@ -1,0 +1,422 @@
+[
+  {
+    "id": "brokenheart-runway-mad-2026",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=brokenheart-runway-mad-2026",
+      "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+      "role": "CREATIVE DIRECTOR \u2013 LEAD STYLIST",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/brokenheart-runway/cover.mp4"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/brokenheart-runway/01-1-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/02-2-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/03-3-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/04-4-1-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/05-4-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/06-5-1-2400.webp",
+        "/assets/media/selected-work/brokenheart-runway/07-7-2400.webp"
+      ],
+      "previous": "/project/?id=ouissam",
+      "next": "/project/?id=brokenheart-campaign"
+    }
+  },
+  {
+    "id": "brokenheart-campaign",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=brokenheart-campaign",
+      "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+      "role": "",
+      "year": "",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+        "/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4"
+      ],
+      "gallery": [],
+      "previous": "/project/?id=brokenheart-runway-mad-2026",
+      "next": "/project/?id=mansaworld"
+    }
+  },
+  {
+    "id": "mansaworld",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=mansaworld",
+      "title": "MANSAWORLD",
+      "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/images/projects/project-03-mansaworld/fr4.jpg"
+      ],
+      "gallery": [
+        "/assets/images/projects/project-03-mansaworld/img-1184.jpg",
+        "/assets/images/projects/project-03-mansaworld/fr5-copy.jpg",
+        "/assets/images/projects/project-03-mansaworld/fr2.jpg",
+        "/assets/images/projects/project-03-mansaworld/part-1.jpg",
+        "/assets/images/projects/project-03-mansaworld/img-1178.jpg",
+        "/assets/images/projects/project-03-mansaworld/part-2-2.jpg",
+        "/assets/images/projects/project-03-mansaworld/fr1.jpg",
+        "/assets/images/projects/project-03-mansaworld/img-1163.jpg",
+        "/assets/images/projects/project-03-mansaworld/part-3.jpg",
+        "/assets/images/projects/project-03-mansaworld/3.jpg",
+        "/assets/images/projects/project-03-mansaworld/5.jpg",
+        "/assets/images/projects/project-03-mansaworld/funmi-2-1.jpg",
+        "/assets/images/projects/project-03-mansaworld/funmi-3.jpg",
+        "/assets/images/projects/project-03-mansaworld/funmi-4.jpg"
+      ],
+      "previous": "/project/?id=brokenheart-campaign",
+      "next": "/project/?id=fashionrockstarmaxxing"
+    }
+  },
+  {
+    "id": "fashionrockstarmaxxing",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=fashionrockstarmaxxing",
+      "title": "FASHIONROCKSTARMAXXING",
+      "role": "PHOTOGRAPHY \u2013 CREATIVE DIRECTION \u2013 STYLING",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/fashionrockstarmaxxing/01-1-2400.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/fashionrockstarmaxxing/02-2-1-2400.webp",
+        "/assets/media/selected-work/fashionrockstarmaxxing/03-2-2400.webp",
+        "/assets/media/selected-work/fashionrockstarmaxxing/04-3-2-2400.webp"
+      ],
+      "previous": "/project/?id=mansaworld",
+      "next": "/project/?id=kaine-basquiat-mural-2026"
+    }
+  },
+  {
+    "id": "kaine-basquiat-mural-2026",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=kaine-basquiat-mural-2026",
+      "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+      "role": "CREATIVE DIRECTION AND MAKEUP",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/kaine-basquiat/cover-2400.webp"
+      ],
+      "gallery": [
+        "https://www.instagram.com/reel/DZVRQytRlJW/",
+        "/assets/media/selected-work/kaine-basquiat/01-dsc7164-copy-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/02-dsc7411-copy-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/03-dsc7449-copy-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/04-dsc7450-copy-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/05-dsc7478-copy-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/06-09-2400.webp",
+        "/assets/media/selected-work/kaine-basquiat/08-stand-2400.webp"
+      ],
+      "previous": "/project/?id=fashionrockstarmaxxing",
+      "next": "/project/?id=micaela-gomes-mad-2026"
+    }
+  },
+  {
+    "id": "micaela-gomes-mad-2026",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=micaela-gomes-mad-2026",
+      "title": "MICAELA GOMES [M.A.D 2026]",
+      "role": "PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+        "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
+        "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
+        "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp"
+      ],
+      "previous": "/project/?id=kaine-basquiat-mural-2026",
+      "next": "/project/?id=lees-broken-dolls"
+    }
+  },
+  {
+    "id": "lees-broken-dolls",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=lees-broken-dolls",
+      "title": "#LEE'S BROKEN DOLLS",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp",
+        "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp",
+        "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp",
+        "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp"
+      ],
+      "previous": "/project/?id=micaela-gomes-mad-2026",
+      "next": "/project/?id=call-her-angelina"
+    }
+  },
+  {
+    "id": "call-her-angelina",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=call-her-angelina",
+      "title": "CALL HER ANGELINA",
+      "role": "PHOTOGRAPHY / CREATIVE DIRECTION",
+      "year": "",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/call-her-angelina/00-cover-approved-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/call-her-angelina/01-original-title-spread-2048.webp",
+        "/assets/media/selected-work/call-her-angelina/02-gloved-portrait-1365.webp",
+        "/assets/media/selected-work/call-her-angelina/03-ladder-portrait-1365.webp",
+        "/assets/media/selected-work/call-her-angelina/04-negative-portrait-1365.webp",
+        "/assets/media/selected-work/call-her-angelina/05-silver-setting-1365.webp",
+        "/assets/media/selected-work/call-her-angelina/06-alternate-silver-1365.webp"
+      ],
+      "previous": "/project/?id=lees-broken-dolls",
+      "next": "/project/?id=franck-anti-beauty-2026"
+    }
+  },
+  {
+    "id": "franck-anti-beauty-2026",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=franck-anti-beauty-2026",
+      "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY / BEAUTY",
+      "year": "2026",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp"
+      ],
+      "previous": "/project/?id=call-her-angelina",
+      "next": "/project/?id=sad-princess"
+    }
+  },
+  {
+    "id": "sad-princess",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=sad-princess",
+      "title": "#SAD PRINCESS",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+      "year": "2026",
+      "credits": [
+        "STYLIST: FUNMI MILAYO",
+        "MODELS: MZRABELLE, ROMI, PENELOPE"
+      ],
+      "covers": [
+        "/assets/media/selected-work/sad-princess/01-img-5836-1320.webp",
+        "/assets/media/selected-work/sad-princess/02-img-5838-1320.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/sad-princess/03-img-5839-1320.webp"
+      ],
+      "previous": "/project/?id=franck-anti-beauty-2026",
+      "next": "/project/?id=blue"
+    }
+  },
+  {
+    "id": "blue",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=blue",
+      "title": "BLUE",
+      "role": "PHOTOGRAPHY \u2013 CREATIVE DIRECTION \u2013 SET DESIGN \u2013 STYLING",
+      "year": "2025",
+      "credits": [
+        "CREATIVE DIRECTION \u2014 FASHIONROCKSTAR",
+        "PHOTOGRAPHY ASSISTANT \u2014 LEE RIDORE",
+        "MODELS \u2014 ZAVYER VEGIARD, H.VICK FONTUS"
+      ],
+      "covers": [
+        "/assets/media/selected-work/blue/01-fashionrockstar-0135-2400.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/blue/02-fashionrockstar-0136-2400.webp",
+        "/assets/media/selected-work/blue/03-fashionrockstar-0139-2400.webp",
+        "/assets/media/selected-work/blue/04-fashionrockstar-0138-2400.webp",
+        "/assets/media/selected-work/blue/05-fashionrockstar-0137-2400.webp"
+      ],
+      "previous": "/project/?id=sad-princess",
+      "next": "/project/?id=saint-jou-2016"
+    }
+  },
+  {
+    "id": "saint-jou-2016",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=saint-jou-2016",
+      "title": "\"2016\" SAINT JOU \u2014 MUSIC VIDEO",
+      "role": "CREATIVE DIRECTION \u2014 VIDEOGRAPHY",
+      "year": "2025",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/saint-jou-2016/01-img-8441.jpg"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/saint-jou-2016/02-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/03-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/04-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/05-still-2400.webp",
+        "/assets/media/selected-work/saint-jou-2016/06-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/07-still-2400.webp",
+        "/assets/media/selected-work/saint-jou-2016/08-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/09-still-1536.webp",
+        "/assets/media/selected-work/saint-jou-2016/10-still-2400.webp",
+        "/assets/media/selected-work/saint-jou-2016/11-still-1536.webp"
+      ],
+      "previous": "/project/?id=blue",
+      "next": "/project/?id=lucas-issue-01-2025"
+    }
+  },
+  {
+    "id": "lucas-issue-01-2025",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=lucas-issue-01-2025",
+      "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+      "year": "2025",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/lucas-issue-01-2025/01-title-spread-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/lucas-issue-01-2025/02-jewelry-detail-2048.webp",
+        "/assets/media/selected-work/lucas-issue-01-2025/03-close-up-2048.webp",
+        "/assets/media/selected-work/lucas-issue-01-2025/04-duffle-spread-2048.webp",
+        "/assets/media/selected-work/lucas-issue-01-2025/05-silhouette-spread-2048.webp"
+      ],
+      "previous": "/project/?id=saint-jou-2016",
+      "next": "/project/?id=brokenheart-issue-01-2025"
+    }
+  },
+  {
+    "id": "brokenheart-issue-01-2025",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=brokenheart-issue-01-2025",
+      "title": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+      "year": "2025",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/brokenheart-issue-01-2025/20-group01-copy-2-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/brokenheart-issue-01-2025/01-a01-copy-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/02-a4-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/03-a5-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/04-a3-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/05-angel-gray-1536.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/06-c03-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/07-girls-01-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/08-girls-03-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/09-boys-3-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/10-j01-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/11-j03-copy-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/12-j4-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/13-jo4-copy-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/14-j1-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/15-m03-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/16-img-1344-copy-1365.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/17-m1-1-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/18-group2-1-2048.webp",
+        "/assets/media/selected-work/brokenheart-issue-01-2025/19-group-3-1365.webp"
+      ],
+      "previous": "/project/?id=lucas-issue-01-2025",
+      "next": "/project/?id=in-god-i-trust"
+    }
+  },
+  {
+    "id": "in-god-i-trust",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=in-god-i-trust",
+      "title": "IN GOD I TRUST",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+      "year": "2025",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/in-god-i-trust/02-dark-collage-2048.webp",
+        "/assets/media/selected-work/in-god-i-trust/03-close-up-2048.webp"
+      ],
+      "previous": "/project/?id=brokenheart-issue-01-2025",
+      "next": "/project/?id=ouissam"
+    }
+  },
+  {
+    "id": "ouissam",
+    "passed": true,
+    "mismatches": [],
+    "errors": [],
+    "actual": {
+      "url": "/project/?id=ouissam",
+      "title": "OUISSAM",
+      "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+      "year": "2025",
+      "credits": [],
+      "covers": [
+        "/assets/media/selected-work/ouissam/04-img-2652.webp",
+        "/assets/media/selected-work/ouissam/03-img-2559.webp"
+      ],
+      "gallery": [
+        "/assets/media/selected-work/ouissam/01-8ac3b09b.webp",
+        "/assets/media/selected-work/ouissam/02-img-0007.webp",
+        "/assets/media/selected-work/ouissam/05-img-2653.webp",
+        "/assets/media/selected-work/ouissam/06-img-2655.webp"
+      ],
+      "previous": "/project/?id=in-god-i-trust",
+      "next": "/project/?id=brokenheart-runway-mad-2026"
+    }
+  }
+]

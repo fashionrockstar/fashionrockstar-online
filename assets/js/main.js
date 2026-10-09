@@ -18,7 +18,7 @@
   const closeMenu = () => {
     if (!toggle || !siteNav) return;
     toggle.setAttribute('aria-expanded', 'false');
-    toggle.textContent = 'Menu';
+    toggle.textContent = 'MENU';
     siteNav.classList.remove('is-open');
     siteNav.inert = mobileNavigation.matches;
     setSubmenu(false);
@@ -29,7 +29,7 @@
     toggle.addEventListener('click', () => {
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isOpen));
-      toggle.textContent = isOpen ? 'Menu' : 'Close';
+      toggle.textContent = isOpen ? 'MENU' : 'CLOSE';
       siteNav.classList.toggle('is-open', !isOpen);
       siteNav.inert = isOpen && mobileNavigation.matches;
       if (isOpen) setSubmenu(false);

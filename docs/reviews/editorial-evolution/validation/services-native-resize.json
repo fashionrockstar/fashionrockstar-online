@@ -1,0 +1,37 @@
+{
+  "resizedExpandedDetails": {
+    "height": 3012.890625,
+    "summary": 114.5625,
+    "details": 2898.328125,
+    "inline": "",
+    "animations": 0
+  },
+  "rapidToggle": true,
+  "allFiveDisclosures": [
+    {
+      "id": "creative-direction",
+      "overflow": false
+    },
+    {
+      "id": "photography",
+      "overflow": false
+    },
+    {
+      "id": "videography",
+      "overflow": false
+    },
+    {
+      "id": "styling",
+      "overflow": false
+    },
+    {
+      "id": "beauty",
+      "overflow": false
+    }
+  ],
+  "noJSSemantics": {
+    "nativeAccordionNameGrouping": true,
+    "navigationVisible": true,
+    "nativeRequiredRadioAndFormValidity": true
+  }
+}

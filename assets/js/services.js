@@ -7,6 +7,11 @@
   const aliases = { visuals: 'photography', video: 'videography' };
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const running = new WeakMap();
+  const duration = (name, fallback) => {
+    const value = getComputedStyle(page).getPropertyValue(name).trim();
+    const amount = Number.parseFloat(value);
+    return Number.isFinite(amount) ? amount * (value.endsWith('ms') ? 1 : 1000) : fallback;
+  };
 
   const replaceFragment = (id) => {
     try {
@@ -40,7 +45,6 @@
         other.open = false;
       });
       service.open = true;
-      service.closest('li')?.classList.add('is-inview');
       replaceFragment(service.id);
     }
     const saved = service.style.height;
@@ -57,8 +61,8 @@
       { height: start + 'px' },
       { height: destination + 'px' }
     ], {
-      duration: expand ? 760 : 480,
-      easing: 'cubic-bezier(.22, 1, .36, 1)',
+      duration: expand ? duration('--frsr-duration-reveal', 640) : duration('--frsr-duration-base', 320),
+      easing: getComputedStyle(page).getPropertyValue('--frsr-ease').trim() || 'cubic-bezier(.22, 1, .36, 1)',
       fill: 'forwards'
     });
     running.set(service, { animation, expand });
@@ -66,6 +70,7 @@
       if (running.get(service)?.animation !== animation) return;
       running.delete(service);
       if (!expand) service.open = false;
+      animation.cancel();
       service.style.removeProperty('height');
       service.style.removeProperty('overflow');
     }, { once: true });
@@ -80,9 +85,6 @@
       const expand = current?.expand === false || (!current && !service.open);
       animateDisclosure(service, expand);
     });
-    summary?.addEventListener('focusin', () => {
-      service.closest('li')?.classList.add('is-inview');
-    });
     service.addEventListener('toggle', () => {
       if (service.open) {
         services.forEach((other) => {
@@ -90,7 +92,6 @@
           cancel(other);
           other.open = false;
         });
-        service.closest('li')?.classList.add('is-inview');
         replaceFragment(service.id);
         window.requestAnimationFrame(() => {
           if (!service.open) return;
@@ -117,28 +118,11 @@
       cancel(service);
       service.open = service === target;
     });
-    target.closest('li')?.classList.add('is-inview');
     window.requestAnimationFrame(() =>
       target.scrollIntoView({ block: 'start', behavior: 'instant' }));
   };
   window.addEventListener('hashchange', openFragment);
   openFragment();
-
-  if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const targets = Array.from(page.querySelectorAll('.service-list > li, .services-closing'));
-    const observer = new IntersectionObserver((entries, current) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-inview');
-        current.unobserve(entry.target);
-      });
-    }, { threshold: .055, rootMargin: '0px 0px -3% 0px' });
-    services.forEach((service) => {
-      if (service.open) service.closest('li')?.classList.add('is-inview');
-    });
-    page.classList.add('has-scroll-motion');
-    targets.forEach((target) => observer.observe(target));
-  }
 
   reducedMotion.addEventListener?.('change', () => {
     if (!reducedMotion.matches) return;
@@ -149,6 +133,5 @@
       cancel(service);
       service.open = expand;
     });
-    page.classList.remove('has-scroll-motion');
   });
 })();

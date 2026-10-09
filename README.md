@@ -1,5 +1,26 @@
 # FASHIONROCKSTAR.ONLINE
 
+## Editorial evolution review — October 9, 2026
+
+The current refinement starts from production `main` at `b390752`, on isolated
+branch `redesign/editorial-evolution-20261009`. GitHub source is authoritative;
+the public Netlify deployment differed from it during the audit. This branch
+preserves the current first-session simple entry, HOME film/mobile loop, all 16
+projects, gallery order, approved words and existing Netlify Booking handling.
+The older development notes below describe earlier revisions.
+
+Shared type, gutters and motion live in `assets/css/editorial-system.css` and
+`assets/js/editorial-motion.js`. Native HTML, CSS and JavaScript remain the
+architecture. Page-specific treatments are scoped to the existing routes.
+The existing local-only Neue Montreal font declaration is retained; visitors
+without that installed face use the existing Inter/system fallback.
+
+The [Base44 handoff](docs/base44/README.md) records the audit, screenshots,
+preservation inventory, design specification and actual integration limits.
+The [implementation review](docs/reviews/editorial-evolution/README.md) includes
+the major changes, validation and before/after comparison. Production publishing
+and merging `main` require the owner's separate approval.
+
 ## Visual language — October 9, 2026
 
 **ALL PUBLIC-FACING VISIBLE TEXT MUST BE UPPERCASE.** This includes page

@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Issue 01 — a digital and print publication by FASHIONROCKSTAR.ONLINE.">
-  <title>Issue 01 — FASHIONROCKSTAR.ONLINE</title>
+  <title>ISSUE 01 — FASHIONROCKSTAR.ONLINE</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/editorial-system.css">
+  <link rel="stylesheet" href="/assets/css/issue.css">
+  <script src="/assets/js/editorial-motion.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
 </head>
-<body class="theme-light">
+<body class="theme-light editorial-interior">
+  <a class="site-skip" href="#main-content">SKIP TO CONTENT</a>
   <header class="site-header">
     <a class="site-logo" href="/" aria-label="FASHIONROCKSTAR.ONLINE home"><img src="/assets/images/fahionrockstar-logo-black.png" alt=""></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <div class="site-nav__work">
         <div class="site-nav__work-row">
@@ -33,9 +37,15 @@
     </nav>
   </header>
 
-  <main class="page-shell issue-page">
-    <h1 class="page-title">Issue 01</h1>
-    <div class="issue-meta"><span>Digital + Print</span><strong>Coming Soon</strong></div>
+  <main id="main-content" class="issue-page" aria-labelledby="issue-title">
+    <h1 class="issue-title" id="issue-title" data-editorial-reveal="title">
+      <span class="issue-title__word">ISSUE</span>
+      <span class="issue-title__number">01</span>
+    </h1>
+    <div class="issue-meta" data-editorial-reveal>
+      <span>DIGITAL + PRINT</span>
+      <strong>COMING SOON</strong>
+    </div>
   </main>
 </body>
 </html>

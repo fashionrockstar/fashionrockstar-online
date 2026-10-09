@@ -1,0 +1,2520 @@
+{
+  "checks": [
+    {
+      "check": "catalogue contains same 16 IDs in original order",
+      "pass": true,
+      "detail": [
+        "brokenheart-runway-mad-2026",
+        "brokenheart-campaign",
+        "mansaworld",
+        "fashionrockstarmaxxing",
+        "kaine-basquiat-mural-2026",
+        "micaela-gomes-mad-2026",
+        "lees-broken-dolls",
+        "call-her-angelina",
+        "franck-anti-beauty-2026",
+        "sad-princess",
+        "blue",
+        "saint-jou-2016",
+        "lucas-issue-01-2025",
+        "brokenheart-issue-01-2025",
+        "in-god-i-trust",
+        "ouissam"
+      ]
+    },
+    {
+      "check": "all16 work links same catalogue order",
+      "pass": true,
+      "detail": [
+        "brokenheart-runway-mad-2026",
+        "brokenheart-campaign",
+        "mansaworld",
+        "fashionrockstarmaxxing",
+        "kaine-basquiat-mural-2026",
+        "micaela-gomes-mad-2026",
+        "lees-broken-dolls",
+        "call-her-angelina",
+        "franck-anti-beauty-2026",
+        "sad-princess",
+        "blue",
+        "saint-jou-2016",
+        "lucas-issue-01-2025",
+        "brokenheart-issue-01-2025",
+        "in-god-i-trust",
+        "ouissam"
+      ]
+    },
+    {
+      "check": "home 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "home 820px reduced motion no blocking",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "project brokenheart-runway-mad-2026 title/status",
+      "pass": true,
+      "detail": {
+        "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+        "status": 200
+      }
+    },
+    {
+      "check": "project brokenheart-runway-mad-2026 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=ouissam",
+        "next": "/project/?id=brokenheart-campaign"
+      }
+    },
+    {
+      "check": "work filter all",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "brokenheart-runway-mad-2026",
+          "brokenheart-campaign",
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "kaine-basquiat-mural-2026",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "actual": [
+          "brokenheart-runway-mad-2026",
+          "brokenheart-campaign",
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "kaine-basquiat-mural-2026",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "url": "http://127.0.0.1:4173/work/"
+      }
+    },
+    {
+      "check": "work filter creative-direction",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "brokenheart-runway-mad-2026",
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "kaine-basquiat-mural-2026",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "actual": [
+          "brokenheart-runway-mad-2026",
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "kaine-basquiat-mural-2026",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "url": "http://127.0.0.1:4173/work/?filter=creative-direction"
+      }
+    },
+    {
+      "check": "work 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "work 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "work filter styling",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "brokenheart-runway-mad-2026",
+          "fashionrockstarmaxxing",
+          "blue",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust"
+        ],
+        "actual": [
+          "brokenheart-runway-mad-2026",
+          "fashionrockstarmaxxing",
+          "blue",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust"
+        ],
+        "url": "http://127.0.0.1:4173/work/?filter=styling"
+      }
+    },
+    {
+      "check": "work filter photography",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "actual": [
+          "mansaworld",
+          "fashionrockstarmaxxing",
+          "micaela-gomes-mad-2026",
+          "lees-broken-dolls",
+          "call-her-angelina",
+          "franck-anti-beauty-2026",
+          "sad-princess",
+          "blue",
+          "saint-jou-2016",
+          "lucas-issue-01-2025",
+          "brokenheart-issue-01-2025",
+          "in-god-i-trust",
+          "ouissam"
+        ],
+        "url": "http://127.0.0.1:4173/work/?filter=photography"
+      }
+    },
+    {
+      "check": "project brokenheart-runway-mad-2026 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project brokenheart-runway-mad-2026 intended native film controls",
+      "pass": true,
+      "detail": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-runway/cover.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "check": "services 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "services 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "work filter beauty",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "kaine-basquiat-mural-2026",
+          "franck-anti-beauty-2026"
+        ],
+        "actual": [
+          "kaine-basquiat-mural-2026",
+          "franck-anti-beauty-2026"
+        ],
+        "url": "http://127.0.0.1:4173/work/?filter=beauty"
+      }
+    },
+    {
+      "check": "query filter creative-direction",
+      "pass": true,
+      "detail": "creative-direction"
+    },
+    {
+      "check": "about 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "about 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "query filter styling",
+      "pass": true,
+      "detail": "styling"
+    },
+    {
+      "check": "project brokenheart-runway-mad-2026 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "query filter photography",
+      "pass": true,
+      "detail": "photography"
+    },
+    {
+      "check": "query filter beauty",
+      "pass": true,
+      "detail": "beauty"
+    },
+    {
+      "check": "booking 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "booking 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "query filter invalid",
+      "pass": true,
+      "detail": "all"
+    },
+    {
+      "check": "project brokenheart-campaign title/status",
+      "pass": true,
+      "detail": {
+        "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+        "status": 200
+      }
+    },
+    {
+      "check": "project brokenheart-campaign circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=brokenheart-runway-mad-2026",
+        "next": "/project/?id=mansaworld"
+      }
+    },
+    {
+      "check": "project brokenheart-campaign gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project brokenheart-campaign intended native film controls",
+      "pass": true,
+      "detail": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "check": "issue-01 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "issue-01 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project brokenheart-campaign fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project 820px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "check": "project 820px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "work control uses native new-tab navigation",
+      "pass": true,
+      "detail": "http://127.0.0.1:4173/project/?id=brokenheart-runway-mad-2026"
+    },
+    {
+      "check": "project mansaworld title/status",
+      "pass": true,
+      "detail": {
+        "title": "MANSAWORLD",
+        "status": 200
+      }
+    },
+    {
+      "check": "project mansaworld circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=brokenheart-campaign",
+        "next": "/project/?id=fashionrockstarmaxxing"
+      }
+    },
+    {
+      "check": "work middle uses native new-tab navigation",
+      "pass": true,
+      "detail": "http://127.0.0.1:4173/project/?id=brokenheart-runway-mad-2026"
+    },
+    {
+      "check": "home 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "home",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "home 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "FASHIONROCKSTAR.ONLINE\nExplore FASHIONROCKSTAR.ONLINE\nSELECTED WORK SERVICES BOOKING ISSUE 01 ABOUT"
+    },
+    {
+      "check": "work 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "work",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "work 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "SELECTED\nWORK\nALL CREATIVE DIRECTION STYLING VISUALS BEAUTY\nSERVICES\n FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]\nRUNWAY / CREATIVE DIRECTION / LEAD STYLING\nFASHIONROCKSTAR X B"
+    },
+    {
+      "check": "services 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "services",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "services 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "SERVICES\n\nFASHIONROCKSTAR DEVELOPS VISUAL WORLDS ACROSS CREATIVE DIRECTION, PHOTOGRAPHY, VIDEOGRAPHY, STYLING AND BEAUTY.\n\nFROM AN INITIAL IDEA TO A DEFINED COMMISSION, EACH DISCIP"
+    },
+    {
+      "check": "about 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "about",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "about 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "ABOUT\nMONTR\u00c9AL, CANADA\n\nAN INDEPENDENT CREATIVE PLATFORM AT THE INTERSECTION OF FASHION, MUSIC AND IMAGE-MAKING.\n\nFOUNDED BY ZAVYER VEGIARD, FASHIONROCKSTAR BRINGS TOGETHER CREATIV"
+    },
+    {
+      "check": "project mansaworld gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project mansaworld intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "booking 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "booking",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "booking 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "BOOKING\n\nDO NOT FILL THIS OUT IF YOU ARE HUMAN \n\n01 / SELECT SERVICES\n01\nCREATIVE DIRECTION\n+\n02\nPHOTOGRAPHY\n+\n03\nVIDEOGRAPHY\n+\n04\nSTYLING\n+\n05\nBEAUTY\n+\n02 / YOUR PROJECT\nNAME *\nEM"
+    },
+    {
+      "check": "project mansaworld fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "issue-01 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "issue-01",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "issue-01 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "ISSUE\n01\nDIGITAL + PRINT\nCOMING SOON"
+    },
+    {
+      "check": "project fashionrockstarmaxxing title/status",
+      "pass": true,
+      "detail": {
+        "title": "FASHIONROCKSTARMAXXING",
+        "status": 200
+      }
+    },
+    {
+      "check": "project fashionrockstarmaxxing circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=mansaworld",
+        "next": "/project/?id=kaine-basquiat-mural-2026"
+      }
+    },
+    {
+      "check": "project 820px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820,
+        "page": "project",
+        "viewport": 820,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "project 820px noJS essential/fallback content",
+      "pass": true,
+      "detail": "BACK TO WORK\nPROJECT\n\nENABLE JAVASCRIPT TO VIEW THIS PROJECT, OR RETURN TO SELECTED WORK."
+    },
+    {
+      "check": "project 820px noJS documented fallback",
+      "pass": true,
+      "detail": "BACK TO WORK\nPROJECT\n\nENABLE JAVASCRIPT TO VIEW THIS PROJECT, OR RETURN TO SELECTED WORK."
+    },
+    {
+      "check": "project fashionrockstarmaxxing gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project fashionrockstarmaxxing intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project fashionrockstarmaxxing fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 title/status",
+      "pass": true,
+      "detail": {
+        "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+        "status": 200
+      }
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=fashionrockstarmaxxing",
+        "next": "/project/?id=micaela-gomes-mad-2026"
+      }
+    },
+    {
+      "check": "touch captions clean arrival then settled-scroll reveal",
+      "pass": true,
+      "detail": {
+        "arrivalOpacity": "0",
+        "settledOpacity": "1",
+        "activeCount": 1
+      }
+    },
+    {
+      "check": "touch project opens with one tap",
+      "pass": true,
+      "detail": "http://127.0.0.1:4173/project/?id=brokenheart-runway-mad-2026"
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "home 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "home 1440px reduced motion no blocking",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "samples": 7,
+          "maxScrollWidth": 320,
+          "viewport": 320,
+          "fallbackLinks": [
+            {
+              "text": "WATCH ON INSTAGRAM",
+              "href": "https://www.instagram.com/reel/DZVRQytRlJW/"
+            },
+            {
+              "text": "WATCH ON TIKTOK",
+              "href": "https://vt.tiktok.com/ZSq4599eK/"
+            }
+          ]
+        },
+        "390": {
+          "samples": 7,
+          "maxScrollWidth": 390,
+          "viewport": 390,
+          "fallbackLinks": [
+            {
+              "text": "WATCH ON INSTAGRAM",
+              "href": "https://www.instagram.com/reel/DZVRQytRlJW/"
+            },
+            {
+              "text": "WATCH ON TIKTOK",
+              "href": "https://vt.tiktok.com/ZSq4599eK/"
+            }
+          ]
+        },
+        "820": {
+          "samples": 7,
+          "maxScrollWidth": 820,
+          "viewport": 820,
+          "fallbackLinks": [
+            {
+              "text": "WATCH ON INSTAGRAM",
+              "href": "https://www.instagram.com/reel/DZVRQytRlJW/"
+            },
+            {
+              "text": "WATCH ON TIKTOK",
+              "href": "https://vt.tiktok.com/ZSq4599eK/"
+            }
+          ]
+        },
+        "1440": {
+          "samples": 7,
+          "maxScrollWidth": 1440,
+          "viewport": 1440,
+          "fallbackLinks": [
+            {
+              "text": "WATCH ON INSTAGRAM",
+              "href": "https://www.instagram.com/reel/DZVRQytRlJW/"
+            },
+            {
+              "text": "WATCH ON TIKTOK",
+              "href": "https://vt.tiktok.com/ZSq4599eK/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "check": "work 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "work 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project micaela-gomes-mad-2026 title/status",
+      "pass": true,
+      "detail": {
+        "title": "MICAELA GOMES [M.A.D 2026]",
+        "status": 200
+      }
+    },
+    {
+      "check": "project micaela-gomes-mad-2026 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=kaine-basquiat-mural-2026",
+        "next": "/project/?id=lees-broken-dolls"
+      }
+    },
+    {
+      "check": "services 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "services 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project micaela-gomes-mad-2026 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project micaela-gomes-mad-2026 intended native film controls",
+      "pass": true,
+      "detail": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+          "controls": false,
+          "muted": true,
+          "playsInline": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "check": "about 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "about 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project micaela-gomes-mad-2026 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "booking 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "booking 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project lees-broken-dolls title/status",
+      "pass": true,
+      "detail": {
+        "title": "#LEE'S BROKEN DOLLS",
+        "status": 200
+      }
+    },
+    {
+      "check": "project lees-broken-dolls circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=micaela-gomes-mad-2026",
+        "next": "/project/?id=call-her-angelina"
+      }
+    },
+    {
+      "check": "issue-01 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "issue-01 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project lees-broken-dolls gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project lees-broken-dolls intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project 1440px js=True motion=reduce fits viewport",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "check": "project 1440px desktop nav destinations",
+      "pass": true,
+      "detail": [
+        "/work/",
+        "/work/",
+        "/work/?filter=creative-direction",
+        "/work/?filter=photography",
+        "/work/?filter=styling",
+        "/work/?filter=beauty",
+        "/services/",
+        "/booking/",
+        "/issue-01/",
+        "/about/"
+      ]
+    },
+    {
+      "check": "project lees-broken-dolls fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "home 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "home",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "home 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "FASHIONROCKSTAR.ONLINE\nExplore FASHIONROCKSTAR.ONLINE\nSELECTED WORK SERVICES BOOKING ISSUE 01 ABOUT"
+    },
+    {
+      "check": "work 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "work",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "work 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "SELECTED\nWORK\nALL CREATIVE DIRECTION STYLING VISUALS BEAUTY\nSERVICES\n FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]\nRUNWAY / CREATIVE DIRECTION / LEAD STYLING\nFASHIONROCKSTAR X B"
+    },
+    {
+      "check": "project call-her-angelina title/status",
+      "pass": true,
+      "detail": {
+        "title": "CALL HER ANGELINA",
+        "status": 200
+      }
+    },
+    {
+      "check": "project call-her-angelina circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=lees-broken-dolls",
+        "next": "/project/?id=franck-anti-beauty-2026"
+      }
+    },
+    {
+      "check": "services 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "services",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "services 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "SERVICES\n\nFASHIONROCKSTAR DEVELOPS VISUAL WORLDS ACROSS CREATIVE DIRECTION, PHOTOGRAPHY, VIDEOGRAPHY, STYLING AND BEAUTY.\n\nFROM AN INITIAL IDEA TO A DEFINED COMMISSION, EACH DISCIP"
+    },
+    {
+      "check": "project call-her-angelina gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project call-her-angelina intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "about 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "about",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "about 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "ABOUT\nMONTR\u00c9AL, CANADA\n\nAN INDEPENDENT CREATIVE PLATFORM AT THE INTERSECTION OF FASHION, MUSIC AND IMAGE-MAKING.\n\nFOUNDED BY ZAVYER VEGIARD, FASHIONROCKSTAR BRINGS TOGETHER CREATIV"
+    },
+    {
+      "check": "project call-her-angelina fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "booking 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "booking",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "booking 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "BOOKING\n\nDO NOT FILL THIS OUT IF YOU ARE HUMAN \n\n01 / SELECT SERVICES\n01\nCREATIVE DIRECTION\n+\n02\nPHOTOGRAPHY\n+\n03\nVIDEOGRAPHY\n+\n04\nSTYLING\n+\n05\nBEAUTY\n+\n02 / YOUR PROJECT\nNAME *\nEM"
+    },
+    {
+      "check": "issue-01 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "issue-01",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "issue-01 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "ISSUE\n01\nDIGITAL + PRINT\nCOMING SOON"
+    },
+    {
+      "check": "project franck-anti-beauty-2026 title/status",
+      "pass": true,
+      "detail": {
+        "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+        "status": 200
+      }
+    },
+    {
+      "check": "project franck-anti-beauty-2026 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=call-her-angelina",
+        "next": "/project/?id=sad-princess"
+      }
+    },
+    {
+      "check": "project franck-anti-beauty-2026 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project franck-anti-beauty-2026 intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project 1440px js=False motion=no-preference fits viewport",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "page": "project",
+        "viewport": 1440,
+        "passCheck": true
+      }
+    },
+    {
+      "check": "project 1440px noJS essential/fallback content",
+      "pass": true,
+      "detail": "BACK TO WORK\nPROJECT\n\nENABLE JAVASCRIPT TO VIEW THIS PROJECT, OR RETURN TO SELECTED WORK."
+    },
+    {
+      "check": "project 1440px noJS documented fallback",
+      "pass": true,
+      "detail": "BACK TO WORK\nPROJECT\n\nENABLE JAVASCRIPT TO VIEW THIS PROJECT, OR RETURN TO SELECTED WORK."
+    },
+    {
+      "check": "project franck-anti-beauty-2026 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project sad-princess title/status",
+      "pass": true,
+      "detail": {
+        "title": "#SAD PRINCESS",
+        "status": 200
+      }
+    },
+    {
+      "check": "project sad-princess circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=franck-anti-beauty-2026",
+        "next": "/project/?id=blue"
+      }
+    },
+    {
+      "check": "project sad-princess gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project sad-princess intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project sad-princess fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project blue title/status",
+      "pass": true,
+      "detail": {
+        "title": "BLUE",
+        "status": 200
+      }
+    },
+    {
+      "check": "project blue circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=sad-princess",
+        "next": "/project/?id=saint-jou-2016"
+      }
+    },
+    {
+      "check": "project blue gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project blue intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project blue fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project saint-jou-2016 title/status",
+      "pass": true,
+      "detail": {
+        "title": "\"2016\" SAINT JOU \u2014 MUSIC VIDEO",
+        "status": 200
+      }
+    },
+    {
+      "check": "project saint-jou-2016 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=blue",
+        "next": "/project/?id=lucas-issue-01-2025"
+      }
+    },
+    {
+      "check": "project saint-jou-2016 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project saint-jou-2016 intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project saint-jou-2016 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project lucas-issue-01-2025 title/status",
+      "pass": true,
+      "detail": {
+        "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+        "status": 200
+      }
+    },
+    {
+      "check": "project lucas-issue-01-2025 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=saint-jou-2016",
+        "next": "/project/?id=brokenheart-issue-01-2025"
+      }
+    },
+    {
+      "check": "project lucas-issue-01-2025 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project lucas-issue-01-2025 intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project lucas-issue-01-2025 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project brokenheart-issue-01-2025 title/status",
+      "pass": true,
+      "detail": {
+        "title": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01",
+        "status": 200
+      }
+    },
+    {
+      "check": "project brokenheart-issue-01-2025 circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=lucas-issue-01-2025",
+        "next": "/project/?id=in-god-i-trust"
+      }
+    },
+    {
+      "check": "project brokenheart-issue-01-2025 gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project brokenheart-issue-01-2025 intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project brokenheart-issue-01-2025 fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project in-god-i-trust title/status",
+      "pass": true,
+      "detail": {
+        "title": "IN GOD I TRUST",
+        "status": 200
+      }
+    },
+    {
+      "check": "project in-god-i-trust circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=brokenheart-issue-01-2025",
+        "next": "/project/?id=ouissam"
+      }
+    },
+    {
+      "check": "project in-god-i-trust gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project in-god-i-trust intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project in-god-i-trust fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "project ouissam title/status",
+      "pass": true,
+      "detail": {
+        "title": "OUISSAM",
+        "status": 200
+      }
+    },
+    {
+      "check": "project ouissam circular navigation",
+      "pass": true,
+      "detail": {
+        "prev": "/project/?id=in-god-i-trust",
+        "next": "/project/?id=brokenheart-runway-mad-2026"
+      }
+    },
+    {
+      "check": "project ouissam gallery images loaded",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project ouissam intended native film controls",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "project ouissam fits all four widths",
+      "pass": true,
+      "detail": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "check": "retired/unknown 13 returns to work",
+      "pass": true,
+      "detail": "http://127.0.0.1:4173/work/"
+    },
+    {
+      "check": "retired/unknown unknown-project returns to work",
+      "pass": true,
+      "detail": "http://127.0.0.1:4173/work/"
+    },
+    {
+      "check": "no browser JavaScript errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no local HTTP 4xx/5xx resources",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "pageerrors": [],
+  "httpErrors": [],
+  "filters": {
+    "all": [
+      "brokenheart-runway-mad-2026",
+      "brokenheart-campaign",
+      "mansaworld",
+      "fashionrockstarmaxxing",
+      "kaine-basquiat-mural-2026",
+      "micaela-gomes-mad-2026",
+      "lees-broken-dolls",
+      "call-her-angelina",
+      "franck-anti-beauty-2026",
+      "sad-princess",
+      "blue",
+      "saint-jou-2016",
+      "lucas-issue-01-2025",
+      "brokenheart-issue-01-2025",
+      "in-god-i-trust",
+      "ouissam"
+    ],
+    "creative-direction": [
+      "brokenheart-runway-mad-2026",
+      "mansaworld",
+      "fashionrockstarmaxxing",
+      "kaine-basquiat-mural-2026",
+      "micaela-gomes-mad-2026",
+      "lees-broken-dolls",
+      "call-her-angelina",
+      "franck-anti-beauty-2026",
+      "sad-princess",
+      "blue",
+      "saint-jou-2016",
+      "lucas-issue-01-2025",
+      "brokenheart-issue-01-2025",
+      "in-god-i-trust",
+      "ouissam"
+    ],
+    "styling": [
+      "brokenheart-runway-mad-2026",
+      "fashionrockstarmaxxing",
+      "blue",
+      "lucas-issue-01-2025",
+      "brokenheart-issue-01-2025",
+      "in-god-i-trust"
+    ],
+    "photography": [
+      "mansaworld",
+      "fashionrockstarmaxxing",
+      "micaela-gomes-mad-2026",
+      "lees-broken-dolls",
+      "call-her-angelina",
+      "franck-anti-beauty-2026",
+      "sad-princess",
+      "blue",
+      "saint-jou-2016",
+      "lucas-issue-01-2025",
+      "brokenheart-issue-01-2025",
+      "in-god-i-trust",
+      "ouissam"
+    ],
+    "beauty": [
+      "kaine-basquiat-mural-2026",
+      "franck-anti-beauty-2026"
+    ]
+  },
+  "responsiveModes": [
+    {
+      "page": "home",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "work",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "services",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "about",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "booking",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "issue-01",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "project",
+      "width": 820,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "home",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 820,
+        "client": 820
+      }
+    },
+    {
+      "page": "work",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "services",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "about",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "booking",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "issue-01",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "project",
+      "width": 820,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1125,
+        "client": 820
+      }
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "work",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "services",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "booking",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "issue-01",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "project",
+      "width": 1440,
+      "js": true,
+      "motion": "reduce",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "work",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "services",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1440,
+        "client": 1440
+      }
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1562,
+        "client": 1440
+      }
+    },
+    {
+      "page": "booking",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1562,
+        "client": 1440
+      }
+    },
+    {
+      "page": "issue-01",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1562,
+        "client": 1440
+      }
+    },
+    {
+      "page": "project",
+      "width": 1440,
+      "js": false,
+      "motion": "no-preference",
+      "dimensions": {
+        "scroll": 1562,
+        "client": 1440
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "brokenheart-runway-mad-2026",
+      "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
+      "imageCount": 7,
+      "videos": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-runway/cover.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        }
+      ],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "brokenheart-campaign",
+      "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+      "imageCount": 0,
+      "videos": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-campaign/03-adobe-express-0f06e6ad-3ee5-4400-930f-2f902a7400dc-2-1.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        },
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/brokenheart-campaign/04-adobe-express-a4b71ad0-4d9e-4646-bb70-8da29cba2864-1.mp4",
+          "controls": true,
+          "muted": false,
+          "playsInline": true,
+          "error": null
+        }
+      ],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "mansaworld",
+      "title": "MANSAWORLD",
+      "imageCount": 15,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "fashionrockstarmaxxing",
+      "title": "FASHIONROCKSTARMAXXING",
+      "imageCount": 4,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "kaine-basquiat-mural-2026",
+      "title": "KAINE BASQUIAT [MONTREALITY X MURAL 26]",
+      "imageCount": 8,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 338,
+          "client": 320
+        },
+        "390": {
+          "scroll": 408,
+          "client": 390
+        },
+        "820": {
+          "scroll": 960,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1890,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "micaela-gomes-mad-2026",
+      "title": "MICAELA GOMES [M.A.D 2026]",
+      "imageCount": 4,
+      "videos": [
+        {
+          "src": "http://127.0.0.1:4173/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+          "controls": false,
+          "muted": true,
+          "playsInline": true,
+          "error": null
+        }
+      ],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "lees-broken-dolls",
+      "title": "#LEE'S BROKEN DOLLS",
+      "imageCount": 5,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "call-her-angelina",
+      "title": "CALL HER ANGELINA",
+      "imageCount": 7,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "franck-anti-beauty-2026",
+      "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+      "imageCount": 2,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "sad-princess",
+      "title": "#SAD PRINCESS",
+      "imageCount": 3,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "blue",
+      "title": "BLUE",
+      "imageCount": 5,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "saint-jou-2016",
+      "title": "\"2016\" SAINT JOU \u2014 MUSIC VIDEO",
+      "imageCount": 11,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "lucas-issue-01-2025",
+      "title": "LUCAS FOR FASHIONROCKSTAR ISSUE 01",
+      "imageCount": 5,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "brokenheart-issue-01-2025",
+      "title": "BROKENHEART FOR FASHIONROCKSTAR ISSUE 01",
+      "imageCount": 20,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "in-god-i-trust",
+      "title": "IN GOD I TRUST",
+      "imageCount": 3,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    },
+    {
+      "id": "ouissam",
+      "title": "OUISSAM",
+      "imageCount": 6,
+      "videos": [],
+      "widths": {
+        "320": {
+          "scroll": 320,
+          "client": 320
+        },
+        "390": {
+          "scroll": 390,
+          "client": 390
+        },
+        "820": {
+          "scroll": 820,
+          "client": 820
+        },
+        "1440": {
+          "scroll": 1440,
+          "client": 1440
+        }
+      }
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "check": "work 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "services 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "about 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "booking 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "issue-01 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "project 820px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1125,
+        "client": 820
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "project kaine-basquiat-mural-2026 fits all four widths",
+      "resolution": "Root added position:relative to .project-social-film, establishing containing block for vendor absolute iframe; rechecked initial through5.6seconds at all4widths."
+    },
+    {
+      "check": "about 1440px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1562,
+        "client": 1440
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "booking 1440px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1562,
+        "client": 1440
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "issue-01 1440px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1562,
+        "client": 1440
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    },
+    {
+      "check": "project 1440px js=False motion=no-preference fits viewport",
+      "initial": {
+        "scroll": 1562,
+        "client": 1440
+      },
+      "resolution": "Await page load and document.fonts.ready; CSS/font readiness had not completed."
+    }
+  ],
+  "finalStatus": "PASS"
+}
