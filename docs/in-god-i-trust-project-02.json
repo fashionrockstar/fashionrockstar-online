@@ -1,0 +1,156 @@
+{
+  "project_number": 2,
+  "project_title": "IN GOD I TRUST",
+  "project_type": "EDITORIAL",
+  "date_input": "MAY 2025",
+  "date_precision": "month_only",
+  "sort_month": "2025-05",
+  "date_day_known": false,
+  "website_year": "2025",
+  "roles": [
+    "CREATIVE DIRECTION",
+    "PHOTOGRAPHY",
+    "STYLING"
+  ],
+  "caption": {
+    "title": "IN GOD I TRUST",
+    "subtitle": "EDITORIAL / CREATIVE DIRECTION / PHOTOGRAPHY / STYLING",
+    "placement": "bottom-left",
+    "behavior": "retain existing hover and touch-scroll-settle reveal"
+  },
+  "cover": {
+    "approved": true,
+    "layout": "HORIZONTAL — SINGLE FULL-WIDTH IMAGE",
+    "source_original": "IMG_2486.PNG",
+    "src": "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp",
+    "srcset": "/assets/media/selected-work/in-god-i-trust/01-triptych-640.webp 640w, /assets/media/selected-work/in-god-i-trust/01-triptych-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp 2048w",
+    "aspect_ratio": "2048/1365",
+    "object_fit": "contain",
+    "instruction": "Show the entire original triptych with all three figures; no crop or added imagery."
+  },
+  "gallery": {
+    "order_approved": true,
+    "allow_cover_as_first_gallery_item": true,
+    "items": [
+      {
+        "order_confirmed": 1,
+        "original_filename": "IMG_2486.PNG",
+        "original_width": 2048,
+        "original_height": 1365,
+        "media_type": "image",
+        "orientation": "horizontal",
+        "alt_text_suggestion": "Three standing portraits in a black outfit and cross-detail visor on a white background.",
+        "source_sha256": "cc0f0626442e3eb31b0c87db9e5aa10207018d42023686d269a8e96e49f7a9eb",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/in-god-i-trust/01-triptych-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 27366,
+            "sha256": "bd2edc716fe68aac92a9cdc27bca730797005fc6819d6db334e533a7a3e1c053"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/in-god-i-trust/01-triptych-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 79124,
+            "sha256": "ae218f91b6c7d31ee37447fbce94fc89e2b95c35beafe5f4d042cf562ab59f6f"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 179268,
+            "sha256": "dec29335f03753039c1737fa8715d3ed5248f173d0c9f10dce8567fe74886536"
+          }
+        },
+        "srcset": "/assets/media/selected-work/in-god-i-trust/01-triptych-640.webp 640w, /assets/media/selected-work/in-god-i-trust/01-triptych-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/01-triptych-2048.webp 2048w"
+      },
+      {
+        "order_confirmed": 2,
+        "original_filename": "FASHIONROCKSTAR 01 20-2112.png",
+        "original_width": 2048,
+        "original_height": 1365,
+        "media_type": "image",
+        "orientation": "horizontal",
+        "alt_text_suggestion": "Dark grid-based collage of repeated black-and-white portrait fragments and negative space.",
+        "source_sha256": "08714e13abb087acdb2a07fd026230a70dea136c4c3c9b99c7f09aebc5047e21",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 12930,
+            "sha256": "d0c3d3111b78812f8441c2d09a6e9465cbc88dd08d6edeb2daa0509a82084bfb"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 30756,
+            "sha256": "6fcefbff39d5a42b495d55b9434dadc2eb55b143b62a5f36655b1fb2516dd424"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 57686,
+            "sha256": "287a4db741b40851260c4020788b6740a17671c31588120e4386a4c2328d00dd"
+          }
+        },
+        "srcset": "/assets/media/selected-work/in-god-i-trust/02-dark-collage-640.webp 640w, /assets/media/selected-work/in-god-i-trust/02-dark-collage-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/02-dark-collage-2048.webp 2048w"
+      },
+      {
+        "order_confirmed": 3,
+        "original_filename": "FASHIONROCKSTAR 01 20-2113.png",
+        "original_width": 2048,
+        "original_height": 1365,
+        "media_type": "image",
+        "orientation": "horizontal",
+        "alt_text_suggestion": "Cropped editorial close-up of the black outfit and metallic cross-like motif.",
+        "source_sha256": "203457956d520c02965a8b43ac716aa8162574d3f5c6757f8a7db21a7f1d203e",
+        "variants": {
+          "640": {
+            "path": "/assets/media/selected-work/in-god-i-trust/03-close-up-640.webp",
+            "width": 640,
+            "height": 427,
+            "bytes": 14196,
+            "sha256": "daeac5c4a847081d13e47cb4f6bc29127608f8d33b32c0029c308e3a0c0ef508"
+          },
+          "1280": {
+            "path": "/assets/media/selected-work/in-god-i-trust/03-close-up-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 38750,
+            "sha256": "46d3e1c383115e22a6c919321b330ee1358247d40b75483cc278e8dd9471586f"
+          },
+          "2048": {
+            "path": "/assets/media/selected-work/in-god-i-trust/03-close-up-2048.webp",
+            "width": 2048,
+            "height": 1365,
+            "bytes": 70976,
+            "sha256": "47ba5cbe942ce4e845d530e0cec8a9c7c3bb4599080941949329ea23e0cb1b6b"
+          }
+        },
+        "srcset": "/assets/media/selected-work/in-god-i-trust/03-close-up-640.webp 640w, /assets/media/selected-work/in-god-i-trust/03-close-up-1280.webp 1280w, /assets/media/selected-work/in-god-i-trust/03-close-up-2048.webp 2048w"
+      }
+    ]
+  },
+  "credits": {
+    "collaborators": null,
+    "no_invented_names": true
+  },
+  "workflow": {
+    "dependency": "Complete Project 01 OUISSAM reset from GitHub issue #5 before adding Project 02",
+    "existing_active_list_expected": [
+      "OUISSAM"
+    ],
+    "active_list_after_implementation": [
+      "OUISSAM",
+      "IN GOD I TRUST"
+    ],
+    "ordered_by": "Explicit project submission numbering until exact days for May 2025 are supplied",
+    "branch": "development",
+    "publish_requires_verification": true
+  }
+}
