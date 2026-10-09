@@ -344,5 +344,89 @@ window.fashionrockstarProjects = [
       }
     ],
     "credits": []
+  },
+  {
+    "id": "lees-broken-dolls",
+    "catalogueNumber": "05",
+    "title": "#LEE'S BROKEN DOLLS",
+    "year": "2026",
+    "date": "2026-04",
+    "datePrecision": "month",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY",
+    "disciplines": "creative-direction photography",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "1(3).jpg",
+        "alt": "Wide editorial photograph with a standing figure at left and a shadowed seated figure at right in a concrete space.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/01-two-subjects-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "1(3).jpg",
+        "alt": "Wide editorial photograph with a standing figure at left and a shadowed seated figure at right in a concrete space.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/02-seated-red-jacket-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "2 FINAL CORRECTED.jpg",
+        "alt": "Seated figure in a burgundy jacket in the foreground and a second figure in black standing farther behind.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/03-rose-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/03-rose-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/03-rose-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "3.3.jpg",
+        "alt": "One figure holding a red rose while another figure stands in the near foreground.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/04-two-figures-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "4(2).jpg",
+        "alt": "Wide composition of two figures across a concrete setting, with white draped fabric over a chair.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp",
+        "srcset": "/assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-640.webp 640w, /assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-1280.webp 1280w, /assets/media/selected-work/lees-broken-dolls-2026/05-isolated-portrait-2047.webp 2047w",
+        "width": 2047,
+        "height": 1365,
+        "sourceFile": "5(2).jpg",
+        "alt": "Figure in a burgundy jacket kneeling beside a chair draped in white fabric against a concrete wall.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true
   }
 ];
