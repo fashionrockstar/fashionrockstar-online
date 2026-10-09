@@ -494,6 +494,59 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "franck-anti-beauty-2026",
+    "catalogueNumber": "07",
+    "title": "FRANCK FOR ANTI-BEAUTY ISSUE 01",
+    "year": "2026",
+    "date": "2026-01-26",
+    "datePrecision": "day",
+    "category": "EDITORIAL",
+    "role": "CREATIVE DIRECTION / PHOTOGRAPHY / BEAUTY",
+    "disciplines": "creative-direction photography beauty",
+    "imported": true,
+    "cover": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-2142.png",
+        "alt": "FRANCK FOR ANTI-BEAUTY ISSUE 01 — original editorial spread with two contrasting black-and-white face-paint portraits and a black vertical divider.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp",
+        "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/01-franck-editorial-spread-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR 01 20-2142.png",
+        "alt": "FRANCK FOR ANTI-BEAUTY ISSUE 01 — original editorial spread with two contrasting black-and-white face-paint portraits and a black vertical divider.",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp",
+        "srcset": "/assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-640.webp 640w, /assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-1280.webp 1280w, /assets/media/selected-work/franck-anti-beauty-2026/02-franck-profile-closeup-2048.webp 2048w",
+        "width": 2048,
+        "height": 1365,
+        "sourceFile": "FASHIONROCKSTAR ISSUE 01 - FINAL DRAFT.png",
+        "alt": "FRANCK FOR ANTI-BEAUTY ISSUE 01 — tight side-profile portrait emphasizing textured white face paint.",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "credits": [],
+    "galleryOrderConfirmed": true,
+    "chronologicalPositionConfirmed": false,
+    "withinJanuaryOrderProvisional": true
+  },
+  {
     "id": "call-her-angelina",
     "submissionSequence": 4,
     "title": "CALL HER ANGELINA",
