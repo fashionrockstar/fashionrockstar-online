@@ -1,8 +1,8 @@
-# CALL HER ANGELINA — DRAFT FOURTH SUBMISSION
+# CALL HER ANGELINA — APPROVED FOURTH SUBMISSION
 
 Approved cover: FASHIONROCKSTAR 0140.png, horizontal single full-width 2048 × 1365. Original lettering and complete frame preserved.
 
-Gallery candidate order for review only:
+Gallery approved from PR #27 preview:
 1. FASHIONROCKSTAR 01 20-2127.png
 2. 1(2).jpg
 3. 3(2).jpg
@@ -10,10 +10,10 @@ Gallery candidate order for review only:
 5. 5(1).jpg
 6. ANGELINA 8.jpg
 
-This sequence is provisional. Cover is not duplicated in the gallery. Date, year, category, roles, collaborator credits and chronological placement are unconfirmed; draft renders title only. Historical metadata is retained only in the manifest, not asserted on the page. Empty disciplines means this draft appears under ALL only until roles are confirmed.
+User approved the preview and proposed EDITORIAL / PHOTOGRAPHY / CREATIVE DIRECTION labels on October 8, 2026, authorizing publication. The cover is not duplicated in the gallery. No collaborator credits were supplied. No shoot date was supplied, so date and website year remain blank. The approved fourth display position follows submission order and does not assert a chronological date.
 
-All three preceding approved records and shared styles, renderer, captions, navigation and unrelated pages are unchanged. The appended fourth position is a submission preview, not an asserted chronological position.
+All three preceding approved records and shared styles, renderer, captions, navigation and unrelated pages are unchanged.
 
 Seven originals and 21 supplied WebPs passed SHA-256 verification; derivatives copied without modification. Source originals remain in the local handoff package.
 
-Do not merge this branch or publish to production until the user approves the gallery, date/position, labels and release. See GitHub issue #25.
+The accompanying JSON preserves the original handoff manifest and its then-provisional status as source provenance; the current approval is recorded here and in the active project record. See GitHub issue #25.
