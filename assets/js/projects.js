@@ -17,6 +17,8 @@
     node.hidden = !value;
   };
   setText('[data-project-title]', project.title);
+  document.querySelector('.project-head').classList.toggle('project-head--long-title', project.title.length > 32);
+  document.querySelector('.project-head').classList.toggle('project-head--wide-word', project.title.split(/\s+/).some(word => word.length > 16));
   document.querySelector('.project-head').classList.toggle('project-head--stacked', Boolean(project.stackedHeading || project.titleBreakAfter));
   // Allow an editorial line break without changing the title's text.
   if (project.titleBreakAfter && project.title.startsWith(project.titleBreakAfter)) {
@@ -67,11 +69,11 @@
         link.rel = 'noopener noreferrer';
         return link;
       };
-      embed.append(makeLink(item.src, 'View the film on Instagram'));
+      embed.append(makeLink(item.src, 'VIEW THE FILM ON INSTAGRAM'));
       const links = document.createElement('p');
       links.className = 'project-social-film__links';
-      links.append(makeLink(item.src, 'Watch on Instagram'));
-      if (item.alternateUrl) links.append(makeLink(item.alternateUrl, 'Watch on TikTok'));
+      links.append(makeLink(item.src, 'WATCH ON INSTAGRAM'));
+      if (item.alternateUrl) links.append(makeLink(item.alternateUrl, 'WATCH ON TIKTOK'));
       film.append(embed, links);
       return film;
     }

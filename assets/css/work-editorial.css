@@ -1,0 +1,104 @@
+/* Work retains the approved media, overlay captions and one-tap project links. */
+.page-shell.work-page {
+  --work-gutter: var(--frsr-gutter, clamp(1rem, 4vw, 4rem));
+  padding: var(--frsr-space-5, clamp(3rem, 6vw, 6rem)) var(--work-gutter) var(--frsr-space-6, clamp(5rem, 9vw, 9rem));
+}
+.work-masthead { margin-bottom: var(--frsr-space-6, clamp(5rem, 9vw, 9rem)); }
+.work-page .page-title {
+  display: flex;
+  justify-content: space-between;
+  gap: .2em;
+  margin: 0 0 var(--frsr-space-4, clamp(2rem, 4vw, 4rem));
+  padding: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(3.2rem, 10.6vw, 12rem);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+.work-page .work-toolbar {
+  align-items: flex-start;
+  gap: 1rem 2rem;
+  margin: 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid #444;
+}
+.work-page .work-filters { gap: .25rem clamp(1rem, 2.2vw, 2.5rem); }
+.work-page .work-filter,
+.work-page .work-services-link {
+  min-height: 44px;
+  font-size: clamp(.6875rem, .9vw, .8125rem);
+  font-weight: 700;
+  letter-spacing: .035em;
+}
+.work-page .work-filter { color: #aaa; transition: color var(--frsr-duration-fast, 240ms) ease; }
+.work-page .work-filter[aria-pressed="true"],
+.work-page .work-filter:hover,
+.work-page .work-filter:focus-visible { color: var(--page-fg); }
+.work-page .work-filter::after { bottom: .45rem; }
+.work-page .work-gallery { gap: var(--frsr-space-6, clamp(5rem, 9vw, 9rem)); }
+.work-page .work-row { width: 100%; }
+.work-page .work-row:nth-child(4n + 2) { width: 72%; justify-self: start; }
+.work-page .work-row:nth-child(4n + 3) { width: 82%; justify-self: end; }
+.work-page .work-row:nth-child(4n) { width: 90%; justify-self: center; }
+/* Keep every frame intact, including the runway and paired campaign films. */
+.work-page .work-tile--natural img,
+.work-page .work-tile--natural video {
+  object-fit: contain;
+  transform: none;
+  transition: filter var(--frsr-duration-fast, 240ms) ease;
+}
+.work-page .work-tile__pair { gap: clamp(2px, .45vw, 8px); }
+.work-page .work-tile__meta {
+  inset: auto 0 0;
+  padding: clamp(1.25rem, 2.2vw, 2.5rem);
+  background: rgba(5, 5, 5, .87);
+  transform: translateY(.65rem);
+  transition: opacity var(--frsr-duration-fast, 240ms) ease, transform var(--frsr-duration-base, 420ms) var(--frsr-ease, cubic-bezier(.22, 1, .36, 1));
+}
+.work-page .work-tile__meta b {
+  font-family: var(--font-ui);
+  font-size: clamp(1.35rem, 3vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -.04em;
+}
+.work-page .work-tile__details {
+  margin-top: .7rem;
+  color: #ccc;
+  font-size: clamp(.6875rem, .95vw, .875rem);
+  font-weight: 500;
+  letter-spacing: .035em;
+}
+.work-page .work-tile:focus-visible .work-tile__meta,
+.work-page .work-tile.is-browsing .work-tile__meta { transform: none; }
+.work-page .work-tile:focus-visible { outline-offset: 7px; }
+@media (hover: hover) and (pointer: fine) {
+  .work-page .work-tile:hover .work-tile__meta { transform: none; }
+}
+@media (max-width: 760px) {
+  .work-page .page-title {
+    display: block;
+    font-size: clamp(3.8rem, 15.3vw, 7.25rem);
+    line-height: .95;
+    margin-bottom: 2.5rem;
+  }
+  .work-page .page-title span { display: block; }
+  .work-page .page-title span + span { margin-left: 20%; }
+  .work-page .work-toolbar { padding-top: .7rem; gap: .5rem 1rem; }
+  .work-page .work-filters { width: 100%; gap: .1rem .9rem; }
+  .work-page .work-filter,
+  .work-page .work-services-link { font-size: .625rem; }
+  .work-page .work-services-link { margin-left: 0; }
+  .work-masthead { margin-bottom: 3.5rem; }
+  .work-page .work-gallery { gap: 3.5rem; }
+  .work-page .work-row:nth-child(4n + 2) { width: 88%; }
+  .work-page .work-row:nth-child(4n + 3) { width: 94%; }
+  .work-page .work-row:nth-child(4n) { width: 100%; }
+  .work-page .work-tile__meta { padding: .85rem; }
+  .work-page .work-tile__meta b { font-size: clamp(1.0625rem, 5vw, 1.65rem); }
+  .work-page .work-tile__details { margin-top: .45rem; font-size: .625rem; line-height: 1.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .work-page .work-tile__meta { transition: none; }
+}
