@@ -1,0 +1,386 @@
+{
+  "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+  "provenance": "Validated source-baseline capture set: /workspace/scratch/redesign-before-source/; top and Home-state PNGs copied unchanged.",
+  "screenshotCount": 27,
+  "totalBytes": 3293611,
+  "screenshots": [
+    {
+      "file": "10-desktop-01-home-entry.png",
+      "surface": "home-entry",
+      "route": "/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 33514,
+      "sha256": "52a1903f6e05a3d3488593c2a83f9e5cae30badf121cea89aa74cba5ad003720",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-02-home-hero.png",
+      "surface": "home-hero",
+      "route": "/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 34396,
+      "sha256": "c85462d720d2e97a79e61ca110c2934d43dff6be97385470d4d4e9e913fb162d",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-03-home-menu.png",
+      "surface": "home-menu",
+      "route": "/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 53390,
+      "sha256": "8529830d25f52f3f31331f387e5ab580d97314140b915be793555c8089a07394",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-04-selected-work-top.png",
+      "surface": "work-top",
+      "route": "/work/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 268236,
+      "sha256": "274d0b1f2ff4b1ed67e9b084e3e350151d894bcf6d644f87361d98702d6a150f",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-05-services-top.png",
+      "surface": "services-top",
+      "route": "/services/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 77561,
+      "sha256": "52b1011553a0375289998b2dad5164e66945100fabaa8ca101fd204c175f703b",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-06-about-top.png",
+      "surface": "about-top",
+      "route": "/about/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 385536,
+      "sha256": "66a33c2880d89e5500150fe432e0d5ae297f6319ef1d2e13662b1da1f6e78ac2",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-07-booking-top.png",
+      "surface": "booking-top",
+      "route": "/booking/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 71873,
+      "sha256": "de66afe19f674b7fb3ba39f4b742b52b69aa0acb1c3e9d524b8e8d8bdaf10675",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-08-issue-01-top.png",
+      "surface": "issue-01-top",
+      "route": "/issue-01/",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 29248,
+      "sha256": "7c47e711c9cc877a1eaf29da169ceacbcaf2efdb560e0fa5d06bca7c90a52c71",
+      "unchangedCopy": true
+    },
+    {
+      "file": "10-desktop-09-project-top.png",
+      "surface": "project-top",
+      "route": "/project/?id=brokenheart-runway-mad-2026",
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 280237,
+      "sha256": "d7f7aa08a40d4c18bd33361efe126c226067a4bf4fd7ac85e14a89009b861241",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-01-home-entry.png",
+      "surface": "home-entry",
+      "route": "/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 22661,
+      "sha256": "1e1aa27ac84f48ebfe034879b51ac540b0eede85ca9507e5a17716c330ed8c12",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-02-home-hero.png",
+      "surface": "home-hero",
+      "route": "/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 16882,
+      "sha256": "0227fb8ba32a9cfa8e1ff24009681d6f926e6aefd8218dc9812a9e0ceec0871d",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-03-home-menu.png",
+      "surface": "home-menu",
+      "route": "/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 33043,
+      "sha256": "cd04e82c3b6d330650ed31a289e23e9bc7f1efac9c08c187fa1b30b12f5a38b0",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-04-selected-work-top.png",
+      "surface": "work-top",
+      "route": "/work/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 371297,
+      "sha256": "796935bfdbfe2c3a3944ae08da78fcba2e8044a41015e091685794349116eb93",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-05-services-top.png",
+      "surface": "services-top",
+      "route": "/services/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 98581,
+      "sha256": "74a0a82def0d3b78f0d9131199ba8af3ebf3665736e71ea34946a601ffbac0c1",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-06-about-top.png",
+      "surface": "about-top",
+      "route": "/about/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 251700,
+      "sha256": "33802e4f4141fd4a96928fcf4f7190620c04a301b616f2e96771150cc46cda31",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-07-booking-top.png",
+      "surface": "booking-top",
+      "route": "/booking/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 54295,
+      "sha256": "fc7cb1a2cc0bd0c21a2c189088ef3bd331fcca750066d005befab0517103566c",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-08-issue-01-top.png",
+      "surface": "issue-01-top",
+      "route": "/issue-01/",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 20872,
+      "sha256": "d9e1ea127623cd04bb2b46161bafd74e4b4d0d614019f6e04f7b92b65840432a",
+      "unchangedCopy": true
+    },
+    {
+      "file": "20-tablet-09-project-top.png",
+      "surface": "project-top",
+      "route": "/project/?id=brokenheart-runway-mad-2026",
+      "device": "tablet",
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 545967,
+      "sha256": "2642e2e630bb80314ba8e1a4539317f6e956125aa42e341f4dc2fd9af0fafbeb",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-about-top.png",
+      "surface": "about-top",
+      "route": "/about/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 102263,
+      "sha256": "3347ee74a7fa3566bc9b6e22bf5edce17107f6f91955303251254e75ffcfd887",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-booking-top.png",
+      "surface": "booking-top",
+      "route": "/booking/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 34782,
+      "sha256": "538296a5bcc67b458794e012922219c6bdc6e8137f5bed36102c2bc5057fca86",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-home-entry.png",
+      "surface": "home-entry",
+      "route": "/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 7754,
+      "sha256": "7eacc51001c33e1d1e47d807996de08ad3e07ff811c8cc4ef2275e895bcafe81",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-home-hero.png",
+      "surface": "home-hero",
+      "route": "/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 13584,
+      "sha256": "19c10a2ca6056ba148590d8da49e90286db4018ce01a4103b90ecf19dfad15cd",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-home-menu.png",
+      "surface": "home-menu",
+      "route": "/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 20076,
+      "sha256": "a3217649b228dc990a982953f9c91b0ad95fc1d157ee42f0115a9b2eca4d1281",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-issue-01-top.png",
+      "surface": "issue-01-top",
+      "route": "/issue-01/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 14349,
+      "sha256": "45289ce9872419a009c87248ecdb1d162da6a80ae64ff0943c9f4c8d355285a7",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-project-top.png",
+      "surface": "project-top",
+      "route": "/project/?id=brokenheart-runway-mad-2026",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 212203,
+      "sha256": "b01378b31512265c14f63f9699994533ec37c13016d306b462b5c553030d44eb",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-services-top.png",
+      "surface": "services-top",
+      "route": "/services/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 46088,
+      "sha256": "f278d10185adebde95d7011402ece86510cd94b65c4c9d6980ef6ac15ab49ea6",
+      "unchangedCopy": true
+    },
+    {
+      "file": "30-mobile-work-top.png",
+      "surface": "work-top",
+      "route": "/work/",
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "b390752bb52c1a93d9f2cf0ac2c9b2abee6e35ad",
+      "bytes": 193223,
+      "sha256": "b321296026e4f0fad803f42fdc684cf7b7a78e1f3f3eccbfcbeefcb3aee7244a",
+      "unchangedCopy": true
+    }
+  ]
+}
