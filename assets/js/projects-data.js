@@ -234,6 +234,62 @@ window.fashionrockstarProjects = [
     "category": "PHOTOGRAPHY"
   },
   {
+    "id": "inverttlyfe",
+    "title": "INVERTTLYFE",
+    "year": "2026",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION / STYLING / BEAUTY",
+    "disciplines": "photography creative-direction styling beauty",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/inverttlyfe/01-h4-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/inverttlyfe/01-h4-640.webp 640w, /assets/media/selected-work/inverttlyfe/01-h4-1280.webp 1280w, /assets/media/selected-work/inverttlyfe/01-h4-2400.webp 2400w",
+      "sourceFile": "h4.jpg",
+      "alt": "FIGURE WITH SCULPTURAL HAIR, SILVER BODY MAKEUP, CHAINS, AND METALLIC TROUSERS IN FRONT OF A METAL SHUTTER.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/01-h4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/inverttlyfe/01-h4-640.webp 640w, /assets/media/selected-work/inverttlyfe/01-h4-1280.webp 1280w, /assets/media/selected-work/inverttlyfe/01-h4-2400.webp 2400w",
+        "sourceFile": "h4.jpg",
+        "alt": "FIGURE WITH SCULPTURAL HAIR, SILVER BODY MAKEUP, CHAINS, AND METALLIC TROUSERS IN FRONT OF A METAL SHUTTER.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/02-pants-front-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/inverttlyfe/02-pants-front-480.webp 480w, /assets/media/selected-work/inverttlyfe/02-pants-front-960.webp 960w, /assets/media/selected-work/inverttlyfe/02-pants-front-1600.webp 1600w",
+        "sourceFile": "pants 2.jpg",
+        "alt": "FRONT VIEW OF METALLIC FLARED TROUSERS WITH STUDDED BELTS AND CHAINS AGAINST A GRAY BACKGROUND.",
+        "wide": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/03-pants-back-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/inverttlyfe/03-pants-back-480.webp 480w, /assets/media/selected-work/inverttlyfe/03-pants-back-960.webp 960w, /assets/media/selected-work/inverttlyfe/03-pants-back-1600.webp 1600w",
+        "sourceFile": "pants only.jpg",
+        "alt": "REAR VIEW OF METALLIC FLARED TROUSERS WITH STUDDED BELTS AGAINST A GRAY BACKGROUND.",
+        "wide": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "galleryOrderConfirmed": true
+  },
+  {
     "title": "MANSAWORLD",
     "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
     "year": "2026",
