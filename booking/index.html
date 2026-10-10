@@ -8,6 +8,8 @@
   <link rel="canonical" href="/booking/">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/book.css">
+  <link rel="stylesheet" href="/assets/css/motion.css">
+  <script src="/assets/js/motion.js"></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/booking.js" defer></script>
 </head>
@@ -36,92 +38,112 @@
     </nav>
   </header>
 
-  <main class="inquiry-page">
-    <header class="inquiry-hero">
-      <h1 class="inquiry-title" id="inquiry-title"><span>BOOKING</span></h1>
-      <div class="inquiry-rule" aria-hidden="true"></div>
+  <main class="inquiry-page" aria-labelledby="inquiry-title">
+    <header class="booking-header">
+      <div class="booking-header__inner">
+        <div class="booking-meta"><p>BOOKING</p><p>MONTRÉAL, CANADA</p></div>
+        <h1 id="inquiry-title">START A PROJECT</h1>
+      </div>
     </header>
-
-    <form class="booking-form booking-form--studio" name="booking" method="post" action="/booking/" data-netlify="true" data-netlify-honeypot="company-website" aria-labelledby="inquiry-title">
-      <input type="hidden" name="form-name" value="booking">
-      <p class="sr-only">
-        <label for="company-website">DO NOT FILL THIS OUT IF YOU ARE HUMAN</label>
-        <input id="company-website" name="company-website" type="text" tabindex="-1" autocomplete="off">
-      </p>
-
-      <fieldset class="inquiry-section inquiry-section--services">
-        <legend>01 / SELECT SERVICES <span class="inquiry-service-hint">— MULTIPLE ALLOWED</span></legend>
-        <div class="project-type-grid">
-          <label><input type="radio" name="project-type" value="creative-direction" required><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">01</span><span class="inquiry-service-name">CREATIVE DIRECTION</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
-          <label><input type="radio" name="project-type" value="photography"><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">02</span><span class="inquiry-service-name">PHOTOGRAPHY</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
-          <label><input type="radio" name="project-type" value="videography"><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">03</span><span class="inquiry-service-name">VIDEOGRAPHY</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
-          <label><input type="radio" name="project-type" value="styling"><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">04</span><span class="inquiry-service-name">STYLING</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
-          <label><input type="radio" name="project-type" value="beauty"><span class="inquiry-service-row"><span class="inquiry-service-number" aria-hidden="true">05</span><span class="inquiry-service-name">BEAUTY</span><span class="inquiry-service-symbol" aria-hidden="true">+</span></span></label>
+    <section class="booking-interface" aria-label="BOOKING INQUIRY">
+      <form class="booking-form booking-form--studio" name="booking" method="post" action="/booking/" data-netlify="true" data-netlify-honeypot="company-website" aria-label="PROJECT INQUIRY">
+        <input type="hidden" name="form-name" value="booking">
+        <p class="sr-only" aria-hidden="true">
+          <label for="company-website">DO NOT FILL THIS OUT IF YOU ARE HUMAN</label>
+          <input id="company-website" name="company-website" type="text" tabindex="-1" autocomplete="off">
+        </p>
+        <div class="booking-step-meta">
+          <p id="booking-step-count">01 / 02</p>
+          <h2 id="booking-step-title" tabindex="-1">SELECT A SERVICE</h2>
         </div>
-      </fieldset>
-
-      <div class="inquiry-content">
-        <section class="inquiry-project" aria-labelledby="inquiry-form-title">
-          <h2 class="inquiry-form-heading" id="inquiry-form-title">02 / YOUR PROJECT</h2>
-          <div class="inquiry-info__row">
-            <label class="inquiry-field" for="inquiry-name">
-              <span>NAME *</span>
-              <input id="inquiry-name" type="text" name="name" autocomplete="name" placeholder="YOUR NAME" required>
-            </label>
-            <label class="inquiry-field" for="inquiry-email">
-              <span>EMAIL *</span>
-              <input id="inquiry-email" type="email" name="email" autocomplete="email" inputmode="email" placeholder="YOU@EXAMPLE.COM" required>
-            </label>
+        <div class="booking-progress" role="progressbar" aria-label="INQUIRY STEP" aria-valuemin="0" aria-valuemax="2" aria-valuenow="1" aria-valuetext="STEP 1 OF 2"><span></span></div>
+        <div class="booking-stage">
+          <div class="booking-step" id="booking-services">
+            <fieldset class="booking-service-list" aria-describedby="booking-service-help">
+              <legend class="sr-only">SERVICES — SELECT ONE OR MORE</legend>
+              <label class="booking-service">
+                <input type="radio" name="project-type" value="creative-direction" required aria-label="CREATIVE DIRECTION">
+                <span class="booking-service__row"><span class="booking-service__index" aria-hidden="true">01</span><span class="booking-service__title">CREATIVE DIRECTION</span><span class="booking-service__symbol" aria-hidden="true"></span></span>
+              </label>
+              <label class="booking-service">
+                <input type="radio" name="project-type" value="photography" aria-label="PHOTOGRAPHY">
+                <span class="booking-service__row"><span class="booking-service__index" aria-hidden="true">02</span><span class="booking-service__title">PHOTOGRAPHY</span><span class="booking-service__symbol" aria-hidden="true"></span></span>
+              </label>
+              <label class="booking-service">
+                <input type="radio" name="project-type" value="videography" aria-label="VIDEOGRAPHY">
+                <span class="booking-service__row"><span class="booking-service__index" aria-hidden="true">03</span><span class="booking-service__title">VIDEOGRAPHY</span><span class="booking-service__symbol" aria-hidden="true"></span></span>
+              </label>
+              <label class="booking-service">
+                <input type="radio" name="project-type" value="styling" aria-label="STYLING">
+                <span class="booking-service__row"><span class="booking-service__index" aria-hidden="true">04</span><span class="booking-service__title">STYLING</span><span class="booking-service__symbol" aria-hidden="true"></span></span>
+              </label>
+              <label class="booking-service">
+                <input type="radio" name="project-type" value="beauty" aria-label="BEAUTY">
+                <span class="booking-service__row"><span class="booking-service__index" aria-hidden="true">05</span><span class="booking-service__title">BEAUTY</span><span class="booking-service__symbol" aria-hidden="true"></span></span>
+              </label>
+            </fieldset>
+            <div class="booking-actions booking-continue-row">
+              <button type="button" class="booking-action" id="booking-continue" hidden disabled>CONTINUE →</button>
+              <p id="booking-service-help">SELECT AT LEAST ONE SERVICE TO CONTINUE</p>
+            </div>
           </div>
-          <label class="inquiry-field inquiry-description" for="inquiry-message">
-            <span>PROJECT DESCRIPTION *</span>
-            <textarea id="inquiry-message" name="project-details" rows="3" maxlength="3000" placeholder="TELL ME WHAT YOU HAVE IN MIND." required></textarea>
-          </label>
-
-          <details class="inquiry-extras">
-            <summary>ADD PROJECT DETAILS <span>OPTIONAL</span></summary>
-            <div class="inquiry-extras__body">
-              <div class="inquiry-project-fields">
-                <label class="inquiry-field" for="inquiry-company">
-                  <span>COMPANY / BRAND</span>
-                  <input id="inquiry-company" type="text" name="company" autocomplete="organization">
-                </label>
-                <div class="inquiry-options">
-                  <label class="inquiry-field" for="inquiry-timeline">
-                    <span>TIMELINE</span>
-                    <input id="inquiry-timeline" type="text" name="timeline" placeholder="DATE OR TIMEFRAME">
-                  </label>
-                  <label class="inquiry-field" for="inquiry-budget">
-                    <span>BUDGET RANGE</span>
-                    <select id="inquiry-budget" name="budget">
-                      <option value="" selected>SELECT RANGE</option>
-                      <option value="under-1000">UNDER $1,000 CAD</option>
-                      <option value="1000-3000">$1,000–$3,000 CAD</option>
-                      <option value="3000-7500">$3,000–$7,500 CAD</option>
-                      <option value="7500-plus">$7,500+ CAD</option>
-                      <option value="discuss">TO BE DISCUSSED</option>
-                    </select>
-                  </label>
-                </div>
+          <div class="booking-step" id="booking-project">
+            <h2 class="booking-fallback-title">02 / 02 — YOUR PROJECT</h2>
+            <div class="booking-selection" hidden><div id="booking-selected" aria-label="SELECTED SERVICES"></div><button class="booking-text-action" type="button" data-booking-back>CHANGE</button></div>
+            <div class="booking-fields">
+              <div class="booking-field booking-field--full">
+                <label for="inquiry-name">NAME *</label>
+                <input id="inquiry-name" type="text" name="name" autocomplete="name" placeholder="YOUR NAME" required aria-describedby="inquiry-name-error">
+                <p class="booking-field-error" id="inquiry-name-error" hidden></p>
+              </div>
+              <div class="booking-field">
+                <label for="inquiry-email">EMAIL *</label>
+                <input id="inquiry-email" type="email" name="email" autocomplete="email" inputmode="email" placeholder="YOU@EXAMPLE.COM" required aria-describedby="inquiry-email-error">
+                <p class="booking-field-error" id="inquiry-email-error" hidden></p>
+              </div>
+              <div class="booking-field">
+                <label for="inquiry-company">COMPANY / BRAND</label>
+                <input id="inquiry-company" type="text" name="company" autocomplete="organization">
+              </div>
+              <div class="booking-field">
+                <label for="inquiry-timeline">TIMELINE</label>
+                <input id="inquiry-timeline" type="text" name="timeline" placeholder="DATE OR TIMEFRAME">
+              </div>
+              <div class="booking-field">
+                <label for="inquiry-budget">BUDGET RANGE</label>
+                <select id="inquiry-budget" name="budget">
+                  <option value="" selected>SELECT RANGE</option>
+                  <option value="under-1000">UNDER $1,000 CAD</option>
+                  <option value="1000-3000">$1,000–$3,000 CAD</option>
+                  <option value="3000-7500">$3,000–$7,500 CAD</option>
+                  <option value="7500-plus">$7,500+ CAD</option>
+                  <option value="discuss">TO BE DISCUSSED</option>
+                </select>
+              </div>
+              <div class="booking-field booking-field--full">
+                <label for="inquiry-message">PROJECT DESCRIPTION *</label>
+                <textarea id="inquiry-message" name="project-details" rows="5" maxlength="3000" placeholder="TELL ME WHAT YOU HAVE IN MIND." required aria-describedby="inquiry-message-error"></textarea>
+                <p class="booking-field-error" id="inquiry-message-error" hidden></p>
               </div>
             </div>
-          </details>
-
-          <div class="inquiry-submit">
-            <button class="inquiry-send" type="submit">
-              <span class="inquiry-send__label">SEND INQUIRY</span>
-              <span class="inquiry-send__arrow" aria-hidden="true">↗</span>
-            </button>
-            <p class="booking-form__status" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
+            <div class="booking-actions">
+              <button class="booking-action" id="booking-send" type="submit">SEND INQUIRY ↗</button>
+              <button class="booking-text-action" type="button" data-booking-back hidden>← BACK</button>
+            </div>
           </div>
-        </section>
-        <div class="inquiry-confirmation" role="region" aria-labelledby="inquiry-confirmation-title" tabindex="-1" hidden>
-          <p class="inquiry-confirmation__label">REQUEST STATUS / RECEIVED</p>
-          <h2 id="inquiry-confirmation-title">INQUIRY<br>RECEIVED.</h2>
-          <p>YOUR REQUEST HAS BEEN SENT.<br>A BOOKING IS CONFIRMED SEPARATELY.</p>
+        </div>
+        <p class="booking-form__status sr-only" id="booking-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
+      </form>
+      <div class="inquiry-confirmation" role="region" aria-labelledby="inquiry-confirmation-title" hidden>
+        <p class="booking-confirmation-label" role="status">REQUEST STATUS / RECEIVED</p>
+        <h2 id="inquiry-confirmation-title" tabindex="-1">INQUIRY RECEIVED.</h2>
+        <p>YOUR REQUEST HAS BEEN SENT. A BOOKING IS CONFIRMED SEPARATELY.</p>
+        <div class="booking-actions">
+          <a class="booking-action booking-action--outline" href="/work/">BROWSE THE WORK</a>
+          <a class="booking-action booking-action--outline" href="/">BACK TO START</a>
         </div>
       </div>
-    </form>
+    </section>
   </main>
 </body>
 </html>

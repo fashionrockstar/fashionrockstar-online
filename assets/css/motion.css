@@ -1,0 +1,101 @@
+/* One motion voice; geometry, artwork and copy stay in the page stylesheets. */
+:root { --motion-ease: cubic-bezier(.16, 1, .3, 1); --ease: var(--motion-ease); }
+.home { --home-motion-ease: var(--motion-ease); }
+.inquiry-body { --booking-ease: var(--motion-ease); }
+.services-page .service-details { --service-ease: var(--motion-ease); }
+.motion-text-mask { position: absolute; left: 0; width: 100%; pointer-events: none; user-select: none; }
+.motion-text-copy { position: absolute !important; left: 0; pointer-events: none; user-select: none; }
+.motion-image-frame { overflow: clip; }
+
+/* Animate the existing rule, retaining its original border's layout space. */
+.motion-rule { position: relative; }
+.motion-rule--top { border-top-color: transparent !important; }
+.motion-rule--bottom { border-bottom-color: transparent !important; }
+.motion-rule::after { content: ''; position: absolute; left: 0; right: 0; height: 1px; background: var(--motion-rule-color); transform: scaleX(0); transform-origin: left; pointer-events: none; transition: transform 850ms var(--motion-ease); }
+.motion-rule--top::after { top: -1px; }
+.motion-rule--bottom::after { bottom: -1px; }
+.motion-rule-visible::after { transform: scaleX(1); }
+.about-founder.motion-divider::before { transform: scaleX(0); transform-origin: left; transition: transform 850ms var(--motion-ease); }
+.about-founder.motion-divider-visible::before { transform: scaleX(1); }
+
+.site-nav a::after, .work-filter::after { transition: transform 350ms var(--motion-ease); }
+.work-tile__meta { transition: opacity 320ms var(--motion-ease), transform 550ms var(--motion-ease); }
+.work-tile__meta b { clip-path: inset(0); transition: clip-path 550ms var(--motion-ease), transform 550ms var(--motion-ease); }
+.work-tile:not(.is-browsing):not(:focus-visible) .work-tile__meta b { transform: translateY(6px); }
+@media (hover: hover) and (pointer: fine) { .work-tile:hover .work-tile__meta b { transform: none; } }
+.project-nav > a, .back-link { transition: opacity 300ms var(--motion-ease), transform 350ms var(--motion-ease); }
+@media (hover: hover) and (pointer: fine) {
+  .project-nav > a:first-child:hover { transform: translateX(-3px); }
+  .project-nav > a:last-child:hover { transform: translateX(3px); }
+  .back-link:hover { transform: translateX(-3px); }
+}
+.about-link { transition: color 300ms var(--motion-ease); }
+@media (hover: hover) {
+  .about-link:hover { gap: 2.5rem; }
+  .about-link:hover .about-link-mark { transform: translate(2px, -2px); }
+}
+.about-link-mark { transition: transform 350ms var(--motion-ease); }
+.about-masthead { animation-duration: 950ms; animation-timing-function: var(--motion-ease); }
+
+.home .hero__brand { transform: translateY(var(--hero-scroll-y, 0px)); }
+.home .hero__actions { opacity: var(--actions-scroll-opacity, 1); }
+.home.home-motion-returning .hero__video { transition: none; }
+.home.home-motion-returning.home-motion-ready .hero__actions .hero__action { animation: none !important; opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+.home .hero__action, .home .hero__action span { transition-timing-function: var(--motion-ease); }
+
+@view-transition { navigation: auto; }
+::view-transition-group(root) { background: #050505; animation-duration: 240ms; }
+::view-transition-old(root) { animation: motion-page-out 180ms ease-out both; }
+::view-transition-new(root) { animation: motion-page-in 240ms var(--motion-ease) both; }
+::view-transition-group(frsr-cover), ::view-transition-group(frsr-cover-2) {
+  animation-duration: 700ms;
+  animation-timing-function: var(--motion-ease);
+  z-index: 2;
+}
+::view-transition-old(frsr-cover), ::view-transition-new(frsr-cover),
+::view-transition-old(frsr-cover-2), ::view-transition-new(frsr-cover-2) {
+  width: 100%; height: 100%; object-fit: contain; mix-blend-mode: normal; animation: none;
+}
+::view-transition-old(frsr-cover), ::view-transition-old(frsr-cover-2) { opacity: 1; }
+::view-transition-new(frsr-cover), ::view-transition-new(frsr-cover-2) { opacity: 0; }
+/* Keep prepared pixels independent of an outgoing image's discarded GPU layer. */
+html[data-motion-frames~="1"]::view-transition-group(frsr-cover) { background: var(--motion-cover-frame-1) center / 100% 100% no-repeat; }
+html[data-motion-frames~="2"]::view-transition-group(frsr-cover-2) { background: var(--motion-cover-frame-2) center / 100% 100% no-repeat; }
+html[data-motion-frames~="1"]::view-transition-old(frsr-cover),
+html[data-motion-frames~="1"]::view-transition-new(frsr-cover),
+html[data-motion-frames~="2"]::view-transition-old(frsr-cover-2),
+html[data-motion-frames~="2"]::view-transition-new(frsr-cover-2) { opacity: 0; }
+.motion-cover-bridge {
+  position: absolute !important; z-index: 1; margin: 0 !important;
+  max-width: none !important; max-height: none !important;
+  object-fit: contain; pointer-events: none;
+}
+html[data-motion-navigation="open"]::view-transition-old(root),
+html[data-motion-navigation="return"]::view-transition-old(root) { animation: motion-gallery-recede 450ms var(--motion-ease) both; }
+html[data-motion-navigation="open"]::view-transition-new(root),
+html[data-motion-navigation="return"]::view-transition-new(root) { animation: motion-project-arrive 620ms var(--motion-ease) 80ms both; }
+::view-transition-group(frsr-project-heading), ::view-transition-group(frsr-project-credits) { animation-duration: 700ms; z-index: 3; }
+::view-transition-new(frsr-project-heading) { animation: motion-project-type 580ms var(--motion-ease) 100ms both; mix-blend-mode: normal; }
+::view-transition-new(frsr-project-credits) { animation: motion-project-arrive 480ms var(--motion-ease) 200ms both; mix-blend-mode: normal; }
+html[data-motion-navigation="next"] { --project-direction: 1; }
+html[data-motion-navigation="previous"] { --project-direction: -1; }
+html[data-motion-navigation="next"]::view-transition-old(root),
+html[data-motion-navigation="previous"]::view-transition-old(root) { animation: motion-project-exit 450ms var(--motion-ease) both; }
+html[data-motion-navigation="next"]::view-transition-new(root),
+html[data-motion-navigation="previous"]::view-transition-new(root) { animation: motion-project-direction 650ms var(--motion-ease) both; }
+@keyframes motion-gallery-recede { to { opacity: 0; transform: translateY(-8px) scale(.995); } }
+@keyframes motion-project-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes motion-project-type { from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(12px); } to { opacity: 1; clip-path: inset(-.15em); transform: none; } }
+@keyframes motion-project-exit { to { opacity: 0; transform: translateX(calc(-24px * var(--project-direction, 1))); } }
+@keyframes motion-project-direction { from { opacity: 0; transform: translateX(calc(24px * var(--project-direction, 1))); } to { opacity: 1; transform: none; } }
+@keyframes motion-page-out { to { opacity: 0; } }
+@keyframes motion-page-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  .motion-rule::after { transition: none; transform: none; }
+  .about-founder.motion-divider::before { transition: none; transform: none; }
+  .home .hero__brand { transform: none; }
+  .home .hero__actions { opacity: 1; }
+  .project-nav > a, .back-link, .work-tile__meta b, .about-link-mark { transition: none; transform: none !important; }
+  .motion-text-mask { display: none; }
+}

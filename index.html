@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/landing.css">
   <link rel="stylesheet" href="/assets/css/entry-loader.css">
+  <link rel="stylesheet" href="/assets/css/home-motion.css">
+  <link rel="stylesheet" href="/assets/css/motion.css">
+  <script src="/assets/js/motion.js"></script>
   <script>
     (() => {
       let show = true;
@@ -25,6 +28,7 @@
   <script src="/assets/js/entry-loader.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
   <script src="/assets/js/landing.js" defer></script>
+  <script src="/assets/js/home-motion.js" defer></script>
 </head>
 <body class="home">
   <div class="entry-loader" data-entry-loader aria-hidden="true">
@@ -38,11 +42,15 @@
       <h1 class="sr-only" id="hero-title">FASHIONROCKSTAR.ONLINE</h1>
       <div class="hero__brand" aria-hidden="true">
         <img class="hero__fallback" src="/assets/images/hero-logo-white.png" width="728" height="97" alt="">
-        <img class="hero__motion-fallback" data-hero-motion-fallback data-src="/assets/images/FASHIONROCKSTAR-home-loop.webp" width="1280" height="720" alt="">
-        <video class="hero__video" data-hero-video muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
+        <video class="hero__video" data-hero-video autoplay muted loop playsinline preload="auto" width="3840" height="2160" tabindex="-1">
           <source src="/assets/video/FASHIONROCKSTAR-logo-only-4K.mp4" type="video/mp4">
         </video>
       </div>
+
+      <nav class="hero__actions" aria-label="HOMEPAGE ACTIONS">
+        <a class="hero__action" href="/services/"><span>VIEW SERVICES</span></a>
+        <a class="hero__action hero__action--primary" href="/booking/"><span>BOOK NOW</span></a>
+      </nav>
 
       <a class="scroll-cue" href="#explore" aria-label="Continue to navigation">
         <span class="scroll-cue__dots" aria-hidden="true">

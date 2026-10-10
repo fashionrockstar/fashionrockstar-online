@@ -66,6 +66,10 @@
   let drainFrame = 0;
   let progress = 0;
   let finishTimer = 0;
+  let revealTimer = 0;
+  let readinessTimer = 0;
+  let keyboardActivation = false;
+  let handoffStarted = false;
 
   const setProgress = (next) => {
     progress = clamp(next);
@@ -129,6 +133,9 @@
     window.cancelAnimationFrame(frame);
     window.cancelAnimationFrame(drainFrame);
     window.clearTimeout(finishTimer);
+    window.clearTimeout(revealTimer);
+    window.clearTimeout(readinessTimer);
+    document.removeEventListener('frsr:hero-ready', startHandoff);
 
     try {
       sessionStorage.setItem(sessionKey, 'granted');
@@ -137,13 +144,30 @@
     }
 
     screen.hidden = true;
+    screen.inert = false;
     main.inert = false;
     root.classList.remove('biometric-access-open', 'biometric-access-revealing');
     document.dispatchEvent(new CustomEvent('frsr:biometric-access-complete'));
 
     if (focusHome) {
-      document.querySelector('[data-home-menu-toggle]')?.focus({ preventScroll: true });
+      document.querySelector('.scroll-cue')?.focus({ preventScroll: true });
     }
+  };
+
+  const startHandoff = () => {
+    if (handoffStarted || screen.hidden) return;
+    handoffStarted = true;
+    clearTimeout(readinessTimer);
+    document.removeEventListener('frsr:hero-ready', startHandoff);
+    // Keep the grant legible, then release into media that can actually render.
+    revealTimer = setTimeout(() => {
+      if (screen.hidden) return;
+      root.classList.add('biometric-access-revealing');
+      screen.classList.add('is-handoff');
+      screen.inert = true;
+      main.inert = false;
+      finishTimer = setTimeout(() => finish(keyboardActivation), reduced ? 180 : 920);
+    }, reduced ? 0 : 160);
   };
 
   const grant = () => {
@@ -165,15 +189,15 @@
       // Fail open when storage is unavailable.
     }
 
-    const revealDelay = reduced ? 120 : 260;
-    const finishDelay = reduced ? 480 : 1420;
-
-    window.setTimeout(() => {
-      root.classList.add('biometric-access-revealing');
-      screen.classList.add('is-handoff');
-    }, revealDelay);
-
-    finishTimer = window.setTimeout(() => finish(false), finishDelay);
+    document.addEventListener('frsr:hero-ready', startHandoff);
+    document.dispatchEvent(new CustomEvent('frsr:biometric-access-prepare'));
+    if (document.querySelector('.hero__brand.is-ready')) startHandoff();
+    if (!handoffStarted) {
+      readinessTimer = setTimeout(() => {
+        document.dispatchEvent(new CustomEvent('frsr:hero-fallback'));
+        startHandoff();
+      }, 1800);
+    }
   };
 
   const tick = (now) => {
@@ -196,6 +220,7 @@
     window.cancelAnimationFrame(drainFrame);
     active = true;
     startedAt = performance.now();
+    keyboardActivation = !event;
     screen.dataset.state = 'scanning';
     screen.classList.remove('is-interrupted');
     screen.classList.add('is-contact');
@@ -286,7 +311,7 @@
   skip.addEventListener('click', () => finish());
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && !completed) {
+    if (event.key === 'Escape' && !screen.hidden) {
       event.preventDefault();
       finish();
     }
@@ -300,7 +325,7 @@
   });
 
   window.addEventListener('pagehide', () => {
-    if (active) window.cancelAnimationFrame(frame);
+    finish(false);
   });
 
   setProgress(0);

@@ -1,154 +1,139 @@
 (() => {
   'use strict';
-
   const page = document.querySelector('.services-page');
   if (!page) return;
   const services = Array.from(page.querySelectorAll('details.service'));
   const aliases = { visuals: 'photography', video: 'videography' };
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const running = new WeakMap();
-
-  const replaceFragment = (id) => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const motion = window.FRSRMotion;
+  const records = services.map(service => ({ service, summary: service.querySelector('summary'), panel: service.querySelector('.service-details'), videos: Array.from(service.querySelectorAll('video')), expanded: service.open, animation: null, frame: 0 }));
+  const replaceFragment = id => {
     try {
       const url = new URL(window.location.href);
-      url.hash = id || '';
-      window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
-    } catch {
-      // Disclosures still work if browser history is blocked.
+      url.hash = id;
+      url.searchParams.delete('service');
+      window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}${url.hash}`);
+    } catch { /* Disclosures still work when history access is unavailable. */ }
+  };
+  const visibleVideos = new Set();
+  const syncVideo = (video, record) => {
+    if (!record.expanded || reduced.matches || document.hidden || !visibleVideos.has(video)) { video.pause(); return; }
+    video.muted = true;
+    if (video.paused) video.play()?.catch(() => { /* The approved poster remains visible. */ });
+  };
+  const mediaObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) visibleVideos.add(entry.target);
+      else visibleVideos.delete(entry.target);
+      syncVideo(entry.target, records.find(item => item.videos.includes(entry.target)));
+    });
+  }, { threshold: .05 }) : null;
+  const syncMedia = () => records.forEach(record => record.videos.forEach(video => syncVideo(video, record)));
+  const revealPanel = (record, content = false) => {
+    const watch = (selector, kind, stagger = 0) => record.panel.querySelectorAll(selector).forEach((node, index) => motion?.watch(node, kind, { reset: true, delay: Math.min(index * stagger, 160) }));
+    if (!content) {
+      watch('.service-panel-title', 'heading');
+      watch('.service-watermark', 'number');
+      watch('.service-overview > p', 'copy', 60);
+    } else {
+      // Observe lower content after the disclosure's geometry has settled.
+      // Closing the previous panel must not consume its scroll entrances.
+      watch('.service-project__media', 'image', 70);
+      watch('.service-project__title', 'rise', 70);
+      watch('.service-stage, .service-scope, .service-links, .service-related > h3, .service-process > h3', 'rise', 40);
     }
   };
-  const cancel = (service) => {
-    const item = running.get(service);
-    if (item) {
-      running.delete(service);
-      item.animation.cancel();
-    }
-    service.style.removeProperty('height');
-    service.style.removeProperty('overflow');
+  const settle = (record, reveal = true) => {
+    record.service.open = record.expanded;
+    record.service.style.removeProperty('height');
+    record.service.style.removeProperty('overflow');
+    record.animation = null;
+    record.service.classList.toggle('is-expanded', record.expanded);
+    record.videos.forEach(video => syncVideo(video, record));
+    if (record.expanded && reveal) { revealPanel(record, true); motion?.refresh(record.panel); }
   };
-  const animateDisclosure = (service, expand) => {
-    const summary = service.querySelector('summary');
-    if (!summary) return;
+  const setExpanded = (record, expanded, animate = true) => {
+    const { service, summary, panel } = record;
+    if (record.expanded === expanded && !record.animation) return;
     const start = service.getBoundingClientRect().height;
-    cancel(service);
-    service.style.height = start + 'px';
-    service.style.overflow = 'hidden';
-    if (expand) {
-      services.forEach((other) => {
-        if (other === service) return;
-        cancel(other);
-        other.open = false;
-      });
-      service.open = true;
-      service.closest('li')?.classList.add('is-inview');
-      replaceFragment(service.id);
+    record.animation?.cancel();
+    record.animation = null;
+    window.cancelAnimationFrame(record.frame);
+    record.expanded = expanded;
+    service.dataset.expanded = String(expanded);
+    summary.setAttribute('aria-expanded', String(expanded));
+    panel.inert = !expanded;
+    panel.setAttribute('aria-hidden', String(!expanded));
+    if (!expanded && panel.contains(document.activeElement)) summary.focus({ preventScroll: true });
+    if (expanded) revealPanel(record);
+    else {
+      service.classList.remove('is-expanded');
+      motion?.forget(panel);
+      record.videos.forEach(video => video.pause());
     }
-    const saved = service.style.height;
-    service.style.height = 'auto';
-    const openHeight = service.getBoundingClientRect().height;
-    service.style.height = saved;
-    const destination = expand ? openHeight : summary.getBoundingClientRect().height;
-    if (Math.abs(destination - start) < 2) {
-      if (!expand) service.open = false;
-      cancel(service);
-      return;
-    }
-    const animation = service.animate([
-      { height: start + 'px' },
-      { height: destination + 'px' }
-    ], {
-      duration: expand ? 760 : 480,
-      easing: 'cubic-bezier(.22, 1, .36, 1)',
-      fill: 'forwards'
-    });
-    running.set(service, { animation, expand });
-    animation.addEventListener('finish', () => {
-      if (running.get(service)?.animation !== animation) return;
-      running.delete(service);
-      if (!expand) service.open = false;
-      service.style.removeProperty('height');
-      service.style.removeProperty('overflow');
-    }, { once: true });
+    if (!animate || reduced.matches || typeof service.animate !== 'function') { settle(record); return; }
+    // Keep native details semantics. Reversals begin at the current measured
+    // frame, and the old panel closes before its content leaves the layout.
+    service.style.height = `${start}px`;
+    service.style.overflow = 'clip';
+    service.open = true;
+    const end = summary.getBoundingClientRect().height + (expanded ? panel.offsetHeight : 0);
+    const duration = Math.min(500, 400 + Math.abs(end - start) * .05);
+    const animation = service.animate([{ height: `${start}px` }, { height: `${end}px` }], { duration, easing: motion?.EASE || 'cubic-bezier(.16, 1, .3, 1)', fill: 'forwards' });
+    record.animation = animation;
+    if (expanded) record.frame = window.requestAnimationFrame(() => { if (record.expanded) service.classList.add('is-expanded'); });
+    animation.finished.then(() => {
+      if (record.animation !== animation) return;
+      settle(record);
+      animation.cancel();
+      if (!expanded) return;
+      const bounds = summary.getBoundingClientRect();
+      if (bounds.top < 0 || bounds.bottom > window.innerHeight) service.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }).catch(() => { /* Cancellation is expected during rapid changes. */ });
   };
-
-  services.forEach((service) => {
-    const summary = service.querySelector('summary');
-    summary?.addEventListener('click', (event) => {
-      if (reducedMotion.matches || typeof service.animate !== 'function') return;
-      event.preventDefault();
-      const current = running.get(service);
-      const expand = current?.expand === false || (!current && !service.open);
-      animateDisclosure(service, expand);
-    });
-    summary?.addEventListener('focusin', () => {
-      service.closest('li')?.classList.add('is-inview');
-    });
-    service.addEventListener('toggle', () => {
-      if (service.open) {
-        services.forEach((other) => {
-          if (other === service || !other.open) return;
-          cancel(other);
-          other.open = false;
-        });
-        service.closest('li')?.classList.add('is-inview');
-        replaceFragment(service.id);
-        window.requestAnimationFrame(() => {
-          if (!service.open) return;
-          const bounds = summary.getBoundingClientRect();
-          if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
-            service.scrollIntoView({ block: 'start', behavior: 'instant' });
-          }
-        });
-      } else {
-        cancel(service);
-        if (window.location.hash === '#' + service.id) replaceFragment('');
-      }
-    });
+  const activate = (target, animate = true, updateUrl = true) => {
+    records.forEach(record => setExpanded(record, record === target, animate));
+    if (updateUrl) replaceFragment(target?.service.id || '');
+  };
+  records.forEach(record => {
+    const { service, summary, panel } = record;
+    // The original exclusive details[name] is the no-JavaScript fallback.
+    // JavaScript retains closing content long enough to animate its height.
+    service.removeAttribute('name');
+    panel.id = `${service.id}-content`;
+    summary.setAttribute('aria-controls', panel.id);
+    summary.setAttribute('aria-expanded', String(record.expanded));
+    service.dataset.expanded = String(record.expanded);
+    panel.inert = !record.expanded;
+    panel.setAttribute('aria-hidden', String(!record.expanded));
+    summary.addEventListener('click', event => { event.preventDefault(); activate(record.expanded ? null : record); });
+    service.addEventListener('toggle', () => { if (!record.animation && service.open !== record.expanded) activate(service.open ? record : null, false); });
+    record.videos.forEach(video => mediaObserver?.observe(video));
+    if (record.expanded) { service.classList.add('is-expanded'); revealPanel(record); revealPanel(record, true); }
   });
-
-  const openFragment = () => {
+  page.classList.add('services-enhanced');
+  const openFragment = (initial = false) => {
     let id;
-    try { id = decodeURIComponent(window.location.hash.slice(1)); }
-    catch { return; }
+    try { id = decodeURIComponent(window.location.hash.slice(1)) || new URLSearchParams(window.location.search).get('service'); } catch { return; }
     id = aliases[id] || id;
-    const target = services.find((service) => service.id === id);
+    const target = records.find(record => record.service.id === id);
     if (!target) return;
-    services.forEach((service) => {
-      cancel(service);
-      service.open = service === target;
-    });
-    target.closest('li')?.classList.add('is-inview');
-    window.requestAnimationFrame(() =>
-      target.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    activate(target, !initial);
+    if (initial) window.requestAnimationFrame(() => target.service.scrollIntoView({ block: 'start', behavior: 'instant' }));
   };
-  window.addEventListener('hashchange', openFragment);
-  openFragment();
-
-  if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const targets = Array.from(page.querySelectorAll('.service-list > li, .services-closing'));
-    const observer = new IntersectionObserver((entries, current) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-inview');
-        current.unobserve(entry.target);
-      });
-    }, { threshold: .055, rootMargin: '0px 0px -3% 0px' });
-    services.forEach((service) => {
-      if (service.open) service.closest('li')?.classList.add('is-inview');
-    });
-    page.classList.add('has-scroll-motion');
-    targets.forEach((target) => observer.observe(target));
-  }
-
-  reducedMotion.addEventListener?.('change', () => {
-    if (!reducedMotion.matches) return;
-    services.forEach((service) => {
-      const active = running.get(service);
-      if (!active) return;
-      const expand = active.expand;
-      cancel(service);
-      service.open = expand;
-    });
-    page.classList.remove('has-scroll-motion');
+  window.addEventListener('hashchange', () => openFragment());
+  window.addEventListener('resize', () => records.forEach(record => { if (record.animation) { record.animation.cancel(); settle(record); } }));
+  reduced.addEventListener('change', () => {
+    records.forEach(record => { record.animation?.cancel(); settle(record); if (record.expanded) revealPanel(record); });
+    syncMedia();
   });
+  document.addEventListener('visibilitychange', syncMedia);
+  window.addEventListener('pagehide', () => records.forEach(record => {
+    cancelAnimationFrame(record.frame);
+    record.animation?.cancel();
+    settle(record, false);
+    record.videos.forEach(video => video.pause());
+  }));
+  window.addEventListener('pageshow', syncMedia);
+  openFragment(true);
 })();

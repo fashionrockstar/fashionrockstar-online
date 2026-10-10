@@ -1,0 +1,168 @@
+/* Motion only. Keep the original Home geometry, fonts, artwork and copy. */
+.home {
+  --home-motion-ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+.home .hero__video {
+  transition: opacity 900ms var(--home-motion-ease);
+}
+
+/* Existing readiness and access states start the reveal after the entrance. */
+.home.home-motion-ready .hero__action {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+html:not(.biometric-access-open):not(.entry-loading) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action {
+  animation: home-cta-arrive 500ms var(--home-motion-ease) 900ms forwards;
+}
+html:not(.biometric-access-open):not(.entry-loading) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
+  animation-delay: 1000ms;
+}
+/* A completed scan has already revealed the video during its handoff. */
+html:not(.biometric-access-open) .home.home-motion-ready .biometric-access.is-granted ~ main .hero__brand.is-ready ~ .hero__actions .hero__action {
+  animation-delay: 100ms;
+}
+html:not(.biometric-access-open) .home.home-motion-ready .biometric-access.is-granted ~ main .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
+  animation-delay: 200ms;
+}
+@keyframes home-cta-arrive {
+  from { opacity: 0; visibility: visible; pointer-events: auto; transform: translateY(10px); }
+  to { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+}
+
+.home .hero__brand {
+  opacity: var(--hero-scroll-opacity, 1);
+}
+.home .scroll-cue {
+  opacity: var(--cue-scroll-opacity, 1);
+  transition: opacity 400ms var(--home-motion-ease);
+}
+.home .scroll-cue__dots i {
+  animation: home-dot-wave 2.4s ease-in-out infinite;
+}
+.home .scroll-cue__dots i:nth-child(1) { animation-delay: 0ms; }
+.home .scroll-cue__dots i:nth-child(2) { animation-delay: 120ms; }
+.home .scroll-cue__dots i:nth-child(3) { animation-delay: 240ms; }
+.home .scroll-cue__dots i:nth-child(4) { animation-delay: 360ms; }
+.home .scroll-cue__dots i:nth-child(5) { animation-delay: 480ms; }
+.home .scroll-cue__dots i:nth-child(6) { animation-delay: 600ms; }
+.home .scroll-cue__dots i:nth-child(7) { animation-delay: 720ms; }
+.home .scroll-cue__dots i:nth-child(8) { animation-delay: 840ms; }
+.home .scroll-cue__dots i:nth-child(9) { animation-delay: 960ms; }
+.home .scroll-cue:hover .scroll-cue__dots i,
+.home .scroll-cue:focus-visible .scroll-cue__dots i {
+  animation: none;
+  opacity: 1;
+}
+.home.home-motion-paused .scroll-cue__dots i { animation-play-state: paused; }
+@keyframes home-dot-wave {
+  0%, 65%, 100% { opacity: .25; }
+  30% { opacity: .85; }
+}
+
+.home.home-motion-ready .home-menu__links {
+  position: relative;
+  border-top-color: transparent;
+}
+.home.home-motion-ready .home-menu__links a {
+  position: relative;
+  border-bottom-color: transparent;
+}
+.home.home-motion-ready .home-menu__links::before,
+.home.home-motion-ready .home-menu__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: currentColor;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 800ms var(--home-motion-ease);
+}
+.home.home-motion-ready .home-menu__links::before { top: -1px; }
+.home.home-motion-ready .home-menu__links a::after {
+  bottom: -1px;
+  transition-delay: var(--row-delay, 0ms);
+}
+.home.home-motion-ready .home-menu__links.is-revealed::before,
+.home.home-motion-ready .home-menu__links a.is-revealed::after { transform: scaleX(1); }
+.home.home-motion-ready .home-menu__label {
+  opacity: 0;
+  clip-path: inset(100% 0 0 0);
+  transform: translateY(.18em);
+  transition: clip-path 900ms var(--home-motion-ease), transform 900ms var(--home-motion-ease), opacity 400ms ease;
+  transition-delay: var(--row-delay, 0ms);
+}
+.home.home-motion-ready a.is-revealed .home-menu__label {
+  opacity: 1;
+  clip-path: inset(-.2em -1px);
+  transform: none;
+}
+.home.home-motion-ready a:focus-visible .home-menu__label,
+.home.home-motion-ready a:focus-visible::after { transition: none; }
+
+/* English remains the sole sizing layer. Braille uses the original literal. */
+.home.home-motion-ready .home-menu__label::after { content: none; }
+.home.home-motion-ready .home-menu__english {
+  display: block;
+  opacity: 1;
+  transform: none;
+  transition: opacity 260ms var(--home-motion-ease), transform 350ms var(--home-motion-ease);
+}
+.home.home-motion-ready .home-menu__braille {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: min(.82em, 12cqi);
+  line-height: 1;
+  white-space: pre;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.home.home-motion-ready a[href="/work/"] .home-menu__braille { font-size: min(.82em, 10cqi); }
+.home.home-motion-ready .home-menu__braille > span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(.12em);
+  transition: opacity 260ms var(--home-motion-ease), transform 350ms var(--home-motion-ease);
+  transition-delay: var(--character-delay, 0ms);
+}
+.home.home-motion-ready a.is-braille .home-menu__english,
+.home.home-motion-ready a.is-activating .home-menu__english {
+  opacity: 0;
+  transform: translateY(-.06em);
+}
+.home.home-motion-ready a.is-braille .home-menu__braille > span,
+.home.home-motion-ready a.is-activating .home-menu__braille > span {
+  opacity: 1;
+  transform: none;
+}
+.home.home-motion-ready a.is-resting:not(.is-activating) .home-menu__english { opacity: 1; transform: none; }
+.home.home-motion-ready a.is-resting:not(.is-activating) .home-menu__braille > span { opacity: 0; transform: translateY(.12em); }
+
+@media (prefers-reduced-motion: reduce) {
+  .home.home-motion-ready .hero__actions .hero__action {
+    animation: none !important;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
+  .home .hero__video, .home .scroll-cue,
+  .home.home-motion-ready .home-menu__label,
+  .home.home-motion-ready .home-menu__english,
+  .home.home-motion-ready .home-menu__braille > span,
+  .home.home-motion-ready .home-menu__links::before,
+  .home.home-motion-ready .home-menu__links a::after { transition: none; }
+  .home .scroll-cue__dots i { animation: none; opacity: .65; }
+  .home .hero__brand, .home .scroll-cue { opacity: 1; }
+  .home.home-motion-ready .home-menu__label { opacity: 1; clip-path: none; transform: none; }
+  .home.home-motion-ready .home-menu__links::before,
+  .home.home-motion-ready .home-menu__links a::after { transform: none; }
+  .home.home-motion-ready .home-menu__english,
+  .home.home-motion-ready .home-menu__braille > span { transform: none !important; }
+}
