@@ -1,0 +1,680 @@
+{
+  "responsive-results-after.json": [
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "16px",
+      "width": 320
+    },
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "rootFont": "16px",
+      "width": 390
+    },
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 430,
+      "rootFont": "16px",
+      "width": 430
+    },
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 760,
+      "rootFont": "16px",
+      "width": 760
+    },
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 761,
+      "rootFont": "16px",
+      "width": 761
+    },
+    {
+      "state": "closed",
+      "open": [],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    },
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 1440,
+      "rootFont": "16px",
+      "width": 1440
+    }
+  ],
+  "text-200-results.json": [
+    {
+      "state": "creative-direction",
+      "bodyFont": "\"Neue Montreal\", Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "introFont": "24px",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 429,
+      "rootFont": "32px",
+      "serviceCount": 5,
+      "stageCount": 20,
+      "width": 320
+    },
+    {
+      "state": "photography",
+      "bodyFont": "\"Neue Montreal\", Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "introFont": "24px",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 404,
+      "rootFont": "32px",
+      "serviceCount": 5,
+      "stageCount": 20,
+      "width": 320
+    },
+    {
+      "state": "videography",
+      "bodyFont": "\"Neue Montreal\", Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "introFont": "24px",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 397,
+      "rootFont": "32px",
+      "serviceCount": 5,
+      "stageCount": 20,
+      "width": 320
+    },
+    {
+      "state": "styling",
+      "bodyFont": "\"Neue Montreal\", Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "introFont": "24px",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 401,
+      "rootFont": "32px",
+      "serviceCount": 5,
+      "stageCount": 20,
+      "width": 320
+    },
+    {
+      "state": "beauty",
+      "bodyFont": "\"Neue Montreal\", Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "introFont": "24px",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 427,
+      "rootFont": "32px",
+      "serviceCount": 5,
+      "stageCount": 20,
+      "width": 320
+    }
+  ],
+  "text-200-results-after.json": [
+    {
+      "state": "creative-direction",
+      "open": [
+        "creative-direction"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "32px",
+      "width": 320
+    },
+    {
+      "state": "photography",
+      "open": [
+        "photography"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "32px",
+      "width": 320
+    },
+    {
+      "state": "videography",
+      "open": [
+        "videography"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "32px",
+      "width": 320
+    },
+    {
+      "state": "styling",
+      "open": [
+        "styling"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "32px",
+      "width": 320
+    },
+    {
+      "state": "beauty",
+      "open": [
+        "beauty"
+      ],
+      "overflow": [],
+      "pageWidth": 320,
+      "rootFont": "32px",
+      "width": 320
+    }
+  ],
+  "keyboard-results.json": [
+    {
+      "id": "creative-direction",
+      "opened": [
+        "creative-direction"
+      ],
+      "closed": [],
+      "focus": {
+        "focused": true,
+        "outline": "rgb(246, 246, 243) solid 2px"
+      }
+    },
+    {
+      "id": "photography",
+      "opened": [
+        "photography"
+      ],
+      "closed": [],
+      "focus": {
+        "focused": true,
+        "outline": "rgb(246, 246, 243) solid 2px"
+      }
+    },
+    {
+      "id": "videography",
+      "opened": [
+        "videography"
+      ],
+      "closed": [],
+      "focus": {
+        "focused": true,
+        "outline": "rgb(246, 246, 243) solid 2px"
+      }
+    },
+    {
+      "id": "styling",
+      "opened": [
+        "styling"
+      ],
+      "closed": [],
+      "focus": {
+        "focused": true,
+        "outline": "rgb(246, 246, 243) solid 2px"
+      }
+    },
+    {
+      "id": "beauty",
+      "opened": [
+        "beauty"
+      ],
+      "closed": [],
+      "focus": {
+        "focused": true,
+        "outline": "rgb(246, 246, 243) solid 2px"
+      }
+    }
+  ],
+  "navigation-results.json": [
+    {
+      "expanded": "true",
+      "tag": "A",
+      "text": "SELECTED WORK"
+    },
+    {
+      "expanded": "true",
+      "tag": "BUTTON",
+      "text": "+"
+    },
+    {
+      "expanded": "true",
+      "tag": "A",
+      "text": "SERVICES"
+    },
+    {
+      "expanded": "true",
+      "tag": "A",
+      "text": "BOOKING"
+    },
+    {
+      "expanded": "true",
+      "tag": "A",
+      "text": "ISSUE 01"
+    },
+    {
+      "expanded": "true",
+      "tag": "A",
+      "text": "ABOUT"
+    },
+    {
+      "expanded": "false",
+      "tag": "SUMMARY",
+      "text": "CREATIVE DIRECTION\nVIEW DETAILS +CLOSE DETAIL"
+    }
+  ],
+  "link-results.json": [
+    {
+      "service": "creative-direction",
+      "kind": "booking",
+      "url": "http://127.0.0.1:8123/booking/?service=creative-direction",
+      "selected": [
+        "creative-direction"
+      ]
+    },
+    {
+      "service": "creative-direction",
+      "kind": "work",
+      "url": "http://127.0.0.1:8123/work/?filter=creative-direction",
+      "filter": "creative-direction"
+    },
+    {
+      "service": "photography",
+      "kind": "booking",
+      "url": "http://127.0.0.1:8123/booking/?service=photography",
+      "selected": [
+        "photography"
+      ]
+    },
+    {
+      "service": "photography",
+      "kind": "work",
+      "url": "http://127.0.0.1:8123/work/?filter=photography",
+      "filter": "photography"
+    },
+    {
+      "service": "videography",
+      "kind": "booking",
+      "url": "http://127.0.0.1:8123/booking/?service=videography",
+      "selected": [
+        "videography"
+      ]
+    },
+    {
+      "service": "videography",
+      "kind": "work",
+      "url": "http://127.0.0.1:8123/work/",
+      "filter": "all"
+    },
+    {
+      "service": "styling",
+      "kind": "booking",
+      "url": "http://127.0.0.1:8123/booking/?service=styling",
+      "selected": [
+        "styling"
+      ]
+    },
+    {
+      "service": "styling",
+      "kind": "work",
+      "url": "http://127.0.0.1:8123/work/?filter=styling",
+      "filter": "styling"
+    },
+    {
+      "service": "beauty",
+      "kind": "booking",
+      "url": "http://127.0.0.1:8123/booking/?service=beauty",
+      "selected": [
+        "beauty"
+      ]
+    },
+    {
+      "service": "beauty",
+      "kind": "work",
+      "url": "http://127.0.0.1:8123/work/?filter=beauty",
+      "filter": "beauty"
+    }
+  ],
+  "screenshot-comparison.json": [
+    {
+      "view": "desktop-1440",
+      "before": [
+        1440,
+        900
+      ],
+      "after": [
+        1440,
+        900
+      ],
+      "identical_pixels": true
+    },
+    {
+      "view": "mobile-overview-390",
+      "before": [
+        390,
+        900
+      ],
+      "after": [
+        390,
+        900
+      ],
+      "identical_pixels": true
+    },
+    {
+      "view": "mobile-details-390",
+      "before": [
+        390,
+        900
+      ],
+      "after": [
+        390,
+        900
+      ],
+      "identical_pixels": true
+    }
+  ]
+}
