@@ -1,47 +1,6 @@
 // Active catalogue. CALL HER ANGELINA's shoot date remains unconfirmed.
 window.fashionrockstarProjects = [
   {
-    "id": "prodigy-the-rebirth",
-    "title": "PRODIGY — THE REBIRTH",
-    "year": "2025",
-    "role": "CREATIVE DIRECTION / EDITING",
-    "disciplines": "creative-direction photography",
-    "category": "PHOTOGRAPHY",
-    "imported": true,
-    "stackedHeading": true,
-    "credits": [
-      "CHAINMAIL 1X1 RIB DRESS BY CARRE BOURGOGNE",
-      "PHOTOGRAPHY BY LIA VALENTE",
-      "CREATIVE DIRECTION AND EDITING BY FASHIONROCKSTAR",
-      "SET DESIGN BY KRISTINE KARAS"
-    ],
-    "cover": {
-      "type": "image",
-      "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
-      "width": 2400,
-      "height": 1600,
-      "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
-      "sourceFile": "46.png",
-      "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
-      "wide": true
-    },
-    "gallery": [
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
-        "sourceFile": "46.png",
-        "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
-        "wide": true
-      }
-    ],
-    "date": "2025",
-    "datePrecision": "year",
-    "galleryOrderConfirmed": true
-  },
-  {
     "title": "FASHIONROCKSTAR X BROKENHEART RUNWAY [M.A.D 26]",
     "year": "2026",
     "role": "CREATIVE DIRECTOR – LEAD STYLIST",
@@ -1096,6 +1055,47 @@ window.fashionrockstarProjects = [
     "date": "2025",
     "datePrecision": "year",
     "category": "MUSIC VIDEO"
+  },
+  {
+    "id": "prodigy-the-rebirth",
+    "title": "PRODIGY — THE REBIRTH",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION / EDITING",
+    "disciplines": "creative-direction photography",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [
+      "CHAINMAIL 1X1 RIB DRESS BY CARRE BOURGOGNE",
+      "PHOTOGRAPHY BY LIA VALENTE",
+      "CREATIVE DIRECTION AND EDITING BY FASHIONROCKSTAR",
+      "SET DESIGN BY KRISTINE KARAS"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
+      "sourceFile": "46.png",
+      "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
+        "sourceFile": "46.png",
+        "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
+        "wide": true
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "galleryOrderConfirmed": true
   },
   {
     "id": "lucas-issue-01-2025",
