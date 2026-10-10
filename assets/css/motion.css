@@ -47,10 +47,47 @@
 ::view-transition-group(root) { background: #050505; animation-duration: 240ms; }
 ::view-transition-old(root) { animation: motion-page-out 180ms ease-out both; }
 ::view-transition-new(root) { animation: motion-page-in 240ms var(--motion-ease) both; }
-::view-transition-group(frsr-cover) { animation-duration: 650ms; animation-timing-function: var(--motion-ease); z-index: 2; }
-::view-transition-old(frsr-cover), ::view-transition-new(frsr-cover) { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: normal; animation: none; }
-::view-transition-old(frsr-cover) { opacity: 1; }
-::view-transition-new(frsr-cover) { opacity: 0; }
+::view-transition-group(frsr-cover), ::view-transition-group(frsr-cover-2) {
+  animation-duration: 700ms;
+  animation-timing-function: var(--motion-ease);
+  z-index: 2;
+}
+::view-transition-old(frsr-cover), ::view-transition-new(frsr-cover),
+::view-transition-old(frsr-cover-2), ::view-transition-new(frsr-cover-2) {
+  width: 100%; height: 100%; object-fit: contain; mix-blend-mode: normal; animation: none;
+}
+::view-transition-old(frsr-cover), ::view-transition-old(frsr-cover-2) { opacity: 1; }
+::view-transition-new(frsr-cover), ::view-transition-new(frsr-cover-2) { opacity: 0; }
+/* Keep prepared pixels independent of an outgoing image's discarded GPU layer. */
+html[data-motion-frames~="1"]::view-transition-group(frsr-cover) { background: var(--motion-cover-frame-1) center / 100% 100% no-repeat; }
+html[data-motion-frames~="2"]::view-transition-group(frsr-cover-2) { background: var(--motion-cover-frame-2) center / 100% 100% no-repeat; }
+html[data-motion-frames~="1"]::view-transition-old(frsr-cover),
+html[data-motion-frames~="1"]::view-transition-new(frsr-cover),
+html[data-motion-frames~="2"]::view-transition-old(frsr-cover-2),
+html[data-motion-frames~="2"]::view-transition-new(frsr-cover-2) { opacity: 0; }
+.motion-cover-bridge {
+  position: absolute !important; z-index: 1; margin: 0 !important;
+  max-width: none !important; max-height: none !important;
+  object-fit: contain; pointer-events: none;
+}
+html[data-motion-navigation="open"]::view-transition-old(root),
+html[data-motion-navigation="return"]::view-transition-old(root) { animation: motion-gallery-recede 450ms var(--motion-ease) both; }
+html[data-motion-navigation="open"]::view-transition-new(root),
+html[data-motion-navigation="return"]::view-transition-new(root) { animation: motion-project-arrive 620ms var(--motion-ease) 80ms both; }
+::view-transition-group(frsr-project-heading), ::view-transition-group(frsr-project-credits) { animation-duration: 700ms; z-index: 3; }
+::view-transition-new(frsr-project-heading) { animation: motion-project-type 580ms var(--motion-ease) 100ms both; mix-blend-mode: normal; }
+::view-transition-new(frsr-project-credits) { animation: motion-project-arrive 480ms var(--motion-ease) 200ms both; mix-blend-mode: normal; }
+html[data-motion-navigation="next"] { --project-direction: 1; }
+html[data-motion-navigation="previous"] { --project-direction: -1; }
+html[data-motion-navigation="next"]::view-transition-old(root),
+html[data-motion-navigation="previous"]::view-transition-old(root) { animation: motion-project-exit 450ms var(--motion-ease) both; }
+html[data-motion-navigation="next"]::view-transition-new(root),
+html[data-motion-navigation="previous"]::view-transition-new(root) { animation: motion-project-direction 650ms var(--motion-ease) both; }
+@keyframes motion-gallery-recede { to { opacity: 0; transform: translateY(-8px) scale(.995); } }
+@keyframes motion-project-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes motion-project-type { from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(12px); } to { opacity: 1; clip-path: inset(-.15em); transform: none; } }
+@keyframes motion-project-exit { to { opacity: 0; transform: translateX(calc(-24px * var(--project-direction, 1))); } }
+@keyframes motion-project-direction { from { opacity: 0; transform: translateX(calc(24px * var(--project-direction, 1))); } to { opacity: 1; transform: none; } }
 @keyframes motion-page-out { to { opacity: 0; } }
 @keyframes motion-page-in { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {

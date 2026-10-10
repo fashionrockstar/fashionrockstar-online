@@ -4,12 +4,20 @@
   const video = document.querySelector('[data-hero-video]');
   const root = document.documentElement;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const entry = document.querySelector('[data-entry-loader]');
+  const rememberEntry = () => {
+    if (entry && !root.classList.contains('entry-loading')) {
+      try { sessionStorage.setItem('frsrSimpleEntryV1', 'seen'); } catch { /* Entry remains fail-open. */ }
+    }
+  };
+  rememberEntry();
   if (video) {
     const brand = video.closest('.hero__brand');
     let preparing = false;
     let readyTimer = 0;
     let frameTimer = 0;
     let videoFrame = 0;
+    let entryReadyTimer = 0;
     // Fresh internal returns resume the same approved loop; bfcache keeps its player.
     const returnTime = window.FRSRMotion?.homeTime;
     const resumeReturn = () => {
@@ -26,6 +34,15 @@
     const showFallback = () => {
       brand.classList.remove('is-playing');
       brand.classList.add('is-fallback');
+      // The original loader aligns to the video or the approved still fallback.
+      // Keep that exact handoff aligned if decoding fails during the loader.
+      const loader = document.querySelector('[data-entry-loader]');
+      if (root.classList.contains('entry-loading') && loader) {
+        const box = brand.querySelector('.hero__fallback').getBoundingClientRect();
+        loader.style.setProperty('--entry-mark-width', `${box.width}px`);
+        loader.style.setProperty('--entry-mark-left', `${box.left + box.width / 2}px`);
+        loader.style.setProperty('--entry-mark-top', `${box.top + box.height / 2}px`);
+      }
       announceReady();
     };
     const canRun = () => !reducedMotion.matches && !document.hidden
@@ -75,7 +92,13 @@
     document.addEventListener('frsr:biometric-access-prepare', () => { preparing = true; syncPlayback(); });
     document.addEventListener('frsr:biometric-access-complete', () => { preparing = false; syncPlayback(); });
     document.addEventListener('frsr:hero-fallback', showFallback);
-    new MutationObserver(syncPlayback).observe(root, { attributes: true, attributeFilter: ['class'] });
+    if (root.classList.contains('entry-loading')) {
+      // Put a real frame or the original still beneath the loader before its fade.
+      entryReadyTimer = setTimeout(() => {
+        if (!brand.classList.contains('is-ready')) showFallback();
+      }, 2450);
+    }
+    new MutationObserver(() => { rememberEntry(); syncPlayback(); }).observe(root, { attributes: true, attributeFilter: ['class'] });
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(entries => {
         if (entries.some(entry => entry.isIntersecting) && video.paused) syncPlayback();
@@ -87,6 +110,7 @@
     window.addEventListener('pagehide', () => {
       clearTimeout(readyTimer);
       clearTimeout(frameTimer);
+      clearTimeout(entryReadyTimer);
       readyTimer = 0;
       if (videoFrame) video.cancelVideoFrameCallback?.(videoFrame);
       videoFrame = 0;

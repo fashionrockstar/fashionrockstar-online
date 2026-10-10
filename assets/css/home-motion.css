@@ -14,10 +14,10 @@
   pointer-events: none;
   transform: translateY(10px);
 }
-html:not(.biometric-access-open) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action {
+html:not(.biometric-access-open):not(.entry-loading) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action {
   animation: home-cta-arrive 500ms var(--home-motion-ease) 900ms forwards;
 }
-html:not(.biometric-access-open) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
+html:not(.biometric-access-open):not(.entry-loading) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
   animation-delay: 1000ms;
 }
 /* A completed scan has already revealed the video during its handoff. */
