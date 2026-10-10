@@ -308,6 +308,52 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "mzrabelle-pinksummer",
+    "title": "MZRABELLE PINKSUMMER",
+    "year": "",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION / BEAUTY",
+    "disciplines": "photography creative-direction beauty",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp 2400w",
+      "sourceFile": "_DSC9338 copy.jpg",
+      "alt": "PINK-HAIRED FIGURE WITH CLOSED EYES, PINK MAKEUP AND NAILS, AND PINK LETTERING ON THE CHEEK AGAINST A GRAY BACKGROUND.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp 2400w",
+        "sourceFile": "_DSC9338 copy.jpg",
+        "alt": "PINK-HAIRED FIGURE WITH CLOSED EYES, PINK MAKEUP AND NAILS, AND PINK LETTERING ON THE CHEEK AGAINST A GRAY BACKGROUND.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-2400.webp 2400w",
+        "sourceFile": "second face close up copy.jpg",
+        "alt": "CLOSE-UP OF A PINK-HAIRED FIGURE WITH WINDSWEPT HAIR, PINK LETTERING ON THE CHEEK, AND A FINGER RAISED TO THE LIPS.",
+        "wide": true
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "galleryOrderConfirmed": true
+  },
+  {
     "id": "maureen",
     "title": "MAUREEN",
     "year": "",
