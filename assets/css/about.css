@@ -1,5 +1,6 @@
 /* ABOUT: a readable editorial introduction, in normal document flow. */
 .about-body {
+  --black: #000;
   --about-gutter: clamp(1.25rem, 4.5vw, 5.5rem);
   --about-rule: #424242;
   --about-muted: #b7b7b4;
@@ -94,6 +95,19 @@
   transform-origin: right center;
 }
 .about-image { min-width: 0; }
+.about-portrait { min-width: 0; margin: 0; }
+.about-portrait img { width: 100%; height: auto; object-fit: contain; }
+@media (prefers-reduced-motion: no-preference) {
+  .about-portrait[data-portrait-state="pending"] img {
+    clip-path: inset(0 0 100% 0);
+    opacity: .45;
+  }
+  .about-portrait[data-portrait-state="visible"] img {
+    clip-path: inset(0);
+    opacity: 1;
+    transition: clip-path 1100ms var(--ease), opacity 900ms var(--ease);
+  }
+}
 .about-image > a { display: block; overflow: hidden; }
 .about-image img { width: 100%; height: auto; transition: transform .65s var(--ease); }
 .about-image figcaption {
@@ -202,6 +216,7 @@
   .about-intro-note { margin-top: 1.75rem; max-width: 32rem; font-size: .875rem; }
   .about-intro-note p { max-width: 45ch; }
   .about-image { width: min(100%, 30rem); margin-left: auto; }
+  .about-portrait { width: min(100%, 30rem); margin-inline: auto; }
   .about-image figcaption { font-size: .6875rem; }
   .about-founder { gap: 2rem; margin-top: 4rem; padding-block: 2.5rem 4rem; }
   .about-founder h2 { margin-top: 1.5rem; font-size: clamp(3rem, 11.5vw, 5.5rem); }
