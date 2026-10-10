@@ -42,6 +42,79 @@
 .hero__brand.is-playing .hero__video { opacity: 1; }
 .home .hero__brand.is-fallback .hero__fallback { visibility: visible; }
 
+/* Keep both actions inside the existing hero, clear of the artwork and cue. */
+.home .hero__actions {
+  position: absolute;
+  z-index: 1;
+  left: var(--home-edge-left);
+  right: var(--home-edge-right);
+  bottom: clamp(6.5rem, 22svh, 15rem);
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+}
+
+.home .hero__action {
+  display: inline-flex;
+  flex: 0 1 12rem;
+  min-width: 0;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: .875rem clamp(.75rem, 2vw, 1.5rem);
+  border: 1px solid var(--home-fg);
+  background: transparent;
+  color: var(--home-fg);
+  font: 500 .75rem/1.2 var(--font-ui);
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.home .hero__action--primary {
+  background: var(--home-fg);
+  color: var(--home-bg);
+}
+.home .hero__action span { transition: transform 250ms ease; }
+.home .hero__action:focus-visible {
+  outline: 2px solid var(--home-fg);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home .hero__action:hover {
+    background: var(--home-fg);
+    color: var(--home-bg);
+  }
+  .home .hero__action--primary:hover {
+    background: transparent;
+    color: var(--home-fg);
+  }
+  .home .hero__action:hover span { transform: translateX(2px); }
+}
+
+@media (max-width: 600px), (max-height: 500px) {
+  .home .hero__action {
+    flex-basis: 10rem;
+    min-height: 44px;
+    padding: .75rem;
+    font-size: .6875rem;
+  }
+}
+
+@media (max-height: 500px) {
+  .home .hero__actions {
+    bottom: max(5.75rem, calc(env(safe-area-inset-bottom) + 5.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home .hero__action, .home .hero__action span { transition: none; }
+  .home .hero__action:hover span { transform: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .home .hero__video { display: none; }
   .home .hero__brand .hero__fallback { visibility: visible; }

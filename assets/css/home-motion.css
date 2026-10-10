@@ -6,6 +6,32 @@
 .home .hero__video {
   transition: opacity 900ms var(--home-motion-ease);
 }
+
+/* Existing readiness and access states start the reveal after the entrance. */
+.home.home-motion-ready .hero__action {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+html:not(.biometric-access-open) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action {
+  animation: home-cta-arrive 500ms var(--home-motion-ease) 900ms forwards;
+}
+html:not(.biometric-access-open) .home.home-motion-ready .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
+  animation-delay: 1000ms;
+}
+/* A completed scan has already revealed the video during its handoff. */
+html:not(.biometric-access-open) .home.home-motion-ready .biometric-access.is-granted ~ main .hero__brand.is-ready ~ .hero__actions .hero__action {
+  animation-delay: 100ms;
+}
+html:not(.biometric-access-open) .home.home-motion-ready .biometric-access.is-granted ~ main .hero__brand.is-ready ~ .hero__actions .hero__action:nth-child(2) {
+  animation-delay: 200ms;
+}
+@keyframes home-cta-arrive {
+  from { opacity: 0; visibility: visible; pointer-events: auto; transform: translateY(10px); }
+  to { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+}
+
 .home .hero__brand {
   opacity: var(--hero-scroll-opacity, 1);
 }
@@ -119,6 +145,13 @@
 .home.home-motion-ready a.is-resting:not(.is-activating) .home-menu__braille > span { opacity: 0; transform: translateY(.12em); }
 
 @media (prefers-reduced-motion: reduce) {
+  .home.home-motion-ready .hero__actions .hero__action {
+    animation: none !important;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
   .home .hero__video, .home .scroll-cue,
   .home.home-motion-ready .home-menu__label,
   .home.home-motion-ready .home-menu__english,
