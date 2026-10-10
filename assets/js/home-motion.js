@@ -18,7 +18,7 @@
   rows.forEach((row, index) => {
     const label = row.querySelector('[data-braille]');
     if (!label) return;
-    row.style.setProperty('--row-delay', Math.min(index * 90, 360) + 'ms');
+    row.style.setProperty('--row-delay', Math.min(index * 65, 195) + 'ms');
     const layer = document.createElement('span');
     layer.className = 'home-menu__braille';
     layer.setAttribute('aria-hidden', 'true');
@@ -52,7 +52,7 @@
     // Observe stationary links, not translated lettering hidden by its mask.
     observer = new IntersectionObserver(entries => {
       entries.forEach(entry => { if (entry.isIntersecting) reveal(entry.target); });
-    }, { threshold: .22, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: .32, rootMargin: '0px 0px -10% 0px' });
     rows.filter(row => !row.classList.contains('is-revealed')).forEach(row => observer.observe(row));
   };
   home.classList.add('home-motion-ready');
@@ -63,6 +63,8 @@
     const progress = Math.min(1, Math.max(0, scrollY / Math.max(heroHeight, 1)));
     hero.style.setProperty('--hero-scroll-opacity', reduced.matches ? '1' : String(1 - progress * .16));
     hero.style.setProperty('--cue-scroll-opacity', reduced.matches ? '1' : String(Math.max(0, 1 - progress * 3)));
+    hero.style.setProperty('--hero-scroll-y', reduced.matches ? '0px' : `${-18 * progress}px`);
+    hero.style.setProperty('--actions-scroll-opacity', reduced.matches ? '1' : String(Math.max(0, 1 - progress * 1.6)));
     home.classList.toggle('home-motion-paused', document.hidden || progress >= 1);
   };
   const schedule = () => { if (!frame) frame = requestAnimationFrame(updateScroll); };

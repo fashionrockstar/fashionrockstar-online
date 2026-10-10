@@ -17,8 +17,8 @@
 .booking-form.booking-form--studio { width: 100%; margin: 0; padding: 0; }
 .booking-step-meta h2 { margin: 0; font: inherit; text-align: right; }
 .booking-progress { height: 1px; background: var(--booking-line); margin-top: 1rem; }
-.booking-progress span { display: block; height: 100%; width: 50%; background: var(--booking-fg); transition: width .6s var(--booking-ease); }
-.booking-form[data-step="2"] .booking-progress span { width: 100%; }
+.booking-progress span { display: block; height: 100%; width: 100%; background: var(--booking-fg); transform: scaleX(.5); transform-origin: left; transition: transform .6s var(--booking-ease); }
+.booking-form[data-step="2"] .booking-progress span { transform: scaleX(1); }
 .booking-stage { position: relative; margin-top: 3rem; }
 .booking-stage.is-transitioning { overflow: hidden; }
 .booking-stage.is-transitioning > .booking-step { position: absolute; width: 100%; top: 0; left: 0; }
@@ -86,9 +86,17 @@
   .booking-continue-row { align-items: flex-start; flex-direction: column; }
   .inquiry-confirmation { padding: 2rem 1.25rem; }
 }
-@media (prefers-reduced-motion: no-preference) {
-  .booking-header h1 { animation: booking-arrive .6s var(--booking-ease) both; }
-  .booking-interface { animation: booking-arrive .6s .1s var(--booking-ease) both; }
-  @keyframes booking-arrive { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
-}
 @media (prefers-reduced-motion: reduce) { .inquiry-page *, .inquiry-page *::before, .inquiry-page *::after { animation: none !important; transition: none !important; } }
+
+/* Feedback stays inside the existing controls and never moves a hit target. */
+.booking-service__title { transition: transform 350ms var(--booking-ease); }
+.booking-service input:checked + .booking-service__row .booking-service__title { transform: translateX(3px); }
+.booking-field > label { transition: transform 350ms var(--booking-ease), color 300ms var(--booking-ease); }
+.booking-field:focus-within > label { color: var(--booking-fg); transform: translateY(-2px); }
+.booking-action, .booking-text-action { transition-timing-function: var(--booking-ease) !important; }
+.booking-action[data-state="sending"] { position: relative; overflow: hidden; }
+.booking-action[data-state="sending"]::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: currentColor; transform-origin: left; animation: booking-pending 1200ms var(--booking-ease) infinite; }
+@keyframes booking-pending { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .booking-service__title, .booking-field > label { transform: none !important; }
+}

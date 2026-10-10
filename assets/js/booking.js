@@ -17,6 +17,7 @@
   const confirmation = document.querySelector('.inquiry-confirmation');
   const requiredFields = Array.from(form.querySelectorAll('#booking-project [required]'));
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const motion = window.FRSRMotion;
   let pending = false;
   let received = false;
   let changing = false;
@@ -67,7 +68,7 @@
 
   const animate = (element, frames, options) => {
     if (reducedMotion.matches || typeof element.animate !== 'function') return Promise.resolve();
-    const animation = element.animate(frames, { duration: 500, fill: 'both', easing: 'cubic-bezier(.16, 1, .3, 1)', ...options });
+    const animation = element.animate(frames, { duration: 500, fill: 'both', easing: motion?.EASE || 'cubic-bezier(.16, 1, .3, 1)', ...options });
     runningAnimations.push(animation);
     return animation.finished.catch(() => {});
   };
@@ -91,7 +92,9 @@
     const toHeight = incoming.getBoundingClientRect().height;
     form.dataset.step = String(next);
     count.textContent = `0${next} / 02`;
+    motion?.stop(title);
     title.textContent = next === 1 ? 'SELECT SERVICES — MULTIPLE ALLOWED' : 'YOUR PROJECT';
+    motion?.heading(title, { duration: 850 });
     progress.setAttribute('aria-valuenow', String(next));
     progress.setAttribute('aria-valuetext', `STEP ${next} OF 2`);
     stage.style.height = `${toHeight}px`;
@@ -103,6 +106,7 @@
     ]);
     outgoing.hidden = true;
     incoming.inert = false;
+    motion?.refresh(incoming);
     runningAnimations.forEach((animation) => animation.cancel());
     runningAnimations = [];
     stage.classList.remove('is-transitioning');
@@ -115,6 +119,7 @@
   // Resize / changed motion preference finishes an in-flight transition cleanly.
   const finishAnimations = () => runningAnimations.forEach((animation) => { if (animation.playState === 'running') animation.finish(); });
   window.addEventListener('resize', finishAnimations);
+  window.addEventListener('pagehide', finishAnimations);
   reducedMotion.addEventListener('change', finishAnimations);
   continuation.addEventListener('click', () => { form.dataset.transition = 'running'; changeStep(2); });
   backButtons.forEach((back) => back.addEventListener('click', () => { form.dataset.transition = 'running'; changeStep(1); }));
@@ -172,6 +177,8 @@
       form.hidden = true;
       confirmation.hidden = false;
       await animate(confirmation, [{opacity:0, transform:'translateY(20px)'}, {opacity:1, transform:'translateY(0)'}]);
+      runningAnimations.forEach((animation) => animation.cancel());
+      runningAnimations = [];
       document.querySelector('#inquiry-confirmation-title').focus();
     } catch {
       showStatus('SUBMISSION FAILED — PLEASE TRY AGAIN.', 'error', true);

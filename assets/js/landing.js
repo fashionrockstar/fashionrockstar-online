@@ -10,6 +10,13 @@
     let readyTimer = 0;
     let frameTimer = 0;
     let videoFrame = 0;
+    // Fresh internal returns resume the same approved loop; bfcache keeps its player.
+    const returnTime = window.FRSRMotion?.homeTime;
+    const resumeReturn = () => {
+      if (Number.isFinite(returnTime) && returnTime > 0 && Number.isFinite(video.duration) && video.duration > 0) video.currentTime = returnTime % video.duration;
+    };
+    if (video.readyState >= 1) resumeReturn();
+    else video.addEventListener('loadedmetadata', resumeReturn, { once: true });
     const announceReady = () => {
       clearTimeout(readyTimer);
       readyTimer = 0;

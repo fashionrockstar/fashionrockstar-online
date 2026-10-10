@@ -341,13 +341,6 @@
   .services-page .service-links a:hover { border-color: var(--page-fg); background: var(--page-fg); color: var(--page-bg); }
   .services-page .service-links a[href^="/booking/"]:hover { background: transparent; color: var(--page-fg); }
 }
-.services-page.services-enhanced .service-panel-title,
-.services-page.services-enhanced .service-overview { opacity: 0; transform: translateY(10px); transition: opacity 320ms var(--service-ease), transform 380ms var(--service-ease); }
-.services-page.services-enhanced .is-expanded .service-panel-title,
-.services-page.services-enhanced .is-expanded .service-overview { opacity: 1; transform: none; }
-.services-page.services-enhanced .is-expanded .service-panel-title { transition-delay: 40ms; }
-.services-page.services-enhanced .service-reveal { opacity: 0; transform: translateY(10px); transition: opacity 320ms var(--service-ease) var(--service-delay, 0ms), transform 380ms var(--service-ease) var(--service-delay, 0ms); }
-.services-page.services-enhanced .service-reveal.is-shown { opacity: 1; transform: none; }
 .services-page .service[data-expanded="false"] .service-action__closed { display: inline-flex; }
 .services-page .service[data-expanded="false"] .service-action__open { display: none; }
 @media (max-width: 760px) {

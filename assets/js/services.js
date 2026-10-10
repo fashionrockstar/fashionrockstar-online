@@ -5,7 +5,8 @@
   const services = Array.from(page.querySelectorAll('details.service'));
   const aliases = { visuals: 'photography', video: 'videography' };
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const records = services.map(service => ({ service, summary: service.querySelector('summary'), panel: service.querySelector('.service-details'), reveals: Array.from(service.querySelectorAll('.service-reveal')), videos: Array.from(service.querySelectorAll('video')), expanded: service.open, animation: null, frame: 0 }));
+  const motion = window.FRSRMotion;
+  const records = services.map(service => ({ service, summary: service.querySelector('summary'), panel: service.querySelector('.service-details'), videos: Array.from(service.querySelectorAll('video')), expanded: service.open, animation: null, frame: 0 }));
   const replaceFragment = id => {
     try {
       const url = new URL(window.location.href);
@@ -14,15 +15,6 @@
       window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}${url.hash}`);
     } catch { /* Disclosures still work when history access is unavailable. */ }
   };
-  const revealObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const record = records.find(item => item.service.contains(entry.target));
-      if (entry.isIntersecting && record?.expanded) {
-        entry.target.classList.add('is-shown');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0, rootMargin: '0px 0px -4% 0px' }) : null;
   const visibleVideos = new Set();
   const syncVideo = (video, record) => {
     if (!record.expanded || reduced.matches || document.hidden || !visibleVideos.has(video)) { video.pause(); return; }
@@ -37,19 +29,28 @@
     });
   }, { threshold: .05 }) : null;
   const syncMedia = () => records.forEach(record => record.videos.forEach(video => syncVideo(video, record)));
-  const revealPanel = record => record.reveals.forEach(node => {
-    revealObserver?.unobserve(node);
-    node.classList.remove('is-shown');
-    if (reduced.matches || !revealObserver) node.classList.add('is-shown');
-    else revealObserver.observe(node);
-  });
-  const settle = record => {
+  const revealPanel = (record, content = false) => {
+    const watch = (selector, kind, stagger = 0) => record.panel.querySelectorAll(selector).forEach((node, index) => motion?.watch(node, kind, { reset: true, delay: Math.min(index * stagger, 160) }));
+    if (!content) {
+      watch('.service-panel-title', 'heading');
+      watch('.service-watermark', 'number');
+      watch('.service-overview > p', 'copy', 60);
+    } else {
+      // Observe lower content after the disclosure's geometry has settled.
+      // Closing the previous panel must not consume its scroll entrances.
+      watch('.service-project__media', 'image', 70);
+      watch('.service-project__title', 'rise', 70);
+      watch('.service-stage, .service-scope, .service-links, .service-related > h3, .service-process > h3', 'rise', 40);
+    }
+  };
+  const settle = (record, reveal = true) => {
     record.service.open = record.expanded;
     record.service.style.removeProperty('height');
     record.service.style.removeProperty('overflow');
     record.animation = null;
     record.service.classList.toggle('is-expanded', record.expanded);
     record.videos.forEach(video => syncVideo(video, record));
+    if (record.expanded && reveal) { revealPanel(record, true); motion?.refresh(record.panel); }
   };
   const setExpanded = (record, expanded, animate = true) => {
     const { service, summary, panel } = record;
@@ -67,7 +68,7 @@
     if (expanded) revealPanel(record);
     else {
       service.classList.remove('is-expanded');
-      record.reveals.forEach(node => revealObserver?.unobserve(node));
+      motion?.forget(panel);
       record.videos.forEach(video => video.pause());
     }
     if (!animate || reduced.matches || typeof service.animate !== 'function') { settle(record); return; }
@@ -77,7 +78,8 @@
     service.style.overflow = 'clip';
     service.open = true;
     const end = summary.getBoundingClientRect().height + (expanded ? panel.offsetHeight : 0);
-    const animation = service.animate([{ height: `${start}px` }, { height: `${end}px` }], { duration: 380, easing: 'cubic-bezier(.16, 1, .3, 1)', fill: 'forwards' });
+    const duration = Math.min(500, 400 + Math.abs(end - start) * .05);
+    const animation = service.animate([{ height: `${start}px` }, { height: `${end}px` }], { duration, easing: motion?.EASE || 'cubic-bezier(.16, 1, .3, 1)', fill: 'forwards' });
     record.animation = animation;
     if (expanded) record.frame = window.requestAnimationFrame(() => { if (record.expanded) service.classList.add('is-expanded'); });
     animation.finished.then(() => {
@@ -106,9 +108,8 @@
     panel.setAttribute('aria-hidden', String(!record.expanded));
     summary.addEventListener('click', event => { event.preventDefault(); activate(record.expanded ? null : record); });
     service.addEventListener('toggle', () => { if (!record.animation && service.open !== record.expanded) activate(service.open ? record : null, false); });
-    panel.addEventListener('focusin', event => { event.target.closest('.service-reveal')?.classList.add('is-shown'); });
     record.videos.forEach(video => mediaObserver?.observe(video));
-    if (record.expanded) { service.classList.add('is-expanded'); revealPanel(record); }
+    if (record.expanded) { service.classList.add('is-expanded'); revealPanel(record); revealPanel(record, true); }
   });
   page.classList.add('services-enhanced');
   const openFragment = (initial = false) => {
@@ -127,7 +128,12 @@
     syncMedia();
   });
   document.addEventListener('visibilitychange', syncMedia);
-  window.addEventListener('pagehide', () => records.forEach(record => record.videos.forEach(video => video.pause())));
+  window.addEventListener('pagehide', () => records.forEach(record => {
+    cancelAnimationFrame(record.frame);
+    record.animation?.cancel();
+    settle(record, false);
+    record.videos.forEach(video => video.pause());
+  }));
   window.addEventListener('pageshow', syncMedia);
   openFragment(true);
 })();
