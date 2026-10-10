@@ -241,3 +241,144 @@
 @media (prefers-reduced-motion: reduce) {
   .services-page .service-details { animation: none; }
 }
+
+/* Disclosure interiors only: preserve the existing list and page framing. */
+.services-page .service-details {
+  --service-ease: cubic-bezier(.16, 1, .3, 1);
+  --service-border: rgb(246 246 243 / .24);
+  position: relative;
+  display: block;
+  min-width: 0;
+  padding: clamp(1.5rem, 3vw, 3rem) 0 clamp(3rem, 6vw, 6rem);
+  animation: none;
+  isolation: isolate;
+}
+.services-page .service[open] .service-details { animation: none; }
+.services-page .service-watermark {
+  position: absolute;
+  z-index: -1;
+  top: -.04em;
+  right: 0;
+  opacity: .04;
+  font: 400 clamp(8rem, 19vw, 20rem)/1 var(--font-display);
+  pointer-events: none;
+  user-select: none;
+}
+.services-page .service-panel-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; min-width: 0; }
+.services-page .service-panel-heading > div { min-width: 0; }
+.services-page .service-details .service-panel-title {
+  margin: 1.25rem 0 0;
+  max-width: 100%;
+  font: 400 clamp(2.25rem, 6vw, 5rem)/1.05 var(--font-display);
+  letter-spacing: -.025em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.services-page .service-details .service-section-label,
+.services-page .service-panel-index,
+.services-page .service-overview > h3,
+.services-page .service-scope > h3 {
+  margin: 0;
+  font: 500 .6875rem/1.5 ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  letter-spacing: .2em;
+}
+.services-page .service-panel-index { flex-shrink: 0; white-space: nowrap; }
+.services-page .service-overview { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; max-width: 72ch; margin-top: 2.5rem; }
+.services-page .service-overview p,
+.services-page .service-stage p,
+.services-page .service-scope p {
+  margin: 0;
+  max-width: none;
+  font: 400 clamp(.875rem, 1.05vw, 1rem)/1.7 var(--font-ui);
+  letter-spacing: .015em;
+  overflow-wrap: anywhere;
+}
+.services-page .service-related,
+.services-page .service-process { margin-top: clamp(3rem, 5vw, 4.5rem); }
+.services-page .service-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 1rem; margin-top: 1.5rem; }
+.services-page .service-project { display: block; min-width: 0; text-decoration: none; }
+.services-page .service-project__media { display: block; min-width: 0; transition: opacity 300ms var(--service-ease); }
+.services-page .service-project__media--paired { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.services-page .service-project img,
+.services-page .service-project video { display: block; width: 100%; height: auto; min-width: 0; object-fit: contain; background: var(--black); }
+.services-page .service-project__title {
+  display: block;
+  margin-top: .875rem;
+  font: 700 .75rem/1.55 var(--font-ui);
+  letter-spacing: .04em;
+  overflow-wrap: anywhere;
+  transition: transform 300ms var(--service-ease);
+}
+.services-page .service-stages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; padding: 0; margin-top: 1.5rem; border: 1px solid var(--service-border); background: transparent; }
+.services-page .service-stage { display: flex; flex-direction: column; gap: 1.25rem; min-width: 0; max-width: none; margin: 0; padding: clamp(1.5rem, 2.5vw, 2.5rem); border: 0; background: var(--page-bg); }
+.services-page .service-stage:nth-child(odd) { border-right: 1px solid var(--service-border); }
+.services-page .service-stage:nth-child(-n+2) { border-bottom: 1px solid var(--service-border); }
+.services-page .service-stage h3 { margin: 0 0 .25rem; font: 700 .875rem/1.5 var(--font-ui); letter-spacing: .045em; overflow-wrap: anywhere; }
+.services-page .service-scope { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; max-width: none; margin-top: 2.5rem; padding: clamp(1.5rem, 3vw, 2.75rem); border: 1px solid var(--service-border); }
+.services-page .service-scope > h3 { margin-bottom: .25rem; }
+.services-page .service-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.5rem; padding: 0; }
+.services-page .service-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  max-width: 100%;
+  padding: 1rem 1.75rem;
+  border: 1px solid var(--service-border);
+  color: var(--page-fg);
+  font: 500 .6875rem/1.6 ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  letter-spacing: .2em;
+  text-decoration: none;
+  text-align: center;
+  overflow-wrap: anywhere;
+  transition: color 280ms var(--service-ease), background-color 280ms var(--service-ease), border-color 280ms var(--service-ease);
+}
+.services-page .service-links a[href^="/booking/"] { border-color: var(--page-fg); background: var(--page-fg); color: var(--page-bg); }
+.services-page .service-details a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+@media (hover: hover) {
+  .services-page .service-project:hover .service-project__media { opacity: .86; }
+  .services-page .service-project:hover .service-project__title { transform: translateY(-2px); }
+  .services-page .service-links a:hover { border-color: var(--page-fg); background: var(--page-fg); color: var(--page-bg); }
+  .services-page .service-links a[href^="/booking/"]:hover { background: transparent; color: var(--page-fg); }
+}
+.services-page.services-enhanced .service-panel-title,
+.services-page.services-enhanced .service-overview { opacity: 0; transform: translateY(10px); transition: opacity 320ms var(--service-ease), transform 380ms var(--service-ease); }
+.services-page.services-enhanced .is-expanded .service-panel-title,
+.services-page.services-enhanced .is-expanded .service-overview { opacity: 1; transform: none; }
+.services-page.services-enhanced .is-expanded .service-panel-title { transition-delay: 40ms; }
+.services-page.services-enhanced .service-reveal { opacity: 0; transform: translateY(10px); transition: opacity 320ms var(--service-ease) var(--service-delay, 0ms), transform 380ms var(--service-ease) var(--service-delay, 0ms); }
+.services-page.services-enhanced .service-reveal.is-shown { opacity: 1; transform: none; }
+.services-page .service[data-expanded="false"] .service-action__closed { display: inline-flex; }
+.services-page .service[data-expanded="false"] .service-action__open { display: none; }
+@media (max-width: 760px) {
+  .services-page .service { container-type: inline-size; }
+  .services-page .service-details .service-panel-title { font-size: clamp(2rem, 8vw, 3.5rem); }
+  .services-page .service-panel-heading { flex-wrap: wrap; }
+  .services-page .service-watermark { font-size: clamp(7rem, 35vw, 15rem); }
+  .services-page .service-overview { margin-top: 2rem; }
+  .services-page .service-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
+  .services-page .service-stages { grid-template-columns: minmax(0, 1fr); }
+  .services-page .service-stage,
+  .services-page .service-scope { padding: 1.5rem; }
+  .services-page .service-stage:nth-child(odd) { border-right: 0; }
+  .services-page .service-stage:nth-child(3) { border-bottom: 1px solid var(--service-border); }
+  .services-page .service-links a { padding: 1rem 1.25rem; }
+}
+/* The original listing keeps its normal layout. At enlarged text sizes the
+   action moves below the title instead of compressing it into single letters. */
+@container (max-width: 17.99rem) {
+  .services-page .service-toggle { grid-template-columns: minmax(0, 1fr); }
+  .services-page .service-action { justify-self: start; }
+}
+@media (max-width: 480px) {
+  .services-page .service-gallery { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .services-page.services-enhanced .service-panel-title,
+  .services-page.services-enhanced .service-overview,
+  .services-page.services-enhanced .service-reveal { opacity: 1; transform: none; transition: none; }
+  .services-page .service-project__media,
+  .services-page .service-project__title,
+  .services-page .service-links a { transition: none; }
+  .services-page .service-project:hover .service-project__title { transform: none; }
+}
