@@ -96,6 +96,41 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "brokenheart-photography-campaign",
+    "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+    "year": "",
+    "role": "PHOTOGRAPHY / CAMPAIGN",
+    "disciplines": "photography",
+    "category": "PHOTOGRAPHY / CAMPAIGN",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-640.webp 640w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-1280.webp 1280w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp 2400w",
+      "sourceFile": "1111.jpg",
+      "alt": "SEATED FIGURE IN BLACK ON A CLEAR CHAIR, WITH THE ORIGINAL BROKENHEART AND FASHIONROCKSTAR TYPOGRAPHY AND STUDIO SHADOWS.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-640.webp 640w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-1280.webp 1280w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp 2400w",
+        "sourceFile": "1111.jpg",
+        "alt": "SEATED FIGURE IN BLACK ON A CLEAR CHAIR, WITH THE ORIGINAL BROKENHEART AND FASHIONROCKSTAR TYPOGRAPHY AND STUDIO SHADOWS.",
+        "wide": true
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "galleryOrderConfirmed": true
+  },
+  {
     "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
     "year": "",
     "role": "",
@@ -199,6 +234,62 @@ window.fashionrockstarProjects = [
     "category": "PHOTOGRAPHY"
   },
   {
+    "id": "inverttlyfe",
+    "title": "INVERTTLYFE",
+    "year": "2026",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION / STYLING / BEAUTY",
+    "disciplines": "photography creative-direction styling beauty",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/inverttlyfe/01-h4-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/inverttlyfe/01-h4-640.webp 640w, /assets/media/selected-work/inverttlyfe/01-h4-1280.webp 1280w, /assets/media/selected-work/inverttlyfe/01-h4-2400.webp 2400w",
+      "sourceFile": "h4.jpg",
+      "alt": "FIGURE WITH SCULPTURAL HAIR, SILVER BODY MAKEUP, CHAINS, AND METALLIC TROUSERS IN FRONT OF A METAL SHUTTER.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/01-h4-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/inverttlyfe/01-h4-640.webp 640w, /assets/media/selected-work/inverttlyfe/01-h4-1280.webp 1280w, /assets/media/selected-work/inverttlyfe/01-h4-2400.webp 2400w",
+        "sourceFile": "h4.jpg",
+        "alt": "FIGURE WITH SCULPTURAL HAIR, SILVER BODY MAKEUP, CHAINS, AND METALLIC TROUSERS IN FRONT OF A METAL SHUTTER.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/02-pants-front-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/inverttlyfe/02-pants-front-480.webp 480w, /assets/media/selected-work/inverttlyfe/02-pants-front-960.webp 960w, /assets/media/selected-work/inverttlyfe/02-pants-front-1600.webp 1600w",
+        "sourceFile": "pants 2.jpg",
+        "alt": "FRONT VIEW OF METALLIC FLARED TROUSERS WITH STUDDED BELTS AND CHAINS AGAINST A GRAY BACKGROUND.",
+        "wide": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/inverttlyfe/03-pants-back-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "srcset": "/assets/media/selected-work/inverttlyfe/03-pants-back-480.webp 480w, /assets/media/selected-work/inverttlyfe/03-pants-back-960.webp 960w, /assets/media/selected-work/inverttlyfe/03-pants-back-1600.webp 1600w",
+        "sourceFile": "pants only.jpg",
+        "alt": "REAR VIEW OF METALLIC FLARED TROUSERS WITH STUDDED BELTS AGAINST A GRAY BACKGROUND.",
+        "wide": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "galleryOrderConfirmed": true
+  },
+  {
     "title": "MANSAWORLD",
     "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
     "year": "2026",
@@ -270,6 +361,52 @@ window.fashionrockstarProjects = [
     "category": "PHOTOGRAPHY",
     "disciplines": "photography creative-direction",
     "imported": true,
+    "galleryOrderConfirmed": true
+  },
+  {
+    "id": "mzrabelle-pinksummer",
+    "title": "MZRABELLE PINKSUMMER",
+    "year": "",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION / BEAUTY",
+    "disciplines": "photography creative-direction beauty",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp 2400w",
+      "sourceFile": "_DSC9338 copy.jpg",
+      "alt": "PINK-HAIRED FIGURE WITH CLOSED EYES, PINK MAKEUP AND NAILS, AND PINK LETTERING ON THE CHEEK AGAINST A GRAY BACKGROUND.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/01-pink-portrait-2400.webp 2400w",
+        "sourceFile": "_DSC9338 copy.jpg",
+        "alt": "PINK-HAIRED FIGURE WITH CLOSED EYES, PINK MAKEUP AND NAILS, AND PINK LETTERING ON THE CHEEK AGAINST A GRAY BACKGROUND.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-640.webp 640w, /assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-1280.webp 1280w, /assets/media/selected-work/mzrabelle-pinksummer/02-pink-close-up-2400.webp 2400w",
+        "sourceFile": "second face close up copy.jpg",
+        "alt": "CLOSE-UP OF A PINK-HAIRED FIGURE WITH WINDSWEPT HAIR, PINK LETTERING ON THE CHEEK, AND A FINGER RAISED TO THE LIPS.",
+        "wide": true
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
     "galleryOrderConfirmed": true
   },
   {
@@ -1020,6 +1157,47 @@ window.fashionrockstarProjects = [
     "date": "2025",
     "datePrecision": "year",
     "category": "MUSIC VIDEO"
+  },
+  {
+    "id": "prodigy-the-rebirth",
+    "title": "PRODIGY — THE REBIRTH",
+    "year": "2025",
+    "role": "CREATIVE DIRECTION / EDITING",
+    "disciplines": "creative-direction photography",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "stackedHeading": true,
+    "credits": [
+      "CHAINMAIL 1X1 RIB DRESS BY CARRE BOURGOGNE",
+      "PHOTOGRAPHY BY LIA VALENTE",
+      "CREATIVE DIRECTION AND EDITING BY FASHIONROCKSTAR",
+      "SET DESIGN BY KRISTINE KARAS"
+    ],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
+      "sourceFile": "46.png",
+      "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/prodigy-the-rebirth/46-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/prodigy-the-rebirth/46-640.webp 640w, /assets/media/selected-work/prodigy-the-rebirth/46-1280.webp 1280w, /assets/media/selected-work/prodigy-the-rebirth/46-2400.webp 2400w",
+        "sourceFile": "46.png",
+        "alt": "RECLINING FIGURE IN A SILVER CHAINMAIL DRESS ON A BLACK PADDED TABLE AGAINST A GRAY BACKGROUND, WITH THE ORIGINAL PRODIGY — THE REBIRTH CAPTION AND CREDITS.",
+        "wide": true
+      }
+    ],
+    "date": "2025",
+    "datePrecision": "year",
+    "galleryOrderConfirmed": true
   },
   {
     "id": "lucas-issue-01-2025",
