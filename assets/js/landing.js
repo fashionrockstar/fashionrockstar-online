@@ -13,6 +13,12 @@
   rememberEntry();
   if (video) {
     const brand = video.closest('.hero__brand');
+    const playButton = brand.querySelector('[data-hero-play]');
+    let pageActive = true;
+    let playPending = false;
+    let playAttempt = 0;
+    let playTimer = 0;
+    let autoplayBlocked = false;
     let preparing = false;
     let readyTimer = 0;
     let frameTimer = 0;
@@ -31,9 +37,10 @@
       brand.classList.add('is-ready');
       document.dispatchEvent(new CustomEvent('frsr:hero-ready'));
     };
-    const showFallback = () => {
+    const showFallback = (offerPlay = !reducedMotion.matches) => {
       brand.classList.remove('is-playing');
       brand.classList.add('is-fallback');
+      if (playButton) playButton.hidden = !offerPlay || reducedMotion.matches;
       // The original loader aligns to the video or the approved still fallback.
       // Keep that exact handoff aligned if decoding fails during the loader.
       const loader = document.querySelector('[data-entry-loader]');
@@ -45,7 +52,7 @@
       }
       announceReady();
     };
-    const canRun = () => !reducedMotion.matches && !document.hidden
+    const canRun = () => pageActive && !reducedMotion.matches && !document.hidden
       && (preparing || !root.classList.contains('biometric-access-open')
         || root.classList.contains('biometric-access-revealing'));
     const revealVideo = () => {
@@ -53,6 +60,8 @@
       clearTimeout(frameTimer);
       brand.classList.remove('is-fallback');
       brand.classList.add('is-playing');
+      autoplayBlocked = false;
+      if (playButton) playButton.hidden = true;
       announceReady();
     };
     const onPlaying = () => {
@@ -65,18 +74,64 @@
         frameTimer = setTimeout(revealVideo, 180);
       } else revealVideo();
     };
-    const syncPlayback = () => {
+    const syncPlayback = (userInitiated = false) => {
       if (!canRun()) {
+        playAttempt += 1;
+        playPending = false;
+        clearTimeout(playTimer);
+        if (playButton) playButton.removeAttribute('aria-busy');
         video.pause();
-        if (reducedMotion.matches) showFallback();
+        if (reducedMotion.matches) showFallback(false);
         return;
       }
+      // A policy rejection needs a real gesture, not repeated class-change retries.
+      if (playPending && userInitiated) {
+        // A slow pending load can be retried without keeping an obsolete promise.
+        playAttempt += 1;
+        video.pause();
+        playPending = false;
+      }
+      if (playPending || (autoplayBlocked && !userInitiated)) return;
       video.muted = true;
       video.defaultMuted = true;
+      if (!video.paused && video.readyState >= 2) {
+        if (!brand.classList.contains('is-playing')) onPlaying();
+        return;
+      }
+      playPending = true;
+      const attempt = ++playAttempt;
+      clearTimeout(playTimer);
+      playTimer = setTimeout(() => {
+        if (attempt !== playAttempt || !playPending || !canRun()) return;
+        if (!video.paused && video.readyState >= 2) {
+          playPending = false;
+          if (playButton) playButton.removeAttribute('aria-busy');
+          return;
+        }
+        // Some browsers leave play() pending when every <source> fails.
+        playAttempt += 1;
+        playPending = false;
+        autoplayBlocked = true;
+        video.pause();
+        if (playButton) playButton.removeAttribute('aria-busy');
+        showFallback();
+      }, 8000);
+      if (playButton) playButton.setAttribute('aria-busy', 'true');
+      // Keep this call synchronous with the button click for iOS user activation.
       video.play().then(() => {
+        if (attempt !== playAttempt) return;
         if (!video.paused && video.readyState >= 2 && !brand.classList.contains('is-playing')) onPlaying();
       }).catch(error => {
-        if (canRun() && error.name !== 'AbortError') showFallback();
+        if (attempt !== playAttempt) return;
+        if (canRun() && error.name !== 'AbortError') {
+          autoplayBlocked = true;
+          showFallback();
+        }
+      }).finally(() => {
+        if (attempt !== playAttempt) return;
+        clearTimeout(playTimer);
+        playPending = false;
+        if (playButton) playButton.removeAttribute('aria-busy');
       });
       if (!brand.classList.contains('is-ready') && !readyTimer) {
         readyTimer = setTimeout(() => {
@@ -85,13 +140,22 @@
         }, 8000);
       }
     };
+    playButton?.addEventListener('click', () => {
+      if (video.error || video.readyState === 0) video.load();
+      syncPlayback(true);
+    });
     video.addEventListener('playing', onPlaying);
-    video.addEventListener('canplay', syncPlayback);
-    video.addEventListener('error', showFallback);
-    video.querySelector('source')?.addEventListener('error', showFallback);
+    video.addEventListener('canplay', () => syncPlayback());
+    video.addEventListener('pause', () => {
+      // Safari can stop inline playback when it leaves view or policy changes.
+      if (canRun() && !playPending && brand.classList.contains('is-playing')) {
+        showFallback();
+      }
+    });
+    video.addEventListener('error', () => { autoplayBlocked = true; showFallback(); });
     document.addEventListener('frsr:biometric-access-prepare', () => { preparing = true; syncPlayback(); });
     document.addEventListener('frsr:biometric-access-complete', () => { preparing = false; syncPlayback(); });
-    document.addEventListener('frsr:hero-fallback', showFallback);
+    document.addEventListener('frsr:hero-fallback', () => showFallback());
     if (root.classList.contains('entry-loading')) {
       // Put a real frame or the original still beneath the loader before its fade.
       entryReadyTimer = setTimeout(() => {
@@ -104,10 +168,16 @@
         if (entries.some(entry => entry.isIntersecting) && video.paused) syncPlayback();
       }, { threshold: .2 }).observe(video);
     }
-    reducedMotion.addEventListener('change', syncPlayback);
-    document.addEventListener('visibilitychange', syncPlayback);
-    window.addEventListener('pageshow', syncPlayback);
+    const resumePlayback = () => { autoplayBlocked = false; syncPlayback(); };
+    reducedMotion.addEventListener('change', resumePlayback);
+    document.addEventListener('visibilitychange', resumePlayback);
+    window.addEventListener('pageshow', () => { pageActive = true; resumePlayback(); });
     window.addEventListener('pagehide', () => {
+      pageActive = false;
+      playAttempt += 1;
+      playPending = false;
+      clearTimeout(playTimer);
+      if (playButton) playButton.removeAttribute('aria-busy');
       clearTimeout(readyTimer);
       clearTimeout(frameTimer);
       clearTimeout(entryReadyTimer);

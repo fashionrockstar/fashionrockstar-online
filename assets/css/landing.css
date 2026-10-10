@@ -42,6 +42,43 @@
 .hero__brand.is-playing .hero__video { opacity: 1; }
 .home .hero__brand.is-fallback .hero__fallback { visibility: visible; }
 
+/* Only offered when autoplay is unavailable; the approved artwork stays visible. */
+.home .hero__play {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% + min(4.8vw, 4.8rem) + .5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 44px;
+  min-height: 44px;
+  padding: .5rem .75rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--home-fg);
+  font: 500 .625rem/1.2 var(--font-ui);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.home .hero__play[hidden] { display: none; }
+.home .hero__play:focus-visible { outline: 1px solid currentColor; outline-offset: 2px; }
+@media (max-height: 500px) {
+  .home .hero__play {
+    top: var(--home-edge-top);
+    left: auto;
+    right: var(--home-edge-right);
+    transform: none;
+  }
+}
+@media (hover: hover) {
+  .home .hero__play:hover { text-decoration: underline; text-underline-offset: .25em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home .hero__play { display: none; }
+}
+
 /* Keep both actions inside the existing hero, clear of the artwork and cue. */
 .home .hero__actions {
   position: absolute;
