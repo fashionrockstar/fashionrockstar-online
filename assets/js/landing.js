@@ -13,7 +13,6 @@
   rememberEntry();
   if (video) {
     const brand = video.closest('.hero__brand');
-    const playButton = brand.querySelector('[data-hero-play]');
     let pageActive = true;
     let playPending = false;
     let playAttempt = 0;
@@ -37,10 +36,9 @@
       brand.classList.add('is-ready');
       document.dispatchEvent(new CustomEvent('frsr:hero-ready'));
     };
-    const showFallback = (offerPlay = !reducedMotion.matches) => {
+    const showFallback = () => {
       brand.classList.remove('is-playing');
       brand.classList.add('is-fallback');
-      if (playButton) playButton.hidden = !offerPlay || reducedMotion.matches;
       // The original loader aligns to the video or the approved still fallback.
       // Keep that exact handoff aligned if decoding fails during the loader.
       const loader = document.querySelector('[data-entry-loader]');
@@ -61,7 +59,6 @@
       brand.classList.remove('is-fallback');
       brand.classList.add('is-playing');
       autoplayBlocked = false;
-      if (playButton) playButton.hidden = true;
       announceReady();
     };
     const onPlaying = () => {
@@ -74,24 +71,17 @@
         frameTimer = setTimeout(revealVideo, 180);
       } else revealVideo();
     };
-    const syncPlayback = (userInitiated = false) => {
+    const syncPlayback = () => {
       if (!canRun()) {
         playAttempt += 1;
         playPending = false;
         clearTimeout(playTimer);
-        if (playButton) playButton.removeAttribute('aria-busy');
         video.pause();
-        if (reducedMotion.matches) showFallback(false);
+        if (reducedMotion.matches) showFallback();
         return;
       }
-      // A policy rejection needs a real gesture, not repeated class-change retries.
-      if (playPending && userInitiated) {
-        // A slow pending load can be retried without keeping an obsolete promise.
-        playAttempt += 1;
-        video.pause();
-        playPending = false;
-      }
-      if (playPending || (autoplayBlocked && !userInitiated)) return;
+      // Respect policy rejections; retry only on a later visibility/return event.
+      if (playPending || autoplayBlocked) return;
       video.muted = true;
       video.defaultMuted = true;
       if (!video.paused && video.readyState >= 2) {
@@ -105,7 +95,6 @@
         if (attempt !== playAttempt || !playPending || !canRun()) return;
         if (!video.paused && video.readyState >= 2) {
           playPending = false;
-          if (playButton) playButton.removeAttribute('aria-busy');
           return;
         }
         // Some browsers leave play() pending when every <source> fails.
@@ -113,11 +102,8 @@
         playPending = false;
         autoplayBlocked = true;
         video.pause();
-        if (playButton) playButton.removeAttribute('aria-busy');
         showFallback();
       }, 8000);
-      if (playButton) playButton.setAttribute('aria-busy', 'true');
-      // Keep this call synchronous with the button click for iOS user activation.
       video.play().then(() => {
         if (attempt !== playAttempt) return;
         if (!video.paused && video.readyState >= 2 && !brand.classList.contains('is-playing')) onPlaying();
@@ -131,7 +117,6 @@
         if (attempt !== playAttempt) return;
         clearTimeout(playTimer);
         playPending = false;
-        if (playButton) playButton.removeAttribute('aria-busy');
       });
       if (!brand.classList.contains('is-ready') && !readyTimer) {
         readyTimer = setTimeout(() => {
@@ -140,10 +125,6 @@
         }, 8000);
       }
     };
-    playButton?.addEventListener('click', () => {
-      if (video.error || video.readyState === 0) video.load();
-      syncPlayback(true);
-    });
     video.addEventListener('playing', onPlaying);
     video.addEventListener('canplay', () => syncPlayback());
     video.addEventListener('pause', () => {
@@ -177,7 +158,6 @@
       playAttempt += 1;
       playPending = false;
       clearTimeout(playTimer);
-      if (playButton) playButton.removeAttribute('aria-busy');
       clearTimeout(readyTimer);
       clearTimeout(frameTimer);
       clearTimeout(entryReadyTimer);
