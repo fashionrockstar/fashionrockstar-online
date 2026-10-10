@@ -308,6 +308,71 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "maureen",
+    "title": "MAUREEN",
+    "year": "",
+    "role": "PHOTOGRAPHY / CREATIVE DIRECTION / STYLING",
+    "disciplines": "photography creative-direction styling",
+    "category": "PHOTOGRAPHY",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/maureen/01-overexposed-silhouette-2048.webp",
+      "width": 2048,
+      "height": 1365,
+      "srcset": "/assets/media/selected-work/maureen/01-overexposed-silhouette-640.webp 640w, /assets/media/selected-work/maureen/01-overexposed-silhouette-1280.webp 1280w, /assets/media/selected-work/maureen/01-overexposed-silhouette-2048.webp 2048w",
+      "sourceFile": "ChatGPT Image Oct 10, 2026, 11_08_20 AM.jpg",
+      "alt": "OVEREXPOSED FIGURE SEATED ON A CONCRETE BARRIER IN AN INDUSTRIAL SETTING.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/maureen/01-overexposed-silhouette-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/maureen/01-overexposed-silhouette-640.webp 640w, /assets/media/selected-work/maureen/01-overexposed-silhouette-1280.webp 1280w, /assets/media/selected-work/maureen/01-overexposed-silhouette-2048.webp 2048w",
+        "sourceFile": "ChatGPT Image Oct 10, 2026, 11_08_20 AM.jpg",
+        "alt": "OVEREXPOSED FIGURE SEATED ON A CONCRETE BARRIER IN AN INDUSTRIAL SETTING.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/maureen/02-standing-underpass-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/maureen/02-standing-underpass-640.webp 640w, /assets/media/selected-work/maureen/02-standing-underpass-1280.webp 1280w, /assets/media/selected-work/maureen/02-standing-underpass-2048.webp 2048w",
+        "sourceFile": "ChatGPT Image Oct 10, 2026, 11_08_25 AM.jpg",
+        "alt": "STANDING FIGURE IN WHITE ON GRAVEL BENEATH A CONCRETE OVERPASS.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/maureen/03-seated-industrial-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/maureen/03-seated-industrial-640.webp 640w, /assets/media/selected-work/maureen/03-seated-industrial-1280.webp 1280w, /assets/media/selected-work/maureen/03-seated-industrial-2048.webp 2048w",
+        "sourceFile": "ChatGPT Image Oct 10, 2026, 11_08_30 AM.jpg",
+        "alt": "FIGURE IN WHITE SEATED ON GRAVEL BENEATH A CONCRETE OVERPASS.",
+        "wide": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/maureen/04-seated-composition-2048.webp",
+        "width": 2048,
+        "height": 1365,
+        "srcset": "/assets/media/selected-work/maureen/04-seated-composition-640.webp 640w, /assets/media/selected-work/maureen/04-seated-composition-1280.webp 1280w, /assets/media/selected-work/maureen/04-seated-composition-2048.webp 2048w",
+        "sourceFile": "ChatGPT Image Oct 10, 2026, 11_08_34 AM.jpg",
+        "alt": "SEATED FIGURE IN WHITE WITH BLACK HEELS ON A GRAVEL MOUND AGAINST A GRAY BACKGROUND.",
+        "wide": true
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "galleryOrderConfirmed": true
+  },
+  {
     "title": "FASHIONROCKSTARMAXXING",
     "titleBreakAfter": "FASHIONROCKSTAR",
     "year": "2026",
