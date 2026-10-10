@@ -4,6 +4,34 @@
 [context.development]
   publish = "."
 
+# Keep the existing launch-list database and emailed unsubscribe links available.
+# The signup UI and private dashboard continue on their original Sites host.
+[[redirects]]
+  from = "/unsubscribe"
+  to = "https://fashionrockstar-launch.zavyer.chatgpt.site/unsubscribe"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/subscribe"
+  to = "https://fashionrockstar-launch.zavyer.chatgpt.site/api/subscribe"
+  status = 200
+  force = true
+  [redirects.headers]
+    Origin = "https://fashionrockstar-launch.zavyer.chatgpt.site"
+
+[[redirects]]
+  from = "/mailing-list"
+  to = "https://fashionrockstar-launch.zavyer.chatgpt.site/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/list"
+  to = "https://fashionrockstar-launch.zavyer.chatgpt.site/list"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/book"
   to = "/booking/"
