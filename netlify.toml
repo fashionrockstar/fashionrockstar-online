@@ -4,6 +4,10 @@
 [context.development]
   publish = "."
 
+[context.production]
+  command = "node scripts/prepare-production.cjs"
+  publish = "_site"
+
 # Keep the existing launch-list database and emailed unsubscribe links available.
 # The signup UI and private dashboard continue on their original Sites host.
 [[redirects]]
@@ -14,11 +18,9 @@
 
 [[redirects]]
   from = "/api/subscribe"
-  to = "https://fashionrockstar-launch.zavyer.chatgpt.site/api/subscribe"
+  to = "/.netlify/functions/subscribe"
   status = 200
   force = true
-  [redirects.headers]
-    Origin = "https://fashionrockstar-launch.zavyer.chatgpt.site"
 
 [[redirects]]
   from = "/mailing-list"
