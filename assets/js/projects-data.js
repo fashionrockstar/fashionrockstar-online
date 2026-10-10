@@ -96,6 +96,41 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "id": "brokenheart-photography-campaign",
+    "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
+    "year": "",
+    "role": "PHOTOGRAPHY / CAMPAIGN",
+    "disciplines": "photography",
+    "category": "PHOTOGRAPHY / CAMPAIGN",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "srcset": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-640.webp 640w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-1280.webp 1280w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp 2400w",
+      "sourceFile": "1111.jpg",
+      "alt": "SEATED FIGURE IN BLACK ON A CLEAR CHAIR, WITH THE ORIGINAL BROKENHEART AND FASHIONROCKSTAR TYPOGRAPHY AND STUDIO SHADOWS.",
+      "wide": true
+    },
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/brokenheart-photography-campaign/final-poster-640.webp 640w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-1280.webp 1280w, /assets/media/selected-work/brokenheart-photography-campaign/final-poster-2400.webp 2400w",
+        "sourceFile": "1111.jpg",
+        "alt": "SEATED FIGURE IN BLACK ON A CLEAR CHAIR, WITH THE ORIGINAL BROKENHEART AND FASHIONROCKSTAR TYPOGRAPHY AND STUDIO SHADOWS.",
+        "wide": true
+      }
+    ],
+    "date": "",
+    "datePrecision": "unconfirmed",
+    "galleryOrderConfirmed": true
+  },
+  {
     "title": "FASHIONROCKSTAR X BROKENHEART [CAMPAIGN]",
     "year": "",
     "role": "",
