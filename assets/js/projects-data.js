@@ -135,6 +135,70 @@ window.fashionrockstarProjects = [
     "galleryOrderConfirmed": true
   },
   {
+    "title": "MICAELA GOMES [M.A.D 2026]",
+    "role": "PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN",
+    "year": "2026",
+    "disciplines": "photography creative-direction",
+    "id": "micaela-gomes-mad-2026",
+    "imported": true,
+    "credits": [],
+    "cover": {
+      "type": "image",
+      "src": "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp",
+      "srcset": "/assets/media/selected-work/micaela-gomes/established-cover-640.webp 640w, /assets/media/selected-work/micaela-gomes/established-cover-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/established-cover-2400.webp 2048w",
+      "width": 2048,
+      "height": 1365
+    },
+    "gallery": [
+      {
+        "type": "video",
+        "src": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
+        "poster": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
+        "width": 720,
+        "height": 404,
+        "sourceShare": "https://adobe.ly/46AYGeP",
+        "autoplay": true,
+        "loop": true,
+        "controls": false,
+        "wide": true,
+        "hasAudio": true
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/01-1-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/01-1-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/01-1-1-2400.webp 2400w",
+        "sourceFile": "1.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/02-2-640.webp 640w, /assets/media/selected-work/micaela-gomes/02-2-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/02-2-2400.webp 2400w",
+        "sourceFile": "2.jpg",
+        "wide": true,
+        "hasAudio": false
+      },
+      {
+        "type": "image",
+        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "srcset": "/assets/media/selected-work/micaela-gomes/03-4-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/03-4-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/03-4-1-2400.webp 2400w",
+        "sourceFile": "4.1.jpg",
+        "wide": true,
+        "hasAudio": false
+      }
+    ],
+    "date": "2026",
+    "datePrecision": "year",
+    "category": "PHOTOGRAPHY"
+  },
+  {
     "title": "MANSAWORLD",
     "role": "PHOTOGRAPHY - CREATIVE DIRECTION",
     "year": "2026",
@@ -368,70 +432,6 @@ window.fashionrockstarProjects = [
     "datePrecision": "year",
     "category": "CREATIVE DIRECTION / BEAUTY",
     "galleryOrderConfirmed": true
-  },
-  {
-    "title": "MICAELA GOMES [M.A.D 2026]",
-    "role": "PHOTOGRAPHY - CREATIVE DIRECTION - SET DESIGN",
-    "year": "2026",
-    "disciplines": "photography creative-direction",
-    "id": "micaela-gomes-mad-2026",
-    "imported": true,
-    "credits": [],
-    "cover": {
-      "type": "image",
-      "src": "/assets/media/selected-work/micaela-gomes/established-cover-2400.webp",
-      "srcset": "/assets/media/selected-work/micaela-gomes/established-cover-640.webp 640w, /assets/media/selected-work/micaela-gomes/established-cover-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/established-cover-2400.webp 2048w",
-      "width": 2048,
-      "height": 1365
-    },
-    "gallery": [
-      {
-        "type": "video",
-        "src": "/assets/media/selected-work/micaela-gomes/mad-2026-film.mp4",
-        "poster": "/assets/media/selected-work/micaela-gomes/mad-2026-film-poster.webp",
-        "width": 720,
-        "height": 404,
-        "sourceShare": "https://adobe.ly/46AYGeP",
-        "autoplay": true,
-        "loop": true,
-        "controls": false,
-        "wide": true,
-        "hasAudio": true
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/micaela-gomes/01-1-1-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/micaela-gomes/01-1-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/01-1-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/01-1-1-2400.webp 2400w",
-        "sourceFile": "1.1.jpg",
-        "wide": true,
-        "hasAudio": false
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/micaela-gomes/02-2-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/micaela-gomes/02-2-640.webp 640w, /assets/media/selected-work/micaela-gomes/02-2-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/02-2-2400.webp 2400w",
-        "sourceFile": "2.jpg",
-        "wide": true,
-        "hasAudio": false
-      },
-      {
-        "type": "image",
-        "src": "/assets/media/selected-work/micaela-gomes/03-4-1-2400.webp",
-        "width": 2400,
-        "height": 1600,
-        "srcset": "/assets/media/selected-work/micaela-gomes/03-4-1-640.webp 640w, /assets/media/selected-work/micaela-gomes/03-4-1-1280.webp 1280w, /assets/media/selected-work/micaela-gomes/03-4-1-2400.webp 2400w",
-        "sourceFile": "4.1.jpg",
-        "wide": true,
-        "hasAudio": false
-      }
-    ],
-    "date": "2026",
-    "datePrecision": "year",
-    "category": "PHOTOGRAPHY"
   },
   {
     "id": "lees-broken-dolls",
